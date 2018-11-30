@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% for row in page.rows %}
+  <div class="projects-row df xdr">
+    {% for project in row.projects %}
+      <div class="project-link c3 m1half mt0">
+        <a href="{{project.link}}">
+          {% if project.image %}
+          <img src="{{project.image}}" class="c12 project-thumbnail"/>
+          {% endif %}
+          <p>{{ project.title }} {% if project.year %}({{ project.year }}){% endif %}</p>
+          <!-- 
+            <p>{{ project.medium }}—{{ project.year }}</p>
+          -->
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
