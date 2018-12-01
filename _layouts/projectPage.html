@@ -31,9 +31,17 @@ layout: default
 
   {% for image in page.images %}
     <div class="c12 project-image-with-description">
-      <img src="{{image.url}}" class="c12 project-image"/>
+      {% if image.video %}
+        <video width="100%" autoplay loop muted class="c12">
+          <source src="{{image.url}}">
+        </video>
+      {% else %}
+        <img src="{{image.url}}" class="c12 project-image"/>
+      {% endif %}
       {% if image.description %}
         <p class="project-image-description small-paragraph mt0 mb2 c8 ml1">{{image.description}}</p>
+      {% else %}
+        <div class="mb2"></div>
       {% endif %}
   {% endfor %}
 </div>

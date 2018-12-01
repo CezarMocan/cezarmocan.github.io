@@ -7,4 +7,6 @@ permalink: /about/
 Software developer with a passion for everything visual.<br/>
 In a former life, I used to do competitive programming.<br/>
 Currently building digital learning experiences with <a class="underlined" href="https://www.gakko.org" target="__blank">Gakko</a>.<br/>
+<br/>
+<a class="underlined" href="mailto:c@cezar.io">Say hi!</a>
 </div>
