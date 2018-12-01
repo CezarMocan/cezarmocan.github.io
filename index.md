@@ -60,11 +60,11 @@ rows:
       year: 2016
       link: /rethinkingtheonlineexhibit
       image: /assets/images/rethinkingexhibit.gif
-    - title: Koffee/ Storno
-      medium: poster / type specimen
-      year: 2016
-      link: /koffee
-      image: /assets/images/koffee.png
+    - title: 000pen.space
+      medium: web
+      year: in progress
+      link: /000penspace
+      image: /assets/images/000penspace.gif
     - title: Syria Conflict Tracking
       medium: mobile
       year: 2016
@@ -87,8 +87,9 @@ rows:
       year: 2015
       link: /lostinthemeritocracy
       image: /assets/images/lostinthemeritocracy.jpg
-    - title: 
-      medium:
-      year:
-      link:
+    - title: Koffee/ Storno
+      medium: poster / type specimen
+      year: 2016
+      link: /koffee
+      image: /assets/images/koffee.png
 ---
