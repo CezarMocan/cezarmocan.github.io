@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: rgba(251, 248, 243, 0.25);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+a.underlined {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+p {
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.small-paragraph {
+  margin-top: 15px;
+  font-size: 7.5pt;
+}
+
+.mb0-half {
+  margin-bottom: 0.2rem;
+}
+.m1half {
+  margin: 1.6rem;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.project-thumbnail {
+  object-fit: cover;
+  height: 12vw;
+  transition: opacity 0.2s;
+}
+
+.project-thumbnail:hover {
+  opacity: 0.7;
+}
