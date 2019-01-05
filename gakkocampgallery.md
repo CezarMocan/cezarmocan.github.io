@@ -10,7 +10,7 @@ paragraphs:
      Link:<br/>
      <a class="underlined" href="http://gallery.gakkoproject.com/" target="__blank">http://gallery.gakkoproject.com/</a>
  - text: |
-     Role:Developer. Design by Michael Taylor.
+     Role:Software Developer. Design by Michael Taylor.
    small: true
 images:
  - url: https://files.persona.co/70448/GakkoGalleryLandingPageSmall.mp4

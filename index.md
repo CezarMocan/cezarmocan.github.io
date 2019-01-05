@@ -32,7 +32,12 @@ rows:
       medium: web
       year: 2016
       link: /selfandother
-      image: /assets/images/selfandother.png
+      image: /assets/images/selfandother.gif
+    - title: An Argument for a New Digital Currency
+      medium: book
+      year: 2016
+      link: /anargumentforanewdigitalcurrency
+      image: /assets/images/anargument.gif
     - title: Push to Open
       medium: zine / typeface
       year: 2015
@@ -43,23 +48,18 @@ rows:
       year: 2018
       link: /theroadbackhome
       image: /assets/images/roadbackhome.gif
+ - row: Row Three
+   projects:
     - title: Gakko Camp Gallery
       medium: web
       year: 2017
       link: /gakkocampgallery
       image: /assets/images/gakkocampgallery.gif
- - row: Row Three
-   projects:
     - title: Self Portrait
       medium: web
       year: 2016
       link: /selfportrait
       image: /assets/images/selfportrait.gif
-    - title: Rethinking the Online Exhibit
-      medium: web
-      year: 2016
-      link: /rethinkingtheonlineexhibit
-      image: /assets/images/rethinkingexhibit.gif
     - title: 000pen.space
       medium: web
       year: in progress
@@ -72,6 +72,11 @@ rows:
       image: /assets/images/syriaconflicttracking.png
  - row: Row Four
    projects:
+    - title: Rethinking the Online Exhibit
+      medium: web
+      year: 2016
+      link: /rethinkingtheonlineexhibit
+      image: /assets/images/rethinkingexhibit.gif
     - title: Poster Jam
       medium: poster series
       year: 2017
@@ -87,9 +92,26 @@ rows:
       year: 2015
       link: /lostinthemeritocracy
       image: /assets/images/lostinthemeritocracy.jpg
+ - row: Row Five
+   projects:
     - title: Koffee/ Storno
       medium: poster / type specimen
       year: 2016
       link: /koffee
       image: /assets/images/koffee.png
+    - title:
+      medium:
+      year:
+      link:
+      image:
+    - title:
+      medium:
+      year:
+      link:
+      image:
+    - title:
+      medium:
+      year:
+      link:
+      image:
 ---
