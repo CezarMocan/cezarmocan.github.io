@@ -15,7 +15,7 @@ rows:
       medium: web
       year: 2018
       link: /algorithm4friends
-      image: /assets/images/algorithm4friends/1.png
+      image: /assets/images/algorithm4friends/algorithm4friends.gif
     - title: Water
       medium: poster series
       year: 2016
