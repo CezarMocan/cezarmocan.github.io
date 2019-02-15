@@ -13,14 +13,14 @@ paragraphs:
      This series was created as part of Yale’s Advanced Graphic Design studio. It uses an open-source neural network trained by Ross Goodwin.
    small: true
 images:
- - url: https://cortex.persona.co/w/2048/q/67/i/df3fbd2962a7ff7cfc4ad03dd2915564ade4961b27baf8030d1ab422e2bf5420/web_Poster4.png
+ - url: /assets/images/water/0.png
    description: 
- - url: https://cortex.persona.co/w/2048/q/67/i/e93d4c34bc0d5a49a30c1f57fea9ed1d1a0ad25595acb2719b45111d37187adb/web_Poster3.png
+ - url: /assets/images/water/1.png
    description: 
- - url: https://cortex.persona.co/w/2048/q/67/i/19f9291bceeaed021b449a6f7bbb666d8ebb2c825e2acfffa426d6ec162c7945/web_Poster1.png
+ - url: /assets/images/water/2.png
    description: 
- - url: https://cortex.persona.co/w/2048/q/67/i/303b8dc4826926e4c2b90f535643bea58b843b3b3bffeabcde6fed9dd99216bb/web_Poster2.png
+ - url: /assets/images/water/3.png
    description: 
- - url: https://cortex.persona.co/w/2048/q/67/i/81a7036e7d48a6e2b3156cf6b66c47a84a24f49c25ab9cd0b153529be6449b3c/web_Series.png
+ - url: /assets/images/water/4.png
    description: 
 ---
