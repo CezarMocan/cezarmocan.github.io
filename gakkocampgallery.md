@@ -8,7 +8,7 @@ paragraphs:
      Each year, we encourage attendees to document their own personal experiences at camp using photography and the visual arts. The gallery is the result.
  - text: |
      Link:<br/>
-     <a class="underlined" href="http://gallery.gakkoproject.com/" target="__blank">http://gallery.gakko.org/</a>
+     <a class="underlined" href="http://gallery.gakko.org/" target="__blank">http://gallery.gakko.org/</a>
  - text: |
      Role:Software Developer. Design by Michael Taylor.
    small: true
