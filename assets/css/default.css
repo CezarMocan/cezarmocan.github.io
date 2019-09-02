@@ -31,6 +31,18 @@ p {
   font-size: 7.5pt;
 }
 
+.mega-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  margin-top: 1rem;
+}
+
+.info-container {
+  min-width: 200px;
+  margin-right: 10px;
+}
+
 .mb0-half {
   margin-bottom: 0.2rem;
 }
@@ -50,4 +62,61 @@ p {
 
 .project-thumbnail:hover {
   opacity: 0.7;
+}
+
+.project-link {
+  flex: 1;
+}
+
+.projects-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects-pair {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-page-description {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects-row {
+    flex-direction: column;
+  }
+  .project-thumbnail {
+    height: 24vw;
+  }
+  .project-page-description {
+    width: 75%;
+  }
+  .mega-container {
+    margin: 1rem;
+    margin-top: 0.75rem;
+  }
+  .info-container {
+    min-width: 100px;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .projects-pair {
+    flex-direction: column;
+  }
+  .project-thumbnail {
+    height: 48vw;
+  }
+  .project-page-description {
+    width: 95%;
+  }
+  .mega-container {
+    margin: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  .info-container {
+    min-width: 66px;
+  }
 }
