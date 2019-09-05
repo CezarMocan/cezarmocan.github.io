@@ -4,7 +4,7 @@ permalink: /blog/
 ---
 <div class="blog-container">
   <div class="blog-title"> 
-    <h1> ITP blog&mdash;a living document of notes from classes and projects</h1> 
+    <h1> ITP blog&mdash;a living document focused on process</h1> 
     <h1>&mdash;</h1>
   </div>
 
