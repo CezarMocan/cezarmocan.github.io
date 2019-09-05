@@ -1,28 +1,88 @@
-.blog-title {
-    margin-top: -10px;
-    font-size: 24pt;
-}
-
 .blog-container {
     width: 66%;
+    font-family: NeueHaasUnica;
+    font-size: 13pt;
+}
+
+.blog-container h1 {
+    font-family: NeueHaasUnica;
+    font-size: 24pt;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.blog-container h2 {
+    font-family: NeueHaasUnica;
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+.blog-container h3 {
+    font-family: AkkuratMono;
+    font-size: 8.7pt;
+    margin: 0;
+}
+
+.blog-post-container h1 {
+    font-family: NeueHaasUnica;
+    font-size: 24pt;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.blog-post-container h2 {
+    font-family: NeueHaasUnica;
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+.blog-post-container h3 {
+    font-family: AkkuratMono;
+    font-size: 8.7pt;
+    margin: 0;
 }
 
 .blog-post-container {
     width: 66%;
+    font-family: NeueHaasUnica;
+    font-size: 13pt;
+}
+
+
+.blog-title {
+    margin-top: -10px;
+    margin-bottom: 40px;
 }
 
 .blog-post-listing-container {
     margin-bottom: 25px;
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
 }
+
+.blog-post-listing-container:hover {
+    background-color: rgba(255, 255, 230, 0.7);
+}
+
+.blog-post-listing-container a {
+    text-decoration: none;
+}
+
 
 .blog-post-listing-excerpt {
     margin-top: 15px;
 }
 
-.blog-post-container {
-
+.blog-post-container .back-to-blog {
+    margin-top: -5px;
+    margin-bottom: 15px;
 }
 
 .blog-post-content {
-    margin-top: 15px;
+    margin-top: 35px;
 }

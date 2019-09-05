@@ -16,7 +16,7 @@ More recently, I have been designing or developing software for artists such as 
 
 <br/><br/>
 
-I am currently pursuing a two-year long masters program at <a class="underlined" href="https://itp.nyu.edu" target="__blank">NYU ITP</a>.
+I am currently pursuing a two-year long masters program at <a class="underlined" href="https://itp.nyu.edu" target="__blank">NYU ITP</a> and keeping a <a class="underlined" href="/blog" target="__blank">blog</a> about it.
 
 <br/><br/>
 
