@@ -71,13 +71,19 @@
     background-color: rgba(255, 255, 230, 0.7);
 }
 
-.blog-post-listing-container a {
+a.blog-post-listing-container-tap-area {
     text-decoration: none;
+}
+
+a.blog-post-listing-container-read-more {
+    margin-top: 10px;
 }
 
 
 .blog-post-listing-excerpt {
     margin-top: 15px;
+    margin-bottom: 18px;
+    margin-left: 15px;
 }
 
 .blog-post-container .back-to-blog {
