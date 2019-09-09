@@ -107,6 +107,10 @@ img {
     max-width: 100%;
 }
 
+figure img {
+    border: 1px solid black;
+}
+
 img + figcaption { 
     color: rgb(128, 128, 128);
     /* font-family: AkkuratMono; */
