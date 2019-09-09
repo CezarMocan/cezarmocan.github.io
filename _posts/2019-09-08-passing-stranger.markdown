@@ -25,7 +25,7 @@ The walk starts at the cross of E10th Street and 2nd Ave, in front of the St. Ma
   </figcaption>
 </figure>
 
-We proceed north on 2nd Ave then head east on East 12th Street, while learning about the opera influences in Walt Whitman's poetry, passing Allen Ginsberg's old apartment at 437 East 12th, and becoming familiar with Jon Giorno's *Dial-a-poem* project. I want to stop here for a second, as this is an incredible work of early new media art, which uses a few telephones and a few tape players as a means to making poetry accessible to a wide audience, while creating a radical space and sharing it with the world. MoMA and The New Museum have organized included *Dial-a-poem* in a few shows recently, which means that there is at least one active phone number that is still running the project: 641-793-8122.
+We proceed north on 2nd Ave then head east on East 12th Street, while learning about the opera influences in Walt Whitman's poetry, passing Allen Ginsberg's old apartment at 437 East 12th, and becoming familiar with Jon Giorno's *Dial-a-poem* project. I want to stop here for a second, as this is an incredible work of early new media art, which uses a few telephones and a few tape players as a means to making poetry accessible to a wide audience, while creating a radical space and sharing it with the world. MoMA and The New Museum have included *Dial-a-poem* in a few shows recently, meaning that there is at least one active phone number that is running the project. Try it yourself: 641-793-8122.
 
 <figure>
   <img src="https://miro.medium.com/max/640/0*0fBw9d2K29RJlP3_.jpg" alt="John Giorno with the Dial-a-Poem telephone set up in 1969"/>
