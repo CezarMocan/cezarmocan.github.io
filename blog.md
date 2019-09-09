@@ -4,8 +4,7 @@ permalink: /blog/
 ---
 <div class="blog-container">
   <div class="blog-title"> 
-    <h1> ITP blog&mdash;a living document focused on process</h1> 
-    <h1>&mdash;</h1>
+    <h1>🔮</h1> 
   </div>
 
   {% for post in site.posts %}  
@@ -20,8 +19,8 @@ permalink: /blog/
         <div class="blog-post-listing-categories">
           <h3>
             Posted under: 
-            {% for c in post.categories %}
-              <span class="blog-post-listing-category">{{c}}</span>
+            {% for c in post.tags %}
+              <span class="blog-post-listing-category">{{c}};</span>
             {% endfor %}
           </h3>
         </div>

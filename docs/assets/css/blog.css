@@ -23,6 +23,7 @@
     font-family: AkkuratMono;
     font-size: 8.7pt;
     margin: 0;
+    font-weight: normal;
 }
 
 .blog-post-container h1 {
@@ -44,6 +45,7 @@
     font-family: AkkuratMono;
     font-size: 8.7pt;
     margin: 0;
+    font-weight: normal;
 }
 
 .blog-post-container {
@@ -93,4 +95,15 @@
 
 .img-row-2 {
     width: 48%;
+}
+
+img {
+    max-width: 100%;
+}
+
+img + figcaption { 
+    color: rgb(128, 128, 128);
+    /* font-family: AkkuratMono; */
+    font-size: 11pt;
+    margin-bottom: 20px;
 }

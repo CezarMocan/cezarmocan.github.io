@@ -15,8 +15,8 @@ layout: default
     <div class="blog-post-listing-categories">
         <h3>
         Posted under: 
-        {% for c in page.categories %}
-            <span class="blog-post-listing-category">{{c}}</span>
+        {% for c in page.tags %}
+            <span class="blog-post-listing-category">{{c}};</span>
         {% endfor %}
         </h3>
     </div>

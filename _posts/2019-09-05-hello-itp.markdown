@@ -1,8 +1,9 @@
 ---
 layout: blogPost
-title:  "~Hello ITP~"
+title:  "Hello ITP"
 date:   2019-09-04 10:38:00 -0500
-categories: blog itp
+tags: ITP
+published: false
 ---
 ![test image](https://i.giphy.com/media/kBZBlLVlfECvOQAVno/giphy.webp){:class="img-row-2"} 
 ![test image](https://i.giphy.com/media/kBZBlLVlfECvOQAVno/giphy.webp){:class="img-row-2"} 
