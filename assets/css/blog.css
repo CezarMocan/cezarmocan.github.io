@@ -117,3 +117,18 @@ img + figcaption {
     font-size: 11pt;
     margin-bottom: 20px;
 }
+
+video {
+    max-width: 100%;
+}
+
+figure video {
+    border: 1px solid black;
+}
+
+video + figcaption { 
+    color: rgb(128, 128, 128);
+    /* font-family: AkkuratMono; */
+    font-size: 11pt;
+    margin-bottom: 20px;
+}

@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-16T23:13:04-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY</title><link href="http://localhost:4000/2019/09/16/dollar-van.html" rel="alternate" type="text/html" title="Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY" /><published>2019-09-16T13:38:00-04:00</published><updated>2019-09-16T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/16/dollar-van</id><content type="html" xml:base="http://localhost:4000/2019/09/16/dollar-van.html">&lt;p&gt;Dollar Van is an audio sojourn that details the history of the MTA at 370 Jay Street in Brooklyn and the Interactive Telecommunications Program at the Tisch School of Arts at NYU. It provides a thematic insight into the shared values of both organizations from founding until the present day. This soundwalk was created by Cezar Mocan and Russell Ladson - graduate students at the Tisch School of the Arts.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-18T12:58:39-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">LED Switch</title><link href="http://localhost:4000/2019/09/17/led-switch.html" rel="alternate" type="text/html" title="LED Switch" /><published>2019-09-17T13:38:00-04:00</published><updated>2019-09-17T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/17/led-switch</id><content type="html" xml:base="http://localhost:4000/2019/09/17/led-switch.html">&lt;p&gt;For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/blog/2019-09-17-led-switch/1.jpg&quot; alt=&quot;Setting up the breadboard, part 1: connecting the breadboard's side rows to each &quot; /&gt;
+  &lt;figcaption&gt;
+    Setting up the breadboard, part 1: connecting the breadboard's side rows to each other.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/blog/2019-09-17-led-switch/2.jpg&quot; alt=&quot;Setting up the breadboard, part 2: connecting the power supply.&quot; /&gt;
+  &lt;figcaption&gt;
+    Setting up the breadboard, part 2: connecting the power supply.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/blog/2019-09-17-led-switch/3.jpg&quot; alt=&quot;Setting up the breadboard.&quot; /&gt;
+  &lt;figcaption&gt;
+    Setting up the breadboard, part 3: connecting the resistance and the LED.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;video class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/4.mov&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot; alt=&quot;Plugging in the power makes the LED light up.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Plugging in the power makes the LED light up.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;As a next step, we introduced a switch into the circuit, while also playing with more LEDs, in series or in parallel.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/5.mov&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot; alt=&quot;Pressing the switch lights up the two LEDs.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Pressing the switch lights up the two LEDs.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/6.jpg&quot; alt=&quot;Measuring amperage for one of three LEDs connected in parallel.&quot; /&gt;
+  &lt;figcaption&gt;
+    Measuring amperage for one of three LEDs connected in parallel.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We also introduced a potentiometer into the setup, as a way to manually adjust the resistance of the circuit and the voltage that gets to our LEDs.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2019-09-17-led-switch/7.mov&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot; alt=&quot;Turning the potentiometer's knob adjusts the brightness of the LEDs.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Turning the potentiometer's knob adjusts the brightness of the LEDs.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The last part of the assignment involved building a creative switch for our LEDs—one that is not neccesarily a push button, or an existing interface. I was interested in having the LEDs light up when a sound (or rather noise) event is happening, so I came up with this silly contraption. It uses conductive thread to attach the moving piece to the tilted metal rod.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/8.mov&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Turning the potentiometer's knob adjusts the brightness of the LEDs.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Once the moving piece falls into the pot, the LED lights up.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.</summary></entry><entry><title type="html">Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY</title><link href="http://localhost:4000/2019/09/16/dollar-van.html" rel="alternate" type="text/html" title="Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY" /><published>2019-09-16T13:38:00-04:00</published><updated>2019-09-16T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/16/dollar-van</id><content type="html" xml:base="http://localhost:4000/2019/09/16/dollar-van.html">&lt;p&gt;Dollar Van is an audio sojourn that details the history of the MTA at 370 Jay Street in Brooklyn and the Interactive Telecommunications Program at the Tisch School of Arts at NYU. It provides a thematic insight into the shared values of both organizations from founding until the present day. This soundwalk was created by Cezar Mocan and Russell Ladson - graduate students at the Tisch School of the Arts.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
