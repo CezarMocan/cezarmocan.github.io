@@ -2,7 +2,7 @@
 layout: blogPost
 title:  "Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY"
 date:   2019-09-16 12:38:00 -0500
-tags: ["CommLab: Video & Sound", "ITP"]
+tags: ["CommLab: Video & Sound", "ITP", "Week 2"]
 published: true
 ---
 

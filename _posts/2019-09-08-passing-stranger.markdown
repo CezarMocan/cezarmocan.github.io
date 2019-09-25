@@ -2,7 +2,7 @@
 layout: blogPost
 title:  "Passing Stranger"
 date:   2019-09-08 12:38:00 -0500
-tags: ["CommLab: Video & Sound", "ITP"]
+tags: ["CommLab: Video & Sound", "ITP", "Week 1"]
 published: true
 ---
 [*Passing Stranger*](http://eastvillagepoetrywalk.org/){:class="underlined"} is an hour and a half long audio tour of the East Village, framed through the life stories and work of artists who have emerged and lived in the neighborhood during the second half of the 20th century. Curated by the Danish poet *Pejk Malinovski* and narrated by filmmaker *Jim Jarmusch*, the sound walk truly acts as a time portal to a less gentrified and more politically radical East Village, home to characters such as Allen Ginsberg, Patti Smith or The Velvet Underground. Having previously spent some time in the neighborhood, but never enough to know it intimately, the tour was a perfect opportunity to strenghten my friendship with the village's streets and landmarks.

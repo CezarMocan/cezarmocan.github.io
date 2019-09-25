@@ -2,7 +2,7 @@
 layout: blogPost
 title:  "Soundwalk Reflection"
 date:   2019-09-23 12:38:00 -0500
-tags: ["CommLab: Video & Sound", "ITP"]
+tags: ["CommLab: Video & Sound", "ITP", "Week 3"]
 published: true
 ---
 

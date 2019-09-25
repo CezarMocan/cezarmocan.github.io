@@ -2,7 +2,7 @@
 layout: blogPost
 title:  "LED Switch"
 date:   2019-09-17 12:38:00 -0500
-tags: ["Physical Computing", "ITP"]
+tags: ["Physical Computing", "ITP", "Week 2"]
 published: true
 ---
 
