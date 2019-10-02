@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-02T11:52:22-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Sensors and Soldering</title><link href="http://localhost:4000/2019/10/02/sensors-and-soldering.html" rel="alternate" type="text/html" title="Sensors and Soldering" /><published>2019-10-02T01:38:00-04:00</published><updated>2019-10-02T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/02/sensors-and-soldering</id><content type="html" xml:base="http://localhost:4000/2019/10/02/sensors-and-soldering.html">&lt;p&gt;This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things:&lt;/p&gt;
-
-&lt;p&gt;1) Improving the &lt;a class=&quot;underlined&quot; href=&quot;/2019/09/25/technology-observation.html&quot;&gt;LED sequencer I built for the previous lab;&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;p&gt;2) Getting outside of the breadboard and working with resin, a material I’ve wanted to experiment with for some time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-02T13:30:43-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Sensors and Soldering</title><link href="http://localhost:4000/2019/10/02/sensors-and-soldering.html" rel="alternate" type="text/html" title="Sensors and Soldering" /><published>2019-10-02T01:38:00-04:00</published><updated>2019-10-02T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/02/sensors-and-soldering</id><content type="html" xml:base="http://localhost:4000/2019/10/02/sensors-and-soldering.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/7.jpg&quot; alt=&quot;3 LEDs inside a resin cube.&quot; /&gt;
+  &lt;figcaption&gt;
+    3 LEDs inside a resin cube.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things: 1) Improving the &lt;a class=&quot;underlined&quot; href=&quot;/2019/09/25/technology-observation.html&quot;&gt;LED sequencer I built for the previous lab;&lt;/a&gt; and 2) Getting outside of the breadboard and working with resin, a material I’ve wanted to experiment with for some time.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;p&gt;While I was initially going for the theremin &lt;em&gt;continous bending&lt;/em&gt; sound quality, I realized that was going to be difficult for two main reasons: the noise in the photoresistor reading (even when averaged over time) and the &lt;code class=&quot;highlighter-rouge&quot;&gt;loop&lt;/code&gt; function timing trade-offs between &lt;code class=&quot;highlighter-rouge&quot;&gt;tone&lt;/code&gt; working properly and proper responsivity. So I went a different direction and started working with only discrete quantities. As mentioned before, I divided the photoresistor output into only roughly 8 different buckets. In terms of the frequencies that get played by the sequencer, they all full octaves apart and have the C pitch (the step frequencies get rounded to multiples of 65.) This produces an effect similar to a &lt;a href=&quot;https://www.google.com/search?client=firefox-b-1-d&amp;amp;q=quantizer&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;quantizer&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Here are two more videos of playing the sequencer. The noise in the photoresistor adds an improvised quality to the sound, which I find enjoyable.&lt;/p&gt;
+&lt;p&gt;Here are two more videos of playing the sequencer. The noise in the photoresistor changes the pitch here and there, which adds an improvisation quality to the sound. I find this enjoyable.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;video src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/10.mp4&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Arduino sequencer improvisation #1.&quot;&gt;&lt;/video&gt;
@@ -59,24 +59,77 @@
 
 &lt;p&gt;&lt;strong&gt;LED Resin Cube&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;fabricating the resin cube
-    &lt;ul&gt;
-      &lt;li&gt;buying resin supplies from Blick&lt;/li&gt;
-      &lt;li&gt;creating the cube mold&lt;/li&gt;
-      &lt;li&gt;pouring first layer of resin and adding LEDs inside (3 of them soldered together)&lt;/li&gt;
-      &lt;li&gt;pouring second layer of resin&lt;/li&gt;
-      &lt;li&gt;getting the cube out and sanding&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 4" /><summary type="html">This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things:</summary></entry><entry><title type="html">Interactive Technology Observation (and a bonus LED sequencer)</title><link href="http://localhost:4000/2019/09/25/technology-observation.html" rel="alternate" type="text/html" title="Interactive Technology Observation (and a bonus LED sequencer)" /><published>2019-09-25T01:38:00-04:00</published><updated>2019-09-25T01:38:00-04:00</updated><id>http://localhost:4000/2019/09/25/technology-observation</id><content type="html" xml:base="http://localhost:4000/2019/09/25/technology-observation.html">&lt;p&gt;A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.&lt;/p&gt;
+&lt;p&gt;This project came about out of a desire to use materials outside of the breadboard and practice soldering at the same time. I’ve been wanting to experiment with resin for some time, so I decided to build a small resin light. After purchasing supplies from Blick, I built a cube mold for the resin, using a 1/8in thick plastic sheet.&lt;/p&gt;
 
 &lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/1.jpg&quot; alt=&quot;Measuring and cutting out 5 faces of a cube.&quot; /&gt;
+  &lt;figcaption&gt;
+    Measuring and cutting out 5 faces of a cube.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I got the 5 cube sides together using a glue gun, and poured the first layer of resin—about 0.75in thick. After letting it cure for about 8 hours, I added the 3 red LEDs and poured the second and last resin layer.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/2.jpg&quot; alt=&quot;Adding the LEDs on top of the first resin layer.&quot; /&gt;
+  &lt;figcaption&gt;
+    Adding the LEDs on top of the first resin layer.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;After letting the second layer cure overnight, the cube was ready to come out of its mold. I noticed that the top corners of the cube were not even with the rest of the surface. This might have to do with the resin curing process emanating heat, which might have interfered with the glue on the sides of my square.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/3.jpg&quot; alt=&quot;Cured resin cube with bent corners.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/4.jpg&quot; alt=&quot;Removing the plastic mold.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/5.jpg&quot; alt=&quot;Removing the plastic mold.&quot; /&gt;
+  &lt;figcaption&gt;
+    Left: Cured resin cube with bent corners;
+    Middle and Right: Removing the plastic mold;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;After removing all edges of the plastic mold, the resin cube looked like this:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/6.jpg&quot; alt=&quot;Resin cube outside of the plastic mold.&quot; /&gt;  
+  &lt;figcaption&gt;
+    Resin cube outside of the plastic mold.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can notice that the side which was exposed to air is fully transparent, while the sides that were enclosed by plastic have a layer of translucent material. After sanding the cube in order to get rid of the material excess at the edges and get a uniform look, I attacned six pins to the bottom and soldered together the even ones and the odd ones, as a way of having a single power source for the 3 LEDs. (in the ugliest soldering job the planet has seen.)&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/8.jpg&quot; alt=&quot;Power wires for the LED resin cube.&quot; /&gt;  
+  &lt;figcaption&gt;
+    Power wires for the LED resin cube.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;After plugging in the cube, the LEDs (surprisingly?) lit up. The second failure of this project consisted in the fact that I was expecting the light to be way more diffuse, but instead the 3 LEDs are clear. This is due to the fact that most of the cube’s inner volume is fully transparent, so the problem could be solved by adding a small amount of white or silver paint in the mix.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/7.jpg&quot; alt=&quot;Cube lights up.&quot; /&gt;  
+  &lt;figcaption&gt;
+    Cube lights up.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I will likely work with resin again, but next time I will choose a different material for the mold. Using plastic made the mold unusable after getting the resin out of it. 3d printing the positive shape, creating a silicone mold and pouring resin into that sounds like the right choice of materials and process for pretty much any (small scale) shape. To be continued.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/9.jpg&quot; alt=&quot;Cube lit up from the side.&quot; /&gt;  
+  &lt;figcaption&gt;
+    Cube lit up from the side.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 4" /><summary type="html">3 LEDs inside a resin cube. This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things: 1) Improving the LED sequencer I built for the previous lab; and 2) Getting outside of the breadboard and working with resin, a material I’ve wanted to experiment with for some time.</summary></entry><entry><title type="html">Interactive Technology Observation (and a bonus LED sequencer)</title><link href="http://localhost:4000/2019/09/25/technology-observation.html" rel="alternate" type="text/html" title="Interactive Technology Observation (and a bonus LED sequencer)" /><published>2019-09-25T01:38:00-04:00</published><updated>2019-09-25T01:38:00-04:00</updated><id>http://localhost:4000/2019/09/25/technology-observation</id><content type="html" xml:base="http://localhost:4000/2019/09/25/technology-observation.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-25-technology-observation/1.jpg&quot; alt=&quot;Crosswalk button at Bushwick Ave. and Kosciuszko street.&quot; /&gt;
   &lt;figcaption&gt;
     Crosswalk button at Bushwick Ave. and Kosciuszko street.
   &lt;/figcaption&gt;
 &lt;/figure&gt;
+&lt;p&gt;A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.&lt;/p&gt;
 
 &lt;p&gt;The crosswalk button in front of my apartment building is no exception—it is probably one of the first iterations of this type of technology, built and placed on location likely before the digital era. The interface features a single circular metal button, slightly larger than the size of a thumb’s tip, placed at the bottom of a round metal panel. Due to usage over a long period of time, pressing the button requires a lot of force, as it tends to get stuck in a lifted position.&lt;/p&gt;
 
@@ -93,7 +146,7 @@
   &lt;figcaption&gt;
     Arduino based 3-step sequencer.
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 3" /><summary type="html">A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.</summary></entry><entry><title type="html">Soundwalk Reflection</title><link href="http://localhost:4000/2019/09/23/soundwalk-reflection.html" rel="alternate" type="text/html" title="Soundwalk Reflection" /><published>2019-09-23T13:38:00-04:00</published><updated>2019-09-23T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/23/soundwalk-reflection</id><content type="html" xml:base="http://localhost:4000/2019/09/23/soundwalk-reflection.html">&lt;p&gt;For the first CL: Video &amp;amp; Sound assignment, Russell and I worked on a sound walk of 370 Jay Street, focused on creating a narrative arc for the evolution of the building’s usage from the 1950s until today. 370 Jay St. was erected as a headquarters for New York’s Transit Authority (the MTA) in the 1950s, and served that function for more than 40 years. Throughout the 1990s, the MTA slowly moved into a new Manhattan headquarters, leaving the 370 Jay building partially empty and unproperly maintained. Once regarded as a landmark of modernism in Brooklyn, the building fell into decay until 2012, when New York University acquired it, expanding its Brooklyn campus.&lt;/p&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 3" /><summary type="html">Crosswalk button at Bushwick Ave. and Kosciuszko street. A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.</summary></entry><entry><title type="html">Soundwalk Reflection</title><link href="http://localhost:4000/2019/09/23/soundwalk-reflection.html" rel="alternate" type="text/html" title="Soundwalk Reflection" /><published>2019-09-23T13:38:00-04:00</published><updated>2019-09-23T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/23/soundwalk-reflection</id><content type="html" xml:base="http://localhost:4000/2019/09/23/soundwalk-reflection.html">&lt;p&gt;For the first CL: Video &amp;amp; Sound assignment, Russell and I worked on a sound walk of 370 Jay Street, focused on creating a narrative arc for the evolution of the building’s usage from the 1950s until today. 370 Jay St. was erected as a headquarters for New York’s Transit Authority (the MTA) in the 1950s, and served that function for more than 40 years. Throughout the 1990s, the MTA slowly moved into a new Manhattan headquarters, leaving the 370 Jay building partially empty and unproperly maintained. Once regarded as a landmark of modernism in Brooklyn, the building fell into decay until 2012, when New York University acquired it, expanding its Brooklyn campus.&lt;/p&gt;
 
 &lt;p&gt;In terms of format, our sound walk is quite similar to an informative podcast: a narrator (❤️ Russell) guides the listener through the building’s history, while the listener makes their way from the 4th floor of the building towards the subway stop across the street.&lt;/p&gt;
 

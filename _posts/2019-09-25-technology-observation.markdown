@@ -6,14 +6,13 @@ tags: ["Physical Computing", "ITP", "Week 3"]
 published: true
 ---
 
-A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.
-
-<figure>
+<figure style="margin: 0;">
   <img class="img-row-2" src="/assets/images/blog/2019-09-25-technology-observation/1.jpg" alt="Crosswalk button at Bushwick Ave. and Kosciuszko street."/>
   <figcaption>
     Crosswalk button at Bushwick Ave. and Kosciuszko street.
   </figcaption>
 </figure>
+A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.
 
 The crosswalk button in front of my apartment building is no exception—it is probably one of the first iterations of this type of technology, built and placed on location likely before the digital era. The interface features a single circular metal button, slightly larger than the size of a thumb's tip, placed at the bottom of a round metal panel. Due to usage over a long period of time, pressing the button requires a lot of force, as it tends to get stuck in a lifted position.
 
