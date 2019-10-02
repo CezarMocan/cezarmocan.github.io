@@ -129,3 +129,96 @@ I will likely work with resin again, but next time I will choose a different mat
     Cube lit up from the side.
   </figcaption>
 </figure>
+
+For reference, the sequencer code is here: 
+
+```cpp
+int ANALOG_POT_1 = 3;
+int ANALOG_POT_2 = 2;
+int ANALOG_POT_3 = 1;
+int ANALOG_POT_4 = 4;
+
+int ANALOG_POTS[4] = {ANALOG_POT_1, ANALOG_POT_2, ANALOG_POT_3, ANALOG_POT_4};
+
+int ANALOG_PHOTO_T = 0;
+
+int ANALOG_POT_PACE = 6;
+
+int DIGITAL_LED_1 = 9;
+int DIGITAL_LED_2 = 8;
+int DIGITAL_LED_3 = 7;
+int DIGITAL_LED_4 = 4;
+
+
+int LEDs[4] = {DIGITAL_LED_1, DIGITAL_LED_2, DIGITAL_LED_3, DIGITAL_LED_4};
+
+int DIGITAL_SPEAKER = 6;
+
+
+int CELL_DELAY = 100;
+
+int potValues[10], frequencies[10];
+
+int NO_CELLS = 4;
+int currentCell = 0;
+
+int currentTime = 0;
+int TIME_RESOLUTION = 150;
+
+// int BIG_LOOP = 0;
+// int BIG_LOOP_CNT = 1;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(DIGITAL_LED_1, OUTPUT);
+  pinMode(DIGITAL_LED_2, OUTPUT);
+  pinMode(DIGITAL_LED_3, OUTPUT);
+  pinMode(DIGITAL_LED_4, OUTPUT);
+}
+
+void loop() {
+  int pacePotValue = analogRead(ANALOG_POT_PACE);
+  if (pacePotValue < 768) {
+    CELL_DELAY = map(pacePotValue, 0, 768, 50, 1000); 
+  } else {
+    CELL_DELAY = map(pacePotValue, 768, 1024, 1000, 8000); 
+  }
+
+  int lsv = analogRead(ANALOG_PHOTO_T);
+  float lightSensorValue = lsv - lsv % 150;
+  float thereminFactor = thereminFactor * 0.5 + (lightSensorValue / 1024.0 * 4.0 + 0.66) * 0.5;
+
+  for (int i = 0; i < NO_CELLS; i++) {
+    potValues[i] = analogRead(ANALOG_POTS[i]);
+    frequencies[i] = map(potValues[i], 0, 1024, 132, 600) * thereminFactor;
+    frequencies[i] = frequencies[i] > 65 ? (frequencies[i] - frequencies[i] % 65) : frequencies[i];
+    if (potValues[i] < 32) frequencies[i] = 0;
+  }
+  
+  if (currentTime > CELL_DELAY) {
+    currentTime = 0;
+    digitalWrite(LEDs[currentCell], LOW);
+    currentCell = (currentCell + 1) % NO_CELLS;
+  }
+
+  if (frequencies[currentCell] > 0) {
+    tone(DIGITAL_SPEAKER, frequencies[currentCell]);
+    digitalWrite(LEDs[currentCell], HIGH);
+    delay(2);    
+  } else {
+    noTone(DIGITAL_SPEAKER);
+  }
+
+  delay(TIME_RESOLUTION);
+
+  currentTime += TIME_RESOLUTION;
+
+//  BIG_LOOP = (BIG_LOOP + 1) % BIG_LOOP_CNT;
+//  BIG_LOOP_CNT += (int)sin(millis());
+
+  Serial.println(lightSensorValue);
+  Serial.println(thereminFactor);
+  Serial.println("");
+}
+```
