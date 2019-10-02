@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-25T10:58:10-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Interactive Technology Observation (and a bonus LED sequencer)</title><link href="http://localhost:4000/2019/09/25/technology-observation.html" rel="alternate" type="text/html" title="Interactive Technology Observation (and a bonus LED sequencer)" /><published>2019-09-25T01:38:00-04:00</published><updated>2019-09-25T01:38:00-04:00</updated><id>http://localhost:4000/2019/09/25/technology-observation</id><content type="html" xml:base="http://localhost:4000/2019/09/25/technology-observation.html">&lt;p&gt;A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-02T11:52:22-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Sensors and Soldering</title><link href="http://localhost:4000/2019/10/02/sensors-and-soldering.html" rel="alternate" type="text/html" title="Sensors and Soldering" /><published>2019-10-02T01:38:00-04:00</published><updated>2019-10-02T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/02/sensors-and-soldering</id><content type="html" xml:base="http://localhost:4000/2019/10/02/sensors-and-soldering.html">&lt;p&gt;This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things:&lt;/p&gt;
+
+&lt;p&gt;1) Improving the &lt;a class=&quot;underlined&quot; href=&quot;/2019/09/25/technology-observation.html&quot;&gt;LED sequencer I built for the previous lab;&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;2) Getting outside of the breadboard and working with resin, a material I’ve wanted to experiment with for some time.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sequencer 2.0&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To recap, last week the sequencer used 3 steps—3 LEDs, each blinking when the current step is playing a note, and 3 potentiometers, used to adjust the frequency of the note played at each step. It also included a 4th potentiometer which controlled the perceived “speed” of the sequencer—how much time is spent playing the note at each step. This week’s improvements included:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;soldering the speaker connecting wires, which were previously attached to the speaker using alligator clips;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;adding a 4th step to the sequencer, in order to play slightly more complex sequences; ideally, we would have 8 or 16 steps, but real estate is limited on the breadboard;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;adding another control input to the sequencer in the form of a photoresistor; this allows for controlling the overall pitch of the played sequence by covering or uncovering the sensor with one’s hand;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;improving the software such that the Arduino &lt;code class=&quot;highlighter-rouge&quot;&gt;loop&lt;/code&gt; cycle is not dependent on the speed of the sequencer anymore; this means that frequency of a step’s sound can now be adjusted while the step is playing;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;experimenting with different sensitivity levels for the photoresistor reading (I ended up settling on dividing the output into 8 different buckets, since the sensor readings were quite noisy.)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here is the photoresistor in action:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/12.mp4&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Arduino based 4-step sequencer, with theremin-like hand input.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Arduino based 4-step sequencer, with theremin-like hand input.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;While I was initially going for the theremin &lt;em&gt;continous bending&lt;/em&gt; sound quality, I realized that was going to be difficult for two main reasons: the noise in the photoresistor reading (even when averaged over time) and the &lt;code class=&quot;highlighter-rouge&quot;&gt;loop&lt;/code&gt; function timing trade-offs between &lt;code class=&quot;highlighter-rouge&quot;&gt;tone&lt;/code&gt; working properly and proper responsivity. So I went a different direction and started working with only discrete quantities. As mentioned before, I divided the photoresistor output into only roughly 8 different buckets. In terms of the frequencies that get played by the sequencer, they all full octaves apart and have the C pitch (the step frequencies get rounded to multiples of 65.) This produces an effect similar to a &lt;a href=&quot;https://www.google.com/search?client=firefox-b-1-d&amp;amp;q=quantizer&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;quantizer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are two more videos of playing the sequencer. The noise in the photoresistor adds an improvised quality to the sound, which I find enjoyable.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/10.mp4&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Arduino sequencer improvisation #1.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Arduino sequencer improvisation #1.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/11.mp4&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Arduino sequencer improvisation #2.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Arduino sequencer improvisation #2.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;LED Resin Cube&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fabricating the resin cube
+    &lt;ul&gt;
+      &lt;li&gt;buying resin supplies from Blick&lt;/li&gt;
+      &lt;li&gt;creating the cube mold&lt;/li&gt;
+      &lt;li&gt;pouring first layer of resin and adding LEDs inside (3 of them soldered together)&lt;/li&gt;
+      &lt;li&gt;pouring second layer of resin&lt;/li&gt;
+      &lt;li&gt;getting the cube out and sanding&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 4" /><summary type="html">This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things:</summary></entry><entry><title type="html">Interactive Technology Observation (and a bonus LED sequencer)</title><link href="http://localhost:4000/2019/09/25/technology-observation.html" rel="alternate" type="text/html" title="Interactive Technology Observation (and a bonus LED sequencer)" /><published>2019-09-25T01:38:00-04:00</published><updated>2019-09-25T01:38:00-04:00</updated><id>http://localhost:4000/2019/09/25/technology-observation</id><content type="html" xml:base="http://localhost:4000/2019/09/25/technology-observation.html">&lt;p&gt;A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-25-technology-observation/1.jpg&quot; alt=&quot;Crosswalk button at Bushwick Ave. and Kosciuszko street.&quot; /&gt;

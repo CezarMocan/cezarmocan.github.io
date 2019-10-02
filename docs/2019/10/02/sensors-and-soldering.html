@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117981656-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117981656-1');
+    </script>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jongacnik/gr8/daaf18fb/dist/gr8.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Cezar Mocan</title>
+  </head>
+
+  <body>
+    <div class="mega-container">
+      <div class="info-container">
+        <p class="mb1"><em><a href="/">Cezar Mocan</a></em></p>
+        <p class="mb0-half"><a href="/">work</a></p>
+        <p class="mb0-half"><a href="/about">about</a></p>
+        <p class="mb0-half"><a href="http://www.instagram.com/cezarmocan" target="__blank">instagram</a></p>
+        <p class="mb0-half"><a href="http://www.github.com/cezarmocan" target="__blank">github</a></p>
+        <p class="mb0-half"><a href="mailto:c@cezar.io" target="__blank">email</a></p>
+        <p class="mb0-half"><a href="https://files.persona.co/70448/2018_Nov_D.pdf" target="__blank">resume</a></p>
+
+      </div>
+      <div class="content-container">
+        <div class="blog-post-container">
+    <div class="back-to-blog">
+        <a href="/blog">&larr; Back to blog</a>
+    </div>
+
+    <h1> Sensors and Soldering </h1>
+
+    <div class="blog-post-listing-date">
+        <h3>02 Oct 2019</h3>
+    </div>
+
+    <div class="blog-post-listing-categories">
+        <h3>
+        Posted under: 
+        
+            <span class="blog-post-listing-category">Physical Computing;</span>
+        
+            <span class="blog-post-listing-category">ITP;</span>
+        
+            <span class="blog-post-listing-category">Week 4;</span>
+        
+        </h3>
+    </div>
+
+    <div class="blog-post-content">
+        <p>This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things:</p>
+
+<p>1) Improving the <a class="underlined" href="/2019/09/25/technology-observation.html">LED sequencer I built for the previous lab;<a></a></a></p>
+
+<p>and</p>
+
+<p>2) Getting outside of the breadboard and working with resin, a material I’ve wanted to experiment with for some time.</p>
+
+<p><br /></p>
+
+<p><strong>Sequencer 2.0</strong></p>
+
+<p>To recap, last week the sequencer used 3 steps—3 LEDs, each blinking when the current step is playing a note, and 3 potentiometers, used to adjust the frequency of the note played at each step. It also included a 4th potentiometer which controlled the perceived “speed” of the sequencer—how much time is spent playing the note at each step. This week’s improvements included:</p>
+
+<ul>
+  <li>
+    <p>soldering the speaker connecting wires, which were previously attached to the speaker using alligator clips;</p>
+  </li>
+  <li>
+    <p>adding a 4th step to the sequencer, in order to play slightly more complex sequences; ideally, we would have 8 or 16 steps, but real estate is limited on the breadboard;</p>
+  </li>
+  <li>
+    <p>adding another control input to the sequencer in the form of a photoresistor; this allows for controlling the overall pitch of the played sequence by covering or uncovering the sensor with one’s hand;</p>
+  </li>
+  <li>
+    <p>improving the software such that the Arduino <code class="highlighter-rouge">loop</code> cycle is not dependent on the speed of the sequencer anymore; this means that frequency of a step’s sound can now be adjusted while the step is playing;</p>
+  </li>
+  <li>
+    <p>experimenting with different sensitivity levels for the photoresistor reading (I ended up settling on dividing the output into 8 different buckets, since the sensor readings were quite noisy.)</p>
+  </li>
+</ul>
+
+<p>Here is the photoresistor in action:</p>
+
+<figure>
+  <video src="/assets/images/blog/2019-10-02-sensors-and-soldering/12.mp4" preload="" controls="" loop="" alt="Arduino based 4-step sequencer, with theremin-like hand input."></video>
+  <figcaption>
+    Arduino based 4-step sequencer, with theremin-like hand input.
+  </figcaption>
+</figure>
+
+<p>While I was initially going for the theremin <em>continous bending</em> sound quality, I realized that was going to be difficult for two main reasons: the noise in the photoresistor reading (even when averaged over time) and the <code class="highlighter-rouge">loop</code> function timing trade-offs between <code class="highlighter-rouge">tone</code> working properly and proper responsivity. So I went a different direction and started working with only discrete quantities. As mentioned before, I divided the photoresistor output into only roughly 8 different buckets. In terms of the frequencies that get played by the sequencer, they all full octaves apart and have the C pitch (the step frequencies get rounded to multiples of 65.) This produces an effect similar to a <a href="https://www.google.com/search?client=firefox-b-1-d&amp;q=quantizer" target="__blank" class="underlined">quantizer</a>.</p>
+
+<p>Here are two more videos of playing the sequencer. The noise in the photoresistor adds an improvised quality to the sound, which I find enjoyable.</p>
+
+<figure>
+  <video src="/assets/images/blog/2019-10-02-sensors-and-soldering/10.mp4" preload="" controls="" loop="" alt="Arduino sequencer improvisation #1."></video>
+  <figcaption>
+    Arduino sequencer improvisation #1.
+  </figcaption>
+</figure>
+
+<figure>
+  <video src="/assets/images/blog/2019-10-02-sensors-and-soldering/11.mp4" preload="" controls="" loop="" alt="Arduino sequencer improvisation #2."></video>
+  <figcaption>
+    Arduino sequencer improvisation #2.
+  </figcaption>
+</figure>
+
+<p><strong>LED Resin Cube</strong></p>
+
+<ul>
+  <li>fabricating the resin cube
+    <ul>
+      <li>buying resin supplies from Blick</li>
+      <li>creating the cube mold</li>
+      <li>pouring first layer of resin and adding LEDs inside (3 of them soldered together)</li>
+      <li>pouring second layer of resin</li>
+      <li>getting the cube out and sanding</li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+</div>
+      </div>
+    </div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script></body>
+
+</html>
+
+<!--
+
+  -->
