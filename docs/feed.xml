@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-10T17:18:52-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">The Mirror Room Installation: Reflection</title><link href="http://localhost:4000/2019/10/10/the-nether-installation.html" rel="alternate" type="text/html" title="The Mirror Room Installation: Reflection" /><published>2019-10-10T01:38:00-04:00</published><updated>2019-10-10T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/10/the-nether-installation</id><content type="html" xml:base="http://localhost:4000/2019/10/10/the-nether-installation.html">&lt;p&gt;The Mirror Room is an installation built in collaboration with &lt;a href=&quot;https://www.rachelqxl.space&quot; class=&quot;underlined&quot;&gt;Rachel&lt;/a&gt; and &lt;a href=&quot;https://www.shuyichang.com/&quot; class=&quot;underlined&quot;&gt;Shuyi&lt;/a&gt; in response to &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Nether&quot; class=&quot;underlined&quot;&gt;The Nether&lt;/a&gt;—a sci-fi play talking about avatars, emotional attachment and pedophillia (yes, it’s complicated…).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-10T17:45:10-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">The Mirror Room Installation: Reflection</title><link href="http://localhost:4000/2019/10/10/the-nether-installation.html" rel="alternate" type="text/html" title="The Mirror Room Installation: Reflection" /><published>2019-10-10T01:38:00-04:00</published><updated>2019-10-10T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/10/the-nether-installation</id><content type="html" xml:base="http://localhost:4000/2019/10/10/the-nether-installation.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-answer.png&quot; alt=&quot;Participant #1 view once Participant #2 has answered their question&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The Mirror Room is an installation built in collaboration with &lt;a href=&quot;https://www.rachelqxl.space&quot; class=&quot;underlined&quot;&gt;Rachel&lt;/a&gt; and &lt;a href=&quot;https://www.shuyichang.com/&quot; class=&quot;underlined&quot;&gt;Shuyi&lt;/a&gt; in response to &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Nether&quot; class=&quot;underlined&quot;&gt;The Nether&lt;/a&gt;—a sci-fi play talking about avatars, emotional attachment and pedophillia (yes, it’s complicated…).&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -10,6 +15,14 @@
 
 &lt;p&gt;The mirror idea came into the conversation early on, and over the course of the week we discussed how we could create a compelling experience using the mirrors, and tie them conceptually to avatars. I think as a team we were good at getting materials and prototyping early on (maybe not early enough though? see cube size issue below…), as well as spending time in the assigned space and trying ideas out as soon as we had them. I think we were also good at generating ideas for interactions inside the installation. What I wish we had done a better job at is staying aligned conceptually: taking a step back every now and then, and asking ourselves the high level questions (&lt;em&gt;Is X still what we want people experiencing this installation to feel?&lt;/em&gt;, &lt;em&gt;Why interaction X over interaction Y?&lt;/em&gt;, etc.) I also wish we could have put more thought into altering the space more significantly, but I’m blaming the short time for this one.&lt;/p&gt;
 
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-welcome.png&quot; alt=&quot;Welcome screen for participant #1&quot; /&gt;
+    &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/802-welcome.png&quot; alt=&quot;Welcome screen for participant #2&quot; /&gt;
+  &lt;figcaption&gt;
+    Welcome screens for both participants.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Environment&lt;/strong&gt;&lt;/p&gt;
@@ -20,17 +33,40 @@
 
 &lt;p&gt;The mirror cube’s size was 12in. x 12in. x 12in., a decision largely constrained by materials—we found plastic mirror sheets of that size (and wanted to avoid hanging glass mirrors from the ceiling because of their weight.) However, the cube had a small screen inside (smartphone size), and the person sitting inside needed to see the screen. Due to the small size of the cube, this part of the experience was uncomfortable and needs to be reworked.&lt;/p&gt;
 
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-pick-question.png&quot; alt=&quot;Participant #1 choosing a question.&quot; /&gt;
+    &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/802-question-answer.png&quot; alt=&quot;Participant #2 typing a response.&quot; /&gt;
+    &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-answer.png&quot; alt=&quot;Participant #1 receiving the response.&quot; /&gt;
+  &lt;figcaption&gt;
+    Participant #1 choosing a question, Participant #2 typing a response, and Participant #1 receiving the response.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Software&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;We used four networked devices: a smartphone inside of the cube which Participant #1 would use to ask Participant #2 questions from a list, a laptop which Participant #2 would use to receive the questions and type answers, a second laptop which we used in order to allow Participant #1 to control the smartphone using a computer mouse, and a second smartphone which we used outside of the installation in order to control the progression of events in the room (playing a voiceover of the instructions once both participants are in, showing the list of questions or ending the experience.)&lt;/p&gt;
 
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/control-interface.png&quot; alt=&quot;Control interface on my mobile phone.&quot; /&gt;
+  &lt;figcaption&gt;
+    Control interface on my mobile phone.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
 &lt;p&gt;While there were no major difficulties in developing the software, Friday’s playtest session brought a few challenges: the smartphone screen going black after a certain amount of idle time, the networked communication not working for the first pair which tried the installation, or us having to listen closely and observe the room when controlling the experience from outside, because certain triggers had not been implemented. These are all technical challenges which could have been avoided with some more testing before showing the work, we were definitely rushed. The main learning here is to plan the install better next time, such that there is time for at least one full run-through before the show starts.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;This installation made for a busy week, but I’m happy with how it turned out. It’s ultimately a prototype for the idea of having two people share a physical space, and be led into having an intimate encounter exclusively digitally. The main question I want to ask participants is whether it made them willing to share more than they would have if they had been in the same room with a (semi-)stranger without the technological barriers we imposed. If yes, why and how?&lt;/p&gt;</content><author><name></name></author><category term="Performing the Internet" /><category term="ITP" /><category term="Week 4" /><category term="Week 5" /><category term="Week 6" /><summary type="html">The Mirror Room is an installation built in collaboration with Rachel and Shuyi in response to The Nether—a sci-fi play talking about avatars, emotional attachment and pedophillia (yes, it’s complicated…).</summary></entry><entry><title type="html">Sensors and Soldering</title><link href="http://localhost:4000/2019/10/02/sensors-and-soldering.html" rel="alternate" type="text/html" title="Sensors and Soldering" /><published>2019-10-02T01:38:00-04:00</published><updated>2019-10-02T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/02/sensors-and-soldering</id><content type="html" xml:base="http://localhost:4000/2019/10/02/sensors-and-soldering.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+&lt;p&gt;This installation made for a busy week, but I’m happy with how it turned out. It’s ultimately a prototype for the idea of having two people share a physical space, and be led into having an intimate encounter exclusively digitally. The main question I want to ask participants is whether it made them willing to share more than they would have if they had been in the same room with a (semi-)stranger without the technological barriers we imposed. If yes, why and how?&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-1&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-thank-you.png&quot; alt=&quot;Thank you message displayed once the experience is over.&quot; /&gt;
+  &lt;figcaption&gt;
+    Thank you message displayed once the experience is over.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Performing the Internet" /><category term="ITP" /><category term="Week 4" /><category term="Week 5" /><category term="Week 6" /><summary type="html">The Mirror Room is an installation built in collaboration with Rachel and Shuyi in response to The Nether—a sci-fi play talking about avatars, emotional attachment and pedophillia (yes, it’s complicated…).</summary></entry><entry><title type="html">Sensors and Soldering</title><link href="http://localhost:4000/2019/10/02/sensors-and-soldering.html" rel="alternate" type="text/html" title="Sensors and Soldering" /><published>2019-10-02T01:38:00-04:00</published><updated>2019-10-02T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/02/sensors-and-soldering</id><content type="html" xml:base="http://localhost:4000/2019/10/02/sensors-and-soldering.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-10-02-sensors-and-soldering/7.jpg&quot; alt=&quot;3 LEDs inside a resin cube.&quot; /&gt;
   &lt;figcaption&gt;
     3 LEDs inside a resin cube.
