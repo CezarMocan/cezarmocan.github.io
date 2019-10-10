@@ -1,8 +1,8 @@
 ---
 layout: blogPost
-title:  "Sensors and Soldering"
-date:   2019-10-02 00:38:00 -0500
-tags: ["Physical Computing", "ITP", "Week 4"]
+title:  "The Mirror Room"
+date:   2019-10-10 00:38:00 -0500
+tags: ["Performing the Internet", "ITP", "Weeks 4", "Week 5", "Week 6"]
 published: true
 ---
 
