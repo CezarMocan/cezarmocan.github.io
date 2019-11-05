@@ -1,4 +1,311 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-30T02:03:32-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #1: Flashlight</title><link href="http://localhost:4000/2019/10/30/flashlight.html" rel="alternate" type="text/html" title="Fab #1: Flashlight" /><published>2019-10-30T01:00:00-04:00</published><updated>2019-10-30T01:00:00-04:00</updated><id>http://localhost:4000/2019/10/30/flashlight</id><content type="html" xml:base="http://localhost:4000/2019/10/30/flashlight.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-05T14:57:47-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;Completed flashlight&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The first weekly assignment for &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;Intro to Fabrication&lt;/a&gt; involves building a flashlight.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;From early on I was interested in building a user unfriendly flashlight—one which only lights up when a collection of switches is in a certain configuration. While also thinking about Ben’s story behind this assignment, I decided that the magic configuration which would turn on the flash light should be the birthday of someone close from my family—September 26th, 1966.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/0.JPG&quot; alt=&quot;Early sketch.&quot; /&gt;
+  &lt;figcaption&gt;
+    Early sketch.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I am using the binary representation of the day, month and year in order to spell out this particular date using switches, as follows: on the first row, we have 5 bits for the day (since days are between 1 and 31). On the second row, we have 4 bits for the month (between 1 and 12). On the third row, we have 7 bits for the last two digits of the year (between 0 and 99.)&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/1.JPG&quot; alt=&quot;All 6 faces of the flash light after being laser cut.&quot; /&gt;
+  &lt;figcaption&gt;
+    All 6 faces of the flash light after being laser cut.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The flashlight is a simple box, with switches on one side, and 5 LEDs on a different side. In terms of materials, I went for plywood. The fabrication process involved using the laser cutter in order to get the box faces, soldering for the electric circuit and a messy hot glue gun to bring everything together.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/2.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/3.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
+  &lt;figcaption&gt;
+    First row of switches—front and back.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/4.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/5.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
+  &lt;figcaption&gt;
+    Full three rows of switches, in the correct configuration. (11010 for the first row, 1001 for the second row, 1000010 for the third row.)
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/6.JPG&quot; alt=&quot;LEDs back&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/7.JPG&quot; alt=&quot;LEDs front&quot; /&gt;
+  &lt;figcaption&gt;
+    The 5 LEDs which light up under the correct switch configuration, front and back.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/8.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;video class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/9.MOV&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Flash light being operated.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+  Flash light being operated.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/12.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/13.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">The first weekly assignment for Intro to Fabrication involves building a flashlight.</summary></entry><entry><title type="html">Physical Computing: Final Project Ideas</title><link href="http://localhost:4000/2019/11/05/pc-final-proposal.html" rel="alternate" type="text/html" title="Physical Computing: Final Project Ideas" /><published>2019-11-05T00:00:00-05:00</published><updated>2019-11-05T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/05/pc-final-proposal</id><content type="html" xml:base="http://localhost:4000/2019/11/05/pc-final-proposal.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;Completed flashlight&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The first weekly assignment for &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;Intro to Fabrication&lt;/a&gt; involves building a flashlight.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;From early on I was interested in building a user unfriendly flashlight—one which only lights up when a collection of switches is in a certain configuration. While also thinking about Ben’s story behind this assignment, I decided that the magic configuration which would turn on the flash light should be the birthday of someone close from my family—September 26th, 1966.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/0.JPG&quot; alt=&quot;Early sketch.&quot; /&gt;
+  &lt;figcaption&gt;
+    Early sketch.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I am using the binary representation of the day, month and year in order to spell out this particular date using switches, as follows: on the first row, we have 5 bits for the day (since days are between 1 and 31). On the second row, we have 4 bits for the month (between 1 and 12). On the third row, we have 7 bits for the last two digits of the year (between 0 and 99.)&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/1.JPG&quot; alt=&quot;All 6 faces of the flash light after being laser cut.&quot; /&gt;
+  &lt;figcaption&gt;
+    All 6 faces of the flash light after being laser cut.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The flashlight is a simple box, with switches on one side, and 5 LEDs on a different side. In terms of materials, I went for plywood. The fabrication process involved using the laser cutter in order to get the box faces, soldering for the electric circuit and a messy hot glue gun to bring everything together.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/2.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/3.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
+  &lt;figcaption&gt;
+    First row of switches—front and back.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/4.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/5.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
+  &lt;figcaption&gt;
+    Full three rows of switches, in the correct configuration. (11010 for the first row, 1001 for the second row, 1000010 for the third row.)
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/6.JPG&quot; alt=&quot;LEDs back&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/7.JPG&quot; alt=&quot;LEDs front&quot; /&gt;
+  &lt;figcaption&gt;
+    The 5 LEDs which light up under the correct switch configuration, front and back.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/8.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;video class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/9.MOV&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Flash light being operated.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+  Flash light being operated.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/12.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/13.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">The first weekly assignment for Intro to Fabrication involves building a flashlight.</summary></entry><entry><title type="html">Physical Computing: Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;Completed flashlight&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The first weekly assignment for &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;Intro to Fabrication&lt;/a&gt; involves building a flashlight.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;From early on I was interested in building a user unfriendly flashlight—one which only lights up when a collection of switches is in a certain configuration. While also thinking about Ben’s story behind this assignment, I decided that the magic configuration which would turn on the flash light should be the birthday of someone close from my family—September 26th, 1966.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/0.JPG&quot; alt=&quot;Early sketch.&quot; /&gt;
+  &lt;figcaption&gt;
+    Early sketch.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I am using the binary representation of the day, month and year in order to spell out this particular date using switches, as follows: on the first row, we have 5 bits for the day (since days are between 1 and 31). On the second row, we have 4 bits for the month (between 1 and 12). On the third row, we have 7 bits for the last two digits of the year (between 0 and 99.)&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/1.JPG&quot; alt=&quot;All 6 faces of the flash light after being laser cut.&quot; /&gt;
+  &lt;figcaption&gt;
+    All 6 faces of the flash light after being laser cut.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The flashlight is a simple box, with switches on one side, and 5 LEDs on a different side. In terms of materials, I went for plywood. The fabrication process involved using the laser cutter in order to get the box faces, soldering for the electric circuit and a messy hot glue gun to bring everything together.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/2.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/3.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
+  &lt;figcaption&gt;
+    First row of switches—front and back.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/4.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/5.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
+  &lt;figcaption&gt;
+    Full three rows of switches, in the correct configuration. (11010 for the first row, 1001 for the second row, 1000010 for the third row.)
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/6.JPG&quot; alt=&quot;LEDs back&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/7.JPG&quot; alt=&quot;LEDs front&quot; /&gt;
+  &lt;figcaption&gt;
+    The 5 LEDs which light up under the correct switch configuration, front and back.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/8.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;video class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/9.MOV&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Flash light being operated.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+  Flash light being operated.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/12.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/13.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">The first weekly assignment for Intro to Fabrication involves building a flashlight.</summary></entry><entry><title type="html">Physical Computing Midterm: Ghost Box</title><link href="http://localhost:4000/2019/11/01/ghost-box.html" rel="alternate" type="text/html" title="Physical Computing Midterm: Ghost Box" /><published>2019-11-01T01:00:00-04:00</published><updated>2019-11-01T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/01/ghost-box</id><content type="html" xml:base="http://localhost:4000/2019/11/01/ghost-box.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-01-ghost-box/2.png&quot; alt=&quot;Ghost Box&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;For the physical computing midterm project I worked in collaboration with Keunjung Bae. The assignment was Halloween themed, so we decided to build a device that allows one to search for the spirits stuck between worlds. Inspired by technology used by the ghost hunting communities (namely &lt;a href=&quot;https://rationalwiki.org/wiki/Ghost_box&quot; target=&quot;__blanl&quot; class=&quot;underlined&quot;&gt;ghost boxes&lt;/a&gt;,) we came up with our own interface for finding ghosts.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-01-ghost-box/3.png&quot; alt=&quot;Ghost box side view, with headphones attached.&quot; /&gt;
+  &lt;figcaption&gt;
+    Ghost box side view, with headphones attached.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We chose a dark, mysterious look for the box, so we chose glossy acrylic as the main fabrication material. Using the illusion technique called &lt;a href=&quot;https://en.wikipedia.org/wiki/Pepper%27s_ghost&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Pepper’s Ghost&lt;/a&gt; (so many ghosts!,) we display a visualization of the spirit search frequency spectrum as a hologram on the box screen.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2019-11-01-ghost-box/first.mp4&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Turning on the ghost box.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Turning on the ghost box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Using a knob, the user explores the frequency spectrum and, eventually, reaches a few spirits.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2019-11-01-ghost-box/mid.mp4&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Exploring the frequency spectrum.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Exploring the frequency spectrum.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sonically, the white noise sounds coming out of the box are produced by an &lt;a href=&quot;https://www.sparkfun.com/datasheets/Wireless/General/TEA5767.pdf&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;FM Radio Receiver&lt;/a&gt; which jumps between different frequencies a few times a second.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2019-11-01-ghost-box/last.mp4&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Turning off the ghost box.&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    Turning off the ghost box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-01-ghost-box/1.png&quot; alt=&quot;Ghost box frontal view.&quot; /&gt;
+  &lt;figcaption&gt;
+    Ghost box frontal view.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">For the physical computing midterm project I worked in collaboration with Keunjung Bae. The assignment was Halloween themed, so we decided to build a device that allows one to search for the spirits stuck between worlds. Inspired by technology used by the ghost hunting communities (namely ghost boxes,) we came up with our own interface for finding ghosts.</summary></entry><entry><title type="html">Fab #1: Flashlight</title><link href="http://localhost:4000/2019/10/30/flashlight.html" rel="alternate" type="text/html" title="Fab #1: Flashlight" /><published>2019-10-30T01:00:00-04:00</published><updated>2019-10-30T01:00:00-04:00</updated><id>http://localhost:4000/2019/10/30/flashlight</id><content type="html" xml:base="http://localhost:4000/2019/10/30/flashlight.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;Completed flashlight&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -494,72 +801,4 @@
   &lt;figcaption&gt;
     Once the moving piece falls into the pot, the LED lights up.
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 2" /><summary type="html">For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.</summary></entry><entry><title type="html">Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY</title><link href="http://localhost:4000/2019/09/16/dollar-van.html" rel="alternate" type="text/html" title="Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY" /><published>2019-09-16T13:38:00-04:00</published><updated>2019-09-16T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/16/dollar-van</id><content type="html" xml:base="http://localhost:4000/2019/09/16/dollar-van.html">&lt;p&gt;Dollar Van is an audio sojourn that details the history of the MTA at 370 Jay Street in Brooklyn and the Interactive Telecommunications Program at the Tisch School of Arts at NYU. It provides a thematic insight into the shared values of both organizations from founding until the present day. This soundwalk was created by Cezar Mocan and Russell Ladson - graduate students at the Tisch School of the Arts.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sound Walk Instructions:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;0:00—Begin on the 4th floor at 370 Jay Street in front of the Wooden Mirror;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;0:13—Proceed to the right and then to the left through the glass doors, passing the ping pong table. Walk past the Equipment Room and the Shop, towards the kitchen. Take a right in the kitchen, and another right on the hallway. Then, walk down the hallway, towards the elevator bank;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;2:10—Proceed down Stair D to your left down to the 1st floor;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;3:05—Stop briefly at the “Transportation Building” plaque on the first floor;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;3:20—Proceed to exit the building. Once outside of the building, cross the street towards Myrtle Ave. and stop at the MTA entrance. When you get there, turn around and look at 370 Jay. The soundwalk ends here.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/682198112&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><category term="CommLab: Video &amp; Sound" /><category term="ITP" /><category term="Week 2" /><summary type="html">Dollar Van is an audio sojourn that details the history of the MTA at 370 Jay Street in Brooklyn and the Interactive Telecommunications Program at the Tisch School of Arts at NYU. It provides a thematic insight into the shared values of both organizations from founding until the present day. This soundwalk was created by Cezar Mocan and Russell Ladson - graduate students at the Tisch School of the Arts.</summary></entry><entry><title type="html">Passing Stranger</title><link href="http://localhost:4000/2019/09/08/passing-stranger.html" rel="alternate" type="text/html" title="Passing Stranger" /><published>2019-09-08T13:38:00-04:00</published><updated>2019-09-08T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/08/passing-stranger</id><content type="html" xml:base="http://localhost:4000/2019/09/08/passing-stranger.html">&lt;p&gt;&lt;a href=&quot;http://eastvillagepoetrywalk.org/&quot; class=&quot;underlined&quot;&gt;&lt;em&gt;Passing Stranger&lt;/em&gt;&lt;/a&gt; is an hour and a half long audio tour of the East Village, framed through the life stories and work of artists who have emerged and lived in the neighborhood during the second half of the 20th century. Curated by the Danish poet &lt;em&gt;Pejk Malinovski&lt;/em&gt; and narrated by filmmaker &lt;em&gt;Jim Jarmusch&lt;/em&gt;, the sound walk truly acts as a time portal to a less gentrified and more politically radical East Village, home to characters such as Allen Ginsberg, Patti Smith or The Velvet Underground. Having previously spent some time in the neighborhood, but never enough to know it intimately, the tour was a perfect opportunity to strenghten my friendship with the village’s streets and landmarks.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-08-passing-stranger/church.jpg&quot; alt=&quot;Image of St. Mark's Church.&quot; /&gt;
-  &lt;figcaption&gt;
-    St. Mark's Church, one of the oldest churches in New York City.&lt;br /&gt;
-    Image description: Frontal image of a church. The facade is built out of brick-like grey stone and is sustained by white round columns. In this image, the tower is partially hidden by trees in the near plane.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The walk starts at the cross of E10th Street and 2nd Ave, in front of the St. Mark’s Church-In-The-Bowery—one of the oldest religious sites in the city, also a culture hub of the neighborhood since the beginning of the 1900s. Poets would host readings here and politically progressive groups would gather in this space, and I find it beautiful that one of the oldest places in the city, especially one associated with religious practice, opened its doors to the local creatives, misfits, punks and to the opressed.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-08-passing-stranger/allen_ginsberg.jpg&quot; alt=&quot;Image of Allen Ginsberg's old apartment building.&quot; /&gt;
-  &lt;figcaption&gt;
-    Allen Ginsberg used to live in this building, at 437 East 12th Street.&lt;br /&gt;
-    Image description: Photograph of a 5-story red-brick building, with 5 windows on each floor and visible fire escape stairs.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;We proceed north on 2nd Ave then head east on East 12th Street, while learning about the opera influences in Walt Whitman’s poetry, passing Allen Ginsberg’s old apartment at 437 East 12th, and becoming familiar with Jon Giorno’s &lt;em&gt;Dial-a-poem&lt;/em&gt; project. I want to stop here for a second, as this is an incredible work of early new media art, which uses a few telephones and a few tape players as a means to making poetry accessible to a wide audience, while creating a radical space and sharing it with the world. MoMA and The New Museum have included &lt;em&gt;Dial-a-poem&lt;/em&gt; in a few shows recently, meaning that there is at least one active phone number that is running the project. Try it yourself: 641-793-8122.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;https://miro.medium.com/max/640/0*0fBw9d2K29RJlP3_.jpg&quot; alt=&quot;John Giorno with the Dial-a-Poem telephone set up in 1969&quot; /&gt;
-  &lt;figcaption&gt;
-    John Giorno with the Dial-a-Poem telephone set up in 1969. &lt;a class=&quot;underlined&quot; href=&quot;https://medium.com/@JimBarrett/dial-a-poem-poets-radicalizing-space-with-the-telephone-bfb50cd8f36c&quot; target=&quot;__blank&quot;&gt;Photo credits.&lt;/a&gt;
-    &lt;br /&gt;
-
-    Image description: A black and white image of a man operating an analog tape player machine. In the background we can see 6 rotary telephones placed on cube-shaped stands.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;In terms of structure, the audio tour is split up into 30 different locations, each accompanied by a short episode. Every episode is a montage of narration which gives historical and political context, old recordings of poetry readings, interviews and music. There isn’t much in terms of sound effects or a rich soundtrack to accompany the voices speaking to us—that role is left open for Lower East Side’s streets live soundscape.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-08-passing-stranger/frank_ohara.jpg&quot; alt=&quot;Plaque at Frank O'Hara's old apartment at 441 East 9th Street&quot; /&gt;
-  &lt;figcaption&gt;
-    Plaque at Frank O'Hara's old apartment at 441 East 9th Street.&lt;br /&gt;
-    Image description: A bronze plaque on the building where Frank O'Hara used to live. The text reads: &lt;em&gt;Frank O'Hara (1926—1966). The influential American poet Frank O'Hara lived at 441 East 9th Street from 1959 to 1963. O'Hara was a leading member of the New York School of poetry as well as an accomplished art critic and curator at the Museum of Modern Art. Downtown people and places figure prominently in his buoyant books, especially his circle of noted writers and painters who have been called &quot;the last avant garde&quot;. Placed by the Greenwich Village Society for Historic Preservation with the generous support of the Two Boots Foundation.&lt;/em&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;To conclude, in addition to the beautifully curated content, it felt refreshing to participate in this “mixed reality” experience in a low-tech way—with simple earbuds, which allowed for the street sounds to merge with Jim Jarmusch’s narration, without a computerized GPS voice in my ears suggesting when to turn left and right, or without an augmented reality layer to bring the space to life, digitally. The audio was truly engaging, and the necessity of being proactive in finding my way to the different locations contributed to the sense that I am discovering a new place and a new time.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-08-passing-stranger/bowery_poetry_club.jpg&quot; alt=&quot;Bowery Poetry Club entrance&quot; /&gt;
-  &lt;figcaption&gt;
-    The tour ends at the Bowery Poetry Club.&lt;br /&gt;
-    Image description: Entrance of the Bowery Poetry Club. The center of the image contains a navy blue door with the number 308 written on it. Underneath the street number, we can see a poster which reads &quot;Bowery Poetry&quot;. In front of the door there are poles belonging to construction scaffolding.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="CommLab: Video &amp; Sound" /><category term="ITP" /><category term="Week 1" /><summary type="html">Passing Stranger is an hour and a half long audio tour of the East Village, framed through the life stories and work of artists who have emerged and lived in the neighborhood during the second half of the 20th century. Curated by the Danish poet Pejk Malinovski and narrated by filmmaker Jim Jarmusch, the sound walk truly acts as a time portal to a less gentrified and more politically radical East Village, home to characters such as Allen Ginsberg, Patti Smith or The Velvet Underground. Having previously spent some time in the neighborhood, but never enough to know it intimately, the tour was a perfect opportunity to strenghten my friendship with the village’s streets and landmarks.</summary></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 2" /><summary type="html">For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.</summary></entry></feed>
