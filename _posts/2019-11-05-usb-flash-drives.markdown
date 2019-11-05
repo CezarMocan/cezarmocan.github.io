@@ -3,7 +3,7 @@ layout: blogPost
 title:  "Fab #2: 6 USB Flash Drives"
 date:   2019-11-05 00:01:00 -0500
 tags: ["Physical Computing", "ITP"]
-published: true
+published: false
 ---
 <figure style="margin: 0;">
   <img class="" style="border: none;" src="/assets/images/blog/2019-10-30-flashlight/11.JPG" alt="Completed flashlight"/>
