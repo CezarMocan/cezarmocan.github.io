@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-06T00:36:33-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-06T00:41:03-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/e.JPG&quot; alt=&quot;The 6 USB flash drives&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -171,25 +171,25 @@
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/c.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/c.jpg&quot; alt=&quot;Wood #1&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/d.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/d.jpg&quot; alt=&quot;Wood #1&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/e.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/e.jpg&quot; alt=&quot;Wood #1&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/f.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/f.jpg&quot; alt=&quot;Wood #1&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">The second fabrication assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on absurd and user unfriendly interfaces and made an awkwardly big, cube-shaped, wooden USB flash drive.</summary></entry><entry><title type="html">Physical Computing: Preliminary Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Preliminary Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;p&gt;1—I have been fascinated with clocks and their sound since childhood, and have been thinking of building my own for a while. This direction involves creating a sound installation out of multiple clocks (between 9 and 20 of them, arranged in a grid.) I am interested in creating polyrhythms out of their mechanical movement, while also giving the viewer the illusion of control over how fast / slow time is passing in different clocks. All clocks would tick at the exact minute, but for the 60 seconds in between minutes the rhythm of each clock is adjustable.&lt;/p&gt;

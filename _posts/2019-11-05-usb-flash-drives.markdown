@@ -178,25 +178,25 @@ The glamor shots below.
 </figure>
 
 <figure>
-  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/c.JPG" alt="Wood #1"/>
+  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/c.jpg" alt="Wood #1"/>
   <figcaption>
   </figcaption>
 </figure>
 
 <figure>
-  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/d.JPG" alt="Wood #1"/>
+  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/d.jpg" alt="Wood #1"/>
   <figcaption>
   </figcaption>
 </figure>
 
 <figure>
-  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/e.JPG" alt="Wood #1"/>
+  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/e.jpg" alt="Wood #1"/>
   <figcaption>
   </figcaption>
 </figure>
 
 <figure>
-  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/f.JPG" alt="Wood #1"/>
+  <img class="" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/f.jpg" alt="Wood #1"/>
   <figcaption>
   </figcaption>
 </figure>
