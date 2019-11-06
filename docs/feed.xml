@@ -1,17 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-05T23:34:50-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-05T23:47:29-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/a.JPG&quot; alt=&quot;One of the 6 USB flash drives&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;The second &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd and user unfriendly interfaces&lt;/a&gt; and made an awkwardly big, cube-shaped, wooden USB flash drive.&lt;/p&gt;
 
-&lt;p&gt;It all started with a trip to Home Depot for purchasing the wood—I ended up going with oak, purely based on feel. I was planning on my cubes having a side length of roughly 3 inches, so I got a 6ft long, 3in wide, 0.75in thick beam.&lt;/p&gt;
+&lt;p&gt;It all started with a trip to Home Depot for purchasing the wood—I ended up going with oak, purely based on feel. I was planning on my cubes having a side length of roughly 3 inches, so I got a 6ft long, 3in wide, 0.75in thick beam, meaning that each cube would be produced by glueing together 3 squares 0.75in deep each.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/2.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
     &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/3.JPG&quot; alt=&quot;Wood #2&quot; /&gt;
   &lt;figcaption&gt;
     The wood beam on the left, and preparing to cut it on the band saw on the right. The band saw was not on when I took this photo :)
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/4.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/5.JPG&quot; alt=&quot;Wood #2&quot; /&gt;
+  &lt;figcaption&gt;
+    The squares, fresh off the band saw.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Before glueing the cubes together, I planned the way the USB port is going to be exposed. I went for circular holes in the centers of one face of each cube, deep enough to fit a USB memory stick, and cover the hole using a laser cut circular piece, with a rectangular center through which the USB port would come out.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/1.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;figcaption&gt;
+    I cut off the USB ends of a few cables from the junk shelf, in order to prototype the wooden &quot;enclosure&quot; for the port.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/6.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/7.JPG&quot; alt=&quot;Wood #2&quot; /&gt;
+  &lt;figcaption&gt;
+    Prototyping a shallow circular hole on the drill press, and calculating the center for each cube's top part.
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 

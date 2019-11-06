@@ -12,7 +12,7 @@ published: true
 </figure>
 The second <a class="underlined" target="__blank" href="https://itp.nyu.edu/fab/">fabrication</a> assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on <a href="/2019/10/30/flashlight.html" class="underlined">absurd and user unfriendly interfaces</a> and made an awkwardly big, cube-shaped, wooden USB flash drive.
 
-It all started with a trip to Home Depot for purchasing the wood—I ended up going with oak, purely based on feel. I was planning on my cubes having a side length of roughly 3 inches, so I got a 6ft long, 3in wide, 0.75in thick beam.
+It all started with a trip to Home Depot for purchasing the wood—I ended up going with oak, purely based on feel. I was planning on my cubes having a side length of roughly 3 inches, so I got a 6ft long, 3in wide, 0.75in thick beam, meaning that each cube would be produced by glueing together 3 squares 0.75in deep each.
 
 <figure>
   <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/2.JPG" alt="Wood #1"/>
@@ -21,6 +21,32 @@ It all started with a trip to Home Depot for purchasing the wood—I ended up go
     The wood beam on the left, and preparing to cut it on the band saw on the right. The band saw was not on when I took this photo :)
   </figcaption>
 </figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/4.JPG" alt="Wood #1"/>
+    <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/5.JPG" alt="Wood #2"/>
+  <figcaption>
+    The squares, fresh off the band saw.
+  </figcaption>
+</figure>
+
+Before glueing the cubes together, I planned the way the USB port is going to be exposed. I went for circular holes in the centers of one face of each cube, deep enough to fit a USB memory stick, and cover the hole using a laser cut circular piece, with a rectangular center through which the USB port would come out.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/1.JPG" alt="Wood #1"/>
+  <figcaption>
+    I cut off the USB ends of a few cables from the junk shelf, in order to prototype the wooden "enclosure" for the port.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/6.JPG" alt="Wood #1"/>
+    <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/7.JPG" alt="Wood #2"/>
+  <figcaption>
+    Prototyping a shallow circular hole on the drill press, and calculating the center for each cube's top part.
+  </figcaption>
+</figure>
+
 
 
 From early on I was interested in building a user unfriendly flashlight—one which only lights up when a collection of switches is in a certain configuration. While also thinking about Ben's story behind this assignment, I decided that the magic configuration which would turn on the flash light should be the birthday of someone close from my family—September 26th, 1966.
