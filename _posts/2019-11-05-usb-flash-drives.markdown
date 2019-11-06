@@ -3,15 +3,25 @@ layout: blogPost
 title:  "Fab #2: 6 USB Flash Drives"
 date:   2019-11-05 00:01:00 -0500
 tags: ["Physical Computing", "ITP"]
-published: false
+published: true
 ---
 <figure style="margin: 0;">
-  <img class="" style="border: none;" src="/assets/images/blog/2019-10-30-flashlight/11.JPG" alt="Completed flashlight"/>
+  <img class="img-row-2" style="border: none;" src="/assets/images/blog/2019-11-05-usb-flash-drives/a.JPG" alt="One of the 6 USB flash drives"/>
   <figcaption>
   </figcaption>
 </figure>
-The first weekly assignment for <a class="underlined" target="__blank" href="https://itp.nyu.edu/fab/">Intro to Fabrication</a> involves building a flashlight.
-<br/>
+The second <a class="underlined" target="__blank" href="https://itp.nyu.edu/fab/">fabrication</a> assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on <a href="/2019/10/30/flashlight.html" class="underlined">absurd and user unfriendly interfaces</a> and made an awkwardly big, cube-shaped, wooden USB flash drive.
+
+It all started with a trip to Home Depot for purchasing the wood—I ended up going with oak, purely based on feel. I was planning on my cubes having a side length of roughly 3 inches, so I got a 6ft long, 3in wide, 0.75in thick beam.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/2.JPG" alt="Wood #1"/>
+    <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/3.JPG" alt="Wood #2"/>
+  <figcaption>
+    The wood beam on the left, and preparing to cut it on the band saw on the right. The band saw was not on when I took this photo :)
+  </figcaption>
+</figure>
+
 
 From early on I was interested in building a user unfriendly flashlight—one which only lights up when a collection of switches is in a certain configuration. While also thinking about Ben's story behind this assignment, I decided that the magic configuration which would turn on the flash light should be the birthday of someone close from my family—September 26th, 1966.
 
