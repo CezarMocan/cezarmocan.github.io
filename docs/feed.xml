@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-05T23:47:29-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-05T23:58:06-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/a.JPG&quot; alt=&quot;One of the 6 USB flash drives&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -37,6 +37,44 @@
     &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/7.JPG&quot; alt=&quot;Wood #2&quot; /&gt;
   &lt;figcaption&gt;
     Prototyping a shallow circular hole on the drill press, and calculating the center for each cube's top part.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/8.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+    &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/9.JPG&quot; alt=&quot;Wood #2&quot; /&gt;
+    &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/10.JPG&quot; alt=&quot;Wood #2&quot; /&gt;
+  &lt;figcaption&gt;
+    In the left image you can see each cube's top face having a circular hole 1/8in deep. Middle and right side are the laser cut pieces which would cover the USB port, made out of 1/8in thick plywood.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/11.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;figcaption&gt;
+    The laser cut pieces fit!
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/12.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/13.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;figcaption&gt;
+    Creating room for the USB drive as well, underneath the cover.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/15.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;figcaption&gt;
+    The prototype scraped USB ends coming out through the laser cut openings. It's starting to come together.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/16.JPG&quot; alt=&quot;Wood #1&quot; /&gt;
+  &lt;figcaption&gt;
+    However, I realized that for some of the USBs, the part sticking out was too short to plug into a computer. So I used a Dremel to scoop out wood on the back of the circles and bring the USB jack out as much as possible.
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 

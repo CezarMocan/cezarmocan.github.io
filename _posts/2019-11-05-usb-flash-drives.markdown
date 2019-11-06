@@ -47,6 +47,43 @@ Before glueing the cubes together, I planned the way the USB port is going to be
   </figcaption>
 </figure>
 
+<figure>
+    <img class="img-row-3" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/8.JPG" alt="Wood #1"/>
+    <img class="img-row-3" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/9.JPG" alt="Wood #2"/>
+    <img class="img-row-3" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/10.JPG" alt="Wood #2"/>
+  <figcaption>
+    In the left image you can see each cube's top face having a circular hole 1/8in deep. Middle and right side are the laser cut pieces which would cover the USB port, made out of 1/8in thick plywood.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/11.JPG" alt="Wood #1"/>
+  <figcaption>
+    The laser cut pieces fit!
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/12.JPG" alt="Wood #1"/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/13.JPG" alt="Wood #1"/>
+  <figcaption>
+    Creating room for the USB drive as well, underneath the cover.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/15.JPG" alt="Wood #1"/>
+  <figcaption>
+    The prototype scraped USB ends coming out through the laser cut openings. It's starting to come together.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-05-usb-flash-drives/16.JPG" alt="Wood #1"/>
+  <figcaption>
+    However, I realized that for some of the USBs, the part sticking out was too short to plug into a computer. So I used a Dremel to scoop out wood on the back of the circles and bring the USB jack out as much as possible.
+  </figcaption>
+</figure>
 
 
 From early on I was interested in building a user unfriendly flashlight—one which only lights up when a collection of switches is in a certain configuration. While also thinking about Ben's story behind this assignment, I decided that the magic configuration which would turn on the flash light should be the birthday of someone close from my family—September 26th, 1966.
