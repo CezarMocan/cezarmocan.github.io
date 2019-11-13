@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-06T00:44:15-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-13T01:51:28-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/e.jpg&quot; alt=&quot;The 6 USB flash drives&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -192,7 +192,64 @@
   &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/f.jpg&quot; alt=&quot;Wood #1&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">The second fabrication assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on absurd and user unfriendly interfaces and made an awkwardly big, cube-shaped, wooden USB flash drive.</summary></entry><entry><title type="html">Physical Computing: Preliminary Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Preliminary Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;p&gt;1—I have been fascinated with clocks and their sound since childhood, and have been thinking of building my own for a while. This direction involves creating a sound installation out of multiple clocks (between 9 and 20 of them, arranged in a grid.) I am interested in creating polyrhythms out of their mechanical movement, while also giving the viewer the illusion of control over how fast / slow time is passing in different clocks. All clocks would tick at the exact minute, but for the 60 seconds in between minutes the rhythm of each clock is adjustable.&lt;/p&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The second fabrication assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on absurd and user unfriendly interfaces and made an awkwardly big, cube-shaped, wooden USB flash drive.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;The completed pencil holder&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The third &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on measuring tools and using the laser cutter. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user unfriendly&lt;/a&gt; objects and made a pencil holder that holds exactly one pencil.&lt;/p&gt;
+
+&lt;p&gt;Part of the reason why I chose to build this project is the fact that I only own one pen(cil) at a time, since it makes me accountable to not losing it. The current one happens to be a &lt;a href=&quot;https://www.jetpens.com/Stabilo-Point-88-Fineliner-Marker-Pen-0.4-mm-Black/pd/7324?gclid=CjwKCAiAzanuBRAZEiwA5yf4ulMyb38VydmBINMm_CowvCKrpts-Z9aYvBMjs8Fpr5MAssoTm0o4PxoCr44QAvD_BwE&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Stabilo Point 88&lt;/a&gt;. I measured it and decided that a reasonable height for the holder would be 5in. Having worked with the laser cutter and acrylic before, I decided to be economical with my materials, and used a pre-owned 1/8in thick sheet of plywood. Going further down the economy rabbit hole, I came up with a design that would waste very little material: concentric circles, stacked on top of each other.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/1.png&quot; alt=&quot;Concentric circles vector file sent to the laser cutter&quot; /&gt;
+  &lt;figcaption&gt;
+    Concentric circles vector file sent to the laser cutter.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The figure shows 40 circles (the amount needed in order to achieve a height of 5in when stacking them on top of each other,) as well as a spiral-looking pattern—every layer got marked with the point where it should be aligned with the previous and next layers, in order to create a 3-dimensional spiral upon stacking.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/2.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/3.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;figcaption&gt;
+    Post laser cutting, and taking the shape out of the plywood frame.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/4.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/5.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;figcaption&gt;
+    Glueing the layers together and testing the function of the object.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/6.JPG&quot; alt=&quot;Object completed, with my pen held.&quot; /&gt;
+  &lt;figcaption&gt;
+    Object completed, with my pen held.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/8.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/10.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/11.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/7.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The third fabrication assignment focuses on measuring tools and using the laser cutter. I continued my series of absurd and user unfriendly objects and made a pencil holder that holds exactly one pencil.</summary></entry><entry><title type="html">Physical Computing: Preliminary Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Preliminary Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;p&gt;1—I have been fascinated with clocks and their sound since childhood, and have been thinking of building my own for a while. This direction involves creating a sound installation out of multiple clocks (between 9 and 20 of them, arranged in a grid.) I am interested in creating polyrhythms out of their mechanical movement, while also giving the viewer the illusion of control over how fast / slow time is passing in different clocks. All clocks would tick at the exact minute, but for the 60 seconds in between minutes the rhythm of each clock is adjustable.&lt;/p&gt;
 
 &lt;p&gt;2—I am a huge fan of &lt;a href=&quot;https://www.zimoun.net/&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Zimoun’s&lt;/a&gt; sound sculpture work. This direction involves creating a urban landscape inspired percussive instrument using a series of motors and the materials used in city environments: concrete, rubber, steel.&lt;/p&gt;
 
@@ -745,22 +802,4 @@
   &lt;figcaption&gt;
     Once the moving piece falls into the pot, the LED lights up.
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 2" /><summary type="html">For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.</summary></entry><entry><title type="html">Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY</title><link href="http://localhost:4000/2019/09/16/dollar-van.html" rel="alternate" type="text/html" title="Dollar Van: A Sound Walk Through 370 Jay Street, Brooklyn NY" /><published>2019-09-16T13:38:00-04:00</published><updated>2019-09-16T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/16/dollar-van</id><content type="html" xml:base="http://localhost:4000/2019/09/16/dollar-van.html">&lt;p&gt;Dollar Van is an audio sojourn that details the history of the MTA at 370 Jay Street in Brooklyn and the Interactive Telecommunications Program at the Tisch School of Arts at NYU. It provides a thematic insight into the shared values of both organizations from founding until the present day. This soundwalk was created by Cezar Mocan and Russell Ladson - graduate students at the Tisch School of the Arts.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sound Walk Instructions:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;0:00—Begin on the 4th floor at 370 Jay Street in front of the Wooden Mirror;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;0:13—Proceed to the right and then to the left through the glass doors, passing the ping pong table. Walk past the Equipment Room and the Shop, towards the kitchen. Take a right in the kitchen, and another right on the hallway. Then, walk down the hallway, towards the elevator bank;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;2:10—Proceed down Stair D to your left down to the 1st floor;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;3:05—Stop briefly at the “Transportation Building” plaque on the first floor;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;3:20—Proceed to exit the building. Once outside of the building, cross the street towards Myrtle Ave. and stop at the MTA entrance. When you get there, turn around and look at 370 Jay. The soundwalk ends here.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/682198112&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><category term="CommLab: Video &amp; Sound" /><category term="ITP" /><category term="Week 2" /><summary type="html">Dollar Van is an audio sojourn that details the history of the MTA at 370 Jay Street in Brooklyn and the Interactive Telecommunications Program at the Tisch School of Arts at NYU. It provides a thematic insight into the shared values of both organizations from founding until the present day. This soundwalk was created by Cezar Mocan and Russell Ladson - graduate students at the Tisch School of the Arts.</summary></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 2" /><summary type="html">For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.</summary></entry></feed>

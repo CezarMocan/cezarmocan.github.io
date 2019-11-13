@@ -2,7 +2,7 @@
 layout: blogPost
 title:  "Fab #2: 6 USB Flash Drives"
 date:   2019-11-05 00:01:00 -0500
-tags: ["Physical Computing", "ITP"]
+tags: ["Fabrication", "ITP"]
 published: true
 ---
 <figure style="margin: 0;">
