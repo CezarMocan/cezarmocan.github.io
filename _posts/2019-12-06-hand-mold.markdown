@@ -1,0 +1,62 @@
+---
+layout: blogPost
+title:  "Fab #5: A mold of my hand"
+date:   2019-11-26 00:01:00 -0500
+tags: ["Fabrication", "ITP"]
+published: true
+---
+The fifth <a class="underlined" target="__blank" href="https://itp.nyu.edu/fab/">fabrication</a> assignment focuses on materials and fasteners. This time, I diverged from my series of <a href="/2019/10/30/flashlight.html" class="underlined">absurd</a> and <a href="/2019/11/05/usb-flash-drives.html">user</a> <a href="/2019/11/26/music-box.html">unfriendly</a> objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.
+
+After some online research around molding agents, I settled on an alginate powder called MoldGel and went shopping to Blick.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/0.png" alt=""/>
+  <figcaption>
+    MoldGel from Blick.
+  </figcaption>
+</figure>
+
+This is a powder that needs to be mixed with water in a ratio of 3:1 by weight. I first tested the mixture and the quality of the paste in a small quantity, and then moved on to the full bucket size.
+
+<figure>
+  <img class="img-row-3" style="" src="/assets/images/blog/2019-12-06-hand-mold/1.JPG" alt=""/>
+  <img class="img-row-3" style="" src="/assets/images/blog/2019-12-06-hand-mold/3.JPG" alt=""/>
+  <img class="img-row-3" style="" src="/assets/images/blog/2019-12-06-hand-mold/4.JPG" alt=""/>
+  <figcaption>
+    MoldGel after mixing with water.
+  </figcaption>
+</figure>
+
+Mixing took a lot of time, since I did it manually. if I were to do it again, I would certainly use a mixer of sorts. Its quality was also pretty bad—it never got to the smoothness level it should have been at, possibly due to the lack of proper mixing, or due to the salts/minerals in the water I used.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/5.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/6.JPG" alt=""/>
+  <figcaption>
+    Keeping my hand in the mix for 5 minutes, while it solidified.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/7.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/8.JPG" alt=""/>
+  <figcaption>
+    Hand shape on the left, epoxy resin and watercolor paint on the right.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/9.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/10.JPG" alt=""/>
+  <figcaption>
+    3 buckets of epoxy resin mixed with 3 different kinds of paint—red, green and blue on the left. Resin poured into the mold on the right.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/13.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-12-06-hand-mold/14.JPG" alt=""/>
+  <figcaption>
+    The hand after 24 hours of resin curing. Truly low-res, this is an experiment I need to repeat.
+  </figcaption>
+</figure>

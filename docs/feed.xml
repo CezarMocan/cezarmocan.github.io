@@ -1,4 +1,211 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-13T01:51:28-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-11T08:47:38-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">Fab #4: Music Box for One Song</title><link href="http://localhost:4000/2019/11/26/music-box.html" rel="alternate" type="text/html" title="Fab #4: Music Box for One Song" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/music-box</id><content type="html" xml:base="http://localhost:4000/2019/11/26/music-box.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;The completed music box&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The fourth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on enclosures. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/12/one-pencil-holder.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Grado_RA1.JPG/1280px-Grado_RA1.JPG&quot; target=&quot;__blank&quot;&gt;this box&lt;/a&gt; made by GRADO.&lt;/p&gt;
+
+&lt;p&gt;After getting a (heavy!!) piece of white pine from M Lumber and doing a quick cardboard prototype for the box proportions, I used the band saw in order to cut the piece to my dimensions. Ben showed us in class a series of wood enclosures, and recommended cutting a piece in two parts, along its height, drilling space for the electronics in one side, and the other one as a cover. However, I failed to cut the wood along its height, and after trying five times gave up.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/1.JPG&quot; alt=&quot;White pine.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/3.JPG&quot; alt=&quot;Attempts to cut along the height.&quot; /&gt;
+  &lt;figcaption&gt;
+    Failed attempts to cut the piece of wood along its height.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I ended up deciding to use the entire piece of wood for the enclosure, and cover up the hole using a piece of white acrylic. Let the drilling start.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/4.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/5.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Forstner bit drilling experiments on a test piece of wood.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/6.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/7.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/8.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    And drilling on the real piece of wood.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Making sure everything is the right depth and drilling all the holes somewhat uniformly took a way longer time than expected. The next step involved trying out the placement of the controls on the box, and expanding the negative space close to the edges, to make installing the panel mount potentiometer and 3.5mm jack possible.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/9.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Testing the controls on the box, and drilling holes such that they can be inserted.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/11.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/14.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Figuring out the electronics of the project.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In order to get the controls to fit, I spent A LOT of time with the Dremel.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/12.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/13.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Creating space for the potentiometer and headphone jack using the Dremel.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;By this point, the box was functional—and music was coming out of it! If you are curious, the song played is Seventeen by Sharon van Etten.&lt;/p&gt;
+
+&lt;p&gt;However, the power jack was still not mounted, as you can see in the second photo below.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/15.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/16.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    The music box is starting to take shape!
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/17.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/18.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Arduino &amp;amp; perfboard inside of the box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The last steps involved closing the bottom of the box—using a laser cut white acrylic sheet, attaching the 12V power jack and applying a polyurethane finish to the wood. And, of course, rubber feet.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/19.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/20.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Finishing the box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fourth fabrication assignment focuses on enclosures. I continued my series of absurd and user unfriendly objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to this box made by GRADO.</summary></entry><entry><title type="html">Fab #5: A mold of my hand</title><link href="http://localhost:4000/2019/11/26/hand-mold.html" rel="alternate" type="text/html" title="Fab #5: A mold of my hand" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/hand-mold</id><content type="html" xml:base="http://localhost:4000/2019/11/26/hand-mold.html">&lt;p&gt;The fifth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on materials and fasteners. This time, I diverged from my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.&lt;/p&gt;
+
+&lt;p&gt;After some online research around molding agents, I settled on an alginate powder called MoldGel and went shopping to Blick.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/0.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    MoldGel from Blick.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is a powder that needs to be mixed with water in a ratio of 3:1 by weight. I first tested the mixture and the quality of the paste in a small quantity, and then moved on to the full bucket size.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/1.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/3.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/4.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    MoldGel after mixing with water.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Mixing took a lot of time, since I did it manually. if I were to do it again, I would certainly use a mixer of sorts. Its quality was also pretty bad—it never got to the smoothness level it should have been at, possibly due to the lack of proper mixing, or due to the salts/minerals in the water I used.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/5.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/6.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Keeping my hand in the mix for 5 minutes, while it solidified.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/7.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/8.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Hand shape on the left, epoxy resin and watercolor paint on the right.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/9.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    3 buckets of epoxy resin mixed with 3 different kinds of paint—red, green and blue on the left. Resin poured into the mold on the right.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/13.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/14.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    The hand after 24 hours of resin curing. Truly low-res, this is an experiment I need to repeat.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fifth fabrication assignment focuses on materials and fasteners. This time, I diverged from my series of absurd and user unfriendly objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;The completed pencil holder&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The third &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on measuring tools and using the laser cutter. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user unfriendly&lt;/a&gt; objects and made a pencil holder that holds exactly one pencil.&lt;/p&gt;
+
+&lt;p&gt;Part of the reason why I chose to build this project is the fact that I only own one pen(cil) at a time, since it makes me accountable to not losing it. The current one happens to be a &lt;a href=&quot;https://www.jetpens.com/Stabilo-Point-88-Fineliner-Marker-Pen-0.4-mm-Black/pd/7324?gclid=CjwKCAiAzanuBRAZEiwA5yf4ulMyb38VydmBINMm_CowvCKrpts-Z9aYvBMjs8Fpr5MAssoTm0o4PxoCr44QAvD_BwE&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Stabilo Point 88&lt;/a&gt;. I measured it and decided that a reasonable height for the holder would be 5in. Having worked with the laser cutter and acrylic before, I decided to be economical with my materials, and used a pre-owned 1/8in thick sheet of plywood. Going further down the economy rabbit hole, I came up with a design that would waste very little material: concentric circles, stacked on top of each other.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/1.png&quot; alt=&quot;Concentric circles vector file sent to the laser cutter&quot; /&gt;
+  &lt;figcaption&gt;
+    Concentric circles vector file sent to the laser cutter.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The figure shows 40 circles (the amount needed in order to achieve a height of 5in when stacking them on top of each other,) as well as a spiral-looking pattern—every layer got marked with the point where it should be aligned with the previous and next layers, in order to create a 3-dimensional spiral upon stacking.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/2.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/3.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;figcaption&gt;
+    Post laser cutting, and taking the shape out of the plywood frame.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/4.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/5.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;figcaption&gt;
+    Glueing the layers together and testing the function of the object.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/6.JPG&quot; alt=&quot;Object completed, with my pen held.&quot; /&gt;
+  &lt;figcaption&gt;
+    Object completed, with my pen held.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/8.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/10.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/11.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/7.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The third fabrication assignment focuses on measuring tools and using the laser cutter. I continued my series of absurd and user unfriendly objects and made a pencil holder that holds exactly one pencil.</summary></entry><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/e.jpg&quot; alt=&quot;The 6 USB flash drives&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -192,64 +399,7 @@
   &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/f.jpg&quot; alt=&quot;Wood #1&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The second fabrication assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on absurd and user unfriendly interfaces and made an awkwardly big, cube-shaped, wooden USB flash drive.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;The completed pencil holder&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The third &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on measuring tools and using the laser cutter. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user unfriendly&lt;/a&gt; objects and made a pencil holder that holds exactly one pencil.&lt;/p&gt;
-
-&lt;p&gt;Part of the reason why I chose to build this project is the fact that I only own one pen(cil) at a time, since it makes me accountable to not losing it. The current one happens to be a &lt;a href=&quot;https://www.jetpens.com/Stabilo-Point-88-Fineliner-Marker-Pen-0.4-mm-Black/pd/7324?gclid=CjwKCAiAzanuBRAZEiwA5yf4ulMyb38VydmBINMm_CowvCKrpts-Z9aYvBMjs8Fpr5MAssoTm0o4PxoCr44QAvD_BwE&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Stabilo Point 88&lt;/a&gt;. I measured it and decided that a reasonable height for the holder would be 5in. Having worked with the laser cutter and acrylic before, I decided to be economical with my materials, and used a pre-owned 1/8in thick sheet of plywood. Going further down the economy rabbit hole, I came up with a design that would waste very little material: concentric circles, stacked on top of each other.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/1.png&quot; alt=&quot;Concentric circles vector file sent to the laser cutter&quot; /&gt;
-  &lt;figcaption&gt;
-    Concentric circles vector file sent to the laser cutter.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The figure shows 40 circles (the amount needed in order to achieve a height of 5in when stacking them on top of each other,) as well as a spiral-looking pattern—every layer got marked with the point where it should be aligned with the previous and next layers, in order to create a 3-dimensional spiral upon stacking.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/2.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/3.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;figcaption&gt;
-    Post laser cutting, and taking the shape out of the plywood frame.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/4.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/5.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;figcaption&gt;
-    Glueing the layers together and testing the function of the object.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/6.JPG&quot; alt=&quot;Object completed, with my pen held.&quot; /&gt;
-  &lt;figcaption&gt;
-    Object completed, with my pen held.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/8.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/10.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/11.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/7.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The third fabrication assignment focuses on measuring tools and using the laser cutter. I continued my series of absurd and user unfriendly objects and made a pencil holder that holds exactly one pencil.</summary></entry><entry><title type="html">Physical Computing: Preliminary Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Preliminary Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;p&gt;1—I have been fascinated with clocks and their sound since childhood, and have been thinking of building my own for a while. This direction involves creating a sound installation out of multiple clocks (between 9 and 20 of them, arranged in a grid.) I am interested in creating polyrhythms out of their mechanical movement, while also giving the viewer the illusion of control over how fast / slow time is passing in different clocks. All clocks would tick at the exact minute, but for the 60 seconds in between minutes the rhythm of each clock is adjustable.&lt;/p&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The second fabrication assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on absurd and user unfriendly interfaces and made an awkwardly big, cube-shaped, wooden USB flash drive.</summary></entry><entry><title type="html">Physical Computing: Preliminary Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Preliminary Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;p&gt;1—I have been fascinated with clocks and their sound since childhood, and have been thinking of building my own for a while. This direction involves creating a sound installation out of multiple clocks (between 9 and 20 of them, arranged in a grid.) I am interested in creating polyrhythms out of their mechanical movement, while also giving the viewer the illusion of control over how fast / slow time is passing in different clocks. All clocks would tick at the exact minute, but for the 60 seconds in between minutes the rhythm of each clock is adjustable.&lt;/p&gt;
 
 &lt;p&gt;2—I am a huge fan of &lt;a href=&quot;https://www.zimoun.net/&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Zimoun’s&lt;/a&gt; sound sculpture work. This direction involves creating a urban landscape inspired percussive instrument using a series of motors and the materials used in city environments: concrete, rubber, steel.&lt;/p&gt;
 
@@ -701,105 +851,4 @@
   &lt;figcaption&gt;
     Arduino based 3-step sequencer.
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 3" /><summary type="html">Crosswalk button at Bushwick Ave. and Kosciuszko street. A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.</summary></entry><entry><title type="html">Soundwalk Reflection</title><link href="http://localhost:4000/2019/09/23/soundwalk-reflection.html" rel="alternate" type="text/html" title="Soundwalk Reflection" /><published>2019-09-23T13:38:00-04:00</published><updated>2019-09-23T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/23/soundwalk-reflection</id><content type="html" xml:base="http://localhost:4000/2019/09/23/soundwalk-reflection.html">&lt;p&gt;For the first CL: Video &amp;amp; Sound assignment, Russell and I worked on a sound walk of 370 Jay Street, focused on creating a narrative arc for the evolution of the building’s usage from the 1950s until today. 370 Jay St. was erected as a headquarters for New York’s Transit Authority (the MTA) in the 1950s, and served that function for more than 40 years. Throughout the 1990s, the MTA slowly moved into a new Manhattan headquarters, leaving the 370 Jay building partially empty and unproperly maintained. Once regarded as a landmark of modernism in Brooklyn, the building fell into decay until 2012, when New York University acquired it, expanding its Brooklyn campus.&lt;/p&gt;
-
-&lt;p&gt;In terms of format, our sound walk is quite similar to an informative podcast: a narrator (❤️ Russell) guides the listener through the building’s history, while the listener makes their way from the 4th floor of the building towards the subway stop across the street.&lt;/p&gt;
-
-&lt;p&gt;In terms of process, we started out by doing a session of sound recording throughout the building, before really knowing what topic we were going to focus on. We recorded a few samples of background noise on the ITP floor, elevator sounds, door sounds, footsteps, construction noise. While we ended up using very few of the samples recorded in this first session, it helped us get familiar with the recording equipment and explore the building.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-23-soundwalk-reflection/1.jpg&quot; alt=&quot;Russell recording the wooden mirror&quot; /&gt;
-  &lt;figcaption&gt;
-    Russell recording the wooden mirror.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Once we had a collection of the building’s environmental sounds, we split up and individually researched the history of the building (which has a pretty extensive &lt;a class=&quot;underlined&quot; href=&quot;https://en.wikipedia.org/wiki/370_Jay_Street&quot; target=&quot;__blank&quot;&gt;Wikipedia entry&lt;/a&gt;.) The story we wanted to tell emerged from our conversations around the building’s history, and the fascination with the fact that both the MTA and ITP are truly dynamic entities, aiming to move people and ideas. We took it to the whiteboard in order to come up with a structure for the audio piece.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-23-soundwalk-reflection/2.jpg&quot; alt=&quot;Whiteboard brainstorming session&quot; /&gt;
-  &lt;figcaption&gt;
-    Whiteboard brainstorming session.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;After deciding on the four main sections of the story (ITP, MTA, the dollar van and ITP again), we wrote a script and recorded Russell narrating it, using the ZOOM field recorder and a shotgun mic. The recording process was smooth—we captured two takes for each section, which proved to be more than enough during the editing phase. Nothing needed re-recording.&lt;/p&gt;
-
-&lt;p&gt;Once recording the narration was complete, we cleaned up the audio files in Adobe Audition (mainly trimming and noise removal) and edited together the backbone of our sound walk—the narration from start to finish. During the editing phase, we kept going back and forth between researching sound effects and music tracks for different segments of our piece, and adjusting the timing of each chapter.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-23-soundwalk-reflection/3.png&quot; alt=&quot;Part of our soundwalk's Adobe Audition timeline&quot; /&gt;
-  &lt;figcaption&gt;
-    Part of our soundwalk's Adobe Audition timeline.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;After exporting our first rough cut, we started mapping the sound to the moving through space, and iterated on timing until the walking pace felt right. We were initially planning on having the walk start on the 4th floor of 370 Jay, go down in the subway station and end in the lobby of our building, but this was too ambitions: it would have taken way more than 5 minutes. We ended up reducing the scope of the walk—start on 4th floor, end outside the subwya stop—, and still had to stretch the audio content in order to account for slow walking.&lt;/p&gt;
-
-&lt;p&gt;Looking back on the process and outcome, I am happy with how our sound walk turned out. The collaboration felt natural, as we complemented each other well and brought different perspectives and skills to the table. One mistake I believe we’ve made is that we started thinking about mapping sound to the space very late in the process. Given that a sound walk is a site specific audio piece, I believe we should have considered movement way earlier during our ideation, instead of retro-fitting it on our first audio export. It would have also been a good idea to add more audio clues to signify the space one is in, and potentially have audio directions instead of written instructions. Regardless—working on this piece was a lot of fun.&lt;/p&gt;</content><author><name></name></author><category term="CommLab: Video &amp; Sound" /><category term="ITP" /><category term="Week 3" /><summary type="html">For the first CL: Video &amp;amp; Sound assignment, Russell and I worked on a sound walk of 370 Jay Street, focused on creating a narrative arc for the evolution of the building’s usage from the 1950s until today. 370 Jay St. was erected as a headquarters for New York’s Transit Authority (the MTA) in the 1950s, and served that function for more than 40 years. Throughout the 1990s, the MTA slowly moved into a new Manhattan headquarters, leaving the 370 Jay building partially empty and unproperly maintained. Once regarded as a landmark of modernism in Brooklyn, the building fell into decay until 2012, when New York University acquired it, expanding its Brooklyn campus.</summary></entry><entry><title type="html">LED Switch</title><link href="http://localhost:4000/2019/09/17/led-switch.html" rel="alternate" type="text/html" title="LED Switch" /><published>2019-09-17T13:38:00-04:00</published><updated>2019-09-17T13:38:00-04:00</updated><id>http://localhost:4000/2019/09/17/led-switch</id><content type="html" xml:base="http://localhost:4000/2019/09/17/led-switch.html">&lt;p&gt;For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-17-led-switch/1.jpg&quot; alt=&quot;Setting up the breadboard, part 1: connecting the breadboard's side rows to each &quot; /&gt;
-  &lt;figcaption&gt;
-    Setting up the breadboard, part 1: connecting the breadboard's side rows to each other.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-17-led-switch/2.jpg&quot; alt=&quot;Setting up the breadboard, part 2: connecting the power supply.&quot; /&gt;
-  &lt;figcaption&gt;
-    Setting up the breadboard, part 2: connecting the power supply.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;/assets/images/blog/2019-09-17-led-switch/3.jpg&quot; alt=&quot;Setting up the breadboard.&quot; /&gt;
-  &lt;figcaption&gt;
-    Setting up the breadboard, part 3: connecting the resistance and the LED.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;video class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/4.mov&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot; alt=&quot;Plugging in the power makes the LED light up.&quot;&gt;&lt;/video&gt;
-  &lt;figcaption&gt;
-    Plugging in the power makes the LED light up.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;As a next step, we introduced a switch into the circuit, while also playing with more LEDs, in series or in parallel.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;video class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/5.mov&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot; alt=&quot;Pressing the switch lights up the two LEDs.&quot;&gt;&lt;/video&gt;
-  &lt;figcaption&gt;
-    Pressing the switch lights up the two LEDs.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/6.jpg&quot; alt=&quot;Measuring amperage for one of three LEDs connected in parallel.&quot; /&gt;
-  &lt;figcaption&gt;
-    Measuring amperage for one of three LEDs connected in parallel.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;We also introduced a potentiometer into the setup, as a way to manually adjust the resistance of the circuit and the voltage that gets to our LEDs.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;video src=&quot;/assets/images/blog/2019-09-17-led-switch/7.mov&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot; alt=&quot;Turning the potentiometer's knob adjusts the brightness of the LEDs.&quot;&gt;&lt;/video&gt;
-  &lt;figcaption&gt;
-    Turning the potentiometer's knob adjusts the brightness of the LEDs.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The last part of the assignment involved building a creative switch for our LEDs—one that is not neccesarily a push button, or an existing interface. I was interested in having the LEDs light up when a sound (or rather noise) event is happening, so I came up with this silly contraption. It uses conductive thread to attach the moving piece to the tilted metal rod.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;video class=&quot;img-row-2&quot; src=&quot;/assets/images/blog/2019-09-17-led-switch/8.mov&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Turning the potentiometer's knob adjusts the brightness of the LEDs.&quot;&gt;&lt;/video&gt;
-  &lt;figcaption&gt;
-    Once the moving piece falls into the pot, the LED lights up.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 2" /><summary type="html">For our first physical computing lab, we were tasked with understanding and experimenting with basic circuit components, working on a solderless breadboard. This involved learning how to use a multimeter—for checking continuity or measuring resistance, voltage, and amperage—as well as creating a few basic circuits, involving a power supply, resistors and LEDs.</summary></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><category term="Week 3" /><summary type="html">Crosswalk button at Bushwick Ave. and Kosciuszko street. A piece of public technology I get to observe and interact with daily is the crosswalk button at the intersection of Bushwick Ave. and Kosciuszko street. While Bushwick is known for being one of the latest additions to the gentrification train, we can rest assured that at least in terms of infrastructure, everything is older than most inhabitants of the neighborhood 🙃.</summary></entry></feed>

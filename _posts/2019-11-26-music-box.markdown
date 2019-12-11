@@ -1,0 +1,106 @@
+---
+layout: blogPost
+title:  "Fab #4: Music Box for One Song"
+date:   2019-11-26 00:01:00 -0500
+tags: ["Fabrication", "ITP"]
+published: true
+---
+<figure style="margin: 0;">
+  <img class="img-row-2" style="border: none;" src="/assets/images/blog/2019-11-26-music-box/complete.JPG" alt="The completed music box"/>
+  <figcaption>
+  </figcaption>
+</figure>
+The fourth <a class="underlined" target="__blank" href="https://itp.nyu.edu/fab/">fabrication</a> assignment focuses on enclosures. I continued my series of <a href="/2019/10/30/flashlight.html" class="underlined">absurd</a> and <a href="/2019/11/05/usb-flash-drives.html">user</a> <a href="/2019/11/12/one-pencil-holder.html">unfriendly</a> objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Grado_RA1.JPG/1280px-Grado_RA1.JPG" target="__blank">this box</a> made by GRADO.
+
+After getting a (heavy!!) piece of white pine from M Lumber and doing a quick cardboard prototype for the box proportions, I used the band saw in order to cut the piece to my dimensions. Ben showed us in class a series of wood enclosures, and recommended cutting a piece in two parts, along its height, drilling space for the electronics in one side, and the other one as a cover. However, I failed to cut the wood along its height, and after trying five times gave up.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/1.JPG" alt="White pine."/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/3.JPG" alt="Attempts to cut along the height."/>
+  <figcaption>
+    Failed attempts to cut the piece of wood along its height.
+  </figcaption>
+</figure>
+
+I ended up deciding to use the entire piece of wood for the enclosure, and cover up the hole using a piece of white acrylic. Let the drilling start.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/4.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/5.JPG" alt=""/>
+  <figcaption>
+    Forstner bit drilling experiments on a test piece of wood.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-3" style="" src="/assets/images/blog/2019-11-26-music-box/6.JPG" alt=""/>
+  <img class="img-row-3" style="" src="/assets/images/blog/2019-11-26-music-box/7.JPG" alt=""/>
+  <img class="img-row-3" style="" src="/assets/images/blog/2019-11-26-music-box/8.JPG" alt=""/>
+  <figcaption>
+    And drilling on the real piece of wood.
+  </figcaption>
+</figure>
+
+Making sure everything is the right depth and drilling all the holes somewhat uniformly took a way longer time than expected. The next step involved trying out the placement of the controls on the box, and expanding the negative space close to the edges, to make installing the panel mount potentiometer and 3.5mm jack possible.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/9.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/10.JPG" alt=""/>
+  <figcaption>
+    Testing the controls on the box, and drilling holes such that they can be inserted.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/11.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/14.JPG" alt=""/>
+  <figcaption>
+    Figuring out the electronics of the project.
+  </figcaption>
+</figure>
+
+In order to get the controls to fit, I spent A LOT of time with the Dremel.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/12.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/13.JPG" alt=""/>
+  <figcaption>
+    Creating space for the potentiometer and headphone jack using the Dremel.
+  </figcaption>
+</figure>
+
+By this point, the box was functional—and music was coming out of it! If you are curious, the song played is Seventeen by Sharon van Etten.
+
+However, the power jack was still not mounted, as you can see in the second photo below.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/15.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/16.JPG" alt=""/>
+  <figcaption>
+    The music box is starting to take shape!
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/17.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/18.JPG" alt=""/>
+  <figcaption>
+    Arduino & perfboard inside of the box.
+  </figcaption>
+</figure>
+
+The last steps involved closing the bottom of the box—using a laser cut white acrylic sheet, attaching the 12V power jack and applying a polyurethane finish to the wood. And, of course, rubber feet.
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/19.JPG" alt=""/>
+  <img class="img-row-2" style="" src="/assets/images/blog/2019-11-26-music-box/20.JPG" alt=""/>
+  <figcaption>
+    Finishing the box.
+  </figcaption>
+</figure>
+
+<figure>
+  <img class="" style="" src="/assets/images/blog/2019-11-26-music-box/complete.JPG" alt=""/>
+</figure>
+
+
