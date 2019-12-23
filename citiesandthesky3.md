@@ -10,7 +10,8 @@ paragraphs:
  - text: |
      A third component of this work consists in a projection of all builders’ creations througout the course of the exhibition—the shared city. Starting as an empty screen, the projected city gathers one more layer with every builder’s creation. 
  - text: |
-     Developed during the Reality? program at the <a class="underlined" href="http://www.schoolofma.org" target="__blank">School of Machines, Making and Make-Believe</a> and exhibited at <a class="underlined" href="http://www.acud.de/" target="__blank">ACUD</a> Berlin. Created using Unity.
+     Exhibited as part of a group show in 2018 at <a class="underlined" href="http://www.acud.de/" target="__blank">ACUD</a> in Berlin. <br/><br/>
+     Developed during the Reality? program at the <a class="underlined" href="http://www.schoolofma.org" target="__blank">School of Machines, Making and Make-Believe</a>. Created using Unity. 
    small: true
 images:
  - url: https://cortex.persona.co/w/2500/q/67/i/3a43dd29205381c83e10b09bb128390bd67834a82eebb6e6496507f3d6d6e2e1/Thekla_Complete_1.png
