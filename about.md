@@ -4,7 +4,7 @@ permalink: /about/
 ---
 
 <div class="c6">
-I'm a creative technologist working in the media art world, with a particular interest in expressions of intimacy in the digital realm. The web has been my primary medium, but I am also comfortable working with mobile applications, game engines, augmented reality or print graphic design.
+I am an artist and programmer, interested in expressions of intimacy in the digital realm. I consider the web to be my primary medium, but I have also worked with mobile applications, game engines, physical computing, augmented reality or print graphic design.
 
 <br/><br/>
 
