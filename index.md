@@ -117,11 +117,11 @@ rows:
         year: 2016
         link: /koffee
         image: /assets/images/koffee.png
-      - title: Lost in the Meritocracy
-        medium: book
-        year: 2015
-        link: /lostinthemeritocracy
-        image: /assets/images/lostinthemeritocracy.jpg
+      - title: Rethinking the Online Exhibit
+        medium: web
+        year: 2016
+        link: /rethinkingtheonlineexhibit
+        image: /assets/images/rethinkingexhibit.gif
     - pair: Pair    
       projects:
       - title: Push to Open
@@ -129,9 +129,9 @@ rows:
         year: 2015
         link: /pushtoopen
         image: /assets/images/pushtoopen.jpg
-      - title: Rethinking the Online Exhibit
-        medium: web
-        year: 2016
-        link: /rethinkingtheonlineexhibit
-        image: /assets/images/rethinkingexhibit.gif
+      - title: Lost in the Meritocracy
+        medium: book
+        year: 2015
+        link: /lostinthemeritocracy
+        image: /assets/images/lostinthemeritocracy.jpg
 ---
