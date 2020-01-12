@@ -9,6 +9,9 @@ paragraphs:
     Mario, a fictional character with artistic tendencies, writes a letter to his mother.<br/>
     Link <a href="http://stones-instrument.s3-website-us-east-1.amazonaws.com/" target="__blank">here.</a>
  - text: |
+    Displayed at the <a href="https://www.residentadvisor.net/events/1328770" class="underlined" target="__blank">H0L0 Vintage Pop-Up Party</a> in Brooklyn, NY. 
+   small: true
+ - text: |
     Built using ReactJS as part of the <em>Performing the Internet</em> class.
    small: true
 ---

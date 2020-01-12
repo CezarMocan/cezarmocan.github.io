@@ -57,6 +57,7 @@ p {
   width: 100%;
   margin-top: 50px;
   display: flex;
+  flex-direction: row;  
 }
 
 .index-content-container {
@@ -122,6 +123,9 @@ p {
 }
 
 @media only screen and (max-width: 1024px) {
+  .content-container {
+    flex-direction: column;
+  }
   .projects-row {
     flex-direction: column;
   }
