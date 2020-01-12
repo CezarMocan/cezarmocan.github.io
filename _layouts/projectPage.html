@@ -1,47 +1,56 @@
 ---
 layout: default
 ---
-{% if page.title %}
-<div class="c6 mb1 project-page-title">
-  <p><b>{{ page.title }}</b></p>
-</div>
-{% endif %}
 
-{% if page.paragraphs %}
-  <div class="mb2">
-    {% for paragraph in page.paragraphs %}
-      <div class="project-page-description">
-        {% if paragraph.small %}
-          <p class="small-paragraph">{{ paragraph.text }}</p>
-        {% else %}
-          <p>{{ paragraph.text }}</p>
+<div class="content-container">
+  {% if page.paragraphs %}
+    <div class="mb2 description-container">
+      {% if page.title %}
+      <div class="mb1 project-page-title">
+        <p class="mb0"><b>{{ page.title }}</b></p>
+        {% if page.medium %}
+          <p class="mb0"><em>{{ page.medium }}</em></p>
+        {% endif %}
+        {% if page.year %}
+          <p class="mb0"><em>{{ page.year }}</em></p>
         {% endif %}
       </div>
+      {% endif %}
+      
+      {% for paragraph in page.paragraphs %}
+        <div class="project-page-description">
+          {% if paragraph.small %}
+            <p class="small-paragraph">{{ paragraph.text }}</p>
+          {% else %}
+            <p>{{ paragraph.text }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.narrow %}
+    <div class="c8 imagery-container">
+  {% else %}
+    <div class="c10 imagery-container">
+  {% endif %}
+    <!-- videos -->
+    {{ content }}
+
+    {% for image in page.images %}
+      <div class="c12 project-image-with-description">
+        {% if image.video %}
+          <video width="100%" autoplay loop muted class="c12">
+            <source src="{{image.url}}">
+          </video>
+        {% else %}
+          <img src="{{image.url}}" class="c12 project-image"/>
+        {% endif %}
+        {% if image.description %}
+          <p class="project-image-description small-paragraph mt0 mb2 c8 ml1">{{image.description}}</p>
+        {% else %}
+          <div class="mb2"></div>
+        {% endif %}
     {% endfor %}
   </div>
-{% endif %}
-
-{% if page.narrow %}
-  <div class="c8">
-{% else %}
-  <div class="c10">
-{% endif %}
-  <!-- videos -->
-  {{ content }}
-
-  {% for image in page.images %}
-    <div class="c12 project-image-with-description">
-      {% if image.video %}
-        <video width="100%" autoplay loop muted class="c12">
-          <source src="{{image.url}}">
-        </video>
-      {% else %}
-        <img src="{{image.url}}" class="c12 project-image"/>
-      {% endif %}
-      {% if image.description %}
-        <p class="project-image-description small-paragraph mt0 mb2 c8 ml1">{{image.description}}</p>
-      {% else %}
-        <div class="mb2"></div>
-      {% endif %}
-  {% endfor %}
 </div>

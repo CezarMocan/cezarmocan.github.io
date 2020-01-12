@@ -3,7 +3,7 @@ layout: projectPage
 permalink: /about/
 ---
 
-<div class="c6">
+<div class="about-container">
 I am an artist and programmer, interested in expressions of intimacy in the digital realm. I consider the web to be my primary medium, but I have also worked with mobile applications, game engines, physical computing, augmented reality or print graphic design.
 
 <br/><br/>
