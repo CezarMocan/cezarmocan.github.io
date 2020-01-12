@@ -1,6 +1,9 @@
 html {
-  --background-color: white;
-  --foreground-color: rgba(0, 0, 5, 0.85);  
+  /* --background-color: white; */
+  /* --background-color: blue; */
+  /* --foreground-color: rgba(0, 0, 5, 0.85);   */
+  --background-color: rgba(12, 12, 255, 1);
+  --foreground-color: rgba(255, 255, 255, 0.85);
 }
 
 body {
@@ -96,6 +99,7 @@ p {
 .project-thumbnail {
   object-fit: cover;
   height: 15vw;
+  filter: tint(blue);
   transition: opacity 0.2s;
 }
 

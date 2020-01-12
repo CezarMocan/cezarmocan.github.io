@@ -12,7 +12,7 @@ In a former life, I used to do competitive programming.
 
 <br/><br/>
 
-More recently, I have been designing or developing software for artists such as <a class="underlined" href="http://www.evan-roth.com/" target="__blank">Evan Roth</a> and <a class="underlined" href="http://taeyoonchoi.com/" target="__blank">Taeyoon Choi</a>. I have also been involved with two start-ups in the education world, <a class="underlined" href="https://www.fablestudios.com" target="__blank">Fable Studios</a> and <a class="underlined" href="https://www.gakko.org" target="__blank">Gakko</a>.
+More recently, I have been designing or developing software for artists such as <a class="underlined" href="http://www.evan-roth.com/" target="__blank">Evan Roth</a> and <a class="underlined" href="http://taeyoonchoi.com/" target="__blank">Taeyoon Choi</a>. I have also been involved with two start-ups in the education world, <a class="underlined" href="https://www.fablestudios.com" target="__blank">Fable Studios</a> and <a class="underlined" href="https://www.gakko.org" target="__blank">Gakko</a>. 
 
 <br/><br/>
 
