@@ -5,9 +5,9 @@ date:   2019-11-26 00:01:00 -0500
 tags: ["Fabrication", "ITP"]
 published: true
 ---
-The sixth and last <a class="underlined" target="__blank" href="https://itp.nyu.edu/fab/">fabrication</a> assignment focuses on motors. I came back to my series of <a href="/2019/10/30/flashlight.html" class="underlined">absurd</a> and <a href="/2019/11/05/usb-flash-drives.html">user</a> <a href="/2019/11/26/music-box.html">unfriendly</a> objects and made a clock that only shows the passing of time, without giving you the exact hour. 
+The sixth and last <a class="underlined" target="__blank" href="https://itp.nyu.edu/fab/">fabrication</a> assignment focuses on motors. I came back to my series of <a href="/2019/10/30/flashlight.html" class="underlined">absurd</a> and <a href="/2019/11/05/usb-flash-drives.html">user</a> <a href="/2019/11/26/music-box.html">unfriendly</a> objects and made a clock that only shows the passing of time, without giving you the exact hour.
 
-I first purchased a <a href="https://www.michaels.com/0.75in-clock-movement-kit-with-black-hands-by-artminds/10475425.html?cm_mmc=PLASearch-_-google-_-MICH_Shopping_US_N_Crafts%26Hobbies_N_N_N_N-_-Crafts+%26+Hobbies&Kenshoo_ida=&gclid=CjwKCAiAis3vBRBdEiwAHXB29EceWt5qwmsd495G-SiJQBzQJLVVw-US9oblMWzHcWg3iIMIiosnxxoCgCcQAvD_BwE" target="__blank">clock movement kit</a> from Michael's. 
+I first purchased a <a href="https://www.michaels.com/0.75in-clock-movement-kit-with-black-hands-by-artminds/10475425.html?cm_mmc=PLASearch-_-google-_-MICH_Shopping_US_N_Crafts%26Hobbies_N_N_N_N-_-Crafts+%26+Hobbies&Kenshoo_ida=&gclid=CjwKCAiAis3vBRBdEiwAHXB29EceWt5qwmsd495G-SiJQBzQJLVVw-US9oblMWzHcWg3iIMIiosnxxoCgCcQAvD_BwE" target="__blank">clock movement kit</a> from Michael's.
 
 <figure>
   <img class="img-row-2" style="" src="/assets/images/blog/2019-12-11-clock/1.png" alt=""/>

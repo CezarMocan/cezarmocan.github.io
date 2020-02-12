@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-04T20:29:45-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[LIPP] Cell phone footage</title><link href="http://localhost:4000/2020/02/04/lipp-footage.html" rel="alternate" type="text/html" title="[LIPP] Cell phone footage" /><published>2020-02-04T00:01:00-05:00</published><updated>2020-02-04T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/04/lipp-footage</id><content type="html" xml:base="http://localhost:4000/2020/02/04/lipp-footage.html">&lt;p&gt;After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: &lt;em&gt;linear motion&lt;/em&gt; (e.g. pointing the camera out the window of a train or car), &lt;em&gt;water&lt;/em&gt;, &lt;em&gt;circular motion&lt;/em&gt; (e.g. a record player) and &lt;em&gt;landscape&lt;/em&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-11T21:29:02-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[LIPP] Video Playback System</title><link href="http://localhost:4000/2020/02/11/lipp-video-playback-system.html" rel="alternate" type="text/html" title="[LIPP] Video Playback System" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/lipp-video-playback-system</id><content type="html" xml:base="http://localhost:4000/2020/02/11/lipp-video-playback-system.html">&lt;p&gt;This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using &lt;code&gt;jit.rota&lt;/code&gt;, blending multiple videos together using matrix operations (&lt;code&gt;jit.op&lt;/code&gt;) as well as blending frames together using &lt;code&gt;jit.slide&lt;/code&gt;. Here are some of the results.
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/13.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882098?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882158?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882179?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882214?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/2.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/3.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/4.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/5.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/6.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/7.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/8.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/9.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/10.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/11.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/12.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/13.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/14.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/15.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/16.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/17.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/18.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/19.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/20.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/21.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/22.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/23.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/24.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using jit.rota, blending multiple videos together using matrix operations (jit.op) as well as blending frames together using jit.slide. Here are some of the results.</summary></entry><entry><title type="html">[LIPP] Cell phone footage</title><link href="http://localhost:4000/2020/02/04/lipp-footage.html" rel="alternate" type="text/html" title="[LIPP] Cell phone footage" /><published>2020-02-04T00:01:00-05:00</published><updated>2020-02-04T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/04/lipp-footage</id><content type="html" xml:base="http://localhost:4000/2020/02/04/lipp-footage.html">&lt;p&gt;After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: &lt;em&gt;linear motion&lt;/em&gt; (e.g. pointing the camera out the window of a train or car), &lt;em&gt;water&lt;/em&gt;, &lt;em&gt;circular motion&lt;/em&gt; (e.g. a record player) and &lt;em&gt;landscape&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;This realization made me revisit the history of videos on my phone, since December 2016, and pick the ones that roughly fit these themes as a way of building a larger library. I came up with a few other categories (&lt;em&gt;eyes&lt;/em&gt;, &lt;em&gt;flickers&lt;/em&gt;, &lt;em&gt;forward motion&lt;/em&gt;) and clustered together clips from videos belonging to three of the themes: &lt;em&gt;linear motion&lt;/em&gt;, &lt;em&gt;water&lt;/em&gt; and &lt;em&gt;landscape&lt;/em&gt;. Below are the results. I didn’t take the time to cluster the other ones together, but I will likely be using them throughout the class.&lt;/p&gt;
 
@@ -213,7 +253,64 @@
   &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/14.JPG&quot; alt=&quot;&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The sixth and last fabrication assignment focuses on motors. I came back to my series of absurd and user unfriendly objects and made a clock that only shows the passing of time, without giving you the exact hour.</summary></entry><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The sixth and last fabrication assignment focuses on motors. I came back to my series of absurd and user unfriendly objects and made a clock that only shows the passing of time, without giving you the exact hour.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;The completed pencil holder&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The third &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on measuring tools and using the laser cutter. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user unfriendly&lt;/a&gt; objects and made a pencil holder that holds exactly one pencil.&lt;/p&gt;
+
+&lt;p&gt;Part of the reason why I chose to build this project is the fact that I only own one pen(cil) at a time, since it makes me accountable to not losing it. The current one happens to be a &lt;a href=&quot;https://www.jetpens.com/Stabilo-Point-88-Fineliner-Marker-Pen-0.4-mm-Black/pd/7324?gclid=CjwKCAiAzanuBRAZEiwA5yf4ulMyb38VydmBINMm_CowvCKrpts-Z9aYvBMjs8Fpr5MAssoTm0o4PxoCr44QAvD_BwE&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Stabilo Point 88&lt;/a&gt;. I measured it and decided that a reasonable height for the holder would be 5in. Having worked with the laser cutter and acrylic before, I decided to be economical with my materials, and used a pre-owned 1/8in thick sheet of plywood. Going further down the economy rabbit hole, I came up with a design that would waste very little material: concentric circles, stacked on top of each other.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/1.png&quot; alt=&quot;Concentric circles vector file sent to the laser cutter&quot; /&gt;
+  &lt;figcaption&gt;
+    Concentric circles vector file sent to the laser cutter.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The figure shows 40 circles (the amount needed in order to achieve a height of 5in when stacking them on top of each other,) as well as a spiral-looking pattern—every layer got marked with the point where it should be aligned with the previous and next layers, in order to create a 3-dimensional spiral upon stacking.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/2.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/3.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;figcaption&gt;
+    Post laser cutting, and taking the shape out of the plywood frame.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/4.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/5.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
+  &lt;figcaption&gt;
+    Glueing the layers together and testing the function of the object.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/6.JPG&quot; alt=&quot;Object completed, with my pen held.&quot; /&gt;
+  &lt;figcaption&gt;
+    Object completed, with my pen held.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/8.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/10.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/11.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/7.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The third fabrication assignment focuses on measuring tools and using the laser cutter. I continued my series of absurd and user unfriendly objects and made a pencil holder that holds exactly one pencil.</summary></entry><entry><title type="html">Fab #2: 6 USB Flash Drives</title><link href="http://localhost:4000/2019/11/05/usb-flash-drives.html" rel="alternate" type="text/html" title="Fab #2: 6 USB Flash Drives" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/usb-flash-drives</id><content type="html" xml:base="http://localhost:4000/2019/11/05/usb-flash-drives.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/e.jpg&quot; alt=&quot;The 6 USB flash drives&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -407,64 +504,7 @@
   &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-05-usb-flash-drives/f.jpg&quot; alt=&quot;Wood #1&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The second fabrication assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on absurd and user unfriendly interfaces and made an awkwardly big, cube-shaped, wooden USB flash drive.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;The completed pencil holder&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The third &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on measuring tools and using the laser cutter. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user unfriendly&lt;/a&gt; objects and made a pencil holder that holds exactly one pencil.&lt;/p&gt;
-
-&lt;p&gt;Part of the reason why I chose to build this project is the fact that I only own one pen(cil) at a time, since it makes me accountable to not losing it. The current one happens to be a &lt;a href=&quot;https://www.jetpens.com/Stabilo-Point-88-Fineliner-Marker-Pen-0.4-mm-Black/pd/7324?gclid=CjwKCAiAzanuBRAZEiwA5yf4ulMyb38VydmBINMm_CowvCKrpts-Z9aYvBMjs8Fpr5MAssoTm0o4PxoCr44QAvD_BwE&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Stabilo Point 88&lt;/a&gt;. I measured it and decided that a reasonable height for the holder would be 5in. Having worked with the laser cutter and acrylic before, I decided to be economical with my materials, and used a pre-owned 1/8in thick sheet of plywood. Going further down the economy rabbit hole, I came up with a design that would waste very little material: concentric circles, stacked on top of each other.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/1.png&quot; alt=&quot;Concentric circles vector file sent to the laser cutter&quot; /&gt;
-  &lt;figcaption&gt;
-    Concentric circles vector file sent to the laser cutter.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The figure shows 40 circles (the amount needed in order to achieve a height of 5in when stacking them on top of each other,) as well as a spiral-looking pattern—every layer got marked with the point where it should be aligned with the previous and next layers, in order to create a 3-dimensional spiral upon stacking.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/2.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/3.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;figcaption&gt;
-    Post laser cutting, and taking the shape out of the plywood frame.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/4.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/5.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;figcaption&gt;
-    Glueing the layers together and testing the function of the object.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/6.JPG&quot; alt=&quot;Object completed, with my pen held.&quot; /&gt;
-  &lt;figcaption&gt;
-    Object completed, with my pen held.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/8.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/10.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/11.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/7.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The third fabrication assignment focuses on measuring tools and using the laser cutter. I continued my series of absurd and user unfriendly objects and made a pencil holder that holds exactly one pencil.</summary></entry><entry><title type="html">Physical Computing: Preliminary Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Preliminary Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;p&gt;1—I have been fascinated with clocks and their sound since childhood, and have been thinking of building my own for a while. This direction involves creating a sound installation out of multiple clocks (between 9 and 20 of them, arranged in a grid.) I am interested in creating polyrhythms out of their mechanical movement, while also giving the viewer the illusion of control over how fast / slow time is passing in different clocks. All clocks would tick at the exact minute, but for the 60 seconds in between minutes the rhythm of each clock is adjustable.&lt;/p&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The second fabrication assignment is centered around streamlining our fabrication process, and building 5 or more of the same object as a result. I decided to maintain my focus on absurd and user unfriendly interfaces and made an awkwardly big, cube-shaped, wooden USB flash drive.</summary></entry><entry><title type="html">Physical Computing: Preliminary Final Project Ideas</title><link href="http://localhost:4000/2019/11/02/pc-final-ideas.html" rel="alternate" type="text/html" title="Physical Computing: Preliminary Final Project Ideas" /><published>2019-11-02T01:00:00-04:00</published><updated>2019-11-02T01:00:00-04:00</updated><id>http://localhost:4000/2019/11/02/pc-final-ideas</id><content type="html" xml:base="http://localhost:4000/2019/11/02/pc-final-ideas.html">&lt;p&gt;1—I have been fascinated with clocks and their sound since childhood, and have been thinking of building my own for a while. This direction involves creating a sound installation out of multiple clocks (between 9 and 20 of them, arranged in a grid.) I am interested in creating polyrhythms out of their mechanical movement, while also giving the viewer the illusion of control over how fast / slow time is passing in different clocks. All clocks would tick at the exact minute, but for the 60 seconds in between minutes the rhythm of each clock is adjustable.&lt;/p&gt;
 
 &lt;p&gt;2—I am a huge fan of &lt;a href=&quot;https://www.zimoun.net/&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Zimoun’s&lt;/a&gt; sound sculpture work. This direction involves creating a urban landscape inspired percussive instrument using a series of motors and the materials used in city environments: concrete, rubber, steel.&lt;/p&gt;
 
@@ -608,72 +648,4 @@
   &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/13.JPG&quot; alt=&quot;&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Intro to Fabrication" /><category term="ITP" /><summary type="html">The first weekly assignment for Intro to Fabrication involves building a flashlight.</summary></entry><entry><title type="html">The Mirror Room Installation: Reflection</title><link href="http://localhost:4000/2019/10/10/the-nether-installation.html" rel="alternate" type="text/html" title="The Mirror Room Installation: Reflection" /><published>2019-10-10T01:38:00-04:00</published><updated>2019-10-10T01:38:00-04:00</updated><id>http://localhost:4000/2019/10/10/the-nether-installation</id><content type="html" xml:base="http://localhost:4000/2019/10/10/the-nether-installation.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
-  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-answer.png&quot; alt=&quot;Participant #1 view once Participant #2 has answered their question&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The Mirror Room is an installation built in collaboration with &lt;a href=&quot;https://www.rachelqxl.space&quot; class=&quot;underlined&quot;&gt;Rachel&lt;/a&gt; and &lt;a href=&quot;https://www.shuyichang.com/&quot; class=&quot;underlined&quot;&gt;Shuyi&lt;/a&gt; in response to &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Nether&quot; class=&quot;underlined&quot;&gt;The Nether&lt;/a&gt;—a sci-fi play talking about avatars, emotional attachment and pedophillia (yes, it’s complicated…).&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Concept&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Set in a near future in which the internet has become more immersive, the play approaches a number of dualities pertaining to a human existence split between a physical world and a digital one. Our group chose to focus on the interrogation room scenes, happening between Detective Morris and Sims, while also approaching the interactions happening within &lt;em&gt;The Hideaway&lt;/em&gt;, an online space where anonymous adults with child avatars fulfill the fantasies of other anonymous adults with adult avatars. We wanted to create an environment similar to the interrogation room, limit access to the installation to two people concurrently, and funnel the communication between the two through a digital layer as a way of introducing a wall of anonimity between them. While the two participants would be sitting a few feet away from each other, they would not see each other’s faces, and their communication would happen through screens, mice, keyboards and text-to-speech software.&lt;/p&gt;
-
-&lt;p&gt;The main object we worked with for the installation is the mirror. Mirrors made sense for two reasons: first, the room we were installing in had glass walls, so everything felt  exposed and too transparent. We wanted to amplify this effect, since we were going for a sterile, interview-room aesthetic. Second, the mirror made sense conceptually in the context of online avatars and fulfilling forbidden desires—the online search for anonymous &lt;em&gt;love&lt;/em&gt;, especially in a provider / consumer context, is an inherently selfish act.&lt;/p&gt;
-
-&lt;p&gt;The mirror idea came into the conversation early on, and over the course of the week we discussed how we could create a compelling experience using the mirrors, and tie them conceptually to avatars. I think as a team we were good at getting materials and prototyping early on (maybe not early enough though? see cube size issue below…), as well as spending time in the assigned space and trying ideas out as soon as we had them. I think we were also good at generating ideas for interactions inside the installation. What I wish we had done a better job at is staying aligned conceptually: taking a step back every now and then, and asking ourselves the high level questions (&lt;em&gt;Is X still what we want people experiencing this installation to feel?&lt;/em&gt;, &lt;em&gt;Why interaction X over interaction Y?&lt;/em&gt;, etc.) I also wish we could have put more thought into altering the space more significantly, but I’m blaming the short time for this one.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-welcome.png&quot; alt=&quot;Welcome screen for participant #1&quot; /&gt;
-    &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/802-welcome.png&quot; alt=&quot;Welcome screen for participant #2&quot; /&gt;
-  &lt;figcaption&gt;
-    Welcome screens for both participants.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Environment&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We ended up hanging a mirror cube from the ceiling. Throughout the course of the entire experience, one of the two participants would be sitting in a chair while having their head covered by the cube. The second participant would also be sitting, facing the first participant’s body and their mirror head, with a laptop in front of them. Participant #1 asks Participant #2 questions from a list, using a mouse. Participant #2 hears text-to-speech synthesized readings of the questions and sees them on their screen, and answers by typing on their laptop. While the interaction is happening, an ambiental smooth jazz track is playing through the speakers, in an attempt to create a comfortable setting for the two.&lt;/p&gt;
-
-&lt;p&gt;We ran into a few difficulties while installing and testing this setup, which could have probably been avoided through better planning. Hanging a cube from the ceiling proved to be a more difficult (or at least much slower) task than we had expected, which led to us not having enough time to hang 5 other surface mirrors from the ceiling, as we were planning. We wanted to create the experience of being lost in a handful of images of themselves for Participant #2, but didn’t manage to achieve that.&lt;/p&gt;
-
-&lt;p&gt;The mirror cube’s size was 12in. x 12in. x 12in., a decision largely constrained by materials—we found plastic mirror sheets of that size (and wanted to avoid hanging glass mirrors from the ceiling because of their weight.) However, the cube had a small screen inside (smartphone size), and the person sitting inside needed to see the screen. Due to the small size of the cube, this part of the experience was uncomfortable and needs to be reworked.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-pick-question.png&quot; alt=&quot;Participant #1 choosing a question.&quot; /&gt;
-    &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/802-question-answer.png&quot; alt=&quot;Participant #2 typing a response.&quot; /&gt;
-    &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-answer.png&quot; alt=&quot;Participant #1 receiving the response.&quot; /&gt;
-  &lt;figcaption&gt;
-    Participant #1 choosing a question, Participant #2 typing a response, and Participant #1 receiving the response.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Software&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We used four networked devices: a smartphone inside of the cube which Participant #1 would use to ask Participant #2 questions from a list, a laptop which Participant #2 would use to receive the questions and type answers, a second laptop which we used in order to allow Participant #1 to control the smartphone using a computer mouse, and a second smartphone which we used outside of the installation in order to control the progression of events in the room (playing a voiceover of the instructions once both participants are in, showing the list of questions or ending the experience.)&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/control-interface.png&quot; alt=&quot;Control interface on my mobile phone.&quot; /&gt;
-  &lt;figcaption&gt;
-    Control interface on my mobile phone.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;While there were no major difficulties in developing the software, Friday’s playtest session brought a few challenges: the smartphone screen going black after a certain amount of idle time, the networked communication not working for the first pair which tried the installation, or us having to listen closely and observe the room when controlling the experience from outside, because certain triggers had not been implemented. These are all technical challenges which could have been avoided with some more testing before showing the work, we were definitely rushed. The main learning here is to plan the install better next time, such that there is time for at least one full run-through before the show starts.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;This installation made for a busy week, but I’m happy with how it turned out. It’s ultimately a prototype for the idea of having two people share a physical space, and be led into having an intimate encounter exclusively digitally. The main question I want to ask participants is whether it made them willing to share more than they would have if they had been in the same room with a (semi-)stranger without the technological barriers we imposed. If yes, why and how?&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-1&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-10-the-nether-installation/801-thank-you.png&quot; alt=&quot;Thank you message displayed once the experience is over.&quot; /&gt;
-  &lt;figcaption&gt;
-    Thank you message displayed once the experience is over.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Performing the Internet" /><category term="ITP" /><category term="Week 4" /><category term="Week 5" /><category term="Week 6" /><summary type="html">The Mirror Room is an installation built in collaboration with Rachel and Shuyi in response to The Nether—a sci-fi play talking about avatars, emotional attachment and pedophillia (yes, it’s complicated…).</summary></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="Intro to Fabrication" /><category term="ITP" /><summary type="html">The first weekly assignment for Intro to Fabrication involves building a flashlight.</summary></entry></feed>
