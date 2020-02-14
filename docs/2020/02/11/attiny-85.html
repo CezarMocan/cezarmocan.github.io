@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117981656-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117981656-1');
+    </script>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jongacnik/gr8/daaf18fb/dist/gr8.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Cezar Mocan</title>
+  </head>
+
+  <body>
+    <div class="mega-container">
+      <div class="info-container">
+        <p class="mb1" style="min-width: 100px;"><em><a href="/">Cezar Mocan</a></em></p>
+        <p class="mb0-half"><a href="/">work</a></p>
+        <p class="mb0-half"><a href="/about">about</a></p>
+        <p class="mb0-half"><a href="http://www.instagram.com/cezarmocan" target="__blank">instagram</a></p>
+        <p class="mb0-half"><a href="http://www.github.com/cezarmocan" target="__blank">github</a></p>
+        <p class="mb0-half"><a href="mailto:c@cezar.io" target="__blank">email</a></p>
+        <p class="mb0-half"><a href="/assets/media/CV_2019_Nov.pdf" target="__blank">resume</a></p>
+
+      </div>
+
+      <div class="blog-post-container">
+    <div class="back-to-blog">
+        <a href="/blog">&larr; Back to blog</a>
+    </div>
+
+    <h1> [Homemade Hardware] ATTiny85 Programming Jig </h1>
+
+    <div class="blog-post-listing-date">
+        <h3>11 Feb 2020</h3>
+    </div>
+
+    <div class="blog-post-listing-categories">
+        <h3>
+        Posted under: 
+        
+            <span class="blog-post-listing-category">Homemade Hardware;</span>
+        
+            <span class="blog-post-listing-category">ITP;</span>
+        
+        </h3>
+    </div>
+
+    <div class="blog-post-content">
+        <figure style="margin: 0;">
+  <img class="img-row-2" style="border: none;" src="/assets/images/blog/2020-02-13-attiny-85/1.JPG" alt="The completed programming jig" />
+  <figcaption>
+  </figcaption>
+</figure>
+<p>My first part of the assignment involved finishing the ATTiny85 programming jig, since I hadn’t got too far in class—only one pin was soldered. While the process felt somewhat tedious, it went smoothly. I checked for shorts between any two pins using a potentiometer and found none. I followed the <a href="http://homemadehardware.com/guides/programming-an-attiny85/">programming tutorial on the class website</a> in order to burn the ATTiny’s bootloader and upload my own sketch. Surprisingly, everything worked from the first attempt. I ended up adding an LED to the jig and connecting it to the ATTiny’s digital pin 3, as a way of improving the jig’s functionality to testing, in addition to programming.</p>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2020-02-13-attiny-85/2.JPG" alt="Back of the programming jig." />
+  <figcaption>
+    Back of the programming jig.
+  </figcaption>
+</figure>
+
+<p>For the project application, I decided to use a component I’d never worked with before. During last semester’s garage sale, I purchased a <a href="https://www.crystalfontz.com/product/cfah1602btmijt-16x2-character-lcd?kw=&amp;origin=pla&amp;gclid=CjwKCAiAhJTyBRAvEiwAln2qB5sd4lTcgHgml3grvAPeOELyKMn9WQ9pnCvROz5gQMvEnA7pCQSBOxoCD9cQAvD_BwE">16x2 LCD screen</a> and never had the chance to use it. I will say from the get go that my attempt failed :). Here is why.</p>
+
+<p>I started by connecting it to my Arduino Nano and making sure it works, since I had never tested it before. It did, and you will have to trust me on this one since I didn’t document it (🤦‍♂️). But this is the (very simple) code that I used, taken from the <code class="highlighter-rouge">LiquidCrystal</code> library’s help.</p>
+
+<p><code>
+#include &#60;LiquidCrystal.h&#62;<br />
+// initialize the library with the numbers of the interface pins<br />
+LiquidCrystal lcd(4, 3, 6, 1, 2, 5);<br />
+void setup() {<br />
+  &emsp;// set up the LCD's number of columns and rows:<br />
+  &emsp;lcd.begin(16, 2);<br />
+  &emsp;// Print a message to the LCD.<br />
+  &emsp;lcd.print("hello, world!");<br />
+}<br />
+void loop() {<br />
+  &emsp;// set the cursor to column 0, line 1<br />
+  &emsp;// (note: line 1 is the second row, since counting begins with 0):<br />
+  &emsp;lcd.setCursor(0, 1);<br />
+  &emsp;// print the number of seconds since reset:<br />
+  &emsp;lcd.print(millis() / 1000);<br />
+}<br />
+</code></p>
+
+<p>Very briefly, the LCD screen has 16 pins. 8 of them (D0 to D7) are used for sending over bytes of information that need to be displayed on the screen, as well as commands (move cursor, clear screen etc.). Two of them are power and ground (VSS, VDD). Two of them are power and ground for the backlight LED (A and K.) Three of them are used in order to set different communication modes for the 8 data pins (RS, RW and E). And last, but not least, one pin (V0) needs to be hooked to a potentiometer and it controls the screen’s contrast.</p>
+
+<p>16 is a lot of pins, since our ATTiny only has 8 pins total, 5* of which can be used for data. (potentially 6 if we consider the RESET pin, more on that in a bit.) The good news is that we can operate the LCD screen by using only 6 pins: RS and E for setting the communication modes, and 4 of the 8 data pins. The <a href="https://github.com/arduino-libraries/LiquidCrystal/blob/master/src/LiquidCrystal.cpp"><code class="highlighter-rouge">LiquidCrystal</code> library</a> implements an 8-bit mode and a 4-bit mode, meaning that the same information can be sent to the screen using only pins D4 through D7. The bad news is that the ATTiny85 only has 5 digital pins available by default.</p>
+
+<p>After some googling, I found out that it is possible to use the RESET pin as a digital pin, and that there are two ways of doing that:</p>
+
+<p>1) By <a href="http://www.technoblogy.com/show?LSE">changing the fuse bits</a> on the ATTiny in order to disable the RESET function on digital pin 5 and then performing a <a href="https://sites.google.com/site/wayneholder/attiny-fuse-reset">fuse reset</a> in order to re-enable programming the chip if necessary</p>
+
+<p>or</p>
+
+<p>2) By doing some <a href="https://www.instructables.com/id/Using-pin-1-on-Attiny13-without-messing-with-fuse-/">circuitry black magic</a> in order to use digital pin 5 while consistenly keeping it under the reset voltage.</p>
+
+<p>I straight up did not understand the black magic in #2. I did <a href="https://embedderslife.wordpress.com/2012/08/20/fuse-bits-arent-that-scary/">some</a> <a href="https://hackaday.com/2012/08/30/avr-fuse-bits-explained/">more</a> <a href="https://www.ladyada.net/learn/avr/avrdude.html">digging</a> around #1 and also found the <a href="http://www.engbedded.com/fusecalc/">Fuse Calculator</a>, but stopped since I didn’t quite know how to run <code class="highlighter-rouge">avrdude</code> outside of the Arduino IDE and I didn’t want to risk bricking the ATTiny. But those are just excuses, it seems doable.</p>
+
+<p>The third option that arose on the horizon was using a multiplexer. I found one in the yellow bins (CD4051BE) and checked out the <a href="https://cityos.io/tutorial/1958/Use-multiplexer-with-Arduino">tutorial</a> for how to use it with Arduino. I understand it conceptually, but using it would require making some manual changes to the <code class="highlighter-rouge">LiquidCrystal</code> library. While I’m generally down to do that, it seemed too tedious of a pursuit for this assignment.</p>
+
+<figure>
+  <img class="img-row-2" style="" src="/assets/images/blog/2020-02-13-attiny-85/5.JPG" alt="The multiplexer" />
+  <figcaption>
+    The CD4051BE multiplexer.
+  </figcaption>
+</figure>
+
+<p>The result of this exercise is that the LED screen works, but displays gibberish, since I had to sacrifice one of the 4 data pins. I ended up plugging it into power, so it’s consistently on HIGH.</p>
+
+<figure>
+  <img class="" style="" src="/assets/images/blog/2020-02-13-attiny-85/3.JPG" alt="The multiplexer" />
+  <figcaption>
+    LCD screen with the ATTiny85.
+  </figcaption>
+</figure>
+
+<figure>
+  <video src="/assets/images/blog/2020-02-13-attiny-85/6.mov" preload="" controls="" loop="" alt="LCD screen with the ATTiny85"></video>
+  <figcaption>
+    LCD screen with the ATTiny85.
+  </figcaption>
+</figure>
+
+    </div>
+</div>
+
+    </div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script></body>
+
+</html>
+
+<!--
+
+  -->

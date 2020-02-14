@@ -48,6 +48,14 @@
     font-weight: normal;
 }
 
+.blog-post-container a {
+  border-bottom: 1px solid black;
+}
+
+.blog-post-container a:hover {
+  border-bottom: none;
+}
+
 .blog-post-container {
     width: 66%;
     margin-top: 50px;
@@ -110,7 +118,7 @@ figure img {
     border: 1px solid black;
 }
 
-img + figcaption { 
+img + figcaption {
     color: rgb(128, 128, 128);
     /* font-family: AkkuratMono; */
     font-size: 11pt;
@@ -125,7 +133,7 @@ figure video {
     border: 1px solid black;
 }
 
-video + figcaption { 
+video + figcaption {
     color: rgb(128, 128, 128);
     /* font-family: AkkuratMono; */
     font-size: 11pt;

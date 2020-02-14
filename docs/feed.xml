@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-11T21:29:02-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[LIPP] Video Playback System</title><link href="http://localhost:4000/2020/02/11/lipp-video-playback-system.html" rel="alternate" type="text/html" title="[LIPP] Video Playback System" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/lipp-video-playback-system</id><content type="html" xml:base="http://localhost:4000/2020/02/11/lipp-video-playback-system.html">&lt;p&gt;This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using &lt;code&gt;jit.rota&lt;/code&gt;, blending multiple videos together using matrix operations (&lt;code&gt;jit.op&lt;/code&gt;) as well as blending frames together using &lt;code&gt;jit.slide&lt;/code&gt;. Here are some of the results.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-13T19:32:10-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[Homemade Hardware] ATTiny85 Programming Jig</title><link href="http://localhost:4000/2020/02/11/attiny-85.html" rel="alternate" type="text/html" title="[Homemade Hardware] ATTiny85 Programming Jig" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/attiny-85</id><content type="html" xml:base="http://localhost:4000/2020/02/11/attiny-85.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-02-13-attiny-85/1.JPG&quot; alt=&quot;The completed programming jig&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;My first part of the assignment involved finishing the ATTiny85 programming jig, since I hadn’t got too far in class—only one pin was soldered. While the process felt somewhat tedious, it went smoothly. I checked for shorts between any two pins using a potentiometer and found none. I followed the &lt;a href=&quot;http://homemadehardware.com/guides/programming-an-attiny85/&quot;&gt;programming tutorial on the class website&lt;/a&gt; in order to burn the ATTiny’s bootloader and upload my own sketch. Surprisingly, everything worked from the first attempt. I ended up adding an LED to the jig and connecting it to the ATTiny’s digital pin 3, as a way of improving the jig’s functionality to testing, in addition to programming.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-13-attiny-85/2.JPG&quot; alt=&quot;Back of the programming jig.&quot; /&gt;
+  &lt;figcaption&gt;
+    Back of the programming jig.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For the project application, I decided to use a component I’d never worked with before. During last semester’s garage sale, I purchased a &lt;a href=&quot;https://www.crystalfontz.com/product/cfah1602btmijt-16x2-character-lcd?kw=&amp;amp;origin=pla&amp;amp;gclid=CjwKCAiAhJTyBRAvEiwAln2qB5sd4lTcgHgml3grvAPeOELyKMn9WQ9pnCvROz5gQMvEnA7pCQSBOxoCD9cQAvD_BwE&quot;&gt;16x2 LCD screen&lt;/a&gt; and never had the chance to use it. I will say from the get go that my attempt failed :). Here is why.&lt;/p&gt;
+
+&lt;p&gt;I started by connecting it to my Arduino Nano and making sure it works, since I had never tested it before. It did, and you will have to trust me on this one since I didn’t document it (🤦‍♂️). But this is the (very simple) code that I used, taken from the &lt;code class=&quot;highlighter-rouge&quot;&gt;LiquidCrystal&lt;/code&gt; library’s help.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+#include &amp;#60;LiquidCrystal.h&amp;#62;&lt;br /&gt;
+// initialize the library with the numbers of the interface pins&lt;br /&gt;
+LiquidCrystal lcd(4, 3, 6, 1, 2, 5);&lt;br /&gt;
+void setup() {&lt;br /&gt;
+  &amp;emsp;// set up the LCD's number of columns and rows:&lt;br /&gt;
+  &amp;emsp;lcd.begin(16, 2);&lt;br /&gt;
+  &amp;emsp;// Print a message to the LCD.&lt;br /&gt;
+  &amp;emsp;lcd.print(&quot;hello, world!&quot;);&lt;br /&gt;
+}&lt;br /&gt;
+void loop() {&lt;br /&gt;
+  &amp;emsp;// set the cursor to column 0, line 1&lt;br /&gt;
+  &amp;emsp;// (note: line 1 is the second row, since counting begins with 0):&lt;br /&gt;
+  &amp;emsp;lcd.setCursor(0, 1);&lt;br /&gt;
+  &amp;emsp;// print the number of seconds since reset:&lt;br /&gt;
+  &amp;emsp;lcd.print(millis() / 1000);&lt;br /&gt;
+}&lt;br /&gt;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Very briefly, the LCD screen has 16 pins. 8 of them (D0 to D7) are used for sending over bytes of information that need to be displayed on the screen, as well as commands (move cursor, clear screen etc.). Two of them are power and ground (VSS, VDD). Two of them are power and ground for the backlight LED (A and K.) Three of them are used in order to set different communication modes for the 8 data pins (RS, RW and E). And last, but not least, one pin (V0) needs to be hooked to a potentiometer and it controls the screen’s contrast.&lt;/p&gt;
+
+&lt;p&gt;16 is a lot of pins, since our ATTiny only has 8 pins total, 5* of which can be used for data. (potentially 6 if we consider the RESET pin, more on that in a bit.) The good news is that we can operate the LCD screen by using only 6 pins: RS and E for setting the communication modes, and 4 of the 8 data pins. The &lt;a href=&quot;https://github.com/arduino-libraries/LiquidCrystal/blob/master/src/LiquidCrystal.cpp&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;LiquidCrystal&lt;/code&gt; library&lt;/a&gt; implements an 8-bit mode and a 4-bit mode, meaning that the same information can be sent to the screen using only pins D4 through D7. The bad news is that the ATTiny85 only has 5 digital pins available by default.&lt;/p&gt;
+
+&lt;p&gt;After some googling, I found out that it is possible to use the RESET pin as a digital pin, and that there are two ways of doing that:&lt;/p&gt;
+
+&lt;p&gt;1) By &lt;a href=&quot;http://www.technoblogy.com/show?LSE&quot;&gt;changing the fuse bits&lt;/a&gt; on the ATTiny in order to disable the RESET function on digital pin 5 and then performing a &lt;a href=&quot;https://sites.google.com/site/wayneholder/attiny-fuse-reset&quot;&gt;fuse reset&lt;/a&gt; in order to re-enable programming the chip if necessary&lt;/p&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;2) By doing some &lt;a href=&quot;https://www.instructables.com/id/Using-pin-1-on-Attiny13-without-messing-with-fuse-/&quot;&gt;circuitry black magic&lt;/a&gt; in order to use digital pin 5 while consistenly keeping it under the reset voltage.&lt;/p&gt;
+
+&lt;p&gt;I straight up did not understand the black magic in #2. I did &lt;a href=&quot;https://embedderslife.wordpress.com/2012/08/20/fuse-bits-arent-that-scary/&quot;&gt;some&lt;/a&gt; &lt;a href=&quot;https://hackaday.com/2012/08/30/avr-fuse-bits-explained/&quot;&gt;more&lt;/a&gt; &lt;a href=&quot;https://www.ladyada.net/learn/avr/avrdude.html&quot;&gt;digging&lt;/a&gt; around #1 and also found the &lt;a href=&quot;http://www.engbedded.com/fusecalc/&quot;&gt;Fuse Calculator&lt;/a&gt;, but stopped since I didn’t quite know how to run &lt;code class=&quot;highlighter-rouge&quot;&gt;avrdude&lt;/code&gt; outside of the Arduino IDE and I didn’t want to risk bricking the ATTiny. But those are just excuses, it seems doable.&lt;/p&gt;
+
+&lt;p&gt;The third option that arose on the horizon was using a multiplexer. I found one in the yellow bins (CD4051BE) and checked out the &lt;a href=&quot;https://cityos.io/tutorial/1958/Use-multiplexer-with-Arduino&quot;&gt;tutorial&lt;/a&gt; for how to use it with Arduino. I understand it conceptually, but using it would require making some manual changes to the &lt;code class=&quot;highlighter-rouge&quot;&gt;LiquidCrystal&lt;/code&gt; library. While I’m generally down to do that, it seemed too tedious of a pursuit for this assignment.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-13-attiny-85/5.JPG&quot; alt=&quot;The multiplexer&quot; /&gt;
+  &lt;figcaption&gt;
+    The CD4051BE multiplexer.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The result of this exercise is that the LED screen works, but displays gibberish, since I had to sacrifice one of the 4 data pins. I ended up plugging it into power, so it’s consistently on HIGH.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-13-attiny-85/3.JPG&quot; alt=&quot;The multiplexer&quot; /&gt;
+  &lt;figcaption&gt;
+    LCD screen with the ATTiny85.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;video src=&quot;/assets/images/blog/2020-02-13-attiny-85/6.mov&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;LCD screen with the ATTiny85&quot;&gt;&lt;/video&gt;
+  &lt;figcaption&gt;
+    LCD screen with the ATTiny85.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">My first part of the assignment involved finishing the ATTiny85 programming jig, since I hadn’t got too far in class—only one pin was soldered. While the process felt somewhat tedious, it went smoothly. I checked for shorts between any two pins using a potentiometer and found none. I followed the programming tutorial on the class website in order to burn the ATTiny’s bootloader and upload my own sketch. Surprisingly, everything worked from the first attempt. I ended up adding an LED to the jig and connecting it to the ATTiny’s digital pin 3, as a way of improving the jig’s functionality to testing, in addition to programming.</summary></entry><entry><title type="html">[LIPP] Video Playback System</title><link href="http://localhost:4000/2020/02/11/lipp-video-playback-system.html" rel="alternate" type="text/html" title="[LIPP] Video Playback System" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/lipp-video-playback-system</id><content type="html" xml:base="http://localhost:4000/2020/02/11/lipp-video-playback-system.html">&lt;p&gt;This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using &lt;code&gt;jit.rota&lt;/code&gt;, blending multiple videos together using matrix operations (&lt;code&gt;jit.op&lt;/code&gt;) as well as blending frames together using &lt;code&gt;jit.slide&lt;/code&gt;. Here are some of the results.
 &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/13.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -51,7 +125,59 @@
 &lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
 
 &lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/389383032?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: linear motion (e.g. pointing the camera out the window of a train or car), water, circular motion (e.g. a record player) and landscape.</summary></entry><entry><title type="html">Fab #5: A mold of my hand</title><link href="http://localhost:4000/2019/11/26/hand-mold.html" rel="alternate" type="text/html" title="Fab #5: A mold of my hand" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/hand-mold</id><content type="html" xml:base="http://localhost:4000/2019/11/26/hand-mold.html">&lt;p&gt;The fifth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on materials and fasteners. This time, I diverged from my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.&lt;/p&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: linear motion (e.g. pointing the camera out the window of a train or car), water, circular motion (e.g. a record player) and landscape.</summary></entry><entry><title type="html">Fab #6: A clock</title><link href="http://localhost:4000/2019/11/26/clock.html" rel="alternate" type="text/html" title="Fab #6: A clock" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/clock</id><content type="html" xml:base="http://localhost:4000/2019/11/26/clock.html">&lt;p&gt;The sixth and last &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on motors. I came back to my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a clock that only shows the passing of time, without giving you the exact hour.&lt;/p&gt;
+
+&lt;p&gt;I first purchased a &lt;a href=&quot;https://www.michaels.com/0.75in-clock-movement-kit-with-black-hands-by-artminds/10475425.html?cm_mmc=PLASearch-_-google-_-MICH_Shopping_US_N_Crafts%26Hobbies_N_N_N_N-_-Crafts+%26+Hobbies&amp;amp;Kenshoo_ida=&amp;amp;gclid=CjwKCAiAis3vBRBdEiwAHXB29EceWt5qwmsd495G-SiJQBzQJLVVw-US9oblMWzHcWg3iIMIiosnxxoCgCcQAvD_BwE&quot; target=&quot;__blank&quot;&gt;clock movement kit&lt;/a&gt; from Michael’s.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/1.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Clock movement kit.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I was pretty set on making a wooden clock, but at the same time found myself under time pressure (get it?!? is that why I decided to build a clock?!? 🤯 is this project a Freudian slip?!? 🤯), so the decision came down between appropriating an older Fab project, or using something off the junk shelf. The junk shelf had a broken down wooden wind chime which I looked promising (no photo unfortunately…,) but I ended up choosing to turn my &lt;a href=&quot;/2019/11/12/one-pencil-holder.html&quot; target=&quot;__blank&quot;&gt;Fab #3 assignment&lt;/a&gt;, the pencil holder, into a clock. You can read that blog post for details on how the wooden spiral was built.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/2.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/3.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    The clock movement kit after opening the box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/4.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/5.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/6.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Left and middle: The pencil holder. Right: The pencil holder turned clock, placed on top of a laser cut acrylic sheet with sanded edges.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Fabricating this project was quite simple—it involved opening up the wooden spiral, placing the clock mechanism inside, drilling a hole of the right size through the spiral’s bottom, re-glueing the spiral, laser-cutting the acrylic sheet and sanding its edges. I tried glueing the clock to the acrylic, but I did not have the appropriate glue for it, and a few experiments (with acrylic cement, general purpose glue and wood glue) all failed.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/9.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In retrospect, this project was really fun to build. However, I wish I had more time to dedicate to its fabrication. On the positive side, it definitely made me appreciate clocks and to the point where I want to build a larger clock project in the near future.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/11.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/12.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/14.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The sixth and last fabrication assignment focuses on motors. I came back to my series of absurd and user unfriendly objects and made a clock that only shows the passing of time, without giving you the exact hour.</summary></entry><entry><title type="html">Fab #5: A mold of my hand</title><link href="http://localhost:4000/2019/11/26/hand-mold.html" rel="alternate" type="text/html" title="Fab #5: A mold of my hand" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/hand-mold</id><content type="html" xml:base="http://localhost:4000/2019/11/26/hand-mold.html">&lt;p&gt;The fifth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on materials and fasteners. This time, I diverged from my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.&lt;/p&gt;
 
 &lt;p&gt;After some online research around molding agents, I settled on an alginate powder called MoldGel and went shopping to Blick.&lt;/p&gt;
 
@@ -201,59 +327,7 @@
 
 &lt;figure&gt;
   &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;&quot; /&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fourth fabrication assignment focuses on enclosures. I continued my series of absurd and user unfriendly objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to this box made by GRADO.</summary></entry><entry><title type="html">Fab #6: A clock</title><link href="http://localhost:4000/2019/11/26/clock.html" rel="alternate" type="text/html" title="Fab #6: A clock" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/clock</id><content type="html" xml:base="http://localhost:4000/2019/11/26/clock.html">&lt;p&gt;The sixth and last &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on motors. I came back to my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a clock that only shows the passing of time, without giving you the exact hour.&lt;/p&gt;
-
-&lt;p&gt;I first purchased a &lt;a href=&quot;https://www.michaels.com/0.75in-clock-movement-kit-with-black-hands-by-artminds/10475425.html?cm_mmc=PLASearch-_-google-_-MICH_Shopping_US_N_Crafts%26Hobbies_N_N_N_N-_-Crafts+%26+Hobbies&amp;amp;Kenshoo_ida=&amp;amp;gclid=CjwKCAiAis3vBRBdEiwAHXB29EceWt5qwmsd495G-SiJQBzQJLVVw-US9oblMWzHcWg3iIMIiosnxxoCgCcQAvD_BwE&quot; target=&quot;__blank&quot;&gt;clock movement kit&lt;/a&gt; from Michael’s.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/1.png&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Clock movement kit.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;I was pretty set on making a wooden clock, but at the same time found myself under time pressure (get it?!? is that why I decided to build a clock?!? 🤯 is this project a Freudian slip?!? 🤯), so the decision came down between appropriating an older Fab project, or using something off the junk shelf. The junk shelf had a broken down wooden wind chime which I looked promising (no photo unfortunately…,) but I ended up choosing to turn my &lt;a href=&quot;/2019/11/12/one-pencil-holder.html&quot; target=&quot;__blank&quot;&gt;Fab #3 assignment&lt;/a&gt;, the pencil holder, into a clock. You can read that blog post for details on how the wooden spiral was built.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/2.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/3.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    The clock movement kit after opening the box.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/4.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/5.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/6.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Left and middle: The pencil holder. Right: The pencil holder turned clock, placed on top of a laser cut acrylic sheet with sanded edges.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Fabricating this project was quite simple—it involved opening up the wooden spiral, placing the clock mechanism inside, drilling a hole of the right size through the spiral’s bottom, re-glueing the spiral, laser-cutting the acrylic sheet and sanding its edges. I tried glueing the clock to the acrylic, but I did not have the appropriate glue for it, and a few experiments (with acrylic cement, general purpose glue and wood glue) all failed.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/9.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/10.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;In retrospect, this project was really fun to build. However, I wish I had more time to dedicate to its fabrication. On the positive side, it definitely made me appreciate clocks and to the point where I want to build a larger clock project in the near future.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/11.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/12.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/14.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The sixth and last fabrication assignment focuses on motors. I came back to my series of absurd and user unfriendly objects and made a clock that only shows the passing of time, without giving you the exact hour.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fourth fabrication assignment focuses on enclosures. I continued my series of absurd and user unfriendly objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to this box made by GRADO.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;The completed pencil holder&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -561,91 +635,4 @@
   &lt;figcaption&gt;
     Ghost box frontal view.
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">For the physical computing midterm project I worked in collaboration with Keunjung Bae. The assignment was Halloween themed, so we decided to build a device that allows one to search for the spirits stuck between worlds. Inspired by technology used by the ghost hunting communities (namely ghost boxes,) we came up with our own interface for finding ghosts.</summary></entry><entry><title type="html">Fab #1: Flashlight</title><link href="http://localhost:4000/2019/10/30/flashlight.html" rel="alternate" type="text/html" title="Fab #1: Flashlight" /><published>2019-10-30T01:00:00-04:00</published><updated>2019-10-30T01:00:00-04:00</updated><id>http://localhost:4000/2019/10/30/flashlight</id><content type="html" xml:base="http://localhost:4000/2019/10/30/flashlight.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
-  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;Completed flashlight&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The first weekly assignment for &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;Intro to Fabrication&lt;/a&gt; involves building a flashlight.
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;From early on I was interested in building a user unfriendly flashlight—one which only lights up when a collection of switches is in a certain configuration. While also thinking about Ben’s story behind this assignment, I decided that the magic configuration which would turn on the flash light should be the birthday of someone close from my family—September 26th, 1966.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/0.JPG&quot; alt=&quot;Early sketch.&quot; /&gt;
-  &lt;figcaption&gt;
-    Early sketch.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;I am using the binary representation of the day, month and year in order to spell out this particular date using switches, as follows: on the first row, we have 5 bits for the day (since days are between 1 and 31). On the second row, we have 4 bits for the month (between 1 and 12). On the third row, we have 7 bits for the last two digits of the year (between 0 and 99.)&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/1.JPG&quot; alt=&quot;All 6 faces of the flash light after being laser cut.&quot; /&gt;
-  &lt;figcaption&gt;
-    All 6 faces of the flash light after being laser cut.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The flashlight is a simple box, with switches on one side, and 5 LEDs on a different side. In terms of materials, I went for plywood. The fabrication process involved using the laser cutter in order to get the box faces, soldering for the electric circuit and a messy hot glue gun to bring everything together.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/2.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
-    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/3.JPG&quot; alt=&quot;First row of switches&quot; /&gt;
-  &lt;figcaption&gt;
-    First row of switches—front and back.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/4.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
-    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/5.JPG&quot; alt=&quot;All rows of switches&quot; /&gt;
-  &lt;figcaption&gt;
-    Full three rows of switches, in the correct configuration. (11010 for the first row, 1001 for the second row, 1000010 for the third row.)
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/6.JPG&quot; alt=&quot;LEDs back&quot; /&gt;
-    &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/7.JPG&quot; alt=&quot;LEDs front&quot; /&gt;
-  &lt;figcaption&gt;
-    The 5 LEDs which light up under the correct switch configuration, front and back.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/8.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;video class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/9.MOV&quot; preload=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot; alt=&quot;Flash light being operated.&quot;&gt;&lt;/video&gt;
-  &lt;figcaption&gt;
-  Flash light being operated.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/10.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/11.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/12.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-10-30-flashlight/13.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Intro to Fabrication" /><category term="ITP" /><summary type="html">The first weekly assignment for Intro to Fabrication involves building a flashlight.</summary></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="Physical Computing" /><category term="ITP" /><summary type="html">For the physical computing midterm project I worked in collaboration with Keunjung Bae. The assignment was Halloween themed, so we decided to build a device that allows one to search for the spirits stuck between worlds. Inspired by technology used by the ghost hunting communities (namely ghost boxes,) we came up with our own interface for finding ghosts.</summary></entry></feed>
