@@ -6,7 +6,13 @@ tags: ["Homemade Hardware", "ITP"]
 published: true
 ---
 
-**Video link to be updated here.** In the meanwhile, enjoy my written description.
+Video presentation here, and text-based proposal below.
+<figure>
+  <video style="border: none;" src="/assets/images/blog/2020-03-13-homemade-hardware-final/video.mov" controls alt=""/>
+  <figcaption>  
+  InfiniteObjects x Exonemo
+  </figcaption>
+</figure>
 
 During my first semester at ITP, I worked on two installations that involved interactive video. <a href="/untitled" target="__blank">The first one</a> was an overhead video feed of a person inside of a warehouse, shown on a computer monitor. The viewer had access to a computer mouse, and moving the mouse would make the person on screen walk towards the new position of the mouse.
 
