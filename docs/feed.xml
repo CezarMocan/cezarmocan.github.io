@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-03T18:35:18-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[LIPP] First Performance</title><link href="http://localhost:4000/2020/02/26/first-performance.html" rel="alternate" type="text/html" title="[LIPP] First Performance" /><published>2020-02-26T00:01:00-05:00</published><updated>2020-02-26T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/26/first-performance</id><content type="html" xml:base="http://localhost:4000/2020/02/26/first-performance.html">&lt;p&gt;My first performance was centered around the idea of politics as entertainment, It involves clips of the New Hampshire Democratic Debate, especially moments when the candidates breathe or make sounds with their bodies. This is a screen recording of the performance.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-13T14:57:24-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[Homemade Hardware] Final Project Proposal</title><link href="http://localhost:4000/2020/03/13/homemade-hardware-final.html" rel="alternate" type="text/html" title="[Homemade Hardware] Final Project Proposal" /><published>2020-03-13T01:01:00-04:00</published><updated>2020-03-13T01:01:00-04:00</updated><id>http://localhost:4000/2020/03/13/homemade-hardware-final</id><content type="html" xml:base="http://localhost:4000/2020/03/13/homemade-hardware-final.html">&lt;p&gt;&lt;strong&gt;Video link to be updated here.&lt;/strong&gt; In the meanwhile, enjoy my written description.&lt;/p&gt;
+
+&lt;p&gt;During my first semester at ITP, I worked on two installations that involved interactive video. &lt;a href=&quot;/untitled&quot; target=&quot;__blank&quot;&gt;The first one&lt;/a&gt; was an overhead video feed of a person inside of a warehouse, shown on a computer monitor. The viewer had access to a computer mouse, and moving the mouse would make the person on screen walk towards the new position of the mouse.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/1.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/2.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  The viewer is able to control my position in the warehouse using the mouse. This is achieved by using ~1500 short video clips of walking between different positions in the space.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;/thejoys&quot; target=&quot;__blank&quot;&gt;The second one&lt;/a&gt; was slightly more elaborate, it involved 4 screens placed around the viewer, and a person stuck inside of the screen space. The person inside of the monitors would walk around the 4 screens (they are only present on one screen at a time,) making the viewer turn around in order to follow her. The viewer had access to a rotary phone and could call the on-screen person at any of the 4 screens.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/3.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/4.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For the Homemade Hardware final project, I would love to continue working with video, potentially interactive depending on the technical constraints.&lt;/p&gt;
+
+&lt;p&gt;A first direction I’m considering is inspired by &lt;a href=&quot;https://shop.infiniteobjects.com/collections/featured/products/exonemo-green&quot;&gt;Exonemo’s collaboration with Infinite Objects&lt;/a&gt;. I would build a video frame, on a 5” or 7” screen, in portrait mode, playing a short video of myself standing still, which loops perfectly. Whever the screen is touched (or a button is pressed,) I leave the frame for a few seconds, and then come back. Or, whenever the user touches the screen, a hand enters the frame and touches my face. Whenever the user lifts their finger, the hand leaves. There are a few content options I’m considering, but they all involve a very simple interaction (screen touch or button press) which triggers the video loop to move into a second state, and eventually get back to its original state. I think this idea would be effective if I can work with relatively high resolution / high FPS (30 or 60) video. Based on my research so far, this might be beyond the scope of the hardware we’ve been using in this class. However, I did find a few breakout boards on Adafruit that might do what I need, it’ll be a matter of figuring out how easy they are to rebuild.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video style=&quot;border: none;&quot; src=&quot;https://cdn.shopify.com/s/files/1/0021/7789/2441/files/exonemo-green-mobile.webm?2203&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  InfiniteObjects x Exonemo
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;If that proves to be too difficult, I would be interested in working with different content on a small screen (&lt;a href=&quot;https://www.adafruit.com/product/2770&quot;&gt;2.8” TFT Display&lt;/a&gt; or variations, but definitely smaller than 3.5”.) I’ve always wanted to do a cross-country trip, but I don’t drive. This direction would involve using Google Street View and getting road images from New York to Los Angeles and back—at equal intervals, with as many images as I can fit on a MicroSD card. The final product would be a tiny device (the size of the screen, with some depth for the PCB) which slowly travels back and forth between New York and LA, by playing the road images in a sequence. I imagine being able to fit at least a few tens of thousands of images (at 320x240 resolution, probably even more.) The main constraints I’ve run into during my research for video with Arduino are low frame rates. However, for this direction, in the spirit of slowness, I would have a frame rate of &lt;em&gt;at most&lt;/em&gt; 1 FPS. If the screen updates its image line of pixels by line of pixels, that’s even better.&lt;/p&gt;
+
+&lt;p&gt;Depending on the timeline, I could add a simple feature of displaying the lat,lon coordinates or the travel direction (N, S, E, W, like rear-view mirrors in some cars do) whenever the user taps the screen. These would all be saved on the microSD card. It would also be great to produce 3-4 of these objects, with different cities, but I realize that might not be realistic.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/5.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  Google Street View image capture from New Jersey.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">Video link to be updated here. In the meanwhile, enjoy my written description.</summary></entry><entry><title type="html">[LIPP] First Performance</title><link href="http://localhost:4000/2020/02/26/first-performance.html" rel="alternate" type="text/html" title="[LIPP] First Performance" /><published>2020-02-26T00:01:00-05:00</published><updated>2020-02-26T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/26/first-performance</id><content type="html" xml:base="http://localhost:4000/2020/02/26/first-performance.html">&lt;p&gt;My first performance was centered around the idea of politics as entertainment, It involves clips of the New Hampshire Democratic Debate, especially moments when the candidates breathe or make sounds with their bodies. This is a screen recording of the performance.&lt;/p&gt;
 
 &lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/395320823?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">My first performance was centered around the idea of politics as entertainment, It involves clips of the New Hampshire Democratic Debate, especially moments when the candidates breathe or make sounds with their bodies. This is a screen recording of the performance.</summary></entry><entry><title type="html">[Homemade Hardware] Marquee Sign: Eagle Designs</title><link href="http://localhost:4000/2020/02/21/eagle-designs.html" rel="alternate" type="text/html" title="[Homemade Hardware] Marquee Sign: Eagle Designs" /><published>2020-02-21T00:01:00-05:00</published><updated>2020-02-21T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/21/eagle-designs</id><content type="html" xml:base="http://localhost:4000/2020/02/21/eagle-designs.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
@@ -40,7 +81,47 @@
 &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-19-feedback/8.png&quot; alt=&quot;&quot; /&gt;
 &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-19-feedback/9.png&quot; alt=&quot;&quot; /&gt;
 &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-19-feedback/10.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-19-feedback/11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">This week’s assignment was a continuation of the previous one—building up our video playback system. I experimented mostly with feedback, plane mapping and built a drunk xfade slider. Here are some of the results.</summary></entry><entry><title type="html">[Homemade Hardware] ATTiny85 Programming Jig</title><link href="http://localhost:4000/2020/02/11/attiny-85.html" rel="alternate" type="text/html" title="[Homemade Hardware] ATTiny85 Programming Jig" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/attiny-85</id><content type="html" xml:base="http://localhost:4000/2020/02/11/attiny-85.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-19-feedback/11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">This week’s assignment was a continuation of the previous one—building up our video playback system. I experimented mostly with feedback, plane mapping and built a drunk xfade slider. Here are some of the results.</summary></entry><entry><title type="html">[LIPP] Video Playback System</title><link href="http://localhost:4000/2020/02/11/lipp-video-playback-system.html" rel="alternate" type="text/html" title="[LIPP] Video Playback System" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/lipp-video-playback-system</id><content type="html" xml:base="http://localhost:4000/2020/02/11/lipp-video-playback-system.html">&lt;p&gt;This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using &lt;code&gt;jit.rota&lt;/code&gt;, blending multiple videos together using matrix operations (&lt;code&gt;jit.op&lt;/code&gt;) as well as blending frames together using &lt;code&gt;jit.slide&lt;/code&gt;. Here are some of the results.
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/13.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882098?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882158?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882179?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882214?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/2.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/3.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/4.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/5.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/6.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/7.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/8.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/9.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/10.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/11.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/12.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/13.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/14.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/15.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/16.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/17.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/18.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/19.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/20.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/21.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/22.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/23.png&quot; alt=&quot;&quot; /&gt;
+&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/24.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using jit.rota, blending multiple videos together using matrix operations (jit.op) as well as blending frames together using jit.slide. Here are some of the results.</summary></entry><entry><title type="html">[Homemade Hardware] ATTiny85 Programming Jig</title><link href="http://localhost:4000/2020/02/11/attiny-85.html" rel="alternate" type="text/html" title="[Homemade Hardware] ATTiny85 Programming Jig" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/attiny-85</id><content type="html" xml:base="http://localhost:4000/2020/02/11/attiny-85.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
   &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-02-13-attiny-85/1.JPG&quot; alt=&quot;The completed programming jig&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
@@ -114,47 +195,7 @@ void loop() {&lt;br /&gt;
   &lt;figcaption&gt;
     LCD screen with the ATTiny85.
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">My first part of the assignment involved finishing the ATTiny85 programming jig, since I hadn’t got too far in class—only one pin was soldered. While the process felt somewhat tedious, it went smoothly. I checked for shorts between any two pins using a potentiometer and found none. I followed the programming tutorial on the class website in order to burn the ATTiny’s bootloader and upload my own sketch. Surprisingly, everything worked from the first attempt. I ended up adding an LED to the jig and connecting it to the ATTiny’s digital pin 3, as a way of improving the jig’s functionality to testing, in addition to programming.</summary></entry><entry><title type="html">[LIPP] Video Playback System</title><link href="http://localhost:4000/2020/02/11/lipp-video-playback-system.html" rel="alternate" type="text/html" title="[LIPP] Video Playback System" /><published>2020-02-11T00:01:00-05:00</published><updated>2020-02-11T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/11/lipp-video-playback-system</id><content type="html" xml:base="http://localhost:4000/2020/02/11/lipp-video-playback-system.html">&lt;p&gt;This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using &lt;code&gt;jit.rota&lt;/code&gt;, blending multiple videos together using matrix operations (&lt;code&gt;jit.op&lt;/code&gt;) as well as blending frames together using &lt;code&gt;jit.slide&lt;/code&gt;. Here are some of the results.
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/13.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882098?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882158?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882179?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/390882214?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/1.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/2.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/3.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/4.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/5.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/6.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/7.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/8.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/9.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/10.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/11.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/12.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/13.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/14.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/15.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/16.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/17.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/18.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/19.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/20.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/21.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/22.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/23.png&quot; alt=&quot;&quot; /&gt;
-&lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2020-02-11-playback-system/24.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using jit.rota, blending multiple videos together using matrix operations (jit.op) as well as blending frames together using jit.slide. Here are some of the results.</summary></entry><entry><title type="html">[LIPP] Cell phone footage</title><link href="http://localhost:4000/2020/02/04/lipp-footage.html" rel="alternate" type="text/html" title="[LIPP] Cell phone footage" /><published>2020-02-04T00:01:00-05:00</published><updated>2020-02-04T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/04/lipp-footage</id><content type="html" xml:base="http://localhost:4000/2020/02/04/lipp-footage.html">&lt;p&gt;After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: &lt;em&gt;linear motion&lt;/em&gt; (e.g. pointing the camera out the window of a train or car), &lt;em&gt;water&lt;/em&gt;, &lt;em&gt;circular motion&lt;/em&gt; (e.g. a record player) and &lt;em&gt;landscape&lt;/em&gt;.&lt;/p&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">My first part of the assignment involved finishing the ATTiny85 programming jig, since I hadn’t got too far in class—only one pin was soldered. While the process felt somewhat tedious, it went smoothly. I checked for shorts between any two pins using a potentiometer and found none. I followed the programming tutorial on the class website in order to burn the ATTiny’s bootloader and upload my own sketch. Surprisingly, everything worked from the first attempt. I ended up adding an LED to the jig and connecting it to the ATTiny’s digital pin 3, as a way of improving the jig’s functionality to testing, in addition to programming.</summary></entry><entry><title type="html">[LIPP] Cell phone footage</title><link href="http://localhost:4000/2020/02/04/lipp-footage.html" rel="alternate" type="text/html" title="[LIPP] Cell phone footage" /><published>2020-02-04T00:01:00-05:00</published><updated>2020-02-04T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/04/lipp-footage</id><content type="html" xml:base="http://localhost:4000/2020/02/04/lipp-footage.html">&lt;p&gt;After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: &lt;em&gt;linear motion&lt;/em&gt; (e.g. pointing the camera out the window of a train or car), &lt;em&gt;water&lt;/em&gt;, &lt;em&gt;circular motion&lt;/em&gt; (e.g. a record player) and &lt;em&gt;landscape&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;This realization made me revisit the history of videos on my phone, since December 2016, and pick the ones that roughly fit these themes as a way of building a larger library. I came up with a few other categories (&lt;em&gt;eyes&lt;/em&gt;, &lt;em&gt;flickers&lt;/em&gt;, &lt;em&gt;forward motion&lt;/em&gt;) and clustered together clips from videos belonging to three of the themes: &lt;em&gt;linear motion&lt;/em&gt;, &lt;em&gt;water&lt;/em&gt; and &lt;em&gt;landscape&lt;/em&gt;. Below are the results. I didn’t take the time to cluster the other ones together, but I will likely be using them throughout the class.&lt;/p&gt;
 
@@ -167,7 +208,103 @@ void loop() {&lt;br /&gt;
 &lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
 
 &lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/389383032?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: linear motion (e.g. pointing the camera out the window of a train or car), water, circular motion (e.g. a record player) and landscape.</summary></entry><entry><title type="html">Fab #6: A clock</title><link href="http://localhost:4000/2019/11/26/clock.html" rel="alternate" type="text/html" title="Fab #6: A clock" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/clock</id><content type="html" xml:base="http://localhost:4000/2019/11/26/clock.html">&lt;p&gt;The sixth and last &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on motors. I came back to my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a clock that only shows the passing of time, without giving you the exact hour.&lt;/p&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: linear motion (e.g. pointing the camera out the window of a train or car), water, circular motion (e.g. a record player) and landscape.</summary></entry><entry><title type="html">Fab #4: Music Box for One Song</title><link href="http://localhost:4000/2019/11/26/music-box.html" rel="alternate" type="text/html" title="Fab #4: Music Box for One Song" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/music-box</id><content type="html" xml:base="http://localhost:4000/2019/11/26/music-box.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;The completed music box&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The fourth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on enclosures. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/12/one-pencil-holder.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Grado_RA1.JPG/1280px-Grado_RA1.JPG&quot; target=&quot;__blank&quot;&gt;this box&lt;/a&gt; made by GRADO.&lt;/p&gt;
+
+&lt;p&gt;After getting a (heavy!!) piece of white pine from M Lumber and doing a quick cardboard prototype for the box proportions, I used the band saw in order to cut the piece to my dimensions. Ben showed us in class a series of wood enclosures, and recommended cutting a piece in two parts, along its height, drilling space for the electronics in one side, and the other one as a cover. However, I failed to cut the wood along its height, and after trying five times gave up.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/1.JPG&quot; alt=&quot;White pine.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/3.JPG&quot; alt=&quot;Attempts to cut along the height.&quot; /&gt;
+  &lt;figcaption&gt;
+    Failed attempts to cut the piece of wood along its height.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I ended up deciding to use the entire piece of wood for the enclosure, and cover up the hole using a piece of white acrylic. Let the drilling start.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/4.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/5.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Forstner bit drilling experiments on a test piece of wood.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/6.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/7.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/8.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    And drilling on the real piece of wood.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Making sure everything is the right depth and drilling all the holes somewhat uniformly took a way longer time than expected. The next step involved trying out the placement of the controls on the box, and expanding the negative space close to the edges, to make installing the panel mount potentiometer and 3.5mm jack possible.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/9.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Testing the controls on the box, and drilling holes such that they can be inserted.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/11.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/14.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Figuring out the electronics of the project.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In order to get the controls to fit, I spent A LOT of time with the Dremel.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/12.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/13.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Creating space for the potentiometer and headphone jack using the Dremel.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;By this point, the box was functional—and music was coming out of it! If you are curious, the song played is Seventeen by Sharon van Etten.&lt;/p&gt;
+
+&lt;p&gt;However, the power jack was still not mounted, as you can see in the second photo below.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/15.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/16.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    The music box is starting to take shape!
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/17.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/18.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Arduino &amp;amp; perfboard inside of the box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The last steps involved closing the bottom of the box—using a laser cut white acrylic sheet, attaching the 12V power jack and applying a polyurethane finish to the wood. And, of course, rubber feet.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/19.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/20.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Finishing the box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fourth fabrication assignment focuses on enclosures. I continued my series of absurd and user unfriendly objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to this box made by GRADO.</summary></entry><entry><title type="html">Fab #6: A clock</title><link href="http://localhost:4000/2019/11/26/clock.html" rel="alternate" type="text/html" title="Fab #6: A clock" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/clock</id><content type="html" xml:base="http://localhost:4000/2019/11/26/clock.html">&lt;p&gt;The sixth and last &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on motors. I came back to my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a clock that only shows the passing of time, without giving you the exact hour.&lt;/p&gt;
 
 &lt;p&gt;I first purchased a &lt;a href=&quot;https://www.michaels.com/0.75in-clock-movement-kit-with-black-hands-by-artminds/10475425.html?cm_mmc=PLASearch-_-google-_-MICH_Shopping_US_N_Crafts%26Hobbies_N_N_N_N-_-Crafts+%26+Hobbies&amp;amp;Kenshoo_ida=&amp;amp;gclid=CjwKCAiAis3vBRBdEiwAHXB29EceWt5qwmsd495G-SiJQBzQJLVVw-US9oblMWzHcWg3iIMIiosnxxoCgCcQAvD_BwE&quot; target=&quot;__blank&quot;&gt;clock movement kit&lt;/a&gt; from Michael’s.&lt;/p&gt;
 
@@ -273,157 +410,4 @@ void loop() {&lt;br /&gt;
   &lt;figcaption&gt;
     The hand after 24 hours of resin curing. Truly low-res, this is an experiment I need to repeat.
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fifth fabrication assignment focuses on materials and fasteners. This time, I diverged from my series of absurd and user unfriendly objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.</summary></entry><entry><title type="html">Fab #4: Music Box for One Song</title><link href="http://localhost:4000/2019/11/26/music-box.html" rel="alternate" type="text/html" title="Fab #4: Music Box for One Song" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/music-box</id><content type="html" xml:base="http://localhost:4000/2019/11/26/music-box.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;The completed music box&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The fourth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on enclosures. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/12/one-pencil-holder.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Grado_RA1.JPG/1280px-Grado_RA1.JPG&quot; target=&quot;__blank&quot;&gt;this box&lt;/a&gt; made by GRADO.&lt;/p&gt;
-
-&lt;p&gt;After getting a (heavy!!) piece of white pine from M Lumber and doing a quick cardboard prototype for the box proportions, I used the band saw in order to cut the piece to my dimensions. Ben showed us in class a series of wood enclosures, and recommended cutting a piece in two parts, along its height, drilling space for the electronics in one side, and the other one as a cover. However, I failed to cut the wood along its height, and after trying five times gave up.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/1.JPG&quot; alt=&quot;White pine.&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/3.JPG&quot; alt=&quot;Attempts to cut along the height.&quot; /&gt;
-  &lt;figcaption&gt;
-    Failed attempts to cut the piece of wood along its height.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;I ended up deciding to use the entire piece of wood for the enclosure, and cover up the hole using a piece of white acrylic. Let the drilling start.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/4.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/5.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Forstner bit drilling experiments on a test piece of wood.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/6.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/7.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/8.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    And drilling on the real piece of wood.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Making sure everything is the right depth and drilling all the holes somewhat uniformly took a way longer time than expected. The next step involved trying out the placement of the controls on the box, and expanding the negative space close to the edges, to make installing the panel mount potentiometer and 3.5mm jack possible.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/9.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/10.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Testing the controls on the box, and drilling holes such that they can be inserted.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/11.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/14.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Figuring out the electronics of the project.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;In order to get the controls to fit, I spent A LOT of time with the Dremel.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/12.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/13.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Creating space for the potentiometer and headphone jack using the Dremel.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;By this point, the box was functional—and music was coming out of it! If you are curious, the song played is Seventeen by Sharon van Etten.&lt;/p&gt;
-
-&lt;p&gt;However, the power jack was still not mounted, as you can see in the second photo below.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/15.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/16.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    The music box is starting to take shape!
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/17.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/18.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Arduino &amp;amp; perfboard inside of the box.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The last steps involved closing the bottom of the box—using a laser cut white acrylic sheet, attaching the 12V power jack and applying a polyurethane finish to the wood. And, of course, rubber feet.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/19.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/20.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Finishing the box.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;&quot; /&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fourth fabrication assignment focuses on enclosures. I continued my series of absurd and user unfriendly objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to this box made by GRADO.</summary></entry><entry><title type="html">Fab #3: One Pencil Holder</title><link href="http://localhost:4000/2019/11/05/one-pencil-holder.html" rel="alternate" type="text/html" title="Fab #3: One Pencil Holder" /><published>2019-11-05T00:01:00-05:00</published><updated>2019-11-05T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/05/one-pencil-holder</id><content type="html" xml:base="http://localhost:4000/2019/11/05/one-pencil-holder.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;The completed pencil holder&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The third &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on measuring tools and using the laser cutter. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user unfriendly&lt;/a&gt; objects and made a pencil holder that holds exactly one pencil.&lt;/p&gt;
-
-&lt;p&gt;Part of the reason why I chose to build this project is the fact that I only own one pen(cil) at a time, since it makes me accountable to not losing it. The current one happens to be a &lt;a href=&quot;https://www.jetpens.com/Stabilo-Point-88-Fineliner-Marker-Pen-0.4-mm-Black/pd/7324?gclid=CjwKCAiAzanuBRAZEiwA5yf4ulMyb38VydmBINMm_CowvCKrpts-Z9aYvBMjs8Fpr5MAssoTm0o4PxoCr44QAvD_BwE&quot; target=&quot;__blank&quot; class=&quot;underlined&quot;&gt;Stabilo Point 88&lt;/a&gt;. I measured it and decided that a reasonable height for the holder would be 5in. Having worked with the laser cutter and acrylic before, I decided to be economical with my materials, and used a pre-owned 1/8in thick sheet of plywood. Going further down the economy rabbit hole, I came up with a design that would waste very little material: concentric circles, stacked on top of each other.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/1.png&quot; alt=&quot;Concentric circles vector file sent to the laser cutter&quot; /&gt;
-  &lt;figcaption&gt;
-    Concentric circles vector file sent to the laser cutter.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The figure shows 40 circles (the amount needed in order to achieve a height of 5in when stacking them on top of each other,) as well as a spiral-looking pattern—every layer got marked with the point where it should be aligned with the previous and next layers, in order to create a 3-dimensional spiral upon stacking.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/2.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/3.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;figcaption&gt;
-    Post laser cutting, and taking the shape out of the plywood frame.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/4.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/5.JPG&quot; alt=&quot;Post laser cutting.&quot; /&gt;
-  &lt;figcaption&gt;
-    Glueing the layers together and testing the function of the object.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/6.JPG&quot; alt=&quot;Object completed, with my pen held.&quot; /&gt;
-  &lt;figcaption&gt;
-    Object completed, with my pen held.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/8.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/9.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/10.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/11.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-  &lt;figcaption&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-12-one-pencil-holder/7.JPG&quot; alt=&quot;Object completed.&quot; /&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The third fabrication assignment focuses on measuring tools and using the laser cutter. I continued my series of absurd and user unfriendly objects and made a pencil holder that holds exactly one pencil.</summary></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fifth fabrication assignment focuses on materials and fasteners. This time, I diverged from my series of absurd and user unfriendly objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.</summary></entry></feed>
