@@ -1,12 +1,16 @@
 ---
 layout: blogPost
 title:  "[Homemade Hardware] Prototype"
-date:   2020-03-13 00:01:00 -0500
+date:   2020-03-27 00:01:00 -0500
 tags: ["Homemade Hardware", "ITP"]
 published: true
 ---
 
 In my <a href="">previous post</a> I proposed two possible directions for the final project. One involved an interactive video frame on a 7" screen, and the other one was a virtual road trip using Google Street View imagery on a smaller, 2.8" screen. I chose the second direction due to lack of access to video equipment and delays in shipping electronic components during this period.
+<figure>
+    <video class="img-row-2" style="border: none;" src="/assets/images/blog/2020-03-27-homemade-hardware-prototype/3-output-8.mp4" muted autoplay loop alt="">
+    </video>
+</figure>
 
 I did a good amount of small display research on Adafruit, and ended up deciding to get the <a href="https://www.adafruit.com/product/1947">2.8" TFT with capacitive display shield for Arduino UNO</a>, which includes a MicroSD card slot. However, Adafruit stopped their shipping operations during the COVID-19 crisis, so I went to Tinkersphere and ordered a <a href="https://tinkersphere.com/shields/1782-28-tft-touch-shield-for-arduino-with-resistive-touch-screen.html">similar shield</a>.
 

@@ -1,51 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-27T14:12:25-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[Homemade Hardware] Final Project Proposal</title><link href="http://localhost:4000/2020/03/13/homemade-hardware-final.html" rel="alternate" type="text/html" title="[Homemade Hardware] Final Project Proposal" /><published>2020-03-13T01:01:00-04:00</published><updated>2020-03-13T01:01:00-04:00</updated><id>http://localhost:4000/2020/03/13/homemade-hardware-final</id><content type="html" xml:base="http://localhost:4000/2020/03/13/homemade-hardware-final.html">&lt;p&gt;Video presentation here, and text-based proposal below.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-27T14:24:55-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[Homemade Hardware] Prototype</title><link href="http://localhost:4000/2020/03/27/homemade-hardware-prototype.html" rel="alternate" type="text/html" title="[Homemade Hardware] Prototype" /><published>2020-03-27T01:01:00-04:00</published><updated>2020-03-27T01:01:00-04:00</updated><id>http://localhost:4000/2020/03/27/homemade-hardware-prototype</id><content type="html" xml:base="http://localhost:4000/2020/03/27/homemade-hardware-prototype.html">&lt;p&gt;In my &lt;a href=&quot;&quot;&gt;previous post&lt;/a&gt; I proposed two possible directions for the final project. One involved an interactive video frame on a 7” screen, and the other one was a virtual road trip using Google Street View imagery on a smaller, 2.8” screen. I chose the second direction due to lack of access to video equipment and delays in shipping electronic components during this period.&lt;/p&gt;
 &lt;figure&gt;
-  &lt;video style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/video.mov&quot; controls=&quot;&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;  
-  InfiniteObjects x Exonemo
-  &lt;/figcaption&gt;
+    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/3-output-8.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
+    &lt;/video&gt;
 &lt;/figure&gt;
-
-&lt;p&gt;During my first semester at ITP, I worked on two installations that involved interactive video. &lt;a href=&quot;/untitled&quot; target=&quot;__blank&quot;&gt;The first one&lt;/a&gt; was an overhead video feed of a person inside of a warehouse, shown on a computer monitor. The viewer had access to a computer mouse, and moving the mouse would make the person on screen walk towards the new position of the mouse.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/1.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/2.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;  
-  The viewer is able to control my position in the warehouse using the mouse. This is achieved by using ~1500 short video clips of walking between different positions in the space.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;a href=&quot;/thejoys&quot; target=&quot;__blank&quot;&gt;The second one&lt;/a&gt; was slightly more elaborate, it involved 4 screens placed around the viewer, and a person stuck inside of the screen space. The person inside of the monitors would walk around the 4 screens (they are only present on one screen at a time,) making the viewer turn around in order to follow her. The viewer had access to a rotary phone and could call the on-screen person at any of the 4 screens.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/3.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/4.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;  
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;For the Homemade Hardware final project, I would love to continue working with video, potentially interactive depending on the technical constraints.&lt;/p&gt;
-
-&lt;p&gt;A first direction I’m considering is inspired by &lt;a href=&quot;https://shop.infiniteobjects.com/collections/featured/products/exonemo-green&quot;&gt;Exonemo’s collaboration with Infinite Objects&lt;/a&gt;. I would build a video frame, on a 5” or 7” screen, in portrait mode, playing a short video of myself standing still, which loops perfectly. Whever the screen is touched (or a button is pressed,) I leave the frame for a few seconds, and then come back. Or, whenever the user touches the screen, a hand enters the frame and touches my face. Whenever the user lifts their finger, the hand leaves. There are a few content options I’m considering, but they all involve a very simple interaction (screen touch or button press) which triggers the video loop to move into a second state, and eventually get back to its original state. I think this idea would be effective if I can work with relatively high resolution / high FPS (30 or 60) video. Based on my research so far, this might be beyond the scope of the hardware we’ve been using in this class. However, I did find a few breakout boards on Adafruit that might do what I need, it’ll be a matter of figuring out how easy they are to rebuild.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;video style=&quot;border: none;&quot; src=&quot;https://cdn.shopify.com/s/files/1/0021/7789/2441/files/exonemo-green-mobile.webm?2203&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;  
-  InfiniteObjects x Exonemo
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;If that proves to be too difficult, I would be interested in working with different content on a small screen (&lt;a href=&quot;https://www.adafruit.com/product/2770&quot;&gt;2.8” TFT Display&lt;/a&gt; or variations, but definitely smaller than 3.5”.) I’ve always wanted to do a cross-country trip, but I don’t drive. This direction would involve using Google Street View and getting road images from New York to Los Angeles and back—at equal intervals, with as many images as I can fit on a MicroSD card. The final product would be a tiny device (the size of the screen, with some depth for the PCB) which slowly travels back and forth between New York and LA, by playing the road images in a sequence. I imagine being able to fit at least a few tens of thousands of images (at 320x240 resolution, probably even more.) The main constraints I’ve run into during my research for video with Arduino are low frame rates. However, for this direction, in the spirit of slowness, I would have a frame rate of &lt;em&gt;at most&lt;/em&gt; 1 FPS. If the screen updates its image line of pixels by line of pixels, that’s even better.&lt;/p&gt;
-
-&lt;p&gt;Depending on the timeline, I could add a simple feature of displaying the lat,lon coordinates or the travel direction (N, S, E, W, like rear-view mirrors in some cars do) whenever the user taps the screen. These would all be saved on the microSD card. It would also be great to produce 3-4 of these objects, with different cities, but I realize that might not be realistic.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/5.png&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;  
-  Google Street View image capture from New Jersey.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">Video presentation here, and text-based proposal below. InfiniteObjects x Exonemo</summary></entry><entry><title type="html">[Homemade Hardware] Prototype</title><link href="http://localhost:4000/2020/03/13/homemade-hardware-prototype.html" rel="alternate" type="text/html" title="[Homemade Hardware] Prototype" /><published>2020-03-13T01:01:00-04:00</published><updated>2020-03-13T01:01:00-04:00</updated><id>http://localhost:4000/2020/03/13/homemade-hardware-prototype</id><content type="html" xml:base="http://localhost:4000/2020/03/13/homemade-hardware-prototype.html">&lt;p&gt;In my &lt;a href=&quot;&quot;&gt;previous post&lt;/a&gt; I proposed two possible directions for the final project. One involved an interactive video frame on a 7” screen, and the other one was a virtual road trip using Google Street View imagery on a smaller, 2.8” screen. I chose the second direction due to lack of access to video equipment and delays in shipping electronic components during this period.&lt;/p&gt;
 
 &lt;p&gt;I did a good amount of small display research on Adafruit, and ended up deciding to get the &lt;a href=&quot;https://www.adafruit.com/product/1947&quot;&gt;2.8” TFT with capacitive display shield for Arduino UNO&lt;/a&gt;, which includes a MicroSD card slot. However, Adafruit stopped their shipping operations during the COVID-19 crisis, so I went to Tinkersphere and ordered a &lt;a href=&quot;https://tinkersphere.com/shields/1782-28-tft-touch-shield-for-arduino-with-resistive-touch-screen.html&quot;&gt;similar shield&lt;/a&gt;.&lt;/p&gt;
 
@@ -122,7 +79,54 @@
 &lt;p&gt;– replace the Arduino UNO with a board that has more SRAM. If I managed to fit one or two frames inside of the RAM, rendering could be significantly faster. However, I would need hundreds of kilobytes of SRAM per frame. Teensy boards have 64k, which would still allow me to have a more sizeable buffer.&lt;/p&gt;
 
 &lt;p&gt;Another limitation for my initial idea is the API limit for Google Street View. Using the free Google Cloud Credits I’ve accumulated, I could make about 100,000 requests (1 image / request.) This will not be enough for the original NY – LA trip I had planned, but I can shorten my trip.
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">In my previous post I proposed two possible directions for the final project. One involved an interactive video frame on a 7” screen, and the other one was a virtual road trip using Google Street View imagery on a smaller, 2.8” screen. I chose the second direction due to lack of access to video equipment and delays in shipping electronic components during this period.</summary></entry><entry><title type="html">[LIPP] First Performance</title><link href="http://localhost:4000/2020/02/26/first-performance.html" rel="alternate" type="text/html" title="[LIPP] First Performance" /><published>2020-02-26T00:01:00-05:00</published><updated>2020-02-26T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/26/first-performance</id><content type="html" xml:base="http://localhost:4000/2020/02/26/first-performance.html">&lt;p&gt;My first performance was centered around the idea of politics as entertainment, It involves clips of the New Hampshire Democratic Debate, especially moments when the candidates breathe or make sounds with their bodies. This is a screen recording of the performance.&lt;/p&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">In my previous post I proposed two possible directions for the final project. One involved an interactive video frame on a 7” screen, and the other one was a virtual road trip using Google Street View imagery on a smaller, 2.8” screen. I chose the second direction due to lack of access to video equipment and delays in shipping electronic components during this period.</summary></entry><entry><title type="html">[Homemade Hardware] Final Project Proposal</title><link href="http://localhost:4000/2020/03/13/homemade-hardware-final.html" rel="alternate" type="text/html" title="[Homemade Hardware] Final Project Proposal" /><published>2020-03-13T01:01:00-04:00</published><updated>2020-03-13T01:01:00-04:00</updated><id>http://localhost:4000/2020/03/13/homemade-hardware-final</id><content type="html" xml:base="http://localhost:4000/2020/03/13/homemade-hardware-final.html">&lt;p&gt;Video presentation here, and text-based proposal below.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;video style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/video.mov&quot; controls=&quot;&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  InfiniteObjects x Exonemo
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;During my first semester at ITP, I worked on two installations that involved interactive video. &lt;a href=&quot;/untitled&quot; target=&quot;__blank&quot;&gt;The first one&lt;/a&gt; was an overhead video feed of a person inside of a warehouse, shown on a computer monitor. The viewer had access to a computer mouse, and moving the mouse would make the person on screen walk towards the new position of the mouse.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/1.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/2.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  The viewer is able to control my position in the warehouse using the mouse. This is achieved by using ~1500 short video clips of walking between different positions in the space.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;/thejoys&quot; target=&quot;__blank&quot;&gt;The second one&lt;/a&gt; was slightly more elaborate, it involved 4 screens placed around the viewer, and a person stuck inside of the screen space. The person inside of the monitors would walk around the 4 screens (they are only present on one screen at a time,) making the viewer turn around in order to follow her. The viewer had access to a rotary phone and could call the on-screen person at any of the 4 screens.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/3.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/4.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For the Homemade Hardware final project, I would love to continue working with video, potentially interactive depending on the technical constraints.&lt;/p&gt;
+
+&lt;p&gt;A first direction I’m considering is inspired by &lt;a href=&quot;https://shop.infiniteobjects.com/collections/featured/products/exonemo-green&quot;&gt;Exonemo’s collaboration with Infinite Objects&lt;/a&gt;. I would build a video frame, on a 5” or 7” screen, in portrait mode, playing a short video of myself standing still, which loops perfectly. Whever the screen is touched (or a button is pressed,) I leave the frame for a few seconds, and then come back. Or, whenever the user touches the screen, a hand enters the frame and touches my face. Whenever the user lifts their finger, the hand leaves. There are a few content options I’m considering, but they all involve a very simple interaction (screen touch or button press) which triggers the video loop to move into a second state, and eventually get back to its original state. I think this idea would be effective if I can work with relatively high resolution / high FPS (30 or 60) video. Based on my research so far, this might be beyond the scope of the hardware we’ve been using in this class. However, I did find a few breakout boards on Adafruit that might do what I need, it’ll be a matter of figuring out how easy they are to rebuild.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video style=&quot;border: none;&quot; src=&quot;https://cdn.shopify.com/s/files/1/0021/7789/2441/files/exonemo-green-mobile.webm?2203&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  InfiniteObjects x Exonemo
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;If that proves to be too difficult, I would be interested in working with different content on a small screen (&lt;a href=&quot;https://www.adafruit.com/product/2770&quot;&gt;2.8” TFT Display&lt;/a&gt; or variations, but definitely smaller than 3.5”.) I’ve always wanted to do a cross-country trip, but I don’t drive. This direction would involve using Google Street View and getting road images from New York to Los Angeles and back—at equal intervals, with as many images as I can fit on a MicroSD card. The final product would be a tiny device (the size of the screen, with some depth for the PCB) which slowly travels back and forth between New York and LA, by playing the road images in a sequence. I imagine being able to fit at least a few tens of thousands of images (at 320x240 resolution, probably even more.) The main constraints I’ve run into during my research for video with Arduino are low frame rates. However, for this direction, in the spirit of slowness, I would have a frame rate of &lt;em&gt;at most&lt;/em&gt; 1 FPS. If the screen updates its image line of pixels by line of pixels, that’s even better.&lt;/p&gt;
+
+&lt;p&gt;Depending on the timeline, I could add a simple feature of displaying the lat,lon coordinates or the travel direction (N, S, E, W, like rear-view mirrors in some cars do) whenever the user taps the screen. These would all be saved on the microSD card. It would also be great to produce 3-4 of these objects, with different cities, but I realize that might not be realistic.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-13-homemade-hardware-final/5.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;  
+  Google Street View image capture from New Jersey.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">Video presentation here, and text-based proposal below. InfiniteObjects x Exonemo</summary></entry><entry><title type="html">[LIPP] First Performance</title><link href="http://localhost:4000/2020/02/26/first-performance.html" rel="alternate" type="text/html" title="[LIPP] First Performance" /><published>2020-02-26T00:01:00-05:00</published><updated>2020-02-26T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/26/first-performance</id><content type="html" xml:base="http://localhost:4000/2020/02/26/first-performance.html">&lt;p&gt;My first performance was centered around the idea of politics as entertainment, It involves clips of the New Hampshire Democratic Debate, especially moments when the candidates breathe or make sounds with their bodies. This is a screen recording of the performance.&lt;/p&gt;
 
 &lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;background-color:black;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/395320823?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">My first performance was centered around the idea of politics as entertainment, It involves clips of the New Hampshire Democratic Debate, especially moments when the candidates breathe or make sounds with their bodies. This is a screen recording of the performance.</summary></entry><entry><title type="html">[Homemade Hardware] Marquee Sign: Eagle Designs</title><link href="http://localhost:4000/2020/02/21/eagle-designs.html" rel="alternate" type="text/html" title="[Homemade Hardware] Marquee Sign: Eagle Designs" /><published>2020-02-21T00:01:00-05:00</published><updated>2020-02-21T00:01:00-05:00</updated><id>http://localhost:4000/2020/02/21/eagle-designs</id><content type="html" xml:base="http://localhost:4000/2020/02/21/eagle-designs.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
@@ -291,7 +295,103 @@ void loop() {&lt;br /&gt;
 &lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
 
 &lt;div class=&quot;mb2&quot; style=&quot;padding:59.41% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/389383032?autoplay=0&amp;amp;loop=0&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: linear motion (e.g. pointing the camera out the window of a train or car), water, circular motion (e.g. a record player) and landscape.</summary></entry><entry><title type="html">Fab #6: A clock</title><link href="http://localhost:4000/2019/11/26/clock.html" rel="alternate" type="text/html" title="Fab #6: A clock" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/clock</id><content type="html" xml:base="http://localhost:4000/2019/11/26/clock.html">&lt;p&gt;The sixth and last &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on motors. I came back to my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a clock that only shows the passing of time, without giving you the exact hour.&lt;/p&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="LIPP" /><category term="ITP" /><summary type="html">After taking footage at arbitrary locations through the city and in my apartment over the past week, I realized I’ve been shooting things similar to what I am always attracted to. With a few exceptions, all the videos seem fit into one of these broad categories: linear motion (e.g. pointing the camera out the window of a train or car), water, circular motion (e.g. a record player) and landscape.</summary></entry><entry><title type="html">Fab #4: Music Box for One Song</title><link href="http://localhost:4000/2019/11/26/music-box.html" rel="alternate" type="text/html" title="Fab #4: Music Box for One Song" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/music-box</id><content type="html" xml:base="http://localhost:4000/2019/11/26/music-box.html">&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;The completed music box&quot; /&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The fourth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on enclosures. I continued my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/12/one-pencil-holder.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to &lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Grado_RA1.JPG/1280px-Grado_RA1.JPG&quot; target=&quot;__blank&quot;&gt;this box&lt;/a&gt; made by GRADO.&lt;/p&gt;
+
+&lt;p&gt;After getting a (heavy!!) piece of white pine from M Lumber and doing a quick cardboard prototype for the box proportions, I used the band saw in order to cut the piece to my dimensions. Ben showed us in class a series of wood enclosures, and recommended cutting a piece in two parts, along its height, drilling space for the electronics in one side, and the other one as a cover. However, I failed to cut the wood along its height, and after trying five times gave up.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/1.JPG&quot; alt=&quot;White pine.&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/3.JPG&quot; alt=&quot;Attempts to cut along the height.&quot; /&gt;
+  &lt;figcaption&gt;
+    Failed attempts to cut the piece of wood along its height.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I ended up deciding to use the entire piece of wood for the enclosure, and cover up the hole using a piece of white acrylic. Let the drilling start.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/4.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/5.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Forstner bit drilling experiments on a test piece of wood.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/6.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/7.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/8.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    And drilling on the real piece of wood.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Making sure everything is the right depth and drilling all the holes somewhat uniformly took a way longer time than expected. The next step involved trying out the placement of the controls on the box, and expanding the negative space close to the edges, to make installing the panel mount potentiometer and 3.5mm jack possible.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/9.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/10.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Testing the controls on the box, and drilling holes such that they can be inserted.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/11.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/14.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Figuring out the electronics of the project.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In order to get the controls to fit, I spent A LOT of time with the Dremel.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/12.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/13.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Creating space for the potentiometer and headphone jack using the Dremel.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;By this point, the box was functional—and music was coming out of it! If you are curious, the song played is Seventeen by Sharon van Etten.&lt;/p&gt;
+
+&lt;p&gt;However, the power jack was still not mounted, as you can see in the second photo below.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/15.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/16.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    The music box is starting to take shape!
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/17.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/18.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Arduino &amp;amp; perfboard inside of the box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The last steps involved closing the bottom of the box—using a laser cut white acrylic sheet, attaching the 12V power jack and applying a polyurethane finish to the wood. And, of course, rubber feet.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/19.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/20.JPG&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;
+    Finishing the box.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;img class=&quot;&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-11-26-music-box/complete.JPG&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fourth fabrication assignment focuses on enclosures. I continued my series of absurd and user unfriendly objects and made a digital music box that plays a single song. I got really excited about the idea of building a minimalist enclosure out of a single piece of wood, somewhat similar to this box made by GRADO.</summary></entry><entry><title type="html">Fab #6: A clock</title><link href="http://localhost:4000/2019/11/26/clock.html" rel="alternate" type="text/html" title="Fab #6: A clock" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/clock</id><content type="html" xml:base="http://localhost:4000/2019/11/26/clock.html">&lt;p&gt;The sixth and last &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on motors. I came back to my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a clock that only shows the passing of time, without giving you the exact hour.&lt;/p&gt;
 
 &lt;p&gt;I first purchased a &lt;a href=&quot;https://www.michaels.com/0.75in-clock-movement-kit-with-black-hands-by-artminds/10475425.html?cm_mmc=PLASearch-_-google-_-MICH_Shopping_US_N_Crafts%26Hobbies_N_N_N_N-_-Crafts+%26+Hobbies&amp;amp;Kenshoo_ida=&amp;amp;gclid=CjwKCAiAis3vBRBdEiwAHXB29EceWt5qwmsd495G-SiJQBzQJLVVw-US9oblMWzHcWg3iIMIiosnxxoCgCcQAvD_BwE&quot; target=&quot;__blank&quot;&gt;clock movement kit&lt;/a&gt; from Michael’s.&lt;/p&gt;
 
@@ -343,58 +443,4 @@ void loop() {&lt;br /&gt;
   &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-11-clock/14.JPG&quot; alt=&quot;&quot; /&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The sixth and last fabrication assignment focuses on motors. I came back to my series of absurd and user unfriendly objects and made a clock that only shows the passing of time, without giving you the exact hour.</summary></entry><entry><title type="html">Fab #5: A mold of my hand</title><link href="http://localhost:4000/2019/11/26/hand-mold.html" rel="alternate" type="text/html" title="Fab #5: A mold of my hand" /><published>2019-11-26T00:01:00-05:00</published><updated>2019-11-26T00:01:00-05:00</updated><id>http://localhost:4000/2019/11/26/hand-mold</id><content type="html" xml:base="http://localhost:4000/2019/11/26/hand-mold.html">&lt;p&gt;The fifth &lt;a class=&quot;underlined&quot; target=&quot;__blank&quot; href=&quot;https://itp.nyu.edu/fab/&quot;&gt;fabrication&lt;/a&gt; assignment focuses on materials and fasteners. This time, I diverged from my series of &lt;a href=&quot;/2019/10/30/flashlight.html&quot; class=&quot;underlined&quot;&gt;absurd&lt;/a&gt; and &lt;a href=&quot;/2019/11/05/usb-flash-drives.html&quot;&gt;user&lt;/a&gt; &lt;a href=&quot;/2019/11/26/music-box.html&quot;&gt;unfriendly&lt;/a&gt; objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.&lt;/p&gt;
-
-&lt;p&gt;After some online research around molding agents, I settled on an alginate powder called MoldGel and went shopping to Blick.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/0.png&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    MoldGel from Blick.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;This is a powder that needs to be mixed with water in a ratio of 3:1 by weight. I first tested the mixture and the quality of the paste in a small quantity, and then moved on to the full bucket size.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/1.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/3.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-3&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/4.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    MoldGel after mixing with water.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Mixing took a lot of time, since I did it manually. if I were to do it again, I would certainly use a mixer of sorts. Its quality was also pretty bad—it never got to the smoothness level it should have been at, possibly due to the lack of proper mixing, or due to the salts/minerals in the water I used.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/5.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/6.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Keeping my hand in the mix for 5 minutes, while it solidified.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/7.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/8.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    Hand shape on the left, epoxy resin and watercolor paint on the right.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/9.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/10.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    3 buckets of epoxy resin mixed with 3 different kinds of paint—red, green and blue on the left. Resin poured into the mold on the right.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/13.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;&quot; src=&quot;/assets/images/blog/2019-12-06-hand-mold/14.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;
-    The hand after 24 hours of resin curing. Truly low-res, this is an experiment I need to repeat.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The fifth fabrication assignment focuses on materials and fasteners. This time, I diverged from my series of absurd and user unfriendly objects and made a mold of my hand using resin, watercolor and a handful of USB heads. I had been excited about experimenting with resin for a while, and this seemed like the perfect opportunity.</summary></entry></feed>
+&lt;/figure&gt;</content><author><name></name></author><category term="Fabrication" /><category term="ITP" /><summary type="html">The sixth and last fabrication assignment focuses on motors. I came back to my series of absurd and user unfriendly objects and made a clock that only shows the passing of time, without giving you the exact hour.</summary></entry></feed>
