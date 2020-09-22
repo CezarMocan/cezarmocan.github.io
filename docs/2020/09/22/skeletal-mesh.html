@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117981656-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117981656-1');
+    </script>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jongacnik/gr8/daaf18fb/dist/gr8.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Cezar Mocan</title>
+  </head>
+
+  <body>
+    <div class="mega-container">
+      <div class="info-container">
+        <p class="mb1" style="min-width: 100px;"><em><a href="/">Cezar Mocan</a></em></p>
+        <p class="mb0-half"><a href="/">work</a></p>
+        <p class="mb0-half"><a href="/about">about</a></p>
+        <p class="mb0-half"><a href="http://www.instagram.com/cezarmocan" target="__blank">instagram</a></p>
+        <p class="mb0-half"><a href="http://www.github.com/cezarmocan" target="__blank">github</a></p>
+        <p class="mb0-half"><a href="mailto:c@cezar.io" target="__blank">email</a></p>
+        <p class="mb0-half"><a href="/assets/media/CV_2019_Nov.pdf" target="__blank">resume</a></p>
+
+      </div>
+
+      <div class="blog-post-container">
+    <div class="back-to-blog">
+        <a href="/blog">&larr; Back to blog</a>
+    </div>
+
+    <h1> [Performative Avatars] Skeletal Mesh </h1>
+
+    <div class="blog-post-listing-date">
+        <h3>22 Sep 2020</h3>
+    </div>
+
+    <div class="blog-post-listing-categories">
+        <h3>
+        Posted under: 
+        
+            <span class="blog-post-listing-category">Performative Avatars;</span>
+        
+            <span class="blog-post-listing-category">ITP;</span>
+        
+        </h3>
+    </div>
+
+    <div class="blog-post-content">
+        <figure style="margin: 0; margin-bottom: 20px;">
+    <video class="" style="border: none;" src="/assets/images/blog/2020-09-22-skeletal-mesh/running.mp4" muted="" autoplay="" loop="" alt="">
+    </video>
+      <figcaption>
+    Skeletal Mesh running around in my environment
+  </figcaption>
+</figure>
+<p>For this week’s assignment, I revisited my understanding of skeletal meshes and working with them in Unreal Engine, through Matt’s tutorials. I became familiar with this type of mesh last semester, through work I did for Synthetic Architectures and for my Live Image Processing &amp; Performance final project.</p>
+
+<p>The Unreal concepts are clear to me so far, I’m finally starting to feel a little bit of control over the software. My personal learning goal for this week however has been figuring out how to bring an avatar created in Daz Studio into Unreal, and applying a Mixamo animation to it. Bringing an FBX file exported from Daz into the Mixamo web interface doesn’t work properly (conversion fails, for some reason…,) so I had to look for alternatives. I found a <a href="https://www.youtube.com/watch?v=pEK7fvAIV_A">Youtube tutorial</a> which explains how to use Maya as a bridge, in order to apply an animation downloaded from Mixamo to a custom Maya character – which in my case was a Daz character, transferred to Maya using the Daz to Maya bridge. This process involves creating a control rig for the downloaded Mixamo character, whose bone mapping needs to 100% match the control rig of the exported Daz character. I accidentally mis-mapped some of the hand bones (image below), which caused my character’s fingers to look completely broken, but other than that, the tutorial got me what I needed.</p>
+
+<figure style="margin: 0; margin-bottom: 20px;">
+    <img class="" style="border: none;" src="/assets/images/blog/2020-09-22-skeletal-mesh/hands.png" />
+  <figcaption>
+    Twisted fingers because of hand skeleton wrong mapping in Maya
+  </figcaption>
+</figure>
+
+<p>The other thing I wanted to learn more about this week had to do with the textures associated with my character, so I gave him a few face tattoos (“Trust your body” / “Trust nobody”) by adding the text in Photoshop on the texture file associated with the body material.</p>
+
+<p>In the video above, I also used a camera shake in order to simulate the up-down running motion (camera is attached to character’s head, which can be seen in a few seconds at the beginning / end.) I also adjusted the character’s morph targets through a Blueprint. The animation would still need a good amount of work in order to feel somewhat realistic (running motion, speed, face gestures, mouth, etc.,) but I’m happy I got the Daz character to work with Mixamo animations.</p>
+
+<p><br /><br /><br /><br /></p>
+
+    </div>
+</div>
+
+    </div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script></body>
+
+</html>
+
+<!--
+
+  -->
