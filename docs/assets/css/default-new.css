@@ -206,16 +206,22 @@ p {
 .imagery-container img {
   max-width: 80vw;
   max-height: 90vh;
+  object-fit: contain;
+  object-position: left;
 }
 
 .imagery-container iframe {
   max-width: 80vw;
   max-height: 90vh;
+  object-fit: contain;
+  object-position: left;
 }
 
 .imagery-container video {
   max-width: 80vw;
   max-height: 90vh;
+  object-fit: contain;
+  object-position: left;
 }
 
 .project-content-container {

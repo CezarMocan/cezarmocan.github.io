@@ -1,5 +1,5 @@
 ---
-layout: projectPage
+layout: projectPageNew
 title: Disappearing
 year: 2019
 medium: web performance
@@ -15,6 +15,3 @@ images:
    description:
    youtube: true
 ---
-<div class="mb2" style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/ypLd_xOhjcM?modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%; background-color: black;" allowfullscreen></iframe>
-</div>
