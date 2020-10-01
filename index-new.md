@@ -37,94 +37,94 @@ projects:
   client: Evan Roth
   image: /assets/images/disappearing.gif
 - title: Distributed Web of Care
-  medium: web
+  medium: web-based performance
   year: 2019
   client: Taeyoon Choi
   link: /dwc
-  image: /assets/images/disappearing.gif
+  image: /assets/images/dwc/4.jpg
 - title: Disappearing
-  medium: web performance
+  medium: web
   year: 2019
   link: /disappearing
-  image: /assets/images/disappearing.gif
+  image: /assets/images/disappearing/cover.png
 - title: The Joys of Being a Screensaver
   medium: video installation
   year: 2019
   link: /thejoys
-  image: /assets/images/thejoys/thumbnail.JPG
+  image: /assets/images/thejoys/1.JPG
 - title: Stones
   medium: web performance
   year: 2019
   link: /stones
-  image: /assets/images/stones/thumbnail.gif
+  image: /assets/images/stones/highres.png
 - title: Cities and the Sky 3
   medium: augmented reality
   year: 2018
   link: /citiesandthesky3
-  image: /assets/images/citiesandthesky3/1.png
+  image: /assets/images/citiesandthesky3/cover.png
 - title: An Algorithm That Gives You 4 Friends
   medium: website
   year: 2018
   link: /algorithm4friends
-  image: /assets/images/algorithm4friends/algorithm4friends.gif
+  image: /assets/images/algorithm4friends/2.png
 - title: Moji Moji
   medium: iOS app
   year: 2018
   link: /mojimoji
   client: Gakko
-  image: /assets/images/mojimoji.jpg
+  image: /assets/images/mojimoji/cover.png
 - title: The Road Back Home
   medium: website
   year: 2018
   link: /theroadbackhome
-  image: /assets/images/roadbackhome.gif
+  image: /assets/images/theroadbackhome/cover.png
 - title: Your Secret
   medium: augmented reality
   year: 2018
   link: /yoursecret
-  image: /assets/images/yoursecret/cover.png
+  image: /assets/images/yoursecret/1.png
 - title: 000pen.space
   medium: website
   year: 2018
   link: /000penspace
-  image: /assets/images/000penspace.gif
+  image: /assets/images/000penspace/cover.png
 - title: Poster Jam
   medium: poster series
   year: 2017
   link: /posterjam
-  image: /assets/images/posterjam.png
+  image: /assets/images/posterjam/pressure-1.png
 - title: Gakko Camp Gallery
   medium: website
   year: 2017
   link: /gakkocampgallery
   client: Gakko
-  image: /assets/images/gakkocampgallery.gif
+  image: /assets/images/gakkocampgallery/cover.png
 - title: Water
   medium: poster series
   year: 2016
   link: /water
-  image: /assets/images/water/cover_animated.gif
+  image: /assets/images/water/1.png
 - title: Self and Other
   medium: website
   year: 2016
   link: /selfandother
-  image: /assets/images/selfandother.png
+  image: /assets/images/selfandother/img.png
 - title: Syria Conflict Tracking
   medium: mobile app
   year: 2016
   link: /syriaconflicttracking
   client: Palantir Technologies
-  image: /assets/images/syriaconflicttracking.png  
+  image: /assets/images/syriaconflicttracking/cover.png  
 - title: Self Portrait
   medium: software
   year: 2016
   link: /selfportrait
-  image: /assets/images/selfportrait.gif
+  image: /assets/images/selfportrait/cover.png
 - title: An Argument for a New Digital Currency
   medium: book
   year: 2016
   link: /anargumentforanewdigitalcurrency
-  image: /assets/images/anargument.gif
+  image: /assets/images/anargumentforanewdigitalcurrency/4.png
 #- title: Koffee/ Storno
 #  medium: poster / type specimen
 #  year: 2016
@@ -144,10 +144,10 @@ projects:
   medium: zine / typeface
   year: 2015
   link: /pushtoopen
-  image: /assets/images/pushtoopen.jpg
+  image: /assets/images/pushtoopen/poster.png
 - title: Lost in the Meritocracy
   medium: book
   year: 2015
   link: /lostinthemeritocracy
-  image: /assets/images/lostinthemeritocracy.jpg
+  image: /assets/images/lostinthemeritocracy/cover.jpg
 ---

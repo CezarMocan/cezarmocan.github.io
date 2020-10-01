@@ -1,5 +1,5 @@
 ---
-layout: projectPage
+layout: projectPageNew
 title: Water (2016)
 narrow: true
 paragraphs:
@@ -8,10 +8,9 @@ paragraphs:
  - text: |
      The visual language uses semi-controlled glitches created with a scanner as abstract representations of the internal body decay of the affected fauna. At the same time, a poetry trained neural network offers possible interpretations of the incomprehensibly large numbers associated with oil spills: <em>“700,000 gallons of oil is smaller than the sink in the barn. I don’t know what to do.” / “8 billion dollars stands for the 6th century.” / “82,000 birds means the size of a picnic, and the sea of a single place in the box of a bird.”</em>
  - text: |
-     As a way of signaling how far removed we are from the numbers and the events themselves, the computer generated explanations are presented a few steps removed from their original form: text becomes image, which becomes its ASCII representation, which flows into shapes on the poster.
+     As a way of signaling how far removed we are from the numbers and the events themselves, the computer generated explanations are presented a few steps removed from their original form: text becomes image, which becomes its ASCII representation, which flows into shapes on the poster.<br/><br/>
  - text: |
      This series was created as part of Yale’s Advanced Graphic Design studio. It uses an open-source neural network trained by Ross Goodwin.
-   small: true
 images:
  - url: /assets/images/water/0.png
    description: 

@@ -1,6 +1,8 @@
 ---
-layout: projectPage
-title: Cities and the Sky 3 (2018)
+layout: projectPageNew
+title: Cities and the Sky 3
+year: 2018
+medium: augmented reality
 paragraphs:
  - text: An augmented reality experience for two which explores the collaborative nature of building, through the lens of a place imagined by Calvino Italo—Thekla is a city whose construction never stops, so that its deconstruction can never begin.
  - text: |
@@ -8,12 +10,14 @@ paragraphs:
  - text: |
      The experiences of the two are connected: the amount of work done by the builder directly influences the light conditions in the explorer’s journey. This gesture functions as a way of inducing collaboration between the two, as well as a way of staying faithful to the original story—building must never stop.
  - text: |
-     A third component of this work consists in a projection of all builders’ creations througout the course of the exhibition—the shared city. Starting as an empty screen, the projected city gathers one more layer with every builder’s creation. 
+     A third component of this work consists in a projection of all builders’ creations througout the course of the exhibition—the shared city. Starting as an empty screen, the projected city gathers one more layer with every builder’s creation. <br/><br/>
  - text: |
      Exhibited as part of a group show in 2018 at <a class="underlined" href="http://www.acud.de/" target="__blank">ACUD</a> in Berlin. <br/><br/>
      Developed during the Reality? program at the <a class="underlined" href="http://www.schoolofma.org" target="__blank">School of Machines, Making and Make-Believe</a>. Created using Unity. 
    small: true
 images:
+ - url: https://player.vimeo.com/video/280118041?title=0&byline=0&portrait=0
+   vimeo: true
  - url: https://cortex.persona.co/w/2500/q/67/i/3a43dd29205381c83e10b09bb128390bd67834a82eebb6e6496507f3d6d6e2e1/Thekla_Complete_1.png
    description: Still from the live projection running during the exhibition of the project at ACUD in July 2018. All of the spatial drawings are stacked on top of each other, forming the city of Thekla.
  - url: https://cortex.persona.co/w/2500/q/67/i/e66e10cbff1bfe1223a47bec020fa8ed482fbbfb71ebfe01fda38b2b7e761878/Drawing_Intro.png
@@ -34,4 +38,3 @@ images:
    description: |
      Still from the projection: drawings in space, stacked on top of each other.
 ---
-<div class="mb2" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/280118041?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

@@ -1,6 +1,8 @@
 ---
-layout: projectPage
-title: An Argument for a New Digital Currency (2016)
+layout: projectPageNew
+title: An Argument for a New Digital Currency
+year: 2016
+medium: book design
 paragraphs:
  - text: |
      A book design project presenting a collection of essays on financial systems and reproduction in art, which introduces a fictional digital currency backed by digitally altered reproductions of Mona Lisa.

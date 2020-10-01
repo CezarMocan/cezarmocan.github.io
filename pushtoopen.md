@@ -1,15 +1,15 @@
 ---
-layout: projectPage
-title: Push to Open (2015)
-narrow: true
+layout: projectPageNew
+title: Push to Open
+year: 2015
+medium: zine / typeface
 paragraphs:
  - text: |
-     A zine and a typeface created from a collection of images of buttons and physical interfaces. The letter forms come from shapes found in the buttons.
+     A zine and a typeface created from a collection of images of buttons and physical interfaces. The letter forms come from shapes found in the buttons.<br/><br/>
  - text: |
-     Photo credits—<a class="underlined" href="http://katelynrebelo.com/" target="__blank">Katelyn Rebelo</a>
-   small: true
+     Photo credits: <a class="underlined" href="http://katelynrebelo.com/" target="__blank">Katelyn Rebelo</a>
 images:
- - url: https://cortex.persona.co/w/900/q/67/i/dbbb92677985282da724703dc9f5e7267946f5c712f40ea0c9dc74fecfa3c397/poster_white_texture.png
+ - url: /assets/images/pushtoopen/poster.png
    description: 
  - url: https://cortex.persona.co/w/1398/q/67/i/d48daf25118f82ad293a2cfba094948760cba7caac826e7f9dce5c43d233e391/IMG_1112.jpg
    description: 
