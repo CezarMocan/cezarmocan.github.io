@@ -35,7 +35,7 @@ a.no-underline {
 }
 
 a:hover {
-  color: red;
+  color: #ffff00;
 }
 
 .header-container {
@@ -84,10 +84,9 @@ a:hover {
 }
 
 .footer {
-  width: 100%;
-  padding: 5px 0;
+  padding: 10px 14px;
   font-size: 10pt;
-  text-align: center;
+  line-height: 1.15;
 }
 
 .dot {
@@ -165,6 +164,19 @@ p {
   margin-right: 10px;
 }
 
+.project-column.go-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-column.go-back p {
+  transform: translateY(-7px);
+  margin-right: 15px;
+  font-size: 50px;
+  line-height: 0;
+}
+
 .project-thumbnail {
   opacity: 0;
   position: fixed;
@@ -180,4 +192,32 @@ p {
 
 .project-row.interactive:hover .project-thumbnail {
   opacity: 1;
+}
+
+.description-container {
+  margin: -10px 0 0 10px;
+}
+
+.imagery-container {
+  margin: 15px 0 0 10px;
+  max-width: calc(100% - 40px);
+}
+
+.imagery-container img {
+  max-width: 80vw;
+  max-height: 90vh;
+}
+
+.imagery-container iframe {
+  max-width: 80vw;
+  max-height: 90vh;
+}
+
+.imagery-container video {
+  max-width: 80vw;
+  max-height: 90vh;
+}
+
+.project-content-container {
+  margin-bottom: 75px;
 }
