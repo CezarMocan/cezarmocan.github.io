@@ -4,33 +4,47 @@
 
 layout: indexPageNew
 projects:
-- title: LIPP.TV
-  medium: website
+- title: '24 Hours Relaxing Landscape for Stress Relief'
+  medium: three channel video
   year: 2020
-  client: Live Image Processing & Performance @ NYU ITP
-  link: /lipptv
-  image: /assets/images/untitled/1.JPG
+  link: /24hrslandscape
+  image: /assets/images/24hrslandscape/1.png
+  selected: true
+- title: ✿ Shadow Network ✿
+  medium: software
+  year: 2020
+  link: /shadownetwork
+  image: /assets/images/shadownetwork/1.png
+  selected: true
+- title: In 2020, I dream
+  medium: desktop performance
+  year: 2020
+  link: /in2020idream
+  image: /assets/images/in2020idream/1.png
 - title: ✽ Office Olympics ✽
   medium: 3D animation
   year: 2020
   link: /untitled
-  image: /assets/images/untitled/1.JPG
+  image: /assets/images/officeolympics/cover.png
+  selected: true
 - title: upgradeacademy.ro
   medium: graphic design
   year: 2020
   client: Upgrade Academy
   link: /untitled
-  image: /assets/images/untitled/1.JPG
-- title: ✿ Shadow Network ✿
-  medium: software
+  image: /assets/images/upgradeacademy/t-4.png
+- title: LIPP.TV
+  medium: website
   year: 2020
-  link: /untitled
-  image: /assets/images/untitled/1.JPG
+  client: Live Image Processing & Performance @ NYU ITP
+  link: /lipptv
+  image: /assets/images/lipptv/1.png
 - title: Untitled
   medium: interactive video
   year: 2019
   link: /untitled
   image: /assets/images/untitled/1.JPG
+  selected: true
 - title: worldvie.ws
   medium: software, website
   year: 2019 – 2020
@@ -109,6 +123,7 @@ projects:
   year: 2016
   link: /selfandother
   image: /assets/images/selfandother/img.png
+  selected: true
 - title: Syria Conflict Tracking
   medium: mobile app
   year: 2016

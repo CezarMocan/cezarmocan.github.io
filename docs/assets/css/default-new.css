@@ -110,13 +110,17 @@ p {
   font-size: 24pt;
   margin: 1px 0;
   margin-bottom: 3px;
-  line-height: 1;
+  line-height: 1.05;
 }
 
 .intro-container {
   margin: 25px 200px 150px 10px;
   position: relative;
   z-index: 10;
+}
+
+.intro-container.no-margin-bottom {
+  margin-bottom: 0;
 }
 
 .new-projects-container {

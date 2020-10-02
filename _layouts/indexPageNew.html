@@ -3,9 +3,47 @@ layout: default-new
 ---
 <div class="intro-container">
   <p>
-    I am an artist and programmer, interested in expressions of intimacy in the digital realm. I consider the web to be my primary medium, but I have also worked with mobile applications, game engines, physical computing, augmented reality or print graphic design.
+    I am an artist and programmer, born in Romania and working in Brooklyn. My work engages with technology usage patterns and the creation of humane digital environments using 3D rendering, video and the web.
     <br/><br/><br/>
+    You can view a list of my selected work below, or scroll down for a complete archive.
+    <br/><br/>
     ↓ 
+  </p>
+</div>
+
+<div class="new-projects-container">
+  <div class="project-row header">
+    <div class="project-column title margin"><p>Title</p></div>
+    <div class="project-column year margin"><p>Year</p></div>
+    <div class="project-column client margin"><p>Client</p></div>
+    <div class="project-column medium"><p>Medium</p></div>
+  </div>
+  {% for project in page.projects %}
+   {% if project.selected %}
+    {% if project.link %}
+      <a href="{{project.link}}" class="no-underline">
+    {% endif %}
+      <div class="project-row {% if project.link %}interactive{%endif%}">
+        <div class="project-column title border margin"><p>{{ project.title }}</p></div>
+        <div class="project-column year border margin"><p>{% if project.year %}{{ project.year }}{% endif %}</p></div>
+        <div class="project-column client border margin"><p>{% if project.client %}{{ project.client }}{% endif %}</p></div>
+        <div class="project-column medium"><p>{% if project.medium %}{{ project.medium }}{% endif %}</p></div>
+        <img class="project-thumbnail" src="{{ project.image }}"/>
+      </div>
+    {% if project.link %}
+      </a>
+    {% endif %}
+   {% endif %}
+  {% endfor %}
+</div>
+
+<div class="intro-container no-margin-bottom">
+  <p>
+    <br/><br/>
+    Complete Archive
+    <br/><br/>
+    ↓ 
+    <br/><br/>
   </p>
 </div>
 

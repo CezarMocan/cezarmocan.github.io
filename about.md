@@ -1,5 +1,5 @@
 ---
-layout: projectPage
+layout: about-new
 permalink: /about/
 ---
 

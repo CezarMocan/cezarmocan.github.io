@@ -33,7 +33,7 @@
 }
 .slick-next {
     position: absolute;
-    top: 0px;
+    /* top: 0px; */
 }
 .slick-prev:hover,
 .slick-prev:focus,
