@@ -24,14 +24,14 @@ projects:
 - title: ✽ Office Olympics ✽
   medium: 3D animation
   year: 2020
-  link: /untitled
+  link: /officeolympics
   image: /assets/images/officeolympics/cover.png
   selected: true
 - title: upgradeacademy.ro
   medium: graphic design
   year: 2020
   client: Upgrade Academy
-  link: /untitled
+  link: /upgradeacademy
   image: /assets/images/upgradeacademy/t-4.png
 - title: LIPP.TV
   medium: website
