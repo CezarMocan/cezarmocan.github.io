@@ -114,7 +114,7 @@ p {
 }
 
 .intro-container {
-  margin: 25px 200px 150px 10px;
+  margin: 25px 200px 100px 10px;
   position: relative;
   z-index: 10;
 }
@@ -236,4 +236,48 @@ p {
 
 .project-content-container {
   margin-bottom: 75px;
+}
+
+@media only screen and (max-width: 900px) {
+  p {
+    font-size: 18pt;
+  }
+  .intro-container {
+    margin-right: 10px;
+  }
+  .header-section.dots {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 12pt;
+  }
+  .header-section.dots {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .dot {
+    width: 18px;
+    height: 18px;
+    margin: 0 8px;
+  }
+  .header-section.email {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  .header-section.name {
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 10pt;
+  }
+  .header-section.dots {
+    display: none;
+  }
 }
