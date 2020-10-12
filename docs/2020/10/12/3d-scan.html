@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117981656-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117981656-1');
+    </script>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jongacnik/gr8/daaf18fb/dist/gr8.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Cezar Mocan</title>
+  </head>
+
+  <body>
+    <div class="mega-container">
+      <div class="info-container">
+        <p class="mb1" style="min-width: 100px;"><em><a href="/">Cezar Mocan</a></em></p>
+        <p class="mb0-half"><a href="/">work</a></p>
+        <p class="mb0-half"><a href="/about">about</a></p>
+        <p class="mb0-half"><a href="http://www.instagram.com/cezarmocan" target="__blank">instagram</a></p>
+        <p class="mb0-half"><a href="http://www.github.com/cezarmocan" target="__blank">github</a></p>
+        <p class="mb0-half"><a href="mailto:c@cezar.io" target="__blank">email</a></p>
+        <p class="mb0-half"><a href="/assets/media/CV_2019_Nov.pdf" target="__blank">resume</a></p>
+
+      </div>
+
+      <div class="blog-post-container">
+    <div class="back-to-blog">
+        <a href="/blog">&larr; Back to blog</a>
+    </div>
+
+    <h1> [Performative Avatars] 3D Scanning </h1>
+
+    <div class="blog-post-listing-date">
+        <h3>12 Oct 2020</h3>
+    </div>
+
+    <div class="blog-post-listing-categories">
+        <h3>
+        Posted under: 
+        
+            <span class="blog-post-listing-category">Performative Avatars;</span>
+        
+            <span class="blog-post-listing-category">ITP;</span>
+        
+        </h3>
+    </div>
+
+    <div class="blog-post-content">
+        <p>Doing a 3D scan proved to be a lot of fun, my partner and I scanned each other a few times (and also considered scanning Lentil the cat, but quickly gave up on that :) ). However the results did not turn out great, mostly due to my being stubborn in deciding to use a Microsoft Kinect 2 (the XBox One version) I own, instead of a structure sensor from the ER.</p>
+
+<p>It turns out the Skanect software developers had decided not to implement support for this version of the Kinect, due to its poor results in scanning. I ended up using the default Windows 3D Scan app, which worked well. My scan’s mesh turned out fine – low-ish resolution, but not bad overall, and it can probably be smoothed out a bit in Maya. However, the texture has a large amount of visual glitches all over the place, aside from the poor image quality (which I was expecting.)</p>
+
+<figure style="margin: 0;">
+  <img class="img-row-3" style="border: none;" src="/assets/images/blog/2020-10-12-3d-scan/1.png" alt="3D Scan" />
+  <img class="img-row-3" style="border: none;" src="/assets/images/blog/2020-10-12-3d-scan/2.png" alt="3D Scan" />
+  <img class="img-row-3" style="border: none;" src="/assets/images/blog/2020-10-12-3d-scan/3.png" alt="3D Scan" />
+  <figcaption>
+    3D Scan Images
+  </figcaption>
+</figure>
+
+<figure style="margin: 0;">
+  <img class="img-row-3" style="border: none;" src="/assets/images/blog/2020-10-12-3d-scan/4.png" alt="3D Scan" />
+  <img class="img-row-3" style="border: none;" src="/assets/images/blog/2020-10-12-3d-scan/5.png" alt="3D Scan" />
+  <img class="img-row-3" style="border: none;" src="/assets/images/blog/2020-10-12-3d-scan/6.png" alt="3D Scan" />
+  <figcaption>
+    3D Scan Images, and details of the texture problems
+  </figcaption>
+</figure>
+
+<p>I’m not quite sure whether the texture quality is a matter of hardware or software, but I assume it’s something I could entirely avoid by using equipment from the ER. I might do that this coming week, in order to work with a higher quality scan of myself.</p>
+
+<p>However, I find the texture file (glitchy as it is) to be quite gorgeous!</p>
+
+<figure style="margin: 0;">
+  <img class="img-row-2" style="border: none;" src="/assets/images/blog/2020-10-12-3d-scan/texture.png" alt="texture" />
+  <figcaption>
+    Texture file
+  </figcaption>
+</figure>
+
+<p><br /><br /><br /><br /></p>
+
+    </div>
+</div>
+
+    </div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.imagery-container').slick({
+        infinite: true,
+        dots: false,
+      });
+    });
+  </script></body>
+
+</html>
+
+<!--
+
+  -->
