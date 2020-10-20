@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-18T23:00:05-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[Performative Avatars] 3D Scanning</title><link href="http://localhost:4000/2020/10/12/3d-scan.html" rel="alternate" type="text/html" title="[Performative Avatars] 3D Scanning" /><published>2020-10-12T01:01:00-04:00</published><updated>2020-10-12T01:01:00-04:00</updated><id>http://localhost:4000/2020/10/12/3d-scan</id><content type="html" xml:base="http://localhost:4000/2020/10/12/3d-scan.html">&lt;p&gt;Doing a 3D scan proved to be a lot of fun, my partner and I scanned each other a few times (and also considered scanning Lentil the cat, but quickly gave up on that :) ). However the results did not turn out great, mostly due to my being stubborn in deciding to use a Microsoft Kinect 2 (the XBox One version) I own, instead of a structure sensor from the ER.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-19T21:48:18-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cezar.io</title><subtitle>Personal website.</subtitle><entry><title type="html">[Performative Avatars] Head scan and wrapping</title><link href="http://localhost:4000/2020/10/12/wrap3.html" rel="alternate" type="text/html" title="[Performative Avatars] Head scan and wrapping" /><published>2020-10-12T01:01:00-04:00</published><updated>2020-10-12T01:01:00-04:00</updated><id>http://localhost:4000/2020/10/12/wrap3</id><content type="html" xml:base="http://localhost:4000/2020/10/12/wrap3.html">&lt;p&gt;I ended up starting this week’s assignment by re-doing my 3D scan, since the one I had done with a Kinect v2 last week turned out quite poor – decent mesh, but horrible textures. Bellus3D turned out much better, the texture resolution is high and the mesh has a lot of detail. There are still a few glitches – the texture on the nose looks stretched, there is no gap behind the ears, and most visibly the texture on the top &amp;amp; back of the head is inferred, rather than captured (the app only scans the front &amp;amp; side of your head, not the back.)&lt;/p&gt;
+
+&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-7.png&quot; alt=&quot;3D Scan&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-8.png&quot; alt=&quot;3D Scan&quot; /&gt;
+  &lt;img class=&quot;img-row-3&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-9.png&quot; alt=&quot;3D Scan&quot; /&gt;
+  &lt;figcaption&gt;
+    Head 3D Scans done using the Bellus3D iOS app.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I then followed the Wrap3 tutorial in order to clean up my scan and attach it to a body. I didn’t realize Matt had sent the .wrap files over email, so I built the little script based on the video tutorial, but it was pretty easy.&lt;/p&gt;
+
+&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-1.png&quot; alt=&quot;Wrap3&quot; /&gt;
+  &lt;figcaption&gt;
+    Screenshot from Wrap3, after the entire process was complete.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I tried attaching my head to a Daz body (and to a Fuse body) in Maya. While combining the meshes – with some imperfections around the neck – wasn’t difficult, I don’t know Maya well enough to merge the textures &amp;amp; update the UVs. In theory I know I should combine the textures into a single file, add it to the scene, and move around the UV maps to match the single texture, but I didn’t manage to do it. I am also not sure whether this process would’ve produced good results when importing the new mesh in Wrap3…&lt;/p&gt;
+
+&lt;p&gt;As a next step, I did the mesh scaling, rotation and alignment in Maya.&lt;/p&gt;
+
+&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-3.png&quot; alt=&quot;Mesh in Maya&quot; /&gt;
+  &lt;figcaption&gt;
+    Mesh in Maya.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I also exported a meshes from Wrap3 with a few different settings (compression parameter, export normals toggle.)&lt;/p&gt;
+
+&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-6.png&quot; alt=&quot;Mesh in Maya&quot; /&gt;
+  &lt;figcaption&gt;
+    3 different meshes in Maya, exported with different options from Wrap3.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;At the end, I uploaded my &lt;code class=&quot;highlighter-rouge&quot;&gt;obj&lt;/code&gt; file to Mixamo, to make sure it can be rigged. It worked well. I also brought it into Unreal and applied the texture, for testing purposes, but didn’t document that part.&lt;/p&gt;
+
+&lt;figure style=&quot;margin: 0;&quot;&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-4.png&quot; alt=&quot;3D Scan&quot; /&gt;
+  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-10-19-wrap3/doc-5.png&quot; alt=&quot;3D Scan&quot; /&gt;
+  &lt;figcaption&gt;
+    My scan (with Wrap's default body) in Mixamo.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The big open question I have after this assignment is how can I attach my head to the body of an existing avatar? Also, Wrap3 seemd to decrease the mesh resolution of my head scan even at the lowest compression setting, but I assume it’s still high-res enough.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="Performative Avatars" /><category term="ITP" /><summary type="html">I ended up starting this week’s assignment by re-doing my 3D scan, since the one I had done with a Kinect v2 last week turned out quite poor – decent mesh, but horrible textures. Bellus3D turned out much better, the texture resolution is high and the mesh has a lot of detail. There are still a few glitches – the texture on the nose looks stretched, there is no gap behind the ears, and most visibly the texture on the top &amp;amp; back of the head is inferred, rather than captured (the app only scans the front &amp;amp; side of your head, not the back.)</summary></entry><entry><title type="html">[Performative Avatars] 3D Scanning</title><link href="http://localhost:4000/2020/10/12/3d-scan.html" rel="alternate" type="text/html" title="[Performative Avatars] 3D Scanning" /><published>2020-10-12T01:01:00-04:00</published><updated>2020-10-12T01:01:00-04:00</updated><id>http://localhost:4000/2020/10/12/3d-scan</id><content type="html" xml:base="http://localhost:4000/2020/10/12/3d-scan.html">&lt;p&gt;Doing a 3D scan proved to be a lot of fun, my partner and I scanned each other a few times (and also considered scanning Lentil the cat, but quickly gave up on that :) ). However the results did not turn out great, mostly due to my being stubborn in deciding to use a Microsoft Kinect 2 (the XBox One version) I own, instead of a structure sensor from the ER.&lt;/p&gt;
 
 &lt;p&gt;It turns out the Skanect software developers had decided not to implement support for this version of the Kinect, due to its poor results in scanning. I ended up using the default Windows 3D Scan app, which worked well. My scan’s mesh turned out fine – low-ish resolution, but not bad overall, and it can probably be smoothed out a bit in Maya. However, the texture has a large amount of visual glitches all over the place, aside from the poor image quality (which I was expecting.)&lt;/p&gt;
 
@@ -199,85 +251,4 @@ You can also download the &lt;a href=&quot;/assets/media/blog/final-board.sch&qu
   &lt;img class=&quot;&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-30-synth-arch-treatment/1.png&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Link to the final project treatment can be found &lt;a href=&quot;/assets/media/blog/2_Treatment_v2.pdf&quot; target=&quot;__blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Synthetic Architectures" /><category term="ITP" /><summary type="html"></summary></entry><entry><title type="html">[Homemade Hardware] Prototype</title><link href="http://localhost:4000/2020/03/27/homemade-hardware-prototype.html" rel="alternate" type="text/html" title="[Homemade Hardware] Prototype" /><published>2020-03-27T01:01:00-04:00</published><updated>2020-03-27T01:01:00-04:00</updated><id>http://localhost:4000/2020/03/27/homemade-hardware-prototype</id><content type="html" xml:base="http://localhost:4000/2020/03/27/homemade-hardware-prototype.html">&lt;p&gt;In my &lt;a href=&quot;&quot;&gt;previous post&lt;/a&gt; I proposed two possible directions for the final project. One involved an interactive video frame on a 7” screen, and the other one was a virtual road trip using Google Street View imagery on a smaller, 2.8” screen. I chose the second direction due to lack of access to video equipment and delays in shipping electronic components during this period.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/3-output-8.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-    &lt;/video&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;I did a good amount of small display research on Adafruit, and ended up deciding to get the &lt;a href=&quot;https://www.adafruit.com/product/1947&quot;&gt;2.8” TFT with capacitive display shield for Arduino UNO&lt;/a&gt;, which includes a MicroSD card slot. However, Adafruit stopped their shipping operations during the COVID-19 crisis, so I went to Tinkersphere and ordered a &lt;a href=&quot;https://tinkersphere.com/shields/1782-28-tft-touch-shield-for-arduino-with-resistive-touch-screen.html&quot;&gt;similar shield&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The sheild’s specifications on the Tinkersphere website mention it is compatible with the Adafruit_TFTLCD library, but I was not able to get it working (even though they use the same ILI9341 display.) I also tried the Adafruit_ILI9341 library without any luck. After doing some online research, I realized the Tinkersphere shield is different from the Adafruit one – they actually built the &lt;a href=&quot;https://www.hackster.io/baqwas/mcufriend-2-4-tft-display-e3c815&quot;&gt;MCUFRIEND 2.4” TFT Display Shield&lt;/a&gt;, which uses different components from Adafruit’s version. Fortunately, they have an Arduino library, &lt;a href=&quot;https://github.com/prenticedavid/MCUFRIEND_kbv&quot;&gt;MCUFRIEND_kbv&lt;/a&gt;, got the display showing the test graphics and eventually images from my MicroSD card after some tinkering.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/1.JPG&quot; alt=&quot;&quot; /&gt;
-  &lt;figcaption&gt;  
-    Google Street View image from the I-93 highway displayed on the TFT screen, from MicroSD card.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;In terms of software and gathering all the Street View images for an entire trip, I built a script using the Google Maps APIs. At a high level, my script takes two GPS coordinates as an input (origin and destination), asks the API for the driving directions from origin to destination, parses the directions and decodes the polyline for each segment of the route, determines the viewing angle between each two consecutive coordinates on the path and then asks the Street View API for an image at each coordinate, looking in the correct direction of the road.&lt;/p&gt;
-
-&lt;p&gt;Here you can see results from two queries – one of them a short trip in New York, the other a longer trip in the desert – at different display frame rates (computer rendering, not Arduino.)&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/2-output-12.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-    &lt;/video&gt;
-    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/2-output-8.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-    &lt;/video&gt;
-
-  &lt;figcaption&gt;  
-  Left: 12fps; Right: 8fps;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/2-output-4.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-  &lt;/video&gt;
-    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/2-output-2.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-    &lt;/video&gt;
-  &lt;figcaption&gt;  
-  Left: 4fps; Right: 2fps;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/3-output-12.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-    &lt;/video&gt;
-    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/3-output-8.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-    &lt;/video&gt;
-
-  &lt;figcaption&gt;  
-  Left: 12fps; Right: 8fps;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure&gt;
-  &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/3-output-6.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-  &lt;/video&gt;
-    &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/3-output-2.mp4&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-    &lt;/video&gt;
-  &lt;figcaption&gt;  
-  Left: 6fps; Right: 2fps;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;An interesting artifact I hadn’t thought of before is the fact that the Street View car only travels in one direction for some road segments, so some of the footage will be backwards (the rear-view of the car, played in reverse.) The road motion is the same, but you can notice it in the cars passing by.&lt;/p&gt;
-
-&lt;p&gt;I played the frames on Arduino as well. However, the display refresh rate is currently very slow: an image takes about 2.5 seconds to be loaded from the SD card and displayed on screen.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;video class=&quot;img-row-2&quot; style=&quot;border: none;&quot; src=&quot;/assets/images/blog/2020-03-27-homemade-hardware-prototype/4.MOV&quot; muted=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; alt=&quot;&quot;&gt;
-  &lt;/video&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;There’s something I really like about the very slow quality of the trip, but at the same time I would like to have more control over the frame rate, or the visual aspect of updating the screen. I’m currently using buffering, with a buffer size of ~80 pixels, which is about the maximum that will fit in Arduino’s 2kb memory. If I managed to get somewhere at 4-8 FPS that’d be great. But that means an image needs to be able to render in ~100-200ms, which is 20 times faster than my current time. Some ideas for optimizations include:&lt;/p&gt;
-
-&lt;p&gt;– reducing the bit depth of my BMP files from 24 to 16 or 8. This would reduce the file sizes, therefore theoretically also reducing the read time of reading each frame from the MicroSD card.&lt;/p&gt;
-
-&lt;p&gt;– lower image resolutions (currently 360x240), displayed on a portion of the screen. Same considerations as above, plus faster render times. This could work, given that I want to add text elements to the screen as well (compass direction, maybe city/town or coordinates.) However, anything less than 75% of the screen size would be too small.&lt;/p&gt;
-
-&lt;p&gt;– replace the Arduino UNO with a board that has more SRAM. If I managed to fit one or two frames inside of the RAM, rendering could be significantly faster. However, I would need hundreds of kilobytes of SRAM per frame. Teensy boards have 64k, which would still allow me to have a more sizeable buffer.&lt;/p&gt;
-
-&lt;p&gt;Another limitation for my initial idea is the API limit for Google Street View. Using the free Google Cloud Credits I’ve accumulated, I could make about 100,000 requests (1 image / request.) This will not be enough for the original NY – LA trip I had planned, but I can shorten my trip.
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><category term="Homemade Hardware" /><category term="ITP" /><summary type="html">In my previous post I proposed two possible directions for the final project. One involved an interactive video frame on a 7” screen, and the other one was a virtual road trip using Google Street View imagery on a smaller, 2.8” screen. I chose the second direction due to lack of access to video equipment and delays in shipping electronic components during this period.</summary></entry></feed>
+&lt;p&gt;Link to the final project treatment can be found &lt;a href=&quot;/assets/media/blog/2_Treatment_v2.pdf&quot; target=&quot;__blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="Synthetic Architectures" /><category term="ITP" /><summary type="html"></summary></entry></feed>
