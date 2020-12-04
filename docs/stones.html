@@ -118,6 +118,14 @@ Link <a href="http://stones-instrument.s3-website-us-east-1.amazonaws.com/" targ
         infinite: true,
         dots: false,
       });
+
+      $('.slick-next').click(function(evt) {
+        let embeds = document.getElementsByTagName('iframe')
+        for (let i = 0; i < embeds.length; i++) {
+          if (embeds[i].contentWindow)
+            embeds[i].contentWindow.postMessage('{"method":"pause"}', '*');
+        }
+      })
     });
   </script></body>
 
