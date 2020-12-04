@@ -15,10 +15,15 @@ paragraphs:
 images:
  - url: https://player.vimeo.com/video/448648904
    vimeo: true
+   description: Shadow Network Demo – Using the software with one performer.
  - url: https://player.vimeo.com/video/448646910
    vimeo: true
+   description: Shadow Network Demo – Using the software with two remote performers.
+ - url: https://player.vimeo.com/video/486025122
+   vimeo: true
+   description: NYC Media Lab Demo Day presentation from August 2020.
  - url: /assets/images/shadownetwork/1.png
-   description: Visual sketch.
+   description: Visual mock-up for the software interface.
  - url: /assets/images/shadownetwork/2.png
-   description: Technical diagram.
+   description: Technical diagram of the networked system.
 ---
