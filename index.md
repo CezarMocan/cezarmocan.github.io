@@ -58,18 +58,18 @@ projects:
   image: /assets/images/untitled/1.JPG
   selected: true
 - title: worldvie.ws
-  medium: software, website
+  medium: web-based software
   year: 2019 – 2020
   client: Evan Roth
   image: /assets/images/disappearing.gif
 - title: Distributed Web of Care
-  medium: web-based performance
+  medium: web-based software
   year: 2019
   client: Taeyoon Choi
   link: /dwc
   image: /assets/images/dwc/4.jpg
 - title: Disappearing
-  medium: web
+  medium: web performance
   year: 2019
   link: /disappearing
   image: /assets/images/disappearing/cover.png
