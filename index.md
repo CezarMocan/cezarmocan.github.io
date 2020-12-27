@@ -4,6 +4,18 @@
 
 layout: indexPageNew
 projects:
+- title: virtualis.tours
+  medium: website
+  year: 2020
+  client: Lydia Jessup & Matt Romein
+  link: /virtualis
+  image: /assets/images/virtualis/3.png
+- title: declared vvvvvvoid
+  medium: browser extension
+  year: 2020
+  client:
+  link: /declaredvvvvvvoid
+  image: /assets/images/declaredvvvvvvoid/3.png
 - title: '24 Hours Relaxing Landscape for Stress Relief'
   medium: three channel video
   year: 2020

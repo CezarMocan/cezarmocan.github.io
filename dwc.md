@@ -18,4 +18,9 @@ images:
    video: true
  - url: /assets/images/dwc/1.png
  - url: /assets/images/dwc/4.jpg
+ - url: /assets/images/dwc/1.png
+ - url: /assets/images/dwc/5.png
+ - url: /assets/images/dwc/6.png
+ - url: /assets/images/dwc/7.png
+ - url: /assets/images/dwc/8.png
 ---
