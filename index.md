@@ -8,37 +8,37 @@ projects:
   medium: two channel video
   year: 2020
   link: /hig-metaphor
-  image: /assets/images/hig-metaphor/1.png
+  image: /assets/images/hig-metaphor/cover.png
   selected: true
 - title: virtualis.tours
   medium: website
   year: 2020
   client: Lydia Jessup & Matt Romein
   link: /virtualis
-  image: /assets/images/virtualis/3.png
+  image: /assets/images/virtualis/cover.png
 - title: declared vvvvvvoid
   medium: browser extension
   year: 2020
   client:
   link: /declaredvvvvvvoid
-  image: /assets/images/declaredvvvvvvoid/3.png
+  image: /assets/images/declaredvvvvvvoid/cover.png
 - title: '24 Hours Relaxing Landscape for Stress Relief'
   medium: three channel video
   year: 2020
   link: /24hrslandscape
-  image: /assets/images/24hrslandscape/1.png
+  image: /assets/images/24hrslandscape/cover.png
   selected: true
 - title: ✿ Shadow Network ✿
   medium: software
   year: 2020
   link: /shadownetwork
-  image: /assets/images/shadownetwork/1.png
+  image: /assets/images/shadownetwork/cover.png
   selected: true
 - title: In 2020, I dream
   medium: desktop performance
   year: 2020
   link: /in2020idream
-  image: /assets/images/in2020idream/1.png
+  image: /assets/images/in2020idream/cover.png
 - title: ✽ Office Olympics ✽
   medium: 3D animation
   year: 2020
@@ -50,18 +50,18 @@ projects:
   year: 2020
   client: Upgrade Academy
   link: /upgradeacademy
-  image: /assets/images/upgradeacademy/t-4.png
+  image: /assets/images/upgradeacademy/cover.png
 - title: LIPP.TV
   medium: website
   year: 2020
   client: Live Image Processing & Performance @ NYU ITP
   link: /lipptv
-  image: /assets/images/lipptv/1.png
+  image: /assets/images/lipptv/cover.png
 - title: Untitled
   medium: interactive video
   year: 2019
   link: /untitled
-  image: /assets/images/untitled/1.JPG
+  image: /assets/images/untitled/cover.JPG
   selected: true
 - title: worldvie.ws
   medium: web-based software
@@ -73,7 +73,7 @@ projects:
   year: 2019
   client: Taeyoon Choi
   link: /dwc
-  image: /assets/images/dwc/4.jpg
+  image: /assets/images/dwc/cover.jpg
 - title: Disappearing
   medium: web performance
   year: 2019
@@ -83,12 +83,12 @@ projects:
   medium: video installation
   year: 2019
   link: /thejoys
-  image: /assets/images/thejoys/1.JPG
+  image: /assets/images/thejoys/thumbnail.JPG
 - title: Stones
   medium: web performance
   year: 2019
   link: /stones
-  image: /assets/images/stones/highres.png
+  image: /assets/images/stones/thumbnail.png
 - title: Cities and the Sky 3
   medium: augmented reality
   year: 2018
@@ -98,7 +98,7 @@ projects:
   medium: website
   year: 2018
   link: /algorithm4friends
-  image: /assets/images/algorithm4friends/2.png
+  image: /assets/images/algorithm4friends/cover.png
 - title: Moji Moji
   medium: iOS app
   year: 2018
@@ -114,17 +114,17 @@ projects:
   medium: augmented reality
   year: 2018
   link: /yoursecret
-  image: /assets/images/yoursecret/1.png
+  image: /assets/images/yoursecret/cover.png
 - title: 000pen.space
   medium: website
   year: 2018
   link: /000penspace
-  image: /assets/images/000penspace/cover.png
+  image: /assets/images/000penspace/cover-small.png
 - title: Poster Jam
   medium: poster series
   year: 2017
   link: /posterjam
-  image: /assets/images/posterjam/pressure-1.png
+  image: /assets/images/posterjam/cover.png
 - title: Gakko Camp Gallery
   medium: website
   year: 2017
@@ -135,29 +135,29 @@ projects:
   medium: poster series
   year: 2016
   link: /water
-  image: /assets/images/water/1.png
+  image: /assets/images/water/cover.png
 - title: Self and Other
   medium: website
   year: 2016
   link: /selfandother
-  image: /assets/images/selfandother/img.png
+  image: /assets/images/selfandother/cover.png
   selected: false
 - title: Syria Conflict Tracking
   medium: mobile app
   year: 2016
   link: /syriaconflicttracking
   client: Palantir Technologies
-  image: /assets/images/syriaconflicttracking/cover.png  
+  image: /assets/images/syriaconflicttracking/cover-small.png  
 - title: Self Portrait
   medium: software
   year: 2016
   link: /selfportrait
-  image: /assets/images/selfportrait/cover.png
+  image: /assets/images/selfportrait/cover-small.png
 - title: An Argument for a New Digital Currency
   medium: book
   year: 2016
   link: /anargumentforanewdigitalcurrency
-  image: /assets/images/anargumentforanewdigitalcurrency/4.png
+  image: /assets/images/anargumentforanewdigitalcurrency/cover.png
 #- title: Koffee/ Storno
 #  medium: poster / type specimen
 #  year: 2016
@@ -177,10 +177,10 @@ projects:
   medium: zine / typeface
   year: 2015
   link: /pushtoopen
-  image: /assets/images/pushtoopen/poster.png
+  image: /assets/images/pushtoopen/cover.png
 - title: Lost in the Meritocracy
   medium: book
   year: 2015
   link: /lostinthemeritocracy
-  image: /assets/images/lostinthemeritocracy/cover.jpg
+  image: /assets/images/lostinthemeritocracy/cover-small.jpg
 ---

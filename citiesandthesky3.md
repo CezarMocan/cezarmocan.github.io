@@ -12,8 +12,8 @@ paragraphs:
  - text: |
      A third component of this work consists in a projection of all builders’ creations througout the course of the exhibition—the shared city. Starting as an empty screen, the projected city gathers one more layer with every builder’s creation. <br/><br/>
  - text: |
-     Exhibited as part of a group show in 2018 at <a class="underlined" href="http://www.acud.de/" target="__blank">ACUD</a> in Berlin. <br/><br/>
-     Developed during the Reality? program at the <a class="underlined" href="http://www.schoolofma.org" target="__blank">School of Machines, Making and Make-Believe</a>. Created using Unity. 
+     Exhibited as part of a group show in 2018 at <a class="underlined" href="http://www.acud.de/" target="__blank">ACUD</a> in Berlin. <br/>
+     Developed during the Reality? program at the <a class="underlined" href="http://www.schoolofma.org" target="__blank">School of Machines, Making and Make-Believe</a>.<br/>Created using Unity. 
    small: true
 images:
  - url: https://player.vimeo.com/video/280118041?title=0&byline=0&portrait=0

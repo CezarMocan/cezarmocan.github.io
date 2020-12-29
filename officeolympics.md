@@ -10,6 +10,7 @@ paragraphs:
      Created during the Covid-19 quarantine, at a point in time when slowing down was forced upon society, Office Olympics questions the hustle culture so prevalent in the contemporary work environment. Technological accelerationism is a constant, <a href="https://techcrunch.com/2020/07/15/sidekick-embraces-remote-working-with-always-on-teleconferencing-hardware/" target="_blank">impossible to stop even by a global pandemic</a>, and is tightly coupled with the office culture behind its production – one which glamorizes labor and turns motivational posters into neon signs, while defining itself as equal parts lifestyle brand and internet service provider. <br/><br/>
  - text: |
      Developed using Unreal Engine.
+   small: true
 images:
  - url: https://player.vimeo.com/video/416967661
    vimeo: true

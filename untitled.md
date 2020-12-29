@@ -12,6 +12,7 @@ paragraphs:
     Exhibited as part of a group show in 2019 at the <a class="underlined" href="https://itp.nyu.edu/shows/winter2019/">NYU ITP Winter Show</a> in Brooklyn, NY.<br/>
     Exhibited as part of a group show in 2019 at the <a class="underlined" href="http://computermouseconference.net/">Computer Mouse Conference</a> in Brooklyn, NY.<br/>
     Built using openFrameworks.
+   small: true
 images:
  - url: https://player.vimeo.com/video/377253595?autoplay=0&loop=1&title=0&byline=0&portrait=0
    description:

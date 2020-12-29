@@ -206,9 +206,9 @@ p {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  transition: opacity 0.25s ease-in-out;
-  max-width: 70vw;
-  max-height: 85vh;
+  transition: opacity 0.25s ease-in-out;  
+  height: 80vh;
+  width: auto;
   z-index: -1;
   pointer-events: none;
   filter: blur(35px);

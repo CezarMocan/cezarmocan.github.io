@@ -64,7 +64,7 @@
     font-size: 50px;
     line-height: 1px;
 
-    color: #bfbdbd;
+    color: var(--main-fg-color);
     transition: color 0.25s ease-in-out;
 
     -webkit-font-smoothing: antialiased;
