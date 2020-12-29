@@ -18,15 +18,29 @@
   src: url("Akkurat-Mono.ttf") format("truetype");
 }
 
+html {
+  /* Theme #1 */
+  /*
+  --main-bg-color: black;
+  --main-fg-color: #BFBDBD;
+  --main-highlight-color: #FFFF00;
+  */
+
+  /* Theme #2 */
+  --main-bg-color: #F5F5F5;
+  --main-fg-color: #121212;
+  --main-highlight-color: #FFFF00;
+}
+
 body {
-  background-color: black;
-  color: #BFBDBD;
+  background-color: var(--main-bg-color);
+  color: var(--main-fg-color);
   font-family: NeueHaasUnica;
   margin: 0;
 }
 
 a {
-  color: #BFBDBD;
+  color: var(--main-fg-color);
   transition: color 0.25s ease-in-out;
 }
 
@@ -35,7 +49,7 @@ a.no-underline {
 }
 
 a:hover {
-  color: #ffff00;
+  color: var(--main-highlight-color);
 }
 
 .small-paragraph {
@@ -46,7 +60,7 @@ a:hover {
 .header-container {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #BFBDBD;
+  border-bottom: 1px solid var(--main-fg-color);
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -68,12 +82,12 @@ a:hover {
 }
 
 .header-section.name {
-  border-right: 1px solid #bfbdbd;
+  border-right: 1px solid var(--main-fg-color);
   padding-right: 40px;
 }
 
 .header-section.email {
-  border-right: 1px solid #bfbdbd;
+  border-right: 1px solid var(--main-fg-color);
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -83,7 +97,7 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #bfbdbd;
+  border-right: 1px solid var(--main-fg-color);
   padding-right: 40px;
   padding-left: 40px;
 }
@@ -98,23 +112,23 @@ a:hover {
   width: 24px;
   height: 24px;
   border-radius: 12px;
-  background-color: #BFBDBD;
+  background-color: var(--main-fg-color);
   margin: 0 10px;
   transition: background-color 0.25s ease-in-out;
 }
 .dot:hover {
-  background-color: #FFFF00;
+  background-color: var(--main-highlight-color);
 }
 
 p {
-  font-size: 24pt;
+  font-size: 20pt;
   margin: 1px 0;
   margin-bottom: 3px;
-  line-height: 1.05;
+  line-height: 1.08;
 }
 
 .intro-container {
-  margin: 25px 200px 100px 10px;
+  margin: 25px 300px 100px 10px;
   position: relative;
   z-index: 10;
 }
@@ -134,14 +148,14 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid #BFBDBD;
+  border-bottom: 1px solid var(--main-fg-color);
   padding: 10px 10px;
   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 
 .project-row.interactive:hover {
-  background-color: #FFFF00;
-  color: black;
+  background-color: var(--main-highlight-color);
+  color: var(--main-bg-color);
   cursor: pointer;
 }
 
@@ -166,7 +180,7 @@ p {
 }
 
 .project-column.border {
-  border-right: 1px solid #BFBDBD;
+  border-right: 1px solid var(--main-fg-color);
 }
 
 .project-column.margin {
@@ -197,11 +211,12 @@ p {
   max-height: 85vh;
   z-index: -1;
   pointer-events: none;
+  filter: blur(35px);
   /* border: 4px dashed yellow; */
 }
 
 .project-row.interactive:hover .project-thumbnail {
-  opacity: 0.8;
+  opacity: 0.93;
 }
 
 .description-container {

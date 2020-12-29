@@ -4,6 +4,12 @@
 
 layout: indexPageNew
 projects:
+- title: '✾ Human Interface Guidelines (Metaphor) ✾'
+  medium: two channel video
+  year: 2020
+  link: /hig-metaphor
+  image: /assets/images/hig-metaphor/1.png
+  selected: true
 - title: virtualis.tours
   medium: website
   year: 2020
@@ -135,7 +141,7 @@ projects:
   year: 2016
   link: /selfandother
   image: /assets/images/selfandother/img.png
-  selected: true
+  selected: false
 - title: Syria Conflict Tracking
   medium: mobile app
   year: 2016
