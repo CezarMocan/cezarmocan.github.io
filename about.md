@@ -9,9 +9,35 @@ Besides my personal work, I often design or build software for artists and teach
 In a former life, I used to do competitive programming.
 <br/><br/>
 If you want to get in touch, <a href="mailto:c@cezar.io">drop me a line.</a>
+
 <br/><br/>❊<br/><br/><br/>
-Artist Statement
+<p style="text-decoration: none;">Grants, Shows, Conferences</p>
+<br/>
+<a href="https://www.computermouseconference.net/" target="_blank">Computer Mouse Conference</a> ✿ <em>April 2021, Online</em> ✿ <em>Speaker</em><!--<br/>An online show featuring hand-coded webpages.-->
 <br/><br/>
+<a href="https://arthomepagefair.net/" target="_blank">The Art Home Page Fair by IDPW and AreByte On Screen</a> ✿ <em>February 2021, Online</em> ✿ <em>Participating Artist</em><!--<br/>An online show featuring hand-coded webpages.-->
+<br/><br/>
+NYU ITP Winter Show 2020 ✿ <em>December 2020, Online</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br/><br/>
+NYC Media Lab x ASCAP: Music Tech Design Challenge ✿ <em>Summer 2020, Online </em>✿ <em>Grant Recipient, with Cy Kim</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br/><br/>
+NYU ITP Spring Show 2020 ✿ <em>May 2020, Online </em>✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br/><br/>
+<a href="https://lipp.tv/" target="_blank">LIPP.TV</a> ✿ <em>May 2020, Online</em> ✿ <em>Participating Artist</em>
+<br/><br/>
+NYU ITP Winter Show 2019 ✿ <em>December 2019, New York</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br/><br/>
+<a href="https://www.computermouseconference.net/" target="_blank">Computer Mouse Conference</a> ✿ <em>November 2019, New York</em> ✿ <em>Participating Artist</em><!--<br/>An online show featuring hand-coded webpages.-->
+<br/><br/>
+<a href="https://eyeofestival.com//" target="_blank">Eyeo Festival</a> ✿ <em>June 2019, Minneapolis</em> ✿ <em>Artist Fellowship Recipient</em><!--<br/>An online show featuring hand-coded webpages.-->
+<br/><br/>
+Are We Closer Yet? An evening of AR experiences ✿ <em>August 2018, Brelin</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br/><br/>
+
+
+<br/><br/>❊<br/><br/><br/>
+<p style="text-decoration: none;">Artist Statement</p>
+<br/>
 I am a Romanian new media artist based in Brooklyn, working with video, installation and software as a means of understanding and recontextualizing the spaces between humans and computers. The work I do involves the creation of humane digital environments that juxtapose elements native to our computers with organic entities rooted in the physical reality. My practice at large raises questions around existing patterns of engaging with technology and proposes slower, more intimate alternatives. In these pursuits, I am inspired by Mikka Rottenberg and Olia Lialina, whose video and web based work engages with identity and representation through elements of ritual and fiction. 
 <br/><br/>
 In my process I often refer back to algorithms and data structures, which I developed a close relationship with throughout years of practicing competitive programming and working in the software industry. What had initially started as a technical pursuit, with efficiency as the only goal, slowly became grounded in reality and acquired an increasing human dimension. I find joy in bringing entities which are infinitely scalable and replicable into a personal realm.
@@ -19,21 +45,28 @@ In my process I often refer back to algorithms and data structures, which I deve
 The work I do is also influenced by my experience as an immigrant in the United States. I am interested in the implications of being part of a diaspora from a social and cultural point of view, as well as understanding how geographical displacement influences digital identity.
 
 <br/><br/>❊<br/><br/><br/>
-Teaching
-<br/><br/>
-<em>Capstone ✿ Spring 2021, NYU IMA ✿ Teaching Assistant</em><br/>Taught by Allison Parrish.
+<p style="text-decoration: none;">Teaching</p>
+<br/>
+<em>Capstone ✿ Spring 2021, NYU Interative Media Arts ✿ Teaching Assistant</em><br/>Taught by Allison Parrish.
 <br/><br/>
 <em>Programming the Net ✿ Spring 2021 ✿ Curriculum Developer & Teacher</em><br/>A high-school level online class focused on introducing basic concepts of web development through the lens of net art.
 <br/><br/>
-<em>Real Time Media ✿ Fall 2020, NYU IMA ✿ Teaching Assistant</em><br/>A (networked) performance focused class using MaxMSP as the primary tool; Taught by Matt Romein.
+<em>Real Time Media ✿ Fall 2020, NYU Interative Media Arts ✿ Teaching Assistant</em><br/>A (networked) performance focused class using MaxMSP as the primary tool; Taught by Matt Romein.
 <br/><br/>
 <em>Programming the Net ✿ Summer 2020 ✿ Curriculum Developer & Teacher</em><br/>A month long online class focused on introducing basic concepts of web development through the lens of net art.
 <br/><br/>
-<em>Networked Media ✿ Spring 2020, NYU IMA ✿ Teaching Assistant</em><br/>A class focused on introductory full-stack web development, with the goal of understanding the web as an artistic medium; Taught by Shawn van Every.
+<em>Networked Media ✿ Spring 2020, NYU Interative Media Arts ✿ Teaching Assistant</em><br/>A class focused on introductory full-stack web development, with the goal of understanding the web as an artistic medium; Taught by Shawn van Every.
 <br/><br/>
 <em>Your first Chrome extension! ✿ ITP Camp 2020 ✿ Workshop Leader</em><br/>A workshop focused on getting started with browser extension development.
 <br/><br/>
 <em>Dark / Net / Art ✿ Tech for Social Good Day 2020 ✿ Workshop Leader (with Jackie Liu)</em><br/>A 3-hour long workshop focused on introducing the technical aspects of Tor, in conjunction with an art-making exercise on the dark web.
+
+<br/><br/>❊<br/><br/><br/>
+<p style="text-decoration: none;">Education</p>
+<br/>
+ITP, New York University ✿ <em> 2019 – 2021 </em> ✿ <em>M.P.S. Interactive Telecommunications</em>
+<br/><br/>
+Yale University ✿ <em> 2012 – 2016 </em> ✿ <em>B.S. Computer Science</em>
 <br/><br/>
 
 <!--
