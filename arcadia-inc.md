@@ -1,16 +1,50 @@
 ---
 layout: projectPageNew
-title: 'Human Interface Guidelines (Metaphor)'
-year: 2020
-medium: two channel video
+title: 'Soft Power (Arcadia Inc.)'
+year: 2021
+medium: digital simulation
 paragraphs:
  - text: |
-    In 1987 Apple published the Macintosh Human Interface Guidelines – a document summarizing the visual principles behind the MacOS user interface. In a pursuit towards popularizing personal computing throughout the 1980s, Apple embraced <em>metaphor</em> as a core idea in interface design: presenting the user with concepts already familiar from everyday life, as a means towards easing the software learning curve.<br/><br/>
+    Soft Power (Arcadia Inc.) is a work of speculative fiction which responds to the use of landscape photography as a carrier for brand ideologies, on the computer desktop and beyond. The piece proposes the synthetic landscape as a clean, context-free alternative to nature imagery, through a group of virtual beings which photograph nature 24/7 in a real-time simulation.<br/><br/>
  - text: |
-    The <em>desktop metaphor</em> is one popular instance of metaphor usage in interface design. It models a computer's working area as if it were the user's desk, viewed from above, and recontextualizes objects found in the office (such as files, folders or trash cans) into digital entities.<br/><br/>
+    <a href="/assets/images/arcadiainc/softpower.pdf" target="_blank">Read curatorial statement</a><br/><br/><br/>
  - text: |
-    This two channel video engages with and reverses the skeuomorphism of the desktop metaphor. The default landscape photograph which serves as desktop wallpaper evolves from visual backdrop to full-blown ecosystem, which is being watched (left channel) and watching (right channel) at the same time. Human presence is not directly portrayed, but implied through the design of the scene – the museum-like setting invites the spectator to project their gaze into the landscape. 3-dimensional models of the folder icon serve as the visual liaison between the two spaces, slowly overflowing the scene throughout the course of the video. Original text by Apple, arguing for the use of metaphor in interface design, is shown on the screen, while elements of nature (trees and flowers) rotate in the center of each channel, in reference to the most popular motion graphics gestures in loading screens.
+    Soft Power (Arcadia Inc.) was part of <a href="https://www.springbreakartshow.com/" target="_blank">SPRING/BREAK Art Show</a> in New York, as a <a href="https://springbreakartfair.com/collections/lizzy-chiappini-2021" target="_blank">solo show</a> curated by <a href="https://www.lizzy-chiappini.com/" target="_blank">Lizzy Chiappini</a>. For the duration of SPRING/BREAK, all photographs taken by virtual beings within the simulation were uploaded to <a href="https://soft-power.online" target="_blank">https://soft-power.online.</a><br/><br/>
+ - text: |
+    A previous framing of the project involved a fictional company which claims to offer "context-free landscape photography for the 21st century user". You can learn more about Arcadia Inc. as a company by visiting <a href="http://arcadia-inc.org" target="_blank">http://arcadia-inc.org</a>, or by listening to my <a href="https://vimeo.com/549761951" target="_blank">thesis presentation</a>.<br/><br/>
+ - text: |
+    Related Work: <br/>
+    <a href="/whatdoesthedesktopwant">What Does the Desktop Want?</a>, a talk I gave at the 2021 Computer Mouse Conference<br/>
+    <a href="/hig-metaphor">Human Interface Guidelines (Metaphor)</a>, a two-channel video<br/>
+    <a href="/24hrslandscape">24 Hours Relaxing Landscape for Stress Relief</a>, a three channel video
+
 images:
- - url: https://player.vimeo.com/video/488594401
+ - url: https://player.vimeo.com/video/558849743
    vimeo: true
+   description: The Arcadia Inc. virtual beings introduce themselves.
+
+ - url: https://player.vimeo.com/video/627567700
+   vimeo: true
+   description: Un-edited screen recording of the <i>softpower.exe</i> real-time simulation (video + sound). Time was sped up in this instance of running the simulation – one full day cycle happens in 1 hour.
+
+ - url: /assets/images/arcadiainc/soft-power-still.png
+   description: Still from the <i>softpower.exe</i> real-time simulation.
+
+ - url: /assets/images/arcadiainc/simulation-stills.png
+   description: Stills from the <i>softpower.exe</i> real-time simulation.
+
+ - url: /assets/images/arcadiainc/spring-break-1.jpg
+   description: SPRING/BREAK 2021 installation view; the show curator, Lizzy Chiappini, selected seven photographs taken by the virtual beings to print at high resolution on aluminum dibond, in conjunction with displaying the real-time simulation as a single-channel video of infinite duration. <small>(image by Lizzy Chiappini)</small>
+
+ - url: /assets/images/arcadiainc/spring-break-2.png
+   description: 32W,560S, UV Print on Aluminum Dibond, 20” x 15” (50.8 x 38.1cm)
+
+ - url: /assets/images/arcadiainc/spring-break-3.png
+   description: 1967W,9N, UV Print on Aluminum Dibond, 20” x 15” (50.8 x 38.1cm)
+
+ - url: /assets/images/arcadiainc/soft-power-online-1.png
+   description: Photograph taken by a virtual being, displayed on the soft-power.online website with metadata revealing environmental conditions within the simulation.
+
+ - url: /assets/images/arcadiainc/soft-power-online-2.png
+   description: Photograph taken by a virtual being, displayed on the soft-power.online website with metadata revealing environmental conditions within the simulation.
 ---

@@ -7,7 +7,7 @@ projects:
 - title: 'Arcadia Inc.'
   medium: digital simulation
   year: 2021
-  link: /plotter-drawings
+  link: /arcadia-inc
   image: /assets/images/arcadiainc/soft-power-still.png
   selected: true
 - title: 'Pen Plotter Drawings'
@@ -23,11 +23,13 @@ projects:
   client: for MIT, with <a href="https://sosolimited.com">SOSO Limited</a>
   image: /assets/images/infinitecorridor/infinite-thumb.png
 - title: 'What Does the Desktop Want?'
+  link: /whatdoesthedesktopwant
   medium: talk
   year: 2021
   selected: false
   client: for the Computer Mouse Conference at CultureHub
   image: /assets/images/whatdoesthedesktopwant/cover.png
+  selected: true
 - title: '✾ Human Interface Guidelines (Metaphor) ✾'
   medium: two channel video
   year: 2020
@@ -85,7 +87,7 @@ projects:
   year: 2019
   link: /untitled
   image: /assets/images/untitled/cover.JPG
-  selected: true
+  selected: false
 - title: worldvie.ws
   medium: web-based software
   year: 2019 – 2020
