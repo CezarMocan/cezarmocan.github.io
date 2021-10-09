@@ -13,8 +13,9 @@ projects:
 - title: 'Pen Plotter Drawings'
   medium: ink on paper
   year: 2021
-  link: /plotter-drawings
+  link: https://shop.cezar.io
   image: /assets/images/plotterdrawings/tunnel-1.png
+  targetBlank: true
   selected: true
 - title: 'Infinite Corridor Installation'
   medium: interactive installation

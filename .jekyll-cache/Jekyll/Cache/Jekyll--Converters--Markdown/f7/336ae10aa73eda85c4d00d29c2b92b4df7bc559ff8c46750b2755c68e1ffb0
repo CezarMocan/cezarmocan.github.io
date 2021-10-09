@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117981656-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-117981656-1');
-    </script>
-
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jongacnik/gr8/daaf18fb/dist/gr8.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/assets/css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/default-new.css">
-    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/blog.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css"> -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>Cezar Mocan</title>
-  </head>
-
-  <body>
-    <div class="content-container">
-      <div class="header-container">
-        <div class="header-section-left">
-          <div class="header-section name">
-            <p class="" style="min-width: 100px;"><a class="no-underline" href="/">Cezar Mocan</a></p>
-          </div>
-          <div class="header-section email">
-            <p class="" style="min-width: 100px;"><a class="no-underline" href="mailto:c@cezar.io">c@cezar.io</a></p>
-          </div>
-          <div class="header-section dots">
-            <a href="https://instagram.com/cezarmocan" target="_blank"><div class="dot"></div></a>
-            <a href="/assets/media/Resume_2020_Aug_T.pdf" target="_blank"><div class="dot"></div></a>
-            <a href="/feelings"><div class="dot"></div></a>
-          </div>
-        </div>
-        <div class="header-section-right">
-          <div class="header-section">
-            <p class=""><a class="no-underline" href="/about">about</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="intro-container">
-  <p>
-    <p>I am an artist and programmer, born in Romania and working in Brooklyn. I am interested in studying with the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
+I"�<p>I am an artist and programmer, born in Romania and working in Brooklyn. I am interested in studying with the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
 <br /><br />
 Besides my personal work, I often design or build software for other artists and teach. I am currently a Research Resident at NYU ITP, and hold an M.P.S. in Interactive Telecommunications from NYU ITP, and a B.A. in Computer Science from Yale University.
 <br /><br />
@@ -57,15 +7,32 @@ In a former life, I used to do competitive programming.
 If you want to get in touch, <a href="mailto:c@cezar.io">drop me a line.</a></p>
 
 <p><br /><br />❊<br /><br /><br /></p>
-<p style="text-decoration: none;">Recent news</p>
+<p style="text-decoration: none;">Exhibitions, Awards, Grants, Conferences</p>
 <p><br /><br />
-SPRING/BREAK Art Show ✿ <em>2021, New York</em> ✿ <em>Participating Artist (solo show)</em>
-<br /><br />
 Lumen Prize ✿ <em>2021, London</em> ✿ <em>Shortlisted Artist</em>
 <br /><br />
 Research Residency at NYU ITP ✿ <em>2021 – 2022, New York</em>
 <br /><br />
-View full CV <a href="https://docs.google.com/document/d/1qqE1sC9OasS2NU2cGLhji9NmopRdeTJbQREjjcqoMmQ/edit?usp=sharing">here</a>.</p>
+<a href="https://www.computermouseconference.net/" target="_blank">Computer Mouse Conference</a> ✿ <em>April 2021, Online</em> ✿ <em>Speaker</em><!--<br/>An online show featuring hand-coded webpages.-->
+<br /><br />
+<a href="https://arthomepagefair.net/" target="_blank">The Art Home Page Fair by IDPW and AreByte On Screen</a> ✿ <em>February 2021, Online</em> ✿ <em>Participating Artist</em><!--<br/>An online show featuring hand-coded webpages.-->
+<br /><br />
+NYU ITP Winter Show 2020 ✿ <em>December 2020, Online</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br /><br />
+NYC Media Lab x ASCAP: Music Tech Design Challenge ✿ <em>Summer 2020, Online </em>✿ <em>Grant Recipient, with Cy Kim</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br /><br />
+NYU ITP Spring Show 2020 ✿ <em>May 2020, Online </em>✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br /><br />
+<a href="https://lipp.tv/" target="_blank">LIPP.TV</a> ✿ <em>May 2020, Online</em> ✿ <em>Participating Artist</em>
+<br /><br />
+NYU ITP Winter Show 2019 ✿ <em>December 2019, New York</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br /><br />
+<a href="https://www.computermouseconference.net/" target="_blank">Computer Mouse Conference</a> ✿ <em>November 2019, New York</em> ✿ <em>Participating Artist</em><!--<br/>An online show featuring hand-coded webpages.-->
+<br /><br />
+<a href="https://eyeofestival.com//" target="_blank">Eyeo Festival</a> ✿ <em>June 2019, Minneapolis</em> ✿ <em>Artist Fellowship Recipient</em><!--<br/>An online show featuring hand-coded webpages.-->
+<br /><br />
+Are We Closer Yet? An evening of AR experiences ✿ <em>August 2018, Brelin</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+<br /><br /></p>
 
 <p><br /><br />❊<br /><br /><br /></p>
 <p style="text-decoration: none;">Artist Statement</p>
@@ -126,41 +93,4 @@ I am currently pursuing a two-year long masters program at <a class="underlined"
 Available for work. <a class="underlined" href="mailto:c@cezar.io">Say hi!</a>
 </div>
 -->
-
-  </p>
-</div>
-
-    </div>
-    <div class="footer">
-      Cezar Mocan, 2021 &emsp; ✿ &emsp; Brooklyn, NY &emsp; ✿ &emsp; <a class="no-underline" href="mailto:c@cezar.io">email</a> / <a class="no-underline" href="https://instagram.com/cezarmocan" target="_blank">instagram</a> / <a class="no-underline" href="https://www.are.na/cezar-mocan" target="_blank">are.na</a> &emsp; ✿ &emsp; hand-coded and maintained with care
-      <br/>
-      some friends &ensp; ✿ &ensp; <a class="no-underline" href="https://katelynrebelo.com" target="_blank">katelynrebelo.com</a> &ensp; ✿ &ensp; <a class="no-underline" href="https://jackieis.online" target="_blank">jackieis.online</a> &ensp; ✿ &ensp; <a class="no-underline" href="https://www.cy-kim.com" target="_blank">cy-kim.com</a> &ensp; ✿ &ensp; <a class="no-underline" href="http://www.paulbille.com" target="_blank">paulbille.com</a> &ensp; ✿ &ensp; <a class="no-underline" href="https://yhsong.com" target="_blank">yhsong.com</a> &ensp; ✿ &ensp; <a class="no-underline" href="https://www.marceldochamp.net" target="_blank">marceldochamp.net</a> &ensp; ✿ &ensp; <a class="no-underline" href="https://www.evan-roth.com" target="_blank">evan-roth.com</a> &ensp; ✿ &ensp; <a class="no-underline" href="http://jedahan.com" target="_blank">jedahan.com</a> &ensp; ✿ &ensp; <a class="no-underline" href="https://sueroh.com" target="_blank">sueroh.com</a> &ensp;
-      <!-- ⚘ ✽ ❁ ✾ ❀ ✤ ❁ ꕥ ⚜ ❃ ❊ ❋ ✣ ꕤ -->
-    </div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-
-      /*
-      $('.imagery-container').slick({
-        infinite: true,
-        dots: false,
-      });
-
-      $('.slick-next').click(function(evt) {
-        let embeds = document.getElementsByTagName('iframe')
-        for (let i = 0; i < embeds.length; i++) {
-          if (embeds[i].contentWindow)
-            embeds[i].contentWindow.postMessage('{"method":"pause"}', '*');
-        }
-      })
-      */
-    });
-  </script></body>
-
-</html>
-
-<!--
-
-  -->
+:ET

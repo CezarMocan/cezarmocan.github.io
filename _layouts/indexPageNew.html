@@ -3,7 +3,7 @@ layout: default-new
 ---
 <div class="intro-container">
   <p>
-    I am an artist and programmer, born in Romania and working in Brooklyn. My work engages with technology usage patterns and the creation of humane digital environments using 3D rendering, video and the web.
+    I am an artist and programmer, born in Romania and working in Brooklyn. My work uses game engines, video and the web as a way to understand the power structures that shape society’s engagement with technology.
     <br/><br/><br/>
     You can view a list of my selected work below, or scroll down for a complete archive.
     <br/><br/>
@@ -21,7 +21,11 @@ layout: default-new
   {% for project in page.projects %}
    {% if project.selected %}
     {% if project.link %}
-      <a href="{{project.link}}" class="no-underline">
+      {% if project.targetBlank %}
+        <a href="{{project.link}}" target="_blank" class="no-underline">
+      {% else %}
+        <a href="{{project.link}}" class="no-underline">
+      {% endif %}
     {% endif %}
       <div class="project-row {% if project.link %}interactive{%endif%}">
         <div class="project-column title border margin">
@@ -59,7 +63,11 @@ layout: default-new
   </div>
   {% for project in page.projects %}
     {% if project.link %}
-      <a href="{{project.link}}" class="no-underline">
+      {% if project.targetBlank %}
+        <a href="{{project.link}}" target="_blank" class="no-underline">
+      {% else %}
+        <a href="{{project.link}}" class="no-underline">
+      {% endif %}
     {% endif %}
       <div class="project-row {% if project.link %}interactive{%endif%}">
         <div class="project-column title border margin">

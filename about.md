@@ -2,38 +2,24 @@
 layout: about-new
 permalink: /about/
 ---
-I am an artist and programmer, born in Romania and working in Brooklyn. My work engages with technology usage patterns and the creation of humane digital environments using 3D rendering, video and the web.
+I am an artist and programmer, born in Romania and working in Brooklyn. I am interested in studying with the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
 <br/><br/>
-Besides my personal work, I often design or build software for artists and teach. I am currently pursuing an M.P.S. in Interactive Telecommunications at NYU ITP, and hold a B.A. in Computer Science from Yale University.
+Besides my personal work, I often design or build software for other artists and teach. I am currently a Research Resident at NYU ITP, and hold an M.P.S. in Interactive Telecommunications from NYU ITP, and a B.A. in Computer Science from Yale University.
 <br/><br/>
 In a former life, I used to do competitive programming.
 <br/><br/>
 If you want to get in touch, <a href="mailto:c@cezar.io">drop me a line.</a>
 
 <br/><br/>❊<br/><br/><br/>
-<p style="text-decoration: none;">Grants, Shows, Conferences</p>
-<br/>
-<a href="https://www.computermouseconference.net/" target="_blank">Computer Mouse Conference</a> ✿ <em>April 2021, Online</em> ✿ <em>Speaker</em><!--<br/>An online show featuring hand-coded webpages.-->
+<p style="text-decoration: none;">Recent news</p>
 <br/><br/>
-<a href="https://arthomepagefair.net/" target="_blank">The Art Home Page Fair by IDPW and AreByte On Screen</a> ✿ <em>February 2021, Online</em> ✿ <em>Participating Artist</em><!--<br/>An online show featuring hand-coded webpages.-->
+SPRING/BREAK Art Show ✿ <em>2021, New York</em> ✿ <em>Participating Artist (solo show)</em>
 <br/><br/>
-NYU ITP Winter Show 2020 ✿ <em>December 2020, Online</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
+Lumen Prize ✿ <em>2021, London</em> ✿ <em>Shortlisted Artist</em>
 <br/><br/>
-NYC Media Lab x ASCAP: Music Tech Design Challenge ✿ <em>Summer 2020, Online </em>✿ <em>Grant Recipient, with Cy Kim</em><!--<br/>NYU ITP's bi-yearly show.-->
+Research Residency at NYU ITP ✿ <em>2021 – 2022, New York</em>
 <br/><br/>
-NYU ITP Spring Show 2020 ✿ <em>May 2020, Online </em>✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
-<br/><br/>
-<a href="https://lipp.tv/" target="_blank">LIPP.TV</a> ✿ <em>May 2020, Online</em> ✿ <em>Participating Artist</em>
-<br/><br/>
-NYU ITP Winter Show 2019 ✿ <em>December 2019, New York</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
-<br/><br/>
-<a href="https://www.computermouseconference.net/" target="_blank">Computer Mouse Conference</a> ✿ <em>November 2019, New York</em> ✿ <em>Participating Artist</em><!--<br/>An online show featuring hand-coded webpages.-->
-<br/><br/>
-<a href="https://eyeofestival.com//" target="_blank">Eyeo Festival</a> ✿ <em>June 2019, Minneapolis</em> ✿ <em>Artist Fellowship Recipient</em><!--<br/>An online show featuring hand-coded webpages.-->
-<br/><br/>
-Are We Closer Yet? An evening of AR experiences ✿ <em>August 2018, Brelin</em> ✿ <em>Participating Artist</em><!--<br/>NYU ITP's bi-yearly show.-->
-<br/><br/>
-
+View full CV <a href="https://docs.google.com/document/d/1qqE1sC9OasS2NU2cGLhji9NmopRdeTJbQREjjcqoMmQ/edit?usp=sharing">here</a>.
 
 <br/><br/>❊<br/><br/><br/>
 <p style="text-decoration: none;">Artist Statement</p>
@@ -47,6 +33,10 @@ The work I do is also influenced by my experience as an immigrant in the United 
 <br/><br/>❊<br/><br/><br/>
 <p style="text-decoration: none;">Teaching</p>
 <br/>
+<em>Networked Media ✿ Spring 2022 (upcoming), NYU Interative Media Arts ✿ Adjunct Professor</em>
+<br/><br/>
+<em>Points, Lines and Systems ✿ November 2021 (upcoming), School of Machines, Making and Make-Believe ✿ Curriculum Developer & Instructor</em><br/>A 5-week long class on creative generative art under a specific set of constraints.
+<br/><br/>
 <em>Capstone ✿ Spring 2021, NYU Interative Media Arts ✿ Teaching Assistant</em><br/>Taught by Allison Parrish.
 <br/><br/>
 <em>Programming the Net ✿ Spring 2021 ✿ Curriculum Developer & Teacher</em><br/>A high-school level online class focused on introducing basic concepts of web development through the lens of net art.
