@@ -15,7 +15,7 @@ layout: default-new
   <div class="project-row header">
     <div class="project-column title margin"><p>Title</p></div>
     <div class="project-column year margin"><p>Year</p></div>
-    <div class="project-column client margin"><p>Client</p></div>
+    <div class="project-column client margin"><p>Notes</p></div>
     <div class="project-column medium"><p>Medium</p></div>
   </div>
   {% for project in page.projects %}
@@ -24,11 +24,14 @@ layout: default-new
       <a href="{{project.link}}" class="no-underline">
     {% endif %}
       <div class="project-row {% if project.link %}interactive{%endif%}">
-        <div class="project-column title border margin"><p>{{ project.title }}</p></div>
+        <div class="project-column title border margin">
+          <p>{{ project.title }}</p>
+          <img src="{{project.image}}" style="margin-top: 10px; width: 50%;"/>
+        </div>
         <div class="project-column year border margin"><p>{% if project.year %}{{ project.year }}{% endif %}</p></div>
         <div class="project-column client border margin"><p>{% if project.client %}{{ project.client }}{% endif %}</p></div>
         <div class="project-column medium"><p>{% if project.medium %}{{ project.medium }}{% endif %}</p></div>
-        <img class="project-thumbnail" src="{{ project.image }}"/>
+        <!-- <img class="project-thumbnail" src="{{ project.image }}"/> -->
       </div>
     {% if project.link %}
       </a>
@@ -51,7 +54,7 @@ layout: default-new
   <div class="project-row header">
     <div class="project-column title margin"><p>Title</p></div>
     <div class="project-column year margin"><p>Year</p></div>
-    <div class="project-column client margin"><p>Client</p></div>
+    <div class="project-column client margin"><p>Notes</p></div>
     <div class="project-column medium"><p>Medium</p></div>
   </div>
   {% for project in page.projects %}
@@ -59,11 +62,14 @@ layout: default-new
       <a href="{{project.link}}" class="no-underline">
     {% endif %}
       <div class="project-row {% if project.link %}interactive{%endif%}">
-        <div class="project-column title border margin"><p>{{ project.title }}</p></div>
+        <div class="project-column title border margin">
+          <p>{{ project.title }}</p>
+          <img src="{{project.image}}" style="margin-top: 10px; width: 25%;"/>
+        </div>
         <div class="project-column year border margin"><p>{% if project.year %}{{ project.year }}{% endif %}</p></div>
         <div class="project-column client border margin"><p>{% if project.client %}{{ project.client }}{% endif %}</p></div>
         <div class="project-column medium"><p>{% if project.medium %}{{ project.medium }}{% endif %}</p></div>
-        <img class="project-thumbnail" src="{{ project.image }}"/>
+        <!-- <img class="project-thumbnail" src="{{ project.image }}"/> -->
       </div>
     {% if project.link %}
       </a>

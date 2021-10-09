@@ -121,7 +121,7 @@ a:hover {
 }
 
 p {
-  font-size: 20pt;
+  font-size: 16pt;
   margin: 1px 0;
   margin-bottom: 3px;
   line-height: 1.08;
@@ -191,6 +191,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 4px;
 }
 
 .project-column.go-back p {
@@ -220,37 +221,16 @@ p {
 }
 
 .description-container {
-  margin: -10px 0 0 10px;
-}
-
-.imagery-container {
-  margin: 15px 0 0 10px;
-  max-width: calc(100% - 40px);
-}
-
-.imagery-container img {
-  max-width: 80vw;
-  max-height: 90vh;
-  object-fit: contain;
-  object-position: left;
-}
-
-.imagery-container iframe {
-  max-width: 80vw;
-  max-height: 90vh;
-  object-fit: contain;
-  object-position: left;
-}
-
-.imagery-container video {
-  max-width: 80vw;
-  max-height: 90vh;
-  object-fit: contain;
-  object-position: left;
+  margin: -10px 0 75px 10px;
 }
 
 .project-content-container {
   margin-bottom: 75px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 900px) {

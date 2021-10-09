@@ -1,0 +1,14 @@
+I"¨<figure style="margin: 0;">
+  <img class="img-row-2" style="border: none;" src="/assets/images/blog/2020-02-21-eagle-designs/1.png" alt="Board design for letter s" />
+  <figcaption>
+  </figcaption>
+</figure>
+<p>For the <a href="http://homemadehardware.com/syllabus/assignments/marquee/">Marquee Sign assignment</a>, our class picked the phrase <code class="language-plaintext highlighter-rouge">I dislike pigeon</code>, and I was tasked with designing and building the PCB for the letter <code class="language-plaintext highlighter-rouge">s</code>. Here are the files: <a href="/assets/media/blog/basic.brd">BRD</a>, <a href="/assets/media/blog/basic.sch">SCH</a> and <a href="/assets/media/blog/S_v1.pdf">PDF</a>.</p>
+
+<figure>
+  <img class="" style="border: none;" src="/assets/images/blog/2020-02-21-eagle-designs/2.png" alt="Circuit design for the 25 LEDs" />
+  <figcaption>
+    Circuit design for 25 LEDs
+  </figcaption>
+</figure>
+:ET

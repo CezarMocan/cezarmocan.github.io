@@ -74,7 +74,7 @@
 
 <p>For the project application, I decided to use a component I’d never worked with before. During last semester’s garage sale, I purchased a <a href="https://www.crystalfontz.com/product/cfah1602btmijt-16x2-character-lcd?kw=&amp;origin=pla&amp;gclid=CjwKCAiAhJTyBRAvEiwAln2qB5sd4lTcgHgml3grvAPeOELyKMn9WQ9pnCvROz5gQMvEnA7pCQSBOxoCD9cQAvD_BwE">16x2 LCD screen</a> and never had the chance to use it. I will say from the get go that my attempt failed :). Here is why.</p>
 
-<p>I started by connecting it to my Arduino Nano and making sure it works, since I had never tested it before. It did, and you will have to trust me on this one since I didn’t document it (🤦‍♂️). But this is the (very simple) code that I used, taken from the <code class="highlighter-rouge">LiquidCrystal</code> library’s help.</p>
+<p>I started by connecting it to my Arduino Nano and making sure it works, since I had never tested it before. It did, and you will have to trust me on this one since I didn’t document it (🤦‍♂️). But this is the (very simple) code that I used, taken from the <code class="language-plaintext highlighter-rouge">LiquidCrystal</code> library’s help.</p>
 
 <p><code>
 #include &#60;LiquidCrystal.h&#62;<br />
@@ -97,7 +97,7 @@ void loop() {<br />
 
 <p>Very briefly, the LCD screen has 16 pins. 8 of them (D0 to D7) are used for sending over bytes of information that need to be displayed on the screen, as well as commands (move cursor, clear screen etc.). Two of them are power and ground (VSS, VDD). Two of them are power and ground for the backlight LED (A and K.) Three of them are used in order to set different communication modes for the 8 data pins (RS, RW and E). And last, but not least, one pin (V0) needs to be hooked to a potentiometer and it controls the screen’s contrast.</p>
 
-<p>16 is a lot of pins, since our ATTiny only has 8 pins total, 5* of which can be used for data. (potentially 6 if we consider the RESET pin, more on that in a bit.) The good news is that we can operate the LCD screen by using only 6 pins: RS and E for setting the communication modes, and 4 of the 8 data pins. The <a href="https://github.com/arduino-libraries/LiquidCrystal/blob/master/src/LiquidCrystal.cpp"><code class="highlighter-rouge">LiquidCrystal</code> library</a> implements an 8-bit mode and a 4-bit mode, meaning that the same information can be sent to the screen using only pins D4 through D7. The bad news is that the ATTiny85 only has 5 digital pins available by default.</p>
+<p>16 is a lot of pins, since our ATTiny only has 8 pins total, 5* of which can be used for data. (potentially 6 if we consider the RESET pin, more on that in a bit.) The good news is that we can operate the LCD screen by using only 6 pins: RS and E for setting the communication modes, and 4 of the 8 data pins. The <a href="https://github.com/arduino-libraries/LiquidCrystal/blob/master/src/LiquidCrystal.cpp"><code class="language-plaintext highlighter-rouge">LiquidCrystal</code> library</a> implements an 8-bit mode and a 4-bit mode, meaning that the same information can be sent to the screen using only pins D4 through D7. The bad news is that the ATTiny85 only has 5 digital pins available by default.</p>
 
 <p>After some googling, I found out that it is possible to use the RESET pin as a digital pin, and that there are two ways of doing that:</p>
 
@@ -107,9 +107,9 @@ void loop() {<br />
 
 <p>2) By doing some <a href="https://www.instructables.com/id/Using-pin-1-on-Attiny13-without-messing-with-fuse-/">circuitry black magic</a> in order to use digital pin 5 while consistenly keeping it under the reset voltage.</p>
 
-<p>I straight up did not understand the black magic in #2. I did <a href="https://embedderslife.wordpress.com/2012/08/20/fuse-bits-arent-that-scary/">some</a> <a href="https://hackaday.com/2012/08/30/avr-fuse-bits-explained/">more</a> <a href="https://www.ladyada.net/learn/avr/avrdude.html">digging</a> around #1 and also found the <a href="http://www.engbedded.com/fusecalc/">Fuse Calculator</a>, but stopped since I didn’t quite know how to run <code class="highlighter-rouge">avrdude</code> outside of the Arduino IDE and I didn’t want to risk bricking the ATTiny. But those are just excuses, it seems doable.</p>
+<p>I straight up did not understand the black magic in #2. I did <a href="https://embedderslife.wordpress.com/2012/08/20/fuse-bits-arent-that-scary/">some</a> <a href="https://hackaday.com/2012/08/30/avr-fuse-bits-explained/">more</a> <a href="https://www.ladyada.net/learn/avr/avrdude.html">digging</a> around #1 and also found the <a href="http://www.engbedded.com/fusecalc/">Fuse Calculator</a>, but stopped since I didn’t quite know how to run <code class="language-plaintext highlighter-rouge">avrdude</code> outside of the Arduino IDE and I didn’t want to risk bricking the ATTiny. But those are just excuses, it seems doable.</p>
 
-<p>The third option that arose on the horizon was using a multiplexer. I found one in the yellow bins (CD4051BE) and checked out the <a href="https://cityos.io/tutorial/1958/Use-multiplexer-with-Arduino">tutorial</a> for how to use it with Arduino. I understand it conceptually, but using it would require making some manual changes to the <code class="highlighter-rouge">LiquidCrystal</code> library. While I’m generally down to do that, it seemed too tedious of a pursuit for this assignment.</p>
+<p>The third option that arose on the horizon was using a multiplexer. I found one in the yellow bins (CD4051BE) and checked out the <a href="https://cityos.io/tutorial/1958/Use-multiplexer-with-Arduino">tutorial</a> for how to use it with Arduino. I understand it conceptually, but using it would require making some manual changes to the <code class="language-plaintext highlighter-rouge">LiquidCrystal</code> library. While I’m generally down to do that, it seemed too tedious of a pursuit for this assignment.</p>
 
 <figure>
   <img class="img-row-2" style="" src="/assets/images/blog/2020-02-13-attiny-85/5.JPG" alt="The multiplexer" />
@@ -142,6 +142,8 @@ void loop() {<br />
 
   <script type="text/javascript">
     $(document).ready(function(){
+
+      /*
       $('.imagery-container').slick({
         infinite: true,
         dots: false,
@@ -154,6 +156,7 @@ void loop() {<br />
             embeds[i].contentWindow.postMessage('{"method":"pause"}', '*');
         }
       })
+      */
     });
   </script></body>
 

@@ -85,7 +85,7 @@
     <p>adding another control input to the sequencer in the form of a photoresistor; this allows for controlling the overall pitch of the played sequence by covering or uncovering the sensor with one’s hand;</p>
   </li>
   <li>
-    <p>improving the software such that the Arduino <code class="highlighter-rouge">loop</code> cycle is not dependent on the speed of the sequencer anymore; this means that frequency of a step’s sound can now be adjusted while the step is playing;</p>
+    <p>improving the software such that the Arduino <code class="language-plaintext highlighter-rouge">loop</code> cycle is not dependent on the speed of the sequencer anymore; this means that frequency of a step’s sound can now be adjusted while the step is playing;</p>
   </li>
   <li>
     <p>experimenting with different sensitivity levels for the photoresistor reading (I ended up settling on dividing the output into 8 different buckets, since the sensor readings were quite noisy.)</p>
@@ -101,7 +101,7 @@
   </figcaption>
 </figure>
 
-<p>While I was initially going for the theremin <em>continous bending</em> sound quality, I realized that was going to be difficult for two main reasons: the noise in the photoresistor reading (even when averaged over time) and the <code class="highlighter-rouge">loop</code> function timing trade-offs between <code class="highlighter-rouge">tone</code> working properly and proper responsivity. So I went a different direction and started working with only discrete quantities. As mentioned before, I divided the photoresistor output into only roughly 8 different buckets. In terms of the frequencies that get played by the sequencer, they all full octaves apart and have the C pitch (the step frequencies get rounded to multiples of 65.) This produces an effect similar to a <a href="https://www.google.com/search?client=firefox-b-1-d&amp;q=quantizer" target="__blank" class="underlined">quantizer</a>.</p>
+<p>While I was initially going for the theremin <em>continous bending</em> sound quality, I realized that was going to be difficult for two main reasons: the noise in the photoresistor reading (even when averaged over time) and the <code class="language-plaintext highlighter-rouge">loop</code> function timing trade-offs between <code class="language-plaintext highlighter-rouge">tone</code> working properly and proper responsivity. So I went a different direction and started working with only discrete quantities. As mentioned before, I divided the photoresistor output into only roughly 8 different buckets. In terms of the frequencies that get played by the sequencer, they all full octaves apart and have the C pitch (the step frequencies get rounded to multiples of 65.) This produces an effect similar to a <a href="https://www.google.com/search?client=firefox-b-1-d&amp;q=quantizer" target="__blank" class="underlined">quantizer</a>.</p>
 
 <p>Here are two more videos of playing the sequencer. The noise in the photoresistor changes the pitch here and there, which adds an improvisation quality to the sound. I find this enjoyable.</p>
 
@@ -287,6 +287,8 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
+
+      /*
       $('.imagery-container').slick({
         infinite: true,
         dots: false,
@@ -299,6 +301,7 @@
             embeds[i].contentWindow.postMessage('{"method":"pause"}', '*');
         }
       })
+      */
     });
   </script></body>
 

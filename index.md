@@ -4,6 +4,30 @@
 
 layout: indexPageNew
 projects:
+- title: 'Arcadia Inc.'
+  medium: digital simulation
+  year: 2021
+  link: /plotter-drawings
+  image: /assets/images/arcadiainc/soft-power-still.png
+  selected: true
+- title: 'Pen Plotter Drawings'
+  medium: ink on paper
+  year: 2021
+  link: /plotter-drawings
+  image: /assets/images/plotterdrawings/tunnel-1.png
+  selected: true
+- title: 'Infinite Corridor Installation'
+  medium: interactive installation
+  year: 2021
+  selected: false
+  client: for MIT, with <a href="https://sosolimited.com">SOSO Limited</a>
+  image: /assets/images/infinitecorridor/infinite-thumb.png
+- title: 'What Does the Desktop Want?'
+  medium: talk
+  year: 2021
+  selected: false
+  client: for the Computer Mouse Conference at CultureHub
+  image: /assets/images/whatdoesthedesktopwant/cover.png
 - title: '✾ Human Interface Guidelines (Metaphor) ✾'
   medium: two channel video
   year: 2020
@@ -13,13 +37,12 @@ projects:
 - title: virtualis.tours
   medium: website
   year: 2020
-  client: Lydia Jessup & Matt Romein
+  client: for Lydia Jessup & Matt Romein at IDFA DocLab
   link: /virtualis
   image: /assets/images/virtualis/cover.png
 - title: declared vvvvvvoid
   medium: browser extension
   year: 2020
-  client:
   link: /declaredvvvvvvoid
   image: /assets/images/declaredvvvvvvoid/cover.png
 - title: '24 Hours Relaxing Landscape for Stress Relief'
@@ -33,7 +56,7 @@ projects:
   year: 2020
   link: /shadownetwork
   image: /assets/images/shadownetwork/cover.png
-  selected: true
+  selected: false
 - title: In 2020, I dream
   medium: desktop performance
   year: 2020
@@ -48,13 +71,13 @@ projects:
 - title: upgradeacademy.ro
   medium: graphic design
   year: 2020
-  client: Upgrade Academy
+  client: for Upgrade Academy
   link: /upgradeacademy
   image: /assets/images/upgradeacademy/cover.png
 - title: LIPP.TV
   medium: website
   year: 2020
-  client: Live Image Processing & Performance @ NYU ITP
+  client: for Live Image Processing & Performance @ NYU ITP
   link: /lipptv
   image: /assets/images/lipptv/cover.png
 - title: Untitled
@@ -66,14 +89,15 @@ projects:
 - title: worldvie.ws
   medium: web-based software
   year: 2019 – 2020
-  client: Evan Roth
+  client: for Evan Roth
   image: /assets/images/disappearing.gif
 - title: Distributed Web of Care
   medium: web-based software
   year: 2019
-  client: Taeyoon Choi
+  client: for Taeyoon Choi
   link: /dwc
   image: /assets/images/dwc/cover.jpg
+  selected: true
 - title: Disappearing
   medium: web performance
   year: 2019
@@ -103,7 +127,7 @@ projects:
   medium: iOS app
   year: 2018
   link: /mojimoji
-  client: Gakko
+  client: for Gakko
   image: /assets/images/mojimoji/cover.png
 - title: The Road Back Home
   medium: website
@@ -129,7 +153,7 @@ projects:
   medium: website
   year: 2017
   link: /gakkocampgallery
-  client: Gakko
+  client: for Gakko
   image: /assets/images/gakkocampgallery/cover.png
 - title: Water
   medium: poster series
@@ -146,7 +170,7 @@ projects:
   medium: mobile app
   year: 2016
   link: /syriaconflicttracking
-  client: Palantir Technologies
+  client: for Palantir Technologies
   image: /assets/images/syriaconflicttracking/cover-small.png  
 - title: Self Portrait
   medium: software

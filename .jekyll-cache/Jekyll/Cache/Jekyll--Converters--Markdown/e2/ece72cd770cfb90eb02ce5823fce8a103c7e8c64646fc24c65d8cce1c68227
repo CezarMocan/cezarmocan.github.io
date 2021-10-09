@@ -1,0 +1,3 @@
+I"2<p>This week’s assignment was an exploratory one—beginning to build our own video playback system. I ended up experimenting quite a lot with some of the techniques we’ve covered in class so far, namely pixelation, plane mapping (with delays), slit scans using <code>jit.rota</code>, blending multiple videos together using matrix operations (<code>jit.op</code>) as well as blending frames together using <code>jit.slide</code>. Here are some of the results.
+<img class="" style="" src="/assets/images/blog/2020-02-11-playback-system/13.png" alt="" /></p>
+:ET

@@ -12,6 +12,9 @@ paragraphs:
  - text: |
      Developed using React and web sockets.
 images:
+ - url: /assets/images/dwc/dwc-1.jpg
+ - url: /assets/images/dwc/dwc-2.jpg
+ - url: /assets/images/dwc/dwc-3.jpg
  - url: /assets/images/dwc/3.m4v
    video: true
  - url: /assets/images/dwc/2.m4v

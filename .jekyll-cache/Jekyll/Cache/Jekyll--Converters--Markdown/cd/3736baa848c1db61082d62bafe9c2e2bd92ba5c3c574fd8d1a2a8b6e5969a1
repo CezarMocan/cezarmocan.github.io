@@ -1,0 +1,219 @@
+I"�P<figure style="margin: 0;">
+  <img class="img-row-2" src="/assets/images/blog/2019-10-02-sensors-and-soldering/7.jpg" alt="3 LEDs inside a resin cube." />
+  <figcaption>
+    3 LEDs inside a resin cube.
+  </figcaption>
+</figure>
+<p>This week’s physical computing labs involved working with analog input and output for the Arduino, as well as soldering. Since we’re having a review week, I chose to focus on two things: 1) Improving the <a class="underlined" href="/2019/09/25/technology-observation.html">LED sequencer I built for the previous lab;</a> and 2) Getting outside of the breadboard and working with resin, a material I’ve wanted to experiment with for some time.</p>
+
+<p><br /></p>
+
+<p><strong>Sequencer 2.0</strong></p>
+
+<p>To recap, last week the sequencer used 3 steps—3 LEDs, each blinking when the current step is playing a note, and 3 potentiometers, used to adjust the frequency of the note played at each step. It also included a 4th potentiometer which controlled the perceived “speed” of the sequencer—how much time is spent playing the note at each step. This week’s improvements included:</p>
+
+<ul>
+  <li>
+    <p>soldering the speaker connecting wires, which were previously attached to the speaker using alligator clips;</p>
+  </li>
+  <li>
+    <p>adding a 4th step to the sequencer, in order to play slightly more complex sequences; ideally, we would have 8 or 16 steps, but real estate is limited on the breadboard;</p>
+  </li>
+  <li>
+    <p>adding another control input to the sequencer in the form of a photoresistor; this allows for controlling the overall pitch of the played sequence by covering or uncovering the sensor with one’s hand;</p>
+  </li>
+  <li>
+    <p>improving the software such that the Arduino <code class="language-plaintext highlighter-rouge">loop</code> cycle is not dependent on the speed of the sequencer anymore; this means that frequency of a step’s sound can now be adjusted while the step is playing;</p>
+  </li>
+  <li>
+    <p>experimenting with different sensitivity levels for the photoresistor reading (I ended up settling on dividing the output into 8 different buckets, since the sensor readings were quite noisy.)</p>
+  </li>
+</ul>
+
+<p>Here is the photoresistor in action:</p>
+
+<figure>
+  <video src="/assets/images/blog/2019-10-02-sensors-and-soldering/12.mp4" preload="" controls="" loop="" alt="Arduino based 4-step sequencer, with theremin-like hand input."></video>
+  <figcaption>
+    Arduino based 4-step sequencer, with theremin-like hand input.
+  </figcaption>
+</figure>
+
+<p>While I was initially going for the theremin <em>continous bending</em> sound quality, I realized that was going to be difficult for two main reasons: the noise in the photoresistor reading (even when averaged over time) and the <code class="language-plaintext highlighter-rouge">loop</code> function timing trade-offs between <code class="language-plaintext highlighter-rouge">tone</code> working properly and proper responsivity. So I went a different direction and started working with only discrete quantities. As mentioned before, I divided the photoresistor output into only roughly 8 different buckets. In terms of the frequencies that get played by the sequencer, they all full octaves apart and have the C pitch (the step frequencies get rounded to multiples of 65.) This produces an effect similar to a <a href="https://www.google.com/search?client=firefox-b-1-d&amp;q=quantizer" target="__blank" class="underlined">quantizer</a>.</p>
+
+<p>Here are two more videos of playing the sequencer. The noise in the photoresistor changes the pitch here and there, which adds an improvisation quality to the sound. I find this enjoyable.</p>
+
+<figure>
+  <video src="/assets/images/blog/2019-10-02-sensors-and-soldering/10.mp4" preload="" controls="" loop="" alt="Arduino sequencer improvisation #1."></video>
+  <figcaption>
+    Arduino sequencer improvisation #1.
+  </figcaption>
+</figure>
+
+<figure>
+  <video src="/assets/images/blog/2019-10-02-sensors-and-soldering/11.mp4" preload="" controls="" loop="" alt="Arduino sequencer improvisation #2."></video>
+  <figcaption>
+    Arduino sequencer improvisation #2.
+  </figcaption>
+</figure>
+
+<p><strong>LED Resin Cube</strong></p>
+
+<p>This project came about out of a desire to use materials outside of the breadboard and practice soldering at the same time. I’ve been wanting to experiment with resin for some time, so I decided to build a small resin light. After purchasing supplies from Blick, I built a cube mold for the resin, using a 1/8in thick plastic sheet.</p>
+
+<figure>
+  <img class="img-row-2" src="/assets/images/blog/2019-10-02-sensors-and-soldering/1.jpg" alt="Measuring and cutting out 5 faces of a cube." />
+  <figcaption>
+    Measuring and cutting out 5 faces of a cube.
+  </figcaption>
+</figure>
+
+<p>I got the 5 cube sides together using a glue gun, and poured the first layer of resin—about 0.75in thick. After letting it cure for about 8 hours, I added the 3 red LEDs and poured the second and last resin layer.</p>
+
+<figure>
+  <img class="img-row-2" src="/assets/images/blog/2019-10-02-sensors-and-soldering/2.jpg" alt="Adding the LEDs on top of the first resin layer." />
+  <figcaption>
+    Adding the LEDs on top of the first resin layer.
+  </figcaption>
+</figure>
+
+<p>After letting the second layer cure overnight, the cube was ready to come out of its mold. I noticed that the top corners of the cube were not even with the rest of the surface. This might have to do with the resin curing process emanating heat, which might have interfered with the glue on the sides of my square.</p>
+
+<figure>
+  <img class="img-row-3" src="/assets/images/blog/2019-10-02-sensors-and-soldering/3.jpg" alt="Cured resin cube with bent corners." />
+  <img class="img-row-3" src="/assets/images/blog/2019-10-02-sensors-and-soldering/4.jpg" alt="Removing the plastic mold." />
+  <img class="img-row-3" src="/assets/images/blog/2019-10-02-sensors-and-soldering/5.jpg" alt="Removing the plastic mold." />
+  <figcaption>
+    Left: Cured resin cube with bent corners;
+    Middle and Right: Removing the plastic mold;
+  </figcaption>
+</figure>
+
+<p>After removing all edges of the plastic mold, the resin cube looked like this:</p>
+
+<figure>
+  <img class="img-row-2" src="/assets/images/blog/2019-10-02-sensors-and-soldering/6.jpg" alt="Resin cube outside of the plastic mold." />  
+  <figcaption>
+    Resin cube outside of the plastic mold.
+  </figcaption>
+</figure>
+
+<p>You can notice that the side which was exposed to air is fully transparent, while the sides that were enclosed by plastic have a layer of translucent material. After sanding the cube in order to get rid of the material excess at the edges and get a uniform look, I attacned six pins to the bottom and soldered together the even ones and the odd ones, as a way of having a single power source for the 3 LEDs. (in the ugliest soldering job the planet has seen.)</p>
+
+<figure>
+  <img class="" src="/assets/images/blog/2019-10-02-sensors-and-soldering/8.jpg" alt="Power wires for the LED resin cube." />  
+  <figcaption>
+    Power wires for the LED resin cube.
+  </figcaption>
+</figure>
+
+<p>After plugging in the cube, the LEDs (surprisingly?) lit up. The second failure of this project consisted in the fact that I was expecting the light to be way more diffuse, but instead the 3 LEDs are clear. This is due to the fact that most of the cube’s inner volume is fully transparent, so the problem could be solved by adding a small amount of white or silver paint in the mix.</p>
+
+<figure>
+  <img class="" src="/assets/images/blog/2019-10-02-sensors-and-soldering/7.jpg" alt="Cube lights up." />  
+  <figcaption>
+    Cube lights up.
+  </figcaption>
+</figure>
+
+<p>I will likely work with resin again, but next time I will choose a different material for the mold. Using plastic made the mold unusable after getting the resin out of it. 3d printing the positive shape, creating a silicone mold and pouring resin into that sounds like the right choice of materials and process for pretty much any (small scale) shape. To be continued.</p>
+
+<figure>
+  <img class="" src="/assets/images/blog/2019-10-02-sensors-and-soldering/9.jpg" alt="Cube lit up from the side." />  
+  <figcaption>
+    Cube lit up from the side.
+  </figcaption>
+</figure>
+
+<p>For reference, the sequencer code is here:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">ANALOG_POT_1</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">ANALOG_POT_2</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">ANALOG_POT_3</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">ANALOG_POT_4</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">ANALOG_POTS</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">ANALOG_POT_1</span><span class="p">,</span> <span class="n">ANALOG_POT_2</span><span class="p">,</span> <span class="n">ANALOG_POT_3</span><span class="p">,</span> <span class="n">ANALOG_POT_4</span><span class="p">};</span>
+
+<span class="kt">int</span> <span class="n">ANALOG_PHOTO_T</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">ANALOG_POT_PACE</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">DIGITAL_LED_1</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">DIGITAL_LED_2</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">DIGITAL_LED_3</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">DIGITAL_LED_4</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+
+
+<span class="kt">int</span> <span class="n">LEDs</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">DIGITAL_LED_1</span><span class="p">,</span> <span class="n">DIGITAL_LED_2</span><span class="p">,</span> <span class="n">DIGITAL_LED_3</span><span class="p">,</span> <span class="n">DIGITAL_LED_4</span><span class="p">};</span>
+
+<span class="kt">int</span> <span class="n">DIGITAL_SPEAKER</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+
+
+<span class="kt">int</span> <span class="n">CELL_DELAY</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">potValues</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">frequencies</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+
+<span class="kt">int</span> <span class="n">NO_CELLS</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">currentCell</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">currentTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">TIME_RESOLUTION</span> <span class="o">=</span> <span class="mi">150</span><span class="p">;</span>
+
+<span class="c1">// int BIG_LOOP = 0;</span>
+<span class="c1">// int BIG_LOOP_CNT = 1;</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// put your setup code here, to run once:</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">DIGITAL_LED_1</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">DIGITAL_LED_2</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">DIGITAL_LED_3</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="n">DIGITAL_LED_4</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">pacePotValue</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">ANALOG_POT_PACE</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pacePotValue</span> <span class="o">&lt;</span> <span class="mi">768</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">CELL_DELAY</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">pacePotValue</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">768</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span> 
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">CELL_DELAY</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">pacePotValue</span><span class="p">,</span> <span class="mi">768</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">8000</span><span class="p">);</span> 
+  <span class="p">}</span>
+
+  <span class="kt">int</span> <span class="n">lsv</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">ANALOG_PHOTO_T</span><span class="p">);</span>
+  <span class="kt">float</span> <span class="n">lightSensorValue</span> <span class="o">=</span> <span class="n">lsv</span> <span class="o">-</span> <span class="n">lsv</span> <span class="o">%</span> <span class="mi">150</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">thereminFactor</span> <span class="o">=</span> <span class="n">thereminFactor</span> <span class="o">*</span> <span class="mf">0.5</span> <span class="o">+</span> <span class="p">(</span><span class="n">lightSensorValue</span> <span class="o">/</span> <span class="mf">1024.0</span> <span class="o">*</span> <span class="mf">4.0</span> <span class="o">+</span> <span class="mf">0.66</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">;</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">NO_CELLS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">potValues</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">ANALOG_POTS</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">map</span><span class="p">(</span><span class="n">potValues</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">132</span><span class="p">,</span> <span class="mi">600</span><span class="p">)</span> <span class="o">*</span> <span class="n">thereminFactor</span><span class="p">;</span>
+    <span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">65</span> <span class="o">?</span> <span class="p">(</span><span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">65</span><span class="p">)</span> <span class="o">:</span> <span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">potValues</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">32</span><span class="p">)</span> <span class="n">frequencies</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="k">if</span> <span class="p">(</span><span class="n">currentTime</span> <span class="o">&gt;</span> <span class="n">CELL_DELAY</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">currentTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LEDs</span><span class="p">[</span><span class="n">currentCell</span><span class="p">],</span> <span class="n">LOW</span><span class="p">);</span>
+    <span class="n">currentCell</span> <span class="o">=</span> <span class="p">(</span><span class="n">currentCell</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">NO_CELLS</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">frequencies</span><span class="p">[</span><span class="n">currentCell</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">tone</span><span class="p">(</span><span class="n">DIGITAL_SPEAKER</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">[</span><span class="n">currentCell</span><span class="p">]);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LEDs</span><span class="p">[</span><span class="n">currentCell</span><span class="p">],</span> <span class="n">HIGH</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>    
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">noTone</span><span class="p">(</span><span class="n">DIGITAL_SPEAKER</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="n">delay</span><span class="p">(</span><span class="n">TIME_RESOLUTION</span><span class="p">);</span>
+
+  <span class="n">currentTime</span> <span class="o">+=</span> <span class="n">TIME_RESOLUTION</span><span class="p">;</span>
+
+<span class="c1">//  BIG_LOOP = (BIG_LOOP + 1) % BIG_LOOP_CNT;</span>
+<span class="c1">//  BIG_LOOP_CNT += (int)sin(millis());</span>
+
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">lightSensorValue</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">thereminFactor</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET
