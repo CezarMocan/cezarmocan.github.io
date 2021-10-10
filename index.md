@@ -11,7 +11,7 @@ projects:
   image: /assets/images/arcadiainc/soft-power-still.png
   selected: true
 - title: 'Pen Plotter Drawings'
-  medium: ink on paper
+  medium: generative drawing, ink on paper
   year: 2021
   link: https://shop.cezar.io
   image: /assets/images/plotterdrawings/tunnel-1.png
@@ -27,9 +27,15 @@ projects:
   link: /whatdoesthedesktopwant
   medium: talk
   year: 2021
-  selected: false
   client: for the Computer Mouse Conference at CultureHub
   image: /assets/images/whatdoesthedesktopwant/cover.png
+  selected: true
+- title: 'Chestnut Series'
+  link: /chestnut-series
+  medium: generative drawing, ink on paper
+  year: 2021
+  client:
+  image: /assets/images/chestnutseries/chestnut-thumb.jpg
   selected: true
 - title: '✾ Human Interface Guidelines (Metaphor) ✾'
   medium: two channel video

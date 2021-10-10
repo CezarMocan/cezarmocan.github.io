@@ -216,6 +216,13 @@ p {
   /* border: 4px dashed yellow; */
 }
 
+.project-image {
+  max-width: 100%;
+  max-height: 95vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .project-row.interactive:hover .project-thumbnail {
   opacity: 0.93;
 }
