@@ -14,4 +14,14 @@ paragraphs:
 images:
  - url: https://player.vimeo.com/video/416967661
    vimeo: true
+ - url: /assets/images/officeolympics/office-olympics-7.jpg
+ - url: /assets/images/officeolympics/office-olympics-2.jpg
+ - url: /assets/images/officeolympics/office-olympics-3.jpg
+ - url: /assets/images/officeolympics/office-olympics-9.jpg
+ - url: /assets/images/officeolympics/office-olympics-5.jpg
+ - url: /assets/images/officeolympics/office-olympics-6.jpg
+ - url: /assets/images/officeolympics/office-olympics-1.jpg
+ - url: /assets/images/officeolympics/office-olympics-8.jpg
+ - url: /assets/images/officeolympics/office-olympics-4.jpg
+
 ---
