@@ -5,7 +5,7 @@ year: 2021
 medium: digital simulation
 paragraphs:
  - text: |
-    Soft Power (Arcadia Inc.) is a work of speculative fiction which responds to the use of landscape photography as a carrier for brand ideologies, on the computer desktop and beyond. The piece proposes the synthetic landscape as a clean, context-free alternative to nature imagery, through a group of virtual beings which photograph nature 24/7 in a real-time simulation.<br/><br/>
+    Soft Power (Arcadia Inc.) is a work of speculative fiction which responds to the use of landscape photography as a carrier for brand ideologies, on the computer desktop and beyond. The piece proposes the synthetic landscape as a clean, context-free alternative to nature imagery, through a group of virtual beings which photograph scenic beauty in a real-time simulation.<br/><br/>
  - text: |
     <a href="/assets/images/arcadiainc/softpower.pdf" target="_blank">Read curatorial statement</a><br/><br/><br/>
  - text: |
