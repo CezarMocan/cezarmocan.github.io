@@ -19,16 +19,9 @@ Lumen Prize ✿ <em>2021, London</em> ✿ <em>Shortlisted Artist</em>
 <br/><br/>
 Research Residency at NYU ITP ✿ <em>2021 – 2022, New York</em>
 <br/><br/>
+Anywhere but Here ✿ <em>2021, New York</em> ✿ <em>Participating Artist</em>
+<br/><br/>
 View full CV <a href="https://docs.google.com/document/d/1qqE1sC9OasS2NU2cGLhji9NmopRdeTJbQREjjcqoMmQ/edit?usp=sharing">here</a>.
-
-<br/><br/>❊<br/><br/><br/>
-<p style="text-decoration: none;">Artist Statement</p>
-<br/>
-I am a Romanian new media artist based in Brooklyn, working with video, installation and software as a means of understanding and recontextualizing the spaces between humans and computers. The work I do involves the creation of humane digital environments that juxtapose elements native to our computers with organic entities rooted in the physical reality. My practice at large raises questions around existing patterns of engaging with technology and proposes slower, more intimate alternatives. In these pursuits, I am inspired by Mikka Rottenberg and Olia Lialina, whose video and web based work engages with identity and representation through elements of ritual and fiction. 
-<br/><br/>
-In my process I often refer back to algorithms and data structures, which I developed a close relationship with throughout years of practicing competitive programming and working in the software industry. What had initially started as a technical pursuit, with efficiency as the only goal, slowly became grounded in reality and acquired an increasing human dimension. I find joy in bringing entities which are infinitely scalable and replicable into a personal realm.
-<br/><br/>
-The work I do is also influenced by my experience as an immigrant in the United States. I am interested in the implications of being part of a diaspora from a social and cultural point of view, as well as understanding how geographical displacement influences digital identity.
 
 <br/><br/>❊<br/><br/><br/>
 <p style="text-decoration: none;">Teaching</p>
@@ -57,7 +50,7 @@ The work I do is also influenced by my experience as an immigrant in the United 
 ITP, New York University ✿ <em> 2019 – 2021 </em> ✿ <em>M.P.S. Interactive Telecommunications</em>
 <br/><br/>
 Yale University ✿ <em> 2012 – 2016 </em> ✿ <em>B.S. Computer Science</em>
-<br/><br/>
+
 
 <!--
 <div class="about-container">

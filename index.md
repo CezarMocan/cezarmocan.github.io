@@ -21,7 +21,7 @@ projects:
   medium: interactive installation
   year: 2021
   selected: false
-  client: for MIT, with <a href="https://sosolimited.com">SOSO Limited</a>
+  client: for MIT, with <a href="https://sosolimited.com" target="_blank">SOSO Limited</a>
   image: /assets/images/infinitecorridor/infinite-thumb.png
 - title: 'What Does the Desktop Want?'
   link: /whatdoesthedesktopwant
@@ -37,6 +37,12 @@ projects:
   client:
   image: /assets/images/chestnutseries/chestnut-thumb.jpg
   selected: true
+- title: 'evan-roth.com'
+  medium: website
+  year: 2021
+  selected: false
+  client: for <a href="https://evan-roth.com" target="_blank">Evan Roth</a>, with <a href="https://paulbille.com" target="_blank">Paul Bille</a>
+  image: /assets/images/evanrothcom/evan-roth-com.png
 - title: '✾ Human Interface Guidelines (Metaphor) ✾'
   medium: two channel video
   year: 2020
@@ -99,7 +105,7 @@ projects:
   medium: web-based software
   year: 2019 – 2020
   client: for Evan Roth
-  image: /assets/images/disappearing.gif
+  image: /assets/images/worldviews/thumbnail.png
 - title: Distributed Web of Care
   medium: web-based software
   year: 2019
