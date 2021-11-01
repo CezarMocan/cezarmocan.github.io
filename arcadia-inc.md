@@ -19,9 +19,9 @@ paragraphs:
     <a href="/24hrslandscape">24 Hours Relaxing Landscape for Stress Relief</a>, a three channel video
 
 images:
- - url: https://player.vimeo.com/video/558849743
+ - url: https://player.vimeo.com/video/634060678
    vimeo: true
-   description: The Arcadia Inc. virtual beings introduce themselves.
+   description: Ansel A.I., a virtual being working for Arcadia Inc., introduces the project.
 
  - url: https://player.vimeo.com/video/627567700
    vimeo: true
