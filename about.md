@@ -4,53 +4,55 @@ permalink: /about/
 ---
 I am an artist and programmer, born in Romania and working in Brooklyn. I am interested in studying the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
 <br/><br/>
-Besides my personal work, I often design or build software for other artists and teach. I am currently a Research Resident at NYU ITP, and hold an M.P.S. in Interactive Telecommunications from NYU ITP, and a B.A. in Computer Science from Yale University.
+Besides my personal work, I often design or build software for other artists and teach. I am currently a Research Resident at NYU ITP, and hold an M.P.S. in Interactive Telecommunications from NYU ITP and a B.S. in Computer Science from Yale University.
 <br/><br/>
 In a former life, I used to do competitive programming.
 <br/><br/>
-If you want to get in touch, <a href="mailto:c@cezar.io">drop me a line.</a>
+If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 
 <br/><br/>❊<br/><br/><br/>
-<p style="text-decoration: none;">Recent news</p>
-<br/><br/>
-SPRING/BREAK Art Show ✿ <em>2021, New York</em> ✿ <em>Participating Artist (solo show)</em>
-<br/><br/>
-Lumen Prize ✿ <em>2021, London</em> ✿ <em>Shortlisted Artist</em>
-<br/><br/>
-Research Residency at NYU ITP ✿ <em>2021 – 2022, New York</em>
-<br/><br/>
-Anywhere but Here ✿ <em>2021, New York</em> ✿ <em>Participating Artist</em>
-<br/><br/>
-View full CV <a href="https://docs.google.com/document/d/1qqE1sC9OasS2NU2cGLhji9NmopRdeTJbQREjjcqoMmQ/edit?usp=sharing">here</a>.
+<p style="text-decoration: none; margin-bottom: 10px;">Recent news</p>
+<p style="line-height: 1.3; margin-left: 2px;"> <small>
+    Currents New Media ✿ <em>2022, Santa Fe (upcoming)</em> ✿ <em>Group Show</em>
+    <br/>
+    <a href="https://infiniteobjects.com/products/mocan-arcadiainc">Lumen Prize x Infinite Objects collection</a> ✿ <em>2022, New York</em> ✿ <em>Participating Artist</em>
+    <br/>
+    SPRING/BREAK Art Show ✿ <em>2021, New York</em> ✿ <em>Solo Show</em>
+    <br/>
+    <a href="https://www.lumenprize.com/">Lumen Prize</a> ✿ <em>2021, London</em> ✿ <em>Student Award Winner</em>
+    <br/>
+    Research Residency at NYU ITP ✿ <em>2021 – 2022, New York</em>
+    <br/>
+    <a href="https://www.slowburn-nyc.com/anywhere-but-here">Anywhere but Here</a> ✿ <em>2021, New York</em> ✿ <em>Group Show</em>
+    <br/><br/>
+    View full CV <a href="https://docs.google.com/document/d/1qqE1sC9OasS2NU2cGLhji9NmopRdeTJbQREjjcqoMmQ/edit?usp=sharing">here</a>.
+</small>
+</p>
 
 <br/><br/>❊<br/><br/><br/>
-<p style="text-decoration: none;">Teaching</p>
-<br/>
-<em>Networked Media ✿ Spring 2022 (upcoming), NYU Interative Media Arts ✿ Adjunct Professor</em>
-<br/><br/>
-<em>Points, Lines and Systems ✿ November 2021 (upcoming), School of Machines, Making and Make-Believe ✿ Curriculum Developer & Instructor</em><br/>A 5-week long class on creative generative art under a specific set of constraints.
-<br/><br/>
-<em>Capstone ✿ Spring 2021, NYU Interative Media Arts ✿ Teaching Assistant</em><br/>Taught by Allison Parrish.
-<br/><br/>
-<em>Programming the Net ✿ Spring 2021 ✿ Curriculum Developer & Teacher</em><br/>A high-school level online class focused on introducing basic concepts of web development through the lens of net art.
-<br/><br/>
-<em>Real Time Media ✿ Fall 2020, NYU Interative Media Arts ✿ Teaching Assistant</em><br/>A (networked) performance focused class using MaxMSP as the primary tool; Taught by Matt Romein.
-<br/><br/>
-<em>Programming the Net ✿ Summer 2020 ✿ Curriculum Developer & Teacher</em><br/>A month long online class focused on introducing basic concepts of web development through the lens of net art.
-<br/><br/>
-<em>Networked Media ✿ Spring 2020, NYU Interative Media Arts ✿ Teaching Assistant</em><br/>A class focused on introductory full-stack web development, with the goal of understanding the web as an artistic medium; Taught by Shawn van Every.
-<br/><br/>
-<em>Your first Chrome extension! ✿ ITP Camp 2020 ✿ Workshop Leader</em><br/>A workshop focused on getting started with browser extension development.
-<br/><br/>
-<em>Dark / Net / Art ✿ Tech for Social Good Day 2020 ✿ Workshop Leader (with Jackie Liu)</em><br/>A 3-hour long workshop focused on introducing the technical aspects of Tor, in conjunction with an art-making exercise on the dark web.
+
+<p style="text-decoration: none; margin-bottom: 10px;">Teaching</p>
+<p style="line-height: 1.3; margin-left: 2px;"><small>
+    <a href="https://networkedmedia.imany.io/">Networked Media</a> ✿ <em> Spring 2022, <a href="https://tisch.nyu.edu/itp/admissions/ima-bfa">NYU Interactive Media Arts</a> ✿ Adjunct Professor</em>
+    <br/>
+    <a href="https://cezar-mocan.notion.site/Points-Lines-and-Systems-Class-Materials-ba43efb03090491985b13a17aab9f636">Points, Lines and Systems</a    > ✿ <em>November 2021, <a href="https://www.schoolofma.org/">School of Machines, Making and Make-Believe</a> ✿ Curriculum Developer & Instructor</em>
+    <br/>
+    Programming the Net ✿ <em>Spring 2021 & Summer 2020, Upgrade Academy ✿ Curriculum Developer & Instructor</em>
+    <br/>
+    Your first Chrome extension! ✿ <em> NYU ITP Camp 2020 ✿ Workshop Leader</em>
+    <br/>
+    Dark / Net / Art ✿ <em> Tech for Social Good Day 2020 ✿ Workshop Leader (with Jackie Liu)</em><br/>
+
+</small></p>
 
 <br/><br/>❊<br/><br/><br/>
-<p style="text-decoration: none;">Education</p>
-<br/>
-ITP, New York University ✿ <em> 2019 – 2021 </em> ✿ <em>M.P.S. Interactive Telecommunications</em>
-<br/><br/>
-Yale University ✿ <em> 2012 – 2016 </em> ✿ <em>B.S. Computer Science</em>
 
+<p style="text-decoration: none; margin-bottom: 10px;">Education</p>
+<p style="line-height: 1.3; margin-left: 2px;"><small>
+    ITP, New York University ✿ <em> 2019 – 2021 </em> ✿ <em>M.P.S. Interactive Telecommunications</em>
+    <br/>
+    Yale University ✿ <em> 2012 – 2016 </em> ✿ <em>B.S. Computer Science</em>
+</small></p>
 
 <!--
 <div class="about-container">
