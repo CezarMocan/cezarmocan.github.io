@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Networked Media (IMNY-UT 223)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="243c4343-75df-4226-834d-8f1b1ba774ec" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🌐</span></div><h1 class="page-title">Networked Media (IMNY-UT 223)</h1></header><div class="page-body"><hr id="1944be98-a161-4989-af7d-69ab69653be2"/><hr id="35bdf71f-6028-489e-b098-09f8620da535"/><hr id="5349c042-dc2c-4b0f-ac24-46b45ced3531"/><hr id="0640615c-ff71-411a-a1f6-811d1faed631"/><div id="24b6a5db-a947-46ef-bb41-24aa9a02ad4d" class="column-list"><div id="8a2277b2-9160-4769-9535-a8e8e4621a40" style="width:33.33333333333333%" class="column"><figure id="4f8883f0-1c1b-472a-8deb-25bb535663af" class="link-to-page"><a href="Networked%20%20243c4/Schedule%204f888.html"><span class="icon">🗓️</span>Schedule</a></figure><figure id="71b059ab-aa89-4393-8fe1-841517685834" class="link-to-page"><a href="Networked%20%20243c4/Technical%20%2071b05.html"><span class="icon">🛠️</span>Technical Tutorials</a></figure></div><div id="c4654bc1-c86c-4e1e-a36c-7a8323fc99ee" style="width:33.33333333333333%" class="column"><figure id="6f020ca8-c547-4fe2-803e-4bbc4ae44116" class="link-to-page"><a href="Networked%20%20243c4/Discussion%206f020.html"><span class="icon">🗨️</span>Discussions</a></figure><figure id="a332d979-600c-4e05-9136-be70dc19f8c9" class="link-to-page"><a href="Networked%20%20243c4/Resources%20a332d.html"><span class="icon">⛅</span>Resources</a></figure></div><div id="efcc5e8e-688a-411f-b0cb-1d3db3e7f941" style="width:33.33333333333333%" class="column"><figure id="8ccb3f03-709d-4063-ac70-3200893da1fc" class="link-to-page"><a href="Networked%20%20243c4/Projects%208ccb3.html"><span class="icon">✨</span>Projects</a></figure><figure id="dafe82e7-1024-4683-b819-ba69cd1bf6f0" class="link-to-page"><a href="Networked%20%20243c4/Attendance%20dafe8.html"><span class="icon">🕑</span>Attendance</a></figure></div></div><hr id="1a5c3e6e-4c3f-4756-8ba4-45b6c63e9de8"/><hr id="b890cc30-f4de-48bf-8a0f-16420ddb1069"/><hr id="d624b978-eec6-4870-9af2-60a515571fbe"/><hr id="faf9b7df-67ac-4ea6-9960-2f72b2856c84"/><div id="b63e9f2f-832c-49f5-875b-660373d4100c" class="column-list"><div id="2af4fb0b-6879-413b-af8a-850eaba15c57" style="width:56.25%" class="column"><p id="a9eb42ac-5291-4462-add1-ccf75e24e4fe" class="">🌻 <a href="https://docs.google.com/spreadsheets/d/1WofbWtj-6BbzLdWZW7FLKWVPDzcHLoGPgCQDnOToBGY/edit?usp=sharing"><strong>Submit Your Reading Responses Here</strong></a><strong> </strong>🌻 </p><p id="1ca0f8c1-7f6d-4250-9baa-971c70b29eb8" class="">💌<strong><a href="https://forms.gle/Rn7QLjtqBmULB3NL8"> Anonymous Feedback Form </a></strong>💌 </p></div><div id="1288daaa-88e3-4502-8614-6f5e2dba22d0" style="width:43.75000000000001%" class="column"><p id="b4d626de-f9d8-4dec-bb1e-919aa5bbc4fb" class="">🌱 <a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit?usp=sharing"><strong>Submit Your Projects Here</strong></a><strong> </strong>🌱 </p></div></div><hr id="0c7781d0-25e7-4020-b9a1-72b13bb18120"/><hr id="504a9882-9438-4528-8693-3762abe8899e"/><hr id="8ffb4c9b-da95-4d3b-abff-e65a846dfaaa"/><hr id="45ed4961-8929-4407-b0e7-acd06a19ca7f"/><hr id="f5e5b21f-c0e5-459c-bfc0-c2e15a435bd5"/><h1 id="e5983c8a-fa9a-45de-8d41-003e26f120f0" class="">Syllabus</h1><p id="0b4bc1b1-7c5a-4e9d-9e98-4e7d8a19de94" class="">IMNY-UT 223, 4 Credits</p><p id="2aa77ec7-cd7c-40ef-bd70-ba5f8ec85746" class="">Monday / Wednesday, 10:40am → 12:10pm</p><p id="a688ab21-fa42-463a-850b-5a4efcb7516e" class="">370 Jay Street, 4F, Room 408</p><p id="4d98651a-2c55-4417-bf00-b38ec361e3ad" class="">Class <a href="https://nyu.zoom.us/my/xxcezarxx"><strong>Zoom link</strong></a><strong> </strong>(joining over Zoom requires instructor’s approval, unless you’re on the waitlist)</p><div id="159dba02-dfbb-480e-9f74-5122b26e7708" class="column-list"><div id="aeb5e3ed-317d-46c8-990e-70ce013663b9" style="width:50%" class="column"><p id="023609f6-d3c3-41e8-8d15-d4cc153e5c81" class=""><strong>Instructor: </strong><a href="https://cezar.io/">Cezar Mocan</a></p><p id="57fb7d52-51f8-44a0-9dc6-78f72d209ac0" class=""><strong>Office hours</strong>: <em>Monday, 12:30pm to 2:30pm, Tuesday, 5pm to 6pm or by email appointment</em> [<a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UU80V09RWjhyNzRSfGRlZmF1bHR8YWU4MGU0Y2JmNmM2Y2VmNzE5Mjk2OGM4ODI5MmVkOTU">book here</a>]</p><p id="dd4b8ee6-2b9e-402e-b64c-b86b9d96f175" class=""><strong>Email: </strong><a href="mailto:cm5403@nyu.edu">cm5403@nyu.edu</a></p></div><div id="4620a3bf-6d28-4414-950f-2a31efe59aa7" style="width:50%" class="column"><p id="614daa89-edf5-4b22-a175-b1eb633b0933" class=""><strong>Graduate Assistant: </strong><a href="https://www.guoyingzi.com/">Vesper Guo</a></p><p id="3228474e-aaa4-408d-b109-b76ee027adcc" class=""><strong>Office hours</strong>: <em>Wednesday, 3pm to 6pm</em> [<a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVA0MjFzd3czSUhwfGRlZmF1bHR8ZDYxZmFjOTQ4OWJiNWIwMGRjZmJhOTBjOGJjODIyMjM">book here</a>]</p><p id="1a34ed43-4dc4-45c6-9a36-2b350c18fcc4" class=""><strong>Email: </strong><a href="mailto:yg2556@nyu.edu">yg2556@nyu.edu</a></p></div></div><h2 id="e46a2f20-7d28-400c-8ccc-9393ebe3caf3" class="">📔 Course Description</h2><p id="05bd963c-5e02-4197-aabb-9d65d757bd5c" class="">The network is a fundamental medium for interactivity. It makes possible our interaction with machines, data, and, most importantly, other people. Though the base interaction it supports is simple, a client sends a request to a server, which replies; an incredible variety of systems can be and have been built on top of it. An equally impressive body of media theory has also arisen around its use.</p><p id="f3da470d-da2c-4327-a136-387057a39195" class="">This hybrid theory and technology course will be 50% project driven technical work and 50% theory and discussion. The technical work will will utilize JavaScript as both a client and server side programming language to build creative systems on the web. Technical topics will include server and client web frameworks, such as Express, HTML, CSS, templating, and databases. The theory portion of the course will include reading and discussion of past and current media theory texts that relate to the networks of today; </p><p id="cb6b73e2-8562-4d70-b63d-0b0d4919c67d" class="">In short, this course will be about developing full-stack web applications (such as anything from the beginnings of Google, YouTube, and Twitter to class registration systems and other purpose built system) as well as thinking, reading, and discussing the implications with a culture and media theory perspective.</p><h2 id="c0f088a8-ff03-4ebb-938a-8f816fa740d6" class="">🎯 Course Objectives</h2><p id="cd7c4c49-898f-4437-8151-775a0872abaf" class="">Leading up to the completion of this class, the students will:</p><p id="012db8e3-6043-4d19-994d-58749ce9d6c6" class="">1) Develop an understanding of the web as an art medium, through theory and practice</p><p id="677e7668-d7b1-44b2-a046-7b9c05f042cf" class="">2) Gain the technical skills required to build web applications, specifically HTML, CSS, JavaScript, and server side technologies</p><p id="034ae21f-d44b-4a87-8557-46acf7fb8bc6" class="">3) Think critically about the role of networked media in shaping individuals and society</p><h2 id="e7dc0dae-ec31-42ba-a271-ada1346a3340" class="">💫 Expectations</h2><h3 id="ce0c31b4-2b24-4b63-bda2-e1c66140f0ab" class="">Class Structure</h3><p id="a7a149e0-4fde-43ef-887a-9999076dc33d" class="">Networked Media meets twice a week, Mondays and Wednesdays, for the entire duration of the Spring semester. In-person attendance is required, but, since we are still living in a global pandemic, we will make accommodations for students to join over Zoom if the circumstances require us to.</p><p id="bd692aaa-da32-43a7-b757-fe9ace46ce10" class="">In general, every class will contain some of the following:  <div class="indented"><p id="3a9a69d4-f807-4bcb-9082-74aee9cbb1ff" class="">– sharing (lecture, show and tell of examples)  </p><p id="719683e5-aa4b-4d36-8440-6d9932fbc1c5" class="">– seminar (dialogue based on readings)  </p><p id="8ec7c2ba-502d-40fe-a598-46c4ac3e7d5f" class="">– working (group exercises, designing, coding, troubleshooting)  </p><p id="f7427d00-cac8-42d4-af29-585a51a9996a" class="">– critique (spending time with your own and others’ work, offering observations, dialogue)</p></div></p><p id="deafcf1e-bb77-4258-ae95-6206f3d0496e" class="">Students are expected to spend 10 – 12 hours every week with this course – 3 hours of class time, and on average 7 to 9 hours outside of class: following technical tutorials, reading the assigned materials, working on class projects. Some weeks will be lighter than others in terms of the assigned workload.</p><h3 id="9acae9b2-899f-4dfa-841d-6c19fcc0162a" class="">Projects</h3><p id="b053b6eb-4f42-450d-b778-b5f7ca9c1a44" class="">Throughout the course of the semester, we will be applying our newly acquired technical and conceptual skills onto five different projects. Each project requires the creation of a website, so by the end of the class, each student will have built five websites. </p><p id="521fe12f-de89-47de-a46a-9ff30dfc9ed3" class="">In assessing your work, I am equally interested in seeing your artistic voice develop, through strong, well-researched concepts, and in making sure you are internalizing the technical content, which translates in how functional and well crafted your websites are.</p><p id="dfebd5e5-2aeb-4e9e-ac7e-57218008df5e" class="block-color-pink_background">You can find more details on the <a href="Networked%20%20243c4/Projects%208ccb3.html">Projects</a> page.</p><h3 id="a3ccf636-a3e9-4167-b380-0cee5f783fe6" class="">Discussions</h3><p id="e62c22bf-ac57-4d29-bc5d-15fc2a7f8978" class="">Each week, there will be assigned reading and student lead presentations and discussion. You are expected to do the reading and prepare a short response on your blog in preparation for the discussion.</p><p id="aaf39b42-9ebe-41a7-a2f8-f6a4857de2b2" class="">Starting on the 3rd week we’ll have student groups of two lead presentations on the assigned readings. The format should be a short summary presentation (10-15 minutes) on the reading, followed by leading the class in a discussion around the reading and the topics introduced/presented (15-20 minutes).</p><p id="1224a47a-d2fb-4c33-a6d7-84cc343b74f4" class="block-color-pink_background">You can find more details on the <a href="Networked%20%20243c4/Discussion%206f020.html">Discussions</a> page.</p><h3 id="af1d32d2-b760-42e2-b77d-32289b06249c" class="">Participation</h3><p id="260fb57d-1ce1-4b72-84a9-f07cacab1b75" class="">This class will be highly participatory. You are expected to contribute to discussions, engage in group work, offer feedback to your peers, and otherwise be fully <em>present</em> in class. Different students have different ways of communicating and engaging with the class content, all equally important. You will be fine as long as you put in the work.</p><p id="75ae3e53-caed-4581-8cfd-3c9e39c8071d" class="">This class is meant to be a safe space in which you feel encouraged and supported in learning and taking creative risks. This means being aware and considerate of different backgrounds, perspectives, and identities. Respect each other and this space we are building together. Don’t assume. Try to remain open to learning at all times. Help each other in this. If there are concerns please let me or Vesper know as soon as possible.</p><h3 id="2dee3b66-f5f9-481a-95e7-f60377e40721" class="">Attendance</h3><p id="993df526-98a1-465f-868f-2872aa573003" class="">At most two (2) unexcused absences will be tolerated without effect to your grade. Any more than two (2) unexcused absences will result a lowering of your final grade by one whole grade for each unexcused absence. For example, three (3) unexcused absences will result in your highest possible grade being a B instead of an A. Four (4) unexcused absences will result in your highest possible grade being a C and so on. Six (6) unexcused absences would result in an automatic F for the course. Two (2) late arrivals will count for one (1) absence.</p><p id="300a2bf7-f9d8-4f14-8730-0ef5f2be6cbc" class="">If there is an emergency and you must miss class, email the instructor (cm5403@nyu.edu) and the GA (yg2556@nyu.edu) before class. Absences will be excused after the fact only in extreme circumstances.</p><p id="36418611-b9fd-42c6-97e4-36713191f3a5" class="block-color-pink_background">We keep attendance in the <a href="Networked%20%20243c4/Attendance%20dafe8.html">Attendance Spreadsheet</a>, any disputes should be discussed with the instructor.</p><h3 id="d4a21144-4b2e-4d7a-9d6d-404995e87bfb" class="">Grading</h3><p id="0386c956-5f4d-4c8a-93f6-fb5e8d0e6cef" class="">Grades for the course will follow the standard A through F letter grading system and will be determined by the following breakdown:</p><ul id="59bc976a-206f-48b0-9e30-b5b3f9b79713" class="bulleted-list"><li style="list-style-type:disc">Project 1: 10%</li></ul><ul id="23b30dd4-d6f2-4e1d-ba28-f598c0959352" class="bulleted-list"><li style="list-style-type:disc">Project 2: 10%</li></ul><ul id="ad159c85-61bf-4ed4-afc7-39b6ff2c4f78" class="bulleted-list"><li style="list-style-type:disc">Project 3: 20%</li></ul><ul id="4f43c61e-ad46-47ca-a95a-f434429d1e17" class="bulleted-list"><li style="list-style-type:disc">Project 4: 10%</li></ul><ul id="8e13353a-d1e6-45ff-8488-8cb1c38a188f" class="bulleted-list"><li style="list-style-type:disc">Project 5: 25%</li></ul><ul id="e5083981-939a-4cb7-b2cb-7b992ebea598" class="bulleted-list"><li style="list-style-type:disc">Discussion lead: 10%</li></ul><ul id="e35d70a9-2614-48ac-9370-d1dd293e8d00" class="bulleted-list"><li style="list-style-type:disc">Participation (including reading responses): 15%</li></ul><p id="c0da769e-eb2f-43b5-a3fc-2e93da3a3a56" class="">Outstanding or exceptional work will receive As, good work will receive Bs, and sufficient work that does nothing more than meet requirements will receive Cs.</p><p id="4348c477-5185-4784-bd98-4bff8d44c36c" class="">I highly value your growth and your development throughout the course of the semester, so as long as you’re putting in the work, the grade will take care of itself.</p><h3 id="a8cc0a41-bfc2-4957-8218-2b63308716bc" class="">Equipment</h3><p id="a76c10f2-6e24-4f0a-87b4-fe803dc0f69f" class="">You will need access to modern computer (5 years old or younger is a good rule of thumb) to work with the technologies that are presented in the class. Limited numbers of computers are available for checkout from the department and are generally available in labs around campus. </p><h3 id="e8d17182-7d42-4a16-a7bf-ce7c18084ba4" class="">Phone, Tablet, Laptop &amp; Other Electronics Use</h3><p id="354584dd-aafe-4489-aef8-b05aeaafb94e" class="">Please practice respect and common sense when using technology in class. We will often be using our laptops for the technical parts of the class, and I ask that you remain focused and refrain from using social media, messaging services or other unrelated applications. As a rule of thumb, your laptop should always be closed whenever a fellow student is presenting.</p><h2 id="294a8188-53ab-4542-b02e-14f097202603" class="">🔮 Commitment to Diversity and Safer Spaces</h2><p id="6485b38c-7140-41d5-ac4d-553d83fc0a46" class="">We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must acknowledge and embrace the different identities and backgrounds we inhabit. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students, TA, and instructor is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, avoid being defensive; instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructor or TA.</p><p id="b34db5be-1e6c-47a1-ab6a-3f9aaeb6647b" class="">Credits: <a href="https://github.com/voidlab/diversity-statement">voidlab</a>.</p><h2 id="a06e4c8a-62b8-4a04-8ec9-3ab30bdc94de" class="">🖌️ Statement of Academic Integrity</h2><p id="cb1c8ac7-dca9-4220-a89d-c9c2c10c32d2" class="">Plagiarism is presenting someone else’s work as though it were your own. When working on writing assignments, the rules are fairly clear: if you let others write for you and claim it as your own, or if you reproduce or reference work of others without proper attribution, you are committing plagiarism.</p><p id="997dd5df-f653-4ab9-a3a2-380f9c58f627" class="">One of the key things to understand about programming, and computer science in general, is that is a writing-heavy discipline. When you create a computer program, you are writing a document, just like you write documents in an English class (or any class that involves a lot of essays). Therefore, many of the same rules that apply to writing essays also apply to computer programs, particularly regarding plagiarism.</p><p id="6fc160c5-813a-4c8f-b287-da41fbc3f9c0" class="">Plagiarism is essentially a form of fraud. Every time you hand in a program in this course, you are representing it as the work of the stated authors [...] subject to any exceptions that are clearly stated in the submission itself. To avoid committing plagiarism, <strong>simply be sure always to accurately credit your sources</strong>. To do otherwise is to commit fraud by claiming credit for the ideas and efforts of others.</p><p id="8d70184f-7521-4189-9e9b-33e6b4fff0f8" class="">It really is that simple. If you have accurately acknowledged your sources, you are not committing plagiarism.</p><p id="1ca149d5-6b01-40f4-9a86-9ebec7826649" class="">More information can be found on Tisch’s page regarding Academic Integrity: <a href="http://tisch.nyu.edu/faculty/academic-integ">http://tisch.nyu.edu/faculty/academic-integ</a>.</p><p id="3be9ebbd-01e8-46af-9ba3-6b038b29649d" class=""><a href="http://www.cs.cornell.edu/courses/cs1110/2014fa/about/integrity.php"><em>Credits: Cornell University’s CS 1110 Syllabus</em></a></p><h2 id="4b2501a9-fa5d-4a9e-b458-35def2b4e399" class="">🧘 Wellness</h2><p id="55ed586c-2289-40a4-9c28-81c9199647ef" class="">Your health and safety are a priority at NYU. If you experience any health or mental health issues during this course, we encourage you to utilize the support services of the 24/7 NYU Wellness Exchange 212-443-9999.</p><h2 id="9996173d-d80f-48e2-aa33-f52bb87545a3" class="">⬛ Title IX</h2><p id="4bfae7fd-4ffa-4623-b403-70be17023c38" class="">Tisch School of the Arts to dedicated to providing its students with a learning environment that is rigorous, respectful, supportive and nurturing so that they can engage in the free exchange of ideas and commit themselves fully to the study of their discipline. To that end Tisch is committed to enforcing University policies prohibiting all forms of sexual misconduct as well as discrimination on the basis of sex and gender. Detailed information regarding these policies and the resources that are available to students through the Title IX office can be found by using the following <a href="https://www.nyu.edu/about/policies-guidelines-compliance/equal-opportunity/title9.html">link</a>.</p></div></article></body></html>

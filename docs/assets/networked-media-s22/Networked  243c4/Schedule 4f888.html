@@ -1,0 +1,674 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Schedule</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4f8883f0-1c1b-472a-8deb-25bb535663af" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🗓️</span></div><h1 class="page-title">Schedule</h1></header><div class="page-body"><h1 id="65eea701-69e0-4447-8a47-0951960b2485" class=""><span style="border-bottom:0.05em solid">Week #1</span></h1><h2 id="d91ba77b-5d89-495a-9a00-8f3c3d84f9b7" class=""><details open=""><summary>Class #1, Mon. 1/24: 🌎 Hello Internet 🌏</summary></details></h2><div class="indented"><h3 id="912c6ef1-8b33-4c27-ab12-f21bdf6d7a18" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="9c7cc056-58e6-4cf1-a48f-6563c6df5e36" class="bulleted-list"><li style="list-style-type:disc">Introduce the overall class topic</li></ul><ul id="1363d4e2-3cb6-4faf-ae0e-1d987d95e34e" class="bulleted-list"><li style="list-style-type:disc">Begin discussion of technical material</li></ul></div><h3 id="3951f60a-5b95-47fa-a2e9-8fd89698e459" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="e2bae77c-45fd-4871-a7e0-2f6977e27fc1" class="bulleted-list"><li style="list-style-type:disc">Introductions</li></ul><ul id="516b88b9-ba9b-41f6-9859-d8a2c5bacb93" class="bulleted-list"><li style="list-style-type:disc">Syllabus overview</li></ul><ul id="650ad367-53fa-485a-83f1-20367408f4c3" class="bulleted-list"><li style="list-style-type:disc">Lecture: Hello Internet </li></ul><ul id="f3fa9a86-7bf6-4a12-9e73-2737148f3683" class="bulleted-list"><li style="list-style-type:disc">Introduction to HTML &amp; CSS</li></ul></div><h3 id="17f68587-6787-4d0c-b3e8-4ef196c817ec" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="9ab229d2-4561-4059-abc5-52d7c28242d5" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Introducti%203b1c2.html">Introduction to HTML</a></li></ul></div><h3 id="a4ca0e16-a0c2-4922-aeeb-2e04f200f5ab" class=""><details open=""><summary>Assignment (due next Monday, Jan. 31st)</summary></details></h3><div class="indented"><ol type="1" id="76d27520-52cf-4811-8023-1b4b2e449828" class="numbered-list" start="1"><li>Read and respond to:<ul id="f5293111-9796-4bc5-ad89-7715d89ee15a" class="bulleted-list"><li style="list-style-type:disc">Olia Lialina, <a href="http://art.teleportacia.org/observation/vernacular/"><em>A Vernacular Web, Part I</em></a></li></ul><ul id="1aad1ea3-e021-46b1-b852-5e226a42ca5b" class="bulleted-list"><li style="list-style-type:disc">Olia Lialina, <a href="http://contemporary-home-computing.org/vernacular-web-2/"><em>A Vernacular Web, Part II</em></a></li></ul><ul id="4033c41c-aaef-4e5d-8013-3ab207cef5eb" class="bulleted-list"><li style="list-style-type:disc">Jenny Odell, <a href="https://humanparts.medium.com/how-to-internet-6c379e75c8e0"><em>How To Internet</em></a></li></ul></li></ol><ol type="1" id="231f6f4a-ab40-4d6c-8b25-ec784cd50589" class="numbered-list" start="2"><li>Email me &amp; Vesper your top 3 choices for discussion lead dates. You can view the topics, assigned readings &amp; schedule <a href="Discussion%206f020.html">here</a>.</li></ol><p id="928ed1a2-3f55-4d8f-8c9a-c3e811079406" class="">Both of these are <strong>due before Class #3</strong>.</p></div><h3 id="4863b3ce-da90-4b24-9026-19d1d5955367" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="4f422a80-b62a-4586-b382-5b85ea191d19" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/jkBHtyftVaw330dfhA17WIIAdY3XOy89vEHvq7pugVqvzTTbSnWZKphX1icafhTa.TmHjnR1dumxRS3dv"><strong>Class Recording</strong></a><strong>  </strong></li></ul><ul id="10a3c00f-2fa8-4a45-a854-15acadb06304" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1k55BjyGihVGj9f8JrPPnu0pTxIbLGYeo/view?usp=sharing"><strong>Slides</strong></a></li></ul><ul id="940c69c5-3ad6-4594-9a74-956fdee13b0f" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/10KBOGzrYxkbIlYHWTxG0Jqn5ZP4GpFWv/view?usp=sharing"><strong>Code</strong></a></li></ul></div></div><h2 id="6d43e443-6df3-4d98-8401-eab6090c0c20" class=""><details open=""><summary>Class #2, Wed. 1/26: 🤖 Web Hosting Basics 🤖</summary></details></h2><div class="indented"><h3 id="2b2fb9f5-49a6-4655-b780-9736b6562fea" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="b948dbf1-7b41-4276-88c6-c14d768b22aa" class="bulleted-list"><li style="list-style-type:disc">Continue our discussion of HTML</li></ul><ul id="8b301b49-9b22-4288-921d-7ec76e723a62" class="bulleted-list"><li style="list-style-type:disc">Learning how to host a web server on DigitalOcean</li></ul><ul id="c803c47b-8ac4-41b6-b484-718ed0d6ae71" class="bulleted-list"><li style="list-style-type:disc">Hello command line</li></ul></div><h3 id="d8cae542-8040-4d42-800d-50217657ae76" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="5352c0e1-a06a-4637-9809-bf2726b8cb0d" class="bulleted-list"><li style="list-style-type:disc">Setting up your Digital Ocean server</li></ul><ul id="3d36a5c0-3947-4b62-a8d5-8b0049f1a5d6" class="bulleted-list"><li style="list-style-type:disc">Command line basics; ssh and ftp;</li></ul><ul id="f2163118-9173-49a9-bf74-824f30e891da" class="bulleted-list"><li style="list-style-type:disc">Building a simple web server with node.js and express</li></ul><ul id="90366e1e-8065-42ba-a85a-5b224e372389" class="bulleted-list"><li style="list-style-type:disc">Introducing Project #1</li></ul></div><h3 id="f05ba8ad-4e12-4cd6-a9bb-5ff711a178a7" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="0f5848b8-35ce-4ab0-bb93-6109d2b6d684" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.notion.so/487fdcdd8fc04fe4ac9ea32251f31473">Web Hosting on Digital Ocean</a></li></ul></div><h3 id="a56004e3-b92b-45eb-83be-e6f449235571" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="6423ee47-f05e-45de-872d-251b3f557b4f" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/bZfJjg1pjJhy77SVphxtFCE5IMikrf89YKgGRC2nzekkf2wvbSs98fT6mQ8La2hZ.I1299EFO2PyTnCh8"><strong>Class Recording</strong></a></li></ul></div><h3 id="c031f30d-5b72-495d-a4f5-3173ec327ddd" class=""><details open=""><summary>Assignment (due next Wednesday, Feb. 2nd)</summary></details></h3><div class="indented"><p id="c1e4756b-9255-472b-b5c2-785097197aa3" class=""><a href="Projects%208ccb3.html"><em>Project #1, Hypertext</em></a> is <strong>due before Class #4</strong>.</p></div><p id="fe21e10d-e27b-43c9-adea-9379f815c834" class="">
+</p></div><h1 id="ac438587-d501-459c-8e97-bebe085d33c0" class=""><span style="border-bottom:0.05em solid">Week #2</span></h1><h2 id="1bbc7d9c-b58e-4201-bb23-b0fbe8a72ea8" class=""><details open=""><summary>Class #3, Mon. 1/31: 🌻 HTML &amp; CSS, Continued 🌻</summary></details></h2><div class="indented"><h3 id="f0494d0f-3078-450e-828a-b21ce51e5a66" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="58fc1643-8da2-4a47-a0ab-2ace5a729290" class="bulleted-list"><li style="list-style-type:disc">Reading discussion, <a href="Discussion%206f020.html"><em>The Web Then and Now</em></a></li></ul><ul id="9e6934de-35d6-41e5-8cb2-37be4ec7d4bc" class="bulleted-list"><li style="list-style-type:disc">Become familiar with the most commonly used HTML tags &amp; CSS properties</li></ul></div><h3 id="3d121468-5089-46d0-a62b-1c5c5c0a353b" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="1776c9bc-ab79-4720-884e-c5b8c842871a" class="bulleted-list"><li style="list-style-type:disc">Reading discussion, <a href="Discussion%206f020.html"><em>The Web Then and Now</em></a></li></ul><ul id="2e9d267f-35f9-4dec-aea0-0314703b21ec" class="bulleted-list"><li style="list-style-type:disc">In-class exercise, based on the reading</li></ul><ul id="2942cd6e-fada-4b76-97d4-fe5d44e3cee8" class="bulleted-list"><li style="list-style-type:disc">Introducing new HTML tags and attributes, as well as CSS properties</li></ul></div><h3 id="5a5ff83d-52a6-4eb7-8ac4-a5fc07654841" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="fe13d8e3-5a6a-4c7a-a6d9-c345c28316a5" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Introducti%203b1c2.html">Introduction to HTML</a></li></ul><ul id="eb73dc71-1098-414d-9f97-9fd2e83cd796" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Introducti%2079621.html">Introduction to CSS</a></li></ul></div><h3 id="ab800b9b-5e56-422d-b1a4-2b8eeb2214b5" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="bd792463-a800-48c9-a761-11e0ba67c64d" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://nyu.zoom.us/rec/share/o2uRCTYE-K60JzTg5lKu7bSfL97eBnaQVuXV34KOBK_6oCF-Fa4LXOR3vCEBcfta._8LMPW2R-uajBgZp">Class Recording</a></strong></li></ul><ul id="7f9297b2-d6cd-470f-b711-883cd0dbc39c" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1bOG4oeebLKcp8j_2DrB-upDcIisIy9bl/view?usp=sharing"><strong>Code</strong></a></li></ul></div><h3 id="36846361-4770-4995-9004-bdd094af8bee" class=""><details open=""><summary>Assignment (due next Monday, Feb. 7th)</summary></details></h3><div class="indented"><p id="b41000e0-e269-40e0-af67-e2f5fca192fc" class="">Read and respond to:<div class="indented"><ul id="a32626a5-3fa0-43f6-a5ee-28d41fae9230" class="bulleted-list"><li style="list-style-type:disc">Octavia Butler &amp; Samuel Delany in conversation, <a href="https://www.blackhistory.mit.edu/archive/transcript-octavia-butler-and-samuel-delany-1998"><em>The Value of Literacy</em></a></li></ul><ul id="06f17e51-34bd-424f-b241-88ca2f2a2fe1" class="bulleted-list"><li style="list-style-type:disc">Wendy Chun, <a href="https://arena-attachments.s3.amazonaws.com/14824958/1fa6a1f044fd6eea7bde0f131dc6e268.pdf?1642897047"><em>The Digital Ephemeral</em></a></li></ul></div></p></div></div><h2 id="db90ddcf-9e35-41f9-b0ce-9a8dfb1c0cac" class=""><details open=""><summary>Class #4, Wed. 2/2: ✍️ DOM &amp; jQuery ✍️</summary></details></h2><div class="indented"><h3 id="42e101a6-6cc5-4e65-aabb-a76f1b0efded" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="0e5704fb-e52d-4d60-abad-2ea1ebb65871" class="bulleted-list"><li style="list-style-type:disc">Reviewing Project #1 and assigning Project #2</li></ul><ul id="6d25c96a-405f-4776-a61a-18e881a432b4" class="bulleted-list"><li style="list-style-type:disc">Introducing the Document Object Model (DOM) and JQuery</li></ul></div><h3 id="631b3f8a-9b24-4333-9266-93aafa0c5743" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="0997ba62-f1c2-451c-8ac0-bcfece04f029" class="bulleted-list"><li style="list-style-type:disc">Project #1 share</li></ul><ul id="b3bb9e15-0e7a-491e-917b-e410e0a762cf" class="bulleted-list"><li style="list-style-type:disc">What is the DOM? What is JQuery?</li></ul><ul id="96c127b7-68b3-43b2-a997-69d1d69a0f5c" class="bulleted-list"><li style="list-style-type:disc">Manipulating the DOM using JQuery</li></ul><ul id="de1b76fe-b7b1-497d-ad89-46e30613cb4e" class="bulleted-list"><li style="list-style-type:disc">Introducing Project #2</li></ul></div><h3 id="84ac76e3-9915-4300-8196-f6a240e6170c" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="1730abe1-2e21-4106-9bfb-afe84bf93299" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Introducti%2079621.html">Introduction to CSS</a></li></ul><ul id="adef71a1-d332-41af-bf7a-dd5f58976d26" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Introducti%20de76d.html">Introduction to the DOM &amp; JQuery</a></li></ul></div><h3 id="961c3bf1-70b7-49b9-9cde-b1b7d3863354" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="6e8872b8-c053-44e5-aa6b-3227306737b9" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://nyu.zoom.us/rec/share/aocdZR53OXf2gkqpP97IjxzhePGZtL1ASLbZDgiFtTjZ9zWCkZZrfoD8e2NjQOAA.W5oEEMENb1sQ1g2b">Class Recording</a></strong></li></ul><ul id="2664e94a-da26-44e7-8400-bfc84be50a77" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1z6JKm7WT29ukeiTWBzaEUXZ5AHQhLWO6/view?usp=sharing"><strong>Code</strong></a></li></ul></div><h3 id="2ac9ea3f-e1ba-4b2f-b5fb-04a5a3f5c23d" class=""><details open=""><summary>Assignment (due on Monday, Feb. 7th &amp; Monday, Feb. 14th)</summary></details></h3><div class="indented"><p id="ea8a5dbb-1421-4ca6-8ee0-c7b183ae4fad" class="">Concept for <a href="Projects%208ccb3.html"><em>Project #2, Clock</em></a> is <strong>due for Class #5</strong>.</p><p id="4e31148c-c92e-41ad-b3ea-c585aebff546" class=""><a href="Projects%208ccb3.html"><em>Project #2, Clock</em></a> is <strong>due for Class #7</strong>.</p></div><p id="4d400c33-785c-4e86-86d7-5c489e7a32cc" class="">
+</p></div><h1 id="101b2cc0-6585-46e4-90a7-afa7710e10ed" class=""><span style="border-bottom:0.05em solid">Week #3</span></h1><h2 id="a3efc35c-80eb-4311-ae4a-fb3e0e1b7e55" class=""><details open=""><summary>Class #5, Mon. 2/7: 🕰️ Web Time 🕰️</summary></details></h2><div class="indented"><h3 id="ce0ddd2c-c79f-4ead-9d01-f4458aa16391" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="890df7a4-427a-4db5-87b6-182eea28f67d" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned readings</li></ul><ul id="1257c17c-c68c-44ff-942b-0bf55f26971e" class="bulleted-list"><li style="list-style-type:disc">Learn about Javascript timers</li></ul><ul id="c1408566-cf40-4408-9b48-8936630e1d12" class="bulleted-list"><li style="list-style-type:disc">Learn about a few visual effects provided by the JQuery library</li></ul></div><h3 id="4eb4d7fc-5af3-4dda-8f1f-748163afdec9" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="9d9fa29e-7b53-4297-aebb-7fe4abceb5c2" class="bulleted-list"><li style="list-style-type:disc">Student led reading discussion, <a href="Discussion%206f020.html"><em>Knowledge as Hypertext</em></a></li></ul><ul id="b11c76f7-67ee-4023-9e8c-f158f7cd19e1" class="bulleted-list"><li style="list-style-type:disc">Time in Javascript</li></ul><ul id="f433ee05-0015-4198-86f0-f48495f04cfc" class="bulleted-list"><li style="list-style-type:disc">Building a chaotic clock webpage</li></ul></div><h3 id="4e667c91-70c9-44f4-9961-c9d25c2fafc1" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="361440f0-a70b-4726-b109-0b4bda55eea5" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Web%20Time%20c10b9.html">Web Time</a></li></ul></div><h3 id="ca235e16-f6d6-41b5-9706-d5209ab71ff5" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="b8dc5423-1c5d-4200-83b0-5c00f178f82d" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://nyu.zoom.us/rec/share/MUnou8hqG2OzeX3UizMx11f1FiEQ_M7NXtcmc5ViI8tiQiTTLrP-eXG04mQaSkLp.ivx5tp8SNtEBKySv?startTime=1644248634000">Class Recording</a></strong></li></ul><ul id="bd784f9c-a22b-4691-a866-71322445f8cc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1Ku_vEug0RP7aD0EFequWkJqntyQagwpT/view?usp=sharing"><strong>Code</strong></a></li></ul></div><h3 id="d7a50c2e-39fc-432b-a548-48016507b88f" class=""><details open=""><summary>Assignment (due next Monday, Feb. 14th)</summary></details></h3><div class="indented"><p id="be8a372c-4c57-4889-9097-1b2518cb18e0" class="">No reading assignment due this week. Focus your energy on Project #2, we will have a review next Monday.</p></div></div><h2 id="627a7bf1-e05b-42a1-b092-7d54809e41a9" class=""><details open=""><summary>Class #6, Wed. 2/9: ⌨️ User Events &amp; Interaction ⌨️</summary></details></h2><div class="indented"><h3 id="51fe5207-9677-469d-b93b-b47ac7300f5e" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="21229fcc-2aa8-4309-8c48-00fc7274f954" class="bulleted-list"><li style="list-style-type:disc">Check in on Project #2 progress</li></ul><ul id="caa54e81-9cf3-4414-a54b-3357526cb5cf" class="bulleted-list"><li style="list-style-type:disc">Learn about interactivity in the browser</li></ul><ul id="254d5ff0-99d8-4e87-9677-ff825daa8d82" class="bulleted-list"><li style="list-style-type:disc">Learn about using and interacting with HTML Media</li></ul></div><h3 id="177606e3-8709-4dcf-88d9-136958c1171d" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="0790ab79-3c15-4c1c-b053-b671d5f1c6b0" class="bulleted-list"><li style="list-style-type:disc">Quick status update on everyone’s clock ideas</li></ul><ul id="25bac8f6-7211-4769-b320-2a17b26f983e" class="bulleted-list"><li style="list-style-type:disc">Introducing mouse and keyboard events in the browser</li></ul><ul id="835ebf5c-f190-4322-a312-3af9c1ac20b8" class="bulleted-list"><li style="list-style-type:disc">Using video and audio elements in HTML</li></ul></div><h3 id="44e2c63e-f32a-4da2-8435-7f91ee5ea33b" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="f1845df5-4c20-41ca-bd49-6fb3dcdb4084" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/User%20Event%202a47e.html">User Events &amp; Interaction</a></li></ul></div><h3 id="a96f0db4-2412-4a74-85a6-f756e8c2712d" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="de224d92-b51e-48ba-8ceb-f6715e329a93" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/uwVKeRZQPEDmbr5CaMo25eQDND0cIXZMdgQb9jTtp70481OHy4JDjKVDdX1yyQVf.0NmKkahkw87AWQrr?startTime=1644421546000"><strong>Class Recording</strong></a></li></ul><ul id="759c1c32-054f-4f48-8221-a676870fc24c" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://drive.google.com/file/d/1RSl1S1ZXpRIayaLvCzEWVmhwaffGzYWv/view?usp=sharing">Code</a></strong></li></ul></div><h3 id="208d3fce-3a52-4e9b-9cd7-7210e9af51c9" class=""><details open=""><summary>Assignment (due next Monday, Feb. 14th)</summary></details></h3><div class="indented"><p id="65a0a940-abdf-4b77-b824-9ccdfdb9cbfb" class="">Continue working on <em>Project #2, Clock.</em> We will have our review <strong>during Class #7</strong>.</p></div></div><h1 id="e45968de-4425-4743-b32b-39caa69151a4" class=""><span style="border-bottom:0.05em solid">Week #4</span></h1><h2 id="5049552b-67eb-4004-ac6f-27cc7c617bc6" class=""><details open=""><summary>Class #7, Mon. 2/14: ✨ Project #2 Presentations ✨</summary></details></h2><div class="indented"><h3 id="2e3ac3ab-14fa-44e9-aeca-74854d081062" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><p id="771025bc-df12-4812-b9c9-57c973e1925c" class="">Project #2 Review</p></div><h3 id="77f397ea-213a-4aed-943b-206c9a5391d8" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><p id="cd0f0e0c-3078-4108-8e6f-ae462618c3d5" class="">Presenting and critiquing <em>Project #2, Clock</em> for the whole class.</p></div><h3 id="f6d26c31-8f52-42e9-85bb-bcfaf22c9109" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="0d65bb0a-e1cf-4ab2-ab09-086d186c44f3" class="">None today 🙂</p></div><h3 id="948e6b3b-8f38-4bea-88e2-1ddac68d5ea6" class=""><details open=""><summary>Assignment (due next Wednesday, 2/23)</summary></details></h3><div class="indented"><p id="08414165-d994-4bc5-859c-dac4774110db" class="">Read and respond to:</p><ul id="8067dfe0-016f-4901-bbdf-85d3ec585a32" class="bulleted-list"><li style="list-style-type:disc">Frank Chimero, <a href="https://frankchimero.com/blog/2015/the-webs-grain/"><em>The Web’s Grain</em></a></li></ul></div></div><h2 id="0732395c-ef65-4684-838d-5af118e7c978" class=""><details open=""><summary>Class #8, Wed. 2/16: 🛤️ Concept to Website 🛤️</summary></details></h2><div class="indented"><h3 id="eb8826d0-e3aa-4c71-bb53-980f298ce225" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="2b4cc50f-e541-437c-8b6b-ce877aad31b5" class="bulleted-list"><li style="list-style-type:disc">Web design process</li></ul><ul id="680e8093-8b61-46cc-ad0c-8f30677c8d94" class="bulleted-list"><li style="list-style-type:disc">Grid layouts in HTML with CSS flexbox</li></ul></div><h3 id="41222fb4-9aff-4539-90a8-dd86c0969329" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="d7fcba35-9e82-4686-85bd-3081114e6240" class="bulleted-list"><li style="list-style-type:disc">Short lecture: Website end-to-end design process</li></ul><ul id="0fa8a4af-9669-45e0-9a3c-8caf47a9db78" class="bulleted-list"><li style="list-style-type:disc">Building a given design with HTML and CSS</li></ul></div><h3 id="375499ab-93ed-4674-ae13-4145c317e755" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="8a832c95-7e2e-41dd-8cdc-a339e987228e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Flexbox</a></li></ul></div><h3 id="4959fba8-c3ee-40cc-8de2-58d8999c7474" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="87acfd9d-9217-4109-9f97-7284b202ea6e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/RQWJW_G4mCfSS9IVufMbISfP3d3aj6FQkhbFSuk2xBko9TOegbMLfBmm_HCOEExK.bSS0KcFoJ1gxtUJp"><strong>Class Recording</strong></a></li></ul><ul id="00895aec-e558-43ef-8e38-d47d2879d0a0" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1vGOc-4n-H3wrLwsXBqbCEubrCmfZNfhL/view?usp=sharing"><strong>Slides</strong></a></li></ul><ul id="28b57af5-cc35-4328-a612-b0fc8c9c5674" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/120rb5SubFhpHoQAvEeyPX0reEUA3SnvS/view?usp=sharing"><strong>Code</strong></a></li></ul></div><h3 id="31d1a4c7-fb2f-48cf-850c-b226165ae54f" class=""><details open=""><summary>Assignment (first part due Wednesday, Feb. 23rd)</summary></details></h3><div class="indented"><ul id="eb20e298-2f59-42ad-b73f-718341a03bd5" class="bulleted-list"><li style="list-style-type:disc"><em>Project #3, Homepage for a Community</em>: Research the community you want to build the homepage for. Start designing your website, and post on your sitemap and wireframes on the class blog.</li></ul></div></div><h1 id="2f572ee7-36b0-4473-92bf-cc8eb3d7c9b7" class=""><span style="border-bottom:0.05em solid">Week #5</span></h1><p id="2d0eefe7-04e9-4eff-9420-91376792d274" class=""><em>Note: Class doesn’t meet on Monday, February 21st, as it’s a university holiday.</em></p><h2 id="62d0417d-5425-4d91-9305-caad9713b596" class=""><details open=""><summary>Class #9, Wed. 2/23: 📄 Node, express &amp; server-side Javascript  📄</summary></details></h2><div class="indented"><h3 id="f5e8b971-d8e4-40f5-ae43-65392ef9c863" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="154d98cc-c53e-4130-9e0a-8d3e9e3de2ea" class="bulleted-list"><li style="list-style-type:disc">Check-in on community homepage research</li></ul><ul id="d4219c4b-ad77-4877-96fb-7266c3434872" class="bulleted-list"><li style="list-style-type:disc">Introduce server-side javascript with Node</li></ul><ul id="ae815bb2-42bd-4655-992d-50968a44fdc1" class="bulleted-list"><li style="list-style-type:disc">Learning to use .ejs templates</li></ul></div><h3 id="d03581f8-a85c-497e-9634-ccf69eb0385a" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="69c3abbc-711e-4039-9cb7-ce98c2387960" class="bulleted-list"><li style="list-style-type:disc">Short discussion on Frank Chimero’s text</li></ul><ul id="abb6e715-3942-41bd-859f-2fbe672c066f" class="bulleted-list"><li style="list-style-type:disc">Working with express.js servers in node</li></ul><ul id="fd76d8af-e1e3-4526-9090-0236a08316dd" class="bulleted-list"><li style="list-style-type:disc">API routes and different types of requests</li></ul><ul id="30e6e017-4d7e-4131-bbf6-ded6a3dcc44e" class="bulleted-list"><li style="list-style-type:disc">HTML forms for communicating between client and server</li></ul><ul id="bdcc7618-ec6b-4978-991b-bf025f97a272" class="bulleted-list"><li style="list-style-type:disc">Status updates on Project #3 research</li></ul></div><h3 id="4b8804f9-b492-4302-869e-a21b46f8fb79" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="c9fd26da-6aa9-4c69-9085-928fa904474f" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Node%20&amp;%20Exp%2094e65.html">Node &amp; Express Web Servers, Part 1: GET requests</a></li></ul></div><h3 id="8f4d8ead-b084-480b-8dc7-a3cfdf0cc120" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="a37003f5-0e74-44bc-b930-cfd071ac6f57" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1PEGKDcaO0YtKgvQy2QdaKqKBz_QxToCF/view?usp=sharing"><strong>Code</strong></a></li></ul><ul id="ac503524-7b25-4375-8524-b62f4c36b2d6" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/t5aRJO316lLCTb0y8nISU9KS7saZ_uDag-wXdh6XVpbvgi4GC0Ae4qFYJ8ZoLtxG.kYQdjaCuSdbRX1ky"><strong>Class Recording</strong></a></li></ul></div><h3 id="c8f42a0a-a185-47cc-8753-bbcb6a3d3fc8" class=""><details open=""><summary>Assignment (due Monday, Feb. 28th)</summary></details></h3><div class="indented"><p id="35473c52-10a9-49a1-8d5b-dbe641ebb124" class="">Read and respond to:<div class="indented"><ul id="83b774c2-5fff-4b10-b250-db47e9333953" class="bulleted-list"><li style="list-style-type:disc">American Artist, <a href="https://unbag.net/end/black-gooey-universe"><em>Black Gooey Universe</em></a></li></ul><ul id="d7818070-77b7-48c2-8472-e9c1e39bbe9c" class="bulleted-list"><li style="list-style-type:disc">Olia Lialina, <a href="http://contemporary-home-computing.org/RUE/"><em>Rich User Experience, UX and the Desktopization of War</em></a></li></ul></div></p></div></div><h1 id="5a14e5af-7c57-40d5-b683-bdce6193766a" class=""><span style="border-bottom:0.05em solid">Week #6</span></h1><h2 id="e75e84f6-530f-472c-ac9b-e83034b8848d" class=""><details open=""><summary>Class #10, Mon. 2/28: 📄 Express JS Templates 📄</summary></details></h2><div class="indented"><h3 id="c302d5d9-240c-49b4-ae2a-3b2b06a66496" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="3eb26648-064e-493f-bd13-6d963db71ead" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned readings</li></ul><ul id="6b910e85-e164-4cb5-ac25-41d50a300541" class="bulleted-list"><li style="list-style-type:disc">Continue our technical introduction of .ejs templates</li></ul></div><h3 id="10dcb674-aa7d-4527-916b-13169f445913" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="45309ed6-e0f3-4ebc-a03a-a98e882f1b92" class="bulleted-list"><li style="list-style-type:disc">Student led discussion on <a href="Discussion%206f020.html"><em>Interfaces</em></a></li></ul><ul id="44f3233b-d9d2-4c20-ad12-7438fde8444c" class="bulleted-list"><li style="list-style-type:disc">ejs templates, continued</li></ul></div><h3 id="0265c626-31ad-4afc-8ccc-87f58c6d0a06" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="a4691cda-b06e-44a4-8c7a-e3606b5802dc" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Express%20Te%20d8072.html">Express Templates</a></li></ul></div><h3 id="055f3605-1f7f-4f23-b882-56b0d4b7c487" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="02a1a6e5-04eb-49bc-aa70-29a490ba2c90" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/Dah3vfK7M49z9ZjNAq0JBVftm-8xBxWzRVXS8a6CQeYhkzspzunNZeEdIne0yv-S.NvcNsHoXZv0vlzkh"><strong>Class Recording</strong></a></li></ul><ul id="026ddacf-676e-4396-b5bc-ba42c90cde26" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1poqPUzF1YzhLhHNw6WIdarffz9cBL-UK/view?usp=sharing"><strong>Code</strong></a></li></ul></div><h3 id="bfc19099-626f-4925-a07c-174051db55e8" class=""><details open=""><summary>Assignment</summary></details></h3><div class="indented"><p id="480613a2-9836-4e0e-aa08-1179bde968ba" class="">No reading assignment this week, focus on completing Project #3 for next week.</p></div></div><h2 id="e617455b-46a4-4013-ab0e-110197d54af2" class=""><details open=""><summary>Class #11, Wed. 3/2: ⚡ POST requests ⚡</summary></details></h2><div class="indented"><h3 id="9f648b4a-4839-4214-bb60-cb29d22a5dfb" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="4f4dd8fd-bce9-4688-b2d2-9649521c788b" class="bulleted-list"><li style="list-style-type:disc">Working with POST requests;</li></ul><ul id="261151da-f17e-473d-83f9-4ce6fbc1f864" class="bulleted-list"><li style="list-style-type:disc">Answering technical questions about Project #3</li></ul><ul id="84d56546-3a31-4b89-b5fe-bb6e5238bc33" class="bulleted-list"><li style="list-style-type:disc">Reviewing technical material</li></ul></div><h3 id="6e0de947-9654-4f5c-9c57-2e984766ac24" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="fda41486-6ff6-4097-993d-f9c5c3848463" class="bulleted-list"><li style="list-style-type:disc">Learning how to work with POST requests and upload files to the web server</li></ul></div><h3 id="f0ffbff5-bd34-41b3-b924-6c642cfb393e" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="1bd8955d-0ba8-4352-a6a8-e63b7da0e151" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Node%20&amp;%20Exp%2093109.html">Post Requests</a></li></ul></div><h3 id="8245645b-f85e-4a03-b5f4-e244a30cabfa" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="c5fd852f-41a4-40c4-b291-4e9961fab6ee" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1MCFG1n74sDondZ_fyVmEZUpd8AO6fKDx/view?usp=sharing"><strong>Code</strong></a></li></ul><ul id="433ecde2-0785-4459-b5e0-907433e5af29" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/LL0CfTNENRWpE6mcK28ZTFBpdEZx7zQBEu-_hbWQO6NYVhdwpLZn4V4KmYNhf-eU.1Z5LlUqbQnSs5RlF"><strong>Class Recording</strong></a></li></ul></div><h3 id="59961d3d-b629-4404-875a-044d6da954ca" class=""><details open=""><summary>Assignment (due Monday, Mar. 7th)</summary></details></h3><div class="indented"><ul id="2d232bff-eacf-4743-a328-e7660c42b283" class="bulleted-list"><li style="list-style-type:disc"><em>Project #3, Homepage for a Community</em>: Presentations</li></ul></div></div><h1 id="a32f5ac5-44b6-432a-8818-5b31230ed9f9" class=""><span style="border-bottom:0.05em solid">Week #7 (midterm)</span></h1><h2 id="587d86b3-591b-4c08-a329-ba857dbafbc2" class=""><details open=""><summary>Class #12, Mon. 3/7: 🌒 Project #3 Presentations 🌒</summary></details></h2><div class="indented"><h3 id="2d4ce945-ca66-4812-b8a2-c8684ca973c2" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><p id="c45bd8d6-053f-4626-ac47-54cf31f45709" class="">Project #3 Review</p></div><h3 id="b91c0c12-b65c-493b-a3ba-866b2b74f0b2" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><p id="490d8bf4-b5f2-4f79-bd42-9d6cafe6a24c" class="">Presenting and critiquing <em>Project #3, Homepage for a Community</em> for the entire class.</p></div><h3 id="516e8adb-9b02-43e1-86e0-f52e5d25eec4" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="97889d4f-1292-426f-b458-893b216849fa" class="">None today 🙂</p></div><h3 id="89420207-d624-47bf-8ae7-3136b827b22e" class=""><details open=""><summary>Assignment</summary></details></h3><div class="indented"><p id="116d0b12-9a44-4594-a8bc-d0864ee58433" class="">None today 🙂</p></div></div><h2 id="3cdc50c7-f45c-4d94-9ab2-2768c2933dc0" class=""><details open=""><summary>Class #13, Wed. 3/9: 🌒 Project #3 Presentations 🌒</summary></details></h2><div class="indented"><h3 id="4297a7c5-ad79-4d92-99b7-01356350fba8" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="b98cdb3a-1510-4862-9415-75747a6e4f32" class="bulleted-list"><li style="list-style-type:disc">Project #3 Review</li></ul></div><h3 id="c595059e-625c-43f2-9b46-67febeee6545" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="06af6292-eb21-4f83-9f2b-b0bb83f88d77" class="bulleted-list"><li style="list-style-type:disc">Presenting and critiquing <em>Project #3, Homepage for a Community</em> for the entire class.</li></ul></div><h3 id="54c29f39-32fa-4dfd-ab73-1ae02a7a1dae" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="339ef9ee-6fbe-4753-b095-f8500a3417ae" class="">None today 🙂</p></div><h3 id="15064f91-df5b-4078-8713-5a2e3a06e730" class=""><details open=""><summary>Assignment (due Monday, Mar. 21st)</summary></details></h3><div class="indented"><p id="d653d2a2-9c51-4d5a-9726-dd96df3743c3" class="">Read and respond to:</p><ul id="b04f0675-8604-4535-a8be-7bdd83ea90c8" class="bulleted-list"><li style="list-style-type:disc">Christina Xu, <a href="https://logicmag.io/china/bullet-time/"><em>Bullet Time</em></a></li></ul><ul id="0fd36957-fbdc-4ced-8bba-7fb94352471b" class="bulleted-list"><li style="list-style-type:disc">Tarleton Gillespie, <a href="https://logicmag.io/scale/the-scale-is-just-unfathomable/"><em>The Scale Is Just Unfathomable</em></a></li></ul></div></div><p id="f88afd83-3edc-4c80-9a7d-424325b429ab" class="">
+</p><hr id="01511554-a86b-4079-9596-cee3ede99478"/><h2 id="7cb6ffc0-fbbe-49bd-8b31-61fecfda9bc0" class="">🥵🥵🥵🥵🥵🥵🥵 <span style="border-bottom:0.05em solid">Spring Break</span> 🥵🥵🥵🥵🥵🥵🥵</h2><p id="73cc7cba-ec4a-4c87-9f26-78958b5dda7c" class="">
+</p><hr id="1695c7b2-2ae0-46dc-9cba-eb5d7d170197"/><h1 id="e6e871da-7aa1-41e4-ac4c-dc57bcdee822" class=""><span style="border-bottom:0.05em solid">Week #8</span></h1><h2 id="38ff8c7d-e545-4567-8261-fb64e62ef0db" class=""><details open=""><summary>Class #14, Mon. 3/21: ⚡ Review (workshop) ⚡</summary></details></h2><div class="indented"><h3 id="fb62a1ae-c85c-421c-b1db-d4800a944d20" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="4eaf9df7-3c8e-4b5f-8f1a-0a31f3596132" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned reading</li></ul><ul id="f515253a-95c0-4116-a890-4ce13737bbf6" class="bulleted-list"><li style="list-style-type:disc">Review technical material we’ve covered so far</li></ul></div><h3 id="0d3cabd8-e94d-4053-bbbb-b2658b3e0d29" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="d8a1d913-9dae-4b2e-b9a0-3663a2723fcb" class="bulleted-list"><li style="list-style-type:disc">Student-led discussion on <a href="Discussion%206f020.html"><em>Social Media</em></a></li></ul><ul id="35bb1249-0a19-4ab5-a348-357dd3e5f4c1" class="bulleted-list"><li style="list-style-type:disc">Short workshop on reviewing the technical material we’ve covered so far</li></ul></div><h3 id="ce249f5a-3ed4-4f94-b0e5-1db6d0006eef" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="78e50a67-3b7b-42ad-98d0-04fa51a6516f" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://drive.google.com/file/d/1x4XA7L5roHv8cQN6ZwDdiT1xIs4UPMHu/view?usp=sharing">Starter Code Template</a></strong></li></ul></div><h3 id="7f981bd5-f423-4f2e-9d8e-fac22f1b1d6f" class=""><details open=""><summary>Assignment (due Mon., 3/28)</summary></details></h3><div class="indented"><p id="b143a7ce-cd1f-482b-9c04-b8c9b7ee2755" class="">Read and respond to:</p><ul id="21719f2f-dfb2-4bac-8188-4c73ac00bd74" class="bulleted-list"><li style="list-style-type:disc">Hito Steyerl, <a href="https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/"><em>In Defense of the Poor Image</em></a></li></ul><ul id="e3a19544-ff75-4275-8b05-ba02f5283b94" class="bulleted-list"><li style="list-style-type:disc">Nayantara Ranganathan, <a href="https://logicmag.io/commons/under-a-blood-red-flag/"><em>Under A Blood Red Flag</em></a></li></ul></div></div><h2 id="bbc4ecac-1a73-4466-bab1-b17217956835" class=""><details open=""><summary>Class #15, Wed. 3/23: 💽 Server-side data stores 💽</summary></details></h2><div class="indented"><h3 id="2574115b-7ce3-4422-81ee-b2475ca18cc0" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="6c16ffec-3c0f-4d67-87b3-f364bb42fa07" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material</li></ul></div><h3 id="ba376ca4-d720-4006-a13f-9f87e51e7952" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="d619c2e5-b100-4ed4-b0be-def9df55644f" class="bulleted-list"><li style="list-style-type:disc">Introduce <em>nedb </em>database</li></ul></div><h3 id="a069671e-5381-4b70-a591-8b8bfb7f0d04" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="6a50cd59-e958-49e0-9867-723a58b9ee82" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1nNQXO1MLl1uLeBsF1YwFz_QiCLxV7l-T/view?usp=sharing"><strong>Starter Code Template</strong></a></li></ul><ul id="6f0eb112-cb03-4b59-8662-474b2d2729ce" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://nyu.zoom.us/rec/share/w5GqAPYWxOsq7sHbv01B7xLExxUVXJydUeQ2XeLCnst-W_COCxL8imbuLEa3pAt6.Lyos-oi1Q8KgN4yF">Zoom Link</a></strong></li></ul></div><h3 id="743a0130-7d69-4ce2-9ffc-5f8d0d81ea72" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="6f63087a-006b-4cdd-972f-40195c8f1d81" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Server-Sid%202e1a0.html">Server-Side Datastores</a></li></ul></div><h3 id="9194117b-a41e-48ef-baa1-3cef831b823d" class=""><details open=""><summary>Assignment (due Monday, Apr. 4th)</summary></details></h3><div class="indented"><ul id="f5d0741a-e9ea-4362-82bf-face7d0f8683" class="bulleted-list"><li style="list-style-type:disc"><a href="Projects%208ccb3.html"><em>Project #4, Gift</em></a></li></ul></div></div><h1 id="3e1fc108-40ae-4632-ac6b-7495268e6277" class=""><span style="border-bottom:0.05em solid">Week #9</span></h1><h2 id="bcf8bccb-e5c1-4ba0-9555-3f4d1cc326eb" class=""><details open=""><summary>Class #16, Mon. 3/28: 💽 Server-side Data Stores, continued 💽</summary></details></h2><div class="indented"><h3 id="318ccccf-d772-4370-b5ce-2c5646f605d3" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="e97516cc-ee7e-4ffc-9615-eb38ff95a8ae" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned reading</li></ul><ul id="b0dc6e25-9080-47cf-9d64-2683cca012a4" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material</li></ul></div><h3 id="b1bdba7e-a261-47b2-865d-62a6d32d870d" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="e38ebc02-bb3d-4f18-aee1-d51771fa523b" class="bulleted-list"><li style="list-style-type:disc">Student led discussion, <a href="Discussion%206f020.html"><em>Image Culture</em></a></li></ul><ul id="9443cbe5-3778-4e45-af3d-9c09db807f4c" class="bulleted-list"><li style="list-style-type:disc">Continuing our introduction to <em>nedb: </em>the <code>update</code> and <code>delete</code> operations.</li></ul></div><h3 id="54e01fe4-01ac-41c2-97d8-a7470875db90" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="ce4db9bf-099f-497c-9a11-02f9799bd329" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1u5dYXPMhccH9-Q-J_zldfoDj5xQJjFpi/view?usp=sharing"><strong>Starter Code Template</strong></a></li></ul><ul id="9a26f560-80a8-4357-aca6-612a2b2896c5" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/OOFJBnJioB3iK8uXr6oN71_OEnOmWuN6RoUzy3a_Mdrd6VNzXrjSB18Q5HkNfd2v.WmHpR7uPrjFVy_Vo"><strong>Class Recording</strong></a></li></ul></div><h3 id="ef4b7a8c-c987-43b8-bedb-43757d73968b" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><ul id="52f285f4-58ff-4cdd-a5d0-a962765f5315" class="bulleted-list"><li style="list-style-type:disc"><a href="Technical%20%2071b05/Server-Sid%202e1a0.html">Server-Side Datastores</a></li></ul></div><h3 id="67c948e2-5cd8-43ab-8a18-c4f06e95cbca" class=""><details open=""><summary>Assignment (due Monday, Apr. 4th)</summary></details></h3><div class="indented"><p id="6558ea7c-22ec-47f5-b6d2-d564934b7f4f" class="">Read and respond to:</p><ul id="0af367d0-f96e-4789-9991-811bcb9784ff" class="bulleted-list"><li style="list-style-type:disc">Nicole Starosielski, <a href="https://blogs.commons.georgetown.edu/engl-711-fall2017/files/2017/08/The-Undersea-Network_Starosielski.pdf"><em>The Undersea Network</em></a><em> (excerpt)</em></li></ul><ul id="d04f748a-7631-47fc-8bb8-2fe54cf1712c" class="bulleted-list"><li style="list-style-type:disc">Ingrid Burrington, <a href="https://www.e-flux.com/architecture/dimensions-of-citizenship/178279/effortless-slippage/"><em>Effortless Slippage</em></a></li></ul><ul id="709a8ced-354d-4625-9c2a-9c0d94e285e4" class="bulleted-list"><li style="list-style-type:disc">Ingrid Burrington, <a href="http://seeingnetworks.in/nyc/"><em>Seeing Networks in New York City</em></a><em> </em>(website, optional)</li></ul></div></div><h2 id="3cc9f77f-26a9-40d5-9c83-d64d3284ce2c" class=""><details open=""><summary>Class #17, Wed. 3/30: 💽 Server-side Data Stores, continued 💽</summary></details></h2><div class="indented"><h3 id="f57b112c-3094-4438-af4b-c3e2c382df6a" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="fb532268-af5d-4c8c-b8a6-cdc1dd5a05fb" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material</li></ul></div><h3 id="7f38a7dc-ffd7-4120-837b-fdbee66649b9" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="6e83994b-3da7-4610-aea7-8a058cb7be64" class="bulleted-list"><li style="list-style-type:disc">Continuing our discussion of server-side datastores: the <code>update</code> operation.</li></ul></div><h3 id="32e163f3-d956-4e91-bc07-3322670899a7" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="1252ed64-b53e-4fb3-b3fe-496ea0284e1c" class="">TBD</p></div><h3 id="1179da19-834b-4b81-ab23-89a6d6fa26aa" class=""><details open=""><summary>Class Materials</summary></details></h3><div class="indented"><ul id="9bc530c0-c632-4990-b8b0-38bae291f62e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://drive.google.com/file/d/1l-Nfg2SFk6vzaOzrCcmZUrg3n69-7w_V/view?usp=sharing"><strong>Starter Code Template</strong></a></li></ul><ul id="1ee7f5ae-9c06-4f71-83bc-58d4c0c6f387" class="bulleted-list"><li style="list-style-type:disc"><a href="https://nyu.zoom.us/rec/share/rEuc9S1-Q7zXdLIWrB-faIiAATGvd-zKrxFrrVXClC8utojPz3pEoZRjZIDKOxDH._wpprJvNIbaK_JbO"><strong>Class Recording</strong></a></li></ul></div><h3 id="c4f61dd3-7405-497c-a9ff-08082c2dc06d" class=""><details open=""><summary>Assignment (due Monday, Apr. 4th)</summary></details></h3><div class="indented"><ul id="50fdc2b5-939d-41c2-bc49-60e5e4338f47" class="bulleted-list"><li style="list-style-type:disc">Continue working on <em>Project #4</em>, wrap it up by Monday and submit it in the spreadsheet<em>.</em></li></ul></div></div><p id="681531c4-3167-4cde-8d9f-5c0d866a2471" class="">
+</p><h1 id="06b42a4d-b106-4d7b-a0ba-2e25f6d87e42" class=""><span style="border-bottom:0.05em solid">Week #10</span></h1><h2 id="dd8f8745-01f3-4ff0-b02e-96e3702637a4" class=""><details open=""><summary>Class #18, Mon. 4/4: ✨ Ajax Requests  ✨</summary></details></h2><div class="indented"><h3 id="207c5620-7f62-47d6-b3f0-7d503fee31db" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><p id="edd89fa4-18d1-4db2-81ab-900be675dc77" class="">Continue our introduction of Ajax requests</p></div><h3 id="95dff2b7-279d-4a68-8570-6db8c0e58ea3" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="05129f3e-9d66-4124-918e-4a739974e4a3" class="bulleted-list"><li style="list-style-type:disc">Continue our introduction of Ajax requests from last class</li></ul></div><h3 id="a14a387b-fa79-460d-ba92-2e7485cbb718" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="924e59f0-390e-481b-9597-69fd8a18a83d" class="">None today 🙂</p></div><h3 id="a4e3ba5e-d93d-4122-a375-6cb210de209b" class=""><details open=""><summary>Assignment (due Monday, Apr. 11th)</summary></details></h3><div class="indented"><p id="7723420f-dced-4be5-93da-21b9cb69cd27" class="">Read and respond to:</p><ul id="c6ba1f24-4135-457d-9493-da7c4cbfb1d5" class="bulleted-list"><li style="list-style-type:disc">John Perry Barlow, <a href="https://www.eff.org/cyberspace-independence"><em>A Declaration of the Independence of Cyberspace</em></a></li></ul><ul id="4d25726b-bb07-478b-827c-ac1bf9557543" class="bulleted-list"><li style="list-style-type:disc">April Glaser, <a href="https://logicmag.io/bodies/another-network-is-possible/"><em>Another Network is Possible</em></a></li></ul><ul id="321c5f59-334c-423b-8326-a2ece1f616e1" class="bulleted-list"><li style="list-style-type:disc"><a href="https://video.vice.com/en_us/video/motherboard-dear-future-people-building-their-own-internet-detroit/59cebd5795073d0905939aeb">Meet the People Building Their Own Internet in Detroit</a>, <em>Vice </em>(video, optional)</li></ul></div></div><h2 id="1f398257-9f63-4285-8037-d08e16604198" class=""><details open=""><summary>Class #19, Wed. 4/6: 🎁 Working with external libraries 🎁</summary></details></h2><div class="indented"><h3 id="974913f1-1cb4-4389-aaae-d78415ec09c4" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="d9399304-3ec2-4145-9963-fe84eef922f2" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned reading</li></ul><ul id="54b1b78e-82a6-4128-bd67-ad8246f36673" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material</li></ul></div><h3 id="98e1b95c-f0a0-430d-98d4-822378408114" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="cbcf7fbb-fb85-4cfb-acae-d35664dccb1c" class="bulleted-list"><li style="list-style-type:disc">Student-led discussion, <a href="Discussion%206f020.html"><em>Mapping the Internet</em></a></li></ul><ul id="4949f3fb-8229-4a7d-b74b-4a67e2df39dd" class="bulleted-list"><li style="list-style-type:disc">Introduce Final Project</li></ul></div><h3 id="266c55a4-7baf-409a-9f08-6c2bbd15ac27" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="4144421a-f871-42da-9efa-0af86efd429b" class="">TBD</p></div><h3 id="1481aea9-ff26-42f7-bfee-6a4da2e79104" class=""><details open=""><summary>Assignment (due Wednesday, Apr. 13th)</summary></details></h3><div class="indented"><p id="92c24fa7-1dde-430b-a926-3316d227f554" class=""><em>Project #5, Final Project</em>: Start thinking about what you want to make for your final project. You will share 3 ideas in class next Wednesday.</p></div></div><h1 id="72dc1f31-1d59-47ce-afa0-f6f3c205ede0" class=""><span style="border-bottom:0.05em solid">Week #11</span></h1><h2 id="51862637-44ee-4a71-acbb-688e4471190c" class=""><details open=""><summary>Class #20, Mon. 4/11: 📲 Responsive Design &amp; CSS Media Queries 📲</summary></details></h2><div class="indented"><h3 id="260e0807-d58d-421d-a387-3a7953971dcc" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="f57ad43d-10e7-4a45-9106-805295d831cf" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned reading</li></ul><ul id="4a9dbb07-e349-446a-8d22-0292b57990e7" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material</li></ul></div><h3 id="c223c87b-b06b-4d16-90d4-a11dfcea6e3b" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="f5cd3a64-ef93-42d7-8072-2913deb61146" class="bulleted-list"><li style="list-style-type:disc">Student-led discussion, <a href="Discussion%206f020.html"><em>Infrastructure as Utopia</em></a></li></ul><ul id="e4c42ac6-a707-4fcb-9f65-df7985dfdbac" class="bulleted-list"><li style="list-style-type:disc">Continue our technical introduction of server-side data stores</li></ul></div><h3 id="e92a0473-e944-4be0-9225-1689402535a7" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="1b202db6-813c-487d-ae3f-9a394dc5354a" class="">TBD</p></div><h3 id="a51a4794-55a5-445e-b6ed-c1d7eda9c460" class=""><details open=""><summary>Assignment (due Monday, Apr. 18th)</summary></details></h3><div class="indented"><p id="41e97c69-8e41-4356-882a-1afe8ea0b13c" class="">Read and respond to:</p><ul id="3064c8ee-b527-4d1e-a317-84ffa8f58a1f" class="bulleted-list"><li style="list-style-type:disc">Richard Barbrook and Andy Cameron, <a href="https://arena-attachments.s3.amazonaws.com/14592114/c5f597590707072ee524f5c252faf4c6.pdf?1641475747"><em>The Californian Ideology</em></a><em> </em>(excerpt)</li></ul><ul id="5b2e3dbd-89f2-494e-b0c8-fd9987bd7aea" class="bulleted-list"><li style="list-style-type:disc">Shoshana Zuboff, <em>The Age of Surveillance Capitalism</em> (excerpt)</li></ul></div></div><h2 id="abb5d194-0e0c-4715-bec3-67afbd2c5163" class=""><details open=""><summary>Class #21, Wed. 4/13: 📚 Working with Animations 📚</summary></details></h2><div class="indented"><h3 id="986f778b-a8eb-44bc-92c7-49bbc31eec25" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="86be8a70-7420-4098-a166-52b184d32976" class="bulleted-list"><li style="list-style-type:disc">Discuss final project ideas</li></ul><ul id="cce6e8ed-36ac-421a-93d6-03c65cc37c6b" class="bulleted-list"><li style="list-style-type:disc">Review technical material</li></ul></div><h3 id="011d3244-8174-4865-bea1-ece3aa29a71f" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="796d5967-a8a7-4962-b2ca-6eb33e1b5f23" class="bulleted-list"><li style="list-style-type:disc">Share initial ideas for <em>Project #5: Final Project</em></li></ul><ul id="9d440100-d383-44a5-9bd1-4f98778069a0" class="bulleted-list"><li style="list-style-type:disc">Review technical material</li></ul></div><h3 id="72313a26-a54f-4dcb-9e1b-e2612a9fa1e3" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="bc02e224-97d4-494a-b980-2f1e260f9a93" class="">TBD</p></div><h3 id="d89cf6ab-fe29-45ca-a388-f44f9a4d309c" class=""><details open=""><summary>Assignment</summary></details></h3><div class="indented"><p id="cdae3e1d-a97a-4b80-969c-767b61c1edc0" class="">Continue working on <em>Project #5, Final Project.</em></p></div></div><h1 id="d9b778e3-f801-4c7c-991d-af7c52111b25" class=""><span style="border-bottom:0.05em solid">Week #12</span></h1><h2 id="3e821c03-20a1-466d-bb18-d4abb5aebaa5" class=""><details open=""><summary>Class #22, Mon. 4/18: 🎀 Guest Speaker / Cookies &amp; Sessions 🎀</summary></details></h2><div class="indented"><h3 id="dd39f50f-d5e6-468b-ab37-696dcd149f88" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="3f6cb6bb-226e-412d-afdd-0ab09d277c0a" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned reading</li></ul><ul id="505f36b5-e993-4026-90bf-c879b748ed71" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material</li></ul><ul id="2a2dd1ec-0eb9-49cd-8dcf-04602fbfee82" class="bulleted-list"><li style="list-style-type:disc">Guest speaker, pending confirmation</li></ul></div><h3 id="eee67aa8-b4c7-453f-bb73-3148f3ef4fad" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="6726b74a-d066-4eb3-a458-35bfba87edfa" class="bulleted-list"><li style="list-style-type:disc">Student-led discussion, <a href="Discussion%206f020.html"><em>Surveillance Capitalism</em></a></li></ul><ul id="1c2a9d3a-cc10-4266-a1ff-be506ab7a652" class="bulleted-list"><li style="list-style-type:disc">Technical material TBD, based on final project ideas</li></ul></div><h3 id="d2d38bfb-7910-49da-8644-98554ef0f237" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="6f4018e7-267d-4ac7-8ee1-3be4ebc3a081" class="">TBD</p></div><h3 id="b8302a90-ed6c-474c-a586-6a52103b0ff6" class=""><details open=""><summary>Assignment (due Monday, April 25th)</summary></details></h3><div class="indented"><p id="8955034e-cf47-4c8a-8cd6-ab984ff2ef36" class="">Read and respond to:</p><ul id="87c0ab4c-a3cd-45aa-951d-3c470d2c737c" class="bulleted-list"><li style="list-style-type:disc">Everest Pipkin, <a href="https://pioneerworks.org/broadcast/i-know-a-place-pipkin"><em>I Know a Place</em></a></li></ul></div></div><h2 id="bf5be39f-11b6-4176-baab-9054bb2333e0" class=""><details open=""><summary>Class #23, Wed. 4/20: 🎀 Guest Speaker / SSL &amp; Custom Domain Names 🎀</summary></details></h2><div class="indented"><h3 id="ea507b57-43ec-4d08-986e-aac4f8c38a35" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="4c0bac24-2588-4d7c-9e7b-a5031717c505" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material</li></ul><ul id="da4f992f-1107-4881-9218-3e34d93f5b71" class="bulleted-list"><li style="list-style-type:disc">Guest speaker, pending confirmation (if not on Monday, 4/18)</li></ul></div><h3 id="edc3bfd7-6345-441e-8950-5d87d47fad63" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><p id="84759131-0328-4de0-b5d5-8d174468ca76" class="">TBD</p></div><h3 id="ec79bed9-182f-4fba-86f3-203c4989b92f" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="a910652a-0330-43cb-a72e-0f3d12970b08" class="">TBD</p></div><h3 id="a2e8d5ff-6d0e-4fab-9a5d-4354a10e1a1a" class=""><details open=""><summary>Assignment</summary></details></h3><div class="indented"><p id="4ce67e19-d69d-41e0-91bc-740de11367da" class="">Continue working on <em>Project #5, Final Project.</em></p></div></div><h1 id="de7a3302-c774-4d61-8dff-42dc0b0adf6d" class=""><span style="border-bottom:0.05em solid">Week #13</span></h1><h2 id="34d1fce1-e41b-45f5-9233-1dc1b2b4bc0b" class=""><details open=""><summary>Class #22, Mon. 4/25: 🗣️ Final Project Individual Meetings 🗣️</summary></details></h2><div class="indented"><h3 id="5775593d-da21-42e8-a873-be10b114e4fe" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><p id="028ee503-38ca-4545-bb6a-7bcc0f365af5" class="">Meet with Vesper &amp; Cezar to discuss progress &amp; obstacles on your final project.</p></div><h3 id="86367c60-e4b2-40f6-8998-3c2fc3dbf5cf" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="d137795d-3b93-4329-bc7c-09fe0a07d793" class="bulleted-list"><li style="list-style-type:disc">In-class work session for final project</li></ul><ul id="be39798a-3126-4ca5-bac5-c90c79959dc2" class="bulleted-list"><li style="list-style-type:disc">Individual meetings</li></ul></div><h3 id="8fb2b19f-f497-401d-b2e5-623cbab7f337" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="4a378787-f042-4b53-8b7e-b11fbfb7869f" class="">None today 🙂</p></div><h3 id="41b53651-99cc-4dd0-936a-77275dc6d198" class=""><details open=""><summary>Assignment (due Monday, May 2nd)</summary></details></h3><div class="indented"><p id="983c3724-5944-4906-ae76-a804194f7534" class="">Read and respond to:</p><ul id="9d25dfd1-e7be-4c61-854a-aa497e6ee8a2" class="bulleted-list"><li style="list-style-type:disc">Gabriel Nicholas, <a href="https://logicmag.io/bodies/the-crypto-family-farm/"><em>The Crypto Family Farm</em></a></li></ul><ul id="9c39721b-551e-4bcb-b7dc-868e8bb2cfd4" class="bulleted-list"><li style="list-style-type:disc">Moxie Marlinspike, <a href="https://moxie.org/2022/01/07/web3-first-impressions.html"><em>My First Impressions of Web3</em></a></li></ul></div></div><h2 id="bf88578b-e5fa-4998-850d-d55ed5053908" class=""><details open=""><summary>Class #23, Wed. 4/27: 🗣️ Final Project Individual Meetings 🗣️</summary></details></h2><div class="indented"><h3 id="6af53ea3-2699-48de-9353-cb92dafdc059" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><p id="a8decc03-8271-414f-96ea-9ae438e3e2f7" class="">Meet with Vesper &amp; Cezar to discuss progress &amp; obstacles on your final project.</p></div><h3 id="7a3dbf3b-9b82-494d-83a6-4c858a41ad56" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="3ec2055e-b269-4be0-a97e-1ac3e9bc826f" class="bulleted-list"><li style="list-style-type:disc">In-class work session for final project</li></ul><ul id="4d16144c-e6a2-42fb-978a-5faf4bd8dd49" class="bulleted-list"><li style="list-style-type:disc">Individual meetings</li></ul></div><h3 id="dd1832cb-02ef-4abe-a6fa-f8bd59c13dad" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="d85a4a70-bcfe-4f98-8170-c894ae2dc632" class="">None today 🙂</p></div><h3 id="a9ac543d-cea7-4dfc-933c-c4c0b41026a1" class=""><details open=""><summary>Assignment</summary></details></h3><div class="indented"><p id="d5e3e336-d83e-4ff6-8764-25469f627a2c" class="">Continue working on <em>Project #5, Final Project.</em></p></div></div><h1 id="bb88db6d-41df-4a01-8b0d-191f890ce1a5" class=""><span style="border-bottom:0.05em solid">Week #14</span></h1><h2 id="51daa8cc-b569-422a-ac42-7806b3f550b6" class=""><details open=""><summary>Class #24, Mon. 5/2: ⌨️ Final Project Work Session  ⌨️</summary></details></h2><div class="indented"><h3 id="fd24d583-02a9-4f78-bbb0-3188c8cc0305" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><ul id="41f1273d-4dda-46ce-a483-f4851c0210a1" class="bulleted-list"><li style="list-style-type:disc">Discuss assigned reading</li></ul><ul id="3ca458dd-a3d5-4ac6-a551-ecd94063b68c" class="bulleted-list"><li style="list-style-type:disc">Introduce new technical material based on final project ideas</li></ul><ul id="915df8f2-78d8-4ad3-a5c2-e607e909983f" class="bulleted-list"><li style="list-style-type:disc">Continue working on final projects</li></ul></div><h3 id="2aa8bf5f-d0d3-4953-88d2-52949fc93a4d" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><ul id="2de81ef6-7113-43e1-8437-c1148a8fa7f5" class="bulleted-list"><li style="list-style-type:disc">Student-led discussion on <a href="Discussion%206f020.html"><em>Re-decentralization, blockchain and Web 3.0</em></a></li></ul><ul id="63c8a43c-119a-4e76-ac72-75123f88fca4" class="bulleted-list"><li style="list-style-type:disc">New technical material TBD</li></ul></div><h3 id="f5a4f7ab-08e0-46c9-9c29-fafc1ea1342d" class=""><details open=""><summary>Referenced Technical Tutorials</summary></details></h3><div class="indented"><p id="44793928-ed9a-44fe-ba8a-dac642dab1fe" class="">TBD</p></div><h3 id="905636d7-b409-4d06-bebd-96901dac8344" class=""><details open=""><summary>Assignment</summary></details></h3><div class="indented"><p id="00227bb8-0587-4a1c-9fa9-bef05303e3a0" class="">Finalize your <em>Project #5, Final Project. </em>We will have our final review later this week.</p></div></div><h2 id="3cd65c0c-019a-4555-89e5-f5a7524387d4" class=""><details open=""><summary>Class #25, Wed. 5/4: ✨ Final Presentations ✨</summary></details></h2><div class="indented"><h3 id="ae1afaa7-8268-41eb-869d-182576195b80" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><p id="f47d8cef-e22f-4e51-8d17-685b54453af0" class="">Final Project Review</p></div><h3 id="8b3194c5-16bf-4e5f-ba6b-e5f968134c3a" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><p id="96cc91dd-830d-42c5-aacf-22b944fe82d7" class="">Final Project Review for the entire class.</p></div></div><h1 id="91b6ba95-4d22-4643-91f8-985b43b4e839" class=""><span style="border-bottom:0.05em solid">Week #15</span></h1><h2 id="9d8276b5-1536-427d-96a0-b4d0e5b3e611" class=""><details open=""><summary>Class #26, Mon. 5/9: ✨ Final Presentations ✨</summary></details></h2><div class="indented"><h3 id="6fc1ea88-fb44-4d61-bbf6-2796dab7e3fe" class=""><details open=""><summary>Objectives</summary></details></h3><div class="indented"><p id="56b0d548-0562-4c75-8090-9760b9333256" class="">Final Project Review</p></div><h3 id="598b0a53-9d3a-426c-b7ea-dfa56011e853" class=""><details open=""><summary>Session Outline</summary></details></h3><div class="indented"><p id="38d015c5-5a46-4d54-a393-7b9bdfa279ee" class="">Final Project Review for the entire class.</p></div></div></div></article></body></html>

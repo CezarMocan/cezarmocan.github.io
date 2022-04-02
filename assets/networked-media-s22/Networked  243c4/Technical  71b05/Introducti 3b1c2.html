@@ -1,0 +1,719 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Introduction to HTML</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3b1c22c9-eb99-4f06-aab8-658209b29ee0" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📄</span></div><h1 class="page-title">Introduction to HTML</h1></header><div class="page-body"><h2 id="562eeac4-8696-4e01-823c-90375ef49ece" class="">HTML</h2><p id="0d136ea7-4ce9-4a3e-bc07-b051bc3658f1" class="">HTML stands for Hyper Text Markup Language. While not a traditional programming language (it is technically a <em>markup language)</em>, it’s what we use to create web pages. A markup language is generally used to define the structure and display of content, HTML is no different.</p><h3 id="c0eb7f2a-ee3e-4bbb-a29d-c3db4617dbe0" class="">Text Editor</h3><p id="cf6e44d2-4878-4dd1-90c2-1e4cd9600e78" class="">To write HTML, one of the first things you will need is a plain text  editor. Most operating systems come with this capability built-in (TextEdit on the Mac and Notepad on Windows). While these applications  work fine, there are some benefits to using a programmer’s text editor 
+such as <a href="https://atom.io/">Atom</a>, <a href="https://www.sublimetext.com/">Sublime Text</a> or <a href="https://code.visualstudio.com/">VS Code</a>. </p><p id="56309510-e606-4bd3-b9b9-1228c8576ae0" class="">In particular, they have line numbering, syntax coloring and other features that will make it easier to work with.</p><p id="995f4870-79b3-46e2-820a-1d9a89327472" class="">I recommend using VS Code, as it has a few extra features (built-in terminal, remote file editing) that will come in handy later in the semester.</p><h3 id="6dfca507-216e-425f-996d-ae9959177900" class="">Tags</h3><p id="b224139a-322d-4c0e-b068-73630cc768ce" class="">HTML is a tag based language. This means that you define the structure of the content of a document using tags.</p><p id="f72f9c2f-4e91-4576-bca2-ccdede3d89eb" class="">An example of a tag would be: <code>&lt;strong&gt;some text&lt;/strong&gt;</code> which when rendered in a browser looks like this: <strong>some text</strong>.</p><p id="99246931-f844-4064-ad3e-f5885e2c2559" class="">Here are some tags that we’ll start with:</p><ul id="017b3ef4-170b-4add-baf5-f072d2bb0655" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;html&gt;...&lt;/html&gt;</code> Start and end HTML</li></ul><ul id="28658a53-fe52-41c5-ab59-fc57bcd31e3b" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;head&gt;...&lt;/head&gt;</code> Head of page, not actual content; Contains <em>metadata</em> about your page.<ul id="2c35863b-482c-4b5b-b0e4-b7cb7b11949a" class="bulleted-list"><li style="list-style-type:circle"><code>&lt;title&gt;...&lt;/title&gt;</code> Title of the page, displayed in the web browser tab; Also in search engine indexing, etc.</li></ul></li></ul><ul id="80c22b17-a60e-45ae-baab-9b8a528ce33f" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;body&gt;...&lt;/body&gt;</code> Body of the page, this is where the visible page content lives;<ul id="20fe11a7-ec0c-4351-8b86-8e7741817a5f" class="bulleted-list"><li style="list-style-type:circle"><strong>Working with text:</strong><ul id="56d13578-05d9-4e62-a538-fd09133045b7" class="bulleted-list"><li style="list-style-type:square"><code>&lt;p&gt;...&lt;/p&gt;</code> → paragraph</li></ul><ul id="4a910905-1ba9-4d0d-bc96-702ddeb381ab" class="bulleted-list"><li style="list-style-type:square"><code>&lt;h1&gt; ... &lt;/h1&gt;</code> → headings (also <code>h2</code>, <code>h3</code>, ... <code>h6</code>)</li></ul><ul id="1fb00573-7758-457d-94e7-9bbfabda0d21" class="bulleted-list"><li style="list-style-type:square"><code>&lt;strong&gt;...&lt;/strong&gt;</code> → bolded text</li></ul><ul id="1e111263-2608-4617-a274-a911ab87178c" class="bulleted-list"><li style="list-style-type:square"><code>&lt;em&gt;...&lt;/em&gt;</code> → italicized text</li></ul><ul id="1d455965-2365-4263-bc62-c42771d58b8f" class="bulleted-list"><li style="list-style-type:square"><code>&lt;small&gt; ... &lt;/small&gt;</code> → small text</li></ul><ul id="a75fc1d8-63a1-49ea-bf58-378e62a16b0a" class="bulleted-list"><li style="list-style-type:square"><code>&lt;br /&gt;</code> → line break (notice that this tag doesn’t have any content and therefore is both an begin and end tag, with the slash)</li></ul><ul id="f3fc84b4-2935-498a-92d9-35f8dc68e9e2" class="bulleted-list"><li style="list-style-type:square"><code>&lt;hr /&gt;</code> horizontal rule → a line break which draws a line</li></ul><ul id="02c5b4ea-a942-4644-a3e3-d4ec3b41eac8" class="bulleted-list"><li style="list-style-type:square"><code>&lt;a href=&quot;http://...&quot;&gt;...&lt;/a&gt;</code> → a link to another page. The “<code>href=&quot;&quot;</code>” portion is an <strong>attribute</strong>. Many tags have optional attributes, further details below.</li></ul></li></ul><ul id="a78bb507-9b08-4198-a804-055b15d83ed1" class="bulleted-list"><li style="list-style-type:circle"><strong>Grouping &amp; information organization:</strong><ul id="981a287e-caae-4fcf-b5e8-cb12d7fcd782" class="bulleted-list"><li style="list-style-type:square"><code>&lt;div&gt; ... &lt;/div&gt;</code> → <a href="https://www.w3schools.com/html/html_blocks.asp">Block-level</a> grouping.</li></ul><ul id="6b12228a-3011-4aef-9d6d-cc25a7fc4a9c" class="bulleted-list"><li style="list-style-type:square"><code>&lt;span&gt; ... &lt;/span&gt;</code> → <a href="https://www.w3schools.com/html/html_blocks.asp">Inline</a> grouping.<ul id="90a9789e-170f-4dd9-aa99-38732cc569cb" class="bulleted-list"><li style="list-style-type:disc">These will come in handy as we start working with styles and Javascript.</li></ul></li></ul></li></ul></li></ul><ul id="4720c1c5-d5a0-435a-8255-9870344ffb7d" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;!-- This is a comment --&gt;</code> Comments</li></ul><p id="3c124bb4-bfb9-4aad-b243-5530c039be17" class="">
+</p><p id="20db8b58-479a-410e-a33a-edaca6d34b4e" class="">Here is the source of an HTML example page:</p><pre id="cfea8a62-c8a0-4e1a-b0f3-a3aba99d77bd" class="code"><code>&lt;html&gt; &lt;!-- Start the HTML --&gt;
+	&lt;head&gt; &lt;!-- Start the Head --&gt;
+		&lt;title&gt;This is a Web Page&lt;/title&gt; &lt;!-- The Title of the page, start and end tag with text in-between --&gt;
+	&lt;/head&gt; &lt;!-- End the Head, always with a &quot;/&quot; --&gt;
+	&lt;body&gt; &lt;!-- Start the body --&gt;
+		This is where you would put the content of the page. &lt;!-- This is a comment and won&#x27;t display --&gt;
+		This will be on the same line as the above.  To specify a line break, you use: &lt;br /&gt; 
+		This text will be a line down
+
+		&lt;p&gt; This text will also be a line down &lt;/p&gt; 
+		&lt;!-- The &lt;p&gt; tag introduces a line break before and after the text on its own --&gt;
+
+		&lt;br /&gt;&lt;br /&gt; &lt;!-- Two line breaks --&gt; &lt;!-- Line break tags include the closing &quot;/&quot; as part of them, there isn&#x27;t a &lt;/br&gt; tag. --&gt;
+	&lt;/body&gt; &lt;!-- End the body --&gt;
+&lt;/html&gt; &lt;!-- End the HTML --&gt;</code></pre><p id="50c8a708-a335-42f4-b6f2-183e29954473" class="">To try this out, copy the above into a new text file and save it as <code>something.html</code> then open it in a web browser to see it.</p><h3 id="37756f9f-9fc0-40d4-8999-9b1e1db633a2" class="">Indenting</h3><p id="1cc14962-ae0d-45f0-9d51-cbf722b8c76f" class="">Indenting (the spacing before each line that you see in the example HTML page above) isn’t strictly required, but it really helps YOU to see the nesting structure of the document. It gives you the ability to quickly recognize when you missed closing a tag, and keeps the code tidy.</p><p id="cca35c4c-4704-4c9e-ae69-f480991d5b13" class="">Please use it 🙂</p><h3 id="e70db35f-5f41-45ac-bc3f-65b7738473fd" class="">View Source and Inspect Element</h3><p id="950a418c-e3ac-4948-9c50-e3fe63869cc4" class="">One of the very fundamental things that made web publishing very successful in the beginning was the inclusion of a <em>View Source </em>feature in most web browsers. This allows people to look at the HTML of a page they are viewing so as to understand how it was constructed and learn how to do similar things themselves.</p><p id="9c4977e7-88a1-4d8f-b763-0378932880c8" class="">Different browsers have different ways of accessing the source — you will likely find it in the Right-Click context menu, or under the <code>Tools</code> or <code>Developer</code> menus of the browser itself.</p><p id="25adbdaa-76cb-45ee-9b9b-a8adffc363b8" class=""><em>Inspect Element </em>is a more recent addition to web browsers, which is, in some ways, an interactive version of <em>View Source. </em>It’s a great prototyping tool, as it allows for on-the-fly changes to the HTML and CSS of a page. <em>(Important note: These changes are not saved, we’re just modifying how the page is displayed.)</em></p><h3 id="11a5b9f5-a268-43d4-a300-2a2ba76c07cd" class="">Attributes</h3><p id="0428ec60-fb8e-432f-972b-a473b0b3c860" class="">Most HTML tags can have <strong>attributes</strong>. In the case of the <code>&lt;a&gt;</code> above, <code>href</code> is an attribute which indicates the URL that the link should point to. Other common attributes are <code>id</code>, <code>class</code> or <code>src</code> .<div class="indented"><p id="30bcbd18-fd87-4a06-aaf1-479abed66e1f" class=""><code>id</code> allows a specific tag/element on the page to be referenced through JavaScript or CSS 
+(which we’ll cover later). </p><p id="b17e1959-3ba7-4d68-aac1-08f7b7decefe" class=""><code>class</code> is useful when using CSS to define the design of the page.</p><p id="532191db-ea4b-4ecc-9408-7d177d215ed5" class=""><code>src</code> is specific to media elements (images, audio, video, iframes) and point to the actual file being embedded into the webpage.</p></div></p><p id="c9b1b27a-60d2-44d6-a24b-353a87ac26ae" class="">There are more attributes out there, most of them specific to certain tags. We will cover them as we discover other tags.</p><h3 id="b69b0923-d240-4849-aaea-7185317cc2ca" class="">Links</h3><p id="d8325db7-9c11-4f07-97c6-56fb8badb65e" class="">You can define links in HTML using the <code>&lt;a&gt;</code> tag, as follows:</p><pre id="13574fd9-038c-4955-88d7-5dbfee828603" class="code"><code>&lt;a href=&quot;http://www.google.com&quot;&gt;Go to Google&lt;/a&gt;</code></pre><p id="19082b8d-78dc-47b3-9c67-51bfebb4b280" class="">Links are the connective tissue of the web, without them every website would be an isolated island in the middle of the ocean. The example above is a link to an external website. You can also link to pages within your own website, like this:</p><pre id="6737b82c-d3eb-45ce-bb47-33f74515f603" class="code"><code>&lt;a href=&quot;/page-2.html&quot;&gt;Go to Page #2&lt;/a&gt;</code></pre><p id="c4896166-17e0-437b-be0c-51a532f58bb4" class=""><span style="border-bottom:0.05em solid">Local links</span>, like the one above, need a web server in order to work (i.e. if you simply opened your <code>html</code> page in the web browser, this will not work properly.) We will cover that in the next tutorial.</p><p id="e4c9c3e2-5663-4084-ae24-c0639e00865a" class=""><span style="border-bottom:0.05em solid">Email links</span> are somewhat rare, but websites use them occasionally. They take a special value within the <code>href</code> property — the <code>mailto:</code> prefix, followed by an email address —, and clicking on them leads to the computer opening the default email client with the address filled in for the recipient field:</p><pre id="e95dc930-fd4d-4375-9c8b-812c7c40bd55" class="code"><code>&lt;a href=&quot;mailto:c@cezar.io&quot;&gt;Email Cezar&lt;/a&gt;</code></pre><p id="9f223a42-e981-4f38-b82d-9b4f80658d51" class=""><span style="border-bottom:0.05em solid">Anchor links</span> are used to point to a different section of the current webpage. They work in conjunction with an <code>id</code> attribute attached to a different tag on the same page. </p><p id="b8690cbb-ec7d-4871-b77d-7cd170d334f7" class="">In order to see them in action, we actually need a webpage long enough that it needs scrolling, so clicking on our anchor link will take us to the bottom of the page. The example below inserts a few filler <code>h1</code> and <code>br</code> tags, and attaches the anchor to the <code>p</code> tag at the very end of the page.</p><pre id="e3bd68d4-78a1-4d8f-8942-76efd9c60405" class="code"><code>&lt;a href=&quot;#bottomElement&quot;&gt; Go to bottom of the page &lt;/a&gt;
+
+&lt;!-- Filler content, so we have a long enough page --&gt;
+&lt;h1&gt; Text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;h1&gt; More text &lt;/h1&gt; &lt;br/&gt; &lt;hr/&gt; &lt;br/&gt; &lt;br/&gt;
+&lt;!-- End of filler content, so we have a long enough page --&gt;
+
+&lt;p id=&quot;bottomElement&quot;&gt; This is the end of the page &lt;/p&gt;</code></pre><p id="f4f6a961-37b2-4649-8623-eca80ce48eda" class="">Notice the syntax of the <code>href</code> attribute: a <code>#</code>, followed by the <code>id</code> of the element we want to create an anchor to.</p><p id="9fdc8bd8-a74d-4cb2-aaaf-b32d9c5e7459" class="">Sometimes you will see a <code>Back to top</code> button on blogs, websites, etc. Anchors are the mechanism behind the back to top functionality.</p><p id="2ab5dc8e-6cb2-4dea-a0d0-32f44a719be9" class="">
+</p><hr id="fd4d089c-05f3-4fc5-8d47-afdca63c89b5"/><p id="792e963b-29c6-4f99-a6af-2b6d8e25489a" class="">
+</p><p id="b111a1c5-3d45-420f-a653-521df952ad0e" class=""><strong>Opening links in a new tab</strong></p><p id="adc9b017-743f-41f0-9877-f758be63f572" class="">If we wanted to force the opening of a link in a new tab — which is commonly done for links that point to different websites than the current one —, we need to use the <code>target</code> attribute, with the value set to <code>_blank</code>. It looks like this:</p><pre id="99082275-5c6a-484b-ad40-ab23ae96688f" class="code"><code>&lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot;&gt; Open Google in a new tab &lt;/a&gt;</code></pre><h3 id="6e9aa87c-c6fd-4bd7-8604-08ad94dcdb96" class="">Images</h3><p id="95b027b4-7000-41c4-99ab-43a1b1319b5d" class="">To place an image in a page, you use a URL in the <code>src</code> attribute of the <code>img</code> tag:</p><pre id="7e438954-78d7-4e84-a624-5ef2312fc082" class="code code-wrap"><code>&lt;img src=&quot;/animage.jpg&quot; /&gt; 
+&lt;!-- This is a &quot;local&quot; URL, hosted on your server --&gt;
+
+&lt;img src=&quot;https://cezar.io/assets/images/24hrslandscape/cover.png&quot; /&gt; 
+&lt;!-- This is a &quot;global&quot; URL, hosted anywhere on the internet. It&#x27;s global because it starts with &quot;http://&quot; or &quot;https://&quot; --&gt;</code></pre><p id="d6f61f4d-93d4-4a79-974f-fb26e7cf262b" class="">You can control the dimensions of the image by using the <code>width</code> and/or <code>height</code> attributes on the image tag:</p><pre id="bd828577-94ad-429e-b3a6-b8685fd4e846" class="code"><code>&lt;img src=&quot;https://cezar.io/assets/images/24hrslandscape/cover.png&quot; width=&quot;500&quot; /&gt;
+&lt;!-- or --&gt;
+&lt;img src=&quot;https://cezar.io/assets/images/24hrslandscape/cover.png&quot; height=&quot;500&quot; /&gt;
+&lt;!-- or --&gt;
+&lt;img src=&quot;https://cezar.io/assets/images/24hrslandscape/cover.png&quot; width=&quot;500&quot; height=&quot;500&quot; /&gt;</code></pre><p id="3d1722ac-59da-47ab-98d2-e5a0a1a1f54a" class="">The unit of measurement for the <code>width</code> and <code>height</code> attributes is pixels. Once we get into CSS, we will learn more granular ways of controlling the dimensions of an image.</p><h3 id="f7ba5932-500c-44f5-af01-8998990ea312" class="">Containers</h3><p id="bfeeeb16-cc58-43a1-87b9-06e71d3a71b7" class="">As our HTML pages become larger, we need to start using containers in order to organize our content or achieve more complex layouts. We will get into more advanced use cases of these containers as we start working with CSS. For now, you should be aware of:</p><ul id="09f59a0e-83b2-48c2-994b-31fe70e62313" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;div&gt; ... &lt;/div&gt;</code> → the <code>div</code> is a block level container. Block-level means that it’s a type of container that takes the entire width of the page (or of its parent container,) and always starts on a new line. <p id="84201c1c-c15f-4bee-9174-51f6a582036f" class="">For example:</p><pre id="8a23679e-aa61-4ea5-9039-712e7ba6bb29" class="code"><code>&lt;div&gt; This is text #1 &lt;/div&gt;
+&lt;div&gt; This is text #2, on a new line &lt;/div&gt;</code></pre></li></ul><ul id="42287db3-c70d-4a88-b0ec-c1be7fdf4de3" class="bulleted-list"><li style="list-style-type:disc"><code>&lt;span&gt; ... &lt;/span&gt;</code> → the <code>span</code> is an inline-level container. Inline means that it’s a type of container which only takes up as much width as necessary (based on its children’s dimensions,) and doesn’t start on a new line.<p id="ebc0ca4c-dc3f-4654-a3d0-992ea5e5a11a" class="">For example:</p><pre id="ee62fae7-6bae-4b7f-b45d-fbcf12e3057c" class="code"><code>This is a &lt;span&gt; piece of text &lt;/span&gt; that all lives on the same line.</code></pre><p id="443eb984-642e-469e-b778-d4a8d0f5b95b" class="">One popular usecase of the <code>span</code> container is for styling individual words or elements. For example, if we wanted to make only the <code>piece of text</code> words blue in the example above, we would write:</p><pre id="0a7dadc0-64d5-4168-8278-101e594d23ee" class="code"><code>This is a &lt;span style=&quot;color: blue&quot;&gt; piece of text &lt;/span&gt; that all lives on the same line.</code></pre><p id="a7562922-9d4e-4ff7-8059-22ab7adec853" class="">But we are getting ahead of ourselves. More on styling in a future tutorial about CSS.</p></li></ul><h3 id="7ec6badd-b217-4088-bd14-74e7787b7a4e" class="">Special characters — HTML entities</h3><p id="50a2d590-2d7a-42ca-9db1-c74f3c5e35af" class="">Certain characters are reserved in HTML, for reasons having to do with its structure as a markup language. For example, <code>&lt;</code> and <code>&gt;</code> are used to define tags. If we want to use these characters as part of our content, we need to write them differently, using <em>HTML entities</em>.</p><p id="909f0a71-7f1e-457a-bc63-ca8899568adf" class="">A character entity looks like this:<code>&amp;entity_name;</code> or <code>&amp;#entity_number;</code></p><p id="56b04930-fa02-4d87-bc74-d57b2b2bfd58" class="">For example, if we write <code>&amp;lt;</code> in our HTML file, the browser will display that as the lower-than sign, <code>&lt;</code>. <code>&amp;gt;</code> gets displayed as the greater-than sign, <code>&gt;</code>. A few other useful entities below:</p><ul id="c1ed9795-63b5-4a46-bcd7-2e45d341a305" class="bulleted-list"><li style="list-style-type:disc"><code>&amp;nbsp;</code> → non-breaking space; You need to use this entity if you want more than one space between your words; If you simply add multiple regular spaces in your HTML file, the browser will reduce them to one single space.</li></ul><ul id="9212a35d-e7af-427a-baec-b57cadc2e626" class="bulleted-list"><li style="list-style-type:disc"><code>&amp;amp;</code> → the <code>&amp;</code> symbol</li></ul><ul id="10ddb38d-9eb7-4bf1-a864-d5f14e3b0293" class="bulleted-list"><li style="list-style-type:disc"><code>&amp;copy;</code> → the <code>©</code> symbol</li></ul><ul id="76ee03f0-92d7-4b72-8329-675abda651ae" class="bulleted-list"><li style="list-style-type:disc"><code>&amp;cent;</code> → the <code>¢</code> symbol</li></ul><ul id="7af9a059-3ca6-46e7-b8ce-9bddde3455d4" class="bulleted-list"><li style="list-style-type:disc"><code>&amp;ndash;</code> → En dash, –</li></ul><ul id="cdfa4871-630d-4c12-b7f1-e31eaf271ed4" class="bulleted-list"><li style="list-style-type:disc"><code>&amp;mdash;</code> → Em dash, —</li></ul><p id="6ee9ee6e-8c0f-4404-8d8a-760163619532" class="">For a full list of entities, go <a href="https://www.freeformatter.com/html-entities.html">here</a>. You will notice that any character can also be written as an HTML entity.</p><h3 id="7678fc89-d685-4251-b05c-e50ea8ec8564" class="">Nesting</h3><p id="5481a6fe-074b-4738-958b-afd8ff833dcc" class="">As you noticed in all previous examples, HTML tags are nested within each-other. For instance all of the content you want inside the body of the page is nested within the <code>body</code> start and end tags. </p><p id="f477c834-bedf-4373-b7e4-4e29e384bfa6" class="">For example, if you want an image to act as a link, you can nest an <code>img</code> tag inside of an <code>a</code> tag, like this:</p><pre id="530e856a-2a10-4e3d-956c-d62f729faa51" class="code"><code>&lt;a href=&quot;http://www.google.com&quot;&gt;
+	&lt;img src=&quot;https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png&quot; width=&quot;200&quot;/&gt;
+&lt;/a&gt;</code></pre><p id="278fb0ef-c684-4eee-8efc-285438c5f3ba" class="">Not all possible pairs of HTML tags can be nested within each other, so feel free to experiment and see what works and what doesn’t.</p><h2 id="803d8bc2-fc70-420f-acb6-97fcb5116a76" class="">Further resources</h2><ul id="55feb178-7b50-4002-b76e-c3aabdfef40f" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.w3schools.com/htmL/">W3Schools HTML Tutorial</a></li></ul><ul id="9d992558-9e6e-4aea-9e82-316b10cde28b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.w3schools.com/tags/default.asp">HTML Tags Reference</a></li></ul><ul id="0e4457a1-3139-4dc0-9692-7a62ef20df75" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.w3schools.com/html/html_entities.asp">HTML Special Characters (entities)</a></li></ul><ul id="3e14426c-e501-46d1-9c0c-2f58bea8f6e5" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.w3schools.com/html/html_blocks.asp">HTML Block vs Inline Elements</a></li></ul><ul id="7d891591-5def-41da-8682-719c21f5f4a2" class="bulleted-list"><li style="list-style-type:disc"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN Reference</a><ul id="5718d0f3-6a40-482e-a285-7fd56603aaca" class="bulleted-list"><li style="list-style-type:circle">This website offers a more accurate &amp; comprehensive reference than W3Schools, but it can be more intimidating in the beginning. Use whichever you are most comfortable with.</li></ul></li></ul></div></article></body></html>

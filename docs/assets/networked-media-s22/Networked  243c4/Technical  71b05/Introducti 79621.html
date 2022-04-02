@@ -1,0 +1,828 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Introduction to CSS</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="79621f11-5c18-4650-98b7-a320817e99f6" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">💅</span></div><h1 class="page-title">Introduction to CSS</h1></header><div class="page-body"><h2 id="323b0971-e24a-4639-a9ae-34a2904baef4" class="">CSS</h2><p id="55f4cce2-e8b1-4863-af5b-77fabcca535d" class="">CSS stands for Cascading Style Sheets. It is the language we use to style an HTML document. At a high level, HTML is intended to provide the <em>structure</em> of a document, through tags, while CSS can be seen as the <em>presentation </em>layer of that structure: color, spacing, layout, and much more. CSS also enables the user to specify how the content should be presented across different types of media and different sized screens.</p><p id="bee0372c-7f5d-4006-afa4-ff53b920a507" class="">CSS is a rule-based language, which allows us to concisely specify how we want different parts of our HTML pages to look like. It allows us to declare things like <em>I want all paragraphs on my HTML page to be red over a blue background, with a 16pt font size, </em>in a machine-readable language. Writing this verbal rule in CSS looks like this:</p><pre id="0418174b-660a-40d3-a0e9-6673dc745d4c" class="code"><code>p {
+    color: red;
+    background-color: blue;
+		font-size: 16pt;
+}</code></pre><p id="af70314f-b0bb-4209-a857-699db3b7db8e" class="">What you see above is <em>a rule</em>. A stylesheet (CSS file) consists of multiple rules like this one, which get applied to various parts of our HTML page.</p><p id="e5eb04e5-a2be-4c07-af3d-dc373c2f5980" class="">The syntax of an individual rule consists of:</p><ul id="05323e22-37db-4e3c-8ba0-cdfa9107ed5c" class="bulleted-list"><li style="list-style-type:disc">the selector(s): <em>who the rule is getting applied to; in the previous example, the selector is </em><code><em>p</em></code><em>, meaning that the rule gets applied to all paragraphs (HTML </em><code><em>&lt;p&gt;</em></code><em> tags.)</em></li></ul><ul id="4880787c-9a80-41f2-b7d1-c2da502f46c0" class="bulleted-list"><li style="list-style-type:disc">declarations: <em>they take the form of property / value pairs, and define the actual styling. There are somewhere around 200 CSS properties total, but you will likely be using ~20 on a regular basis. We will explore the most important ones in this tutorial and the following one.</em></li></ul><h3 id="1803665c-0fa5-4c54-842b-e6fe9a5480f9" class="">Using CSS on a webpage</h3><p id="8253c0c5-36f5-469e-978e-7f01d43c1085" class="">There are three main ways of styling an HTML page. They all use the same CSS language and syntax, but are different in <em>where</em> the CSS code lives. We’ll mostly use the <span style="border-bottom:0.05em solid">third option</span>, but it’s important to be aware of all three.</p><ul id="883ac808-bd2b-4cbb-b7ff-e9a7f45bdb0f" class="bulleted-list"><li style="list-style-type:disc"><strong>Option #1</strong> (not great): <code>style</code> attribute for individual elements<pre id="adb76560-8f73-4ef1-b5f6-7877dc4db9f3" class="code"><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;!-- We have an empty head tag here, no page metadata. --&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;p style=&quot;color: red;&quot;&gt; This is a red paragraph &lt;/p&gt;
+		&lt;p&gt; This paragraph is NOT red. &lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="0cb7f217-2c59-4bde-a739-0f05170c357c" class="">Using the <code>style</code> attribute is a great way to try things out quickly in CSS. However, as an element’s styling gets more complex (meaning multiple CSS properties,) and more elements get custom styles, the HTML document can become <em>really messy really quickly. </em>At the same time, if we wanted to apply the same style to two different elements, we would have to copy and paste the value of the style attribute, and that’s not ideal. This is why we will rarely use <code>style</code> as an attribute. </p></li></ul><ul id="8bef52df-9e3c-4937-906c-7e7bcf27581b" class="bulleted-list"><li style="list-style-type:disc"><strong>Option #2</strong> (a bit better): <code>&lt;style&gt;</code> tag, declared inside of <code>&lt;head&gt;</code><pre id="d1548ff3-4188-42d8-b1b1-62e7cd34547a" class="code"><code>&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    p {
+      color: red;
+    }
+  &lt;/style&gt;
+	&lt;!-- The CSS code above applies the red color property to ALL &lt;p&gt; tags on the page. --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt; This is my red paragraph. &lt;/p&gt;
+  &lt;p&gt; This is another red paragraph. &lt;/p&gt;
+  &lt;p&gt; All paragraphs are actually red in this example. &lt;/p&gt;
+
+  This text, however, is not red, because it&#x27;s not enclosed in a p tag.
+  &lt;div&gt; Neither is this one. &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></li></ul><ul id="fd6da7a5-49fe-4739-acba-9fc341f23b94" class="bulleted-list"><li style="list-style-type:disc"><strong>Option #3</strong> (much better): Using a separate <code>CSS</code> file<p id="edd2c3d4-99c0-4120-9018-7fdfd41ff820" class="">This is really just Option #2, but the <code>&lt;style&gt;</code> tag is replaced by an external file. Everything else is the same. We first create a file called <code>style.css</code> where we write our style declarations:</p><pre id="d4e330f3-babe-4c83-9228-306e7c61fea0" class="code"><code>p {
+    color: red;
+}</code></pre><p id="7e6ff861-72c1-4da1-b608-3d3e13bbdcf8" class="">And then point the HTML page to this external styling file. To link an external stylesheet, you&#x27;d include a <code>&lt;link&gt;</code> element inside the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"><code>&lt;head&gt;</code></a> tag of your HTML file like this:</p><p id="33e1ccbc-8a76-4bee-8b2f-f5b109a1bc3e" class="">
+</p><pre id="4d6d3910-16f2-4ef8-980c-1e70bcbeda76" class="code"><code>&lt;html&gt;
+&lt;head&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot;&gt;
+	&lt;!-- We use the &lt;link&gt; tag to point to our CSS file. --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt; This is a red paragraph. &lt;/p&gt;
+
+	&lt;p style=&quot;color: blue&quot;&gt; The style attribute has higher priority 
+		than the external stylesheet, so this paragraph will be blue. 
+  &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="bf8d3f89-1d5c-42d4-a216-360da992b4f1" class="">
+</p><p id="7820acee-467e-42ac-b7f8-7cb66370c452" class="">The <code><strong>&lt;link&gt;</strong></code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> element we used to include the stylesheet specifies relationships between the current document and external resources. This element is most commonly used to link to <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">stylesheets</a>, but is also used to establish site icons. The <strong><code>rel</code></strong> stands for &quot;relationship&quot;, and is probably one of the key features of the <code>&lt;link&gt;</code> element — the value denotes how the item being linked to is related to the containing document. As you&#x27;ll see from our <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types">Link types</a> reference, there are many different kinds of relationship.</p></li></ul><p id="d84406fb-3d15-4f99-b794-7be53c097119" class="">
+</p><h3 id="9ff67d74-ee68-4bf4-ad9f-fad445c37356" class="">CSS properties</h3><ul id="8854d6b2-6fb0-474c-8e6c-bf13f9ddc436" class="toggle"><li><details open=""><summary>Color ✅</summary><p id="adc11861-0b88-49a4-a97e-f894eb632e62" class="">The <code><strong>&lt;color&gt;</strong></code> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Types">data type</a> represents a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">color</a>. A <code>&lt;color&gt;</code> may also include an <a href="https://en.wikipedia.org/wiki/Alpha_compositing">alpha-channel</a> <em>transparency value</em>, indicating how the color should <a href="https://www.w3.org/TR/2003/REC-SVG11-20030114/masking.html#SimpleAlphaBlending">composite</a> with its background.</p><ul id="861344fb-fe2f-4b3a-9e34-0109a253edc3" class="bulleted-list"><li style="list-style-type:disc">We will mainly cover <code>&lt;color&gt;</code> as defined in 2 ways: named colors and hex &amp; <code>rgb()</code><ul id="b580ac1e-3927-4005-95d7-175ddf76d671" class="bulleted-list"><li style="list-style-type:circle">Named colors - Using a keyword (such as <code>blue</code> or <code>transparent</code>). <ul id="2b7bf560-4a2a-4c20-a545-68c3e59b1609" class="bulleted-list"><li style="list-style-type:square">Color keywords are case-insensitive identifiers that represent a specific color, such as <code>red</code>, <code>blue</code>, <code>black</code>, or <code>lightseagreen</code>. Although the names more or less describes their respective colors, they are essentially artificial, without a strict rationale behind the names used.</li></ul><ul id="6c9c64ad-75a1-4be7-8470-676253da8bb7" class="bulleted-list"><li style="list-style-type:square">Unlike HTML, CSS will completely ignore unknown keywords.</li></ul><ul id="15c95200-fc5d-4380-91f8-ee3f157328e1" class="bulleted-list"><li style="list-style-type:square">The color keywords all represent plain, solid colors, without transparency.</li></ul><ul id="08e5306a-8fb5-45fa-a3d5-09f657aebeea" class="bulleted-list"><li style="list-style-type:square">Several keywords are aliases for each other:<ul id="23175b0b-a28f-4832-910b-a4b5653e2853" class="bulleted-list"><li style="list-style-type:disc"><code>aqua</code> / <code>cyan</code></li></ul><ul id="bfe3ffea-45b5-4f71-aa64-4b4ab7a7d290" class="bulleted-list"><li style="list-style-type:disc"><code>fuchsia</code> / <code>magenta</code></li></ul><ul id="5c0b28a7-f773-4c21-97bb-e69470d824f1" class="bulleted-list"><li style="list-style-type:disc"><code>darkgray</code> / <code>darkgrey</code></li></ul><ul id="2ec4833b-9508-47db-9c3c-d3559522e46c" class="bulleted-list"><li style="list-style-type:disc"><code>darkslategray</code> / <code>darkslategrey</code></li></ul><ul id="1e89d9db-aa48-4bcb-ad99-552dbc322d05" class="bulleted-list"><li style="list-style-type:disc"><code>dimgray</code> / <code>dimgrey</code></li></ul><ul id="d90504b1-540c-4b1e-aac2-7420fde7bc35" class="bulleted-list"><li style="list-style-type:disc"><code>lightgray</code> / <code>lightgrey</code></li></ul><ul id="55afba95-435c-4aa8-b9b9-458b98bb16af" class="bulleted-list"><li style="list-style-type:disc"><code>lightslategray</code> / <code>lightslategrey</code></li></ul><ul id="a460f42f-e9a8-48ce-9dc7-7f39df54a9bf" class="bulleted-list"><li style="list-style-type:disc"><code>gray</code> / <code>grey</code></li></ul><ul id="c2e660fa-878d-4745-857c-c374f0bf0908" class="bulleted-list"><li style="list-style-type:disc"><code>slategray</code> / <code>slategrey</code></li></ul></li></ul></li></ul><ul id="1f13fb7f-1fea-40db-a701-fb046c6916bf" class="bulleted-list"><li style="list-style-type:circle">Hex &amp; <code>rgb()</code> - Using the <a href="https://en.wikipedia.org/wiki/RGB_color_model#Geometric_representation">RGB cubic-coordinate</a> system. <ul id="00fa0451-bfcc-41b0-ac57-7a25c7791702" class="bulleted-list"><li style="list-style-type:square">rgb(): The RGB color model defines a given color in the <a href="https://en.wikipedia.org/wiki/SRGB">sRGB color space</a> according to its red (r), green (g), and blue (b) components. An optional alpha (a) component represents the color&#x27;s transparency. Syntax-wise, RGB colors can be expressed through both hexadecimal (prefixed with <code>#</code>) and functional (<code>rgb()</code>, <code>rgba()</code>) notations.</li></ul><ul id="fcfafed6-448c-47eb-a29a-ce1b7ca49727" class="bulleted-list"><li style="list-style-type:square">rgb notation: <code><strong>rgb[a](R, G, B[, A])</strong></code><p id="35164382-7084-48cc-822d-6cb7c53d1d18" class=""><code>R</code> (red), <code>G</code> (green), and <code>B</code> (blue) can be either <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number"><code>&lt;number&gt;</code></a>s or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage"><code>&lt;percentage&gt;</code></a>s, where the number <code>255</code> corresponds to <code>100%</code>. <code>A</code> (alpha) can be a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/number"><code>&lt;number&gt;</code></a> between <code>0</code> and <code>1</code>, or a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage"><code>&lt;percentage&gt;</code></a>, where the number <code>1</code> corresponds to <code>100%</code> (full opacity).</p></li></ul><ul id="18324390-f83d-4486-a4ea-b46ee12d4c09" class="bulleted-list"><li style="list-style-type:square">hex notation: <code><strong>#RGB[A]</strong></code><p id="11e25bef-b01e-4303-9485-f1aa88653196" class=""><code>R</code> (red), <code>G</code> (green), <code>B</code> (blue), and <code>A</code> (alpha) are hexadecimal characters (0–9, A–F). <code>A</code> is optional. The three-digit notation (<code>#RGB</code>) is a shorter version of the six-digit form (<code>#RRGGBB</code>). For example, <code>#f09</code> is the same color as <code>#ff0099</code>. Likewise, the four-digit RGB notation (<code>#RGBA</code>) is a shorter version of the eight-digit form (<code>#RRGGBBAA</code>). For example, <code>#0f38</code> is the same color as <code>#00ff3388</code>.</p></li></ul></li></ul><pre id="90a957c5-9928-44ec-af77-7b4378caa90d" class="code"><code>color: red; /* named color */
+color: rbga(255, 0, 0, 1); /* rgba color */
+color: #FF0000; /* hex color */
+
+/* all three lines show the same color */</code></pre></li></ul></details></li></ul><ul id="bb270b8f-206c-4fe8-8a75-7707fc0c1b44" class="toggle"><li><details open=""><summary>Background-color ✅</summary><ul id="8b1dc4dc-f544-4be6-8286-14d36aaf4801" class="bulleted-list"><li style="list-style-type:disc">Initially, the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">background color</a> of an HTML tag is transparent. However, you can change it by using the <code>background-color</code> property, which is specified as a single <code>&lt;color&gt;</code> value.</li></ul><pre id="1725309e-20d8-4873-8d76-15e5f2936cb0" class="code"><code>/* Keyword values */
+background-color: red;
+background-color: indigo;
+
+/* Hexadecimal value */
+background-color: #bbff00;    /* Fully opaque */
+background-color: #bf0;       /* Fully opaque shorthand */
+background-color: #11ffee00;  /* Fully transparent */
+background-color: #1fe0;      /* Fully transparent shorthand  */
+background-color: #11ffeeff;  /* Fully opaque */
+background-color: #1fef;      /* Fully opaque shorthand  */
+
+/* RGB value */
+background-color: rgb(255, 255, 128);        /* Fully opaque */
+background-color: rgba(117, 190, 218, 0.5);  /* 50% transparent */</code></pre></details></li></ul><ul id="eff82426-4188-4ec0-a3d7-7a8d2f354fa9" class="toggle"><li><details open=""><summary>Width &amp; Height ✅</summary><figure id="47703447-26c4-4aa0-92be-cbfdd9b13a8d" class="image"><a href="Introducti%2079621/Untitled.png"><img style="width:548px" src="Introducti%2079621/Untitled.png"/></a></figure><ul id="107de917-ee30-4191-a8f3-dd7e54f44936" class="bulleted-list"><li style="list-style-type:disc">The <code><strong>width</strong></code> and <strong><code>height</code></strong> CSS property set an element&#x27;s <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">width</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">height</a>. By default, it sets the width of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#content_area">content area</a>, but if <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"><code>box-sizing</code></a> is set to <code>border-box</code>, it sets the width of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model#border_area">border area</a>.</li></ul><ul id="0db66c13-eaa0-4a63-833d-abadd7aa1bb2" class="bulleted-list"><li style="list-style-type:disc">Syntax:</li></ul><pre id="dd8ecf94-e830-4645-a34e-0e8e2539e160" class="code"><code>/* &lt;length&gt; values */
+width: 300px;
+height: 25em;
+
+/* &lt;percentage&gt; value */
+width: 75%;
+
+/* Keyword values */
+width: max-content;
+height: min-content;
+width: fit-content(20em);
+height: auto;
+
+/* Global values */
+width: inherit;
+height: initial;
+width: revert;
+height: unset;</code></pre></details></li></ul><ul id="75f048ce-2e7f-42a8-86d3-402bebe3e8cf" class="toggle"><li><details open=""><summary>Typography ✅</summary><ul id="64cf2434-d5ee-47b6-9a69-22ed7ebe269d" class="bulleted-list"><li style="list-style-type:disc">The <code><strong>font</strong></code> property sets all the different properties of an element&#x27;s font. Alternatively, it sets an element&#x27;s font to a system font.<ul id="253e0247-4850-446c-bf4a-5935739b39d1" class="bulleted-list"><li style="list-style-type:circle">font-size<ul id="4c5f3884-bfaf-47d9-974e-7d21e2cb714e" class="bulleted-list"><li style="list-style-type:square">The <code><strong>font-size</strong></code> property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"><code>&lt;length&gt;</code></a> units, such as <code>em</code>, <code>ex</code>, and so forth.</li></ul><pre id="f751e461-d181-4916-883f-170c409765e6" class="code"><code>/* &lt;absolute-size&gt; values */
+font-size: xx-small;
+font-size: x-small;
+font-size: small;
+font-size: medium;
+font-size: large;
+font-size: x-large;
+font-size: xx-large;
+font-size: xxx-large;
+
+/* &lt;relative-size&gt; values */
+font-size: smaller;
+font-size: larger;
+
+/* &lt;length&gt; values */
+font-size: 12px;
+font-size: 0.8em;
+
+/* &lt;percentage&gt; values */
+font-size: 80%;
+
+/* Global values */
+font-size: inherit;
+font-size: initial;
+font-size: revert;
+font-size: unset;</code></pre><ul id="7ee90a4d-c324-4cb2-ae6c-8f5390fc9671" class="bulleted-list"><li style="list-style-type:square">Units to specify:<ul id="827766a0-44cb-437d-bd51-48d242a97299" class="bulleted-list"><li style="list-style-type:disc"><code>px</code> - Setting the font size in pixel values (<code>px</code>) is a good choice when you need pixel accuracy. A px value is static. This is an OS-independent and cross-browser way of literally telling the browsers to render the letters at exactly the number of pixels in height that you specified. The results may vary slightly across browsers, as they may use different algorithms to achieve a similar effect.</li></ul><ul id="50d3ea11-93fc-4211-8f59-0e7220751478" class="bulleted-list"><li style="list-style-type:disc"><code>em</code> - Using an <code>em</code> value creates a dynamic or computed font size. The numeric value acts as a multiplier of the <code>font-size</code> property of the element on which it is used. In order to calculate the <code>em</code> equivalent for any pixel value required, you can use this formula:<pre id="ee23a178-b834-472c-a59c-2144d8db95ec" class="code"><code>em = desired element pixel value / parent element font-size in pixels</code></pre></li></ul><p id="f6609e72-7b6c-4b96-9b1e-7ebd647be83b" class="">
+</p></li></ul></li></ul><ul id="7304511f-6a29-4c96-b698-942117356648" class="bulleted-list"><li style="list-style-type:circle">The <code><strong>font-family</strong></code> specifies a prioritized list of one or more font family names and/or generic family names for the selected element. Values are separated by commas to indicate that they are alternatives. The browser will select the first font in the list that is installed or that can be downloaded using a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"><code>@font-face</code></a> at-rule.<ul id="de9a34eb-6956-4ae9-83d9-1135d08fdacb" class="bulleted-list"><li style="list-style-type:square">The <code>font-family</code> property specifies a list of fonts, from highest priority to lowest. You should always include at least one generic family name in a <code>font-family</code> list, since there&#x27;s no guarantee that any given font is available. This lets the browser select an acceptable fallback font when necessary.</li></ul><ul id="048cdd6d-1af3-41e0-b620-ee874246d05f" class="bulleted-list"><li style="list-style-type:square">For <code>font-family</code> there is no specific default or initial value; the initial value always depends on the browser and/or operating system.</li></ul><ul id="3555c756-f331-4a46-b946-8f38ac49fea6" class="bulleted-list"><li style="list-style-type:square">The <code>font-family</code> property lists one or more font families, separated by commas. Each font family is specified as either a <code>&lt;family-name&gt;</code> or a <code>&lt;generic-name&gt;</code> value.<pre id="49848724-4a3f-4859-9e21-88b08930825b" class="code"><code>h1 {
+	font-family: serif;
+  /* Using the default serif font of the system for our headings */
+}
+
+p {
+	font-family: &quot;Gill Sans Extrabold&quot;, sans-serif;
+	/* Using Gill Sans Extrabold for our paragraphs. If the font is
+     not available for any reason, we fall back onto the default
+     system sans-serif font. 
+  */ 
+}
+</code></pre><ul id="51168a4c-94d2-45d6-b440-3db8659d5c3a" class="bulleted-list"><li style="list-style-type:disc"><strong>Note: </strong>If a font name contains white-space, it must be quoted. Single quotes must be used when using the &quot;style&quot; attribute in HTML.</li></ul></li></ul></li></ul></li></ul><ul id="2a88dee2-f706-47c9-8ed8-f23a6203d7c5" class="bulleted-list"><li style="list-style-type:disc"><code>serif</code>, <code>sans-serif</code>, <code>monospace</code> (Generic family names)<ul id="22adb7be-7178-4885-86aa-15da59a945f8" class="bulleted-list"><li style="list-style-type:circle"><code>serif</code> - In typography, a serif is a small line or stroke regularly attached to the end of a larger stroke in a letter or symbol within a particular font or family of fonts.</li></ul><ul id="86fa7775-9e48-4b5f-b99d-c7d027f4b3b9" class="bulleted-list"><li style="list-style-type:circle"><code>sans-serif</code> - In typography and lettering, a sans-serif, sans serif, gothic, or simply sans letterform is one that does not have extending features called &quot;serifs&quot; at the end of strokes.</li></ul><figure id="f3c289d1-ae24-40c9-84ac-e9c5785f11ab" class="image"><a href="Introducti%2079621/Untitled%201.png"><img style="width:1600px" src="Introducti%2079621/Untitled%201.png"/></a></figure><ul id="00f2779f-4c0a-4989-987e-43239dea02c6" class="bulleted-list"><li style="list-style-type:circle"><code>monospace</code> - A monospaced font, also called a fixed-pitch, fixed-width, or non-proportional font, is a font whose letters and characters each occupy the same amount of horizontal space. This contrasts with variable-width fonts, where the letters and spacings have different widths.</li></ul><figure id="dd58d5b2-1753-41b4-bb83-70fbabe73b07" class="image"><a href="Introducti%2079621/Untitled%202.png"><img style="width:1100px" src="Introducti%2079621/Untitled%202.png"/></a></figure></li></ul><p id="cf4f76fe-26d6-4921-9d65-8b30f6e9a092" class="">
+</p></details></li></ul><ul id="9fbcff9a-1954-4fed-9db9-48d3830708fb" class="toggle"><li><details open=""><summary>Text alignment ✅</summary><p id="fc4200d5-4ecd-44df-91eb-19e0d871aca9" class="">The <code><strong>text-align</strong></code> property sets the horizontal alignment of text inside of its parent. The <code>text-align</code> property is specified using keyword values:</p><p id="9cfc911e-af3d-4ad5-952c-fc8f40d91111" class=""><code>start</code>, <code>end</code>, <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>, <code>justify-all</code>, or <code>match-parent</code>.</p><pre id="87fddf51-3799-451b-9443-a6a787d459a3" class="code"><code>p {
+	text-align: right; /* This right-aligns our text. */
+}</code></pre></details></li></ul><ul id="62da3dc5-b646-4166-8cbd-3fdc9068ef83" class="toggle"><li><details open=""><summary>Prototyping CSS changes in the Developer Console (using Chrome) ✅</summary><ul id="e3f0864f-a5fd-4995-9b30-9493d646e881" class="bulleted-list"><li style="list-style-type:disc">Chrome DevTools is a set of web developer tools built directly into the Chrome browser. DevTools can help you edit pages on-the-fly and diagnose problems quickly.</li></ul><ul id="9b926587-a533-4ff9-83d7-6ff751056555" class="bulleted-list"><li style="list-style-type:disc">When you want to inspect a DOM (Document Object Model) node&#x27;s styles or attributes, right-click the element and select <strong>Inspect</strong>. (Or press Command+Option+C (Mac) or Control+Shift+C (Windows, Linux, Chrome OS).</li></ul><figure id="de1a9ae2-ef24-4a87-9add-a3699729184c" class="image"><a href="Introducti%2079621/Untitled%203.png"><img style="width:1600px" src="Introducti%2079621/Untitled%203.png"/></a></figure><ul id="2cc7eea2-deae-4278-a799-d91a38cf6441" class="bulleted-list"><li style="list-style-type:disc">The <strong>Elements</strong> panel of DevTools opens. The element where you right-clicked is highlighted in the <strong>DOM Tree</strong>. The DOM Tree is where you do all DOM-related activities in DevTools. </li></ul><figure id="057a131f-cc9a-4681-b2af-38d820395152" class="image"><a href="Introducti%2079621/Untitled%204.png"><img style="width:1600px" src="Introducti%2079621/Untitled%204.png"/></a></figure><ul id="3205cad3-4728-4194-b048-60c91507b302" class="bulleted-list"><li style="list-style-type:disc">Under the “Styles” tab, you can access the CSS code and manipulate it.<figure id="bdffcb5d-72c4-437a-9136-ba215551afdf" class="image"><a href="Introducti%2079621/Jan-29-2022_11-08-12.gif"><img style="width:1386px" src="Introducti%2079621/Jan-29-2022_11-08-12.gif"/></a></figure></li></ul><ul id="b04730e7-326a-4c5e-b206-5ae053d0806e" class="bulleted-list"><li style="list-style-type:disc">More on Viewing And Changing CSS - An interactive <a href="https://developer.chrome.com/docs/devtools/css/">tutorial</a> to follow through</li></ul><p id="aa259ae9-bfae-4140-a60b-d9f63fed9cfe" class="">
+</p><p id="3ffe17b1-2fa8-42e0-a7c7-d41e1bd5bd3c" class="">A similar interface is available in Mozilla Firefox, Safari and most other modern browsers.</p></details></li></ul><ul id="5ba74134-0e21-446a-aa52-a49dce74eafb" class="toggle"><li><details open=""><summary>Class &amp; ID attribute  ✅</summary><ul id="e7c2f5ed-f334-4f8a-923d-477dc2124737" class="bulleted-list"><li style="list-style-type:disc">CSS allows you to apply styles based on an element&#x27;s <code>class</code> or <code>id</code>. Each <em>class</em> or <em>ID</em> that you create can have its own style.<ul id="1533e0ca-21cf-4210-a44c-2fddac6b56f5" class="bulleted-list"><li style="list-style-type:circle"><strong>Class</strong> <strong>selectors </strong>allow you to group things based on their logical function (or other purpose).<ul id="9fd769cb-485a-4120-8512-32995e0fe99f" class="bulleted-list"><li style="list-style-type:square">The class selector starts with a dot (<code>.</code>) character. It will select everything in the document with that class applied to it.<pre id="72ea9100-b155-4ce1-93ff-9829ecc04560" class="code"><code>.search { width: 100% } /* Select everything in the document with class .search and apply width property to them */</code></pre></li></ul><ul id="f70c3f2a-138b-4dd8-993d-8a4f3466cd9d" class="bulleted-list"><li style="list-style-type:square">Targeting classes on particular elements<ul id="7869aaf5-ea15-4fe7-86e9-7c109b6010e1" class="bulleted-list"><li style="list-style-type:disc">You can create a selector that will target specific elements with the class applied. In this next example, we will highlight a <code>&lt;span&gt;</code> with a class of <code>highlight</code> differently to an <code>&lt;h1&gt;</code> heading with a class of <code>highlight</code>. We do this by using the type selector for the element we want to target, with the class appended using a dot, with no white space in between.<pre id="8f530976-91a9-4c5d-88ab-dcae7d4b6ed5" class="code"><code>span.highlight {
+    background-color: yellow;
+}
+
+h1.highlight {
+    background-color: pink;
+}</code></pre></li></ul></li></ul><ul id="832b83a0-acb9-4246-8075-9ed4d74fe33b" class="bulleted-list"><li style="list-style-type:square">Target an element if it has more than one class applied<ul id="604114d4-6164-4d3b-9728-f70b4ea8629e" class="bulleted-list"><li style="list-style-type:disc">You can apply multiple classes to an element and target them individually, or only select the element when all of the classes in the selector are present. This can be helpful when building up components that can be combined in different ways on your site.</li></ul><ul id="8e71b579-6d1b-4b95-bdda-e1ba1a9191b3" class="bulleted-list"><li style="list-style-type:disc">In the example below, we have a <code>&lt;div&gt;</code> that contains a note. The grey border is applied when the box has a class of <code>notebox</code>. If it also has a class of <code>warning</code> or <code>danger</code>, we change the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color"><code>border-color</code></a>. We can tell the browser that we only want to match the element if it has two classes applied by chaining them together with no white space between them. <ul id="faf539a7-b449-44c2-8ce3-8abfc65e28ff" class="bulleted-list"><li style="list-style-type:circle">In CSS:</li></ul><pre id="d4ea621c-9164-4816-8a07-352f8eb463cd" class="code"><code>.notebox {
+  border: 4px solid #666; /* The grey border is applied when the box has a class of notebox */
+}
+
+.notebox.warning {
+  border-color: orange; /* Change border color to orange if the div also has a class of warning. */
+}
+
+.notebox.danger {
+  border-color: red; /* Change border color to red if the div also has a class of danger. */
+}</code></pre><ul id="27a7eba4-4d41-4324-83ab-90bf0fda8068" class="bulleted-list"><li style="list-style-type:circle">In HTML:</li></ul><pre id="72e85206-52f0-408e-81af-4da4536c8074" class="code"><code>&lt;div class=&quot;notebox&quot;&gt;
+    This is an informational note.
+&lt;/div&gt;
+
+&lt;div class=&quot;notebox warning&quot;&gt;
+    This note shows a warning.
+&lt;/div&gt;
+
+&lt;div class=&quot;notebox danger&quot;&gt;
+    This note shows danger!
+&lt;/div&gt;
+
+&lt;div class=&quot;danger&quot;&gt;
+    This won&#x27;t get styled — it also needs to have the notebox class
+&lt;/div&gt;</code></pre></li></ul></li></ul></li></ul><p id="b41037d0-55bd-44d6-bf66-dc9f566481ca" class="">
+</p><ul id="ac62e46e-7ce6-4f93-bcd9-702d3dbda75c" class="bulleted-list"><li style="list-style-type:circle"><strong>ID selectors</strong> are used in the same way as a class selector. However, an ID can be used only once per page, and elements can only have a single <code>id</code> value applied to them. It can select an element that has the <code>id</code> set on it, and you can precede the ID with a type selector to only target the element if both the element and ID match.<ul id="87207741-9711-4f28-8359-7da487546606" class="bulleted-list"><li style="list-style-type:square">ID selectors start with a hash (<code>#</code>) followed by the ID value. The below style sheet sets the margin property for the element with an ID of <code>logo</code>. <ul id="f16c993a-bf53-415a-9938-341d2aa6c140" class="bulleted-list"><li style="list-style-type:disc">In CSS:</li></ul><pre id="933c05aa-b27c-4730-a2b2-243f089aaf40" class="code"><code>#logo { margin: 9px } /* Assign margin property to ID #logo */</code></pre><ul id="a9ecd976-d5ff-4d3b-b51d-b3f9d62375e8" class="bulleted-list"><li style="list-style-type:disc">In HTML:</li></ul><pre id="ee482a83-10b7-4012-9015-78f50d4394aa" class="code"><code>&lt;h1 id=&quot;logo&quot;&gt;ID selector&lt;/h1&gt;</code></pre></li></ul><ul id="3da6e4cd-883e-4fd5-a6ff-aad294354374" class="bulleted-list"><li style="list-style-type:square"><strong>Warning:</strong> Using the same ID multiple times in a document may appear to work for styling purposes, but don&#x27;t do this. It results in invalid code, and will cause strange behavior in many places.</li></ul></li></ul></li></ul></details></li></ul><ul id="1cb4d91f-5f45-4fc7-b9f4-4825e9923b2b" class="toggle"><li><details open=""><summary>Margin ✅</summary><ul id="56dadd36-6f4a-4f5f-a0e2-08dd48dda6ec" class="bulleted-list"><li style="list-style-type:disc">CSS margins define the space around an element. It determines the amount of whitespace between neighboring components. It allows you to shift elements up and down the page and left and right. </li></ul><ul id="f059cbf5-1c1f-41f9-b95a-251eada6dc95" class="bulleted-list"><li style="list-style-type:disc">A negative margin value allows you to overlap page items. When trying to generate a broken grid effect, this can be useful.</li></ul><ul id="e38c65c4-8d04-4850-a837-d77963601327" class="bulleted-list"><li style="list-style-type:disc">It’s easy to center an element horizontally if the width of your website is fixed: Set the value margin to <code>auto</code> in the value margin field.</li></ul><ul id="928a1440-58fa-4618-9892-bdc8ee73ef10" class="bulleted-list"><li style="list-style-type:disc">The <code>margin</code> property may be specified using one, two, three, or four values. Each value is a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"><code>&lt;length&gt;</code></a>, a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage"><code>&lt;percentage&gt;</code></a>, or the keyword <code>auto</code>. <ul id="03305f49-436b-496e-a025-dbdf97505ab4" class="bulleted-list"><li style="list-style-type:circle">When <strong>one</strong> value is specified, it applies the same margin to <strong>all four sides</strong></li></ul><ul id="aa758b4a-031a-442a-89d6-3ea6f0b4f3fb" class="bulleted-list"><li style="list-style-type:circle">When <strong>two</strong> values are specified, the first margin applies to the <strong>top and bottom</strong>, the second to the <strong>left and right</strong>.</li></ul><ul id="0b702c2f-4a65-47ea-a95d-904564ffbcd0" class="bulleted-list"><li style="list-style-type:circle">When <strong>three</strong> values are specified, the first margin applies to the <strong>top</strong>, the second to the <strong>right and left</strong>, the third to the <strong>bottom</strong>.</li></ul><ul id="df55bde1-9fdb-495e-a586-278018005c9c" class="bulleted-list"><li style="list-style-type:circle">When <strong>four</strong> values are specified, the margins apply to the <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, and <strong>left</strong> in that order (clockwise).</li></ul><ul id="d20cc2c3-ff3b-4fde-ac5a-dabe92aae7a4" class="bulleted-list"><li style="list-style-type:circle">You can also specify the value of the side using: <code>margin-top</code>, <code>margin-left</code>, <code>margin-bottom</code>, <code>margin-right</code></li></ul><pre id="0563f129-9b6e-4ec8-a08a-799fad647c16" class="code"><code>/* for example, to assign the top margin at an absolute value of 10px: */
+margin-top: 10px;</code></pre><p id="e1a74317-db6a-4520-93dd-c9afc11e0405" class="">
+</p></li></ul></details></li></ul><ul id="986d0c65-b335-4d96-a32f-9df39899a357" class="toggle"><li><details open=""><summary>Borders ✅</summary><ul id="9eb19d99-a9c7-4cc3-869b-bf0786fb301e" class="bulleted-list"><li style="list-style-type:disc">The <code><strong>border</strong></code> property sets an element&#x27;s border. It sets the values of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width"><code>border-width</code></a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color"><code>border-color</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"><code>border-radius</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style"><code>border-style</code></a><ul id="55a9c9c4-4829-4038-9ba2-59097ba9f470" class="bulleted-list"><li style="list-style-type:circle">For both <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width"><code>border-width</code></a> , <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color"><code>border-color</code></a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style"><code>border-style</code></a>, the property may be specified using one, two, three, or four values.<ul id="45276bd5-3777-4f6a-bf05-393727e32ea5" class="bulleted-list"><li style="list-style-type:square">When <strong>one</strong> value is specified, it applies the same width to <strong>all four sides</strong>.</li></ul><ul id="dc144142-b521-4fb9-a30d-104663f9c56a" class="bulleted-list"><li style="list-style-type:square">When <strong>two</strong> values are specified, the first width applies to the <strong>top and bottom</strong>, the second to the <strong>left and right</strong>.</li></ul><ul id="94c6a9d6-a383-4f53-a4a6-b40eded3f77e" class="bulleted-list"><li style="list-style-type:square">When <strong>three</strong> values are specified, the first width applies to the <strong>top</strong>, the second to the <strong>left and right</strong>, the third to the <strong>bottom</strong>.</li></ul><ul id="38a832b7-6eed-4a8d-8994-649d3959514d" class="bulleted-list"><li style="list-style-type:square">When <strong>four</strong> values are specified, the widths apply to the <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, and <strong>left</strong> in that order (clockwise).</li></ul><ul id="1c5de6f7-8c8e-4177-8e15-b413b0684776" class="bulleted-list"><li style="list-style-type:square">The property can also set each side individually, for instance:</li></ul><pre id="f1aba34b-51b0-42c1-896d-3f16da690ca9" class="code"><code>border-top-color: red; /* set only the top border red */
+border-bottom-width: thin; /* set only the bottom border thin */
+border-left-style: dotted; /* set only the left border to a dotted line */</code></pre></li></ul><ul id="467a777d-d02e-4a7c-8ec9-8d5b2d9e3425" class="bulleted-list"><li style="list-style-type:circle"><code><strong>&lt;line-width&gt;</strong></code><strong> </strong>value defines the width of the border, either as an explicit nonnegative <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"><code>&lt;length&gt;</code></a> or a keyword. If it&#x27;s a keyword, it must be one of the following values: <code>thin</code> &lt; <code>medium</code> &lt; <code>thick</code></li></ul><ul id="31053898-5e36-43d7-8105-aa61e6c52ccf" class="bulleted-list"><li style="list-style-type:circle"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style"><code>border-style</code></a> property sets the line style for all four sides of an element&#x27;s border.<code>&lt;line-style&gt;</code> value describes the style of the border. It can have the following values: <code>hidden</code>, <code>none</code>, <code>dotted</code>, <code>dashed</code>, <code>solid</code>, <code>double</code>, <code>groove</code>, <code>ridge</code>, <code>inset</code>, <code>outset</code></li></ul><ul id="219dfc3a-11ef-4fec-aa28-782503d74e0f" class="bulleted-list"><li style="list-style-type:circle"><strong>Note:</strong> The border will be invisible if its style is not defined. This is because the style defaults to <code>none</code>.</li></ul></li></ul><ul id="3d7d9db7-f62e-4f6a-9931-7b1dd3f2ff65" class="bulleted-list"><li style="list-style-type:disc">Circles and other shapes you can make with <code>border-radius</code><ul id="73f37050-554f-41a7-91bb-65f634aaab9b" class="bulleted-list"><li style="list-style-type:circle">The <code><strong>border-radius</strong></code> property rounds the corners of an element&#x27;s outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners. The radius applies to the whole <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"><code>background</code></a>, even if the element has no border; the exact position of the clipping is defined by the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip"><code>background-clip</code></a> property.<p id="108fe6d8-79c2-4835-8532-940b2472ef19" class="">Some examples:</p><pre id="ccb93f30-7192-421f-86c5-5edd75584db2" class="code"><code>border-radius: 100px; /* 🔽 shape below */</code></pre><figure id="78d4d8d3-cd7b-4750-a09a-5fd556e9b940" class="image"><a href="Introducti%2079621/Screen_Shot_2022-01-29_at_11.15.46_AM.png"><img style="width:412px" src="Introducti%2079621/Screen_Shot_2022-01-29_at_11.15.46_AM.png"/></a></figure><pre id="c801638d-1444-4b23-9a24-82bd9fa7eece" class="code"><code>border-radius: 10% 30% 50% 70%; /* 🔽 shape below */</code></pre><figure id="e40ef8bb-adb1-42eb-b6c3-33cd8a0df5f1" class="image"><a href="Introducti%2079621/Screen_Shot_2022-01-29_at_11.16.44_AM.png"><img style="width:404px" src="Introducti%2079621/Screen_Shot_2022-01-29_at_11.16.44_AM.png"/></a></figure></li></ul></li></ul></details></li></ul><ul id="d38e2fcb-d9cf-4fe7-a71d-e9157b75c025" class="toggle"><li><details open=""><summary>Padding ✅</summary><ul id="b1e1eb4a-f1fd-4d61-aa86-2bd090118705" class="bulleted-list"><li style="list-style-type:disc">The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding"><code>padding</code></a> property controls the appearance of content within each element, or say, the amount of space between the content and the border of the page. It is most commonly used to create whitespace within items. The content will remain the same size as before, but more space will surround it when the padding value increases. This is beneficial when you enlarge the clickable area of interactive elements like buttons.</li></ul><ul id="593a0aee-8685-4ecd-9148-f326cad45afc" class="bulleted-list"><li style="list-style-type:disc">The <code>padding</code> property may be specified using one, two, three, or four values. Each value is a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"><code>&lt;length&gt;</code></a> or a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage"><code>&lt;percentage&gt;</code></a>. Negative values are invalid.<ul id="aeb58a32-a8bb-4d6b-a77a-3bae7e9153df" class="bulleted-list"><li style="list-style-type:circle">When <strong>one</strong> value is specified, it applies the same padding to <strong>all four sides</strong>.</li></ul><ul id="649c08d8-9d4e-4fbb-a44e-1682cd661607" class="bulleted-list"><li style="list-style-type:circle">When <strong>two</strong> values are specified, the first padding applies to the <strong>top and bottom</strong>, the second to the <strong>left and right</strong>.</li></ul><ul id="d211ab6c-315f-47ac-aee1-b573e4f2cc2d" class="bulleted-list"><li style="list-style-type:circle">When <strong>three</strong> values are specified, the first padding applies to the <strong>top</strong>, the second to the <strong>right and left</strong>, the third to the <strong>bottom</strong>.</li></ul><ul id="04c2f7f2-016a-4e0f-9a93-85fd5d222c74" class="bulleted-list"><li style="list-style-type:circle">When <strong>four</strong> values are specified, the paddings apply to the <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong>, and <strong>left</strong> in that order (clockwise).</li></ul></li></ul><ul id="155d3be9-5820-4cfb-aea1-43553e87adb3" class="bulleted-list"><li style="list-style-type:disc">Similar to the <code>margin</code> and <code>border</code> property, <code>padding</code> can also set sides individually by adding the specification after it: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom"><code>padding-bottom</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left"><code>padding-left</code></a> ,<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right"><code>padding-right</code></a> , <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top"><code>padding-top</code></a></li></ul></details></li></ul><ul id="9d665848-949b-47d6-8140-269527c41b14" class="toggle"><li><details open=""><summary>Difference between margin, border, padding ✅</summary><figure id="932a1c0d-6115-416e-881e-6c8a79099262" class="image"><a href="Introducti%2079621/Untitled.png"><img style="width:548px" src="Introducti%2079621/Untitled.png"/></a></figure><ul id="6eac7a58-aa37-4852-ad0e-c38eb3ceba9e" class="bulleted-list"><li style="list-style-type:disc">Margin is the space surrounding an element’s border in CSS, whereas padding is between its border and its content. </li></ul><ul id="8f12aefd-6bc9-4c73-8af7-0850f3a73fc9" class="bulleted-list"><li style="list-style-type:disc">The margin property governs the space around an element, whereas the padding property governs the space within an element.</li></ul></details></li></ul><ul id="50f882b1-4d3c-40ce-917d-3f06f0121b3d" class="toggle"><li><details open=""><summary>The HTML box model ✅</summary><ul id="72aaec45-e8b4-490b-8a1a-4809af738caf" class="bulleted-list"><li style="list-style-type:disc">Or CSS box model - it is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. Below is a CSS box model illustration, which is what you would see in a browser console. </li></ul><figure id="35b77fde-6ed1-4e34-a944-9b7573ca5254" class="image"><a href="Introducti%2079621/Untitled%205.png"><img style="width:1672px" src="Introducti%2079621/Untitled%205.png"/></a></figure><ul id="5493e921-c213-4297-b3fb-c55894bb3dc5" class="bulleted-list"><li style="list-style-type:disc">In order to set the width and height of an element correctly in all browsers, you need to know how the box model works. When you set the width and height properties of an element with CSS, you just set the width and height of the <strong>content area (blue part)</strong>. To calculate the full size of an element, you must also add padding, borders and margins.<ul id="8a72a0ea-c9bd-451e-9d93-7a298800e457" class="bulleted-list"><li style="list-style-type:circle">The total width of an element should be calculated like this:</li></ul><p id="546308b6-09bd-4098-ab16-6fee64a6679e" class=""><strong>Total element width = width + left padding + right padding + left border + right border + left margin + right margin</strong></p><ul id="949faced-77d6-4dca-911f-3c1c76ebeb40" class="bulleted-list"><li style="list-style-type:circle">The total height of an element should be calculated like this:</li></ul><p id="920a54c6-b143-41a2-b80e-6e2e9b68e1d7" class=""><strong>Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</strong></p></li></ul></details></li></ul><ul id="0185327f-8d49-48b6-8c88-2a0a6a1d117d" class="toggle"><li><details open=""><summary>Float</summary><ul id="2ea033b6-9dbd-4124-a73e-643a307669e2" class="bulleted-list"><li style="list-style-type:disc">The <code><strong>float</strong></code> property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. <ul id="53dfd10d-a2b1-453f-8a1d-e36e85596045" class="bulleted-list"><li style="list-style-type:circle"><strong>Note:</strong> Absolutely positioned elements ignore the <code>float</code> property!</li></ul><ul id="0b47508b-45cc-4723-b085-7fd49ab3115d" class="bulleted-list"><li style="list-style-type:circle"><strong>Note:</strong> Elements next to a floating element will flow around it. To avoid this, use the <code><a href="https://www.w3schools.com/CSSref/pr_class_clear.asp">clear</a></code> property.</li></ul></li></ul><ul id="98f87aaa-7988-49f5-9a9a-c3ff2bf0ad7c" class="bulleted-list"><li style="list-style-type:disc">Values:<ul id="c37d29e1-b9de-46f9-bf24-633d0e404f7a" class="bulleted-list"><li style="list-style-type:circle"><code><strong>left</strong></code><strong> - </strong>The element must float on the left side of its containing block.</li></ul><ul id="91144e41-a0f0-4216-a484-43752a64dc6c" class="bulleted-list"><li style="list-style-type:circle"><code><strong>right</strong></code><strong> - </strong>The element must float on the right side of its containing block.</li></ul><ul id="ee6ae634-ffe4-48aa-bd34-d998e4d332a0" class="bulleted-list"><li style="list-style-type:circle"><code><strong>none</strong></code><strong> - </strong>The element must not float.</li></ul><ul id="559877cf-cbd1-4b0e-8acc-09eb3ad52d11" class="bulleted-list"><li style="list-style-type:circle"><code><strong>inline-start</strong></code><strong> - </strong>The element must float on the start side of its containing block. That is the left side with <code>ltr</code> scripts, and the right side with <code>rtl</code> scripts.</li></ul><ul id="83e2b8f1-2788-4c6b-a0ad-e9629acf3fca" class="bulleted-list"><li style="list-style-type:circle"><code><strong>inline-end</strong></code><strong> - </strong>The element must float on the end side of its containing block. That is the right side with <code>ltr</code> scripts, and the left side with <code>rtl</code> scripts.</li></ul></li></ul><ul id="d1430f9f-f0e6-4609-b66f-c72233a11d51" class="bulleted-list"><li style="list-style-type:disc">Clearing floats<ul id="5e5f40c2-564f-4ab7-8202-c962893ae911" class="bulleted-list"><li style="list-style-type:circle">Sometimes you may want to force an item to move below any floated elements. For instance, you may want paragraphs to remain adjacent to floats, but force headings to be on their own line. </li></ul><ul id="7537d77b-f8ae-4800-8256-9a295f558a02" class="bulleted-list"><li style="list-style-type:circle">This is when the <code><strong>clear</strong></code> property comes in handy. It sets whether an element must be moved below (cleared) floating elements that precede it. The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear"><code>clear</code></a> property applies to both floating and non-floating elements.</li></ul><ul id="2e8d38e7-c367-478b-9eb6-90220423ad68" class="bulleted-list"><li style="list-style-type:circle">Values:<ul id="2633d0f9-251a-4535-8881-9217a3a7773a" class="bulleted-list"><li style="list-style-type:square"><code><strong>none</strong></code>Is a keyword indicating that the element is <em>not</em> moved down to clear past floating elements.</li></ul><ul id="76bdbb8d-fd83-4107-85b8-532f482877a0" class="bulleted-list"><li style="list-style-type:square"><code><strong>left</strong></code>Is a keyword indicating that the element is moved down to clear past <em>left</em> floats.</li></ul><ul id="2c9780f3-1707-4c31-acc5-f99c164f926e" class="bulleted-list"><li style="list-style-type:square"><code><strong>right</strong></code>Is a keyword indicating that the element is moved down to clear past <em>right</em> floats.</li></ul><ul id="8bccc7f7-81a3-4865-b65a-d0220bfbb569" class="bulleted-list"><li style="list-style-type:square"><code><strong>both</strong></code>Is a keyword indicating that the element is moved down to clear past <em>both</em> left and right floats.</li></ul><ul id="2368519e-7801-437d-8712-1ec4fa493759" class="bulleted-list"><li style="list-style-type:square"><code><strong>inline-start</strong></code>Is a keyword indicating that the element is moved down to clear floats on <em>start side of its containing block</em>, that is the <em>left</em> floats on <code>ltr</code> scripts and the <em>right</em> floats on <code>rtl</code> scripts.</li></ul><ul id="0c656f66-b912-4517-ae93-f4b84d4b85ee" class="bulleted-list"><li style="list-style-type:square"><code><strong>inline-end</strong></code>Is a keyword indicating that the element is moved down to clear floats on <em>end side of its containing block</em>, that is the <em>right</em> floats on <code>ltr</code> scripts and the <em>left</em> floats on <code>rtl</code> scripts.</li></ul></li></ul></li></ul></details></li></ul><p id="914f2ae9-4f87-40fb-ad12-83a3b8a89fee" class="">
+</p></div></article></body></html>

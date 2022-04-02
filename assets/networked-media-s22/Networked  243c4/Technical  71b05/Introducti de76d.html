@@ -1,0 +1,739 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Introduction to the DOM &amp; JQuery</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="de76de9a-8eff-4d5a-8963-1aa812468450" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🤖</span></div><h1 class="page-title">Introduction to the DOM &amp; JQuery</h1></header><div class="page-body"><p id="ad82e001-5a91-4b70-b0f0-aa6b69e40a62" class="">The main use of Javascript in the web browser is its ability to create <em>dynamic </em>and <em>interactive </em>webpages. So far, we’ve been looking at HTML and CSS, and you’ve probably noticed that the content is static: the browser will display all the elements that were defined within the HTML file, with the CSS styles applied to them, and nothing else. There is no way for a website’s content to change dynamically (e.g. in response to a user action) by simply using HTML and CSS. We need Javascript for that.</p><h2 id="248290a1-2da4-47ee-93a3-6270655f64da" class=""><details open=""><summary>The Document Object Model (DOM)</summary></details></h2><div class="indented"><p id="9f6b2f82-f654-4083-bff7-c6f9a57d0146" class="">When running in the browser, Javascript has access to the <em>Document Object Model</em>, or the DOM of an HTML page. This is a representation of the entire HTML structure of the page, which Javascript can manipulate in order to make structure, content or styling changes. It has a tree-like structure (remember, HTML is made up of nested tags,) something like the image below:</p><p id="bdcdb006-19c3-4da3-b1e9-cdaec4786a68" class="">
+</p><p id="57835328-7e07-4a81-ada7-002ad9300a9a" class="">
+</p><figure id="b333be55-494a-46d7-a432-40911233804f" class="image"><a href="https://www.w3schools.com/js/pic_htmltree.gif"><img src="https://www.w3schools.com/js/pic_htmltree.gif"/></a></figure><p id="54118205-1145-4787-8f9f-2b078aab34df" class="">
+</p><p id="fe78ba37-c8e0-4461-885d-5396fc4bf6a0" class="">With the object model, JavaScript gets all the power it needs to create dynamic HTML:</p><ul id="76934c89-71c4-4aa4-8ee5-f7bfd69cfc41" class="bulleted-list"><li style="list-style-type:disc">JavaScript can change all the HTML <span style="border-bottom:0.05em solid">elements</span> in the page</li></ul><ul id="12d9a9bf-3f08-4c19-9456-ad631248c3ee" class="bulleted-list"><li style="list-style-type:disc">JavaScript can change all the HTML <span style="border-bottom:0.05em solid">attributes</span> in the page</li></ul><ul id="4e53d088-fa84-4116-9dad-a1bf7e2dbb17" class="bulleted-list"><li style="list-style-type:disc">JavaScript can change all the <span style="border-bottom:0.05em solid">CSS styles</span> in the page</li></ul><ul id="75189cc0-211e-4908-be0d-2cba0b849de4" class="bulleted-list"><li style="list-style-type:disc">JavaScript can <span style="border-bottom:0.05em solid">remove </span>existing HTML <span style="border-bottom:0.05em solid">elements and attributes</span></li></ul><ul id="4287085d-547d-4917-ac27-42963cb4fb57" class="bulleted-list"><li style="list-style-type:disc">JavaScript can <span style="border-bottom:0.05em solid">add </span>new HTML <span style="border-bottom:0.05em solid">elements and attributes</span></li></ul><ul id="0c821316-3dc0-466a-a6b8-93a5b9048962" class="bulleted-list"><li style="list-style-type:disc">JavaScript can react to all existing HTML <span style="border-bottom:0.05em solid">events </span>in the page (user events, such as clicking or key presses, we will talk about them in a future tutorial)</li></ul><ul id="916b07a7-c684-4664-92da-7eed63149121" class="bulleted-list"><li style="list-style-type:disc">JavaScript can create new HTML <span style="border-bottom:0.05em solid">events</span> in the page</li></ul><p id="90c616ab-06d0-4e32-ac70-ec78ff4634da" class="">
+</p><p id="63e24e01-5fb5-44ce-96c6-c6b22cf24657" class="">This means that anything you could create, change or remove manually when writing HTML or CSS can also be manipulated in Javascript, through the DOM.</p></div><h2 id="8d84194b-8dff-44f1-b37c-87c3aac245dc" class=""><details open=""><summary>Adding Javascript to a website</summary></details></h2><div class="indented"><p id="43479e18-5e05-44fb-8097-d7b80360fb9a" class="">Before working with the DOM, we need to first be able to import a Javascript file into our websites. This is pretty similar to how we import stylesheets, but instead of using the <code>link</code> tag we use the <code>script</code> tag.</p><pre id="17f3795c-5ab4-4632-820e-c311381bc021" class="code"><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	
+	&lt;body&gt;
+		Nothing to see here.
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="13b4e1e7-a888-4ca4-af3e-3bd8ab859901" class="">And, we can write a simple piece of Javascript code which just alerts us of the fact that it was imported in the page.</p><pre id="7e797268-e0b5-4d2c-9bad-2a29b8283297" class="code"><code>alert(&#x27;Hello this is Javascript speaking!&#x27;)
+console.log(&#x27;This is a message in the console&#x27;)</code></pre><p id="fc76deb0-670c-4909-936f-c3f5a7101fec" class="">In order for the two files above to work, make sure both of them live in the <code>public</code> directory within the web servers on your Digital Ocean droplet.</p><p id="fb741923-8f29-4d18-ae67-0e6cdb5f1b06" class="">The script above does two things: first, it opens a pop-up in your browser, saying <code>Hello this is Javascript speaking</code>. Second, it prints a message in the developer console (which you can open by right clicking anywhere on your page, selecting the <code>Inspect Element</code> option, and navigating to the <code>Console</code> tab in the newly opened sub-window.)</p></div><h2 id="94afcb5b-7e86-4ba2-a81e-3222a4a917e1" class=""><details open=""><summary>jQuery</summary></details></h2><div class="indented"><p id="87218308-3a25-4c80-b2c4-241b2700cdff" class="">Manipulating the DOM can be done using pure Javascript (through using the <code>document</code> and <code>window</code> global variables.) However, for this class we will use an external library called JQuery in order to make our lives easier. JQuery offers a more succinct syntax for interacting with the DOM, as well as a handful of really fun utility functions for doing that.</p><p id="0f71eb7c-7e32-4264-83a1-53477a548c23" class="">Since JQuery is an external library, we need to tell our HTML page where to import its code from. We do that within <code>&lt;head&gt;</code>, with the same <code>&lt;script&gt;</code> tag that we use to import our own script.</p><pre id="c6376bbb-948d-4eb9-bca6-ccdc525faf64" class="code"><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt; &lt;!-- This is the jquery script --&gt;
+		&lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt; &lt;!-- This is our own script --&gt;
+	&lt;/head&gt;
+&lt;/html&gt;</code></pre><p id="8fdeb05e-7adb-4860-863b-233d9a8925cd" class="">In case you are wondering where I got the link within the <code>src</code> attribute from, it’s on the <a href="https://releases.jquery.com/">JQuery website</a> (jQuery Core → jQuery 3.x → jQuery 3.6.0 → <code>minified</code>). Whenever you want to use jQuery in your code, you need to include this script tag, with that same URL for the source attribute.</p></div><h2 id="03894d65-0507-4497-8786-7114138f26df" class=""><details open=""><summary>Waiting for the DOM to load</summary></details></h2><div class="indented"><p id="7e7076b5-4380-48ef-8d6b-0c6c3733ceef" class="">Interacting with the DOM can only happen <em>once the HTML content of the page has loaded</em>. Since our JS script might load before the actual HTML of the page, we need a way of <em>listening</em> for when the HTML page has completed loading everything. Fortunately, there is an easy solution for that:</p><pre id="d759071f-49d0-4c4d-b3fd-2b001127113c" class="code"><code>$(document).ready(function() {
+	console.log(&#x27;The HTML has finished loading, so we can start interacting with the DOM.&#x27;)
+})</code></pre><p id="e236de7d-47a8-4820-953a-6c1c8ddcdab3" class=""><strong>Most of your frontend Javascript code will live in the function above, since that guarantees the DOM is fully loaded.</strong></p><p id="5931ecb7-bcef-406b-8cd1-b859ac443dcb" class="">In terms of syntax, we have a few things going on:</p><ul id="b256095c-32e2-40b1-9190-91f498c530e4" class="bulleted-list"><li style="list-style-type:disc"> <code>$</code> → this is simply how we access the jQuery library. This is funky syntax, most Javascript libraries use full words for their names, but the jQuery developers chose the dollar sign in order to make writing code shorter. It might seem a bit confusing right now, but we will collectively thank them later.</li></ul><ul id="484cb92e-942d-4338-ac33-010909ae2d8d" class="bulleted-list"><li style="list-style-type:disc"><code>$(selector)</code> →  This is how we tell jQuery to access a specific <em>element or set of elements</em> in the DOM. The selector can be a tag (<code>$(&quot;p&quot;)</code>,) an id (<code>$(&quot;#my-id&quot;)</code>,) a class (<code>$(&quot;.my-class&quot;)</code>) or <em>the entire document, </em>which is what we’re doing above. Selecting by tag, id or class works similarly to how CSS operates: all HTML elements that match the given selector will be returned, and all further code will be applied to all of them. Using the <strong>document</strong> selector is a somewhat special usecase (notice in the code above it’s not surrounded by quotes,) and it’s what allows us to detect whether the page has already loaded or not.</li></ul><ul id="f27c708e-fc1e-4820-bcdc-be5dd8712dec" class="bulleted-list"><li style="list-style-type:disc"><code>$(selector).operation()</code> → once we’ve chosen our selector, we apply an operation to the elements that were returned by this selector. You will see a few examples of this in a further section of this document. In the example above, the operation is called <code>ready</code>, which is actually an <em>event listener</em>. <strong>So, describing the code above verbally would look something like this: </strong><em><strong>“Hey jQuery, please listen to what </strong></em><span style="border-bottom:0.05em solid"><em><strong>document</strong></em></span><em><strong> has to say, and whenever she sends the signal for “ready”, run this custom function which prints something to the console”.
+</strong></em>The <code>ready</code> event listener is what tells us that the DOM has loaded.</li></ul><p id="3cd980e2-e2da-43a1-94e8-772e8b56f3e5" class="">
+</p></div><h2 id="db1fb90b-bb32-44a0-971d-e04863fd611a" class=""><details open=""><summary>Different types of selectors; changing the content of an element (<code>html()</code>)</summary></details></h2><div class="indented"><p id="b1721615-afd5-4498-899f-5109e6402530" class="">Let’s look at three different types of selectors. We’ll start with the following HTML page:</p><pre id="3b0dd5af-946e-4fbd-a9ed-1ced981a43be" class="code"><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt; &lt;!-- This is the jquery script --&gt;
+		&lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt; &lt;!-- This is our own script --&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;p&gt; This is a paragraph &lt;/p&gt;
+		&lt;p id=&quot;importantParagraph&quot;&gt; This is an important paragraph &lt;/p&gt;
+		&lt;p class=&quot;blue-paragraph&quot;&gt; This is a blue paragraph &lt;/p&gt;
+		&lt;p class=&quot;blue-paragraph&quot;&gt; This is another blue paragraph. &lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="1a5ce81c-2d98-4cfc-973e-b6d5db99d84f" class="">We have four paragraphs. One of them has no attributes, one of them has an <code>id</code>, and the other two have an identical <code>class</code> attribute. The code below uses the <code>html()</code> function inside jQuery in order to change the content of our paragraphs. Using different selectors, we can achieve different outcomes:</p><pre id="5f6d516c-e2d6-4c13-9505-5d4b3e517395" class="code"><code>$(document).ready(function() {
+	$(&quot;p&quot;).html(&quot;All paragraphs now have this text&quot;) // Selecting by tag is done by simply using the name of the tag, surrounded by quotes.
+	$(&quot;#importantParagraph&quot;).html(&quot;Only the second paragraph has this text&quot;) // Selecting by ID is done by using the &quot;#&quot; symbol, followed by the ID of the element we&#x27;re working with.
+	$(&quot;.blue-paragraph&quot;).html(&quot;The last two paragraphs have this text&quot;) // Selecting by class is done by using the &quot;.&quot; symbol, followed by the class name of the element(s) we&#x27;re working with.
+})</code></pre></div><h2 id="c3d46fbf-853a-4dda-b473-36a056b4e2fa" class=""><details open=""><summary>Changing the styling of an element (<code>css()</code> and <code>addClass()</code>)</summary></details></h2><div class="indented"><p id="372c4c03-e242-4143-9cb7-ea4b66008201" class="">We can use jQuery to directly specify CSS properties for the elements we have selected. In the example below, we make the paragraphs which have the <code>blue-paragraph</code> class actually have blue text (on a pink background.)</p><pre id="7969794f-27f6-4ab0-9a8e-ea2ae7307fe2" class="code"><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt; &lt;!-- This is the jquery script --&gt;
+		&lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt; &lt;!-- This is our own script --&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;p&gt; This is a paragraph &lt;/p&gt;
+		&lt;p id=&quot;importantParagraph&quot;&gt; This is an important paragraph &lt;/p&gt;
+		&lt;p class=&quot;blue-paragraph&quot;&gt; This is a blue paragraph &lt;/p&gt;
+		&lt;p class=&quot;blue-paragraph&quot;&gt; This is another blue paragraph. &lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre><pre id="23bccfee-d701-4031-a21d-c73d97532b01" class="code"><code>$(document).ready(function() {
+	$(&quot;.blue-paragraph&quot;).css(&quot;color&quot;, &quot;blue&quot;) // The css() function takes two parameters: the CSS property we want to change, and the value we want to give it.
+	$(&quot;.blue-paragraph&quot;).css(&quot;background-color&quot;, &quot;pink&quot;) // You can call the css() function multiple times for changing different properties.
+})</code></pre><p id="b7ecd936-a34f-4c2c-921a-993c2d057eeb" class="">We can also use jQuery to assign a class to an element that doesn’t already have it, or conversely, to remove a class from an element which does have it. For the former, we could write the code below in order to programatically give the <code>importantParagraph</code> a <code>blue-paragraph</code> class as well. The <code>addClass</code> function </p><pre id="29ff1aa7-ef3c-4f96-9aac-881c577ead7b" class="code"><code>$(document).ready(function() {
+	$(&quot;#importantParagraph&quot;).addClass(&quot;blue-paragraph&quot;) // We select by ID, and add the blue-paragraph class to the paragraph which has the given id.
+	$(&quot;.blue-paragraph&quot;).css(&quot;color&quot;, &quot;blue&quot;) // Same code as above, we change the styling of the paragraphs which have this class.
+})</code></pre></div><h2 id="2d89d987-3777-44ae-88d8-45562925d60f" class=""><details open=""><summary>Creating and removing HTML elements (<code>appendTo</code>, <code>remove</code>)</summary></details></h2><div class="indented"><p id="c5860c3a-4a8f-49d8-a852-5efbe6e0c86d" class="">We can also use jQuery in order to create entirely new elements, or remove existing elements.</p><p id="8be92e80-a593-4271-9cb4-90955b6047c7" class="">I’ll start with removing, since it’s easier. Once we figure out our selector, we simply call <code>.remove()</code> on the value returned by the selector in order to entirely remove the element from the DOM. For removing all paragraphs with the <code>blue-paragraph</code> class in the example above, we would simply call</p><pre id="2bfe5ce1-3a06-4d7f-9cfd-fb40a99dff08" class="code"><code>$(&quot;.blue-paragraph&quot;).remove()</code></pre><p id="29af930e-676b-4e2d-9ef9-bc96370c482b" class="">Creating a new element is a two-step process. First, we need to know what type of element we want, and what its corresponding HTML tag is. Second, we need to find an already existing element on the HTML page, and add our newly created element to it. Remember, HTML has a tree-like structure, and if we don’t add our new element to this tree, as another element’s child, the newly created element will simply not show up.</p><pre id="639ce79f-6b94-4be3-80eb-78499dce34fa" class="code"><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt; &lt;!-- This is the jquery script --&gt;
+		&lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt; &lt;!-- This is our own script --&gt;
+	&lt;/head&gt;
+	
+	&lt;body&gt;
+		&lt;div id=&quot;container&quot;&gt;
+
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="acda5824-620e-4ca4-8ab2-c56b01ef35ec" class="">Let’s use this HTML page, and use jQuery to add a paragraph inside of the <code>container</code> div.</p><pre id="090b6fd4-832c-43ab-b84a-7d3bbf333e56" class="code"><code>$(document).ready(function() {
+	var newElement = $(&quot;&lt;p&gt;This is a blue paragraph.&lt;/p&gt;&quot;).appendTo(&quot;#container&quot;)
+	newElement.css(&quot;color&quot;, &quot;blue&quot;)
+})</code></pre><p id="5198a111-5dc4-45a8-96d0-be4301aff14b" class="">Notice a few things:<div class="indented"><ul id="5e6e7fda-aee7-461f-ae63-54902974fabf" class="bulleted-list"><li style="list-style-type:disc">We are using the <code>$()</code> function differently than we have been so far. Instead of passing it a selector, we simply write the HTML declaration of the element we want to add. Internally, jQuery will recognize whether we are trying to use a selector, or trying to create a new element, based on the syntax (a new element will always be an html tag)</li></ul><ul id="ad2c0d51-21df-41f0-985d-0d678f9b5086" class="bulleted-list"><li style="list-style-type:disc">We are calling the <code>appendTo</code> function, and the argument of that function is the selector for the id <code>container</code>. That’s the div we want to add our paragraph to. </li></ul><ul id="97274c44-2034-4ee9-997d-9906a6ca1a21" class="bulleted-list"><li style="list-style-type:disc">We are storing the newly created element in a variable, and in the second instruction we are updating the CSS of that element.<ul id="45f5ca1e-ef65-4246-8947-751fa38932a8" class="bulleted-list"><li style="list-style-type:circle">We could have also chained all three commands, like this:</li></ul><pre id="d21f304e-f887-4f74-8028-988d75927c6a" class="code"><code>var newElement = $(&quot;&lt;p&gt;This is a blue paragraph.&lt;/p&gt;&quot;).appendTo(&quot;#container&quot;).css(&quot;color&quot;, &quot;blue&quot;)</code></pre></li></ul></div></p></div></div></article></body></html>

@@ -1,0 +1,723 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Web Time</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="c10b9600-42bf-46e0-902e-8755d51516ef" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">⌚</span></div><h1 class="page-title">Web Time</h1></header><div class="page-body"><p id="191c4988-4549-43b4-82bf-cbc92dc0966a" class="">So far we’ve looked at how we can make changes to an HTML page upon load, using jQuery in order to manipulate the DOM. In this tutorial we’ll learn how we can manipulate the DOM at various moments after a page has loaded, through the use of Javascript timers. In the next tutorial, we’ll look at manipulating the DOM as a response to user actions on the web page.</p><h2 id="3b8357b8-f1d1-40b3-bfe1-f51fd95b4d06" class=""><details open=""><summary>Setting a one-time timer (<code>setTimeout</code>)</summary></details></h2><div class="indented"><p id="a1b6dd1f-53d4-4ae7-9829-00062cf8c917" class="">The simplest way to set up a time-based interaction in Javascript is by using the <code>setTimeout</code> function. Javascript’s nature as an <a href="https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff">event-driven programming language</a> allows us to easily schedule for a piece of code to be executed in the future, at a time of our choosing. </p><p id="ad253f7b-6108-4c11-8467-f08a83e3f8c8" class="">This means that when our JS code execution encounters the <code>setTimeout</code> function, it simply registers the fact that our piece of code (expressed as a function) needs to be run <code>X</code> seconds later, and moves forward to the next operations it needs to execute. Once <code>X</code> seconds have passed (which Javascript figures out internally,) our function gets executed.</p><p id="47512ca3-1905-48d3-a0cc-796eadc1ce19" class="">Using this statement works like this:</p><pre id="88553bdc-8317-49b7-b90e-04982cfb4b2d" class="code"><code>// Step 1: 
+// Call setTimeout with two parameters, a callback function, and a duration 
+// (the duration is in milliseconds, so 2000 means 2 seconds)
+setTimeout(myFunction, 2000)
+
+// Step 2: 
+// Define the function that will be called by setTimeout
+function myFunction() {
+	console.log(&quot;Two seconds have passed&quot;)
+}</code></pre><p id="8b5701c5-2292-4e3e-bd5e-c4bfa9937157" class="">Combining with the jQuery DOM loaded code, the timer could look like this:</p><pre id="d2720929-f334-4d64-b44a-c6dc26542fea" class="code"><code>$(document).ready(function() {
+	setTimeout(myFunction, 2000)
+})
+
+function myFunction() {
+	console.log(&quot;Two seconds have passed&quot;)
+}</code></pre><p id="75b50d3b-08f3-4a95-9c45-77bceab7e977" class="">The code above will register the timeout right after our page loads, and call <code>myFunction</code> two seconds later.</p><p id="4a784306-5acc-4f46-9e31-421bf0fc3e7e" class="">Note that we are defining <code>myFunction</code> <strong>outside</strong> of the document ready callback function.</p><p id="8ffb9b5a-496c-4a01-a143-84f59c366f69" class="">
+</p><p id="79b23691-476c-4983-acf3-fdde4250e841" class="">Depending on the complexity of what you’re doing in the timeout callback, it’s sometimes less verbose to use an <em>inline function</em> as a callback instead of a pre-defined one, like this:</p><pre id="ef538fe0-c6ec-404c-8aa5-1ec6f0d28581" class="code"><code>setTimeout(function() {
+	console.log(&quot;Still two seconds&quot;)
+}, 2000)</code></pre><p id="befc8081-68fe-429b-9671-87bfc7ed5952" class="">Note how the inline function is <em>anonymous (</em>aka it doesn’t have a name.) This is exactly the same syntax as what we’ve been using for <code>$(document).ready()</code>. </p><p id="f8273ba7-1576-4e8b-9ba2-30f3ef6cd67d" class=""><strong>For code clarity purposes, I recommend using the named function approach.</strong></p><h3 id="34b9e9f2-523d-42db-86e1-b356e453b2ae" class="">Cancelling a timer</h3><p id="2baf7f6c-efdd-44fc-ad4d-69fd11f106e4" class="">Sometimes, you will want to cancel the execution of a timeout before the time is up. For example, think about how a screen saver works: after a certain duration of user inactivity, the screensaver will take over the desktop. However, if the user moves their mouse <em>before</em> the allocated 5 minutes (or w/e the duration is,) the timer needs to be cancelled and restarted.</p><p id="a5ec820f-5891-4105-bca6-d1a16ae192a2" class="">In order to cancel a <code>setTimeout</code> timer in Javascript, we can use the <code>clearTimeout</code> function. </p><p id="be224fb1-41e7-4f16-85fb-04fc54003e51" class="">What I didn’t specify in the previous section of this document is that <code>setTimeout</code> actually returns a value, which is an internal ID Javascript assigns to the timer. We need to store that ID, in order to let <code>clearTimeout</code> know which timer it should stop.</p><pre id="e79c7b34-02c6-453b-9d02-aed72973cde0" class="code"><code>function callMe() {
+	console.log(&quot;This is the callback function&quot;)
+}
+
+// Set up our timer
+var timerId = setTimeout(callMe, 2000)
+console.log(timerId) // You can look at it in the console. It&#x27;s just a number :)
+
+// And cancel it immediately
+clearTimeout(timerId)</code></pre><p id="36e9ed7e-9862-4091-b963-4c83cb34f979" class="">In this example, we are cancelling the timer right away. However, we will see future examples where we cancel timers as a result of certain user actions on the page. Also notice that in the example above, we defined the callback function (<code>callMe</code>) above the <code>setTimeout</code> call, while previous examples had it below. It should work regardless.</p><h3 id="8c60f136-3fe1-4172-8c03-a7ccacccd400" class="">Passing parameters to a timer’s callback function</h3><p id="0eaf75f6-a6aa-4c79-a5cf-c94d8379edbb" class="">You notice in the examples above that the callback function (<code>callMe</code> or <code>myFunction</code>) doesn’t take any arguments. If you need to pass your callback function certain data, you can use the three-parameter version of the <code>setTimeout</code> function: <code>setTimeout(callbackFunction, duration, data)</code>. For example:</p><pre id="62b0fee6-8de2-4f7f-94e0-2f32cd69ee9b" class="code"><code>var timerId = setTimeout(callMe, 2000, &quot;Bug&quot;)
+
+function callMe(theName) {
+  // The string &quot;Bug&quot; will become available in the &quot;name&quot; argument of this function.
+	console.log(&quot;Two seconds later, the name is: &quot;, theName)
+}</code></pre></div><h2 id="0fd2f6eb-699d-428c-8359-c7aa16dc3e04" class=""><details open=""><summary>Setting a repeating timer (<code>setInterval</code>)</summary></details></h2><div class="indented"><p id="f287ecbe-ac59-48a9-88a7-d29a9e979d99" class=""><code>setTimeout</code> works as a one-time timer. While it’s possible to use recursion in order to “chain” multiple <code>setTimeout</code> calls together (how would you do that?), Javascript has another function for setting up a repeating timer. It’s called <code>setInterval</code>, and everything about using it is identical to using <code>setTimeout</code>, except for that the callback function gets called <strong>every X seconds</strong> instead of just once after X seconds.</p><pre id="24ef8d76-508a-4c1b-812b-cc002b13b2b2" class="code"><code>setInterval(intervalFunction, 5000)
+
+function intervalFunction() {
+	console.log(&quot;Yet another 5 seconds have passed... on and on... forever...&quot;)
+}</code></pre><p id="1908d7bf-0821-4c91-9237-835cb8b91679" class="">Of course, this goes on forever unless you cancel the timer, using the <code>clearInterval</code> function. In the example below, I&#x27;m using a <code>setTimeout</code> to cancel the interval after 12 seconds.</p><pre id="2dea7c82-a8fe-4fcb-9e88-bd391335466e" class="code"><code>var intervalId = setInterval(intervalFunction, 5000)
+
+function intervalFunction() {
+	console.log(&quot;Yet another 5 seconds have passed... on and on... forever...&quot;)
+}
+
+// Passing the intervalId as an argument to the callback function
+setTimeout(cancelTheInterval, 12000, intervalId)
+
+function cancelTheInterval(intervalId) {
+	clearInterval(intervalId)
+}</code></pre></div><h2 id="59cdb314-8a4c-413f-b7c8-418c6932aec6" class=""><details open=""><summary>Working with the date &amp; time (Javascript’s <code>Date</code> class)</summary></details></h2><div class="indented"><p id="5c2d4ad0-21a9-43ae-a2bc-8b2d8094cc66" class="">While <code>setTimeout</code> and <code>setInterval</code> allow us to control time that is <em>relative to our code</em>, in some circumstances you will want access to the actual real-world time. Javascript exposes that using the powerful <code>Date</code> class.</p><p id="29eac21b-9b17-4585-b9f1-7cd6fb7e478e" class="">Let’s say you wanted to print the current date and time to the console. You can do that using the <code>toString()</code> method on the date object:</p><pre id="6a0c768b-db82-4fee-8c95-b1441ba53af1" class="code"><code>// First, you need to create a new Date object
+var date = new Date()
+console.log(date.toString())
+
+// This will print the date as a string, formatted like this:
+// Sun Feb 6 2021 23:15:30 GMT+0200 (CEST)</code></pre><p id="c86682c3-4b09-4b61-ba26-d1e27de569c9" class="">You can access the individual components of the date (e.g. hour of the day, day of the week) using other methods on the <code>Date</code> object: </p><ul id="667cd0c7-bf4e-41a4-9343-1d4c3451a96c" class="bulleted-list"><li style="list-style-type:disc"><code>date.getDate()</code> returns the day of the month as a number (e.g. <code>6</code> for the example above)</li></ul><ul id="a9d86be1-484f-4e5c-8aa1-5adf73f3cfa7" class="bulleted-list"><li style="list-style-type:disc"><code>date.getDay()</code> returns the day of the week as a number (Sunday is <code>0</code>, Monday is <code>1</code>, Tuesday is <code>2</code>, ... and Saturday is <code>6</code>)</li></ul><ul id="7daa05a1-a290-4e3e-9541-61a5c783db23" class="bulleted-list"><li style="list-style-type:disc"><code>date.getHours()</code> returns the current hour as a number (e.g. <code>23</code> in the example above)</li></ul><ul id="8abec975-eed2-4b97-bce7-665be57d66e6" class="bulleted-list"><li style="list-style-type:disc">and so on, for all components of a time. </li></ul><h3 id="4335e10a-ba9d-4c1e-a34f-e8362a658407" class="">Epoch time</h3><p id="b571ba12-e0ef-4ede-8509-c6b9891bd3c9" class="">One functionality of the <code>Date</code> class that you might use quite often is the <code>date.getTime()</code> method. This returns the current <em>epoch time</em> in milliseconds. <a href="https://en.wikipedia.org/wiki/Unix_time"><em>Epoch time</em></a><a href="https://en.wikipedia.org/wiki/Unix_time"> </a>measures the amount of time that has passed since a specific date in the past, which on most systems is set as <code>00:00:00 on January 1, 1970</code>. </p><p id="08a905e3-502f-425d-88da-cf8e134ce5b1" class="">This is useful if you need to keep track of time in your code for any reason. For example, if you wanted to calculate how much time passed between two user clicks on your page, you could get the epoch time at the first click using <code>date.getTime()</code>, get it again at the second click, and subtract the two numbers. You will then have a number in milliseconds which is exactly the elapsed time between the two events.</p><p id="875756b8-5b64-4a87-94f8-354333a7b1ce" class="">
+</p><p id="46504243-c766-48c1-a1c0-c8013247c048" class=""><strong>You can find the full reference for the </strong><code><strong>Date</strong></code><strong> class </strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date"><strong>here</strong></a><strong>.</strong></p><p id="61c27c59-db37-4a42-b285-fcc7c1e9654a" class="">
+</p><p id="23d06577-fd35-4004-82e3-ae92e6a26019" class=""><em>One important thing to note about </em><em><code>Date</code></em><em> is the fact that it accesses the time of the user’s computer, not the server time. So, if two users access your website from different timezones and you don’t do any time zone conversion, this will return different times. Similarly, if someone’s computer year is for some reason set to 1980, the </em><em><code>Date</code></em><em> object will follow that.</em></p></div></div></article></body></html>

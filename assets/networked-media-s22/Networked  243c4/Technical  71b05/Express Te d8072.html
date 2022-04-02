@@ -1,0 +1,794 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Express Templates</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d8072b91-45ec-48f9-8893-4e50064d8109" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📄</span></div><h1 class="page-title">Express Templates</h1></header><div class="page-body"><p id="796f0116-8b80-45d8-8be0-6103d909d1c2" class="">As we have experienced, generating HTML within a node.js/Express server can be painful. Remember from our previous technical tutorial, data we send back using the <code>response.send</code> function needs to be a string. If we want any type of HTML formatting, we need to create it ourselves inside of the string.</p><pre id="c8ce8e75-c14f-41e1-ad67-baee1fffe02c" class="code"><code>app.get(&#x27;/&#x27;, function(request, response) {
+    response.send(&quot;&lt;h1&gt;This is a simple response&lt;/h1&gt;&quot;)
+}) </code></pre><p id="a571877b-c82f-46da-a722-6c5679518ac0" class="">This can get <em>really tedious really quickly. </em>Enter templating systems.</p><h2 id="b041bd06-eb8e-41b2-ac51-5d7e833fb584" class=""><details open=""><summary>Templating Systems</summary></details></h2><div class="indented"><p id="2a935ed4-b535-42f1-941e-d6561c6bb2da" class="">Fortunately, <span style="border-bottom:0.05em solid"><em>templating systems</em></span> provide a solution to this problem: they extend the HTML syntax with a few other custom tags &amp; keywords (each templating system has its own flavor,) which allow us to <strong>easily inject data stored on the server into an HTML file.</strong></p><p id="dc079348-779c-4076-8b8f-60589ff0e69a" class="">Let’s look at a generic example. If I was to build my own templating system, I could choose to use the <code>[</code> and <code>]</code> characters as a signifier for data that needs to be introduced by the server into the HTML file.</p><pre id="a21a9c54-09f1-475c-bf2e-cf6ebfc15e54" class="code"><code>&lt;!-- Cezar&#x27;s fictional templating system --&gt; 
+&lt;html&gt;
+	&lt;head&gt; &lt;/head&gt;
+	&lt;body&gt; 
+		&lt;h1&gt; This is a fictional template &lt;/h1&gt;
+
+		&lt;h2&gt; With a dynamic variable that has the value: [myVariable] &lt;/h2&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="272f012c-a58f-4111-bb3b-55d7cae51978" class="">And a Javascript-y pseudo-code for the server could be something like this:</p><pre id="5fb656f1-d1fc-45bf-8190-d00b3138b348" class="code"><code>app.get(&#x27;/page&#x27;, function(request, response) {
+	0. Have some data you want to populate the page with
+	(e.g. var myVariable = &quot;Test&quot;)
+	1. Read the `page.chtml` file (the one from above)
+	2. Look for any instances of [myVariable] in the file contents
+	3. Replace them with the value of myVariable, which in our case is &quot;Test&quot;
+	4. use response.send() to send a real HTML file to the browser.
+})</code></pre><p id="ca2f21a5-7ed2-4315-892e-142203ad76bc" class="">After all this processing, the server would send back an actual HTML file, which replaces <code>[myVariable]</code> with the word <code>Test</code>.</p><pre id="ac1a54c1-a0e6-44d0-bae3-2bf815e81709" class="code"><code>&lt;html&gt;
+	&lt;head&gt; &lt;/head&gt;
+	&lt;body&gt; 
+		&lt;h1&gt; This is a fictional template &lt;/h1&gt;
+		&lt;h2&gt; With a dynamic variable that has the value: Test &lt;/h2&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre><p id="a13b1011-0ebc-48a1-80e1-40f4cd88c963" class="">
+</p><p id="58e80a68-1bbd-4bc3-8320-b12b3ee1ac10" class="">The key takeaway from this example is the fact that <em>the web browser has no awareness of our templating syntax</em>, so the server does all the work in converting a template into a working HTML file, with all the data correctly populated.</p><p id="62d2835a-8f45-4949-9ca8-3b777e9d03f0" class="">
+</p></div><h2 id="19f84ace-9cdf-49f7-afe5-e6c92caa7431" class=""><details open=""><summary><code>ejs</code> (Embedded Javascript) Templates</summary></details></h2><div class="indented"><p id="49c1cf6f-120f-4814-a639-fa60263b7a48" class="">Fortunately for us, there are a <a href="https://github.com/expressjs/express/wiki?_ga=1.148202167.14603651.1486561881#template-engines">plethora templating systems</a>, so we don’t have to build our own. Many of them are cross-platform (<code>moustache</code>) and/or inspired by other platforms (<code>jade</code> ). These unfortunately are either complex to setup or require that you learn another language for authoring HTML. </p><p id="c03a385e-a6ff-4fd7-be0e-ce0cc70dc28d" class="">Luckily for us, there is one system, <a href="https://www.npmjs.com/package/ejs">ejs</a> (embedded Javascript) which allows regular HTML authoring with the ability to insert simple JavaScript statements which get run on the 
+server side. This is what we’re going to use in order to populate our HTML files with server data.</p><p id="e5c8e5c0-d9da-4309-9f54-0686047a1faf" class="">
+</p><p id="b4d11894-67e4-4fbb-b41f-7054b885eec0" class="">The first step to using ejs with Express is to install the module. Navigate to your project’s folder, and install the <code>ejs</code> package from npm.</p><pre id="ab19fd51-4087-40cc-8f70-5d85d92dd41e" class="code code-wrap"><code>npm install --save ejs</code></pre><p id="eaa405f5-7e24-4be2-8533-49d0b31d292d" class="">
+</p><p id="b526b594-617a-43e3-ae10-89ffc77949eb" class="">To use <code>ejs</code> in our express app, we first need to set the <code>view engine</code> of our <code>app</code> variable to be <code>ejs</code>. </p><pre id="98c60119-fffd-4e8f-a557-87f79bddeb43" class="code code-wrap"><code>var express = require(&#x27;express&#x27;)
+
+var app = express()
+app.use(express.static(&#x27;public&#x27;))
+app.set(&quot;view engine&quot;, &quot;ejs&quot;)
+
+// Further server code below...</code></pre><p id="43e5f420-241a-4ebb-97f0-ae6f1d3f2b33" class="">
+</p><p id="ea63c37a-a969-4c38-b8c8-2980865d93c2" class="">Then, we need to create our template, and save it in a folder called <strong><code>views</code></strong>(this is the default, but it can be changed.) Below is a basic template:</p><pre id="388c2c32-a0e6-4ac8-9a6f-acca3a78bd06" class="code code-wrap"><code>&lt;html&gt;
+	&lt;head&gt; &lt;/head&gt;
+	&lt;body&gt;
+    &lt;h1&gt;My Cool Page&lt;/h1&gt;
+
+    &lt;h2&gt;&lt;%= message %&gt;&lt;h2&gt;	           
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p id="728c1638-a7c7-4532-8c98-04414665a066" class="">Save it as <code>template.ejs</code> inside the <code>views</code> folder.</p><p id="9ebe536a-4d91-4ebe-8fc1-5659a9b09d13" class="">Finally, we can use the template to respond to a GET (or POST) request coming to our server, using the <code>response.render</code> function.</p><pre id="2d925633-c83f-4405-afec-c21f333227de" class="code code-wrap"><code>app.get(&#x27;/templatetest&#x27;, function(request, response) {
+    var data = {
+			message: &quot;This is my message to you!&quot;
+		};
+    response.render(&#x27;template.ejs&#x27;, data);
+});</code></pre><p id="1b060963-50f6-4d24-8a87-927c77b31931" class="">The <code>render</code> function takes two parameters: </p><ul id="4b5348a1-97c5-48e6-9c5b-da71239f41bf" class="bulleted-list"><li style="list-style-type:disc">first, it’s the filename of the template. In the example above, it’ll search the default <code>views</code> folder for a file called <code>template.js</code> (and throw an error if it can’t find it.)</li></ul><ul id="ebcc1dc5-2b48-44b2-961b-278d42c93b58" class="bulleted-list"><li style="list-style-type:disc">second, an object which contains the data used in the template. Our data object contains one single field, called <code>message</code>. When encountering <code>&lt;%= message %&gt;</code> in our template, <code>ejs</code> looks for a field called <code>message</code> in the data that’s passed to the template, and replaces the weird looking string with the value of that variable.</li></ul></div><h2 id="2a2844a6-50e4-456c-944a-67d86f2f1b74" class=""><details open=""><summary>Nested objects</summary></details></h2><div class="indented"><p id="b52e4780-bab5-4d2c-90ca-59e78f033097" class="">Of course, as our websites develop, the data that needs to be rendered on each page will become more complex. Let’s start with an example of a nested object:</p><pre id="a0847d9d-2c0d-4513-a3c4-73ff15e71fb9" class="code"><code>app.get(&#x27;/templatetest&#x27;, function(request, response) {
+    var data = {
+			message: {
+				partOne: &quot;This is part one&quot;,
+				partTwo: &quot;This is part two&quot;
+			}
+		};
+    response.render(&#x27;template.ejs&#x27;, data);
+});</code></pre><pre id="d8c4e0df-9317-422f-938f-63f68f27053e" class="code"><code>&lt;html&gt;
+	&lt;head&gt; &lt;/head&gt;
+	&lt;body&gt;
+    &lt;h1&gt;My Cool Page&lt;/h1&gt;
+
+    &lt;h2&gt;&lt;%= message.partOne %&gt;&lt;h2&gt;	           
+
+    &lt;h3&gt;&lt;%= message.partTwo %&gt;&lt;h3&gt;	           
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p id="62d07702-e7e7-4479-bf0e-5dba6287b3d9" class="">Plain javascript syntax for accessing fields in an object.</p></div><h2 id="07d78a6c-1d3f-4ade-9a88-a5e47753db43" class=""><details open=""><summary><code>if</code> statements</summary></details></h2><div class="indented"><p id="ef368515-3560-4220-bedd-98d5b5de71c1" class="">It’s often necessary to do conditional rendering (e.g. show an HTML element only if a certain condition is fulfilled, or only if a piece of data exists). <code>ejs</code> allows us to use <code>if</code> statements:</p><pre id="289c30e8-9baf-44e7-b0cf-a02cb734c480" class="code"><code>app.get(&#x27;/templatetest&#x27;, function(request, response) {
+    var data = {
+			message: {
+				visible: true,
+				text: &quot;This is the message&quot;
+			}
+		};
+    response.render(&#x27;template.ejs&#x27;, data);
+});</code></pre><pre id="d4937d0c-060a-4bcd-b491-5799b9d2d64a" class="code"><code>&lt;html&gt;
+	&lt;head&gt; &lt;/head&gt;
+	&lt;body&gt;
+    &lt;h1&gt;My Cool Page&lt;/h1&gt;
+		&lt;% if (message.visible) { %&gt;
+	    &lt;h2&gt;&lt;%= message.text %&gt;&lt;h2&gt;	           
+		&lt;% } else { %&gt;
+			&lt;h2&gt; Sorry, you can&#x27;t see this message. &lt;/h2&gt;
+		&lt;% } %&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><h2 id="77cad9b9-1234-4d79-b6a5-98bf9caca324" class=""><details open=""><summary><code>for</code> loops</summary></details></h2><div class="indented"><p id="48d07f17-45ce-4e1f-8417-44624c9d6768" class="">You’ll also often run into a situation where we need to display lists / arrays of data. The template engine has the syntax for iterating over an array:</p><pre id="f12736bc-ca8e-4e26-a05b-2f704c02a471" class="code code-wrap"><code>app.get(&#x27;/templatetest&#x27;, function(request, response) {
+		var data = {
+			messages: [
+				{visible: true, text: &quot;First&quot;}, 
+				{visible: true, text: &quot;Second&quot;}, 
+				{visible: false, text: &quot;Third&quot;}, 
+				{visible: true, text: &quot;Fourth&quot;}, 
+			]
+		};
+
+    response.render(&#x27;template.ejs&#x27;, data);
+});</code></pre><pre id="f76ab05f-2b2b-44d8-ac26-253108f43c30" class="code code-wrap"><code>&lt;html&gt;
+	&lt;head&gt; &lt;/head&gt;
+	&lt;body&gt;
+    &lt;h1&gt;My Cool Page&lt;/h1&gt;
+
+		&lt;% messages.forEach(function(message) { %&gt;
+			&lt;% if (message.visible) { %&gt;
+		    &lt;h2&gt;&lt;%= message.text %&gt;&lt;h2&gt;	           
+			&lt;% } %&gt;
+		&lt;% }); %&gt;		
+
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p id="b102f86f-3e54-43d8-8e6d-d0723f80ff5b" class="">Notice how the example above uses an <code>if</code> statement inside of the <code>for</code> loop, in order to decide whether each message should be displayed.</p></div><h2 id="53ef6db0-0e24-4632-aaa5-d9404f77f162" class=""><details open=""><summary>Modular development: Including other templates</summary></details></h2><div class="indented"><p id="0c02fea8-1bbd-4382-b922-2d54abc381ad" class="">Part of the reason why templates are really powerful is the fact that they can be used in modular ways. Think of the structure of a website like <a href="http://nyu.edu">http://nyu.edu</a> – it has multiple pages, but many of them share certain components (at least the header and the footer.) </p><p id="f2a63202-c628-406d-b606-f354c9a6fbd6" class="">Using HTML in the ways we’ve been doing so far would require copy-pasting the header &amp; footer HTML code onto each page we want them to appear on. The styling wouldn’t need duplication (we could include the same stylesheet on all pages,) but the fact that HTML requires duplication is not ideal.</p><p id="120a2ccb-42e1-4d62-bccf-f7072e094727" class="">This is where the <code>ejs</code> <code>include</code> statement comes in super handy. Put it simply, it allows for embedding the contents of a different template file into the current one, without having the need for the included template to be a full HTML page. </p><p id="499bf8ac-de90-4912-8732-f4ed4bb0b6c6" class="">Continuing with our example from above, let’s pretend <code>&lt;h1&gt; My Cool Page &lt;/h1&gt;</code> is a header which needs to be used on multiple pages of the same website. We could create a new template file, for example <code>header.ejs</code>, and include it in our <code>template.ejs</code>.</p><pre id="93ab1714-7924-4687-af92-c9f7c0026745" class="code"><code>&lt;h1&gt;My Cool Page&lt;/h1&gt;</code></pre><pre id="951b6fc6-c95e-402e-afcc-33eb30cdd312" class="code"><code>&lt;html&gt;
+	&lt;head&gt; &lt;/head&gt;
+	&lt;body&gt;
+		&lt;!--  No more static header  &lt;h1&gt;My Cool Page&lt;/h1&gt; --&gt; 
+		&lt;%- include(&#x27;header.ejs&#x27;, { }); %&gt;
+
+		&lt;% messages.forEach(function(message) { %&gt;
+			&lt;% if (message.visible) { %&gt;
+		    &lt;h2&gt;&lt;%= message.text %&gt;&lt;h2&gt;	           
+			&lt;% } %&gt;
+		&lt;% }); %&gt;		
+
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p id="4ff8e3d8-7374-4ac9-89ee-f88822228eb7" class="">The syntax for including other templates is <code>&lt;%- include(filename, data) %&gt;</code>. In the example above, the data object is empty, since our header simply shows the same content every single time. If we wanted to create a more complex component for displaying each message, we could turn the message display into a template, and pass it some data:</p><pre id="34fa385e-e63c-4fce-8842-2ef2fa266f4e" class="code"><code>&lt;h2&gt;&lt;%= message.text %&gt;&lt;h2&gt;</code></pre><p id="a3e02677-e329-41b2-b563-efc9bebea23f" class="">and inside of <code>template.ejs</code>, we would replace the message line with</p><pre id="dac54216-16ba-4ea1-83f0-59ab7231afb1" class="code"><code>&lt;%- include(&#x27;message.ejs&#x27;, { message: message }); %&gt;</code></pre><p id="4d288a1a-27d0-4c6b-bd17-946eeafffc93" class="">
+</p></div><p id="fb8522a4-a6d1-4ee5-aa33-ba1dc2ff3352" class="">
+</p></div></article></body></html>

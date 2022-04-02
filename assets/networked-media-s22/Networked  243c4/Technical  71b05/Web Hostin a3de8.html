@@ -1,0 +1,702 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Web Hosting on Digital Ocean</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a3de80fe-70b8-4aab-af70-076ff57bf258" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🌊</span></div><h1 class="page-title">Web Hosting on Digital Ocean</h1></header><div class="page-body"><p id="d56a26c1-106e-4197-b7e0-8e3c8aea9ad0" class="">In order to have a website that’s publicly accessible on the Internet, it needs to be hosted on a computer with a static, <a href="https://help.keenetic.com/hc/en-us/articles/213965789-What-is-the-difference-between-a-public-and-private-IP-address-">public IP address</a>. Our laptops generally don’t have that — they get assigned private (or local) IPs when connecting to a WiFi (or wired) network, and the public IP is a few layers “above” in the network topology. While it’s possible to expose your laptop’s IP to the internet, it’s much easier to use services which offer that as a feature.</p><p id="c3c87376-a7aa-478e-bf4c-d6237ce7aab8" class=""><a href="https://digitalocean.com">Digital Ocean</a> is one such provider. A few alternatives are Amazon Web Services, Google Cloud Platform, or Microsoft Azure Cloud, but for this class we will use Digital Ocean.</p><p id="1f378962-cba1-41e9-bc9d-f3b47a2a8af1" class="">Digital Ocean offers a suite of different services, but for now we are only interested in <strong>Droplets</strong>. A droplet is a Linux-based virtual machine (VM) which can be used for web hosting (and for many other things – for all intents and purposes, it’s a full computer capable of running any software that works on Linux.) Droplets, conveniently, also have publicly exposed IP addresses, so by the end of this tutorial we’ll have a website up and running <em>on the internet</em>. </p><p id="88384392-3890-40b4-ab5e-f0e2a10f27e2" class="">
+</p><p id="cb8de213-c6fb-4751-80e4-8e4a089550a5" class=""><strong><em>Note</em></strong><em>: We are basically renting a virtual server from Digital Ocean, which generally costs money. The lowest-tier server we can rent costs $5 per month, with the first 2 months free. So </em><strong><em>you will need a credit card to sign up</em></strong><em> for Digital Ocean, and you will get charged a total of $10 by the end of this class (for April and May.)</em></p><p id="bef96b9e-7c99-4e55-8dee-15f767cef299" class=""><em>If you don’t feel comfortable doing this for any reason, send me an email (cm5403@nyu.edu) and I’m happy to discuss alternatives.</em></p><h2 id="ebda8b86-5859-48aa-9329-df56fd26c35a" class=""><details open=""><summary>💧 Create a Digital Ocean droplet 💧</summary></details></h2><div class="indented"><p id="c028507e-4ed2-48d3-8ce2-d37426ca92df" class=""><strong><span style="border-bottom:0.05em solid">Step 1</span></strong><strong>:</strong>  Navigate to <a href="https://digitalocean.com">https://digitalocean.com</a> </p><figure id="37e8e820-0d9d-4ad5-8ff3-e87fdb2a6948" class="image"><a href="Web%20Hostin%20a3de8/do-step-1.jpg"><img style="width:1056px" src="Web%20Hostin%20a3de8/do-step-1.jpg"/></a></figure><p id="fe7c74bd-7d92-4ae9-9a43-3b3d07486b05" class="">
+</p><p id="89cbe3d7-eca5-4289-a970-d767a8aae5bb" class=""><strong><span style="border-bottom:0.05em solid">Step 2:</span></strong> Sign up using your preferred method</p><p id="9cdcc515-d86f-4371-9168-19b27ca35507" class=""><strong><span style="border-bottom:0.05em solid">Step 3:</span></strong> Add a credit card to confirm your account. Unfortunately, this step is mandatory. On the plus side, you get $100 in credits, valid for 60 days, after which you will start getting charged. You can also always create a new account in 2 months and get some more time for free 🙂</p><figure id="624d989c-a75e-40c1-bdbf-0c0c7216317a" class="image"><a href="Web%20Hostin%20a3de8/do-step-2.jpg"><img style="width:1056px" src="Web%20Hostin%20a3de8/do-step-2.jpg"/></a></figure><p id="75b4f303-295b-4ff9-8dfc-8c0337df4e85" class="">
+</p><p id="d68a2608-1e23-44e9-872e-d23c5f46f682" class=""><strong><span style="border-bottom:0.05em solid">Step 4:</span></strong> Once your account is confirmed, you should see the following home page. You will also receive an email notifying you of the free credits you’ve received.</p><figure id="5c6e0b60-cbb0-484c-9061-e414d694a934" class="image"><a href="Web%20Hostin%20a3de8/do-step-4.jpg"><img style="width:1056px" src="Web%20Hostin%20a3de8/do-step-4.jpg"/></a></figure><figure id="5552ac9e-f785-4a46-9254-30f2fa2ad1a1" class="image"><a href="Web%20Hostin%20a3de8/do-step5-credit-email.jpg"><img style="width:1104px" src="Web%20Hostin%20a3de8/do-step5-credit-email.jpg"/></a></figure><p id="46ada5fd-0345-481e-8151-cee301ce11d4" class="">
+</p><p id="30e2c2e8-3cc4-4af2-b23b-3222e4541c95" class=""><strong><span style="border-bottom:0.05em solid">Step 5:</span></strong> Navigate to <a href="https://cloud.digitalocean.com/">https://cloud.digitalocean.com/</a>; this is your Digital Ocean control panel, and where we’ll create our droplet from. On the left-hand side menu, click on <code>Droplets</code>, and then hit the <code>Create Droplet</code> button.</p><figure id="c8eaa46e-9abe-4000-bc4c-a22aea383ea1" class="image"><a href="Web%20Hostin%20a3de8/do-step-6-dashboard.jpg"><img style="width:1056px" src="Web%20Hostin%20a3de8/do-step-6-dashboard.jpg"/></a></figure><figure id="b7d46140-bacb-450f-9861-8793b11dcce6" class="image"><a href="Web%20Hostin%20a3de8/do-step-7-droplet.jpg"><img style="width:1056px" src="Web%20Hostin%20a3de8/do-step-7-droplet.jpg"/></a></figure><p id="5cfa0649-8624-4c0b-910c-27384001a8e3" class="">
+</p><p id="1eb5fe95-b452-432f-a63c-836642de2e24" class=""><strong><span style="border-bottom:0.05em solid">Step 6:</span></strong> Configure your droplet. The image below shows my full configuration, but the only things you’ll need to change from the defaults are:</p><ul id="0bf4006a-3ae2-4f7e-8721-bbd8f7f129a1" class="bulleted-list"><li style="list-style-type:disc">Make sure the <code>Ubuntu</code> option is chosen in the first row. Ubuntu is the Linux distribution we’ll be using for this class.</li></ul><ul id="38a73146-21d2-48d6-9b8b-1b5e3f8a08c6" class="bulleted-list"><li style="list-style-type:disc">Choose the <code>Basic</code> plan on the second row</li></ul><ul id="9054a82a-7963-463a-b0fe-2385a388e809" class="bulleted-list"><li style="list-style-type:disc">For <code>CPU options</code> make sure to choose the <code>Regular Intel</code> option, with the $5/mo pricing package. This is the cheapest option available to us, and the computing power will be sufficient for our needs.</li></ul><ul id="6120fef2-d30b-4380-a7ae-2203008e5892" class="bulleted-list"><li style="list-style-type:disc">Under <code>Authentication</code>, make sure the <code>Password</code> option is selected (as opposed to <code>SSH keys</code>), and don’t forget to enter a password for your account on this server. <strong>Make sure to remember this password, you’ll need it to access your droplet.</strong></li></ul><ul id="946d3847-0448-47ae-9584-a2237ecdc4ab" class="bulleted-list"><li style="list-style-type:disc">You can give your droplet a name, at the bottom under <code>Choose a hostname</code>. I named mine <code>cezar-networked-media</code>.</li></ul><ul id="d55dc584-43cd-48b2-b13a-fc527e3e2ea3" class="bulleted-list"><li style="list-style-type:disc">Everything else is fine with the default options.</li></ul><p id="03b78eee-c2f0-480f-85fe-62dc4c4267a0" class="">
+</p><figure id="d8514143-696f-4528-bb5b-40871933a9ec" class="image"><a href="Web%20Hostin%20a3de8/do-step-8-create-droplet-settings.png"><img style="width:1008px" src="Web%20Hostin%20a3de8/do-step-8-create-droplet-settings.png"/></a></figure><p id="e12ebfdb-113e-4ea2-b8e2-fdd3f1ac8e2e" class="">
+</p><p id="f782d51b-3a09-48c5-9b3f-052100c17ca9" class=""><span style="border-bottom:0.05em solid"><strong>Step 7:</strong></span> Hit <code>Create Droplet</code> and, after a few seconds, the initialization should be complete. Notice the IP address written to the right of your droplet name, and save it somewhere (<code>137.184.151.138</code> in the image below, yours will be different). That’s where your website(s) will live.</p><figure id="831d4efd-a97d-40eb-a5f1-546e229182aa" class="image"><a href="Web%20Hostin%20a3de8/do-step-10-created.png"><img style="width:1872px" src="Web%20Hostin%20a3de8/do-step-10-created.png"/></a></figure></div><h2 id="afa5a5e9-c92f-4534-87eb-bd7021b71b39" class=""><details open=""><summary>⚡ Connecting to your droplet ⚡</summary></details></h2><div class="indented"><p id="289b1dca-b74c-4972-a7cd-3e7c22f9eb9c" class="">Congratulations, you now have a server running <em>in the cloud!</em></p><p id="a3a11a4e-20f9-4a62-b265-c34cbd345da0" class="">In order to connect to it, we will use <code>ssh</code>. <code>ssh</code> stands for “Secure Shell”, and it’s a simple (and secure) protocol for connecting to a computer remotely. Through <code>ssh</code> we get access to the remote computer’s command line.</p><p id="f90ff3a8-16a8-4cdf-9acd-da2bd76b0e5e" class="">Open up your <strong>Terminal</strong> (or PowerShell if you are on Windows,) and type the following command (replace <code>YOUR_IP</code> with the IP address your droplet shows in the Digital Ocean interface):</p><pre id="3093ffc8-050e-4273-852e-4cf0cd78c219" class="code"><code>ssh root@YOUR_IP</code></pre><p id="178303e0-3856-41be-93e3-bc685a0fb899" class="">You will be prompted for a password – that is the root password you set when creating the Droplet in the Digital Ocean interface.</p><p id="55ef8093-46f6-417c-b730-867738bb33df" class="">In the command above, <code>root</code> is the user we are connecting as – it’s what the Digital Ocean droplet sets up for us as a default. There’s <a href="https://en.wikipedia.org/wiki/Superuser">more to say about what the root user is on Linux</a>, but we won’t go into details here.</p></div><h2 id="b6ea8233-b853-4b5b-b6ec-2f70b39f7d93" class=""><details open=""><summary>😵‍💫 Command line basics 😵‍💫</summary></details></h2><div class="indented"><p id="8d203a73-0ef2-4c14-b8ca-4567b721869d" class="">Since we don’t get a graphical user interface for interacting with our server, you will need to become familiar with the command line. Fortunately, 5-6 commands can get you pretty far. The most important ones we will use are:</p><ul id="794d0c3c-3989-461b-9430-088ab6f737d6" class="bulleted-list"><li style="list-style-type:disc"><code>pwd</code> → displays the path of the directory the command line is currently in. Think of the command line as a Finder window – it can only be in one folder at a time, and it can be used to open, create, modify or remove files in that folder.</li></ul><ul id="c91c2dad-e7e1-426c-83dd-6100a4ad71cb" class="bulleted-list"><li style="list-style-type:disc"><code>ls</code> → shows the files that exist in the current directory</li></ul><ul id="5aebf6cc-df73-45e3-af62-51c87f4ac63b" class="bulleted-list"><li style="list-style-type:disc"><code>mkdir</code> → creates a new folder at the current path, and takes one parameter (the name of the folder.) Example usage: <code>mkdir MyNewFolder</code></li></ul><ul id="5b3e421c-abbe-45fa-b9b0-6f831d5e7f2d" class="bulleted-list"><li style="list-style-type:disc"><code>cd</code> → changes directory, it’s what we use to navigate the filesystem. It takes one parameter, see below:<ul id="47e114ee-4ebc-49e2-b916-4088593a0aa6" class="bulleted-list"><li style="list-style-type:circle"><code>cd MyNewFolder</code> will move us inside the newly created <code>MyNewFolder</code>. This is a <em>local path</em>, meaning that <code>MyNewFolder</code> needs to exist in the current directory in order for this command to work.</li></ul><ul id="3b6a4705-36c1-4b67-8e6e-d3082a5ce28a" class="bulleted-list"><li style="list-style-type:circle"><code>cd /root/MyNewFolder</code> will move us to the given <em>global path. </em>It’s a global path because it starts with a <code>/</code>.</li></ul><ul id="1d4c937c-ff2e-4bce-9d03-d74c2f528c63" class="bulleted-list"><li style="list-style-type:circle"><code>cd ..</code> will move us in the <span style="border-bottom:0.05em solid">parent</span> of the directory we’re currently in.</li></ul><ul id="ffb93584-3e91-43bc-8a2f-35ca1f5399d6" class="bulleted-list"><li style="list-style-type:circle"><code>cd ~</code> will move us to the home folder of the current user.</li></ul><ul id="c90eaaf8-0323-41d2-b868-a317c09b835a" class="bulleted-list"><li style="list-style-type:circle"><code>cd /</code> will go to the very root of the file system.</li></ul></li></ul><ul id="ec185eb7-a2d8-4b76-aed0-3aed66b24f9a" class="bulleted-list"><li style="list-style-type:disc"><code>touch</code> → creates a new empty file</li></ul><ul id="cbe6b3fd-aaf0-4102-ab09-a8999a08890e" class="bulleted-list"><li style="list-style-type:disc"><code>cat</code> → displays the contents of a file, and takes one parameter – the path of the file. For example, running <code>cat /root/.bash_history</code> will show the contents of the <code>.bash_history</code> file located in the <code>root</code> folder, which happens to be the list of all commands you’ve already run in the terminal.</li></ul><ul id="5f7e81c6-a8a9-4d2a-b2a0-a9440b9e77cd" class="bulleted-list"><li style="list-style-type:disc"><code>rm</code> → removes a file; <code>rm -r</code>, to remove a directory; USE WITH CAUTION.</li></ul><p id="2e270edd-0dbe-4cc6-a6e8-bd9493b1d2e3" class="">
+</p><p id="05e546b3-4698-4bd4-8697-434dc5cce45b" class=""><strong>Note #1: </strong>You can find a pretty comprehensive command line cheat sheet <a href="https://www.git-tower.com/blog/command-line-cheat-sheet/">here</a>. Don’t worry if it feels intimidating for now – you’ll soon get used to it.</p><p id="b3f9629d-0327-4571-91b3-4bab655ce51c" class=""><strong>Note #2: </strong>If you’re using a Mac, all these commands work on your computer as well (through the Terminal app.)</p></div><h2 id="81733adf-4343-499e-876c-94f1a743f344" class=""><details open=""><summary>💻 Initial droplet setup: Installing Node JS 💻</summary></details></h2><div class="indented"><p id="d2b57a36-2650-4f38-b21b-d7969e0d3c00" class="">In order to host a website on the droplet, we need to run a web server. There are many different flavors of web servers out there, but for this class we are building our own (ish) using NodeJS. Node is a Javascript-based environment used for scripting and server-side applications. Simply put, it’s the thing (one thing) that allows us to run Javascript outside of the browser. We like that, because it means we don’t need to learn a different programming language for the website’s backend: everything can be Javascript.</p><p id="46e31704-54a6-46f3-baee-e4371e44504d" class="">In order to start using node, we first need to install it on the droplet. You only need to do this step once – after it’s installed, <code>node</code> will keep living on your droplet until you manually remove it. Run the following two commands:</p><pre id="399e7782-46d1-4bc9-8349-2a57e199dead" class="code"><code>sudo apt-get update
+sudo apt-get install nodejs npm</code></pre><p id="adc02295-6459-4340-bc4a-82961f02553c" class="">Notice in the second command that we are installing a second package called <code>npm</code> in addition to node. <code>npm</code> stands for Node Package Manager, and it’s a small piece of software which makes it <em>extremely easy</em> to use external libraries in node projects. You can learn more about <code>npm</code> <a href="https://www.npmjs.com/">here</a>.</p><p id="245158bb-98aa-41e9-a80b-d2e6545cde7f" class="">In order to check whether <code>node</code> and <code>npm</code> were properly installed, run the following two commands (<code>-v</code> is a pretty standard command line argument for checking the version of a software):</p><p id="6e0ce2f1-ef6c-4e01-933c-c39fb483ca3a" class=""><code>node -v</code> → this should output something like <code>v10.19.0</code>. Don’t worry if you have a different version.</p><p id="a8b01535-d089-4942-a64b-4dcaf7b4131d" class=""><code>npm -v</code> → this should output something like <code>6.14.4</code>. Again, all good if your exact version is different.</p><p id="9a40f9ec-7639-4896-a7ef-7236e0c95cb2" class="">
+</p><p id="8ff943bb-d1d5-4f56-b0ae-44186c02c515" class=""><em>Try out: Type </em><code><em>node</em></code><em> in your terminal window and hit enter. You will have an interactive console which accepts Javascript.</em></p><p id="e6e6b700-03f4-4bf6-aea4-2d7c6af949a6" class=""><em>Try out #2: Create a simple file called </em><code><em>script.js</em></code><em>, which just contains a </em><code><em>console.log</em></code><em> statement. Run that with node.</em></p></div><h2 id="87aa22b2-782d-4c49-b218-8aa1e3a56ea8" class=""><details open=""><summary>🆕 Starting a node project 🆕</summary></details></h2><div class="indented"><p id="f696c50f-008c-406f-b07a-e06ba2397b87" class="">In the command line of your droplet, create a folder for your fist website and navigate to it.</p><pre id="45c14d12-f281-4753-8caf-fa83093980e1" class="code"><code>cd ~
+mkdir networked-media
+cd networked-media
+mkdir webserver
+cd webserver</code></pre><p id="28c12faa-8689-451a-832e-4f29ee0a71f7" class="">Maybe run <code>pwd</code> after you’ve done all this, to see the full path of where your web server will live.  In my case, the result is <code>/root/networked-media/webserver</code>.</p><p id="dd1853a4-a385-4d5c-a70f-367b3816b0c4" class="">We will start a <code>node</code> project in this directory. </p><hr id="3c208b9a-6004-4c1a-8ccc-0816cb417827"/><p id="c2a63f52-a06c-48bd-8455-4f9a90631db6" class="">Once in this <code>webserver</code> folder, run:</p><pre id="7c9b1f7a-0a0d-4067-a915-2f580a3ecc77" class="code"><code>npm init</code></pre><p id="91169590-44f4-426d-aa9b-a7195546af5c" class="">and hit enter for all the questions you get asked (you can fill in answers, but the defaults work fine.) This initializes our node project.</p><p id="c6299171-1696-4c85-a9e7-3f7e6c6641e0" class="">Once the project is initialized, we need to install an external library called Express JS. <a href="http://expressjs.com/">Express</a> is a small, easy to use framework which allows us to create web servers in node without having to write too much code. It’s the library that does all the heavy lifting in allowing us to create a web server.</p><p id="b0d27d75-52ff-4528-8c6a-a70a41bd9b44" class="">Run the following command in order to add <code>express</code> as a dependency to the current project:</p><pre id="dbcc2d44-3f8a-42be-841d-05090e7aa7ef" class="code"><code>npm install express --save</code></pre><p id="ef5ad2ba-17af-480d-a5db-8580481c029e" class="">At this point, if you run <code>ls</code>, you should see the following files in your folder:</p><ul id="b39e3887-7bf1-460c-9bfb-1bc013c2db11" class="bulleted-list"><li style="list-style-type:disc"><code>node_modules</code> → this is the folder where all our project dependencies get saved. If you run <code>ls node_modules</code>, you will see a handful of results. <code>express</code> will be one of them, the other ones are dependencies of <code>express</code>.</li></ul><ul id="bb9ccfe8-deb5-4d9b-b77e-dc488b122161" class="bulleted-list"><li style="list-style-type:disc"><code>package.json</code> → this is our node project configuration file. It specifies some metadata about our node project, as well as our dependencies. If you run <code>cat package.json</code>, you’ll be able to see that <code>express</code> appears under the <code>dependencies</code> section of the file.</li></ul><ul id="6b4bc0b2-9ad9-43be-a4be-c7d55deadcdf" class="bulleted-list"><li style="list-style-type:disc"><code>package-lock.json</code> → we don’t care about this file, it’s used by node internally to keep track of exact library versions for the entire dependency tree.</li></ul><p id="c9d133f5-c3da-4a7a-a27c-bd53094766e5" class="">This is the default barebones structure of a node project, so you should get used to seeing <code>node_modules</code> and <code>package.json</code> around. The only thing that’s missing is some actual code to define and run our web server.</p></div><h2 id="7d2070d7-e322-463c-9946-2812fe809ab8" class=""><details open=""><summary>🌐 Building and running the web server 🌐</summary></details></h2><div class="indented"><h3 id="c1b99874-2572-4260-9942-2098bbdb20f7" class="">Creating the server file</h3><p id="3504c8a6-1add-44db-a431-2c6529bae561" class="">You will create and edit the server file on your own computer, and upload it to the droplet once it’s ready. During the first few weeks of the class we won’t be writing any more server-side code, so this file will remain unchanged. Once we start adding more functionality to our servers, we’ll look at a more efficient workflow for updating the server.</p><p id="8c514656-9caa-44cc-ae3b-c554066b7146" class="">Open your code editor and create a new file. You can save it anywhere on your file system, under the name <code>server.js</code>. Paste the code below in the file:</p><pre id="a8a2592a-16ba-4f70-8215-5acaf1c5d676" class="code"><code>// Importing the express library we&#x27;ve installed; This library allows us to create a simple web server.
+var express = require(&#x27;express&#x27;);
+
+// Create the web server.
+var app = express();
+
+// Tell the web server to use the &quot;public&quot; folder for serving static files (html, css, javascript, media.)
+app.use(express.static(&#x27;public&#x27;));
+
+// Create a test endpoint; This is not required, but it allows us to verify whether the server is working.
+app.get(&#x27;/test&#x27;, function (req, res) {
+  res.send(&#x27;Hello World!&#x27;)
+});
+
+// And finally start the server. We start the server on port 80, which is the default port for http.
+// If you want to learn more about ports, read this: https://www.cloudflare.com/learning/network-layer/what-is-a-computer-port/
+app.listen(80, function () {
+  console.log(&#x27;Example app listening on port 80!&#x27;)
+});</code></pre><h3 id="7f72f43f-c02a-4e42-85cd-1b29c0fb3e68" class="">Uploading the server file to your droplet</h3><p id="5ff55ec6-8f0e-41b1-8df3-44d69bea229a" class="">Since we created this file on our own computer, with the convenience of a graphical user interface and a nice code editor, we need a way to upload it to the droplet.</p><p id="52115bb3-ba8c-4e98-9d8c-8a453ca130c5" class=""><a href="https://cyberduck.io">Cyberduck</a> is a piece of software which allows us to do that, using the <code>SFTP</code> protocol. <code>SFTP</code> stands for SSH File Transfer Protocol, and it’s a widely used protocol for transferring files over the internet. </p><p id="fdd0044b-733e-4d3b-b6a3-3e4f96e88098" class=""><em>The Cyberduck instructions are MacOS specific. The software works on Windows too, but it has a different interface. Send me an email if you have trouble replicating these steps.</em></p><p id="cce994f3-49b1-4ed9-8a96-f502865cb992" class="">Once you’ve downloaded and opened Cyberduck, click on the “+” icon in the bottom-left of the window to establish a new connection. </p><p id="e212411f-d149-4bdf-8d8f-e0622f6e8c69" class="">In the dropdown at the top, pick the <code>SFTP (SSH File Transfer Protocol)</code> option, and give your connection a <code>nickname</code> in the field underneath. In the <code>server</code> field, enter the public IP address of your droplet – the same one you used to connect via ssh. Write <code>root</code> in the <code>username</code> field (remember from a previous section of this tutorial, our current user is called <code>root</code>), and type in your <code>password</code> in the next field. Once you’ve filled all these fields out, close the window.</p><p id="cf1f53f0-514b-4aba-a954-80ec83ee3fa0" class="">Back in the main Cyberduck window, double-click on the newly added item, and a new Finder-like window will open, with the contents of your droplet in it. </p><p id="6d280b50-26d5-476e-9234-435010648ca1" class="">Navigate to the folder where you’ve set up your npm project (<code>/root/networked-media/webserver</code> in my case,) and drag-and-drop the <code>server.js</code> file from your Finder window into the correct folder in the Cyberduck window. This will copy the file to the droplet.</p><h3 id="5c9411fd-65c1-4cb3-a08f-87d8149ce88a" class="">Running the server</h3><p id="3615ccf8-4674-4166-8ce0-a4d7f029a0ae" class="">Going back to the Terminal, make sure your <code>ssh</code> connection to the droplet is still active, and, if it’s not, re-connect (<code>ssh root@123.456.etc</code>). Navigate to the project folder. When you type <code>ls</code>, you should now see the <code>server.js</code> file showing up alongside <code>package.json</code> and <code>node_modules</code>.</p><p id="a370b5c7-2201-41f2-a102-c5ff902e5f5f" class="">Start your web server by running the following command:</p><pre id="3b8e18a7-c871-4dd8-b365-614c5e49cf39" class="code"><code>node server.js</code></pre><p id="261d919c-24a9-4eed-9e39-08cd240503e6" class="">You should see a message saying <code>Example app listening on port 80!</code> If by any chance you see a longer error instead, which mentions <code>Error: listen EACCES: permission denied 0.0.0.0:80</code>, run the server as superuser: <code>sudo node server.js</code>.</p><h3 id="35fb7085-bfe8-45ed-9578-5e7c8e8572d4" class="">Testing the server</h3><p id="6fa6a4dd-0c4f-4799-baca-72772b0c83c4" class="">Open a web browser and navigate to <a href="http://your.ip.address.here/test"><code>http://your.ip.address.here/test</code></a> (<code>http://137.184.151.138/test</code> in my case). You should see a simple page saying <code>Hello World!</code> → this is the result of the <code>/test</code> route we set up in <code>server.js</code>.</p><h3 id="17009536-6d74-4959-b273-3306238d7010" class="">AND FINALLY, adding .html file(s) to the server 😓</h3><p id="a7e6e137-e8af-4fb9-9577-363515d16fde" class="">Inside of the same folder that <code>server.js</code> lives in (<code>/root/networked-media/webserver</code> in my case,) create a new folder called <code>public</code>. You can do this from the terminal by using the command <code>mkdir public</code>, or from Cyberduck (Option-Click → New Folder.)</p><p id="0854a74f-b6b7-4075-909e-cafd6c050c52" class="">On your computer, create an <code>index.html</code> file, and add some simple content to it (or grab an .html file you already have.) If you’re looking for inspiration for creating a new one, check out the <a href="Introducti%203b1c2.html">Introduction to HTML</a> tutorial. Using Cyberduck, copy the <code>index.html</code> file into the <code>public</code> directory within your web server.</p><p id="9dedca53-7cf8-41f0-ae22-f72e063b1128" class="">Open your web browser and navigate to <code>http://your.ip.address.here/</code> (<code>http://137.184.151.138/</code> in my case,) or <code>http://your.ip.address.here/index.html</code>. You should see the HTML page contents displayed in your browser.</p><h1 id="821e33a4-1183-4e79-81c0-214e99335ed3" class="">🎉 🎉 🎉 CONGRATULATIONS, YOU ARE NOW RUNNING YOUR OWN WEB SERVER 🎉 🎉 🎉</h1></div><h2 id="9f4e0f6e-bd58-4172-81e2-5e1c6300623b" class=""><details open=""><summary>💤 Keeping the web server alive after you log out 💤</summary></details></h2><div class="indented"><p id="9115182c-a81e-4e52-b84c-6d135f5d2e09" class="">You will notice that if you close your terminal window, you won’t be able to access your website anymore. </p><p id="cb70c215-aea7-45a8-902a-b0d518a5644d" class="">This is because of how <code>ssh</code> and shell (aka terminal) sessions work. Once we connect to our droplet, we are given “a shell” – the terminal we write in, which is a child of the <code>ssh</code> connection. When we start our web server, that process becomes a child of the shell. So, when the <code>ssh</code> connection closes, all processes that are its children, grandchildren or further down the tree get closed as well.</p><p id="89bb7e21-cd68-4379-ba85-b2c67d754f73" class="">In order to avoid that, we need an external utility which keeps our web server running even after we disconnect. There are a handful of options, but the one we will work with is called <code>pm2</code>. It also exists in the <code>npm</code> ecosystem, so you can install it like this:</p><p id="4710ac67-8c5b-41e7-b4a7-cf32ffa131f2" class=""><code>sudo npm install --global pm2</code></p><p id="f6908c80-a56c-4305-ac36-e4392ea0b7ba" class="">The <code>--global</code> flag tells <code>npm</code> to install this library for the entire filesystem, as opposed to locally for a project. <code>pm2</code> is a command-line utility, so it needs to be installed globally. We’ll get more into this later in the semester.</p><p id="df0efda1-5884-45a6-80db-88b946811d97" class="">
+</p><p id="32dc87ac-49f1-4815-8fff-04988d760f8e" class="">Navigate to the folder where your web server lives, and, instead of starting your web server with the <code>node server.js</code> command, run the following:</p><pre id="779eb6f3-9d8f-4f2c-a05c-2acc4ceef68b" class="code"><code>pm2 start server.js</code></pre><p id="693d9ca7-249e-4607-8212-2f5b70340392" class="">By doing this, <code>pm2</code> becomes the manager of our node web server, and, through black magic, it makes sure the server stays on even after you disconnect from <code>ssh</code>. Give it a try!</p><p id="75fe05ab-084a-41e7-a5c7-1fd9147746cf" class="">For the first few weeks, we won’t be making any changes to the server itself, so once you have this running, there’s no need to stop or restart the server. Files uploaded in the <code>public</code> folder will automatically get picked up and updated in the browser.</p><p id="282de63b-55df-4778-bfc4-b019669ee76a" class="">Once we start making changes to the server itself, we’ll learn some more about <code>pm2</code> and best development practices &amp; workflows.</p><p id="04cdc369-ec14-4c5e-a386-6ed8db255606" class="">.</p><p id="0d8a5986-0f35-4d7d-ac1c-bdde57b2642f" class="">.</p><p id="74ef1fe3-9f70-4684-990c-e75e40aca98a" class="">.</p><p id="acda2e11-6d63-449f-9634-9b5ea276823f" class="">That</p><p id="adedb3ea-95d2-428a-bfbd-67ab6970321d" class="">was</p><p id="452946bd-59f4-4353-9ff8-9790fd3cd260" class="">a</p><p id="cb41a138-34b2-4670-9e8c-9091c7aacd8d" class="">lot</p><p id="a343988d-16ee-4ac6-bff0-c736c2a46ba7" class="">but hang in there, you’ll do these steps over and over again over the next few weeks to the point where they’ll become second nature.</p><p id="a4c0f300-1779-47a5-8515-62c3af478a8d" class="">❤️</p></div></div></article></body></html>

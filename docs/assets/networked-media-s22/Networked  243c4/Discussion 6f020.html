@@ -1,0 +1,670 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Discussions</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6f020ca8-c547-4fe2-803e-4bbc4ae44116" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🗨️</span></div><h1 class="page-title">Discussions</h1></header><div class="page-body"><p id="99017b0a-eb98-41a8-800c-1e3d016e08f4" class="">Each Monday, we will assign one or more readings, meant to facilitate our discussion during class the following week.</p><p id="b02b00bd-7040-47cf-bd91-90be8e5c7b4e" class="">You are required to <strong>submit a response to the weekly reading(s) by Sunday night</strong>. Your response can be in writing (around 150-200 words,) but you are also welcome to respond with an art piece, a photographic essay, a website, a collection of memes, an audio recording, or any other format that best expresses your response to the assigned text(s). You should spend no more than 45-60 minutes preparing your response.</p><p id="1163863d-f077-493a-994c-6ea9e3618c04" class=""><strong>You should turn in your reading responses by pasting a link to it </strong><a href="https://docs.google.com/spreadsheets/d/1WofbWtj-6BbzLdWZW7FLKWVPDzcHLoGPgCQDnOToBGY/edit?usp=sharing"><strong>here</strong></a><strong>.</strong></p><hr id="3f956b76-5aa5-426b-b18c-267b38453208"/><p id="fdf05279-2b4d-4ba8-be2f-74071bc898a0" class="">In addition, each person will be responsible for leading one 30 minute discussion at some point during the semester based on the assigned readings, together with one other classmate. </p><p id="07c3eb7b-a1fa-41bf-82fb-2d495819dc8f" class=""><strong>The weeks highlighted in green below are the ones where we will have student led discussions. </strong>Please sign up for your preferred discussion week by emailing Vesper with your top three choices, <strong>by Monday, January 31st</strong>. We will take the liberty of assigning you to a discussion group if you fail to sign up in time.</p><p id="95a7a2a9-2af0-4f18-a2be-8fa69c0528dc" class="">For the discussion you lead:</p><ul id="476e9b4b-a1c9-4564-93ca-bf5f8ded8a51" class="bulleted-list"><li style="list-style-type:disc">Consume all posted media.</li></ul><ul id="1a4094c2-d5bf-463c-ad59-7ca2d04cf2c2" class="bulleted-list"><li style="list-style-type:disc">Prepare a few slides to focus the discussion. Include key points from the media, and a couple relevant external references or examples. These examples might be artworks, news articles, quotes, etc.</li></ul><ul id="3a23acb3-7b0a-4b69-9234-aba9b3fdc19d" class="bulleted-list"><li style="list-style-type:disc">Prepare a set of questions to guide the discussion.</li></ul><ul id="c8754c43-73e7-4c8d-8514-3a8acdce81e3" class="bulleted-list"><li style="list-style-type:disc">Meet with Vesper during office hours in advance of your discussion to review your questions and plan. If you aren’t able to attend Vesper’s regular office hours, send an email in advance to schedule an alternative time.</li></ul><p id="9a249cf8-392b-479c-8843-f0d0e1e4f973" class="">
+</p><h2 id="ea1373fa-5846-40d7-8409-c35b379441f4" class="block-color-orange_background"><details open=""><summary>Week #2, The Web Then and Now, (Monday, January 31st)</summary></details></h2><div class="indented"><p id="6b01443a-567d-4331-b716-68b79538bec7" class=""><strong>No student led discussion this week, but you still need to submit a reading response.</strong></p><p id="b9d22b63-93ab-4202-a31f-017bc6acba0f" class="">We will be talking about:</p><ul id="a747854b-42cb-4fe4-bf84-c2e5111b71db" class="bulleted-list"><li style="list-style-type:disc">Olia Lialina, <a href="http://art.teleportacia.org/observation/vernacular/"><em>A Vernacular Web, Part I</em></a></li></ul><ul id="09e0c36a-9a4c-45a2-b9fc-fa19cf093b02" class="bulleted-list"><li style="list-style-type:disc">Olia Lialina, <a href="http://contemporary-home-computing.org/vernacular-web-2/"><em>A Vernacular Web, Part II</em></a></li></ul><ul id="69acbbc4-52ff-4c0e-b852-21f5cb45a502" class="bulleted-list"><li style="list-style-type:disc">Jenny Odell, <a href="https://humanparts.medium.com/how-to-internet-6c379e75c8e0"><em>How To Internet</em></a></li></ul></div><h2 id="4d6c4a93-2b30-4730-b7be-144ca6a79eb7" class="block-color-teal_background"><details open=""><summary>Week #3, Knowledge as Hypertext (Monday, February 7th)</summary></details></h2><div class="indented"><p id="b1b1a2ea-647c-4ef6-b42a-aca20c5af7f0" class="">Discussion leads: <strong>Sam Sengupta &amp; Zoe Wells</strong></p><p id="0c8a3a1c-690a-46cc-988a-bb6558930280" class="">We will be talking about:</p><ul id="26a63233-52b4-41dc-9cee-f4b4cdb21a94" class="bulleted-list"><li style="list-style-type:disc">Octavia Butler &amp; Samuel Delany in conversation, <a href="https://www.blackhistory.mit.edu/archive/transcript-octavia-butler-and-samuel-delany-1998"><em>The Value of Literacy</em></a></li></ul><ul id="4df55a90-7ab6-4fc4-8877-b577daebb4b4" class="bulleted-list"><li style="list-style-type:disc">Wendy Chun, <a href="https://arena-attachments.s3.amazonaws.com/14824958/1fa6a1f044fd6eea7bde0f131dc6e268.pdf?1642897047"><em>The Digital Ephemeral</em></a></li></ul></div><h2 id="662cd626-6281-4d2e-ba12-fcb9cceb9414" class="block-color-yellow_background"><details open=""><summary>Week #4, Project #2 Presentations (Monday, February 14th)</summary></details></h2><div class="indented"><p id="cb936902-41de-40ba-bfc7-4b4b4ffad0ed" class="">No reading assignment due on Monday, February 14th. You should focus on finalizing Project #2.</p></div><h2 id="89cc89df-6a84-4d79-854f-11ead8dbdfc3" class="block-color-orange_background"><details open=""><summary>Week #5, Interface, Part I (Wednesday, February 23rd)</summary></details></h2><div class="indented"><p id="8fc923c4-8856-48ec-84a7-7ad5fa100d50" class=""><strong>No student led discussion this week, but you still need to submit a reading response.</strong></p><p id="224d1b5d-ca63-49e4-b719-e2af6b40486f" class="">We will be talking about:</p><ul id="43d36838-655d-4aa1-b249-e67a3acf9b92" class="bulleted-list"><li style="list-style-type:disc">Frank Chimero, <a href="https://frankchimero.com/blog/2015/the-webs-grain/"><em>The Web’s Grain</em></a></li></ul></div><h2 id="55f1e681-393c-4b95-83dd-1c566734cc4e" class="block-color-teal_background"><details open=""><summary>Week #6, Interface, Part II (Monday, February 28th)</summary></details></h2><div class="indented"><p id="98c113ba-b32b-4437-9a10-241541472e6e" class="">Discussion leads: <strong>Emily Shen &amp; Pearl Marden</strong></p><p id="5ffd9bb8-e6d6-4e6b-880e-4760fe80756f" class="">We will be talking about:</p><ul id="e75b2548-9da0-483c-8483-01174ec1a232" class="bulleted-list"><li style="list-style-type:disc">American Artist, <a href="https://unbag.net/end/black-gooey-universe"><em>Black Gooey Universe</em></a></li></ul><ul id="a86d6959-f858-4222-b737-50c0dd59a8b7" class="bulleted-list"><li style="list-style-type:disc">Olia Lialina, <a href="http://contemporary-home-computing.org/RUE/"><em>Rich User Experience, UX and the Desktopization of War</em></a></li></ul></div><h2 id="4853f597-e69f-4344-ade6-2cda9f7a78db" class="block-color-yellow_background"><details open=""><summary>Week #7, Project #3 Presentations (Monday, March 7th)</summary></details></h2><div class="indented"><p id="06d9b2b3-d11f-4400-b79e-cb4cea7cbae1" class="">No reading assignment due on Monday, March 7th. You should focus on finalizing Project #3.</p></div><h2 id="62ea8d4b-eb0e-4e34-bdaa-40b32e8e88d7" class="block-color-teal_background"><details open=""><summary>Week #8, Social Media (Monday, March 21st)</summary></details></h2><div class="indented"><p id="9890fd7c-13ab-4047-a4a2-19f37aef1fe8" class="">Discussion leads: <strong>Avital Rabinovich &amp; Jiayi Tan</strong></p><p id="f451cc9c-03bc-47c3-a930-b472c7a8b020" class="">We will be talking about:</p><ul id="4f0b3129-7d9b-446f-b7e9-80f0838d3c14" class="bulleted-list"><li style="list-style-type:disc">Christina Xu, <a href="https://logicmag.io/china/bullet-time/"><em>Bullet Time</em></a></li></ul><ul id="e777c15e-6634-4fc6-9df3-4051cac098bb" class="bulleted-list"><li style="list-style-type:disc">Tarleton Gillespie, <a href="https://logicmag.io/scale/the-scale-is-just-unfathomable/"><em>The Scale Is Just Unfathomable</em></a></li></ul></div><h2 id="34950560-2ee7-4f50-ab6c-dd2691189148" class="block-color-teal_background"><details open=""><summary>Week #9, Image Culture (Monday, March 28th)</summary></details></h2><div class="indented"><p id="dbc9457c-f3ea-4f54-b1b6-85cf83288f02" class="">Discussion leads: <strong>Jessica Lin &amp; Kaitlyn Zou</strong></p><p id="904da590-a5f8-4857-beaa-f88ad2ae77b0" class="">We will be talking about:</p><ul id="c187e6c5-5a24-4c21-816a-20cf7831c8b6" class="bulleted-list"><li style="list-style-type:disc">Hito Steyerl, <a href="https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/"><em>In Defense of the Poor Image</em></a></li></ul><ul id="4320f9de-7c75-4c87-b01f-3bef029ab5e1" class="bulleted-list"><li style="list-style-type:disc">Nayantara Ranganathan, <a href="https://logicmag.io/commons/under-a-blood-red-flag/"><em>Under A Blood Red Flag</em></a></li></ul></div><h2 id="bada5d36-5845-407c-b116-76bd5c2a626e" class="block-color-teal_background"><details open=""><summary>Week #10, Mapping the Internet (Wednesday, April 6th)</summary></details></h2><div class="indented"><p id="e115670d-36a6-4e54-944a-7458f34d55b3" class="">Discussion leads: <strong>Peter Lin &amp; Emily Luo</strong></p><p id="7ed7ebbe-2a19-4d16-9ae0-1edb39eeec23" class="">We will be talking about:</p><ul id="733908c4-0c9d-42d3-93ab-a018258e7273" class="bulleted-list"><li style="list-style-type:disc">Nicole Starosielski, <a href="https://blogs.commons.georgetown.edu/engl-711-fall2017/files/2017/08/The-Undersea-Network_Starosielski.pdf"><em>The Undersea Network</em></a><em> (excerpt)</em></li></ul><ul id="e034154e-dd21-4c78-8e8e-72879bc3a108" class="bulleted-list"><li style="list-style-type:disc">Ingrid Burrington, <a href="https://www.e-flux.com/architecture/dimensions-of-citizenship/178279/effortless-slippage/"><em>Effortless Slippage</em></a></li></ul><ul id="1a029228-0b98-4526-ba96-67c4d70181c2" class="bulleted-list"><li style="list-style-type:disc">Ingrid Burrington, <a href="http://seeingnetworks.in/nyc/"><em>Seeing Networks in New York City</em></a><em> </em>(website, optional)</li></ul></div><h2 id="72f9f650-e074-4f23-b2b8-a9c665808e2e" class="block-color-teal_background"><details open=""><summary>Week #11, Infrastructure as Utopia (Monday, April 11th)</summary></details></h2><div class="indented"><p id="64f964e6-3f44-4757-b0cd-518017b7bdd8" class="">Discussion leads: <strong>Waverly Mangum &amp; Annelise Lee</strong></p><p id="31a63c08-6f1a-4584-9d52-05c757f6538a" class="">We will be talking about:</p><ul id="b4578fdd-f8b4-4e2b-869d-5d12f5e3364a" class="bulleted-list"><li style="list-style-type:disc">John Perry Barlow, <a href="https://www.eff.org/cyberspace-independence"><em>A Declaration of the Independence of Cyberspace</em></a></li></ul><ul id="52da8aed-5d50-46e3-a679-4ffc36b7e396" class="bulleted-list"><li style="list-style-type:disc">April Glaser, <a href="https://logicmag.io/bodies/another-network-is-possible/"><em>Another Network is Possible</em></a></li></ul><ul id="62c9cc19-5065-4b92-8082-1ae3b3e4bb4c" class="bulleted-list"><li style="list-style-type:disc"><a href="https://video.vice.com/en_us/video/motherboard-dear-future-people-building-their-own-internet-detroit/59cebd5795073d0905939aeb">Meet the People Building Their Own Internet in Detroit</a>, <em>Vice </em>(video, optional)</li></ul></div><h2 id="e54789d9-3213-4bb3-958f-82b01748c835" class="block-color-teal_background"><details open=""><summary>Week #12, Surveillance Capitalism (Monday, April 18th)</summary></details></h2><div class="indented"><p id="c32723d5-b960-4061-b96c-b53cf4d337ba" class="">Discussion leads: <strong>Drew Brown &amp; Hershey Zhang</strong></p><p id="2de35106-3f16-4990-ad25-e70fb2fd3418" class="">We will be talking about:</p><ul id="b5a853f6-20ab-43bb-a3f1-1d2cf4d55e4a" class="bulleted-list"><li style="list-style-type:disc">Richard Barbrook and Andy Cameron, <a href="https://arena-attachments.s3.amazonaws.com/14592114/c5f597590707072ee524f5c252faf4c6.pdf?1641475747"><em>The Californian Ideology</em></a><em> </em>(excerpt)</li></ul><ul id="956120c9-74fb-4b54-8c3d-2ddabcf31a64" class="bulleted-list"><li style="list-style-type:disc">Shoshana Zuboff, <em>The Age of Surveillance Capitalism</em> (excerpt)</li></ul></div><h2 id="27f1110e-1da8-4616-b9c0-22a4b14c130d" class="block-color-orange_background"><details open=""><summary>Week #13, Welcome to my homepage, 2021 version (Monday, April 25th)</summary></details></h2><div class="indented"><p id="3b33ca66-d4a0-4752-8d6d-7f121d1454e0" class=""><strong>No student led discussion this week, but you still need to submit a reading response.</strong></p><p id="157e0783-84be-4a82-8429-fecc10fcac95" class="">We will be talking about:</p><ul id="5bcdfb6b-ed56-4ee1-bc78-6466a594b205" class="bulleted-list"><li style="list-style-type:disc">Everest Pipkin, <a href="https://pioneerworks.org/broadcast/i-know-a-place-pipkin"><em>I Know a Place</em></a></li></ul></div><h2 id="74ab99c5-c3cb-4c8a-81d0-f225e67ca70a" class="block-color-teal_background"><details open=""><summary>Week #14, Re-decentralization, blockchain and Web 3.0 (Monday, May 2nd)</summary></details></h2><div class="indented"><p id="5c07fe19-18d2-4775-8139-8d3faf42bb1e" class="">Discussion leads: <strong>Ricky Zhang &amp; Jingyi Sun</strong></p><p id="1bb83848-ead2-41d9-b600-19efce32aa1b" class="">We will be talking about:</p><ul id="5a2a897b-ab5e-4e35-9e55-13ee21a79c22" class="bulleted-list"><li style="list-style-type:disc">Gabriel Nicholas, <a href="https://logicmag.io/bodies/the-crypto-family-farm/"><em>The Crypto Family Farm</em></a></li></ul><ul id="ad1c9d84-cc9c-41fb-8e95-1b982ed7d545" class="bulleted-list"><li style="list-style-type:disc">Moxie Marlinspike, <a href="https://moxie.org/2022/01/07/web3-first-impressions.html"><em>My First Impressions of Web3</em></a></li></ul></div><h2 id="b0bdcb83-5e04-4a92-ad16-11e9008a7d71" class="block-color-yellow_background"><details open=""><summary>Week #15, Final Project Presentations (Monday, May 9th)</summary></details></h2><div class="indented"><p id="c19d2e1f-d499-4eee-8e26-a42b55191606" class="">No reading assignment due on Monday, May 9th. You should focus on finalizing your final projects.</p></div></div></article></body></html>

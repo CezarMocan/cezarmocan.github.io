@@ -1,0 +1,741 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>User Events &amp; Interaction</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2a47e81c-adf2-416c-9d15-ea6b14f7e881" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🖱️</span></div><h1 class="page-title">User Events &amp; Interaction</h1></header><div class="page-body"><p id="aecb12a0-255e-4891-8363-3a80435c771c" class="">We are finally here — interaction, the last missing part in our frontend web development toolkit. Once you’ve covered this material, you will technically know everything you need about HTML, CSS and Javascript in order to build relatively complex (and functional) <em>static</em> websites. <em>(static doesn’t mean no interaction, or fun, it just means no backend or dynamic data. The HTML you wrote is all the website has.)</em></p><p id="04d93f08-c859-45b2-bcb8-2b3b6378960d" class="">As mentioned in the <a href="Web%20Time%20c10b9.html">Web Time</a> tutorial, Javascript is an event-based programming language, meaning that it allows us to easily implement certain logic (read execute a function) when certain events happen.</p><p id="184c9977-77da-49cd-b00f-608c8691a2d8" class="">When talking about time on the web, those events had to do with time. <code>setTimeout</code>&#x27;s event can be verbally described as <code>X seconds in the future</code>. <code>setInterval</code>&#x27;s event can be verbally described as <code>starting now, every X seconds</code>.</p><p id="6f37306c-262e-4abb-9e40-d33e680ff525" class="">In this tutorial we will look at user-generated events, things like <code>when the user clicks on this &lt;div&gt;</code>, or <code>when the user types the letter &quot;X&quot; on their keyboard.</code></p><h2 id="5405fa75-d79e-498b-86bd-299bfd07920d" class=""><details open=""><summary>jQuery’s <strong><code>on</code></strong><strong> method</strong></summary></details></h2><div class="indented"><p id="577c210f-cf5f-4a42-bfed-107454d247d4" class="">The <code>on</code> method attaches one or more event handlers for the selected elements and child elements. Event handlers attached using the <code>on</code> method will work for both current and FUTURE elements (like a new element created by a script). As of jQuery 1.7, all events are bound via the <code>on</code> method, whether you call it directly or whether you use an alias/shortcut method such as <code>bind</code> or <code>click</code>, which are mapped to the <code>on</code> method internally. <a href="https://api.jquery.com/on/">(more)</a></p><p id="be64e7e3-7764-4c8b-a579-e2efdf2a4bd6" class="">The general syntax for attaching an event listener to an object using the <code>on</code> method is like this:</p><p id="8f0e6553-d8da-4dc7-b513-c037f85d8c3d" class=""><code>$(</code><code><em>selector</em></code><code>).on(</code><code><em>eventName, callbackFunction)</em></code></p><ul id="be7f8a80-9e65-41df-9194-982c21c8658b" class="bulleted-list"><li style="list-style-type:disc">The <code>selector</code> works as discussed in a previous tutorial (by tag name, by id, by class, etc.) </li></ul><ul id="b29c1a4a-3a67-4141-9b57-49834d6d3084" class="bulleted-list"><li style="list-style-type:disc">The <code>eventName</code> needs to take specific values, which are defined by HTML &amp; Javascript. Examples include <code>click</code>, <code>keypress</code>, <code>hover</code>, and more. <em>You can find a full list of DOM events </em><a href="https://www.w3schools.com/jsref/dom_obj_event.asp"><em>here</em></a><em>.</em></li></ul><ul id="9668ecd0-0bd4-486b-8372-c09faaad867a" class="bulleted-list"><li style="list-style-type:disc">The <code>callbackFunction</code> is a function that we define, similarly to timers. This is where we define what we want to happen as a result of the interaction (click, key press, etc.) and gets called when Javascript detects that user interaction on the given selected elements.</li></ul></div><h2 id="7516289b-70dd-4825-89e6-201b9169c68c" class=""><details open=""><summary><strong>Mouse events</strong></summary></details></h2><div class="indented"><h3 id="bfd856f7-09f0-4ca8-af6c-0c5a482000ca" class="">The <code>click</code> event</h3><p id="fad23938-89ad-45d2-aaf9-d176a4aceadf" class=""><code>$(&quot;#element&quot;).on(&quot;click&quot;, function(event) { /* code here */ } )</code></p><p id="1479e96c-bfd9-4c3d-a212-19d7b01a8f18" class="">First of all, let’s talk about events. <code>“click”</code> is an event that is bound via the <code>on</code> method. All the different visitors&#x27; actions that a web page can respond to are called events, and jQuery responds to events in an HTML page. Keep in mind that an event represents the <strong><em>precise moment</em></strong> when something happens. There could be one or more space-separated event types and optional namespaces, all events should be contained in a set of quotation marks.</p><p id="9123c9fc-cb31-4822-aa4c-d6252aaabeff" class="">Meanwhile, <code>function( )</code> is a handler, it executes when an event (in our case, the <code>“click”</code> event) is triggered and completed. We need it because JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors. To prevent this, you can create a callback function, which is executed after the current effect is finished.</p><p id="fe53b282-c5de-4bf9-8283-f9385172fe70" class="">
+</p><p id="0e484487-091f-4067-a926-982ed98b0187" class="">For instance, the example below has no callback parameter, and the alert box will be displayed before the hide effect is completed:<div class="indented"><pre id="ce1d20a9-456a-4f39-bf4c-95e8b0bacd67" class="code"><code>$(&quot;button&quot;).on(&quot;click&quot;, function(event) {
+  $(&quot;p&quot;).hide(1000); // without function, &quot;alert&quot; happens before &quot;hide&quot;
+  alert(&quot;The paragraph is now hidden&quot;);
+});</code></pre><figure id="bdde1e3e-cdca-48d7-ae21-52e8dcd71c1d" class="image"><a href="User%20Event%202a47e/a.gif"><img style="width:508px" src="User%20Event%202a47e/a.gif"/></a></figure><p id="4ce7f9bd-5cfe-441f-85d5-9dfbb1fd6478" class="">
+</p><p id="e7be06cf-4d1b-413e-b0af-7155547f8e6d" class="">The example below has a callback parameter that is a function (<code>”alert”</code>) which will be executed after the hide effect is completed:</p><pre id="ca61f3e3-f4c5-4636-a66f-35f15fef23d2" class="code"><code>$(&quot;button&quot;).on(&quot;click&quot;, function() {
+  $(&quot;p&quot;).hide(&quot;slow&quot;, function(event) { // with funciton, &quot;alert&quot; doesn&#x27;t happen until &quot;hide&quot; is completed 
+    alert(&quot;The paragraph is now hidden&quot;);
+  });
+});</code></pre><figure id="8bb051d5-f9c6-4efa-85d7-c6316385d756" class="image"><a href="User%20Event%202a47e/Feb-04-2022_10-29-27.gif"><img style="width:508px" src="User%20Event%202a47e/Feb-04-2022_10-29-27.gif"/></a></figure><p id="c899de57-f91a-43a0-b01f-d7bd97e7b610" class="">
+</p></div></p><ul id="9a6f57bf-ec37-49f7-98d9-81b5f7b421d5" class="bulleted-list"><li style="list-style-type:disc">The <code>event</code> that is contained in  <code>function</code> is an <a href="https://api.jquery.com/category/events/event-object/">event object</a>. When an event is triggered, jQuery passes the handler an event object that it can use to analyze and change the status of the event. This object includes important properties and methods for cross-browser consistency, e.g. <code>target</code>, <code>pageX</code>, <code>pageY</code>, <code>relatedTarget</code> etc. <p id="29653b19-0238-42f4-8bdc-99342eb5a65d" class="">For example, <code>event.type</code> contains the event name:</p><pre id="cc7fead6-1334-4e5c-babf-d05b71c5da8d" class="code"><code>$(document).ready(function(){
+  $(&quot;button&quot;).on(&quot;click&quot;, function(event) {
+    alert(event.type); // it will return an alert box with the event type &quot;click&quot;
+  });
+});</code></pre><figure id="81d5ba3f-81a9-4040-bf3b-77803e8fb989" class="image"><a href="User%20Event%202a47e/bb.gif"><img style="width:508px" src="User%20Event%202a47e/bb.gif"/></a></figure></li></ul><p id="10888ffc-a5de-40f0-ab14-3e642ccaabb9" class="">
+</p><p id="9ca8499a-678f-400c-b47c-01395f808e2a" class="">And here is a full example of how you would use this on a page:<div class="indented"><pre id="8025ca3b-b86a-4f92-a0ad-4895797e7d50" class="code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;button&gt;Click me!&lt;/button&gt;
+		&lt;p&gt;Click the button.&lt;/p&gt;
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><pre id="feafd1a1-3bf7-486f-bd17-a784b8abb24a" class="code"><code>$(document).ready(function(){
+  $(&quot;button&quot;).click(function(event){
+      alert(&quot;You just clicked me!&quot;);
+    });
+  });
+});</code></pre></div></p><p id="71240ff3-12c9-4b5f-a114-ddb152c9b901" class=""><div class="indented"><h3 id="d74ac24b-02f8-420f-8aa6-5bc75c32a3ce" class="">The <code>mouseenter</code> event</h3><p id="2a5fb731-7d21-48fa-af86-e9869ce164b5" class=""><code>$(&quot;#element&quot;).on(&quot;mouseenter&quot;, function(event) { /* code here */ } ) </code></p><p id="e4fc43b4-8aee-4532-b1d8-b650ff3a6039" class="">The function is executed when the mouse pointer enters the HTML element:</p><pre id="72bfc831-deb0-4a89-89c8-ae9536f1a274" class="code"><code>$(&quot;p&quot;).mouseenter(function(event){
+	// text&#x27;s background becomes yellow when the cursor enter the p element
+  $(&quot;p&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;);
+});</code></pre><p id="e1c4ccfa-0b7f-4625-a1ae-da785bbac43c" class="">There is also a <code>mouseover</code> event. Note the difference between the two:<div class="indented"><ul id="dec89f88-e78b-42aa-8d38-98bc01e45e66" class="bulleted-list"><li style="list-style-type:disc">The <code>mouseenter</code> event is triggered only when the mouse pointer hits the element. The counterpart event is <code>mouseleave</code>. <strong>It does not propagate up the document hierarchy</strong>.</li></ul><ul id="67eac222-165e-440a-814b-6cfda7849e8a" class="bulleted-list"><li style="list-style-type:disc">The <code>mouseover</code><strong> </strong>event triggers when the mouse pointer enters an element and any one of its child elements. Its counterpart is <code>mouseout</code>.</li></ul></div></p><p id="c7b1dabb-31cc-4b7c-a94e-7e9051b46788" class="">
+</p><h3 id="602783b4-267d-4d51-ace2-c5f2a828744c" class="">The <code>mouseleave</code> event</h3><p id="8e2d7758-63bf-40aa-95e3-1dac95b2a47d" class=""> <code>$(&quot;#element&quot;).on(&quot;mouseleave&quot;, function(event) { /* code here */ } ) </code></p><p id="ca0cd282-d1ac-4123-bb4e-08f2836f0dd7" class="">The <code>mouseleave</code> event occurs when the mouse leaves the selected element.</p><pre id="23f8317e-0538-4ce8-a552-8e66bea8760c" class="code"><code>$(document).ready(function(){
+  $(&quot;p&quot;).on(&quot;mouseenter&quot;, function(event){
+    $(&quot;p&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;); 
+		// text&#x27;s background becomes yellow when the cursor enter the p element
+  });
+  $(&quot;p&quot;).on(&quot;mouseleave&quot;, function(event){
+    $(&quot;p&quot;).css(&quot;background-color&quot;, &quot;lightgray&quot;); 
+		// text&#x27;s background becomes grey when the cursor leaves the p element
+  });
+});</code></pre><p id="ec137a31-95cc-4c39-84c0-99c08a10eece" class=""><strong>Note:</strong> Unlike the <code><a href="https://www.w3schools.com/jquery/event_mouseout.asp">mouseout</a></code> event, the <code>mouseleave</code> event only triggers when the mouse leaves the selected elements. The <code>mouseout</code> event is triggered if a mouse leaves any child elements as well as the selected element.</p><p id="fe2eee9a-a43a-4ae8-82ac-f6b252792d83" class="">
+</p><h3 id="87355de9-9992-45d1-aa36-80e0185ce1d7" class="">The <code>mousemove</code> event</h3><p id="9763c574-b091-4a17-bf83-694f5a677015" class=""><code>$(&quot;#element&quot;).on(&quot;mousemove&quot;, function(event) { /* code here */ } ) </code></p><p id="e7f67c36-1bba-4970-a183-dceae7cde3c4" class="">The <code>mousemove</code> event is triggered each time the mouse pointer is moved when it is over an element. Note that the it occurs each time when you move the mouse by <strong>one pixel</strong>.<div class="indented"><pre id="4141207b-5684-4c83-b893-d35743d0260d" class="code"><code>$(document).ready(function(){
+  $(document).mousemove(function(event){
+    $(&quot;span&quot;).text(event.pageX + &quot;, &quot; + event.pageY); // shows the position of mouse pointer on time
+  });
+});</code></pre></div></p></div></p><p id="e48fc4aa-f333-4058-9fa3-208dac267928" class=""><div class="indented"><h3 id="8aebf895-2ef0-434e-a01f-1bc79bdc4697" class="">Further resources</h3><p id="303a6887-8e1c-41a9-888f-3c266a57d555" class="">Here is a <a href="https://javascript.info/mouse-events-basics">link</a> to the full list of mouse events; also a <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">link</a> to all events that the DOM offers.</p><p id="d13a69e0-2ed5-45bc-bcea-9e3efde09ac0" class="">There are some interesting events, such as <code>online</code> and <code>offline</code>, which tell you when the browser connects or disconnects from the internet; <code>pagehide</code> and <code>pageshow</code>, or <code>wheel</code> (wheel is for when the mouse is scrolled). Go explore!</p></div></p></div><h2 id="cbf1240d-f781-49ad-99ce-328747b13702" class=""><details open=""><summary><strong>Keyboard events</strong></summary></details></h2><div class="indented"><h3 id="ab6d3785-a3ba-422f-8957-b4f59e3f7775" class="">The <code>keydown</code> event</h3><p id="2d6c1974-b8ff-4d29-9609-7b1a7194d573" class=""><code>$(document).on(&quot;keydown&quot;, function(event) { /* code here */ } )</code></p><p id="7f234d3d-b3a4-4b9d-a13b-a0d6242570b3" class="">The <code>keydown</code> event occurs when a keyboard key is <strong>pressed down </strong>(as opposed to when it’s released.) </p><p id="0432b948-07f4-4ad1-ba80-d32be135edb2" class="">If you attach this event listener to the whole document, it’ll listen to key presses anywhere on the page. If you attach it to an individual element (like an <code>&lt;input&gt;</code> field,) it’ll only listen to key presses when that element is focused.<div class="indented"><p id="60b8f13f-58e6-4ce3-a12d-17907684c355" class="">
+</p><pre id="a0274268-1df2-480c-84f7-7316a2024d28" class="code"><code>$(document).ready(function(){
+	$(&quot;input&quot;).on(&quot;keydown&quot;, function(event){
+			// Change the background color of an &lt;input&gt; field to yellow when a keyboard key is pressed down
+	    $(&quot;input&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;); 			
+			// Print to the console what key was pressed
+			console.log(event.key)
+	})
+})</code></pre></div></p><p id="79b8bfa5-3d58-4c73-bdf3-5d657eebf770" class="">
+</p><p id="f76c54b4-0241-4015-9701-a033c8e65743" class="">You can use the <code>event.key</code> property to look at which keyboard key was pressed. There are actually three properties on the event object relating to the key that was pressed:<div class="indented"><ul id="1f5c062e-bcb5-452f-a8f8-49d8196daf25" class="bulleted-list"><li style="list-style-type:disc"><code>event.key</code> gives you the character that was typed (<code>a</code>, <code>b</code>, <code>c</code>, <code>d</code>, etc.)</li></ul><ul id="de1ca41c-d7b4-49c8-9ff3-3c3f1256121d" class="bulleted-list"><li style="list-style-type:disc"><code>event.which</code> gives you the ASCII code of that character; for instance, if you type “j”, it will return “74”.</li></ul><ul id="61e1cac3-7c4c-48ea-90ce-019fc8a9dcb4" class="bulleted-list"><li style="list-style-type:disc"><code>event.code</code> gives you the <a href="https://www.rapidtables.com/web/html/html-codes.html">HTML code</a> of that character; for instance, if you type “J”, it will return “&amp;#74;”</li></ul></div></p><p id="2e6c97c3-6c01-427e-a5bc-246d1e1a847a" class="">
+</p><h3 id="6afa2300-4f3a-4862-a4ac-fda650731b16" class="">The <code>keyup</code> event</h3><p id="ee96a4fd-e442-4fb2-ba0d-7042ea156e79" class=""> <code>$(document).on(&quot;keyup&quot;, function(event) { /* code here */ } )</code></p><p id="fce08f74-cfad-4b0e-91c5-a47001a0bd99" class="">The <code>keyup</code> event occurs when a keyboard key is <strong>released</strong>. </p><pre id="2c308e51-0593-4b1c-abd0-0b55190b3025" class="code"><code>$(document).ready(function(){
+	$(&quot;input&quot;).on(&quot;keydown&quot;, function(event) {
+		// Change the background color of an &lt;input&gt; field to yellow when a keyboard key is pressed down
+    $(&quot;input&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;); 
+  });
+
+	$(&quot;input&quot;).on(&quot;keyup&quot;, function(event) {
+		// Change the background color of an &lt;input&gt; field to pink when a keyboard key is released
+    $(&quot;input&quot;).css(&quot;background-color&quot;, &quot;pink&quot;); 
+  });
+});</code></pre><p id="7d6595e4-ac4b-4fa3-a3b9-a67d21f21163" class="">
+</p><p id="d50e1488-f56e-4941-b51a-4d7c3bb68529" class="">Note the order of events related to the key event:</p><ol type="1" id="f3f46c83-d0ff-4d00-bd02-5092cf4ceaef" class="numbered-list" start="1"><li><a href="https://www.w3schools.com/jquery/event_keydown.asp">keydown</a> - The key is on its way down</li></ol><ol type="1" id="7eb1e66e-3f22-4d16-98bf-7fa896777eb2" class="numbered-list" start="2"><li><a href="https://www.w3schools.com/jquery/event_keypress.asp">keypress</a> - The key is pressed down</li></ol><ol type="1" id="4c5c9188-59af-4fc2-8b20-b98daf60afa0" class="numbered-list" start="3"><li><a href="https://www.w3schools.com/jquery/event_keyup.asp">keyup</a> - The key is released</li></ol></div><p id="da7a24d2-7360-4096-9385-0d79b0d47bf2" class="">
+</p></div></article></body></html>

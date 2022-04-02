@@ -1,0 +1,683 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Projects</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8ccb3f03-709d-4063-ac70-3200893da1fc" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">✨</span></div><h1 class="page-title">Projects</h1></header><div class="page-body"><p id="d23c36b1-289a-4ff4-97f3-1457580b8e4e" class="">Projects are due at the start of class on the date assigned on the list below. </p><p id="3686954e-885e-4d73-b836-cee2ad8d96a0" class="">You may turn in a project up to one week late, for a one letter grade deduction off the project grade. Work that is more than one week late will not be accepted, meaning an automatic F on that project. If you are absent, you are still expected to turn in projects online by the deadline.</p><p id="26841b0b-7974-4188-9179-9ef1e1b734cc" class=""><strong>You can turn in your project by adding a link to it in </strong><a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit#gid=0"><strong>this spreadsheet</strong></a><strong>.</strong></p><p id="80b89b04-b97f-4e11-a423-e07ff6acf4d6" class="">
+</p><hr id="958478c9-25ad-4193-b83c-6f610a0473f3"/><h2 id="55bc3d14-8752-4bc0-acca-64b13731b670" class=""><details open=""><summary>Project 1: Hypertext (due Wednesday, February 2nd) </summary></details></h2><div class="indented"><p id="6b6be72f-896e-4034-abdb-3bf5e46250c9" class="">Using HTML and CSS, create a hypertext narrative which reveals something about yourself, or about an experience you’ve had. Think about narrative structures hypertext allows you to create (e.g. branching narrative, looping narrative,) and try to understand how they can best serve the story you are trying to tell. You are allowed to use words and images.</p><p id="99b3060b-d494-4170-a40f-c1b7054b2f72" class="">Keep styling to a minimum – don’t go beyond background &amp; foreground colors, and maybe font size – in order to keep your focus on the storytelling and interaction. Use the <code>&lt;br/&gt;</code> and <code>&lt;hr/&gt;</code> tags, or the <code>&amp;nbsp;</code> entity to control spacing in your piece. </p><p id="944563d3-440c-4eef-9747-9f646a7b7149" class="">Within this minimal styling, make give some thought to how color, scale, spacing and the relationship between words and images shape the experience of navigating your website. Also consider the other affordances offered by the browser: maybe the HTML page name or address bar are part of your work, or maybe the work requires to be seen in a browser window of a certain size.</p><p id="954bf62b-fc93-4361-8f2b-a73b79d8e48e" class="">You will turn in a website, hosted on your Digital Ocean droplet. Your starting page should be called <code>index.html</code>, and all other pages should be reachable (or not :) ) from it via hyperlinks.</p><p id="a04c733c-9c00-4b99-b719-7b185b8a8499" class="">Hand in your website by adding a link to it in <a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit#gid=0">this spreadsheet</a>.</p><p id="c37976bc-8678-4c60-a337-0d2adb39af94" class="">
+</p><p id="d2527bae-d19d-4713-b8c2-6fa25091df40" class=""><span style="border-bottom:0.05em solid">Some inspiration:</span></p><ul id="142e3115-e918-4e7c-bd45-f51a9677690c" class="bulleted-list"><li style="list-style-type:disc">Olia Lialina, <a href="http://www.teleportacia.org/war/"><em>My Boyfriend Came Back From The War</em></a><em> *</em></li></ul><ul id="282df511-7376-4e27-ad74-ca5bae7bd89d" class="bulleted-list"><li style="list-style-type:disc">Everest Pipkin, <a href="https://gift-game.neocities.org/"><em>Gift Game</em></a></li></ul><ul id="4f365197-0447-4dae-a120-dcd6c8c6f194" class="bulleted-list"><li style="list-style-type:disc">JODI, <a href="https://cityfonts.com/"><em>City Fonts</em></a></li></ul><ul id="4181bbfb-dcb6-45fe-a35f-62cb6271fcd7" class="bulleted-list"><li style="list-style-type:disc">Angela Washko, <a href="https://angela-washko.itch.io/women-as-place"><em>Women As Place</em></a><em> *</em></li></ul><ul id="c307679e-1b2f-4371-ad77-1730671e35c8" class="bulleted-list"><li style="list-style-type:disc">Martine Neddam, <a href="https://anthology.rhizome.org/mouchette"><em>Mouchette</em></a></li></ul><ul id="3514889b-a670-4114-bbe5-b925c709507e" class="bulleted-list"><li style="list-style-type:disc">Porpentine Charity Heartscape, <a href="https://slimedaughter.com/games/twine/girlwaste/"><em>Girl Waste</em></a><em> *</em></li></ul><ul id="9efb1a64-0fb7-4971-9f77-644771487fe0" class="bulleted-list"><li style="list-style-type:disc">Young-Hae Heavy Industries, <a href="https://www.yhchang.com/CUNNILINGUS_IN_NORTH_KOREA_TANGO_VERSION_V.html"><em>Cunnilingus in North Korea</em></a></li></ul><ul id="eb42de64-5fcc-4ffc-979d-eedf5ad028c4" class="bulleted-list"><li style="list-style-type:disc">Larissa Pham, <em><a href="https://lrsphm.github.io/poem-club/">Poem Club</a></em><em> *</em></li></ul><ul id="9cf58198-0168-4920-a927-dd240f2ca030" class="bulleted-list"><li style="list-style-type:disc">Shu Lea Cheang, <em><a href="http://brandon.guggenheim.org">Brandon</a></em><em> </em>(tw: some nudity; <a href="https://www.youtube.com/watch?v=qq2_t3U_f9U">walkthrough</a>, if you prefer non-interactive version, it’s a big website.)</li></ul><ul id="6a9a0afb-c02f-4013-8505-f4a9d7ee2acc" class="bulleted-list"><li style="list-style-type:disc">Nicky Case, <a href="https://ncase.me/anxiety-demo/"><em>Anxiety Demo</em></a></li></ul><p id="ff62f163-9423-4e60-b714-7fe341154095" class="">
+</p></div><p id="11e0941c-6078-42b1-a741-d2faa21e210e" class="">
+</p><hr id="0262a995-75ed-4cbc-ac28-48a6e5795340"/><h2 id="9e8c6d2c-fbc2-40f7-883f-079929d0dc4e" class=""><details open=""><summary>Project 2: Clock (due Monday, February 14th)</summary></details></h2><div class="indented"><p id="074d1202-7549-4425-a062-95043462a7c2" class="">Using HTML, CSS and Javascript, create a clock that lives in the web browser. It should only have one HTML page, but other than that there is no specific requirement on its exact format or inner workings. All it should do is mark the passing of time in a way that is meaningful to you.</p><p id="6c938c30-de5e-4bb4-8b83-ac4ca9caf5f7" class="">Some aspects to consider when conceptualizing this project are the time scale of your clock (e.g. time of day vs geological era,) the “materials” you are using to make it come to life (numbers / words / emojis / images / pure color, and so on,) whether your clock talks about “absolute time” or has a point of reference, and the overall design of the piece (does it reference a real clock? or is it more abstract? how do typography, color, spacing, and the relationships between elements contribute to your overall idea?). Don’t feel constrained by these categories, they are just meant to help you get started.</p><p id="95101c1f-4527-40a2-b10b-6aed9744ba78" class=""><span style="border-bottom:0.05em solid">Deliverables:</span></p><p id="00f4983b-218b-4b23-8e7f-6dd261544e33" class=""><strong><em>by Monday, February 7th</em></strong>: Come up with a concept for your project and post it on your blog / Google Doc / etc. Include a short description of what you will make, one or two sketches (hand-drawn is fine, but feel free to use digital tools if you prefer) and a few references or relevant projects. </p><p id="ab8793a8-bb4a-4d6f-83bc-cdd8312ac0ea" class="">Add a link to it in the <em>Project #2, Clock (Concept post) </em>column of the <a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit#gid=0">project submission spreadsheet</a>.</p><p id="00622c3b-033d-4070-8aaa-25788278043f" class=""><strong><em>by Monday, February 14th: </em></strong>The project is due, as a website hosted on your Digital Ocean server. The site should be hosted in the <code>public</code> directory of your web server, under a folder called <code>clock</code>. The main HTML page of your clock should be called <code>index.html</code> (its filesystem path will be <code>your_webserver/public/clock/index.html</code> and it will be accessible online at <code>http://your-ip/clock</code>.)</p><p id="6fa4963b-7eb2-4a22-afb2-7859405026ae" class="">Add a link to it in the <em>Project #2, Clock </em>column of the <a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit#gid=0">project submission spreadsheet</a>.</p><p id="6099c213-4e82-4111-873f-72921dbe19ee" class="">
+</p><p id="09aec2fc-1259-44a0-abbf-ad2845bc31a4" class=""><span style="border-bottom:0.05em solid">Some inspiration:</span></p><ul id="37c3026b-fb97-47ce-ab05-4cadc4086c50" class="bulleted-list"><li style="list-style-type:disc">Hawraf Studio, <a href="http://az.hawraf.com/">AZ</a></li></ul><ul id="3bd68488-2729-4977-8b52-6936ea9352bd" class="bulleted-list"><li style="list-style-type:disc">Fruitful School, <a href="https://web.archive.org/web/20201126185008/http://www.fruitful.school/blog/2019-12-23.html">Emoji Clock</a> *</li></ul><ul id="604172db-4b1b-4fc3-9d6a-f31d74076deb" class="bulleted-list"><li style="list-style-type:disc">John Christie, <a href="https://www.are.na/block/2469590">Word Clock</a> *</li></ul><ul id="9f33a8a6-0f7c-4022-bd03-03e10fe36a78" class="bulleted-list"><li style="list-style-type:disc">Linked by Air, <a href="https://www.linkedbyair.net/projects/1-columbia-gsapp-identity">Columbia GSAPP Identity</a> *</li></ul><ul id="a21b6141-8fee-4f4a-962d-e6f757015a1f" class="bulleted-list"><li style="list-style-type:disc">Vendian, <a href="http://www.clarifyscience.info/assets/day_of_dots_clock?do=18:36:15#topofclock">Dot Clock</a> *</li></ul><ul id="15391eec-b2c7-42a0-b555-a9d50ca0011d" class="bulleted-list"><li style="list-style-type:disc">Jon Kyle Mohr, <a href="https://www.a-line-moving-across-a-window-once-every-year.com/">A Line Moving Across a Window Once Every Year</a> *</li></ul><ul id="b827a017-7cf6-4aff-a37f-92a0e465dcef" class="bulleted-list"><li style="list-style-type:disc">Jacopo Colo, <a href="https://www.jacopocolo.com/hexclock/">Hex Clock</a> *</li></ul><ul id="83f056bc-a265-4e09-b6a2-09ebbb1f38b7" class="bulleted-list"><li style="list-style-type:disc">John Provencer, <a href="https://weathergradient.com/">Weather Gradient</a></li></ul><ul id="9a7b4b44-fea2-4b25-9cbc-21757e1661cc" class="bulleted-list"><li style="list-style-type:disc">Eric Li and Zak Jensen, <a href="https://left.gallery/work/peace-clock">Peace Clock</a></li></ul><ul id="26f6c09d-5256-4e69-9130-65b73f824d07" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.usdebtclock.org/">US Debt Clock</a> *</li></ul><ul id="fb631c67-ba31-4493-b814-0887b4088f9f" class="bulleted-list"><li style="list-style-type:disc">Felix Gonzalez-Torres, <a href="https://www.moma.org/collection/works/81074">Untitled (Perfect Lovers)</a> *</li></ul><ul id="740aad7f-32f1-462d-8682-dbb6a67aac75" class="bulleted-list"><li style="list-style-type:disc">Christian Marclay, <a href="https://www.youtube.com/watch?v=BoDMEixJYpE">The Clock</a> (this is one of my favorite art pieces ever) *</li></ul><ul id="e9819d3c-0954-4453-aa11-f9fe191feeab" class="bulleted-list"><li style="list-style-type:disc">Jon Gacnik and Jon Kyle Mohr, <a href="https://observingtime.cam/">Observing Time</a> *</li></ul><ul id="824e49bf-49ce-461b-804a-1d6a59f8a3ec" class="bulleted-list"><li style="list-style-type:disc">Tehching Hsieh, <a href="https://www.youtube.com/watch?v=90izVR2Kip0">One Year Performance</a> (another favorite) *</li></ul><ul id="b54cff54-7947-4b00-aee9-abd0dc79c57f" class="bulleted-list"><li style="list-style-type:disc">Hillary duPont, <a href="http://sunset-index.com/">Sunset Index</a></li></ul><ul id="685906a6-c9ab-46c8-8eea-705a0d4318f0" class="bulleted-list"><li style="list-style-type:disc">Bryce Wilner, <a href="http://24hourbody.net/">24 hour body</a></li></ul></div><p id="cdbe4f0a-9608-4ace-9573-46944d014b0e" class="">
+</p><hr id="af47b009-fc75-469d-86bf-84506fcaa84a"/><h2 id="530f64da-b3a2-4937-9753-033477b992f6" class=""><details open=""><summary>Project 3: Website for a Community (due Monday, March 7th) </summary></details></h2><div class="indented"><p id="d952aab0-1c7f-4eff-b6bf-516b3330dbdb" class="">This is a straightforward project: choose a community you care about and build a website for it. If it helps, you can look at this assignment as your first professional web development gig: your chosen community is a client who has commissioned you to design and develop a public-facing website; specifically, a website that is in line with their ethos and values.</p><p id="b79c3f8e-a283-49ab-9aa3-4b1929a0e573" class="">Your chosen community can be real (an NYU student organization, your 5th grade summer camp, a community brought together by a shared passion for X, etc.). fictional (the group of all your childhood imaginary friends, etc.) or anywhere in between (the plants in your apartment, the bacteria that makes up your microbiome, etc.)</p><p id="e4e8b8e0-c650-4878-92bb-1ee5c56a723f" class=""><strong>There is one technical requirement your project needs to fulfill: your website should feature user generated content (meaning that you’ll need to store some data on your server.)</strong></p><p id="6f703b38-a4d5-4e37-ba60-96cfb14433a4" class="">Make sure you are clear on who the audience for your website is (e.g. members of the community vs outsiders,) and that your design caters to your selected audiences, while staying truthful to the nature of the community. At the same time, make sure to consider the <em>content </em>of the website. Does your community have a manifesto? A list of members? A schedule? And is the content coming from a different website of the same community? Are you writing it? Does an AI write it? Are the users creating most of it?</p><p id="980ddc78-9301-4b95-b171-0778894debda" class="">The entire project is due on March 7th (midterms week,) but the work will be split up as detailed in the deliverables section below.</p><p id="2b12db3a-5409-436a-b6b8-deea897930a3" class=""><span style="border-bottom:0.05em solid">Deliverables:</span></p><ul id="28379a28-c471-46c4-873a-315aecdafb13" class="bulleted-list"><li style="list-style-type:disc"><em><strong>by Wednesday, February 23rd: </strong></em><strong>Choose the community</strong> you want to focus on, and come up with a design for the website you want to build. A common structure is to have a header, a footer, a landing page and a few content pages, but don’t feel constrained by this. Use a digital tool to create your <strong>site map </strong>and <strong>wireframes</strong> (Figma, Google Slides, Canva, Miro, etc.) Begin working on the visual design of the site as well.<p id="e06e9e00-c04f-4787-a2d7-dc9dd6d923af" class="">Post <strong>a short paragraph on what community you’ve chosen and why</strong>, as well as <strong>your design </strong>to the class blog. Add a link to it in the <em>Project #3, Community (Design post) </em>column of the <a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit#gid=0">project submission spreadsheet</a>.</p></li></ul><ul id="4320b2ae-927b-48c9-bda5-30806275dffd" class="bulleted-list"><li style="list-style-type:disc"><strong><em>by Monday, March 7th: </em></strong>The project is due, as a website hosted on your Digital Ocean server. The site should be hosted in the <code>public</code> directory of your web server, under a folder called <code>community</code>. The main HTML page of your site should be called <code>index.html</code> (its filesystem path will be <code>your_webserver/public/community/index.html</code> and it will be accessible online at <code>http://your-ip/community</code>.)<p id="f048d4ea-c2fc-4c7e-a65b-a7b61bf32df4" class="">Add a link to it in the <em>Project #3, Community </em>column of the <a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit#gid=0">project submission spreadsheet</a>.</p><p id="6a7db03c-84ad-4fad-a7bb-31e0d6fc8fd3" class="">
+</p></li></ul><p id="4cfe7a42-716a-4b3a-99cf-934f3ee5b0fb" class=""><span style="border-bottom:0.05em solid">Some inspiration:</span></p><ul id="55f8aeff-04f1-4f2f-9609-bd88066ed386" class="bulleted-list"><li style="list-style-type:disc">Laurel Schwulst, <a href="https://allmyfriendsatonce.com"><em>All of my friends at once</em></a></li></ul><ul id="19f6a811-dbda-449a-bf39-b550d49bc772" class="bulleted-list"><li style="list-style-type:disc"><a href="https://sfpc.study/">School for Poetic Computation</a></li></ul><ul id="59672861-154c-4641-9990-b0b4594200df" class="bulleted-list"><li style="list-style-type:disc"><a href="http://html.energy/home.html">HTML Energy</a></li></ul><ul id="e1972fd1-49e5-4aff-a7e5-22f3c877aea1" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.fwb.help/">Friends With Benefits</a></li></ul><ul id="b42851ab-9bee-4b56-b652-029fbd663f0f" class="bulleted-list"><li style="list-style-type:disc"><a href="http://www.learningtoloveyoumore.com/">learningtoloveyoumore.com</a></li></ul><p id="fd4d46a9-da30-4e2c-8b93-36ed2cce2220" class="">and some design inspiration:</p><ul id="dc3bbd3b-e888-4291-a130-fa53c68445ef" class="bulleted-list"><li style="list-style-type:disc"><a href="https://brutalistwebsites.com/">Brutalist Websites</a></li></ul><ul id="6186f443-2623-4c92-8818-ed2154d43575" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.hoverstat.es/">hoverstat.es</a></li></ul><ul id="c07dc832-fbee-4c81-a68f-f785fe7669c9" class="bulleted-list"><li style="list-style-type:disc"><a href="https://hallointer.net">hallointer.net</a></li></ul><ul id="0e968011-a115-4393-8fd9-d026cfb61b11" class="bulleted-list"><li style="list-style-type:disc"><a href="https://bookmarks.linci.co/">linci.co’s Design Bookmarks</a></li></ul></div><p id="f6e6581e-280d-491c-9b03-ea7a24ed52ee" class="">
+</p><hr id="60635d51-18d8-41c6-ba33-b851463970e5"/><h2 id="89242fd0-8c4b-4e34-9d34-3ec84a8972be" class=""><details open=""><summary>Project 4: <del>Gift</del> Server Practice (due Monday, March 28th &amp; Monday, April 4th)</summary></details></h2><div class="indented"><p id="af6e095f-12a7-4174-8358-f58d634700c0" class="">
+</p><p id="56c96710-9ad4-444e-ab3f-4c5f6bcad619" class="">This is the only exclusively technical assignment in this class, meant for you to get more comfortable with server-side programming and using a database. It consists of two parts.</p><h3 id="449f03c7-a2d3-4581-ac96-4ebad821fb37" class=""><details open=""><summary>Part 1: LOW-TECH Magazine Website (due Monday, March 28th)</summary></details></h3><div class="indented"><p id="0ef49de0-b954-400f-9d24-ea002f80ec21" class="">Take the <a href="https://drive.google.com/file/d/1x4XA7L5roHv8cQN6ZwDdiT1xIs4UPMHu/view?usp=sharing">starter code</a> we used in our class workshop on Monday, March 21st as a template, and add a server to the project, in order to make the user interaction &amp; data management functional. We had already started doing that in our class workshop, you just have to finish it by next Monday. Specifically, your own LOW-TECH Magazine Website should have the following functionality:</p><ul id="50ce1193-6e8e-4166-8408-4f55d371655e" class="bulleted-list"><li style="list-style-type:disc">an index page (located at <code>/</code>) which displays a featured article, as well as a grid of other articles. The <code>ejs</code> template is provided in the starter code.</li></ul><ul id="cc9f50ba-6524-4d4e-86da-569218d8d9ee" class="bulleted-list"><li style="list-style-type:disc">an article submission page (located at <code>/submit</code>), which allows users to submit new content to the website. The <code>ejs</code> template is provided in the starter code.<ul id="6762a660-fbe0-4ab5-911d-3e9a4a935758" class="bulleted-list"><li style="list-style-type:circle">each article submission form contains the following fields: <code>title</code>, <code>summary</code>, <code>article body</code>, <code>is this article featured?</code>, as well as an <code>image</code>. Using your node server and the provided <code>ejs</code> templates, you will need to make sure to use all these fields in deciding how to display the articles on the website’s home page.</li></ul></li></ul><ul id="43c770a0-fe81-46fe-9970-4f556d371008" class="bulleted-list"><li style="list-style-type:disc">individual article pages for each article, located at <code>/article/article-id</code>. The <code>ejs</code> template for an article page is provided in the starter code.<ul id="afe199e9-5962-4580-b44e-7f036b7ad21f" class="bulleted-list"><li style="list-style-type:circle">You will need to use route parameters in order to implement this page. Check out the <code>Route parameters</code> section of the <a href="https://expressjs.com/en/guide/routing.html">Express routes documentation</a>.</li></ul><p id="0693bbe2-07af-4362-beb6-99e849802312" class="">
+</p></li></ul><p id="c6c74e53-75a2-4e11-a580-1bfb57d0e7fd" class="">Upload and run your server onto your Digital Ocean droplet. Make sure to run it on a different port from your midterm project (remember, only one process can run on a port!) Add your link in the <a href="https://docs.google.com/spreadsheets/d/1Eg17muBAEi13CemHWb_s1Ah6Mcn6MXemjlK8vASCAWM/edit#gid=0">Project Submission spreadsheet</a>.</p></div><p id="397065c9-a0b5-4c27-a21c-8de6eaea0840" class="">
+</p><h3 id="4ea6f633-8e62-4077-a9f2-53ca5ebab079" class=""><details open=""><summary>Part 2: Permanent Storage (due Monday, April 4th)</summary></details></h3><div class="indented"><p id="9dc0ce57-e6bd-4989-9ae7-832b744cbe34" class="">This assignment is all about getting comfortable with databases. You have two options:</p><ol type="1" id="7229a9ce-90df-4b03-b1ef-9ba9f0c5a1e6" class="numbered-list" start="1"><li>Continue developing your LOW-TECH Magazine website, by replacing the currently implemented in-memory storage with an <code>nedb</code> database.</li></ol><ol type="1" id="d491bced-2d69-4061-9cd5-d16dcdce3e0e" class="numbered-list" start="2"><li>Continue developing your Midterm project website, by replacing the currently implemented in-memory storage with an <code>nedb</code> database.</li></ol></div><p id="15f89481-40a7-4c6e-9205-fbc5a41a521f" class="">
+</p></div><hr id="a9c9e5f8-8c53-44b0-be7a-6f7c7bf6fe4a"/><h2 id="39d3a7ee-f771-4218-812f-6a65a3970d8f" class=""><details open=""><summary>Project 5: Final Project (due Week of May 2nd)</summary></details></h2><div class="indented"><p id="872fa75a-aaa3-448c-ab06-6b1d5fe75b0e" class="">〰️</p><p id="d66b5077-f404-49cf-99ba-150604a3fe40" class=""><em>The description will be posted here when the project is assigned.</em></p><p id="c5f4cbea-ec4a-42fc-9359-8100f646db93" class="">➰</p></div><p id="79c1025b-5713-4c3a-937a-c89a0a61c9a2" class="">
+</p><hr id="3510dac7-fdb6-4b75-b96a-e7edbf24b049"/><p id="8228bbc2-427b-418b-8e8a-fc5931f57730" class="">
+</p></div></article></body></html>
