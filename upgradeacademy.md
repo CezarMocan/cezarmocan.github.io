@@ -4,6 +4,7 @@ title: upgradeacademy.ro
 year: 2020
 client: Upgrade Academy
 medium: graphic design
+isClientWork: true
 paragraphs:
  - text: |
      I was approached by <a class="underlined" href="http://upgradeacademy.ro/" target="_blank">Upgrade Academy</a>, a Bucharest based education company, to refine the organization's graphic identity and redesign the customer facing website. Since their audience consists of high school aged students and their parents, we chose to go for a light and vivid color scheme, organic shapes and typography to mirror the curves present in the layout. <br/><br/>

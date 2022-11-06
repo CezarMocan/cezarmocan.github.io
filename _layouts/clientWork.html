@@ -1,0 +1,50 @@
+---
+layout: default-new
+---
+<div class="intro-container">
+  <p>
+    I work as a creative technologist and graphics programmer, with a focus on clients in the arts & culture sector. <br/> Some of the projects I've collaborated on were exhibited with institutions such as the Whitney Museum of American Art, Light Art Space Foundation, Outland Art, IDFA or MIT.
+    <br/><br/>
+    You can view a list of my selected client work below.
+    <br/><br/>
+    ↓ 
+  </p>
+</div>
+
+<div class="new-projects-container">
+  <div class="project-row header">
+    <div class="project-column title margin"><p>Title</p></div>
+    <div class="project-column year margin"><p>Year</p></div>
+    <div class="project-column medium margin"><p>Role</p></div>
+    <div class="project-column client"><p>Client</p></div>
+  </div>
+  {% for project in page.projects %}
+    {% if project.link %}
+      {% if project.targetBlank %}
+        <a href="{{project.link}}" target="_blank" class="no-underline">
+      {% else %}
+        <a href="{{project.link}}" class="no-underline">
+      {% endif %}
+    {% endif %}
+      <div class="project-row {% if project.link %}interactive{%endif%}">
+        <div class="project-column title border margin">
+          <p>{{ project.title }}</p>
+          <img src="{{project.image}}" style="margin-top: 10px; width: 50%; max-height: 220px; object-fit: contain; object-position: left;"/>
+        </div>
+        <div class="project-column year border margin"><p>{% if project.year %}{{ project.year }}{% endif %}</p></div>
+        <div class="project-column medium border margin"><p>{% if project.medium %}{{ project.medium }}{% endif %}</p></div>
+        <div class="project-column client"><p>{% if project.client %}{{ project.client }}{% endif %}</p></div>
+        <!-- <img class="project-thumbnail" src="{{ project.image }}"/> -->
+      </div>
+    {% if project.link %}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+  // Get the root element
+  var r = document.querySelector("html")
+  r.style.setProperty("--main-bg-color", "#070707")
+  r.style.setProperty("--main-fg-color", "#f5f5f5")
+</script>

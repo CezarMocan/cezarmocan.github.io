@@ -4,11 +4,26 @@
 
 layout: indexPageNew
 projects:
+- title: 'Fall (I Fell in Love with my Avatar)'
+  medium: digital simulation
+  year: 2022
+  link: /fall
+  image: https://img.itch.zone/aW1hZ2UvMTc0NDcwOS8xMDI2NzUzOS5qcGc=/347x500/pNDOHL.jpg
+  client: Commissioned as part of <em>Dynamic Links</em> on spam-index.com
+  selected: true
+- title: 'Delicate Chaos'
+  medium: on-chain generative system
+  year: 2022
+  link: /delicate-chaos
+  image: /assets/images/delicate-chaos/7.png
+  client: Part of <em>Scripting</em> at the Blanc Gallery (New York, 2022), the <em>Residents Show</em> at NYU ITP and plottables.io
+  selected: true
 - title: 'Arcadia Inc.'
   medium: digital simulation
   year: 2021
   link: /arcadia-inc
   image: /assets/images/arcadiainc/soft-power-still.png
+  client: Exhibited at the <em>SPRING/BREAK Art Show</em> (New York, 2021) and <em>Currents New Media</em> (Santa Fe, 2022) 
   selected: true
 - title: 'Pen Plotter Drawings'
   medium: generative drawing, ink on paper
@@ -17,17 +32,11 @@ projects:
   image: /assets/images/plotterdrawings/tunnel-1.png
   targetBlank: true
   selected: true
-- title: 'Infinite Corridor Installation'
-  medium: interactive installation
-  year: 2021
-  selected: false
-  client: for MIT, with <a href="https://sosolimited.com" target="_blank">SOSO Limited</a>
-  image: /assets/images/infinitecorridor/infinite-thumb.png
 - title: 'What Does the Desktop Want?'
   link: /whatdoesthedesktopwant
   medium: talk
   year: 2021
-  client: for the Computer Mouse Conference at CultureHub
+  client: for the <em>Computer Mouse Conference</em> at CultureHub (New York, 2021)
   image: /assets/images/whatdoesthedesktopwant/cover.png
   selected: true
 - title: 'Chestnut Series'
@@ -36,25 +45,14 @@ projects:
   year: 2021
   client:
   image: /assets/images/chestnutseries/chestnut-thumb.jpg
-  selected: true
-- title: 'evan-roth.com'
-  medium: website
-  year: 2021
   selected: false
-  client: for <a href="https://evan-roth.com" target="_blank">Evan Roth</a>, with <a href="https://paulbille.com" target="_blank">Paul Bille</a>
-  image: /assets/images/evanrothcom/evan-roth-com.png
 - title: '✾ Human Interface Guidelines (Metaphor) ✾'
   medium: two channel video
   year: 2020
   link: /hig-metaphor
   image: /assets/images/hig-metaphor/cover.png
-  selected: true
-- title: virtualis.tours
-  medium: website
-  year: 2020
-  client: for Lydia Jessup & Matt Romein at IDFA DocLab
-  link: /virtualis
-  image: /assets/images/virtualis/cover.png
+  client: part of <em>Anywhere but Here</em> at the Canvas Bowery (New York, 2020)
+  selected: false
 - title: declared vvvvvvoid
   medium: browser extension
   year: 2020
@@ -65,7 +63,7 @@ projects:
   year: 2020
   link: /24hrslandscape
   image: /assets/images/24hrslandscape/cover.png
-  selected: true
+  selected: false
 - title: ✿ Shadow Network ✿
   medium: software
   year: 2020
@@ -82,37 +80,13 @@ projects:
   year: 2020
   link: /officeolympics
   image: /assets/images/officeolympics/cover.png
-  selected: true
-- title: upgradeacademy.ro
-  medium: graphic design
-  year: 2020
-  client: for Upgrade Academy
-  link: /upgradeacademy
-  image: /assets/images/upgradeacademy/cover.png
-- title: LIPP.TV
-  medium: website
-  year: 2020
-  client: for Live Image Processing & Performance @ NYU ITP
-  link: /lipptv
-  image: /assets/images/lipptv/cover.png
+  selected: false
 - title: Untitled
   medium: interactive video
   year: 2019
   link: /untitled
   image: /assets/images/untitled/cover.JPG
   selected: false
-- title: worldvie.ws
-  medium: web-based software
-  year: 2019 – 2020
-  client: for Evan Roth
-  image: /assets/images/worldviews/thumbnail.png
-- title: Distributed Web of Care
-  medium: web-based software
-  year: 2019
-  client: for Taeyoon Choi
-  link: /dwc
-  image: /assets/images/dwc/cover.jpg
-  selected: true
 - title: Disappearing
   medium: web performance
   year: 2019
@@ -138,12 +112,6 @@ projects:
   year: 2018
   link: /algorithm4friends
   image: /assets/images/algorithm4friends/cover.png
-- title: Moji Moji
-  medium: iOS app
-  year: 2018
-  link: /mojimoji
-  client: for Gakko
-  image: /assets/images/mojimoji/cover.png
 - title: The Road Back Home
   medium: website
   year: 2018
@@ -164,12 +132,6 @@ projects:
   year: 2017
   link: /posterjam
   image: /assets/images/posterjam/cover.png
-- title: Gakko Camp Gallery
-  medium: website
-  year: 2017
-  link: /gakkocampgallery
-  client: for Gakko
-  image: /assets/images/gakkocampgallery/cover.png
 - title: Water
   medium: poster series
   year: 2016
@@ -181,12 +143,6 @@ projects:
   link: /selfandother
   image: /assets/images/selfandother/cover.png
   selected: false
-- title: Syria Conflict Tracking
-  medium: mobile app
-  year: 2016
-  link: /syriaconflicttracking
-  client: for Palantir Technologies
-  image: /assets/images/syriaconflicttracking/cover-small.png  
 - title: Self Portrait
   medium: software
   year: 2016

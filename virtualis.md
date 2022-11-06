@@ -4,6 +4,7 @@ title: virtualis.tours
 year: 2020
 medium: website
 client: Lydia Jessup & Matt Romein
+isClientWork: true
 paragraphs:
  - text: |
       Virtualis is a creative experiment in art, research, and performance. Using the social VR platform VRChat, we have created a conceptual tourist agency as a way to engage audiences with our research and fascinations with social VR. While being playful, performative, and fun, the tours are also critical examinations of the culture-making, body confusions, and social norms specific to VRChat and prevalent in social VR as a medium.<br/><br/>

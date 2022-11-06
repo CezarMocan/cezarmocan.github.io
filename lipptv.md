@@ -4,6 +4,7 @@ title: LIPP.TV
 year: 2020
 medium: website
 client: Live Image Processing & Performance @ NYU ITP
+isClientWork: true
 paragraphs:
  - text: |
       LIPP TV was the final performance project of the Live Image Processing and Performance (LIPP) class at NYU ITP. LIPP TV is a creative response to how code, video networks, and art can be used to create a new experience in live performance. Each student has created their own short TV show influenced by video art, experimental animation, public access TV, and more.<br/><br/>

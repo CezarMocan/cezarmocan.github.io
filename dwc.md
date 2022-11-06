@@ -4,6 +4,7 @@ title: Distributed Web of Care
 year: 2019
 client: Taeyoon Choi
 medium: web
+isClientWork: true
 paragraphs:
  - text: |
      In 2019, <a class="underlined" href="http://taeyoonchoi.com/" target="_blank">Taeyoon Choi</a> organized a lecture-performance at the Whitney Museum of American Art, as part of his ongoing <a href="http://distributedweb.care/" target="_blank" class="underlined">Distributed Web of Care</a> project. I was invited to create a mobile-based web experience for the participants, using the garden as a metaphor for the web, in collaboration with <a class="underlined" href="http://yhsong.com/" target="_blank">Yehwan Song</a> and <a class="underlined" href="https://jedahan.com/" target="_blank">Jonathan Dahan</a>.<br/><br/>

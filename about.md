@@ -4,7 +4,8 @@ permalink: /about/
 ---
 I am an artist and programmer, born in Romania and working in Brooklyn. I am interested in studying the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
 <br/><br/>
-Besides my personal work, I often design or build software for other artists and teach. I am currently a Research Resident at NYU ITP, and hold an M.P.S. in Interactive Telecommunications from NYU ITP and a B.S. in Computer Science from Yale University.
+Besides my personal work, I sometimes design or build software for other artists and teach. You can view an archive of my client work <a href="/client-work" target="_blank">here</a>.<br/>
+I was a Research Resident at NYU ITP between 2021 and 2022, and hold an M.P.S. in Interactive Telecommunications from NYU ITP and a B.S. in Computer Science from Yale University.
 <br/><br/>
 In a former life, I used to do competitive programming.
 <br/><br/>
@@ -13,7 +14,13 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 <br/><br/>❊<br/><br/><br/>
 <p style="text-decoration: none; margin-bottom: 10px;">Recent news</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
-    Currents New Media ✿ <em>2022, Santa Fe (upcoming)</em> ✿ <em>Group Show</em>
+    <a href="https://spam-index.com/projects/cezar-mocan/">Dynamic Links</a> ✿ <em>2022, online</em> ✿ <em>Group Show</em>
+    <br/>
+    Currents New Media ✿ <em>2022, Santa Fe</em> ✿ <em>Group Show</em>
+    <br/>
+    <a href="https://plottables.io/project/9">Delicate Chaos on Plottables.io </a> ✿ <em>2022, online</em>
+    <br/>
+    Kampüste Dijital Sanat ✿ <em>2022, Istanbul</em> ✿ <em>Group Show</em>
     <br/>
     <a href="https://infiniteobjects.com/products/mocan-arcadiainc">Lumen Prize x Infinite Objects collection</a> ✿ <em>2022, New York</em> ✿ <em>Participating Artist</em>
     <br/>

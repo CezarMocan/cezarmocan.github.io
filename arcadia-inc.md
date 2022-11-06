@@ -13,6 +13,14 @@ paragraphs:
  - text: |
     A previous framing of the project involved a fictional company which claims to offer "context-free landscape photography for the 21st century user". You can learn more about Arcadia Inc. as a company by visiting <a href="http://arcadia-inc.org" target="_blank">http://arcadia-inc.org</a>, or by listening to my <a href="https://vimeo.com/549761951" target="_blank">thesis presentation</a>.<br/><br/>
  - text: |
+    Exhibitions:<br/>
+    <a href="https://infiniteobjects.com/products/mocan-arcadiainc"> Lumen Prize x Infinite Objects collection </a> <br/>
+    <a href="https://currentsnewmedia.org/artist/cezar-mocan/" target="_blank">Currents New Media</a> (Santa Fe, 2022)<br/>
+    Kampüste Dijital Sanat (Istanbul, 2022)<br/>
+    <a href="https://interaccess.org/exhibition/sculpted-our-image-forged-our-minds">Sculpted in Our Image, Forged in Our Minds</a> (online, 2022), curated by Tristan Sauer in collaboration with Inter/Access Toronto<br/>
+    SPRING/BREAK Art Show (New York, 2021), curated by Lizzy Chiappini<br/>
+    <a href="https://www.lumenprize.com/2021-student-prize-shortlist/arcadia-inc" target="_blank">Lumen Prize Student Award</a> (2021)<br/><br/>
+ - text: |
     Related Work: <br/>
     <a href="/whatdoesthedesktopwant">What Does the Desktop Want?</a>, a talk I gave at the 2021 Computer Mouse Conference<br/>
     <a href="/hig-metaphor">Human Interface Guidelines (Metaphor)</a>, a two-channel video<br/>

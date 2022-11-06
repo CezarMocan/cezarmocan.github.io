@@ -4,6 +4,7 @@ title: Moji Moji
 year: 2018
 client: Gakko
 medium: iOS app
+isClientWork: true
 paragraphs:
  - text: |
      Moji Moji is an early literacy app developed by <a class="underlined" href="https://www.gakko.org/digital" target="__blank">Gakko Digital Learning.</a>

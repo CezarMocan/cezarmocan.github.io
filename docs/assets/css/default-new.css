@@ -124,7 +124,7 @@ p {
   font-size: 16pt;
   margin: 1px 0;
   margin-bottom: 3px;
-  line-height: 1.08;
+  line-height: 1.28;
 }
 
 .intro-container {
@@ -155,7 +155,7 @@ p {
 
 .project-row.interactive:hover {
   background-color: var(--main-highlight-color);
-  color: var(--main-bg-color);
+  color: darkblue;
   cursor: pointer;
 }
 

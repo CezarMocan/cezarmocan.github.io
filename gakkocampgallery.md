@@ -4,6 +4,7 @@ title: Gakko Camp Gallery
 year: 2017
 medium: website
 client: Gakko
+isClientWork: true
 paragraphs:
  - text: |
      <a class="underlined" href="http://www.gakko.org" target="__blank">Gakko</a> is a global educational collective that builds spaces, experiences & tools that reclaim the magic of learning. Every summer, Gakko Camps are held in beautiful places around the world. Designed from the ground up by a diverse group of mentors, Gakko Camps emphasize interdisciplinary workshops and global mentorship.
