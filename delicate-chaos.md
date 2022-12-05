@@ -18,11 +18,13 @@ images:
  - url: /assets/images/delicate-chaos/10.png
  - url: /assets/images/delicate-chaos/12.webp
  - url: /assets/images/delicate-chaos/7.png
- - url: /assets/images/delicate-chaos/11.png
- - url: /assets/images/delicate-chaos/1.png   
- - url: /assets/images/delicate-chaos/2.png
- - url: /assets/images/delicate-chaos/3.png
- - url: /assets/images/delicate-chaos/4.png
- - url: /assets/images/delicate-chaos/5.png
- - url: /assets/images/delicate-chaos/6.png   
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-1.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-2.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-3.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-4.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-5.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-6.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-7.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-8.png
+ - url: /assets/images/delicate-chaos/RDW_DelicateChaos-9.png
 ---
