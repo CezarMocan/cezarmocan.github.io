@@ -14,7 +14,13 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 <br/><br/>❊<br/><br/><br/>
 <p style="text-decoration: none; margin-bottom: 10px;">Recent news</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
+    <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all">Vertical Crypto Art Residency Exhibition</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
+    <br/>
+    <a href="https://www.plexusprojects.org/gui-gooey">GUI / GOOEY at Plexus Projects</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
+    <br/>
     <a href="https://spam-index.com/projects/cezar-mocan/">Dynamic Links</a> ✿ <em>2022, online</em> ✿ <em>Group Show</em>
+    <br/>
+    Scripting at the BLANC Gallery ✿ <em>2022, New York</em> ✿ <em>Group Show</em>
     <br/>
     Currents New Media ✿ <em>2022, Santa Fe</em> ✿ <em>Group Show</em>
     <br/>

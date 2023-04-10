@@ -14,6 +14,7 @@ paragraphs:
     A previous framing of the project involved a fictional company which claims to offer "context-free landscape photography for the 21st century user". You can learn more about Arcadia Inc. as a company by visiting <a href="http://arcadia-inc.org" target="_blank">http://arcadia-inc.org</a>, or by listening to my <a href="https://vimeo.com/549761951" target="_blank">thesis presentation</a>.<br/><br/>
  - text: |
     Exhibitions:<br/>
+    <a href="https://www.plexusprojects.org/gui-gooey"> GUI / GOOEY, Plexus Projects, curated by Laura Splan</a> (online, 2023) <br/>
     <a href="https://infiniteobjects.com/products/mocan-arcadiainc"> Lumen Prize x Infinite Objects collection </a> <br/>
     <a href="https://currentsnewmedia.org/artist/cezar-mocan/" target="_blank">Currents New Media</a> (Santa Fe, 2022)<br/>
     Kampüste Dijital Sanat (Istanbul, 2022)<br/>
