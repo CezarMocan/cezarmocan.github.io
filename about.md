@@ -2,7 +2,7 @@
 layout: about-new
 permalink: /about/
 ---
-I am an artist and programmer, born in Romania and working in Brooklyn. I am interested in studying the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
+I am an artist and programmer, born in Romania and working in Lisbon. I am interested in studying the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
 <br/><br/>
 Besides my personal work, I sometimes design or build software for other artists and teach. You can view an archive of my client work <a href="/client-work" target="_blank">here</a>.<br/>
 I was a Research Resident at NYU ITP between 2021 and 2022, and hold an M.P.S. in Interactive Telecommunications from NYU ITP and a B.S. in Computer Science from Yale University.
