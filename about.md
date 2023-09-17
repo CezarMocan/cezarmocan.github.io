@@ -2,11 +2,11 @@
 layout: about-new
 permalink: /about/
 ---
-I am an artist and programmer, born in Romania and working in Lisbon. I am interested in studying the power structures that shape society’s engagement with technology. I work with software, video and computer generated imagery towards recontextualizing aspects of digital culture we take for granted, often in absurd ways. My practice at large investigates the role branding and Silicon Valley discourse have in shaping contemporary ideologies. Most recently, I have been researching the computer desktop’s use of nature photography through the lens of landscape studies.
+I am a Lisbon-based artist and computer programmer interested in the interplay between technology and the natural landscape. Using narrative generative systems—animated videos of infinite duration, real-time simulations built in game engines or other software—I create worlds that recontextualize aspects of digital culture we take for granted, often in absurd ways, while investigating the power structures which mediate our relationship with technology. Drawing on media archaeology and art history, my research process traces the origins of our current thought patterns around (technological) progress.
 <br/><br/>
-Besides my personal work, I sometimes design or build software for other artists and teach. You can view an archive of my client work <a href="/client-work" target="_blank">here</a>.<br/>
-I was a Research Resident at NYU ITP between 2021 and 2022, and hold an M.P.S. in Interactive Telecommunications from NYU ITP and a B.S. in Computer Science from Yale University.
+Some of my past works have been exhibited with Inter/Access (Toronto), Office Impart (Berlin), SPRING BREAK Art Show (New York), Currents New Media (Center for Contemporary Art Santa Fe), Plexus Projects (New York), BASE (Istanbul), Romanian Design Week (Bucharest), Infinite Objects and New York University. My real-time simulation work, Arcadia Inc. was recognized as a 2021 winner of the Lumen Prize in Art and Technology. I hold a B.S. in Computer Science (2016) from Yale University and an M.P.S. in Interactive Telecommunications (2021) from New York University, where I also served as a research resident and adjunct professor.
 <br/><br/>
+Besides my personal work, I sometimes design or build software for other artists and teach. You can view an archive of my client work <a href="/client-work" target="_blank">here</a>.<br/><br/>
 In a former life, I used to do competitive programming.
 <br/><br/>
 If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
@@ -14,9 +14,11 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 <br/><br/>❊<br/><br/><br/>
 <p style="text-decoration: none; margin-bottom: 10px;">Recent news</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
-    <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all">Vertical Crypto Art Residency Exhibition</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
+    <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart ✿ <em>2023, Berlin </em> ✿ <em>Group Show</em> <br/>
+    <a href="/delicate-chaos" target="_blank">Delicate Chaos</a> is part of the <a href="https://romaniandesignweek.ro/" target="_blank">Romanian Design Week</a> ✿ <em>2023, Bucharest </em> ✿ <em>Group Show</em> <br/>
+    The World Upstream (Stood Still) is part of the <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all">Vertical Crypto Art Residency Exhibition</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
     <br/>
-    <a href="https://www.plexusprojects.org/gui-gooey">GUI / GOOEY at Plexus Projects</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
+    Arcadia Inc. is part of <a href="https://www.plexusprojects.org/gui-gooey">GUI / GOOEY at Plexus Projects</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
     <br/>
     <a href="https://spam-index.com/projects/cezar-mocan/">Dynamic Links</a> ✿ <em>2022, online</em> ✿ <em>Group Show</em>
     <br/>

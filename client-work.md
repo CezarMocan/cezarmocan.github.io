@@ -4,6 +4,13 @@
 
 layout: clientWork
 projects:
+- title: 'Thousand Lives'
+  medium: AI programming
+  year: 2023
+  client: for Ian Cheng's Thousand Lives show at Pilar Corrias Gallery, London
+  image: /assets/images/thousandlives/1.png
+  link: https://www.pilarcorrias.com/exhibitions/350-ian-cheng/
+  targetBlank: true
 - title: '3FACE'
   medium: graphics programming
   year: 2022

@@ -1,19 +1,19 @@
 ---
 layout: projectPageNew
-title: 'Soft Power (Arcadia Inc.)'
+title: 'Arcadia Inc.'
 year: 2021
 medium: digital simulation
 paragraphs:
  - text: |
     Soft Power (Arcadia Inc.) is a work of speculative fiction which responds to the use of landscape photography as a carrier for brand ideologies, on the computer desktop and beyond. The piece proposes the synthetic landscape as a clean, context-free alternative to nature imagery, through a group of virtual beings which photograph scenic beauty in a real-time simulation.<br/><br/>
  - text: |
-    <a href="/assets/images/arcadiainc/softpower.pdf" target="_blank">Read curatorial statement</a><br/><br/><br/>
+    
  - text: |
-    Soft Power (Arcadia Inc.) was part of <a href="https://www.springbreakartshow.com/" target="_blank">SPRING/BREAK Art Show</a> in New York, as a <a href="https://springbreakartfair.com/collections/lizzy-chiappini-2021" target="_blank">solo show</a> curated by <a href="https://www.lizzy-chiappini.com/" target="_blank">Lizzy Chiappini</a>. For the duration of SPRING/BREAK, all photographs taken by virtual beings within the simulation were uploaded to <a href="https://soft-power.online" target="_blank">https://soft-power.online.</a><br/><br/>
+    Soft Power (Arcadia Inc.) was part of <a href="https://www.springbreakartshow.com/" target="_blank">SPRING/BREAK Art Show</a> in New York, as a <a href="https://springbreakartfair.com/collections/lizzy-chiappini-2021" target="_blank">solo show</a> curated by <a href="https://www.lizzy-chiappini.com/" target="_blank">Lizzy Chiappini</a>. For the duration of SPRING/BREAK, all photographs taken by virtual beings within the simulation were uploaded to <a href="https://soft-power.online" target="_blank">https://soft-power.online.</a> You can read the curatorial statement <a href="/assets/images/arcadiainc/softpower.pdf" target="_blank">here. </a><br/><br/>
  - text: |
-    A previous framing of the project involved a fictional company which claims to offer "context-free landscape photography for the 21st century user". You can learn more about Arcadia Inc. as a company by visiting <a href="http://arcadia-inc.org" target="_blank">http://arcadia-inc.org</a>, or by listening to my <a href="https://vimeo.com/549761951" target="_blank">thesis presentation</a>.<br/><br/>
+    A previous framing of the project involved a fictional company which claims to offer "context-free landscape photography for the 21st century user". You can learn more about Arcadia Inc. as a company by visiting <a href="http://arcadia-inc.org" target="_blank">http://arcadia-inc.org</a>, or by listening to my <a href="https://vimeo.com/549761951" target="_blank">NYU ITP thesis presentation</a>.<br/><br/>
  - text: |
-    Exhibitions:<br/>
+    <b>Exhibitions</b><br/>
     <a href="https://www.plexusprojects.org/gui-gooey"> GUI / GOOEY, Plexus Projects, curated by Laura Splan</a> (online, 2023) <br/>
     <a href="https://infiniteobjects.com/products/mocan-arcadiainc"> Lumen Prize x Infinite Objects collection </a> <br/>
     <a href="https://currentsnewmedia.org/artist/cezar-mocan/" target="_blank">Currents New Media</a> (Santa Fe, 2022)<br/>
@@ -22,7 +22,13 @@ paragraphs:
     SPRING/BREAK Art Show (New York, 2021), curated by Lizzy Chiappini<br/>
     <a href="https://www.lumenprize.com/2021-student-prize-shortlist/arcadia-inc" target="_blank">Lumen Prize Student Award</a> (2021)<br/><br/>
  - text: |
-    Related Work: <br/>
+    <b>Production Credits</b><br/>
+    Emma Brown, sound design <br/>
+    Hannah Campbell, voice acting <br/>
+    Lizzy Chiappini, curation <br/>
+    <br/>
+ - text: |
+    <b>Related Work</b> <br/>
     <a href="/whatdoesthedesktopwant">What Does the Desktop Want?</a>, a talk I gave at the 2021 Computer Mouse Conference<br/>
     <a href="/hig-metaphor">Human Interface Guidelines (Metaphor)</a>, a two-channel video<br/>
     <a href="/24hrslandscape">24 Hours Relaxing Landscape for Stress Relief</a>, a three channel video

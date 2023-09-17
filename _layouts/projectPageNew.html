@@ -1,7 +1,7 @@
 ---
 layout: default-new
 ---
-<div class="project-row">
+<div class="project-row project-row-header">
   <div class="project-column go-back border margin">
     {% if page.isClientWork %}
       <a class="no-underline" href="/client-work"><p>←</p></a>
@@ -11,28 +11,29 @@ layout: default-new
   </div>
   <div class="project-column title border margin"><p>{{ page.title }}</p></div>
   <div class="project-column year border margin"><p>{% if page.year %}{{ page.year }}{% endif %}</p></div>
-  <div class="project-column client border margin"><p>{% if page.client %}{{ page.client }}{% endif %}</p></div>
+  {% if page.client %}<div class="project-column client border margin"><p>{{ page.client }}</p></div>{% endif %}
   <div class="project-column medium"><p>{% if page.medium %}{{ page.medium }}{% endif %}</p></div>
 </div>
 
 <div class="project-content-container">
 
   {% if page.paragraphs %}
-  <div class="c8 description-container">      
+  <div class="description-container">      
     {% for paragraph in page.paragraphs %}
       <div class="project-page-description">
         {% if paragraph.small %}
           <p class="small-paragraph">{{ paragraph.text }}</p>
         {% else %}
-          <p>{{ paragraph.text }}</p>
+          <p class="">{{ paragraph.text }}</p>
         {% endif %}
       </div>
     {% endfor %}
   </div>
   {% endif %}
   
+  <div class="media-container">
     {% for image in page.images %}
-      <div class="c6 project-image-with-description">
+      <div class="project-image-with-description">
         {% if image.video %}
           <video width="100%" autoplay loop muted class="c12">
             <source src="{{image.url}}">
@@ -53,6 +54,7 @@ layout: default-new
         {% endif %}
       </div>
     {% endfor %}
+  </div>
 
 </div>
 

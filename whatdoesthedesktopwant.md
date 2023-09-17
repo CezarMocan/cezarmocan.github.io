@@ -9,4 +9,5 @@ paragraphs:
 images:
  - url: https://player.vimeo.com/video/627667428
    vimeo: true
+   description: Screen recording of the "What Does the Desktop Want?" talk.
 ---

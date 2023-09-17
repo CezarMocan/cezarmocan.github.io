@@ -11,7 +11,7 @@ paragraphs:
  - text: |
     <a href="https://mocancezar.itch.io/fall-i-fell-in-love-with-my-avatar" target="_blank">Download here.</a><br/><br/><br/>
  - text: |
-    Exhibitions:<br/>
+    <b>Exhibitions</b><br/>
     <a href="https://spam-index.com/projects/cezar-mocan/">Dynamic Links</a> (online, 2022), curated by Nicoleta Mures <br/>
 
 images:
