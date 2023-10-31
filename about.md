@@ -12,33 +12,32 @@ In a former life, I used to do competitive programming.
 If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 
 <br/><br/>❊<br/><br/><br/>
-<p style="text-decoration: none; margin-bottom: 10px;">Recent news</p>
+<p style="text-decoration: none; margin-bottom: 10px;">Selected Exhibitions</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
-    <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart ✿ <em>2023, Berlin </em> ✿ <em>Group Show</em> <br/>
-    <a href="/delicate-chaos" target="_blank">Delicate Chaos</a> is part of the <a href="https://romaniandesignweek.ro/" target="_blank">Romanian Design Week</a> ✿ <em>2023, Bucharest </em> ✿ <em>Group Show</em> <br/>
-    The World Upstream (Stood Still) is part of the <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all">Vertical Crypto Art Residency Exhibition</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
+    <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> and <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> are featured in the <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> and <a href="https://thewrong.org/desktopstudies" target="_blank">Desktop Studies</a> pavillions at <a href="https://thewrong.org/" target="_blank">The Wrong Biennale 06</a> ✿ <em>Group Show</em> <br/>
+    <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart ✿ <em>Berlin, </em><em>Group Show</em> <br/>
+    <em>2023</em> ✿ <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> is part of Desktop Studies at Media Art Festival Arad ✿ <em>Arad, Group Show</em> <br/>
+    <em>2023</em> ✿ <a href="/delicate-chaos" target="_blank">Delicate Chaos</a> is part of the <a href="https://romaniandesignweek.ro/" target="_blank">Romanian Design Week</a> ✿ <em>Bucharest, Group Show</em> <br/>
+    <em>2023</em> ✿ The World Upstream (Stood Still) is part of the <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all">Vertical Crypto Art Residency Exhibition</a> ✿ <em>Group Show</em>
     <br/>
-    Arcadia Inc. is part of <a href="https://www.plexusprojects.org/gui-gooey">GUI / GOOEY at Plexus Projects</a> ✿ <em>2023, online</em> ✿ <em>Group Show</em>
+    <em>2023</em> ✿ Arcadia Inc. is part of <a href="https://www.plexusprojects.org/gui-gooey">GUI / GOOEY at Plexus Projects</a> ✿ <em>Group Show</em>
     <br/>
-    <a href="https://spam-index.com/projects/cezar-mocan/">Dynamic Links</a> ✿ <em>2022, online</em> ✿ <em>Group Show</em>
+    <em>2022</em> ✿ <a href="https://spam-index.com/projects/cezar-mocan/">Dynamic Links</a> with Spam Index ✿ <em>Group Show</em>
     <br/>
-    Scripting at the BLANC Gallery ✿ <em>2022, New York</em> ✿ <em>Group Show</em>
+    <em>2022</em> ✿ Scripting at the BLANC Gallery ✿ <em>New York, Group Show</em>
     <br/>
-    Currents New Media ✿ <em>2022, Santa Fe</em> ✿ <em>Group Show</em>
+    <em>2022</em> ✿ Currents New Media ✿ <em>Santa Fe, Group Show</em>
     <br/>
-    <a href="https://plottables.io/project/9">Delicate Chaos on Plottables.io </a> ✿ <em>2022, online</em>
+    <em>2022</em> ✿ <a href="https://plottables.io/project/9">Delicate Chaos release on Plottables.io </a>
     <br/>
-    Kampüste Dijital Sanat ✿ <em>2022, Istanbul</em> ✿ <em>Group Show</em>
+    <em>2022</em> ✿ Kampüste Dijital Sanat ✿ <em>Istanbul, Group Show</em>
     <br/>
-    <a href="https://infiniteobjects.com/products/mocan-arcadiainc">Lumen Prize x Infinite Objects collection</a> ✿ <em>2022, New York</em> ✿ <em>Participating Artist</em>
+    <em>2022</em> ✿ <a href="https://infiniteobjects.com/products/mocan-arcadiainc">Lumen Prize x Infinite Objects collection</a> ✿ <em>New York, Participating Artist</em>
     <br/>
-    SPRING/BREAK Art Show ✿ <em>2021, New York</em> ✿ <em>Solo Show</em>
+    <em>2021</em> ✿ SPRING/BREAK Art Show ✿ <em>New York, Solo Show</em>
     <br/>
-    <a href="https://www.lumenprize.com/">Lumen Prize</a> ✿ <em>2021, London</em> ✿ <em>Student Award Winner</em>
-    <br/>
-    Research Residency at NYU ITP ✿ <em>2021 – 2022, New York</em>
-    <br/>
-    <a href="https://www.slowburn-nyc.com/anywhere-but-here">Anywhere but Here</a> ✿ <em>2021, New York</em> ✿ <em>Group Show</em>
+    <em>2021</em> ✿ <a href="https://www.lumenprize.com/">Lumen Prize</a> ✿ <em>London, Student Award Winner</em>
+    <br/>    
     <br/><br/>
     View full CV <a href="https://docs.google.com/document/d/1qqE1sC9OasS2NU2cGLhji9NmopRdeTJbQREjjcqoMmQ/edit?usp=sharing">here</a>.
 </small>
