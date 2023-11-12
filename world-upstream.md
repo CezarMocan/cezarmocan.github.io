@@ -10,8 +10,10 @@ paragraphs:
     This project chooses to take for granted a future where AI entities exist in the world in embodied ways. Their umwelt however, is mediated by the landscape rather than the server farm, and rooted in the complex truths, dangers and histories the landscape holds. In doing so, World Upstream aims to imagine a genre painting for the late 21st century, a small, interdependent fiction where different types of intelligence share a less hierarchical, more porous world.<br/><br/>
  - text: |
     <b>Exhibitions</b><br/>
-    <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart, 2023 (curated by Office Impart in collaboration with Stina Gustafsson and Maria Paula Fernandez) <br/>
-    <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all" target="_blank">VCA Residency Exhibition</a>, 2023 (curated by Micol AP)<br/><br/>
+    <a href="http://www.puttyscoronation.com/" target="_blank">Tellurian Transversals</a> at Putty's Coronation Gallery, New York 2023 (curated by David Temchulla) <br/>
+    <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> at The Wrong Biennale, online 2023 (curated by Don Hanson, Mark Ramos, Sammie Veeler) <br/>
+    <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart, Berlin 2023 (curated by Office Impart in collaboration with Stina Gustafsson and Maria Paula Fernandez) <br/>
+    <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all" target="_blank">VCA Residency Exhibition</a>, online 2023 (curated by Micol AP)<br/><br/>
  - text: |
     <b>Production Credits</b><br/>
     <a href="https://www.instagram.com/laenzzz/" target="_blank">Laenz</a>, sound design<br/>
@@ -19,6 +21,9 @@ paragraphs:
     
 
 images:
+ - url: https://player.vimeo.com/video/883558338
+   vimeo: true
+   description: Screen recording of worldupstream.exe.
  - url: /assets/images/world-upstream/wu-oi-2.jpg
    description: Image courtesy of Office Impart
  - url: /assets/images/world-upstream/wu-oi-1.jpg
