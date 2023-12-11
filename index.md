@@ -9,7 +9,12 @@ projects:
   year: 2023
   link: /world-upstream
   image: /assets/images/world-upstream/preview.jpg
-  client: <em>Work in progress</em>
+  client: | 
+    <span class="small"><em>Work in progress</em><br/><br/>
+    Exhibited at: <br/> 
+    &emsp; <em>Sandbox Mode</em> at Office Impart (Berlin, 2023)<br/>
+    &emsp; <em>Reverse Tar Pit</em> at Onassis ONX and The Wrong Biennale (New York & online, 2023)<br/>
+    &emsp; <em>Tellurian Traversals</em> at Putty's Coronation Gallery (New York, 2023)<br/></span>
   selected: true
 - title: 'Fall (I Fell in Love with my Avatar)'
   medium: digital simulation
@@ -17,7 +22,7 @@ projects:
   link: /fall
   image: https://img.itch.zone/aW1hZ2UvMTc0NDcwOS8xMDI2NzUzOS5qcGc=/347x500/pNDOHL.jpg
   client: Commissioned as part of <em>Dynamic Links</em> on spam-index.com
-  selected: true
+  selected: false
 - title: 'Delicate Chaos'
   medium: on-chain generative system
   year: 2022
