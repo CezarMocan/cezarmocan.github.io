@@ -4,19 +4,25 @@ permalink: /about/
 ---
 I am a Lisbon-based artist and computer programmer interested in the interplay between technology and the natural landscape. Using narrative generative systems—animated videos of infinite duration, real-time simulations built in game engines or other software—I create worlds that recontextualize aspects of digital culture we take for granted, often in absurd ways, while investigating the power structures which mediate our relationship with technology. Drawing on media archaeology and art history, my research process traces the origins of our current thought patterns around (technological) progress.
 <br/><br/>
-Some of my past works have been exhibited with Inter/Access (Toronto), Office Impart (Berlin), SPRING BREAK Art Show (New York), Currents New Media (Center for Contemporary Art Santa Fe), Plexus Projects (New York), BASE (Istanbul), Romanian Design Week (Bucharest), Infinite Objects and New York University. My real-time simulation work, Arcadia Inc. was recognized as a 2021 winner of the Lumen Prize in Art and Technology. I hold a B.S. in Computer Science (2016) from Yale University and an M.P.S. in Interactive Telecommunications (2021) from New York University, where I also served as a research resident and adjunct professor.
+My work has been exhibited with Inter/Access (Toronto), Office Impart (Berlin), Panke Gallery (Berlin), SPRING BREAK Art Show (New York), Currents New Media (Center for Contemporary Art Santa Fe), Plexus Projects (New York), BASE (Istanbul), Romanian Design Week (Bucharest), Infinite Objects and New York University. My real-time simulation work, Arcadia Inc. was recognized as a 2021 winner of the Lumen Prize in Art and Technology. I hold a B.S. in Computer Science (2016) from Yale University and an M.P.S. in Interactive Telecommunications (2021) from New York University, where I also served as a research resident and adjunct professor.
 <br/><br/>
 Besides my personal work, I sometimes design or build software for other artists and teach. You can view an archive of my client work <a href="/client-work" target="_blank">here</a>.<br/><br/>
 In a former life, I used to do competitive programming.
 <br/><br/>
 If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 
-<br/><br/>❊<br/><br/><br/>
-<p style="text-decoration: none; margin-bottom: 10px;">Selected Exhibitions</p>
+<br/>❊<br/><br/>
+<p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming Exhibitions</p>
+<small>
+    <em>Jan. 19 - Feb. 3, 2024</em> ✿ <a href="https://www.panke.gallery/event/arcadia-inc" target="_blank"> Arcadia Inc.</a> is showing at Panke Gallery /rosa, part of <a href="https://vorspiel.berlin/events/arcadia-inc-by-cezar-mocan" target="_blank">Vorspiel Berlin</a>, curated by Robert Sakrowski ✿ <em>Berlin, Solo Show</em> <br/>
+    <em>Nov. 1, 2023 - Mar. 1, 2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> and <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> are featured in the <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> and <a href="https://thewrong.org/desktopstudies" target="_blank">Desktop Studies</a> pavilions at <a href="https://thewrong.org/" target="_blank">The Wrong Biennale 06</a> ✿ <em>Group Show</em> <br/>
+</small>
+
+<p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Past Exhibitions (selection)</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
     <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://www.onx.studio/onx-programming/new-art-city-reverse-tar-pit" target="_blank">Reverse Tar Pit</a> at Onassis ONX Studio ✿ <em>New York, </em><em>Group Show</em> <br/>
+    <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="http://www.puttyscoronation.com/" target="_blank">Tellurian Traversals</a> at Putty's Coronation Gallery ✿ <em>New York, </em><em>Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> is showing at CAV Multimedia Art Center ✿ <em>Bucharest, Group Show</em> <br/>
-    <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> and <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> are featured in the <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> and <a href="https://thewrong.org/desktopstudies" target="_blank">Desktop Studies</a> pavilions at <a href="https://thewrong.org/" target="_blank">The Wrong Biennale 06</a> ✿ <em>Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart ✿ <em>Berlin, </em><em>Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> is part of Desktop Studies at Media Art Festival Arad ✿ <em>Arad, Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/delicate-chaos" target="_blank">Delicate Chaos</a> is part of the <a href="https://romaniandesignweek.ro/" target="_blank">Romanian Design Week</a> ✿ <em>Bucharest, Group Show</em> <br/>
@@ -40,12 +46,12 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
     <br/>
     <em>2021</em> ✿ <a href="https://www.lumenprize.com/">Lumen Prize</a> ✿ <em>London, Student Award Winner</em>
     <br/>    
-    <br/><br/>
+    <br/>
     View full CV <a href="https://docs.google.com/document/d/1qqE1sC9OasS2NU2cGLhji9NmopRdeTJbQREjjcqoMmQ/edit?usp=sharing">here</a>.
 </small>
 </p>
 
-<br/><br/>❊<br/><br/><br/>
+<br/>❊<br/><br/>
 
 <p style="text-decoration: none; margin-bottom: 10px;">Teaching</p>
 <p style="line-height: 1.3; margin-left: 2px;"><small>
@@ -61,7 +67,7 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 
 </small></p>
 
-<br/><br/>❊<br/><br/><br/>
+<br/>❊<br/><br/>
 
 <p style="text-decoration: none; margin-bottom: 10px;">Education</p>
 <p style="line-height: 1.3; margin-left: 2px;"><small>

@@ -36,13 +36,13 @@ projects:
   link: /arcadia-inc
   image: /assets/images/arcadiainc/soft-power-still.png
   client: | 
-    Exhibited at: <br/> 
-    &emsp; <em>GUI / GOOEY</em>, Plexus Projects (online, 2023), curated by Laura Splan <br/>
+    &emsp; <em>Arcadia Inc.</em> at Panke Gallery /rosa (Berlin, 2024)<br/>
+    &emsp; <em>GUI / GOOEY</em>, Plexus Projects (online, 2023)<br/>
     &emsp; <em>Lumen Prize x Infinite Objects</em> collection <br/>
     &emsp; <em>Currents New Media</em> (Santa Fe, 2022)<br/>
     &emsp; <em>Kampüste Dijital Sanat</em> (Istanbul, 2022)<br/>
-    &emsp; <em>Sculpted in Our Image, Forged in Our Minds</em> (online, 2022), curated by Tristan Sauer in collaboration with Inter/Access Toronto<br/>
-    &emsp; <em>Soft Power</em> at SPRING/BREAK Art Show (New York, 2021), curated by Lizzy Chiappini<br/>
+    &emsp; <em>Sculpted in Our Image, Forged in Our Minds</em> (online, 2022)<br/>
+    &emsp; <em>Soft Power</em> at SPRING/BREAK Art Show (New York, 2021)<br/>
     &emsp; <em>Lumen Prize Student Award</em> (2021)<br/><br/>
 
   selected: true
