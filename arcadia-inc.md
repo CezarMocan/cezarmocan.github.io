@@ -48,7 +48,7 @@ images:
    description: Ansel A.I., a virtual being working for Arcadia Inc., introduces the project.
 
  - url: /assets/images/arcadiainc/rosa-2-fix3.png
-   description: Exhibition view at Panke Gallery /rosa, January 2024.   
+   description: Exhibition view at Panke Gallery /rosa, Berlin.   
 
  - url: /assets/images/arcadiainc/now-2.png
    description: Photograph taken by a virtual being, displayed on the now.arcadia.photography website with metadata revealing environmental conditions within the simulation.   
@@ -75,13 +75,13 @@ images:
  - url: /assets/images/arcadiainc/spring-break-2.png
    description: 32W,560S, UV Print on Aluminum Dibond, 20” x 15” (50.8 x 38.1cm)
 
- - url: /assets/images/arcadiainc/simulation-stills.png
-   description: Stills from the <i>softpower.exe</i> real-time simulation.
+#  - url: /assets/images/arcadiainc/simulation-stills.png
+#    description: Stills from the <i>softpower.exe</i> real-time simulation.
 #  - url: /assets/images/arcadiainc/rosa-1-fix.jpg
 #    description: Exhibition view at Panke Gallery /rosa, January 2024.
 
- - url: /assets/images/arcadiainc/currents-2.png
-   description: Exhibition view, Currents New Media, Santa Fe
+ - url: /assets/images/arcadiainc/panke-3.png
+   description: Exhibition view, Panke Gallery /rosa, Berlin.
 
  - url: /assets/images/arcadiainc/spring-break-3.png
    description: 1967W,9N, UV Print on Aluminum Dibond, 20” x 15” (50.8 x 38.1cm)

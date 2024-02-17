@@ -30,7 +30,7 @@ images:
    vimeo: true
    description: Screen recording of the worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/rtp.jpg
-   description: Exhibition & remote artist talk for Reverse Tar Pit at Onassis ONX, New York
+   description: Artist talk, Reverse Tar Pit at Onassis ONX, New York
  - url: /assets/images/world-upstream/wu-oi-1.jpg
    description: Exhibition view, image courtesy of Office Impart.
  - url: /assets/images/world-upstream/wu-sim-1.png
