@@ -56,6 +56,10 @@ images:
 
  - url: /assets/images/arcadiainc/simulation-stills.png
    description: Stills from the <i>softpower.exe</i> real-time simulation.
+ - url: /assets/images/arcadiainc/rosa-1-fix.jpg
+   description: Exhibition view at Panke Gallery /rosa, January 2024.
+ - url: /assets/images/arcadiainc/rosa-2-fix2.jpg
+   description: Exhibition view at Panke Gallery /rosa, January 2024.   
 
  - url: /assets/images/arcadiainc/spring-break-1.jpg
    description: SPRING/BREAK 2021 installation view; the show curator, Lizzy Chiappini, selected seven photographs taken by the virtual beings to print at high resolution on aluminum dibond, in conjunction with displaying the real-time simulation as a single-channel video of infinite duration. <small>(image by Lizzy Chiappini)</small>
