@@ -62,42 +62,44 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">Virtualis is a creative experiment in art, research, and performance. Using the social VR platform VRChat, we have created a conceptual tourist agency as a way to engage audiences with our research and fascinations with social VR. While being playful, performative, and fun, the tours are also critical examinations of the culture-making, body confusions, and social norms specific to VRChat and prevalent in social VR as a medium.<br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">Virtualis is a creative experiment in art, research, and performance. Using the social VR platform VRChat, we have created a conceptual tourist agency as a way to engage audiences with our research and fascinations with social VR. While being playful, performative, and fun, the tours are also critical examinations of the culture-making, body confusions, and social norms specific to VRChat and prevalent in social VR as a medium.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Role: Web developer; Project by <a href="https://lydiajessup.me/" target="_blank">Lydia Jessup</a> and <a href="https://matt-romein.com/" target="_blank">Matt Romein.</a> Creative direction by <a href="https://emilylin.work/" target="_blank">Emily Lin.</a><br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Role: Web developer; Project by <a href="https://lydiajessup.me/" target="_blank">Lydia Jessup</a> and <a href="https://matt-romein.com/" target="_blank">Matt Romein.</a> Creative direction by <a href="https://emilylin.work/" target="_blank">Emily Lin.</a><br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Virtualis was part of <a href="https://www.idfa.nl/en/film/934a1588-e0f5-4340-8e1d-540fc65878a3/virtualis?&collectionType=idfa">IDFA DocLab 2020</a>.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Virtualis was part of <a href="https://www.idfa.nl/en/film/934a1588-e0f5-4340-8e1d-540fc65878a3/virtualis?&collectionType=idfa">IDFA DocLab 2020</a>.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">The virtualis.tours website was featured on <a href="https://mindsparklemag.com/">Mindsparkle Mag</a> as <a href="https://mindsparklemag.com/website/virtualis/">Site of the Day</a>.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">The virtualis.tours website was featured on <a href="https://mindsparklemag.com/">Mindsparkle Mag</a> as <a href="https://mindsparklemag.com/website/virtualis/">Site of the Day</a>.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Visit at <a href="https://virtualis.tours">virtualis.tours</a>.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Visit at <a href="https://virtualis.tours">virtualis.tours</a>.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -218,9 +220,24 @@
   // Get the root element
   var r = document.querySelector("html")
   r.style.setProperty("--main-bg-color", "#070707")
-  r.style.setProperty("--main-fg-color", "#f5f5f5")
+  r.style.setProperty("--main-fg-color", "#f5f5f5")  
 </script>
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

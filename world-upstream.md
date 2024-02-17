@@ -10,29 +10,49 @@ paragraphs:
     This project chooses to take for granted a future where AI entities exist in the world in embodied ways. Their umwelt however, is mediated by the landscape rather than the server farm, and rooted in the complex truths, dangers and histories the landscape holds. In doing so, World Upstream aims to imagine a genre painting for the late 21st century, a small, interdependent fiction where different types of intelligence share a less hierarchical, more porous world.<br/><br/>
     World Upstream is a real-time simulation built in Unreal Engine.<br/><br/>
  - text: |
+    <p class="small-paragraph">
     <b>Exhibitions</b><br/>
-    <a href="http://www.puttyscoronation.com/" target="_blank">Tellurian Traversals</a> at Putty's Coronation Gallery, New York 2023 (curated by David Temchulla) <br/>
-    <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> at Onassis ONX and The Wrong Biennale, New York and online 2023 (curated by Don Hanson, Mark Ramos, Sammie Veeler) <br/>
-    <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart, Berlin 2023 (curated by Office Impart in collaboration with Stina Gustafsson and Maria Paula Fernandez) <br/>
-    <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all" target="_blank">VCA Residency Exhibition</a>, online 2023 (curated by Micol AP)<br/><br/>
+    2023 &#8212; <a href="http://www.puttyscoronation.com/" target="_blank">Tellurian Traversals</a> at Putty's Coronation Gallery, New York (curated by David Temchulla) <br/>
+    2023 &#8212; <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> at Onassis ONX and The Wrong Biennale, New York and online (curated by Don Hanson, Mark Ramos, Sammie Veeler) <br/>
+    2023 &#8212; <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart, Berlin (curated by Office Impart in collaboration with Stina Gustafsson and Maria Paula Fernandez) <br/>
+    2023 &#8212; <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all" target="_blank">VCA Residency Exhibition</a>, online (curated by Micol AP)<br/><br/>
+    </p>
  - text: |
+    <p class="small-paragraph">
     <b>Production Credits</b><br/>
     <a href="https://www.instagram.com/laenzzz/" target="_blank">Laenz</a>, sound design<br/>
     <a href="https://oliviayinjx.com/" target="_blank">Olivia Yin</a>, world design<br/>
+    </p>
     
 
 images:
  - url: https://player.vimeo.com/video/883558338
    vimeo: true
-   description: Screen recording of worldupstream.exe.
+   description: Screen recording of the worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/wu-oi-2.jpg
-   description: Image courtesy of Office Impart
+   description: Exhibition view, image courtesy of Office Impart.
  - url: /assets/images/world-upstream/wu-oi-1.jpg
-   description: Image courtesy of Office Impart
+   description: Exhibition view, image courtesy of Office Impart.
  - url: /assets/images/world-upstream/wu-sim-1.png
+   description: Still from worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/wu-sim-2.png
+   description: Still from worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/wu-sim-3.png 
+   description: Still from worldupstream.exe real-time simulation. 
  - url: /assets/images/world-upstream/wu-sim-4.png 
+   description: Still from worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/wu-sim-5.png  
+   description: Still from worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/wu-sim-6.png   
+   description: Still from worldupstream.exe real-time simulation.
+ - url: /assets/images/world-upstream/1.jpg
+   description: World Upstream pre-production still.
+ - url: /assets/images/world-upstream/2.jpg
+   description: World Upstream pre-production still.
+ - url: /assets/images/world-upstream/3.jpg
+   description: World Upstream pre-production still.
+ - url: /assets/images/world-upstream/4.jpg
+   description: World Upstream pre-production still.
+ - url: /assets/images/world-upstream/5.jpg
+   description: World Upstream pre-production still.            
 ---

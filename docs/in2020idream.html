@@ -62,14 +62,16 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">A desktop performance about the possibility of dreaming in 2020.
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">A desktop performance about the possibility of dreaming in 2020.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -164,6 +166,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

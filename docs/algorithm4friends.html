@@ -62,39 +62,41 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class=""><em>How do we bring locality back into our networks?</em> is the prompt this project offers a non realistic answer to. While most social networking technologies work towards maximizing screen time, An Algorithm That Gives You 4 Friends does the opposite: it sends you back to the real world, and asks you to sit in silence with a group of peers.
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class=""><em>How do we bring locality back into our networks?</em> is the prompt this project offers a non realistic answer to. While most social networking technologies work towards maximizing screen time, An Algorithm That Gives You 4 Friends does the opposite: it sends you back to the real world, and asks you to sit in silence with a group of peers.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">The project is designed as a series of 8 prompts and meant to be experienced by 5 people with 5 computers, sitting in the same room. It creates a user unfriendly back and forth between digital and physical interactions, with the goal of creating a community where there was not one before.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">The project is designed as a series of 8 prompts and meant to be experienced by 5 people with 5 computers, sitting in the same room. It creates a user unfriendly back and forth between digital and physical interactions, with the goal of creating a community where there was not one before.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Visit here:<br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Visit here:<br/>
 <a class="underlined" href="dat://f019ad42fca1f045579dbf708f9c27f685ae75bb05ba55f35d9e0f1ee342a671/" target="__blank">dat://f019ad42fca1f045579dbf708f9c27f685ae75bb05ba55f35d9e0f1ee342a671/</a>
 <br/>
 or
 <a class="underlined" href="https://an-algorithm-for-4-friends.hashbase.io/" target="__blank">https://an-algorithm-for-4-friends.hashbase.io/</a>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="small-paragraph">Developed during the TXT-2018 workshop at <a class="underlined" href="https://a-b-z.co/">A-B-Z</a> in Toronto. Created on top of the dat:// protocol and the Beaker browser.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="small-paragraph">Developed during the TXT-2018 workshop at <a class="underlined" href="https://a-b-z.co/">A-B-Z</a> in Toronto. Created on top of the dat:// protocol and the Beaker browser.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -137,6 +139,21 @@ or
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

@@ -246,6 +246,13 @@ p {
 
 .description-container {
   margin: 0px 60px 75px 87px;
+  width: 850px;
+  min-width: 850px;
+  position: relative;
+}
+
+.description-inner-container {
+  position: fixed;
   max-width: 850px;
 }
 
@@ -260,8 +267,37 @@ p {
   margin-bottom: 75px;
   margin-top: 130px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1900px) {
+  .description-container {
+    width: 700px;
+    min-width: 700px;
+    margin-right: 20px;
+  }
+  .description-inner-container {   
+    max-width: 700px;
+  }  
+  .media-container {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .project-content-container {
+    flex-direction: column;
+  }
+  .description-container {
+    width: auto;
+    min-width: auto;
+    max-width: 850px;
+  }
+  .description-inner-container {
+    position: relative;
+    max-width: 100%;
+  }  
 }
 
 @media only screen and (max-width: 900px) {

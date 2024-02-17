@@ -62,42 +62,44 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">An augmented reality experience for two which explores the collaborative nature of building, through the lens of a place imagined by Calvino Italo—Thekla is a city whose construction never stops, so that its deconstruction can never begin.</p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">The two participants take roles: a builder and an explorer. While the builder is asked to design a part of an imaginary city through drawing in space, the explorer walks through a digital environment meant to expose the story of Thekla through words, sounds and images.
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">An augmented reality experience for two which explores the collaborative nature of building, through the lens of a place imagined by Calvino Italo—Thekla is a city whose construction never stops, so that its deconstruction can never begin.</p>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">The two participants take roles: a builder and an explorer. While the builder is asked to design a part of an imaginary city through drawing in space, the explorer walks through a digital environment meant to expose the story of Thekla through words, sounds and images.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">The experiences of the two are connected: the amount of work done by the builder directly influences the light conditions in the explorer’s journey. This gesture functions as a way of inducing collaboration between the two, as well as a way of staying faithful to the original story—building must never stop.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">The experiences of the two are connected: the amount of work done by the builder directly influences the light conditions in the explorer’s journey. This gesture functions as a way of inducing collaboration between the two, as well as a way of staying faithful to the original story—building must never stop.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">A third component of this work consists in a projection of all builders’ creations througout the course of the exhibition—the shared city. Starting as an empty screen, the projected city gathers one more layer with every builder’s creation. <br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">A third component of this work consists in a projection of all builders’ creations througout the course of the exhibition—the shared city. Starting as an empty screen, the projected city gathers one more layer with every builder’s creation. <br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="small-paragraph">Exhibited as part of a group show in 2018 at <a class="underlined" href="http://www.acud.de/" target="__blank">ACUD</a> in Berlin. <br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="small-paragraph">Exhibited as part of a group show in 2018 at <a class="underlined" href="http://www.acud.de/" target="__blank">ACUD</a> in Berlin. <br/>
 Developed during the Reality? program at the <a class="underlined" href="http://www.schoolofma.org" target="__blank">School of Machines, Making and Make-Believe</a>.<br/>Created using Unity. 
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -195,6 +197,21 @@ Developed during the Reality? program at the <a class="underlined" href="http://
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

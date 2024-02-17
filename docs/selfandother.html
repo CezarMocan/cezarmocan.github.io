@@ -62,43 +62,45 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">A web installation running an online conversation archive in real time, on a two-year loop.
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">A web installation running an online conversation archive in real time, on a two-year loop.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Self and Other is a small project created with and for my partner. At a moment of our interaction when everything seemed to be falling apart, the thought of separating scared me so much that I wanted to give the relationship an afterlife while it still existed.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Self and Other is a small project created with and for my partner. At a moment of our interaction when everything seemed to be falling apart, the thought of separating scared me so much that I wanted to give the relationship an afterlife while it still existed.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Being a long distance partnership, the most tangible traces we had left were in our online written conversations. The afterlife ended up taking the shape of the archive of all our Messenger chats, replayed by a website in real time, exactly two years after they had happened. A week of silence in our chats would mean a week of silence on the website.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Being a long distance partnership, the most tangible traces we had left were in our online written conversations. The afterlife ended up taking the shape of the archive of all our Messenger chats, replayed by a website in real time, exactly two years after they had happened. A week of silence in our chats would mean a week of silence on the website.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">There is something truly romantic and voyeuristic in exposing ourselves so openly to the world. And there is something truly self absorbed in fantasizing that someone would visit that website every day in 2017, to observe our conversations from 2015 unfolding. So self absorbed, that <span class="strikethrough">the relationship survived</span>. <br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">There is something truly romantic and voyeuristic in exposing ourselves so openly to the world. And there is something truly self absorbed in fantasizing that someone would visit that website every day in 2017, to observe our conversations from 2015 unfolding. So self absorbed, that <span class="strikethrough">the relationship survived</span>. <br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Visit here: 
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Visit here: 
 <a class="underlined" href="https://www.selfandother.net/" target="__blank">https://www.selfandother.net/</a>
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -121,6 +123,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

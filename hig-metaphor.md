@@ -9,8 +9,24 @@ paragraphs:
  - text: |
     The <em>desktop metaphor</em> is one popular instance of metaphor usage in interface design. It models a computer's working area as if it were the user's desk, viewed from above, and recontextualizes objects found in the office (such as files, folders or trash cans) into digital entities.<br/><br/>
  - text: |
-    This two channel video engages with and reverses the skeuomorphism of the desktop metaphor. The default landscape photograph which serves as desktop wallpaper evolves from visual backdrop to full-blown ecosystem, which is being watched (left channel) and watching (right channel) at the same time. Human presence is not directly portrayed, but implied through the design of the scene – the museum-like setting invites the spectator to project their gaze into the landscape. 3-dimensional models of the folder icon serve as the visual liaison between the two spaces, slowly overflowing the scene throughout the course of the video. Original text by Apple, arguing for the use of metaphor in interface design, is shown on the screen, while elements of nature (trees and flowers) rotate in the center of each channel, in reference to the most popular motion graphics gestures in loading screens.
+    This two channel video engages with and reverses the skeuomorphism of the desktop metaphor. The default landscape photograph which serves as desktop wallpaper evolves from visual backdrop to full-blown ecosystem, which is being watched (left channel) and watching (right channel) at the same time. Human presence is not directly portrayed, but implied through the design of the scene – the museum-like setting invites the spectator to project their gaze into the landscape. 3-dimensional models of the folder icon serve as the visual liaison between the two spaces, slowly overflowing the scene throughout the course of the video. Original text by Apple, arguing for the use of metaphor in interface design, is shown on the screen, while elements of nature (trees and flowers) rotate in the center of each channel, in reference to the most popular motion graphics gestures in loading screens.<br/><br/>
+ - text: |
+    <p class="small-paragraph">
+    <b>Exhibitions</b><br/>
+    2023 &#8212; Desktop Studies at CAV Multimedia Art Center, Bucharest, curated by Spam Index <br/>
+    2023 &#8212; Desktop Studies at Media Art Festival Arad, Arad, curated by Kinema Ikon <br/>
+    2023 &#8212; Desktop Studies at The Wrong Biennale 06, curated by Spam Index <br/>
+    2021 &#8212; Anywhere but Here, New York, curated by Slow Burn <br/>
+    </p>
 images:
  - url: https://player.vimeo.com/video/488594401
    vimeo: true
+ - url: /assets/images/hig-metaphor/2.jpeg
+   description: Exhibition view, image courtesy of Slow Burn.
+ - url: /assets/images/hig-metaphor/3.jpeg
+   description: Exhibition view, image courtesy of Slow Burn.   
+ - url: /assets/images/hig-metaphor/4.jpeg
+   description: Exhibition view, image courtesy of Slow Burn.      
+ - url: /assets/images/hig-metaphor/5.jpeg
+   description: Exhibition view, image courtesy of Slow Burn.      
 ---

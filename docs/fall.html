@@ -62,36 +62,40 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">Fall (I Fell in Love with my Avatar) is a real-time, non-interactive simulation which romanticizes the simpler life of a virtual being in a post-capitalist internet. In a deserted digital backyard, a bohemian half-cat, half-human avatar is stuck riding on a swing, while coping with feelings of joy, exhaustion and frustration. As you witness her perpetual swinging, a short letter unfolds.<br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">Fall (I Fell in Love with my Avatar) is a real-time, non-interactive simulation which romanticizes the simpler life of a virtual being in a post-capitalist internet. In a deserted digital backyard, a bohemian half-cat, half-human avatar is stuck riding on a swing, while coping with feelings of joy, exhaustion and frustration. As you witness her perpetual swinging, a short letter unfolds.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">The project was be released as a free download in October 2022 as part of Dynamic Links, a series of commissioned works featuring Romanian digital artists coordinated by <a href="https://nicomures.com" target="_blank">Nicoleta Mures</a> in collaboration with <a href="https://spam-index.com" target="_blank">Spam Index</a>.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">The project was be released as a free download in October 2022 as part of Dynamic Links, a series of commissioned works featuring Romanian digital artists coordinated by <a href="https://nicomures.com" target="_blank">Nicoleta Mures</a> in collaboration with <a href="https://spam-index.com" target="_blank">Spam Index</a>.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class=""><a href="https://mocancezar.itch.io/fall-i-fell-in-love-with-my-avatar" target="_blank">Download here.</a><br/><br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class=""><a href="https://mocancezar.itch.io/fall-i-fell-in-love-with-my-avatar" target="_blank">Download here.</a><br/><br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class=""><b>Exhibitions</b><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class=""><p class="small-paragraph">
+<b>Exhibitions</b><br/>
 <a href="https://spam-index.com/projects/cezar-mocan/">Dynamic Links</a> (online, 2022), curated by Nicoleta Mures <br/>
 </p>
-        
-      </div>
-    
+</p>
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -150,6 +154,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

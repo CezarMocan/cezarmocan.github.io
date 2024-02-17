@@ -62,28 +62,30 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">LIPP TV was the final performance project of the Live Image Processing and Performance (LIPP) class at NYU ITP. LIPP TV is a creative response to how code, video networks, and art can be used to create a new experience in live performance. Each student has created their own short TV show influenced by video art, experimental animation, public access TV, and more.<br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">LIPP TV was the final performance project of the Live Image Processing and Performance (LIPP) class at NYU ITP. LIPP TV is a creative response to how code, video networks, and art can be used to create a new experience in live performance. Each student has created their own short TV show influenced by video art, experimental animation, public access TV, and more.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">I participated in the show with the <a href="/officeolympics" target="_blank">Office Olympics</a> piece, and developed the show's website.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">I participated in the show with the <a href="/officeolympics" target="_blank">Office Olympics</a> piece, and developed the show's website.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Role: Web developer; Design by <a href="https://carriesijiawang.com/" target="_blank">Carrie Sijia Wang.</a>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Role: Web developer; Design by <a href="https://carriesijiawang.com/" target="_blank">Carrie Sijia Wang.</a>
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -119,9 +121,24 @@
   // Get the root element
   var r = document.querySelector("html")
   r.style.setProperty("--main-bg-color", "#070707")
-  r.style.setProperty("--main-fg-color", "#f5f5f5")
+  r.style.setProperty("--main-fg-color", "#f5f5f5")  
 </script>
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

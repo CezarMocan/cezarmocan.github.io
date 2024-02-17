@@ -62,21 +62,23 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">A chapbook designed in Yale’s Typography I studio class.<br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">A chapbook designed in Yale’s Typography I studio class.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Photo credits: <a class="underlined" href="http://katelynrebelo.com/" target="__blank">Katelyn Rebelo</a>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Photo credits: <a class="underlined" href="http://katelynrebelo.com/" target="__blank">Katelyn Rebelo</a>
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -126,6 +128,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

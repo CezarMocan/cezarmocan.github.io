@@ -62,35 +62,37 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">Shadow Network is a networked audio-visual software for two performers. Stuck between the impossibility of physical contact and the exhausting transparency of video conferences during the extended period of global disarray which 2020 has proved to be, we began imagining an alternative which could allow us to communicate presence and its nuances, rather than information. <br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">Shadow Network is a networked audio-visual software for two performers. Stuck between the impossibility of physical contact and the exhausting transparency of video conferences during the extended period of global disarray which 2020 has proved to be, we began imagining an alternative which could allow us to communicate presence and its nuances, rather than information. <br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Each person is represented visually by a single-color silhouette, and sonically by a musical instrument. The space’s soundscape is generative, and can be controlled through the individual and collaborative movements of the two participants. Various changes to the composition algorithm and sound effects are applied based on factors such as stillness, movement, distance or touch between the two bodies. At the same time, the system presents the two participants with snippets of their past movements, played on short loops – short encounters with the memory of the shared digital space.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Each person is represented visually by a single-color silhouette, and sonically by a musical instrument. The space’s soundscape is generative, and can be controlled through the individual and collaborative movements of the two participants. Various changes to the composition algorithm and sound effects are applied based on factors such as stillness, movement, distance or touch between the two bodies. At the same time, the system presents the two participants with snippets of their past movements, played on short loops – short encounters with the memory of the shared digital space.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="small-paragraph">Developed in collaboration with <a href="https://www.cy-kim.com/" target="_blank">Cy Kim</a>, through a grant from the <a href=" https://www.nycmedialab.org/" target="_blank">New York City Media Lab</a> and <a href="http://www.ascap.com" target="_blank">ASCAP</a>.<br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="small-paragraph">Developed in collaboration with <a href="https://www.cy-kim.com/" target="_blank">Cy Kim</a>, through a grant from the <a href=" https://www.nycmedialab.org/" target="_blank">New York City Media Lab</a> and <a href="http://www.ascap.com" target="_blank">ASCAP</a>.<br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="small-paragraph">Built using openFrameworks, MaxMSP, Microsoft Kinect 2 and OSC.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="small-paragraph">Built using openFrameworks, MaxMSP, Microsoft Kinect 2 and OSC.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -149,6 +151,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

@@ -15,26 +15,32 @@ paragraphs:
 #  - text: |
 #     A previous framing of the project involved a fictional company which claims to offer "context-free landscape photography for the 21st century user". You can learn more about Arcadia Inc. as a company by visiting <a href="http://arcadia-inc.org" target="_blank">http://arcadia-inc.org</a>, or by listening to my <a href="https://vimeo.com/549761951" target="_blank">NYU ITP thesis presentation</a>.<br/><br/>
  - text: |
+    <p class="small-paragraph">
     <b>Exhibitions</b><br/>
-    <a href="https://www.panke.gallery/event/arcadia-inc"> Arcadia Inc. (solo)</a>, at Panke Gallery /rosa, part of <a href="https://vorspiel.berlin/events/arcadia-inc-by-cezar-mocan" target="_blank">Vorspiel Berlin</a>, curated by Robert Sakrowski (Berlin, 2024) <br/>
-    <a href="https://www.plexusprojects.org/gui-gooey"> GUI / GOOEY, Plexus Projects, curated by Laura Splan</a> (online, 2023) <br/>
-    <a href="https://infiniteobjects.com/products/mocan-arcadiainc"> Lumen Prize x Infinite Objects collection </a> <br/>
-    <a href="https://currentsnewmedia.org/artist/cezar-mocan/" target="_blank">Currents New Media</a> (Santa Fe, 2022)<br/>
-    Kampüste Dijital Sanat (Istanbul, 2022)<br/>
-    <a href="https://interaccess.org/exhibition/sculpted-our-image-forged-our-minds">Sculpted in Our Image, Forged in Our Minds</a> curated by Tristan Sauer in collaboration with Inter/Access Toronto (online, 2022)<br/>
-    SPRING/BREAK Art Show (New York, 2021), curated by Lizzy Chiappini<br/>
-    <a href="https://www.lumenprize.com/2021-student-prize-shortlist/arcadia-inc" target="_blank">Lumen Prize Student Award</a> (2021)<br/><br/>
+    2024 &#8212; <a href="https://www.panke.gallery/event/arcadia-inc"> Arcadia Inc. (solo)</a>, at Panke Gallery /rosa, part of <a href="https://vorspiel.berlin/events/arcadia-inc-by-cezar-mocan" target="_blank">Vorspiel Berlin</a>, curated by Robert Sakrowski, Berlin <br/>
+    2023 &#8212; <a href="https://www.plexusprojects.org/gui-gooey"> GUI / GOOEY, Plexus Projects</a>, curated by Laura Splan online <br/>
+    2022 &#8212; <a href="https://infiniteobjects.com/products/mocan-arcadiainc"> Lumen Prize x Infinite Objects collection </a> <br/>
+    2022 &#8212; <a href="https://currentsnewmedia.org/artist/cezar-mocan/" target="_blank">Currents New Media</a>, Santa Fe<br/>
+    2022 &#8212; Kampüste Dijital Sanat, Istanbul<br/>
+    2022 &#8212; <a href="https://interaccess.org/exhibition/sculpted-our-image-forged-our-minds">Sculpted in Our Image, Forged in Our Minds</a> curated by Tristan Sauer in collaboration with Inter/Access Toronto, online<br/>
+    2021 &#8212; SPRING/BREAK Art Show, New York, curated by Lizzy Chiappini<br/>
+    2021 &#8212; <a href="https://www.lumenprize.com/2021-student-prize-shortlist/arcadia-inc" target="_blank">Lumen Prize Student Award</a><br/><br/>
+    </p>
  - text: |
+    <p class="small-paragraph">
     <b>Production Credits</b><br/>
     Emma Brown, sound design <br/>
     Hannah Campbell, voice acting <br/>
     Lizzy Chiappini, curation <br/>
     <br/>
+    </p>
  - text: |
+    <p class="small-paragraph">
     <b>Related Work</b> <br/>
     <a href="/whatdoesthedesktopwant">What Does the Desktop Want?</a>, a talk I gave at the 2021 Computer Mouse Conference<br/>
     <a href="/hig-metaphor">Human Interface Guidelines (Metaphor)</a>, a two-channel video<br/>
     <a href="/24hrslandscape">24 Hours Relaxing Landscape for Stress Relief</a>, a three channel video
+    </p>
 
 images:
  - url: https://player.vimeo.com/video/634060678

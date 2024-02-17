@@ -62,28 +62,30 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">Three-channel video “24 Hours Relaxing Landscape For Stress Relief” is a meditation inside of the computer desktop. Landscape imagery is a common choice for default wallpapers on most operating systems, creating the illusion of the desktop as a place where one feels at ease and in touch with nature. During the COVID-19 quarantine, this was the only way of accessing nature for many of us living in cities. <br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">Three-channel video “24 Hours Relaxing Landscape For Stress Relief” is a meditation inside of the computer desktop. Landscape imagery is a common choice for default wallpapers on most operating systems, creating the illusion of the desktop as a place where one feels at ease and in touch with nature. During the COVID-19 quarantine, this was the only way of accessing nature for many of us living in cities. <br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">The piece imagines a distant future where the desktop landscapes are allowed to slowly develop into their own ecosystems, transcending their condition as simple transient spaces in a user’s daily computer usage. Combining elements of nature, human presence, labor and computer iconography, these ecosystems are meant to be lived with, as living paintings. The videos involve elements of rotation running on a 24 hour loop, as a way of bridging the gap between online and offline time.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">The piece imagines a distant future where the desktop landscapes are allowed to slowly develop into their own ecosystems, transcending their condition as simple transient spaces in a user’s daily computer usage. Combining elements of nature, human presence, labor and computer iconography, these ecosystems are meant to be lived with, as living paintings. The videos involve elements of rotation running on a 24 hour loop, as a way of bridging the gap between online and offline time.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="small-paragraph">Note: The current videos show 5 minute previews of the 24 hour long videos. The rotation is sped-up in the previews, it is meant to unfold over the course of an entire day.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="small-paragraph">Note: The current videos show 5 minute previews of the 24 hour long videos. The rotation is sped-up in the previews, it is meant to unfold over the course of an entire day.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -124,6 +126,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

@@ -62,28 +62,43 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">In 1987 Apple published the Macintosh Human Interface Guidelines – a document summarizing the visual principles behind the MacOS user interface. In a pursuit towards popularizing personal computing throughout the 1980s, Apple embraced <em>metaphor</em> as a core idea in interface design: presenting the user with concepts already familiar from everyday life, as a means towards easing the software learning curve.<br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">In 1987 Apple published the Macintosh Human Interface Guidelines – a document summarizing the visual principles behind the MacOS user interface. In a pursuit towards popularizing personal computing throughout the 1980s, Apple embraced <em>metaphor</em> as a core idea in interface design: presenting the user with concepts already familiar from everyday life, as a means towards easing the software learning curve.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">The <em>desktop metaphor</em> is one popular instance of metaphor usage in interface design. It models a computer's working area as if it were the user's desk, viewed from above, and recontextualizes objects found in the office (such as files, folders or trash cans) into digital entities.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">The <em>desktop metaphor</em> is one popular instance of metaphor usage in interface design. It models a computer's working area as if it were the user's desk, viewed from above, and recontextualizes objects found in the office (such as files, folders or trash cans) into digital entities.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">This two channel video engages with and reverses the skeuomorphism of the desktop metaphor. The default landscape photograph which serves as desktop wallpaper evolves from visual backdrop to full-blown ecosystem, which is being watched (left channel) and watching (right channel) at the same time. Human presence is not directly portrayed, but implied through the design of the scene – the museum-like setting invites the spectator to project their gaze into the landscape. 3-dimensional models of the folder icon serve as the visual liaison between the two spaces, slowly overflowing the scene throughout the course of the video. Original text by Apple, arguing for the use of metaphor in interface design, is shown on the screen, while elements of nature (trees and flowers) rotate in the center of each channel, in reference to the most popular motion graphics gestures in loading screens.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">This two channel video engages with and reverses the skeuomorphism of the desktop metaphor. The default landscape photograph which serves as desktop wallpaper evolves from visual backdrop to full-blown ecosystem, which is being watched (left channel) and watching (right channel) at the same time. Human presence is not directly portrayed, but implied through the design of the scene – the museum-like setting invites the spectator to project their gaze into the landscape. 3-dimensional models of the folder icon serve as the visual liaison between the two spaces, slowly overflowing the scene throughout the course of the video. Original text by Apple, arguing for the use of metaphor in interface design, is shown on the screen, while elements of nature (trees and flowers) rotate in the center of each channel, in reference to the most popular motion graphics gestures in loading screens.<br/><br/>
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class=""><p class="small-paragraph">
+<b>Exhibitions</b><br/>
+2023 &#8212; Desktop Studies at CAV Multimedia Art Center, Bucharest, curated by Spam Index <br/>
+2023 &#8212; Desktop Studies at Media Art Festival Arad, Arad, curated by Kinema Ikon <br/>
+2023 &#8212; Desktop Studies at The Wrong Biennale 06, curated by Spam Index <br/>
+2021 &#8212; Anywhere but Here, New York, curated by Slow Burn <br/>
+</p>
+</p>
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -98,6 +113,42 @@
         
       </div>
     
+      <div class="project-image-with-description">
+        
+          <img src="/assets/images/hig-metaphor/2.jpeg" class="project-image"/>
+        
+        
+          <p class="project-image-description small-paragraph mt0 mb2 c8">Exhibition view, image courtesy of Slow Burn.</p>
+        
+      </div>
+    
+      <div class="project-image-with-description">
+        
+          <img src="/assets/images/hig-metaphor/3.jpeg" class="project-image"/>
+        
+        
+          <p class="project-image-description small-paragraph mt0 mb2 c8">Exhibition view, image courtesy of Slow Burn.</p>
+        
+      </div>
+    
+      <div class="project-image-with-description">
+        
+          <img src="/assets/images/hig-metaphor/4.jpeg" class="project-image"/>
+        
+        
+          <p class="project-image-description small-paragraph mt0 mb2 c8">Exhibition view, image courtesy of Slow Burn.</p>
+        
+      </div>
+    
+      <div class="project-image-with-description">
+        
+          <img src="/assets/images/hig-metaphor/5.jpeg" class="project-image"/>
+        
+        
+          <p class="project-image-description small-paragraph mt0 mb2 c8">Exhibition view, image courtesy of Slow Burn.</p>
+        
+      </div>
+    
   </div>
 
 </div>
@@ -106,6 +157,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

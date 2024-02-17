@@ -10,11 +10,8 @@ projects:
   link: /world-upstream
   image: /assets/images/world-upstream/preview.jpg
   client: | 
-    <span class="small"><em>Work in progress</em><br/><br/>
-    Exhibited at: <br/> 
-    &emsp; <em>Sandbox Mode</em> at Office Impart (Berlin, 2023)<br/>
-    &emsp; <em>Reverse Tar Pit</em> at Onassis ONX and The Wrong Biennale (New York & online, 2023)<br/>
-    &emsp; <em>Tellurian Traversals</em> at Putty's Coronation Gallery (New York, 2023)<br/></span>
+    <span class="small"><em>Work in progress.</em><br/><br/>
+    Part of <em>Sandbox Mode</em> at Office Impart (Berlin, 2023), <em>Reverse Tar Pit</em> at Onassis ONX and The Wrong Biennale 06 (New York & online, 2023) and more.</span>
   selected: true
 - title: 'Fall (I Fell in Love with my Avatar)'
   medium: digital simulation
@@ -52,7 +49,7 @@ projects:
   link: https://shop.cezar.io
   image: /assets/images/plotterdrawings/tunnel-1.png
   targetBlank: true
-  selected: true
+  selected: false
 - title: 'What Does the Desktop Want?'
   link: /whatdoesthedesktopwant
   medium: talk
@@ -69,11 +66,11 @@ projects:
   selected: false
 - title: '✾ Human Interface Guidelines (Metaphor) ✾'
   medium: two channel video
-  year: 2020
+  year: 2021
   link: /hig-metaphor
   image: /assets/images/hig-metaphor/cover.png
-  client: part of <em>Anywhere but Here</em> at the Canvas Bowery (New York, 2020)
-  selected: false
+  client: part of <em>Desktop Studies</em> at The Wrong Biennale 06 (2023), <em>Anywhere but Here</em> at the Canvas Bowery (New York, 2021) and more.
+  selected: true
 - title: declared vvvvvvoid
   medium: browser extension
   year: 2020
@@ -123,11 +120,11 @@ projects:
   year: 2019
   link: /stones
   image: /assets/images/stones/thumbnail.png
-- title: Cities and the Sky 3
-  medium: augmented reality
-  year: 2018
-  link: /citiesandthesky3
-  image: /assets/images/citiesandthesky3/cover.png
+# - title: Cities and the Sky 3
+#   medium: augmented reality
+#   year: 2018
+#   link: /citiesandthesky3
+#   image: /assets/images/citiesandthesky3/cover.png
 - title: An Algorithm That Gives You 4 Friends
   medium: website
   year: 2018
@@ -138,42 +135,42 @@ projects:
   year: 2018
   link: /theroadbackhome
   image: /assets/images/theroadbackhome/cover.png
-- title: Your Secret
-  medium: augmented reality
-  year: 2018
-  link: /yoursecret
-  image: /assets/images/yoursecret/cover.png
+# - title: Your Secret
+#   medium: augmented reality
+#   year: 2018
+#   link: /yoursecret
+#   image: /assets/images/yoursecret/cover.png
 - title: 000pen.space
   medium: website
   year: 2018
   link: /000penspace
   image: /assets/images/000penspace/cover-small.png
-- title: Poster Jam
-  medium: poster series
-  year: 2017
-  link: /posterjam
-  image: /assets/images/posterjam/cover.png
+# - title: Poster Jam
+#   medium: poster series
+#   year: 2017
+#   link: /posterjam
+#   image: /assets/images/posterjam/cover.png
 - title: Water
   medium: poster series
   year: 2016
   link: /water
   image: /assets/images/water/cover.png
-- title: Self and Other
-  medium: website
-  year: 2016
-  link: /selfandother
-  image: /assets/images/selfandother/cover.png
-  selected: false
-- title: Self Portrait
-  medium: software
-  year: 2016
-  link: /selfportrait
-  image: /assets/images/selfportrait/cover-small.png
-- title: An Argument for a New Digital Currency
-  medium: book
-  year: 2016
-  link: /anargumentforanewdigitalcurrency
-  image: /assets/images/anargumentforanewdigitalcurrency/cover.png
+# - title: Self and Other
+#   medium: website
+#   year: 2016
+#   link: /selfandother
+#   image: /assets/images/selfandother/cover.png
+#   selected: false
+# - title: Self Portrait
+#   medium: software
+#   year: 2016
+#   link: /selfportrait
+#   image: /assets/images/selfportrait/cover-small.png
+# - title: An Argument for a New Digital Currency
+#   medium: book
+#   year: 2016
+#   link: /anargumentforanewdigitalcurrency
+#   image: /assets/images/anargumentforanewdigitalcurrency/cover.png
 #- title: Koffee/ Storno
 #  medium: poster / type specimen
 #  year: 2016
@@ -189,14 +186,14 @@ projects:
 #  year: 2016
 #  link: /rethinkingtheonlineexhibit
 #  image: /assets/images/rethinkingexhibit.gif      
-- title: Push to Open
-  medium: zine / typeface
-  year: 2015
-  link: /pushtoopen
-  image: /assets/images/pushtoopen/cover.png
-- title: Lost in the Meritocracy
-  medium: book
-  year: 2015
-  link: /lostinthemeritocracy
-  image: /assets/images/lostinthemeritocracy/cover-small.jpg
+# - title: Push to Open
+#   medium: zine / typeface
+#   year: 2015
+#   link: /pushtoopen
+#   image: /assets/images/pushtoopen/cover.png
+# - title: Lost in the Meritocracy
+#   medium: book
+#   year: 2015
+#   link: /lostinthemeritocracy
+#   image: /assets/images/lostinthemeritocracy/cover-small.jpg
 ---

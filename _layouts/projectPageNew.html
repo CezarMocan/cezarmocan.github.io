@@ -19,15 +19,17 @@ layout: default-new
 
   {% if page.paragraphs %}
   <div class="description-container">      
-    {% for paragraph in page.paragraphs %}
-      <div class="project-page-description">
-        {% if paragraph.small %}
-          <p class="small-paragraph">{{ paragraph.text }}</p>
-        {% else %}
-          <p class="">{{ paragraph.text }}</p>
-        {% endif %}
-      </div>
-    {% endfor %}
+    <div class="description-inner-container">
+      {% for paragraph in page.paragraphs %}
+        <div class="project-page-description">
+          {% if paragraph.small %}
+            <p class="small-paragraph">{{ paragraph.text }}</p>
+          {% else %}
+            <p class="">{{ paragraph.text }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
   {% endif %}
   
@@ -65,6 +67,21 @@ layout: default-new
   // Get the root element
   var r = document.querySelector("html")
   r.style.setProperty("--main-bg-color", "#070707")
-  r.style.setProperty("--main-fg-color", "#f5f5f5")
+  r.style.setProperty("--main-fg-color", "#f5f5f5")  
 </script>
 {% endif %}
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>

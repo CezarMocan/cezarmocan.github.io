@@ -62,42 +62,44 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">Moji Moji is an early literacy app developed by <a class="underlined" href="https://www.gakko.org/digital" target="__blank">Gakko Digital Learning.</a>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">Moji Moji is an early literacy app developed by <a class="underlined" href="https://www.gakko.org/digital" target="__blank">Gakko Digital Learning.</a>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Set in a magical world of vivid and imaginative characters, Moji Moji develops children's literacy skills in a way that is fun, artistic, and playful, while being conscious of the child’s screen time usage. A parent dashboard analyzes engagement and follows progress, as a means for the parent to be involved in their child’s learning journey.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Set in a magical world of vivid and imaginative characters, Moji Moji develops children's literacy skills in a way that is fun, artistic, and playful, while being conscious of the child’s screen time usage. A parent dashboard analyzes engagement and follows progress, as a means for the parent to be involved in their child’s learning journey.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Gakko Digital Learning includes three full-time members. In bringing Moji Moji to life, we collaborated with dozens of illustrators, designers, sound artists and educational consultants over the course of two years. <br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Gakko Digital Learning includes three full-time members. In bringing Moji Moji to life, we collaborated with dozens of illustrators, designers, sound artists and educational consultants over the course of two years. <br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Download here: 
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Download here: 
 <a class="underlined" href=" https://itunes.apple.com/us/app/moji-moji-learn-the-alphabet/id1228879841?mt=8" target="__blank">https://itunes.apple.com/us/app/moji-moji-learn-the-alphabet/id1228879841?mt=8</a>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Role: Software Developer</p>
-        
-      </div>
-    
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Role: Software Developer</p>
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -160,9 +162,24 @@
   // Get the root element
   var r = document.querySelector("html")
   r.style.setProperty("--main-bg-color", "#070707")
-  r.style.setProperty("--main-fg-color", "#f5f5f5")
+  r.style.setProperty("--main-fg-color", "#f5f5f5")  
 </script>
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

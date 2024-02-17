@@ -62,31 +62,35 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">Delicate Chaos is a long-form generative work, consisting of 168 abstract compositions made for the pen plotter and released as NFTs on the Plottables platform. The project was released on Wednesday, March 30th at 3pm EST, and can be accessed <a href="https://www.plottables.io/project/9" target="_blank">here</a>. In bringing together grids and noise, organic lines intersecting geometric shapes, as well as rigid structures holding fluid content, Delicate Chaos seeks the subtle beauty emerging from randomness, chance and chaos, while acting as a meditation on control and its impossibilities. <br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">Delicate Chaos is a long-form generative work, consisting of 168 abstract compositions made for the pen plotter and released as NFTs on the Plottables platform. The project was released on Wednesday, March 30th at 3pm EST, and can be accessed <a href="https://www.plottables.io/project/9" target="_blank">here</a>. In bringing together grids and noise, organic lines intersecting geometric shapes, as well as rigid structures holding fluid content, Delicate Chaos seeks the subtle beauty emerging from randomness, chance and chaos, while acting as a meditation on control and its impossibilities. <br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">View on <a href="https://www.plottables.io/project/9" target="_blank">Plottables</a>, <a href="https://opensea.io/collection/delicate-chaos-by-moving-drawing-1" target="_blank">OpenSea</a> or read more about <a href="https://delicatechaos.cezar.io/p/introducing-delicate-chaos" target="_blank">the process</a>.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">View on <a href="https://www.plottables.io/project/9" target="_blank">Plottables</a>, <a href="https://opensea.io/collection/delicate-chaos-by-moving-drawing-1" target="_blank">OpenSea</a> or read more about <a href="https://delicatechaos.cezar.io/p/introducing-delicate-chaos" target="_blank">the process</a>.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class=""><b>Exhibitions</b><br/>
-Romanian Design Week, (2023, Bucharest)<br/>
-NYU ITP Residents Show (2022, New York), curated by Simone Salvo and Lizzy Chiappini<br/>
-<a href="https://www.theblanc.art/exhibition/exhibition-scripting" target="_blank">Scripting at the Blanc Gallery (2022, New York)</a>, curated by Elvin Ou and Morgan Mueller<br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class=""><p class="small-paragraph">
+<b>Exhibitions</b><br/>
+2023 &#8212; <a href="https://romaniandesignweek.ro/" target="_blank">Romanian Design Week</a>, Bucharest<br/>
+2022 &#8212; NYU ITP Residency Show, New York, curated by Simone Salvo and Lizzy Chiappini<br/>
+2022 &#8212; <a href="https://www.theblanc.art/exhibition/exhibition-scripting" target="_blank">Scripting at the Blanc Gallery</a>, New York, curated by Elvin Ou and Morgan Mueller<br/>
 </p>
-        
-      </div>
-    
+</p>
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -97,7 +101,7 @@ NYU ITP Residents Show (2022, New York), curated by Simone Salvo and Lizzy Chiap
           <img src="/assets/images/delicate-chaos/rdw-2.jpg" class="project-image"/>
         
         
-          <div class="mb2"></div>
+          <p class="project-image-description small-paragraph mt0 mb2 c8">Image courtesy of Romanian Design Week.</p>
         
       </div>
     
@@ -106,7 +110,7 @@ NYU ITP Residents Show (2022, New York), curated by Simone Salvo and Lizzy Chiap
           <img src="/assets/images/delicate-chaos/rdw-3.jpg" class="project-image"/>
         
         
-          <div class="mb2"></div>
+          <p class="project-image-description small-paragraph mt0 mb2 c8">Image courtesy of Romanian Design Week.</p>
         
       </div>
     
@@ -217,6 +221,21 @@ NYU ITP Residents Show (2022, New York), curated by Simone Salvo and Lizzy Chiap
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

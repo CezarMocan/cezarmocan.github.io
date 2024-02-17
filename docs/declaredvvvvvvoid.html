@@ -62,28 +62,30 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">During a visit at the Walker Art Center in Minneapolis in 2019, I stumbled upon <a href="http://www.careyyoung.com/declared-void-2" target="__blank">Declared Void II</a> (Carey Young, 2013) – a piece which really spoke to my identity as an immigrant. <em>Declared Void II</em> invites the viewer to step into an enclosed area, delimited by black tape, with a wall text that reads: <em>By entering the zone created by this drawing, and for the period you remain there, you declare and agree that you are a citizen of the United States of America</em>.<br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">During a visit at the Walker Art Center in Minneapolis in 2019, I stumbled upon <a href="http://www.careyyoung.com/declared-void-2" target="__blank">Declared Void II</a> (Carey Young, 2013) – a piece which really spoke to my identity as an immigrant. <em>Declared Void II</em> invites the viewer to step into an enclosed area, delimited by black tape, with a wall text that reads: <em>By entering the zone created by this drawing, and for the period you remain there, you declare and agree that you are a citizen of the United States of America</em>.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Decades ago, web enthusiasts claimed that the internet transcends notions of citizenship (e.g. John Perry Barlow's now quite dated <em>A Declaration of the Independence of Cyberspace</em>.) Today, we understand that not to be the case. Even though we are presented with the idea of an ethereal <em>cloud</em> which is home to all our digital belongings, the infrastructure of the internet is very much physical and embedded in national sovereignty.<br/><br/>
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Decades ago, web enthusiasts claimed that the internet transcends notions of citizenship (e.g. John Perry Barlow's now quite dated <em>A Declaration of the Independence of Cyberspace</em>.) Today, we understand that not to be the case. Even though we are presented with the idea of an ethereal <em>cloud</em> which is home to all our digital belongings, the infrastructure of the internet is very much physical and embedded in national sovereignty.<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class=""><em>declared vvvvvvoid</em> engages with the politicized roots of the cloud. It is a browser extension which reminds the user of the land each website she visits is hosted on, through two gestures: first, a square dialog which appears when the site loads invites the viewer to become a citizen of the country where the page is physically located, by placing her cursor inside of a square; second, satellite and Street View imagery of the server's location are slowly revealed on top of the website's content when the user is inactive for a period of time, creating a collage which references the server's whereabouts.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class=""><em>declared vvvvvvoid</em> engages with the politicized roots of the cloud. It is a browser extension which reminds the user of the land each website she visits is hosted on, through two gestures: first, a square dialog which appears when the site loads invites the viewer to become a citizen of the country where the page is physically located, by placing her cursor inside of a square; second, satellite and Street View imagery of the server's location are slowly revealed on top of the website's content when the user is inactive for a period of time, creating a collage which references the server's whereabouts.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -196,6 +198,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

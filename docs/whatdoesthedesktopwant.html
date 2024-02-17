@@ -62,14 +62,16 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">For the Computer Mouse Conference 2021, organized by Emma Rae Bruml Norton & Ashley Jane Lewis at CultureHub, I was invited to give a talk about my research into the use of landscape photography on the computer desktop.
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">For the Computer Mouse Conference 2021, organized by Emma Rae Bruml Norton & Ashley Jane Lewis at CultureHub, I was invited to give a talk about my research into the use of landscape photography on the computer desktop.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -92,6 +94,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

@@ -62,29 +62,31 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">Inspired by slow television, this website is going places and streaming its eventful journey.
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">Inspired by slow television, this website is going places and streaming its eventful journey.
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Watch here:
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Watch here:
 <a class="underlined" href=" http://theroadbackhome.net" target="__blank">http://theroadbackhome.net</a> (sound on)<br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Featured on <a class="underlined" href="http://brutalistwebsites.com/theroadbackhome.net/">Brutalist Websites</a>.
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Featured on <a class="underlined" href="http://brutalistwebsites.com/theroadbackhome.net/">Brutalist Websites</a>.
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -107,6 +109,21 @@
 
 
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">

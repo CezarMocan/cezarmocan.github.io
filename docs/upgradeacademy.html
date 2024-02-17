@@ -62,21 +62,23 @@
 
   
   <div class="description-container">      
-    
-      <div class="project-page-description">
-        
-          <p class="">I was approached by <a class="underlined" href="http://upgradeacademy.ro/" target="_blank">Upgrade Academy</a>, a Bucharest based education company, to refine the organization's graphic identity and redesign the customer facing website. Since their audience consists of high school aged students and their parents, we chose to go for a light and vivid color scheme, organic shapes and typography to mirror the curves present in the layout. <br/><br/>
+    <div class="description-inner-container">
+      
+        <div class="project-page-description">
+          
+            <p class="">I was approached by <a class="underlined" href="http://upgradeacademy.ro/" target="_blank">Upgrade Academy</a>, a Bucharest based education company, to refine the organization's graphic identity and redesign the customer facing website. Since their audience consists of high school aged students and their parents, we chose to go for a light and vivid color scheme, organic shapes and typography to mirror the curves present in the layout. <br/><br/>
 </p>
-        
-      </div>
-    
-      <div class="project-page-description">
-        
-          <p class="">Role: graphic designer and web developer
+          
+        </div>
+      
+        <div class="project-page-description">
+          
+            <p class="">Role: graphic designer and web developer
 </p>
-        
-      </div>
-    
+          
+        </div>
+      
+    </div>
   </div>
   
   
@@ -337,9 +339,24 @@
   // Get the root element
   var r = document.querySelector("html")
   r.style.setProperty("--main-bg-color", "#070707")
-  r.style.setProperty("--main-fg-color", "#f5f5f5")
+  r.style.setProperty("--main-fg-color", "#f5f5f5")  
 </script>
 
+
+<script>
+  let setCorrectPosition = () => {
+    let el = (document.getElementsByClassName("description-inner-container"))[0]
+    if (window.innerWidth < 1600) {
+      el.style["position"] = "relative"
+    } else if (el.offsetHeight > window.innerHeight - 150) {
+      el.style["position"] = "relative"
+    } else {
+      el.style["position"] = "fixed"
+    }
+  }
+  setCorrectPosition()
+  window.addEventListener("resize", setCorrectPosition)
+</script>
 
     </div>
     <div class="footer">
