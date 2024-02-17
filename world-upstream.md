@@ -29,8 +29,8 @@ images:
  - url: https://player.vimeo.com/video/883558338
    vimeo: true
    description: Screen recording of the worldupstream.exe real-time simulation.
- - url: /assets/images/world-upstream/wu-oi-2.jpg
-   description: Exhibition view, image courtesy of Office Impart.
+ - url: /assets/images/world-upstream/rtp.jpg
+   description: Exhibition & remote artist talk for Reverse Tar Pit at Onassis ONX, New York
  - url: /assets/images/world-upstream/wu-oi-1.jpg
    description: Exhibition view, image courtesy of Office Impart.
  - url: /assets/images/world-upstream/wu-sim-1.png
@@ -39,16 +39,20 @@ images:
    description: Still from worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/wu-sim-3.png 
    description: Still from worldupstream.exe real-time simulation. 
+ - url: /assets/images/world-upstream/wu-oi-2.jpg
+   description: Exhibition view, image courtesy of Office Impart.
  - url: /assets/images/world-upstream/wu-sim-4.png 
    description: Still from worldupstream.exe real-time simulation.
+ - url: /assets/images/world-upstream/2.jpg
+   description: World Upstream pre-production still.
  - url: /assets/images/world-upstream/wu-sim-5.png  
    description: Still from worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/wu-sim-6.png   
    description: Still from worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/1.jpg
    description: World Upstream pre-production still.
- - url: /assets/images/world-upstream/2.jpg
-   description: World Upstream pre-production still.
+ - url: /assets/images/world-upstream/putty.jpg
+   description: Exhibition view, image courtesy of Putty's Coronation.
  - url: /assets/images/world-upstream/3.jpg
    description: World Upstream pre-production still.
  - url: /assets/images/world-upstream/4.jpg
