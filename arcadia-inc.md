@@ -47,32 +47,46 @@ images:
    vimeo: true
    description: Ansel A.I., a virtual being working for Arcadia Inc., introduces the project.
 
+ - url: /assets/images/arcadiainc/rosa-2-fix3.png
+   description: Exhibition view at Panke Gallery /rosa, January 2024.   
+
+ - url: /assets/images/arcadiainc/now-2.png
+   description: Photograph taken by a virtual being, displayed on the now.arcadia.photography website with metadata revealing environmental conditions within the simulation.   
+
  - url: https://player.vimeo.com/video/627567700
    vimeo: true
    description: Un-edited screen recording of the <i>softpower.exe</i> real-time simulation (video + sound). Time was sped up in this instance of running the simulation – one full day cycle happens in 1 hour.
 
+ - url: /assets/images/arcadiainc/now-1.png
+   description: Photograph taken by a virtual being, displayed on the now.arcadia.photography website with metadata revealing environmental conditions within the simulation.
+
+ - url: /assets/images/arcadiainc/kampuste-dijital-sanat.png
+   description: Exhibition view, Kampuste Dijital Sanat, Istanbul
+
+ - url: /assets/images/arcadiainc/now-3.png
+   description: Photograph taken by a virtual being, displayed on the now.arcadia.photography website with metadata revealing environmental conditions within the simulation.
+
  - url: /assets/images/arcadiainc/soft-power-still.png
    description: Still from the <i>softpower.exe</i> real-time simulation.
 
- - url: /assets/images/arcadiainc/simulation-stills.png
-   description: Stills from the <i>softpower.exe</i> real-time simulation.
- - url: /assets/images/arcadiainc/rosa-1-fix.jpg
-   description: Exhibition view at Panke Gallery /rosa, January 2024.
- - url: /assets/images/arcadiainc/rosa-2-fix2.jpg
-   description: Exhibition view at Panke Gallery /rosa, January 2024.   
-
- - url: /assets/images/arcadiainc/spring-break-1.jpg
-   description: SPRING/BREAK 2021 installation view; the show curator, Lizzy Chiappini, selected seven photographs taken by the virtual beings to print at high resolution on aluminum dibond, in conjunction with displaying the real-time simulation as a single-channel video of infinite duration. <small>(image by Lizzy Chiappini)</small>
+ - url: /assets/images/arcadiainc/currents-1.jpg
+   description: Exhibition view, Currents New Media, Santa Fe
 
  - url: /assets/images/arcadiainc/spring-break-2.png
    description: 32W,560S, UV Print on Aluminum Dibond, 20” x 15” (50.8 x 38.1cm)
 
+ - url: /assets/images/arcadiainc/simulation-stills.png
+   description: Stills from the <i>softpower.exe</i> real-time simulation.
+#  - url: /assets/images/arcadiainc/rosa-1-fix.jpg
+#    description: Exhibition view at Panke Gallery /rosa, January 2024.
+
+ - url: /assets/images/arcadiainc/currents-2.png
+   description: Exhibition view, Currents New Media, Santa Fe
+
  - url: /assets/images/arcadiainc/spring-break-3.png
    description: 1967W,9N, UV Print on Aluminum Dibond, 20” x 15” (50.8 x 38.1cm)
 
- - url: /assets/images/arcadiainc/soft-power-online-1.png
-   description: Photograph taken by a virtual being, displayed on the soft-power.online website with metadata revealing environmental conditions within the simulation.
+ - url: /assets/images/arcadiainc/spring-break-1.jpg
+   description: SPRING/BREAK 2021 installation view; the show curator, Lizzy Chiappini, selected seven photographs taken by the virtual beings to print at high resolution on aluminum dibond, in conjunction with displaying the real-time simulation as a single-channel video of infinite duration. <small>(image by Lizzy Chiappini)</small>
 
- - url: /assets/images/arcadiainc/soft-power-online-2.png
-   description: Photograph taken by a virtual being, displayed on the soft-power.online website with metadata revealing environmental conditions within the simulation.
 ---
