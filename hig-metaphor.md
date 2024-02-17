@@ -21,12 +21,12 @@ paragraphs:
 images:
  - url: https://player.vimeo.com/video/488594401
    vimeo: true
- - url: /assets/images/hig-metaphor/2.jpeg
+ - url: /assets/images/hig-metaphor/2-resized.jpg
    description: Exhibition view, image courtesy of Slow Burn.
- - url: /assets/images/hig-metaphor/3.jpeg
+ - url: /assets/images/hig-metaphor/3-resized.jpg
    description: Exhibition view, image courtesy of Slow Burn.   
- - url: /assets/images/hig-metaphor/4.jpeg
+ - url: /assets/images/hig-metaphor/4-resized.jpg
    description: Exhibition view, image courtesy of Slow Burn.      
- - url: /assets/images/hig-metaphor/5.jpeg
+ - url: /assets/images/hig-metaphor/5-resized.jpg
    description: Exhibition view, image courtesy of Slow Burn.      
 ---
