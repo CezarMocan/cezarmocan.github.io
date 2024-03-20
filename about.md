@@ -14,13 +14,15 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 <br/>❊<br/><br/>
 <p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming Exhibitions</p>
 <small>
-    <em>Nov. 1, 2023 - Mar. 1, 2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> and <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> are featured in the <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> and <a href="https://thewrong.org/desktopstudies" target="_blank">Desktop Studies</a> pavilions at <a href="https://thewrong.org/" target="_blank">The Wrong Biennale 06</a> ✿ <em>Group Show</em> <br/>
+    <em>Mar. 22 - Jun. 22, 2024 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Beyond Human at <a href="https://www.artemis-gallery.net/" target="_blank">Artemis Gallery</a> ✿ <em>Lisbon, </em><em>Group Show</em> <br/>
 </small>
 
 <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Past Exhibitions (selection)</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
     <em>2024</em> ✿ <a href="https://www.panke.gallery/event/arcadia-inc" target="_blank"> Arcadia Inc.</a> at Panke Gallery /rosa, part of <a href="https://vorspiel.berlin/events/arcadia-inc-by-cezar-mocan" target="_blank">Vorspiel Berlin</a>, curated by Robert Sakrowski ✿ <em>Berlin, Solo Show</em> <br/>
+    <em>2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://reversetarpit.newart.city/" target="_blank">Reverse Tar Pit: Sludge Room</a> at Brooklyn Neighborhood Arts ✿ <em>New York, </em><em>Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://www.onx.studio/onx-programming/new-art-city-reverse-tar-pit" target="_blank">Reverse Tar Pit</a> at Onassis ONX Studio ✿ <em>New York, </em><em>Group Show</em> <br/>
+    <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> and <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> are featured in the <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> and <a href="https://thewrong.org/desktopstudies" target="_blank">Desktop Studies</a> pavilions at <a href="https://thewrong.org/" target="_blank">The Wrong Biennale 06</a> ✿ <em>Group Show</em> <br/>    
     <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="http://www.puttyscoronation.com/" target="_blank">Tellurian Traversals</a> at Putty's Coronation Gallery ✿ <em>New York, </em><em>Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/hig-metaphor" target="_blank">Human Interface Guidelines: Metaphor</a> is showing at CAV Multimedia Art Center ✿ <em>Bucharest, Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart ✿ <em>Berlin, </em><em>Group Show</em> <br/>

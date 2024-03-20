@@ -12,8 +12,9 @@ paragraphs:
  - text: |
     <p class="small-paragraph">
     <b>Exhibitions</b><br/>
+    2024 &#8212; <a href="https://www.artemis-gallery.net/" target="_blank">Beyond Human</a> at Artemis Gallery, Lisbon (curated by Kirsten Eggers and Manuel Mendonca) <br/>
     2023 &#8212; <a href="http://www.puttyscoronation.com/" target="_blank">Tellurian Traversals</a> at Putty's Coronation Gallery, New York (curated by David Temchulla) <br/>
-    2023 &#8212; <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> at Onassis ONX and The Wrong Biennale, New York and online (curated by Don Hanson, Mark Ramos, Sammie Veeler) <br/>
+    2023 &#8212; <a href="https://thewrong.org/reversetarpit" target="_blank">Reverse Tar Pit</a> at Onassis ONX, Brooklyn Neighborhood Arts and The Wrong Biennale, New York and online (curated by Don Hanson, Mark Ramos, Sammie Veeler) <br/>
     2023 &#8212; <a href="https://officeimpart.com/sandbox-mode" target="_blank">Sandbox Mode</a> at Office Impart, Berlin (curated by Office Impart in collaboration with Stina Gustafsson and Maria Paula Fernandez) <br/>
     2023 &#8212; <a href="https://gallery.verticalcrypto.art/event/clfv8kvs1sj980bjpdr2li3aa/all" target="_blank">VCA Residency Exhibition</a>, online (curated by Micol AP)<br/><br/>
     </p>
@@ -26,7 +27,7 @@ paragraphs:
     
 
 images:
- - url: https://player.vimeo.com/video/883558338
+ - url: https://player.vimeo.com/video/925331203
    vimeo: true
    description: Screen recording of the worldupstream.exe real-time simulation.
  - url: /assets/images/world-upstream/rtp.jpg

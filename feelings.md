@@ -1,6 +1,7 @@
 ---
 layout: projectPageNew
 title: Feelings Zone
+skipFixedLayout: true
 paragraphs:
  - text: |
      In late 2018 I decided to change my programming career in the tech world for one in the arts. I soon learned that working as an artist involves writing countless proposals – for grants, residencies, shows, and so on. I am keeping track of all my art related applications in a Google Sheet, which is publicly shared below. <br/><br/>

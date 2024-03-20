@@ -71,6 +71,7 @@ layout: default-new
 </script>
 {% endif %}
 
+{% unless page.skipFixedLayout %}
 <script>
   let setCorrectPosition = () => {
     let el = (document.getElementsByClassName("description-inner-container"))[0]
@@ -85,3 +86,4 @@ layout: default-new
   setCorrectPosition()
   window.addEventListener("resize", setCorrectPosition)
 </script>
+{% endunless %}

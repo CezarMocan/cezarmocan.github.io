@@ -252,7 +252,7 @@ p {
 }
 
 .description-inner-container {
-  position: fixed;
+  position: relative;
   max-width: 850px;
 }
 
