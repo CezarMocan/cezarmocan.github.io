@@ -11,7 +11,7 @@ projects:
   image: /assets/images/world-upstream/preview.jpg
   client: | 
     <span class="small"><em>Work in progress.</em><br/><br/>
-    Part of <em>Sandbox Mode</em> at Office Impart (Berlin, 2023), <em>Reverse Tar Pit</em> at Onassis ONX and The Wrong Biennale 06 (New York & online, 2023) and more.</span>
+    Part of <em>Sandbox Mode</em> at Office Impart (Berlin, 2023), <em>Reverse Tar Pit</em> at Onassis ONX and The Wrong Biennale 06 (New York & online, 2023), Beyond Human at Artemis Gallery (Lisbon, 2024) and more.</span>
   selected: true
 - title: 'Fall (I Fell in Love with my Avatar)'
   medium: digital simulation
@@ -32,24 +32,9 @@ projects:
   year: 2021
   link: /arcadia-inc
   image: /assets/images/arcadiainc/soft-power-still.png
-  client: | 
-    &emsp; <em>Arcadia Inc.</em> at Panke Gallery /rosa (Berlin, 2024)<br/>
-    &emsp; <em>GUI / GOOEY</em>, Plexus Projects (online, 2023)<br/>
-    &emsp; <em>Lumen Prize x Infinite Objects</em> collection <br/>
-    &emsp; <em>Currents New Media</em> (Santa Fe, 2022)<br/>
-    &emsp; <em>Kampüste Dijital Sanat</em> (Istanbul, 2022)<br/>
-    &emsp; <em>Sculpted in Our Image, Forged in Our Minds</em> (online, 2022)<br/>
-    &emsp; <em>Soft Power</em> at SPRING/BREAK Art Show (New York, 2021)<br/>
-    &emsp; <em>Lumen Prize Student Award</em> (2021)<br/><br/>
-
+  client: |
+    Exhibited at Panke Gallery /rosa (Berlin, 2024), Currents New Media (Santa Fe, 2022), SPRING/BREAK (New York, 2021) and more.
   selected: true
-- title: 'Pen Plotter Drawings'
-  medium: generative drawing, ink on paper
-  year: 2021
-  link: https://shop.cezar.io
-  image: /assets/images/plotterdrawings/tunnel-1.png
-  targetBlank: true
-  selected: false
 - title: 'What Does the Desktop Want?'
   link: /whatdoesthedesktopwant
   medium: talk
@@ -70,6 +55,12 @@ projects:
   link: /hig-metaphor
   image: /assets/images/hig-metaphor/cover.png
   client: part of <em>Desktop Studies</em> at The Wrong Biennale 06 (2023), <em>Anywhere but Here</em> at the Canvas Bowery (New York, 2021) and more.
+  selected: true
+- title: 'Plotter Drawings'
+  medium: generative drawing, ink on paper
+  year: ongoing
+  link: /prints
+  image: /assets/images/plotterdrawings/tunnel-1.png
   selected: true
 - title: declared vvvvvvoid
   medium: browser extension
