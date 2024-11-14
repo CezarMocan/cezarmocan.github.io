@@ -14,11 +14,15 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 <br/>❊<br/><br/>
 <p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming Exhibitions</p>
 <small>
-    <em>Mar. 22 - Jun. 22, 2024 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Beyond Human at <a href="https://www.artemis-gallery.net/" target="_blank">Artemis Gallery</a> ✿ <em>Lisbon, </em><em>Group Show</em> <br/>
+    <em>Nov. 9 - Jan. 19, 2024 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of [Hypertext](Hyperlink) at <a href="https://events.yale.edu/event/ccam-isovist-exhibition-opening-hypertexthyperlink" target="_blank">Yale University, Center for Collaborative Arts and Media</a> ✿ <em>New Haven, </em><em>Group Show</em> <br/>
 </small>
 
 <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Past Exhibitions (selection)</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
+    <em>2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of symbiocene/anthropocene at <a href="https://2024wip.cyens.org.cy/the-exhibition/#symbiocene-anthropocene" target="_blank">WIP Festival</a> ✿ <em>Nicosia, </em><em>Group Show</em> <br/>
+    <em>2024</em> ✿ The World Upstream (Stood Still) #3 is part of Public Spam, a public art project curated by Spam Index ✿ <em>Bucharest, Group Show</em> <br/>
+    <em>2024</em> ✿ <a href="https://www.panke.gallery/event/arcadia-inc" target="_blank"> Arcadia Inc.</a> is part of Desire for the Useless at <a href="https://simultan.org/2024/" target="_blank">Simultan Festival</a> ✿ <em>Timisoara, Group Show</em> <br/>
+    <em>2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Beyond Human at <a href="https://www.artemis-gallery.net/" target="_blank">Artemis Gallery</a> ✿ <em>Lisbon, </em><em>Group Show</em> <br/>
     <em>2024</em> ✿ <a href="https://www.panke.gallery/event/arcadia-inc" target="_blank"> Arcadia Inc.</a> at Panke Gallery /rosa, part of <a href="https://vorspiel.berlin/events/arcadia-inc-by-cezar-mocan" target="_blank">Vorspiel Berlin</a>, curated by Robert Sakrowski ✿ <em>Berlin, Solo Show</em> <br/>
     <em>2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://reversetarpit.newart.city/" target="_blank">Reverse Tar Pit: Sludge Room</a> at Brooklyn Neighborhood Arts ✿ <em>New York, </em><em>Group Show</em> <br/>
     <em>2023</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://www.onx.studio/onx-programming/new-art-city-reverse-tar-pit" target="_blank">Reverse Tar Pit</a> at Onassis ONX Studio ✿ <em>New York, </em><em>Group Show</em> <br/>
