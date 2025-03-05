@@ -6,11 +6,10 @@ layout: indexPageNew
 projects:
 - title: 'World Upstream'
   medium: digital simulation
-  year: 2023
+  year: 2023-2024
   link: /world-upstream
   image: /assets/images/world-upstream/preview.jpg
   client: | 
-    <span class="small"><em>Work in progress.</em><br/><br/>
     Part of <em>Sandbox Mode</em> at Office Impart (Berlin, 2023), <em>Reverse Tar Pit</em> at Onassis ONX and The Wrong Biennale 06 (New York & online, 2023), Beyond Human at Artemis Gallery (Lisbon, 2024) and more.</span>
   selected: true
 - title: 'Fall (I Fell in Love with my Avatar)'

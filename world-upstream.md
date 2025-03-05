@@ -1,7 +1,7 @@
 ---
 layout: projectPageNew
 title: 'World Upstream'
-year: 2023
+year: 2023-2024
 medium: digital simulation
 paragraphs:
  - text: |
@@ -12,6 +12,7 @@ paragraphs:
  - text: |
     <p class="small-paragraph">
     <b>Exhibitions</b><br/>    
+    2025 &#8212; <a href="https://officeimpart.com/down-the-silicon-meadow" target="_blank">Down the Silicon Meadow</a>, OFFICE IMPART x Blueshift Gallery, online <br/>
     2024 &#8212; <a href="https://events.yale.edu/event/ccam-isovist-exhibition-opening-hypertexthyperlink" target="_blank">[Hypertext](Hyperlink)</a>, Yale University, ISOVIST Gallery, New Haven <br/>
     2024 &#8212; <a href="https://2024wip.cyens.org.cy/the-exhibition/#symbiocene-anthropocene" target="_blank">symbiocene/anthropocene</a>, WIP Festival, CYENS Nicosia <br/>
     2024 &#8212; <a href="https://www.uaad.art/matrix/" target="_blank">Matrix of the Not-Yet</a>, Underground Art and Design, online (curated by Amy Jiang) <br/>
