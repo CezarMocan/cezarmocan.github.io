@@ -31,6 +31,9 @@ paragraphs:
     
 
 images:
+ - url: https://player.vimeo.com/video/1062746191
+   vimeo: true
+   description: World Upstream trailer.
  - url: https://player.vimeo.com/video/925331203
    vimeo: true
    description: Screen recording of the worldupstream.exe real-time simulation.
