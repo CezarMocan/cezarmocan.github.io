@@ -12,14 +12,25 @@ In a former life, I used to do competitive programming.
 If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 
 <br/>❊<br/><br/>
-<p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming Exhibitions</p>
+<!-- <p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming Exhibitions</p>
 <small>
     <em>Jan 23. - Jun. 27, 2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Down the Silicon Meadow, online at <a href="https://down-the-silicon-meadow.common.garden/" target="_blank">common.garden</a>, an exhibition curated by OFFICE IMPART in collaboration with Blueshift Gallery ✿ <em>online, </em><em>Group Show</em> <br/>
     <em>Apr 3. - Apr. 7, 2025 </em> ✿ <a href="/arcadia-inc" target="_blank">Arcadia Inc.</a> is part of the <a href="https://www.adaf.gr/" target="_blank">Athens Digital Art Festival</a> ✿ <em>Athens, </em><em>Group Show</em> <br/>
-</small>
+</small> -->
 
 <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Past Exhibitions (selection)</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
+        
+    <em>2025 </em> ✿ <a href="https://www.arabbank.ch/about-us/art/abs-prize/2025-edition/" target="_blank">ABS Emerging Artist of the Year Award</a>, Arab Bank Switzerland, ✿ <em>Lisbon & Basel</em> <br/>    
+    <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://www.fundingthecommons.io/berlin-2025" target="_blank">Grace is a Coin With More Than Two Sides</a>, curated by Stina Gustafsson, Funding the Commons Forum ✿ <em>Berlin, </em><em>Group Show</em><br/>
+    <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Harmonia Ltd. at Jardin des Traverses, curated by Vincent Moulinet ✿ <em>Paris, </em><em>Group Show</em><br/>
+    <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://contemporar.ro/exhibition/connecting-to-peers-2/" target="_blank">Connecting to Peers</a>, curated by Flaviu Rogojan, Contemporar Gallery ✿ <em>Cluj-Napoca, </em><em>Group Show</em> <br/>
+
+    <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Down the Silicon Meadow, online at <a href="https://down-the-silicon-meadow.common.garden/" target="_blank">common.garden</a>, an exhibition curated by OFFICE IMPART in collaboration with Blueshift Gallery ✿ <em>online, </em><em>Group Show</em> <br/>
+    <em>2025 </em> ✿ <a href="/arcadia-inc" target="_blank">Arcadia Inc.</a> is part of the <a href="https://www.adaf.gr/" target="_blank">Athens Digital Art Festival</a> ✿ <em>Athens, </em><em>Group Show</em> <br/>
+
+    <span style="height: 10px; display: block;"></span>
+
     <!-- <em>2025</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Down the Silicon Meadow, an exhibition curated by OFFICE IMPART in collaboration with Blueshift Gallery ✿ <em>online, </em><em>Group Show</em> <br/> -->
     <em>2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://events.yale.edu/event/ccam-isovist-exhibition-opening-hypertexthyperlink" target="_blank">[Hypertext](Hyperlink)</a> at the Yale University ISOVIST Gallery ✿ <em>New Haven, </em><em>Group Show</em> <br/>
     <em>2024</em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of symbiocene/anthropocene at <a href="https://2024wip.cyens.org.cy/the-exhibition/#symbiocene-anthropocene" target="_blank">WIP Festival</a> ✿ <em>Nicosia, </em><em>Group Show</em> <br/>
