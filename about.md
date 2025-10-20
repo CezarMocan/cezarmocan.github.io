@@ -20,14 +20,16 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
 
 <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Past Exhibitions (selection)</p>
 <p style="line-height: 1.3; margin-left: 2px;"> <small>
-        
+    <em>2025 </em> ✿ A Field Guide to Orbital Melancholy is part of <a href="https://www.artep.ro/en/scai/" target="_blank">SCAI</a> at Artep Gallery ✿ <em>Sona, Brasov</em> <br/>    
+    <em>2025 </em> ✿ <a href="https://node-officeimpart.com/cezar-mocan">Arcadia Inc.: IPO</a> is on display with <a href="https://node-officeimpart.com/" target="_blank">OFFICE IMPART Node</a> ✿ <em>Berlin</em> <br/>
     <em>2025 </em> ✿ <a href="https://www.arabbank.ch/about-us/art/abs-prize/2025-edition/" target="_blank">ABS Emerging Artist of the Year Award</a>, Arab Bank Switzerland, ✿ <em>Lisbon & Basel</em> <br/>    
     <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://www.fundingthecommons.io/berlin-2025" target="_blank">Grace is a Coin With More Than Two Sides</a>, curated by Stina Gustafsson, Funding the Commons Forum ✿ <em>Berlin, </em><em>Group Show</em><br/>
-    <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Harmonia Ltd. at Jardin des Traverses, curated by Vincent Moulinet ✿ <em>Paris, </em><em>Group Show</em><br/>
+    <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://www.jds.fr/paris/expos/vincent-moulinet-pierre-arthur-michaud-harmonia-ltd-983454_A">Harmonia Ltd. at Jardin des Traverses</a>, curated by Vincent Moulinet ✿ <em>Paris, </em><em>Group Show</em><br/>
     <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of <a href="https://contemporar.ro/exhibition/connecting-to-peers-2/" target="_blank">Connecting to Peers</a>, curated by Flaviu Rogojan, Contemporar Gallery ✿ <em>Cluj-Napoca, </em><em>Group Show</em> <br/>
+    <em>2025 </em> ✿ <a href="/arcadia-inc" target="_blank">Arcadia Inc.</a> is part of <a href="https://socialcinemalondon.square.site/past-events" target="_blank">Imperfect Futures</a>, a screening hosted by THE SOCIAL CINEMA at Science Gallery London ✿ <em>London, </em><em>Screening</em> <br/>
 
     <em>2025 </em> ✿ <a href="/world-upstream" target="_blank">World Upstream</a> is part of Down the Silicon Meadow, online at <a href="https://down-the-silicon-meadow.common.garden/" target="_blank">common.garden</a>, an exhibition curated by OFFICE IMPART in collaboration with Blueshift Gallery ✿ <em>online, </em><em>Group Show</em> <br/>
-    <em>2025 </em> ✿ <a href="/arcadia-inc" target="_blank">Arcadia Inc.</a> is part of the <a href="https://www.adaf.gr/" target="_blank">Athens Digital Art Festival</a> ✿ <em>Athens, </em><em>Group Show</em> <br/>
+    <em>2025 </em> ✿ <a href="/arcadia-inc" target="_blank">Arcadia Inc.</a> is part of the <a href="https://www.adaf.gr/" target="_blank">Synthetic Wilds at the Athens Digital Art Festival</a> ✿ <em>Athens, </em><em>Screening</em> <br/>
 
     <span style="height: 10px; display: block;"></span>
 
