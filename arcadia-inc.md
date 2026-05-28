@@ -6,7 +6,7 @@ medium: digital simulation
 paragraphs:
  - text: |
     Arcadia Inc. is a work of speculative fiction which investigates the commodification of nature through computer-generated landscape photography. In observing context erasure as the main mechanism behind re-programming images with new meanings, the work proposes a new model for obtaining the type of nature imagery meant for brand-based visual communication: a group of virtual beings which photograph scenic beauty in a real-time simulation, organized as a fictional company which produces stock images of natural environments. In an era when visual culture is created increasingly through technological automation, the work raises important questions about the future of image making.<br/><br/>
-
+    The simulated component of the work, arcadia.exe, presents an expansive, bucolic digital landscape in which a group of three humanoid agents - Ansel A.I., Claudia L., and Ralph W.E. - walk on mathematically determined paths informed by historical tropes; for example, Ansel A.I. is programmed to always walk West, while Claudia L. is programmed to photograph nature from above. The three agents take photographs of their surroundings at significant moments of their journeys. Subsequently, the images are uploaded in real time to the company’s website, becoming Arcadia Inc.’s core offering.<br/><br/>
  - text: |
     You can visit the fictional company's website at <a href="https://arcadia.photography" target="_blank">arcadia.photography</a>, or view an ambient slideshow of the most recent photographs on <a href="https://now.arcadia.photography" target="_blank">Arcadia 𝓝𝓸𝔀</a>.<br/><br/>
 
@@ -17,6 +17,8 @@ paragraphs:
  - text: |
     <p class="small-paragraph">
     <b>Exhibitions</b><br/>
+    2025 &#8212; <a href="https://node-officeimpart.com/cezar-mocan"> Arcadia Inc.: IPO</a>, at OFFICE IMPART Node<br/>
+    2025 &#8212; <a href="https://verse.works/series/arcadia-inc-ipo-by-cezar-mocan"> Arcadia Inc.: IPO</a>, on Verse<br/>
     2024 &#8212; <a href="https://www.panke.gallery/event/arcadia-inc"> Arcadia Inc. (solo)</a>, at Panke Gallery /rosa, part of <a href="https://vorspiel.berlin/events/arcadia-inc-by-cezar-mocan" target="_blank">Vorspiel Berlin</a>, curated by Robert Sakrowski, Berlin <br/>
     2023 &#8212; <a href="https://www.plexusprojects.org/gui-gooey"> GUI / GOOEY, Plexus Projects</a>, curated by Laura Splan online <br/>
     2022 &#8212; <a href="https://infiniteobjects.com/products/mocan-arcadiainc"> Lumen Prize x Infinite Objects collection </a> <br/>
