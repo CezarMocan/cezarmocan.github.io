@@ -12,19 +12,19 @@ projects:
   client: | 
     Part of the End of Signal body of work
   selected: true
+- title: 'Still Nothing (series)'
+  medium: archival print on cotton rag paper
+  year: 2025-2026
+  link: /assets/media/End-of-Signal.pdf
+  image: /assets/images/field-guide/8.jpg
+  client: | 
+    Part of the End of Signal body of work
+  selected: true
 - title: 'Known Surfaces (series)'
   medium: synthetic aperture radar satellite data, laser-cut and painted acrylic, raised UV print
   year: 2025-2026
   link: /assets/media/End-of-Signal.pdf
   image: /assets/images/field-guide/6.png
-  client: | 
-    Part of the End of Signal body of work
-  selected: true
-- title: 'Still Nothing (series)'
-  medium: archival print on cotton rag paper
-  year: 2025-2026
-  link: /assets/media/End-of-Signal.pdf
-  image: /assets/images/field-guide/7.png
   client: | 
     Part of the End of Signal body of work
   selected: true
