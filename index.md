@@ -15,7 +15,7 @@ projects:
 - title: 'Still Nothing (series)'
   medium: archival print on cotton rag paper
   year: 2025-2026
-  link: /assets/media/End-of-Signal.pdf
+  link: /still-nothing
   image: /assets/images/field-guide/8.jpg
   client: | 
     Part of the End of Signal body of work
