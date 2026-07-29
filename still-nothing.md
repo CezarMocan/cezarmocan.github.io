@@ -17,9 +17,28 @@ paragraphs:
     <br/><br/>
  - text: |
     <p class="small-paragraph"><em>
-    Still Nothing is part of "End of Signal", a research-based body of work which examines the epistemic implications of AI deployed at scale, staged through a speculative future in which a satellite becomes an unreliable narrator of the reality on the ground. The project investigates what I term "technological underdetermination": a condition enabled by generative artificial intelligence, in which the unknown is produced by a surplus of plausible explanations rooted in existing ground truths, rather than by a scarcity of information.</em>
+    Still Nothing is part of "End of Signal", a research-based body of work which examines the epistemic implications of AI deployed at scale, staged through a speculative future in which a satellite becomes an unreliable narrator of the reality on the ground. The project investigates what I term "technological underdetermination": a condition enabled by generative artificial intelligence, in which the unknown is produced by a surplus of plausible explanations rooted in existing ground truths, rather than by a scarcity of information.</em><br/><br/>
     </p>
-
+ - text: |
+    <p class="small-paragraph"><em>
+    End of Signal is the winning project of the SOLO AI ’25 AWARD, presented by SOLO Contemporary, and part of the exhibition programme of Onkaos. I would like to acknowledge the support of SOLO Contemporary and STUDIOTOPIA in the development of this project.<br/><br/></em>
+    </p>
+    <p class="small-paragraph" style="line-height: 1.45;">
+    <em>Production Credits</em><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://www.sofiaenriquezg.com/" target="_blank">Sofía Enríquez G.</a></span>, curator <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://www.instagram.com/laenzzz/" target="_blank">Laenz</a></span>, sound design <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://www.linkedin.com/in/andreea-iliescu-5724b8137/" target="_blank">Andreea Iliescu</a></span>, 3D environment design <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://ysig.github.io/" target="_blank">Yannis Siglidis</a></span>, machine learning engineering <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://itp.nyu.edu/itp/mk-skitka/" target="_blank">MK Skitka</a></span>, creative technology <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://www.sofiaenriquezg.com/" target="_blank">Sofía Enríquez G.</a></span>, print graphic design <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://katelynrebelo.com/" target="_blank">Katelyn Rebelo</a></span>, digital graphic design <br/>
+      <span style="height: 5px; display: block;"></span>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">Lindo Serviço, Estudios Durero</span>, fabrication <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">Fine Print</span>, printing <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">Elena Carbajal</span>, exhibition coordination & production <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">María Castillo, Alessandra Gargiulo</span>, exhibition design & production <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">Milena Fernández</span>, communications <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp; Special thanks: <span style="font-weight: bold;">Alasdair Milne, OFFICE IMPART (Anne Schwanz and Johanna Neuschäffer), Artemis Gallery, Aisling Murray</span></p>    
 images:
  - url: /assets/images/still-nothing/bermeja-narrow.png
    description: Still Nothing (Bermeja), multispectral satellite data, archival print on cotton-rag paper, 100cm x 111cm.<br/>Image courtesy of Onkaos & SOLO Contemporary.
