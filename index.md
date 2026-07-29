@@ -7,7 +7,7 @@ projects:
 - title: 'A Field Guide to Orbital Melancholy'
   medium: digital simulation
   year: 2025-2026
-  link: /assets/media/End-of-Signal.pdf
+  link: /field-guide
   image: /assets/images/field-guide/3.jpg
   client: | 
     Part of the End of Signal body of work

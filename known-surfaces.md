@@ -15,13 +15,10 @@ paragraphs:
     <br/><br/>
  - text: |
     <p class="small-paragraph"><em>
-    Still Nothing is part of "End of Signal", a research-based body of work which examines the epistemic implications of AI deployed at scale, staged through a speculative future in which a satellite becomes an unreliable narrator of the reality on the ground. The project investigates what I term "technological underdetermination": a condition enabled by generative artificial intelligence, in which the unknown is produced by a surplus of plausible explanations rooted in existing ground truths, rather than by a scarcity of information.</em><br/><br/>
+    Known Surfaces is part of "End of Signal", a research-based body of work which examines the epistemic implications of AI deployed at scale, staged through a speculative future in which a satellite becomes an unreliable narrator of the reality on the ground. The project investigates what I term "technological underdetermination": a condition enabled by generative artificial intelligence, in which the unknown is produced by a surplus of plausible explanations rooted in existing ground truths, rather than by a scarcity of information. <br/>A comprehensive presentation of the project can be found in <a href="/assets/media/End-of-Signal.pdf" target="_blank">this PDF document</a>.</em><br/>
     </p>
  - text: |
-    <p class="small-paragraph"><em>
-    End of Signal is the winning project of the SOLO AI ’25 AWARD, presented by SOLO Contemporary, and part of the exhibition programme of Onkaos. I would like to acknowledge the support of SOLO Contemporary and STUDIOTOPIA in the development of this project.<br/><br/></em>
-    </p>
-    <p class="small-paragraph" style="line-height: 1.45;">
+    <p class="small-paragraph" style="line-height: 1.45; margin-top: 15px;">
     <em>Production Credits</em><br/>
       &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://www.sofiaenriquezg.com/" target="_blank">Sofía Enríquez G.</a></span>, curator <br/>
       &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><a href="https://www.instagram.com/laenzzz/" target="_blank">Laenz</a></span>, sound design <br/>
@@ -37,6 +34,10 @@ paragraphs:
       &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">María Castillo, Alessandra Gargiulo</span>, exhibition design & production <br/>
       &nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">Milena Fernández</span>, communications <br/>
       &nbsp;&nbsp;&nbsp;&nbsp; Special thanks: <span style="font-weight: bold;">Alasdair Milne, OFFICE IMPART (Anne Schwanz and Johanna Neuschäffer), Artemis Gallery, Aisling Murray</span></p>    
+    <p class="small-paragraph" style="margin-top: 15px;"><em>
+    End of Signal is the winning project of the SOLO AI ’25 AWARD, presented by SOLO Contemporary, and part of the exhibition programme of Onkaos. I would like to acknowledge the support of SOLO Contemporary and STUDIOTOPIA in the development of this project.<br/></em>
+    </p>
+
 images:
  - url: /assets/images/known-surfaces/known-surfaces-people.jpg
    description: Known Surfaces, exhibition view, End of Signal at SOLO Contemporary<br/>Image courtesy of Onkaos & SOLO Contemporary.
