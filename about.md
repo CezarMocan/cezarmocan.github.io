@@ -30,7 +30,7 @@ If you want to get in touch, <a href="mailto:c@cezar.io">send me an email.</a>
     <em>2024</em> ✿ <a href="https://www.panke.gallery/event/arcadia-inc" target="_blank"> Arcadia Inc.</a> ✿ Panke Gallery /rosa, part of <a href="https://vorspiel.berlin/events/arcadia-inc-by-cezar-mocan" target="_blank">Vorspiel Berlin</a>, curated by Robert Sakrowski ✿ <em>Berlin</em> <br/>
     <em>2021</em> ✿  Soft Power ✿ SPRING/BREAK Art Show, curated by Lizzy Chiappini ✿ <em>New York</em>
 
-<!-- </small></p> -->
+</small></p>
 
 <br/>❊<br/>
 
