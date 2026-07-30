@@ -5,20 +5,20 @@
 layout: indexPageNew
 projects:
 - title: 'A Field Guide to Orbital Melancholy'
-  medium: digital simulation
+  medium: real-time simulation, sound
   year: 2025-2026
   link: /field-guide
   image: /assets/images/field-guide/3.jpg
   client: | 
-    Part of the End of Signal body of work
+    Laenz, Andreea Iliescu, Katelyn Rebelo, Sofia Enriquez G.
   selected: true
 - title: 'Still Nothing (series)'
-  medium: archival print on cotton rag paper
+  medium: multi-spectral satellite data, archival print on cotton rag paper
   year: 2025-2026
   link: /still-nothing
   image: /assets/images/field-guide/8.jpg
   client: | 
-    Part of the End of Signal body of work
+    Sofia Enriquez G., Sentinel-2, Fine Print
   selected: true
 - title: 'Known Surfaces (series)'
   medium: synthetic aperture radar satellite data, laser-cut and painted acrylic, raised UV print
@@ -26,58 +26,58 @@ projects:
   link: /known-surfaces
   image: /assets/images/field-guide/6.png
   client: | 
-    Part of the End of Signal body of work
+    Sofia Enriquez G., Sentinel-1, Estudios Durero, Lindo Servico
   selected: true
 - title: 'Searching For (series)'
-  medium: digital simulation
+  medium: real-time simulation, sound
   year: 2025-2026
   link: /assets/media/End-of-Signal.pdf
   image: /assets/images/field-guide/4.png
   client: | 
-    Part of the End of Signal body of work
+    Yannis Siglidis, MK Skitka, Laenz, Sofia Enriquez G.
   selected: true
 - title: 'World Upstream'
-  medium: digital simulation
+  medium: real-time simulation, sound
   year: 2023-2024
   link: /world-upstream
   image: /assets/images/world-upstream/preview.jpg
   client: | 
-    Part of <em>Sandbox Mode</em> at Office Impart (Berlin, 2023), <em>Reverse Tar Pit</em> at Onassis ONX and The Wrong Biennale 06 (New York & online, 2023), Beyond Human at Artemis Gallery (Lisbon, 2024) and more.</span>
+    Laenz, Olivia Yin
   selected: true
 - title: 'Fall (I Fell in Love with my Avatar)'
-  medium: digital simulation
+  medium: real-time simulation, sound
   year: 2022
   link: /fall
   image: https://img.itch.zone/aW1hZ2UvMTc0NDcwOS8xMDI2NzUzOS5qcGc=/347x500/pNDOHL.jpg
-  client: Commissioned as part of <em>Dynamic Links</em> on spam-index.com
+  client: n/a
   selected: false
 - title: 'Delicate Chaos'
   medium: on-chain generative system
   year: 2022
   link: /delicate-chaos
   image: /assets/images/delicate-chaos/7.png
-  client: Part of <em>Romanian Design Week 2023</em>, <em>Scripting</em> at the Blanc Gallery (New York, 2022), the <em>Residents Show</em> at NYU ITP and plottables.io
+  client: n/a
   selected: true
 - title: 'Arcadia Inc.'
-  medium: digital simulation
+  medium: real-time simulation, sound
   year: 2021
   link: /arcadia-inc
   image: /assets/images/arcadiainc/soft-power-still.png
   client: |
-    Exhibited at Panke Gallery /rosa (Berlin, 2024), Currents New Media (Santa Fe, 2022), SPRING/BREAK (New York, 2021) and more.
+    Emma Brown, Hannah Campbell
   selected: true
 - title: 'What Does the Desktop Want?'
   link: /whatdoesthedesktopwant
   medium: talk
   year: 2021
-  client: for the <em>Computer Mouse Conference</em> at CultureHub (New York, 2021)
+  client: n/a
   image: /assets/images/whatdoesthedesktopwant/cover.png
   selected: true
 - title: 'Chestnut Series'
   link: /chestnut-series
   medium: generative drawing, ink on paper
   year: 2021
-  client:
+  client: n/a
   image: /assets/images/chestnutseries/chestnut-thumb.jpg
   selected: false
 - title: '✾ Human Interface Guidelines (Metaphor) ✾'
@@ -85,63 +85,73 @@ projects:
   year: 2021
   link: /hig-metaphor
   image: /assets/images/hig-metaphor/cover.png
-  client: part of <em>Desktop Studies</em> at The Wrong Biennale 06 (2023), <em>Anywhere but Here</em> at the Canvas Bowery (New York, 2021) and more.
-  selected: true
+  client: n/a
+  selected: false
 - title: 'Plotter Drawings'
   medium: generative drawing, ink on paper
   year: ongoing
   link: /prints
   image: /assets/images/plotterdrawings/tunnel-1.png
-  selected: true
+  selected: false
+  client: n/a
 - title: declared vvvvvvoid
   medium: browser extension
   year: 2020
   link: /declaredvvvvvvoid
   image: /assets/images/declaredvvvvvvoid/cover.png
+  client: n/a
 - title: '24 Hours Relaxing Landscape for Stress Relief'
   medium: three channel video
   year: 2020
   link: /24hrslandscape
   image: /assets/images/24hrslandscape/cover.png
   selected: false
+  client: n/a
 - title: ✿ Shadow Network ✿
   medium: software
   year: 2020
   link: /shadownetwork
   image: /assets/images/shadownetwork/cover.png
   selected: false
+  client: n/a
 - title: In 2020, I dream
   medium: desktop performance
   year: 2020
   link: /in2020idream
   image: /assets/images/in2020idream/cover.png
+  client: n/a
 - title: ✽ Office Olympics ✽
   medium: 3D animation
   year: 2020
   link: /officeolympics
   image: /assets/images/officeolympics/cover.png
   selected: false
+  client: n/a
 - title: Untitled
   medium: interactive video
   year: 2019
   link: /untitled
   image: /assets/images/untitled/cover.JPG
   selected: false
+  client: n/a
 - title: Disappearing
   medium: web performance
   year: 2019
   link: /disappearing
   image: /assets/images/disappearing/cover.png
+  client: n/a
 - title: The Joys of Being a Screensaver
   medium: video installation
   year: 2019
   link: /thejoys
   image: /assets/images/thejoys/thumbnail.JPG
+  client: n/a
 - title: Stones
   medium: web performance
   year: 2019
   link: /stones
   image: /assets/images/stones/thumbnail.png
+  client: n/a
 # - title: Cities and the Sky 3
 #   medium: augmented reality
 #   year: 2018
@@ -152,11 +162,13 @@ projects:
   year: 2018
   link: /algorithm4friends
   image: /assets/images/algorithm4friends/cover.png
+  client: n/a
 - title: The Road Back Home
   medium: website
   year: 2018
   link: /theroadbackhome
   image: /assets/images/theroadbackhome/cover.png
+  client: n/a
 # - title: Your Secret
 #   medium: augmented reality
 #   year: 2018
@@ -167,6 +179,7 @@ projects:
   year: 2018
   link: /000penspace
   image: /assets/images/000penspace/cover-small.png
+  client: n/a
 # - title: Poster Jam
 #   medium: poster series
 #   year: 2017
@@ -177,6 +190,7 @@ projects:
   year: 2016
   link: /water
   image: /assets/images/water/cover.png
+  client: n/a
 # - title: Self and Other
 #   medium: website
 #   year: 2016

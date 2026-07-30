@@ -52,8 +52,13 @@ a:hover {
   color: var(--main-highlight-color);
 }
 
+small {
+  font-size: 12.5pt;
+  line-height: 1.1;
+}
+
 .small-paragraph {
-  font-size: 13pt;
+  font-size: 12pt;
   margin-top: 5px;
 }
 
@@ -128,7 +133,7 @@ a:hover {
 }
 
 p {
-  font-size: 16pt;
+  font-size: 15pt;
   margin: 1px 0;
   margin-bottom: 3px;
   line-height: 1.28;
