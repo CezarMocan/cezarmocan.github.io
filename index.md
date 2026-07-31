@@ -113,7 +113,7 @@ projects:
   link: /shadownetwork
   image: /assets/images/shadownetwork/cover.png
   selected: false
-  client: n/a
+  client: Cy Kim
 - title: In 2020, I dream
   medium: desktop performance
   year: 2020
@@ -145,7 +145,7 @@ projects:
   year: 2019
   link: /thejoys
   image: /assets/images/thejoys/thumbnail.JPG
-  client: n/a
+  client: Danqi Qian
 - title: Stones
   medium: web performance
   year: 2019
