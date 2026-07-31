@@ -31,7 +31,7 @@ projects:
 - title: 'Searching For (series)'
   medium: real-time simulation, sound
   year: 2025-2026
-  link: /assets/media/End-of-Signal.pdf
+  link: /searching-for
   image: /assets/images/field-guide/4.png
   client: | 
     Yannis Siglidis, MK Skitka, Laenz, Sofia Enriquez G.

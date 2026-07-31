@@ -259,6 +259,7 @@ p {
   max-height: 90vh;
   object-fit: contain;
   object-position: left;
+  /* border: 1px solid black;   */
 }
 
 .project-image-description {
@@ -396,7 +397,7 @@ p {
 
   .landing-page-intro-column.right {
     margin-left: 0;
-    margin-top: 35px;
+    margin-top: 15px;
   }
 }
 
