@@ -2,15 +2,25 @@
 layout: default-new
 ---
 <div class="intro-container">
-  <p>
-    I am an artist and programmer, born in Romania and working in Lisbon. My work uses game engines, video and the web as a way to understand the power structures that shape society’s engagement with technology.
-    <br/><br/>
-    You can view a list of my selected work below, or scroll down for a complete archive.
-    <br/><br/>
-    ↓ 
-  </p>
+  <div class="landing-page-intro">
+    <div class="landing-page-intro-column left">
+      <p>
+        <!-- <small> -->
+          Cezar Mocan is an artist and programmer, born in Romania and working in Lisbon. His work tackles machine observation and the construction of technological progress using game engines and narrative generative systems.      
+        <!-- </small> -->
+        <br/><br/>
+      </p>
+    </div>
+    <div class="landing-page-intro-column right">
+      <p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming ↴</p>
+        {% include current-and-upcoming.html %}
+    </div>
+  </div>
 </div>
-
+<div class="separator"></div>
+<div class="selected-works-heading">
+  <p>Selected Works ↴</p>
+</div>
 <div class="new-projects-container">
   <div class="project-row header">
     <div class="project-column title margin"><p>Title</p></div>
@@ -44,14 +54,9 @@ layout: default-new
   {% endfor %}
 </div>
 
-<div class="intro-container no-margin-bottom">
-  <p>
-    <br/><br/>
-    Complete Archive
-    <br/><br/>
-    ↓ 
-    <br/><br/>
-  </p>
+<div class="separator"></div>
+<div class="selected-works-heading">
+  <p>Complete Archive ↴</p>
 </div>
 
 <div class="new-projects-container">

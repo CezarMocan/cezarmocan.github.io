@@ -17,28 +17,70 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://cezar.io",
-        "name": "Cezar Mocan",
-        "givenName": "Cezar",
-        "familyName": "Mocan",
-        "url": "https://cezar.io/",
-        "image": "https://cezar.io/assets/media/cm_bw_2024.jpg",
-        "description": "Artist",
-        "jobTitle": "Artist",
-        "sameAs": [
-          "https://www.instagram.com/cezarmocan/",
-          "https://twitter.com/DrawingMoving",
-          "https://www.imdb.com/name/nm15056131/",
-          "https://www.linkedin.com/in/cezarmocan/",
-          "https://www.schoolofma.org/community/cezar-mocan",
-          "https://tisch.nyu.edu/itp/itp-people/alumni/Residents/2021-2022/cezar-mocan",
-          "https://www.artemis-gallery.net/artist/cezar-mocan/",
-          "https://spam-index.com/artists/cezar-mocan/",
-          "https://github.com/CezarMocan/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://cezar.io/#website",
+            "url": "https://cezar.io/",
+            "name": "Cezar Mocan",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://cezar.io/#person" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://cezar.io/",
+            "url": "https://cezar.io/",
+            "name": "Cezar Mocan",
+            "isPartOf": { "@id": "https://cezar.io/#website" },
+            "mainEntity": { "@id": "https://cezar.io/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://cezar.io/#person",
+            "name": "Cezar Mocan",
+            "givenName": "Cezar",
+            "familyName": "Mocan",
+            "url": "https://cezar.io/",
+            "image": "https://cezar.io/assets/media/cm_bw_2024.jpg",
+            "jobTitle": "Artist",
+            "description": "artist and programmer working with real-time simulation, satellite imagery, and speculative narrative systems.",
+            "knowsAbout": [
+              "Real-time simulation",
+              "Satellite imagery",
+              "Remote sensing",
+              "Generative systems",
+              "Media archaeology",
+              "Unreal Engine"
+            ],
+            "knowsLanguage": ["en", "ro", "pt"],
+            "alumniOf": [
+              { "@type": "CollegeOrUniversity", "name": "Yale University", "sameAs": "https://www.wikidata.org/wiki/Q49112" },
+              { "@type": "CollegeOrUniversity", "name": "New York University", "sameAs": "https://www.wikidata.org/wiki/Q49210" }
+            ],
+            "award": [
+              "Lumen Prize in Art and Technology (2021)",
+              "ABS Emerging Artist of the Year (2025)",
+              "SOLO AI Award (2025)"
+            ],
+            "homeLocation": { "@type": "Place", "name": "Lisbon, Portugal" },
+            "sameAs": [
+              "https://officeimpart.com/cezar-mocan",
+              "https://github.com/CezarMocan/",
+              "https://www.linkedin.com/in/cezarmocan/",
+              "https://www.imdb.com/name/nm15056131/",
+              "https://www.instagram.com/cezarmocan/",
+              "https://x.com/DrawingMoving",
+              "https://verse.works/cezar-mocan",
+              "https://onkaos.com/profile/cezar-mocan/",
+              "https://www.artemis-gallery.net/artist/cezar-mocan/",
+              "https://spam-index.com/artists/cezar-mocan/",
+              "https://www.arabbank.ch/about-us/art-by-arab-bank/artist/cezar-mocan/",
+              "https://www.schoolofma.org/community/cezar-mocan",
+              "https://tisch.nyu.edu/itp/itp-people/alumni/Residents/2021-2022/cezar-mocan"
+            ]
+          }
         ]
-      }
-      </script>
+      }      </script>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jongacnik/gr8/daaf18fb/dist/gr8.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>

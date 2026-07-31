@@ -17,28 +17,70 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://cezar.io",
-        "name": "Cezar Mocan",
-        "givenName": "Cezar",
-        "familyName": "Mocan",
-        "url": "https://cezar.io/",
-        "image": "https://cezar.io/assets/media/cm_bw_2024.jpg",
-        "description": "Artist",
-        "jobTitle": "Artist",
-        "sameAs": [
-          "https://www.instagram.com/cezarmocan/",
-          "https://twitter.com/DrawingMoving",
-          "https://www.imdb.com/name/nm15056131/",
-          "https://www.linkedin.com/in/cezarmocan/",
-          "https://www.schoolofma.org/community/cezar-mocan",
-          "https://tisch.nyu.edu/itp/itp-people/alumni/Residents/2021-2022/cezar-mocan",
-          "https://www.artemis-gallery.net/artist/cezar-mocan/",
-          "https://spam-index.com/artists/cezar-mocan/",
-          "https://github.com/CezarMocan/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://cezar.io/#website",
+            "url": "https://cezar.io/",
+            "name": "Cezar Mocan",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://cezar.io/#person" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://cezar.io/",
+            "url": "https://cezar.io/",
+            "name": "Cezar Mocan",
+            "isPartOf": { "@id": "https://cezar.io/#website" },
+            "mainEntity": { "@id": "https://cezar.io/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://cezar.io/#person",
+            "name": "Cezar Mocan",
+            "givenName": "Cezar",
+            "familyName": "Mocan",
+            "url": "https://cezar.io/",
+            "image": "https://cezar.io/assets/media/cm_bw_2024.jpg",
+            "jobTitle": "Artist",
+            "description": "artist and programmer working with real-time simulation, satellite imagery, and speculative narrative systems.",
+            "knowsAbout": [
+              "Real-time simulation",
+              "Satellite imagery",
+              "Remote sensing",
+              "Generative systems",
+              "Media archaeology",
+              "Unreal Engine"
+            ],
+            "knowsLanguage": ["en", "ro", "pt"],
+            "alumniOf": [
+              { "@type": "CollegeOrUniversity", "name": "Yale University", "sameAs": "https://www.wikidata.org/wiki/Q49112" },
+              { "@type": "CollegeOrUniversity", "name": "New York University", "sameAs": "https://www.wikidata.org/wiki/Q49210" }
+            ],
+            "award": [
+              "Lumen Prize in Art and Technology (2021)",
+              "ABS Emerging Artist of the Year (2025)",
+              "SOLO AI Award (2025)"
+            ],
+            "homeLocation": { "@type": "Place", "name": "Lisbon, Portugal" },
+            "sameAs": [
+              "https://officeimpart.com/cezar-mocan",
+              "https://github.com/CezarMocan/",
+              "https://www.linkedin.com/in/cezarmocan/",
+              "https://www.imdb.com/name/nm15056131/",
+              "https://www.instagram.com/cezarmocan/",
+              "https://x.com/DrawingMoving",
+              "https://verse.works/cezar-mocan",
+              "https://onkaos.com/profile/cezar-mocan/",
+              "https://www.artemis-gallery.net/artist/cezar-mocan/",
+              "https://spam-index.com/artists/cezar-mocan/",
+              "https://www.arabbank.ch/about-us/art-by-arab-bank/artist/cezar-mocan/",
+              "https://www.schoolofma.org/community/cezar-mocan",
+              "https://tisch.nyu.edu/itp/itp-people/alumni/Residents/2021-2022/cezar-mocan"
+            ]
+          }
         ]
-      }
-      </script>
+      }      </script>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jongacnik/gr8/daaf18fb/dist/gr8.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -74,15 +116,32 @@
       </div>
 
       <div class="intro-container">
-  <p>
-    I am an artist and programmer, born in Romania and working in Lisbon. My work uses game engines, video and the web as a way to understand the power structures that shape society’s engagement with technology.
-    <br/><br/>
-    You can view a list of my selected work below, or scroll down for a complete archive.
-    <br/><br/>
-    ↓ 
-  </p>
+  <div class="landing-page-intro">
+    <div class="landing-page-intro-column left">
+      <p>
+        <!-- <small> -->
+          Cezar Mocan is an artist and programmer, born in Romania and working in Lisbon. His work tackles machine observation and the construction of technological progress using game engines and narrative generative systems.      
+        <!-- </small> -->
+        <br/><br/>
+      </p>
+    </div>
+    <div class="landing-page-intro-column right">
+      <p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming ↴</p>
+        <small>
+<em>Jun. 11 - Oct. 17, 2026</em>&ensp;✿&ensp;End of Signal at <a href="https://onkaos.com/cezar-mocan-presents-end-of-signal-winner-of-the-solo-ai-25-award/" target="_blank">Onkaos | SOLO Contemporary</a> ✿ <em>Madrid, Spain (Solo Show)</em> <br/>
+<em>Aug. 18 - Aug. 29, 2026</em>&ensp;✿&ensp;<a href="https://www.nouvellebug.com/" target="_blank">Nouvelle Bug</a> Residency ✿ <em>Revine Lago, Italy (Residency)</em> <br/>
+<em>Sep. 5 - Sep. 13, 2026</em>&ensp;✿&ensp;End of Signal at <a href="https://www.hallen.art/" target="_blank">Hallen Kunstfest</a> ✿ <em>Berlin, Germany (Group Show)</em><br/>
+<em>Sep. 5 - Sep. 13, 2026</em>&ensp;✿&ensp;Searching For (Bradley Land) at <a href="https://eccv.ecva.net/Conferences/2026" target="_blank">European Conference on Computer Vision</a>, Art Track ✿ <em>Malmo, Sweden (Group Show)</em><br/>
+<em>Nov. 6 - Nov. 22, 2026</em>&ensp;✿&ensp;End of Signal at <a href="https://betafestival.ie/" target="_blank">Beta Festival</a> ✿ <em>Dublin, Ireland (Group Show)</em><br/>
+</small>
+<br/>❊<br/>
+    </div>
+  </div>
 </div>
-
+<div class="separator"></div>
+<div class="selected-works-heading">
+  <p>Selected Works ↴</p>
+</div>
 <div class="new-projects-container">
   <div class="project-row header">
     <div class="project-column title margin"><p>Title</p></div>
@@ -301,14 +360,9 @@
   
 </div>
 
-<div class="intro-container no-margin-bottom">
-  <p>
-    <br/><br/>
-    Complete Archive
-    <br/><br/>
-    ↓ 
-    <br/><br/>
-  </p>
+<div class="separator"></div>
+<div class="selected-works-heading">
+  <p>Complete Archive ↴</p>
 </div>
 
 <div class="new-projects-container">
