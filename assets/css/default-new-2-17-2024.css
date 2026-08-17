@@ -448,3 +448,165 @@ p {
     display: none;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Feelings page — native applications table (replaces the old iframe) */
+/* ------------------------------------------------------------------ */
+
+.feelings-table {
+  margin-top: -80px;
+}
+
+/* Narrower rows than the index table (index uses 10px 10px). */
+.feelings-table .project-row {
+  padding: 4px 10px;
+}
+
+.feelings-table .project-row p {
+  font-size: 11pt;
+  line-height: 1.3;
+}
+
+.feelings-table .project-row.header p {
+  font-size: 11pt;
+}
+
+/* Column widths — Event & Submitted work get more room. */
+.feelings-table .project-column.feelings-event { flex: 3; }
+.feelings-table .project-column.feelings-type { flex: 1.6; }
+.feelings-table .project-column.feelings-work { flex: 2.6; }
+.feelings-table .project-column.feelings-due { flex: 1.6; }
+.feelings-table .project-column.feelings-status { flex: 1.4; }
+.feelings-table .project-column.feelings-location { flex: 2.2; }
+.feelings-table .project-column.feelings-connection { flex: 1.4; }
+
+/* Keep long cell text on one line with an ellipsis (like .medium > p). */
+.feelings-table .feelings-row .project-column > p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Status dots — a colored dot to the left of the status word. */
+.feelings-table .feelings-status p.status-accepted::before,
+.feelings-table .feelings-status p.status-rejected::before,
+.feelings-table .feelings-status p.status-pending::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  flex-shrink: 0;
+}
+
+.feelings-table .feelings-status p.status-accepted::before {
+  background-color: #2ea043;
+}
+
+.feelings-table .feelings-status p.status-rejected::before {
+  background-color: #e5484d;
+}
+
+.feelings-table .feelings-status p.status-pending::before {
+  background-color: #e0b000;
+  animation: feelings-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes feelings-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.7); }
+}
+
+/* Loading indicator. */
+#feelings-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 10px;
+  color: var(--main-fg-color);
+  opacity: 0.6;
+}
+
+#feelings-loading p {
+  margin: 0;
+  font-size: 11pt;
+}
+
+.feelings-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--main-fg-color);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: feelings-spin 0.8s linear infinite;
+}
+
+.feelings-header {
+  font-weight: bold;
+}
+
+@keyframes feelings-spin {
+  to { transform: rotate(360deg); }
+}
+
+#feelings-error {
+  padding: 20px 10px;
+  opacity: 0.75;
+}
+
+/* Mobile: stack each application into a labeled card. */
+@media only screen and (max-width: 1200px) {
+  /* Inset the table so its edges line up with the page text margins
+     (left 35px / right 20px, matching .description-container), and wrap
+     it in top/left/right borders so it reads as one contained block.
+     The rows' own border-bottom closes the box at the bottom. */
+  .feelings-table {
+    width: auto;
+    box-sizing: border-box;
+    margin-left: 35px;
+    margin-right: 20px;
+    border-top: 1px solid var(--main-fg-color);
+    border-left: 1px solid var(--main-fg-color);
+    border-right: 1px solid var(--main-fg-color);
+  }
+
+  .feelings-table .feelings-header {
+    display: none;
+  }
+
+  .feelings-table .feelings-row {
+    flex-direction: column;
+    padding: 10px 12px;
+  }
+
+  .feelings-table .feelings-row .project-column {
+    flex: none;
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+    display: flex;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .feelings-table .feelings-row .project-column::before {
+    content: attr(data-label) ": ";
+    font-family: NeueHaasUnicaBold;
+    margin-right: 6px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    margin-top: -3px;
+  }
+
+  /* Let values wrap instead of truncating on cards. */
+  .feelings-table .feelings-row .project-column > p {
+    white-space: normal;
+    text-overflow: clip;
+    overflow: visible;
+  }
+}
