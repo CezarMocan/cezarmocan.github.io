@@ -92,7 +92,7 @@ permalink: /about/
             <br/>
             <em>2022</em> ✿ <em>Currents New Media</em> ✿ Santa Fe, USA
             <br/>
-            <em>2022</em> ✿ Release on <a href="https://plottables.io/project/9">Plottables.io</a>
+            <em>2022</em> ✿ <em>Delicate Chaos</em> release on <a href="https://plottables.io/project/9">Plottables.io</a> ✿ online
             <br/>
             <em>2022</em> ✿ <em>Kampüste Dijital Sanat</em> ✿ Istanbul, Turkey
             <br/>
@@ -100,7 +100,6 @@ permalink: /about/
             <br/>
             <!--  -->
             <span style="height: 10px; display: block;"></span>
-            <em>2021</em> ✿ <em><a href="https://www.lumenprize.com/">Lumen Prize</a></em> ✿ London, UK (Student Award Winner)<br/>
             <em>2021</em> ✿ <em>Anywhere But Here</em>, The Canvas Bowery ✿ New York, USA
             <br/>    
             <br/>
@@ -115,17 +114,54 @@ permalink: /about/
             <em>2026 </em> ✿ <a href="https://www.coeval-magazine.com/coeval/cezar-mocan-exhibition-at-solo-csv" target="_blank">Cezar Mocan Exhibition At Solo CSV</a> ✿ COEVAL Magazine<br/>    
             <em>2026 </em> ✿ <a href="https://www.neo2.com/end-of-signal-o-el-arte-de-desconfiar-de-los-datos/" target="_blank">Muestra End of Signal: el arte de desconfiar de los datos</a> ✿ NEO2 Magazine<br/>
             <em>2026 </em> ✿ <a href="https://absdigitalart.substack.com/p/cezar-mocans-non-playable-worlds" target="_blank">Cezar Mocan's Non-Playable Worlds</a> ✿ ABS Digital Art, interview with Guy Mackinnon-Little<br/>
+            <em>2026 </em> ✿ <a href="https://sidequestosp.substack.com/p/gather-quest-100-art-games-100-artists" target="_blank">Gather Quest: 100 Games, 100 Artists</a> ✿ Side Quest <br/>
+            <span style="height: 10px; display: block;"></span>
             <em>2025 </em> ✿ <a href="https://sidequestosp.substack.com/p/play-quest-world-upstream-by-cezar" target="_blank">Play Quest: World Upstream by Cezar Mocan</a> ✿ Side Quest, interview with Elliott Burns<br/>
-            <em>2025 </em> ✿ <a href="https://sidequestosp.substack.com/p/gather-quest-100-art-games-100-artists" target="_blank">Gather Quest: 100 Games, 100 Artists</a> ✿ Side Quest <br/>
             <em>2025 </em> ✿ <a href="https://open.spotify.com/episode/5OofP1rL3OYZWsHzOIQYJD" target="_blank">Playing with Power, with Cezar Mocan</a> ✿ UNLOCKED Podcast, conversation with Delfina Sena <br/>
+            <em>2025</em> ✿ Minimum Viable Interiority, with Iulia Ionescu, Alasdair Milne, Murad Khan ✿ Antikythera: Journal for the Philosophy of Planetary Computation, published by MIT Press            
+            <span style="height: 10px; display: block;"></span>
             <em>2024 </em> ✿ <a href="https://app.t2.world/article/cm0wb27xt20165820mcaqk2h4an" target="_blank">Cezar Mocan on AI as a medium, nuanced conversations and Arcadia Inc.</a> ✿ t2.world, interview with Stina Gustafsson <br/>
             <em>2024 </em> ✿ <a href="https://web.archive.org/web/20240622230434/https://www.uaad.art/artist/cezar-mocan" target="_blank">World Upstream: Artist Interview</a> ✿ Underground Art and Design <br/>
+            <span style="height: 10px; display: block;"></span>
             <em>2023 </em> ✿ <a href="https://vetroeditions.com/products/tracing-the-line" target="_blank">Tracing the Line: The Art of Drawing Machines and Pen Plotters</a> ✿ Vetro Editions <br/>
             
         </small></p>
 
         <br/>❊<br/><br/>
 
+
+        <p style="text-decoration: none; margin-bottom: 10px;">Residencies ↴</p>
+        <p style="line-height: 1.3; margin-left: 2px;"> <small>
+            <em>2026</em> ✿ <em><a href="https://nouvellebug.com/" target="_blank">Nouvelle Bug</a></em> ✿ Revine Lago, Italy<br/>
+            <em>2026</em> ✿ <em><a href="https://agora.centre.ch/" target="_blank">AGORA: A Gathering of Art and Philosophy</a></em> ✿ Geneva, Switzerland & online<br/>
+            <span style="height: 10px; display: block;"></span>
+            <em>2025</em> ✿ <em><a href="https://studiotopia.art/" target="_blank">STUDIOTOPIA Art+Science Residency</a></em> ✿ Dublin & Lisbon<br/>
+            <em>2025</em> ✿ <em>Artep 110 Residency</em> ✿ Berlin, Germany<br/>
+            <span style="height: 10px; display: block;"></span>
+            <em>2024</em> ✿ <em>Glitch Residency</em> ✿ Chateau du Fey, France<br/>            
+            <em>2024</em> ✿ <em><a href="https://antikythera.org/cognitive-infrastructures" target="_blank">Antikythera Cognitive Infrastructures Studio</a></em> ✿ London, UK<br/>
+            <span style="height: 10px; display: block;"></span>
+            <em>2023</em> ✿ <em>VCA Residency</em> ✿ online<br/>
+            <span style="height: 10px; display: block;"></span>
+            <em>2022</em> ✿ <em>Research Residency at New York University's Interactive Telecommunications Program</em> ✿ New York, USA<br/>
+            <span style="height: 10px; display: block;"></span>
+            <em>2020</em> ✿ <em>NYC Media Lab Residency</em> ✿ in collaboration with Cy Kim ✿ New York, USA
+        </small></p>
+
+        <br/>❊<br/>
+
+        <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Awards & Grants ↴</p>
+        <p style="line-height: 1.3; margin-left: 2px;"> <small>
+            <em>2025</em> ✿ <em>SOLO AI Award</em> ✿ Onkaos & SOLO Contemporary ✿ Madrid, Spain<br/>
+            <em>2025</em> ✿ <em>Emerging Artist of the Year Award</em> ✿ Arab Bank Switzerland Collection ✿ Basel, Switzerland<br/>            
+            <em>2025</em> ✿ <em>Cosmos Institute Research Grant</em> ✿ with Alasdair Milne, Iulia Ionescu, Murad Khan ✿ San Francisco, USA<br/>            
+            <em>2025</em> ✿ <em>STUDIOTOPIA Production Grant</em> ✿ Dublin, Ireland<br/>
+            <span style="height: 10px; display: block;"></span>
+            <em>2021</em> ✿ <em>Lumen Prize, Student Award</em> ✿ London, UK
+        </small></p>
+
+        <br/>❊<br/><br/>
+        
 
         <p style="text-decoration: none; margin-bottom: 10px;">Teaching ↴</p>
         <p style="line-height: 1.3; margin-left: 2px;"><small>
