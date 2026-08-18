@@ -18,6 +18,12 @@
   src: url("Akkurat-Mono.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: ComicSansMS;
+  font-weight: normal;
+  src: url("ComicSansMS.ttf") format("truetype");
+}
+
 html {
   /* Theme #1 */
   /*
@@ -118,6 +124,10 @@ small {
   padding: 10px 14px;
   font-size: 10pt;
   line-height: 1.15;
+}
+
+.footer .comic-sans {
+  font-family: ComicSansMS;
 }
 
 .dot {
