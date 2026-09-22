@@ -42,6 +42,8 @@ permalink: /about/
         <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Group Exhibitions and Screenings ↴</p>
         <p style="line-height: 1.3; margin-left: 2px;"> 
         <small>
+            <em>2026</em> ✿ End of Signal, <em><a href="https://www.hallen.art/" target="_blank">Hallen Kunstfest</a></em>, presented by OFFICE IMPART ✿ Berlin, Germany<br/>
+            <em>2026</em> ✿ <em><a href="https://eccv.ecva.net/Conferences/2026" target="_blank">European Conference on Computer Vision</a>, Art Track </em> ✿ <em>Malmo, Sweden</em><br/>
             <em>2026</em> ✿ <em><a href="https://www.meetcenter.it/en/event/studiotopias-artworks-at-atlas/">Symbiotic Imaginaries</a></em>, <a href="https://www.meetcenter.it/en/" target="_blank">MEET Digital Culture Center</a> ✿ Milan, Italy<br/>
             <em>2026</em> ✿ <em><a href="https://events.musicofourdesire.com/event/su91-first-contact-other-paris-france">nephila:first contact</a></em>, Espace Parallele, curated by Flora Weil ✿ Paris, France<br/>
             <em>2026</em> ✿ <em><a href="https://nfc26-art-catalogue.nfcsummit.com/exhibition/systems-by-arab-bank-switzerland">SYSTEMS</a></em>, curated by Nina Roehrs ✿ Lisbon, Portugal<br/>
