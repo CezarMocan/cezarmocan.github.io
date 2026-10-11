@@ -1,7 +1,7 @@
 ---
 layout: projectPageNew
 title: 'A Field Guide to Orbital Melancholy'
-year: 2026
+year: 2025-2026
 medium: real-time simulation, sound
 paragraphs:
  - text: |
@@ -42,21 +42,21 @@ images:
  - url: /assets/images/field-guide/f1.jpg
    description: Installation view, image courtesy of Onkaos and Solo Contemporary
  - url: /assets/images/field-guide/2.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/f8.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/3.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/f3.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/f4.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/f5.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/f6.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/f7.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
  - url: /assets/images/field-guide/f2.jpg
-   description: Simulation still
+   description: <em>A Field Guide to Orbital Melancholy</em> still
 ---

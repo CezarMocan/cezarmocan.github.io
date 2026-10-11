@@ -1,7 +1,7 @@
 ---
 layout: projectPageNew
 title: 'Searching For'
-year: 2026
+year: 2025-2026
 medium: multispectral satellite data, archival print on cotton rag paper
 paragraphs:
  - text: |
@@ -48,20 +48,20 @@ paragraphs:
  
 images:
  - url: /assets/images/searching-for/1.png
-   description: Searching For (Bradley Land), real-time simulatuon, sound.<br/>Image courtesy of Onkaos & SOLO Contemporary.
+   description: Searching For (Bradley Land), real-time simulation, sound.<br/>Image courtesy of Onkaos & SOLO Contemporary.
 
  - url: /assets/images/searching-for/4.gif
-   description: Searching For (Bradley Land), real-time simulatuon, sound. Simulation recording.
+   description: Searching For (Bradley Land), real-time simulation, sound. Simulation recording.
 
  - url: https://player.vimeo.com/video/1182271532
    vimeo: true
-   description: Searching For (Bradley Land), real-time simulatuon, sound. Simulation recording.
+   description: Searching For (Bradley Land), real-time simulation, sound. Simulation recording.
 
  - url: /assets/images/searching-for/2.gif
-   description: Searching For (Bradley Land), real-time simulatuon, sound. Simulation recording.
+   description: Searching For (Bradley Land), real-time simulation, sound. Simulation recording.
 
  - url: /assets/images/searching-for/3.png
-   description: Searching For (Bradley Land), real-time simulatuon, sound. Simulation recording.
+   description: Searching For (Bradley Land), real-time simulation, sound. Simulation still.
 
 
 ---

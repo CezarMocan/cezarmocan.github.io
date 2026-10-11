@@ -199,6 +199,13 @@ p {
   font-size: 12pt;
 }
 
+/* Let flex columns shrink below their content width so the nowrap
+   .medium text truncates instead of pushing the row past the screen. */
+.project-column {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
 .project-column.title {
   flex: 3;
 }
@@ -448,15 +455,56 @@ p {
   .header-section.name {
     padding-right: 10px;
   }
+  .project-column.medium {
+    display: none;
+  }
+  .project-column.client {
+    display: none;
+  }
+  .project-column.year {
+    flex: 0.6;
+  }
+  .project-column.year.border {
+    border-right: none;
+  }
+  .project-column.year.margin {
+    margin-right: 0;
+  }
+  .project-row-header {
+    top: 43px;
+  }
+  .media-container {
+    width: calc(100% - 30px);
+    padding: 0 15px 0 15px;
+  }
+  .description-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .c8 {
+    width: 100%;
+  }
+  .project-row.header p {
+    font-size: 10pt;
+  }
+  .project-row.header {
+    padding: 5px 10px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  p {
+  /* p {
     font-size: 10pt;
-  }
+  } */
+  /* .small-paragraph {
+    font-size: 10pt;
+  } */
   .header-section.dots {
     display: none;
   }
+  /* .header-container {
+    width: calc(100vw - 18px);
+  } */
 }
 
 /* ------------------------------------------------------------------ */

@@ -1,7 +1,7 @@
 ---
 layout: projectPageNew
 title: 'Still Nothing'
-year: 2026
+year: 2025-2026
 medium: multispectral satellite data, archival print on cotton rag paper
 paragraphs:
  - text: |

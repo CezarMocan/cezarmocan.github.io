@@ -1,7 +1,7 @@
 ---
 layout: projectPageNew
 title: 'Known Surfaces'
-year: 2026
+year: 2025-2026
 medium: synthetic aperture radar satellite data, mixed media
 paragraphs:
  - text: |

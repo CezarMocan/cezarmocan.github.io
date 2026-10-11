@@ -11,7 +11,7 @@ permalink: /about/
         <br/><br/>
         Galleries<br/>
         <a href="https://officeimpart.com/" target="_blank">OFFICE IMPART</a> (Berlin)<br/> 
-        <a href="https://www.artemis-gallery.net/artist/cezar-mocan/" target="_blank">Artemis Gallery</a> (Lisbon)
+        <a href="https://www.artemis-gallery.net/artist/cezar-mocan/" target="_blank">Artemis Gallery</a> (Lisbon, Vienna)
         <!-- Besides my personal work, I sometimes design or build software for other artists and teach. You can view an archive of my client work <a href="/client-work" target="_blank">here</a>.<br/><br/>
         In a former life, I used to do competitive programming.
         <br/><br/> -->
@@ -42,6 +42,7 @@ permalink: /about/
         <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Group Exhibitions and Screenings ↴</p>
         <p style="line-height: 1.3; margin-left: 2px;"> 
         <small>
+            <em>2026</em> ✿ <a href="https://simultan.org/2026/en/installations/marginal-techno-natural-mutations" target="_blank"><em>Techno-natural Mutations</em></a> at <a href="https://simultan.org/2026/" target="_blank">Simultan Festival XXI</a> ✿ <em>Timisoara, Romania</em><br/>
             <em>2026</em> ✿ End of Signal, <em><a href="https://www.hallen.art/" target="_blank">Hallen Kunstfest</a></em>, presented by OFFICE IMPART ✿ Berlin, Germany<br/>
             <em>2026</em> ✿ <em><a href="https://eccv.ecva.net/Conferences/2026" target="_blank">European Conference on Computer Vision</a>, Art Track </em> ✿ <em>Malmo, Sweden</em><br/>
             <em>2026</em> ✿ <em><a href="https://www.meetcenter.it/en/event/studiotopias-artworks-at-atlas/">Symbiotic Imaginaries</a></em>, <a href="https://www.meetcenter.it/en/" target="_blank">MEET Digital Culture Center</a> ✿ Milan, Italy<br/>
