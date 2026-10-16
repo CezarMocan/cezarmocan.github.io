@@ -1,7 +1,7 @@
 ---
 layout: projectPageNew
 title: 'A Field Guide to Orbital Melancholy'
-year: 2025-2026
+year: 2025-2026 (in progress)
 medium: real-time simulation, sound
 paragraphs:
  - text: |

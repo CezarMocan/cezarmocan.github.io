@@ -6,7 +6,7 @@ layout: indexPageNew
 projects:
 - title: 'A Field Guide to Orbital Melancholy'
   medium: real-time simulation, sound
-  year: 2025-2026
+  year: 2025-2026 (in progress)
   link: /field-guide
   image: /assets/images/field-guide/3.jpg
   client: | 
