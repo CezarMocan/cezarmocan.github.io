@@ -24,7 +24,7 @@ permalink: /about/
         </p>
     </div>
     <div class="about-cv">
-        <p style="text-decoration: none; margin-bottom: 10px;">Current & Upcoming ↴</p>
+        <p style="text-decoration: none; margin-bottom: 10px;">Recent & Upcoming ↴</p>
         {% include current-and-upcoming.html %}        
 
         <p style="text-decoration: none; margin-bottom: 10px; margin-top: 25px;">Solo Exhibitions ↴</p>
